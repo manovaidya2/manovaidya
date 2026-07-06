@@ -6,6 +6,7 @@ import BlogManagement from './pages/BlogManagement';
 import CaseStudyManagement from './pages/CaseStudyManagement';
 import Appointments from './pages/Appointments';
 import Analytics from './pages/Analytics';
+import SearchConsole from './pages/SearchConsole';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
 import { applyAdminAppearance } from './utils/adminSettings';
@@ -41,6 +42,7 @@ function App() {
           <Route path="blogs" element={<Navigate to="/blog" replace />} />
           <Route path="case-studies" element={<CaseStudyManagement />} />
           <Route path="analytics" element={<Analytics />} />
+          <Route path="search-console" element={<SearchConsole />} />
           <Route path="settings" element={<Settings />} />
       
           <Route path="*" element={<div className="p-4">Page Not Found</div>} />

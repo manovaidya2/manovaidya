@@ -2,7 +2,6 @@ import React from "react";
 import {
   ArrowRight,
   Brain,
-  CalendarDays,
   MapPin,
   MonitorCheck,
   Network,
@@ -10,6 +9,7 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
+import BookConsultationButton from "../components/BookConsultationButton";
 import heroDarkBg from "../images/herobg.png";
 import heroMobileBg from "../images/herobg-mobile.png";
 
@@ -80,13 +80,12 @@ function HeroSection() {
             </div>
 
             <div className="mt-8 flex w-full max-w-[520px] flex-col gap-3 sm:flex-row sm:gap-4">
-              <a
-                href="#consultation"
-                className="inline-flex min-h-[54px] flex-1 items-center justify-center rounded-md bg-[#8b43ba] px-4 py-3 text-center text-[15px] font-bold leading-tight text-white shadow-[0_18px_32px_rgba(139,67,186,0.38)] transition hover:bg-[#7835a4] sm:h-[58px] sm:px-7 sm:py-0"
+              <BookConsultationButton
+                showIcon
+                className="inline-flex min-h-[54px] flex-1 items-center justify-center gap-2 rounded-md bg-[#8b43ba] px-4 py-3 text-center text-[15px] font-bold leading-tight text-white shadow-[0_18px_32px_rgba(139,67,186,0.38)] transition hover:bg-[#7835a4] sm:h-[58px] sm:px-7 sm:py-0"
               >
-                <CalendarDays className="mr-2 h-5 w-5 shrink-0" />
                 Book Consultation
-              </a>
+              </BookConsultationButton>
               <a
                 href="#assessment"
                 className="inline-flex min-h-[54px] flex-1 items-center justify-center rounded-md bg-white px-4 py-3 text-center text-[15px] font-bold leading-tight text-[#8b43ba] shadow-[0_18px_32px_rgba(0,0,0,0.16)] transition hover:bg-violet-50 sm:h-[58px] sm:px-7 sm:py-0"

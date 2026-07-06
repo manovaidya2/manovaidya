@@ -66,6 +66,11 @@ const formatDay = (date) =>
 
 const getAppointmentDate = (item) => item.preferredDate || item.createdAt;
 
+const getSubmittedTime = (item) => {
+  const submittedAt = new Date(item?.createdAt || item?.updatedAt || 0).getTime();
+  return Number.isNaN(submittedAt) ? 0 : submittedAt;
+};
+
 const getDateKey = (date) => {
   if (!date) return 'no-date';
   const value = new Date(date);
@@ -463,7 +468,7 @@ function CalendarView({ consultations, loading, updatingId, updateStatus, delete
   };
 
   return (
-    <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <section className="overflow-visible rounded-2xl border border-slate-200 bg-white shadow-sm">
       <div className="flex flex-col gap-3 border-b border-slate-200 p-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-lg font-black text-slate-900">{getMonthLabel(monthDate)}</h2>
@@ -505,10 +510,47 @@ function CalendarView({ consultations, loading, updatingId, updateStatus, delete
                 {loading ? (
                   <span className="block rounded bg-slate-100 px-2 py-1 text-[10px] font-bold text-slate-400">Loading</span>
                 ) : items.slice(0, 3).map((item) => (
-                  <div key={item._id} className="group rounded-lg border border-slate-200 bg-slate-50 px-2 py-1.5 shadow-sm">
+                  <div key={item._id} className="group relative rounded-lg border border-slate-200 bg-slate-50 px-2 py-1.5 shadow-sm transition hover:z-30 hover:border-primary/40 hover:bg-white hover:shadow-lg">
                     <div className="flex items-center gap-1.5">
                       <span className={`h-2 w-2 shrink-0 rounded-full ${statusDots[item.status] || statusDots.new}`} />
                       <p className="truncate text-[11px] font-black text-slate-800">{item.preferredTime || 'Any time'} {item.name}</p>
+                    </div>
+                    <div className="pointer-events-none absolute left-0 top-full z-40 mt-2 hidden w-[290px] rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-2xl ring-1 ring-slate-900/5 group-hover:block">
+                      <div className="mb-3 flex items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <p className="truncate text-sm font-black text-slate-950">{item.name || 'Name not provided'}</p>
+                          <p className="mt-1 text-[11px] font-semibold text-slate-400">Submitted {formatDate(item.createdAt)}</p>
+                        </div>
+                        <span className={`rounded-full px-2.5 py-1 text-[10px] font-black capitalize ring-1 ${statusStyles[item.status] || statusStyles.new}`}>
+                          {item.status || 'new'}
+                        </span>
+                      </div>
+
+                      <div className="space-y-2 text-xs font-semibold text-slate-600">
+                        <p className="flex justify-between gap-3">
+                          <span className="text-slate-400">Phone</span>
+                          <span className="text-right font-black text-primary">{item.phone || 'N/A'}</span>
+                        </p>
+                        <p className="flex justify-between gap-3">
+                          <span className="text-slate-400">Mode</span>
+                          <span className="text-right text-slate-800">{modeLabels[item.consultationMode] || item.consultationMode || 'N/A'}</span>
+                        </p>
+                        <p className="flex justify-between gap-3">
+                          <span className="text-slate-400">Date</span>
+                          <span className="text-right text-slate-800">{formatDate(item.preferredDate)}</span>
+                        </p>
+                        <p className="flex justify-between gap-3">
+                          <span className="text-slate-400">Time</span>
+                          <span className="text-right text-slate-800">{item.preferredTime || 'Time not set'}</span>
+                        </p>
+                      </div>
+
+                      <div className="mt-3 rounded-xl bg-slate-50 p-3">
+                        <p className="text-[10px] font-black uppercase tracking-wide text-slate-400">Message</p>
+                        <p className="mt-1 max-h-24 overflow-y-auto whitespace-pre-line text-xs font-semibold leading-5 text-slate-700">
+                          {item.message || 'No message provided.'}
+                        </p>
+                      </div>
                     </div>
                     <div className="mt-1 hidden items-center justify-between gap-1 group-hover:flex">
                       <StatusSelect item={item} updatingId={updatingId} updateStatus={updateStatus} />
@@ -575,11 +617,10 @@ export default function Appointments() {
     if (!hasSharedConsultations) void fetchConsultations();
   }, [hasSharedConsultations]);
 
-  const sortedConsultations = useMemo(() => [...consultations].sort((a, b) => {
-    const firstDate = new Date(getAppointmentDate(a) || 0).getTime();
-    const secondDate = new Date(getAppointmentDate(b) || 0).getTime();
-    return firstDate - secondDate;
-  }), [consultations]);
+  const sortedConsultations = useMemo(
+    () => [...consultations].sort((a, b) => getSubmittedTime(b) - getSubmittedTime(a)),
+    [consultations]
+  );
 
   const stats = useMemo(() => ({
     total: consultations.length,

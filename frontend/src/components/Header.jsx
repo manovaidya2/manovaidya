@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
-  CalendarDays,
   ChevronDown,
   HeartPulse,
   Menu,
@@ -9,7 +8,8 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
-import api from "../api/axiosInstance";
+import BookConsultationButton from "./BookConsultationButton";
+import BookConsultationForm from "./BookConsultationForm";
 import logo from "../images/manovaidya-logo (2).png";
 
 const conditionGroups = [
@@ -130,26 +130,6 @@ const topLevelNavHrefs = navItems
   .filter((item) => !item.submenu && !item.megaMenu && !item.href.startsWith("#"))
   .map((item) => item.href);
 
-const timeSlots = [
-
-  "10:30 AM - 11:00 AM",
-  "11:00 AM - 11:30 AM",
-  "11:30 AM - 12:00 PM",
-  "12:00 PM - 12:30 PM",
-  "12:30 PM - 01:00 PM",
-  "01:00 PM - 01:30 PM",
-  "01:30 PM - 02:00 PM",
-  "02:00 PM - 02:30 PM",
-  "02:30 PM - 03:00 PM",
-  "03:00 PM - 03:30 PM",
-  "03:30 PM - 04:00 PM",
-  "04:00 PM - 04:30 PM",
-  "04:30 PM - 05:00 PM",
-  "05:00 PM - 05:30 PM",
-  "05:30 PM - 06:00 PM",
-
-];
-
 function Header() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -158,19 +138,6 @@ function Header() {
   const [isResourcesOpen, setIsResourcesOpen] = React.useState(false);
   const [openConditionGroup, setOpenConditionGroup] = React.useState(null);
   const [isConsultationModalOpen, setIsConsultationModalOpen] = React.useState(false);
-  const [consultationForm, setConsultationForm] = React.useState({
-    name: "",
-    phone: "",
-    consultationMode: "",
-    preferredDate: "",
-    preferredTime: "",
-    message: "",
-  });
-  const [consultationStatus, setConsultationStatus] = React.useState({
-    type: "",
-    message: "",
-  });
-  const [isSubmittingConsultation, setIsSubmittingConsultation] = React.useState(false);
   const conditionsCloseTimer = React.useRef(null);
 
   const conditionRoutes = conditionGroups.map((group) => group.href);
@@ -242,51 +209,6 @@ function Header() {
     conditionsCloseTimer.current = window.setTimeout(() => {
       setIsConditionsOpen(false);
     }, 220);
-  };
-
-  const handleConsultationChange = (event) => {
-    const { name, value } = event.target;
-    setConsultationForm((current) => ({ ...current, [name]: value }));
-    if (consultationStatus.message) {
-      setConsultationStatus({ type: "", message: "" });
-    }
-  };
-
-  const handleConsultationSubmit = async (event) => {
-    event.preventDefault();
-    setIsSubmittingConsultation(true);
-    setConsultationStatus({ type: "", message: "" });
-
-    try {
-      const { data } = await api.post("/consultations", consultationForm);
-
-      if (!data.success) {
-        throw new Error(data.message || "Unable to submit consultation request");
-      }
-
-      setConsultationStatus({
-        type: "success",
-        message: "Request submitted successfully. Our team will contact you soon.",
-      });
-      setConsultationForm({
-        name: "",
-        phone: "",
-        consultationMode: "",
-        preferredDate: "",
-        preferredTime: "",
-        message: "",
-      });
-    } catch (error) {
-      setConsultationStatus({
-        type: "error",
-        message:
-          error.response?.data?.message ||
-          error.message ||
-          "Something went wrong. Please try again.",
-      });
-    } finally {
-      setIsSubmittingConsultation(false);
-    }
   };
 
   React.useEffect(() => {
@@ -443,14 +365,12 @@ function Header() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-3">
-            <button
-              type="button"
-              onClick={() => setIsConsultationModalOpen(true)}
+            <BookConsultationButton
+              showIcon
               className="hidden h-11 items-center gap-2 whitespace-nowrap rounded-md bg-[#8b43ba] px-5 text-[14px] font-black text-white shadow-[0_10px_18px_rgba(139,67,186,0.24)] transition hover:bg-[#7835a4] xl:inline-flex"
             >
-              <CalendarDays className="h-4 w-4" />
               Book Consultation
-            </button>
+            </BookConsultationButton>
 
             <button
               type="button"
@@ -694,17 +614,15 @@ function Header() {
           </nav>
 
           <div className="shrink-0 border-t border-violet-100 bg-white p-4 shadow-[0_-10px_24px_rgba(45,27,95,0.06)] sm:p-5">
-            <button
-              type="button"
+            <BookConsultationButton
+              showIcon
               className="flex w-full h-12 items-center justify-center gap-2 rounded-md bg-violet-700 px-5 text-sm font-black text-white shadow-[0_12px_22px_rgba(93,46,202,0.25)] transition hover:bg-violet-800"
               onClick={() => {
                 closeMenu();
-                setIsConsultationModalOpen(true);
               }}
             >
-              <CalendarDays className="h-4 w-4" />
               Book Consultation
-            </button>
+            </BookConsultationButton>
             <a
               href="tel:+919523435814"
               className="mt-3 flex h-12 items-center justify-center gap-2 rounded-md border border-violet-200 bg-white px-5 text-sm font-black text-violet-800 transition hover:bg-violet-50"
@@ -727,102 +645,7 @@ function Header() {
               <X className="h-4 w-4" />
             </button>
             <h2 className="mb-4 text-2xl font-black text-[#272047]">Book Consultation</h2>
-            <form className="space-y-4" onSubmit={handleConsultationSubmit}>
-              <div>
-                <label className="block text-sm font-bold text-[#272047]">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={consultationForm.name}
-                  onChange={handleConsultationChange}
-                  className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-[#272047]">Phone</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={consultationForm.phone}
-                  onChange={handleConsultationChange}
-                  className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-[#272047]">Consultation Mode</label>
-                <select
-                  name="consultationMode"
-                  value={consultationForm.consultationMode}
-                  onChange={handleConsultationChange}
-                  className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                  required
-                >
-                  <option value="" disabled>Select Mode</option>
-                  <option value="online">Online Consultation</option>
-                  <option value="clinic">Clinic Visit</option>
-                </select>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-bold text-[#272047]">Date</label>
-                  <input
-                    type="date"
-                    name="preferredDate"
-                    value={consultationForm.preferredDate}
-                    onChange={handleConsultationChange}
-                    min={new Date().toISOString().split("T")[0]}
-                    className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-[#272047]">Time</label>
-                  <select
-                    name="preferredTime"
-                    value={consultationForm.preferredTime}
-                    onChange={handleConsultationChange}
-                    className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                    required
-                  >
-                    <option value="" disabled>Select Time</option>
-                    {timeSlots.map((slot) => (
-                      <option key={slot} value={slot}>
-                        {slot}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-[#272047]">Message</label>
-                <textarea
-                  rows="2"
-                  name="message"
-                  value={consultationForm.message}
-                  onChange={handleConsultationChange}
-                  className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
-                />
-              </div>
-              {consultationStatus.message ? (
-                <p
-                  className={`rounded-lg px-3 py-2 text-sm font-bold ${consultationStatus.type === "success"
-                    ? "bg-emerald-50 text-emerald-700"
-                    : "bg-red-50 text-red-700"
-                    }`}
-                >
-                  {consultationStatus.message}
-                </p>
-              ) : null}
-              <button
-                type="submit"
-                disabled={isSubmittingConsultation}
-                className="mt-2 w-full rounded-lg bg-[#8b43ba] px-4 py-2.5 text-[15px] font-black text-white shadow-[0_10px_18px_rgba(139,67,186,0.24)] transition hover:bg-[#7835a4] focus:outline-none focus:ring-2 focus:ring-[#8b43ba] focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-violet-300"
-              >
-                {isSubmittingConsultation ? "Submitting..." : "Submit Request"}
-              </button>
-            </form>
+            <BookConsultationForm />
           </div>
         </div>
       )}

@@ -5,6 +5,14 @@ import Navbar from './Navbar';
 import api from '../../api/axiosInstance';
 import { ADMIN_SETTINGS_EVENT, getAdminQuickOptions, saveAdminQuickOptions } from '../../utils/adminSettings';
 
+const getSubmittedTime = (item) => {
+  const submittedAt = new Date(item?.createdAt || item?.updatedAt || 0).getTime();
+  return Number.isNaN(submittedAt) ? 0 : submittedAt;
+};
+
+const sortNewestConsultations = (items = []) =>
+  [...items].sort((a, b) => getSubmittedTime(b) - getSubmittedTime(a));
+
 export default function AdminLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(() => getAdminQuickOptions().sidebarCollapsed);
@@ -26,7 +34,7 @@ export default function AdminLayout() {
         throw new Error(data.message || 'Failed to fetch consultation requests');
       }
 
-      const nextConsultations = data.data || [];
+      const nextConsultations = sortNewestConsultations(data.data || []);
       const nextIds = new Set(nextConsultations.map((item) => item._id));
 
       if (hasLoadedConsultations.current) {

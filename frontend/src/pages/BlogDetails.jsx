@@ -5,6 +5,7 @@ import {
   ArrowLeft, Clock, User, Calendar, Share2, Bookmark,
   Link2, ChevronDown, ChevronUp, Sparkles, BookOpen, AlertCircle
 } from 'lucide-react';
+import BookConsultationButton from '../components/BookConsultationButton';
 
 // Custom SVG Icons for Socials to avoid lucide-react version issues
 const FacebookIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>;
@@ -444,9 +445,9 @@ export default function BlogDetails() {
               <p className="mb-6 text-sm text-teal-50 font-medium leading-relaxed">
                 Book a 1:1 consultation with our experts and get a customized plan for your well-being.
               </p>
-              <a href="#consultation" className="inline-block w-full text-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-[#0F766E] transition hover:bg-teal-50 hover:shadow-md">
+              <BookConsultationButton className="inline-block w-full text-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-[#0F766E] transition hover:bg-teal-50 hover:shadow-md">
                 Book Consultation →
-              </a>
+              </BookConsultationButton>
             </div>
 
             {/* Related Articles */}

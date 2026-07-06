@@ -7,6 +7,7 @@ import {
   BrainCircuit,
   CheckCircle2,
   Edit2,
+  ExternalLink,
   FileSearch,
   FileText,
   Gauge,
@@ -1375,6 +1376,10 @@ function MetricCard({ label, value, color }) {
 }
 
 function SearchConsoleModal({ blog, configured, metrics, loading, error, onClose, onRefresh }) {
+  const pageUrl = blog.canonicalUrl || `https://manovaidya.org/blog/${blog.slug || ''}`;
+  const resourceId = encodeURIComponent('https://manovaidya.org/');
+  const inspectUrl = `https://search.google.com/search-console/inspect?resource_id=${resourceId}&id=${encodeURIComponent(pageUrl)}`;
+
   return (
     <ModalShell onClose={onClose} maxWidth="max-w-4xl">
       <div className="flex items-start justify-between border-b border-slate-200 bg-white p-5">
@@ -1394,15 +1399,26 @@ function SearchConsoleModal({ blog, configured, metrics, loading, error, onClose
       <div className="max-h-[calc(90vh-96px)] overflow-y-auto p-5">
         <div className="mb-5 flex flex-col gap-3 rounded-2xl border border-blue-100 bg-blue-50/50 p-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm font-bold text-slate-900">{configured ? 'Search Console connected' : 'Search Console not configured'}</p>
+            <p className="text-sm font-bold text-slate-900">{configured ? 'Search Console connected' : 'Search Console API credentials pending'}</p>
             <p className="mt-1 text-xs leading-5 text-slate-600">
-              {configured ? 'Use this for real indexed page metrics. It is separate from Gemini editorial scoring.' : 'Production domain property and Google credentials are needed before metrics can load.'}
+              {configured ? 'Use this for real indexed page metrics. It is separate from Gemini editorial scoring.' : 'Live Search Console can still be opened. API metrics need Google service account credentials on the backend.'}
             </p>
           </div>
-          <button type="button" onClick={onRefresh} disabled={!configured || loading} className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500">
-            <RefreshCw className="h-4 w-4" />
-            {loading ? 'Loading...' : metrics ? 'Refresh metrics' : 'Load metrics'}
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href={inspectUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-white px-4 py-2 text-sm font-semibold text-blue-700 hover:border-blue-300 hover:bg-blue-50"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Inspect URL
+            </a>
+            <button type="button" onClick={onRefresh} disabled={!configured || loading} className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500">
+              <RefreshCw className="h-4 w-4" />
+              {loading ? 'Loading...' : metrics ? 'Refresh metrics' : 'Load metrics'}
+            </button>
+          </div>
         </div>
 
         {error && <p className="mb-4 rounded-lg bg-red-100 p-3 text-sm text-red-700">{error}</p>}
@@ -1410,8 +1426,9 @@ function SearchConsoleModal({ blog, configured, metrics, loading, error, onClose
         {!configured ? (
           <div className="rounded-2xl border border-dashed border-blue-200 bg-blue-50/50 p-8 text-center">
             <Gauge className="mx-auto h-9 w-9 text-blue-600" />
-            <p className="mt-4 text-sm font-bold text-slate-900">Console data will appear after setup.</p>
-            <p className="mt-1 text-xs text-slate-500">Google cannot rank-track localhost pages. Configure the live property after deployment.</p>
+            <p className="mt-4 text-sm font-bold text-slate-900">API metrics will appear after credentials setup.</p>
+            <p className="mt-1 break-all text-xs text-slate-500">Live page: {pageUrl}</p>
+            <p className="mt-2 text-xs text-slate-500">Add Google service account credentials in backend env and give that service account access to the manovaidya.org Search Console property.</p>
           </div>
         ) : null}
 

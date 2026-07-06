@@ -18,6 +18,7 @@ import {
   Waves,
 } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
+import BookConsultationButton from "../components/BookConsultationButton";
 
 const categoriesData = [
   { name: "Autism", count: 12, Icon: Puzzle },
@@ -221,13 +222,12 @@ function BlogListingSection() {
             <p className="mt-2 text-[11px] font-medium leading-[1.55] text-slate-700">
               Our experts are here to help you understand your child's needs.
             </p>
-            <a
-              href="#consultation"
+            <BookConsultationButton
               className="mt-4 inline-flex h-10 items-center justify-center gap-2 rounded-md bg-[#8b43ba] px-5 text-[11px] font-extrabold text-white transition hover:bg-[#7835a4]"
             >
               <Sparkles className="h-3.5 w-3.5" />
               Book a Consultation
-            </a>
+            </BookConsultationButton>
           </div>
         </aside>
       </div>

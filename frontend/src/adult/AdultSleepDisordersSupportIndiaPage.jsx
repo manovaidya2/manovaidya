@@ -38,6 +38,7 @@ import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transpare
 import supportImage from "../images/healthy-sleep-support.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
+import BookConsultationButton from "../components/BookConsultationButton";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -852,12 +853,11 @@ function AdultSleepDisordersSupportIndiaPage() {
                   >
                     Take Mental Health Assessment
                   </a>
-                  <a
-                    href="/book-consultation"
+                  <BookConsultationButton
                     className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#8e45bb]"
                   >
                     Book Consultation
-                  </a>
+                  </BookConsultationButton>
                 </div>
               </div>
             </div>
@@ -1002,12 +1002,11 @@ function AdultSleepDisordersSupportIndiaPage() {
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
               Get a personalized plan for your emotional wellbeing from our experts.
             </p>
-            <a
-              href="tel:+917823894080"
+            <BookConsultationButton
               className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]"
             >
               Book Now
-            </a>
+            </BookConsultationButton>
             <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p>
           </SidebarCard>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, Eye, Target } from "lucide-react";
+import BookConsultationButton from "../components/BookConsultationButton";
 import familySunsetImage from "../images/mission-vision-family-sunset.png";
 
 function AboutManovaidyaMissionVisionSection() {
@@ -49,13 +50,12 @@ function AboutManovaidyaMissionVisionSection() {
             <span className="block">Beyond Labels.</span>
             <span className="block">Towards Meaningful Progress.</span>
           </h2>
-          <a
-            href="#consultation"
+          <BookConsultationButton
             className="mt-5 inline-flex h-11 w-full max-w-[260px] items-center justify-center gap-3 rounded-lg bg-white px-5 text-[13px] font-black text-[#4d238e] shadow-[0_12px_26px_rgba(17,8,40,0.22)] transition hover:-translate-y-0.5 sm:w-auto"
           >
             Book a Consultation
             <ArrowRight className="h-4 w-4" strokeWidth={2.4} />
-          </a>
+          </BookConsultationButton>
         </div>
       </div>
     </section>

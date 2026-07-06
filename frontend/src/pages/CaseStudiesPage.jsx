@@ -271,11 +271,20 @@ function CaseStudiesPage() {
                       </span>
                     </div>
                     <h3 className="mt-3 text-[17px] font-extrabold leading-[1.25] text-[#17201c]">
-                      {study.title}
+                      {study.slug ? (
+                        <Link to={`/case-studies/${study.slug}`} className="transition hover:text-[#8b43ba]">
+                          {study.title}
+                        </Link>
+                      ) : study.title}
                     </h3>
                     <p className="mt-2 line-clamp-3 text-[12px] font-medium leading-[1.6] text-[#65706a]">
                       {study.summary}
                     </p>
+                    {study.slug ? (
+                      <Link to={`/case-studies/${study.slug}`} className="mt-4 inline-flex text-[12px] font-black text-[#8b43ba]">
+                        Read Case Study
+                      </Link>
+                    ) : null}
 
                     {/* <ul className="mt-4 space-y-2.5">
                     {study.outcomes.map((outcome) => (

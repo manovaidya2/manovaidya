@@ -61,6 +61,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import SuccessStoriesPage from "./pages/SuccessStoriesPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
+import CaseStudyDetails from "./pages/CaseStudyDetails";
 import MediaPRPage from "./pages/MediaPRPage";
 
 function ScrollToTop() {
@@ -205,6 +206,7 @@ function App() {
           <Route path="/child-development-support-india/" element={<ChildDevelopmentSupportIndiaPage />} />
           <Route path="/success-stories" element={<SuccessStoriesPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route path="/media-coverage" element={<MediaPRPage />} />

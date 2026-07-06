@@ -26,6 +26,69 @@ const consultationTimes = [
 
 const reviewNote = "Consultation with Dr. Ankush Garg. Google rating 4.9/5 from positive patient reviews.";
 const clinicPhone = "7823838638";
+const consultationFee = "599";
+const opdNote = "Consultation fee is Rs. 599. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so please book your slot and complete payment to confirm it.";
+const medicineNote = "Medicine cost fixed nahi hoti. Har child/person, disease/condition aur symptoms alag hote hain, isliye Manovaidya me customized medicine di jati hai. Medicine condition details aur har symptom profile ke according banti hai. Exact medicine cost assessment ke baad team confirm karti hai.";
+
+const serviceReferences = [
+  ["Child Health Care", "/child-health-care"],
+  ["Autism Spectrum Disorder", "/autism-treatment-india"],
+  ["ADHD & Hyperactivity", "/child-health-care/adhd-child"],
+  ["Speech Delay Support", "/speech-delay-support-india"],
+  ["Learning Difficulties", "/learning-attention-difficulties-india"],
+  ["Behavioural Challenges", "/behavioural-concerns-children-india"],
+  ["Child Development Support", "/child-development-support-india"],
+  ["Teen Mental Wellness", "/teen-mental-wellness"],
+  ["Teen Stress & Anxiety", "/teen-stress-anxiety-support"],
+  ["Teen Depression & Low Mood", "/teen-depression-support"],
+  ["Exam & Academic Pressure", "/exam-performance-pressure"],
+  ["Low Confidence & Self-Esteem", "/teen-confidence-emotional-wellbeing"],
+  ["Screen Addiction & Digital Wellbeing", "/teen-screen-addiction-support"],
+  ["Parent-Teen Relationship Support", "/parent-teen-relationship-support"],
+  ["Adult Mental Health Care", "/adult-mental-wellness"],
+  ["Stress & Anxiety", "/anxiety-support-india"],
+  ["Depression", "/adult-depression-support"],
+  ["Burnout & Exhaustion", "/stress-burnout-support-india"],
+  ["Sleep Problems", "/sleep-disorders-insomnia-support-india"],
+  ["Self-Esteem & Confidence", "/low-self-esteem-confidence-support-india"],
+  ["Relationship Challenges", "/relationship-challenges-support-india"],
+  ["Addiction & Habit Concerns", "/addiction-unhealthy-habits-support-india"],
+  ["Senior Mind & Memory Care", "/senior-mind-memory-care"],
+  ["Memory Loss & Forgetfulness", "/memory-loss-forgetfulness-support-seniors-india/"],
+  ["Confusion & Disorientation", "/confusion-disorientation-support-seniors-india/"],
+  ["Mild Cognitive Impairment (MCI)", "/mild-cognitive-impairment-mci-support-seniors-india/"],
+  ["Dementia & Alzheimer", "/dementia-alzheimers-care-support-seniors-india/"],
+  ["Senior Depression Treatment & Support", "/senior-depression-support-india/"],
+  ["Senior Mood & Behaviour Changes", "/sleep-disorders-seniors-support-india/"],
+  ["Women Mental Health Concerns", "/women-health-care"],
+  ["Women Stress & Anxiety Support", "/women-stress-management-mind-body-balance-india/"],
+  ["Women Depression & Low Mood Support", "/women-depression-low-mood-support-india/"],
+  ["Hormonal Mood Changes, PMS & PMDD", "/women-hormonal-pms-pmdd-support-india/"],
+  ["Self-Esteem & Body Image Support", "/women-self-esteem-body-image-support-india/"],
+  ["Relationship & Emotional Challenges", "/women-relationship-emotional-wellbeing-support-india/"],
+  ["Pregnancy, Postpartum & Motherhood", "/women-pregnancy-postpartum-motherhood-mental-health-india/"],
+  ["Life Transitions & Career Pressure", "/women-life-transitions-career-pressure-support-india/"],
+  ["Mind & Body Concerns", "/mind-body-wellbeing"],
+  ["Stress & High Blood Pressure", "/stress-and-high-blood-pressure/"],
+  ["Stress IBS Support", "/stress-ibs-support-india/"],
+  ["Stress & Fatigue Support", "/stress-and-fatigue/"],
+  ["Stress & Digestive Health", "/stress-and-digestive-health/"],
+  ["Stress & Acidity Support", "/stress-and-acidity/"],
+  ["Stress & Migraine Support", "/stress-and-migraine/"],
+  ["Stress & Headaches Support", "/stress-and-headaches/"],
+  ["Stress & Thyroid Support", "/stress-and-thyroid/"],
+];
+
+const serviceReferenceText = serviceReferences
+  .map(([label, path]) => `${label}: ${path}`)
+  .join("\n");
+
+const resultSummary = {
+  rating: "4.9/5 average Google rating",
+  families: "1000+ happy families",
+  videos: "200+ video testimonials",
+  autism: "Autism care stories mention noticeable progress in communication and daily activities.",
+};
 
 const bookingSteps = [
   {
@@ -65,7 +128,115 @@ const bookingSteps = [
 const isBookingIntent = (value) =>
   /book|appointment|consultation|consult|doctor|schedule|call\s?back/i.test(value);
 
+const normalizeQuestion = (value) =>
+  String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\u0900-\u097f]+/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const hasAnyTerm = (value, terms) => terms.some((term) => value.includes(term));
+
+const isResultIntent = (value) =>
+  hasAnyTerm(value, [
+    "result",
+    "review",
+    "rating",
+    "feedback",
+    "success",
+    "testimonial",
+    "kaisa",
+    "kaisi",
+    "कैसा",
+    "कैसी",
+    "परिणाम",
+    "रिजल्ट",
+  ]);
+
+const isMedicineIntent = (value) =>
+  hasAnyTerm(value, [
+    "medicine",
+    "medicines",
+    "medication",
+    "dawa",
+    "dawai",
+    "दवा",
+    "दवाई",
+    "औषधि",
+    "ayurvedic medicine",
+    "cost of medicine",
+    "medicine cost",
+  ]);
+
+const getBookingQuestionAnswer = (question, currentPrompt) => {
+  const value = normalizeQuestion(question);
+  const isQuestionLike =
+    hasAnyTerm(value, ["kya", "kaun", "kon", "name", "naam", "doctor", "dr", "fee", "fees", "charge", "price", "cost", "medicine", "medicines", "dawa", "dawai", "phone", "number", "call", "rating", "review", "result", "online", "clinic", "कौन", "क्या", "नाम", "डॉक्टर", "दवा", "दवाई"]) ||
+    /[?؟]/.test(question);
+
+  if (!isQuestionLike) return "";
+
+  if (hasAnyTerm(value, ["doctor", "dr", "name", "naam", "kaun", "kon", "डॉक्टर", "नाम", "कौन"])) {
+    return `Doctor name: Dr. Ankush Garg.\n\n${currentPrompt}`;
+  }
+
+  if (hasAnyTerm(value, ["rating", "review", "google", "result", "feedback"])) {
+    return `${reviewNote}\n\nManovaidya confidence ke saath bolta hai ki consistent guidance aur follow-up ke baad progress/result dikhna start ho jata hai. Exact outcome person-to-person vary karta hai.\n\n${currentPrompt}`;
+  }
+
+  if (hasAnyTerm(value, ["phone", "number", "call", "mobile", "contact"])) {
+    return `You can call Manovaidya at ${clinicPhone}.\n\n${currentPrompt}`;
+  }
+
+  if (hasAnyTerm(value, ["online", "clinic", "mode", "visit"])) {
+    return `Consultation online aur clinic visit, dono mode me available hai. Noida OPD Tuesday, Thursday and Saturday ko hoti hai, aur slots limited rehte hain.\n\n${currentPrompt}`;
+  }
+
+  if (isMedicineIntent(value)) {
+    return `${medicineNote}\n\n${currentPrompt}`;
+  }
+
+  if (hasAnyTerm(value, ["fee", "fees", "charge", "price", "cost"])) {
+    return `Consultation fee Rs. ${consultationFee} hai. Slot limited rehte hain, isliye payment karke apna slot confirm karein.\n\n${currentPrompt}`;
+  }
+
+  return "";
+};
+
+const getExactLocalAnswer = (question) => {
+  const value = normalizeQuestion(question);
+  const asksAutism = hasAnyTerm(value, ["autism", "asd", "spectrum", "ऑटिज्म"]);
+  const asksGoogle = hasAnyTerm(value, ["google", "search", "rating", "review", "गूगल"]);
+  const asksResult = isResultIntent(value);
+
+  if (isMedicineIntent(value)) {
+    return medicineNote;
+  }
+
+  if (asksResult && asksAutism) {
+    return [
+      "Haan, Manovaidya confidence ke saath bolta hai ki consistent assessment, guidance, follow-up aur family involvement ke baad progress/result dikhna start ho jata hai. Autism Care Journey me communication aur daily activities me noticeable progress mention hai.",
+      `Available trust signals: ${resultSummary.rating}, ${resultSummary.families}, aur ${resultSummary.videos}.`,
+      "Exact result child ki age, symptoms, assessment findings, routine, family follow-up aur therapy consistency par depend karta hai. Fixed timeline ya same result sabke liye promise nahi hota; best next step structured consultation hai.",
+    ].join("\n\n");
+  }
+
+  if (asksGoogle || asksResult) {
+    return [
+      `Manovaidya ke visible trust signals: ${resultSummary.rating}, ${resultSummary.families}, aur ${resultSummary.videos}.`,
+      "Haan, Manovaidya confidence ke saath bolta hai ki consistent guidance aur follow-up ke baad positive progress/result dikhna start ho jata hai. Reviews/success stories positive experience dikhate hain, but exact medical or developmental outcomes person-to-person vary karte hain.",
+    ].join("\n\n");
+  }
+
+  return "";
+};
+
 const knowledgeBase = [
+  {
+    title: "Results, Reviews and Success Stories",
+    terms: ["result", "review", "rating", "success", "testimonial", "google", "kaisa"],
+    text: `Manovaidya highlights ${resultSummary.rating}, ${resultSummary.families}, and ${resultSummary.videos}. Autism care stories mention noticeable progress in communication and daily activities. Manovaidya confidently shares that with consistent assessment, guidance, follow-up and family involvement, progress or results often start becoming visible. Results can vary by child, condition, age, assessment findings, home routine, consistency and follow-up, so no fixed timeline or identical result is promised for everyone.`
+  },
   {
     title: "Autism Support",
     terms: ["autism", "asd", "spectrum", "eye", "speech", "social", "repetitive"],
@@ -83,8 +254,25 @@ const knowledgeBase = [
   },
   {
     title: "Consultation and Online Support",
-    terms: ["consultation", "book", "online", "appointment", "clinic", "assessment"],
-    text: "Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. Online consultations are available for many concerns, with assessment, history-taking, personalised guidance and follow-up planning. A consultation can help families understand the concern, decide the right support direction and create a practical care plan."
+    terms: ["consultation", "book", "online", "appointment", "clinic", "assessment", "fee", "slot", "opd"],
+    text: `Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. Consultation fee is Rs. ${consultationFee}. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it. Online consultations are available for many concerns, with assessment, history-taking, personalised guidance and follow-up planning. A consultation can help families understand the concern, decide the right support direction and create a practical care plan.`
+  },
+  {
+    title: "Customized Medicine Guidance",
+    terms: ["medicine", "medicines", "medication", "dawa", "dawai", "cost", "price", "symptom", "disease"],
+    text: "Medicine cost is not fixed. Every child/person, disease or condition, and symptom profile is different. Manovaidya provides customized medicine based on the child/person, disease or condition, and each symptom profile. Exact medicine cost is confirmed after assessment because it depends on the personalised medicine plan."
+  },
+  {
+    title: "Manovaidya Service Pages and References",
+    terms: [
+      "child", "autism", "adhd", "speech", "learning", "behaviour", "development",
+      "teen", "stress", "anxiety", "depression", "exam", "confidence", "screen", "parent",
+      "adult", "burnout", "sleep", "self esteem", "relationship", "addiction",
+      "senior", "memory", "confusion", "mci", "dementia", "alzheimer", "women",
+      "pcos", "pms", "pmdd", "postpartum", "pregnancy", "migraine", "ibs",
+      "fatigue", "digestive", "acidity", "headache", "thyroid", "blood pressure"
+    ],
+    text: `When a visitor asks about any Manovaidya service, condition, disease, symptoms, or related page, explain the concern briefly, mention Manovaidya support, and include the relevant page reference from this list when it matches:\n${serviceReferenceText}`
   },
   {
     title: "Teen, Adult, Women and Senior Mental Health",
@@ -201,7 +389,16 @@ const getRelevantChunks = async (question) => {
 
 async function askWebsiteAi(question) {
   const context = await getRelevantChunks(question);
-  const response = await api.post("/ai-chat", { question, context }, { timeout: 5500 });
+  const response = await api.post("/ai-chat", {
+    question,
+    context: [
+      "Answer rule: directly answer the visitor's exact question first. If the visitor asks about result, reviews, rating, Google result or success, do not explain the whole service first. Mention rating/success signals only if present in context. Say Manovaidya confidently shares that with consistent assessment, guidance, follow-up and family involvement, progress or results often start becoming visible, while exact outcomes vary person to person and no fixed timeline or identical result is promised for everyone.",
+      `Booking rule: consultation fee is Rs. ${consultationFee}. Noida OPD is available only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it.`,
+      `Medicine rule: ${medicineNote}`,
+      "Reference rule: if the visitor asks about a listed service, disease, condition, symptoms, or page, include the most relevant Manovaidya page reference from the supplied context.",
+      context,
+    ].join("\n\n"),
+  }, { timeout: 5500 });
   const answer = response.data?.data?.answer?.trim();
 
   if (!answer) {
@@ -212,6 +409,9 @@ async function askWebsiteAi(question) {
 }
 
 const getFastFallbackAnswer = (question) => {
+  const exactAnswer = getExactLocalAnswer(question);
+  if (exactAnswer) return exactAnswer;
+
   if (/autism|asd|spectrum/i.test(question)) {
     return "Manovaidya supports autism-related concerns through structured developmental assessment, personalised guidance and family-centred support.\n\nAutism concerns may include delayed speech, reduced eye contact, social communication difficulty, repetitive behaviours, sensory sensitivity, attention or behaviour challenges.\n\nThe care approach focuses on understanding the child as an individual: communication, behaviour, sensory needs, sleep, routines, family concerns and development stage.\n\nA consultation can help families understand what may be happening, what support direction is suitable, and how to plan the next steps with professional guidance.";
   }
@@ -266,6 +466,9 @@ function ConsultationCta() {
       </p>
       <p className="mt-1 text-[13px] font-bold leading-5 text-[#312448]">
         Need personalised guidance? Book a consultation or call our team.
+      </p>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#5f4d73]">
+        Rs. {consultationFee} consultation fee. OPD days: Tue, Thu, Sat. Limited slots.
       </p>
       <div className="mt-3 grid gap-2 sm:grid-cols-2">
         <button
@@ -334,7 +537,7 @@ function AiChatBot() {
     setBookingData({});
     setBookingStep(0);
     pushAssistantMessage(
-      `${reviewNote}\n\nI can help you book a consultation step by step.\n\n${bookingSteps[0].prompt}`
+      `${reviewNote}\n\n${opdNote}\n\nI can help you book a consultation step by step.\n\n${bookingSteps[0].prompt}`
     );
   };
 
@@ -359,6 +562,8 @@ function AiChatBot() {
       message: [
         `Location: ${data.location}`,
         "Consultation with: Dr. Ankush Garg",
+        `Consultation fee: Rs. ${consultationFee}`,
+        "OPD note: Noida OPD is available only on Tuesday, Thursday and Saturday. Slot confirmation requires payment.",
         "Source: AI chat assistant",
       ].join("\n"),
     });
@@ -368,6 +573,14 @@ function AiChatBot() {
     const step = bookingSteps[bookingStep];
     const value = String(rawValue || "").trim();
     if (!step || !value) return;
+
+    const bookingQuestionAnswer = getBookingQuestionAnswer(value, step.prompt);
+    if (bookingQuestionAnswer) {
+      setMessages((current) => [...current, { role: "user", text: value }]);
+      setQuestion("");
+      pushAssistantMessage(bookingQuestionAnswer);
+      return;
+    }
 
     if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {
       pushAssistantMessage("Please enter a valid 10 digit mobile number.");
@@ -397,7 +610,7 @@ function AiChatBot() {
       setBookingStep(null);
       setBookingData({});
       pushAssistantMessage(
-        `Your consultation request has been submitted successfully.\n\nDoctor: Dr. Ankush Garg\nMode: ${nextData.consultationMode === "clinic" ? "Clinic Visit" : "Online Consultation"}\nDate: ${nextData.preferredDate}\nTime: ${nextData.preferredTime}\n\nOur team will contact you shortly.`
+        `Your consultation request has been submitted successfully.\n\nDoctor: Dr. Ankush Garg\nConsultation fee: Rs. ${consultationFee}\nMode: ${nextData.consultationMode === "clinic" ? "Clinic Visit" : "Online Consultation"}\nDate: ${nextData.preferredDate}\nTime: ${nextData.preferredTime}\n\nNoida OPD Tuesday, Thursday and Saturday ko hoti hai. Slots limited rehte hain, so payment karke apna slot confirm karein.\n\nOur team will contact you shortly.`
       );
     } catch (error) {
       pushAssistantMessage(
@@ -424,6 +637,15 @@ function AiChatBot() {
 
     if (isBookingIntent(trimmedQuestion)) {
       startBookingFlow();
+      return;
+    }
+
+    const exactAnswer = getExactLocalAnswer(trimmedQuestion);
+    if (exactAnswer) {
+      setMessages((current) => [...current, { role: "assistant", text: exactAnswer, showCta: true }]);
+      window.setTimeout(() => {
+        chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 50);
       return;
     }
 

@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, CalendarDays, Plus, Sparkles } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
+import BookConsultationButton from "../components/BookConsultationButton";
 import childImage from "../images/child.png";
 import boyImage from "../images/boy.png";
 import scienceImage from "../images/science-neuro-ayurveda.png";
@@ -255,13 +256,12 @@ function InsightsFaqSection() {
             </div>
 
             <div className="grid gap-3">
-              <a
-                href="#consultation"
+              <BookConsultationButton
                 className="inline-flex items-center justify-center gap-3 rounded-lg bg-white px-5 py-3 text-[14px] font-black text-[#8B43BA] shadow-[0_10px_20px_rgba(43,16,87,0.16)] transition hover:bg-violet-50"
               >
                 <CalendarDays className="h-4 w-4" strokeWidth={2.3} />
                 Book Consultation
-              </a>
+              </BookConsultationButton>
               <a
                 href="#assessment"
                 className="inline-flex items-center justify-center gap-3 rounded-lg bg-white px-5 py-3 text-[14px] font-black text-[#8B43BA] shadow-[0_10px_20px_rgba(43,16,87,0.16)] transition hover:bg-violet-50"

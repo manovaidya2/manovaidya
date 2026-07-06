@@ -9,6 +9,7 @@ import blogRoutes from './routes/blogRoutes.js';
 import consultationRoutes from './routes/consultationRoutes.js';
 import aiChatRoutes from './routes/aiChatRoutes.js';
 import caseStudyRoutes from './routes/caseStudyRoutes.js';
+import sitemapRoutes from './routes/sitemapRoutes.js';
 
 
 
@@ -44,6 +45,8 @@ app.use('/api', blogRoutes);
 app.use('/api', consultationRoutes);
 app.use('/api', aiChatRoutes);
 app.use('/api', caseStudyRoutes);
+app.use('/api', sitemapRoutes);
+app.use('/', sitemapRoutes);
 
 
 

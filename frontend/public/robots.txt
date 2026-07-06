@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manovaidya.org/sitemap.xml
+Sitemap: https://manovaidya.org/sitemap-static.xml
+Sitemap: https://api.manovaidya.org/sitemap.xml

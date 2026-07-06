@@ -1,6 +1,7 @@
 import { google } from 'googleapis';
 
 const SEARCH_CONSOLE_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly';
+const DEFAULT_SITE_URL = 'https://manovaidya.org/';
 
 const parseServiceAccountCredentials = () => {
   const encodedCredentials = process.env.GOOGLE_SERVICE_ACCOUNT_BASE64;
@@ -44,25 +45,25 @@ const createSearchConsoleClient = async () => {
 };
 
 export const getSearchConsoleConfigStatus = () => ({
-  siteConfigured: Boolean(process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL),
+  siteConfigured: true,
   credentialsConfigured: Boolean(
     process.env.GOOGLE_SERVICE_ACCOUNT_JSON
     || process.env.GOOGLE_SERVICE_ACCOUNT_BASE64
     || process.env.GOOGLE_APPLICATION_CREDENTIALS
   ),
-  siteUrl: process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || null
+  siteUrl: process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL
 });
 
 export const getBlogPageUrl = (blog) => {
   if (blog.canonicalUrl) return blog.canonicalUrl;
-  const publicSiteUrl = process.env.PUBLIC_SITE_URL?.replace(/\/$/, '');
+  const publicSiteUrl = (process.env.PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, '');
   return publicSiteUrl && blog.slug ? `${publicSiteUrl}/blog/${blog.slug}` : null;
 };
 
 export const getSearchConsoleMetrics = async (blog, requestedDays = 28) => {
-  const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL;
-  if (!siteUrl) {
-    const error = new Error('GOOGLE_SEARCH_CONSOLE_SITE_URL is not configured.');
+  const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL;
+  if (!getSearchConsoleConfigStatus().credentialsConfigured) {
+    const error = new Error('Google service account credentials are not configured.');
     error.code = 'SEARCH_CONSOLE_NOT_CONFIGURED';
     throw error;
   }

@@ -7,6 +7,7 @@ import {
   UserRound,
   UsersRound,
 } from "lucide-react";
+import BookConsultationButton from "../components/BookConsultationButton";
 
 const trustItems = [
   {
@@ -54,13 +55,12 @@ function ApproachCtaSection() {
             </div>
           </div>
 
-          <a
-            href="#consultation"
+          <BookConsultationButton
             className="inline-flex h-14 shrink-0 items-center justify-center gap-3 rounded-[6px] bg-white px-9 text-[14px] font-extrabold text-[#5630b8] shadow-[0_8px_20px_rgba(20,10,60,0.14)] transition hover:bg-violet-50"
           >
             Book a Consultation
             <ArrowRight className="h-4 w-4" strokeWidth={2.4} />
-          </a>
+          </BookConsultationButton>
         </div>
 
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-6 lg:gap-8">
