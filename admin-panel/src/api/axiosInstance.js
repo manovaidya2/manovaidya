@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const API_ORIGIN = 'https://api.manovaidya.org';
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || `${API_ORIGIN}/api`;
+export const API_BASE_URL = `${API_ORIGIN}/api`;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
