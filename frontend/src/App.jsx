@@ -60,6 +60,7 @@ import ChildDevelopmentCareIndiaPage from "./childhealthcare/ChildDevelopmentCar
 import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import SuccessStoriesPage from "./pages/SuccessStoriesPage";
+import SuccessStoryVideosPage from "./pages/SuccessStoryVideosPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import CaseStudyDetails from "./pages/CaseStudyDetails";
 import MediaPRPage from "./pages/MediaPRPage";
@@ -205,6 +206,8 @@ function App() {
           <Route path="/child-development-support-india" element={<ChildDevelopmentSupportIndiaPage />} />
           <Route path="/child-development-support-india/" element={<ChildDevelopmentSupportIndiaPage />} />
           <Route path="/success-stories" element={<SuccessStoriesPage />} />
+          <Route path="/success-story-videos" element={<SuccessStoryVideosPage />} />
+          <Route path="/success-story-videos/" element={<SuccessStoryVideosPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
           <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
           <Route path="/blog" element={<BlogPage />} />
