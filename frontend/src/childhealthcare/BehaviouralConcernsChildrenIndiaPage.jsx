@@ -210,7 +210,7 @@ const relatedPages = [
   { title: "Autism Treatment in India", href: "/autism-treatment-india/" },
   { title: "ADHD Treatment in India", href: "/adhd-treatment-india/" },
   { title: "Speech Delay & Communication Support", href: "/speech-delay-support-india/" },
-  { title: "Child Development Support", href: "/child-development-support-india/" },
+  { title: "Child Development Treatment", href: "/child-development-support-india/" },
   { title: "Learning & Attention Difficulties", href: "/learning-attention-difficulties-india/" },
 ];
 
@@ -218,7 +218,7 @@ const internalLinks = [
   { title: "Learn more about Autism Treatment in India.", href: "/autism-treatment-india/" },
   { title: "Explore ADHD Treatment in India.", href: "/adhd-treatment-india/" },
   { title: "Explore Speech Delay & Communication Support in India.", href: "/speech-delay-support-india/" },
-  { title: "Explore Child Development Support in India.", href: "/child-development-support-india/" },
+  { title: "Explore Child Development Treatment in India.", href: "/child-development-support-india/" },
   { title: "Learn about Learning & Attention Difficulties Support.", href: "/learning-attention-difficulties-india/" },
   { title: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
   { title: "Understand the Neuro-Ayurveda Development System.", href: "/neuro-ayurveda-development-system/" },
@@ -770,10 +770,10 @@ function BehaviouralConcernsChildrenIndiaPage() {
               ))}
             </div>
             <p className="mt-5 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Behavioural Concerns Support, Behavioural Assessment and Family Guidance.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Behavioural Concerns Treatment, Behavioural Assessment and Family Guidance.
             </p>
             <p className="mt-3 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR and across India connect with Manovaidya for Behavioural Concerns Support, Behavioural Assessment and Family Guidance.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR and across India connect with Manovaidya for Behavioural Concerns Treatment, Behavioural Assessment and Family Guidance.
             </p>
           </section>
 

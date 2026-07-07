@@ -65,8 +65,8 @@ const introParagraphs = [
 const focusAreas = [
   "Child Development Assessment",
   "Developmental Delays",
-  "Autism Spectrum Support",
-  "ADHD Support",
+  "Autism Spectrum Treatment",
+  "ADHD Treatment",
   "Speech & Language Development",
   "Learning & Academic Challenges",
   "Behavioural Development",
@@ -151,7 +151,7 @@ const concernSections = [
     lead: "Children with autism may experience challenges such as:",
     items: ["Limited eye contact", "Delayed communication", "Repetitive behaviours", "Difficulty with social interaction", "Sensory sensitivities", "Preference for routines"],
     closing: "Every child with autism is unique, and abilities vary considerably from one child to another.",
-    link: "Learn More About Autism Support",
+    link: "Learn More About Autism Treatment",
   },
   {
     title: "Attention Deficit Hyperactivity Disorder (ADHD)",
@@ -159,7 +159,7 @@ const concernSections = [
     lead: "Some children may:",
     items: ["Find it difficult to stay focused", "Be easily distracted", "Act impulsively", "Have difficulty sitting still", "Forget instructions", "Struggle with organisation"],
     closing: "Professional assessment helps determine whether these behaviours are consistent with ADHD or other developmental factors.",
-    link: "Learn More About ADHD Support",
+    link: "Learn More About ADHD Treatment",
   },
   {
     title: "Speech & Language Delay",
@@ -330,8 +330,8 @@ const whyChoose = [
 ];
 
 const relatedPages = [
-  { title: "Autism Support", href: "/autism-treatment-india/" },
-  { title: "ADHD Support", href: "/adhd-treatment-india/" },
+  { title: "Autism Treatment", href: "/autism-treatment-india/" },
+  { title: "ADHD Treatment", href: "/adhd-treatment-india/" },
   { title: "Speech Delay", href: "/speech-delay-support-india/" },
   { title: "Learning Difficulties", href: "/learning-attention-difficulties-india/" },
   { title: "Behaviour Problems", href: "/behavioural-concerns-children-india/" },
@@ -400,7 +400,7 @@ function ChildDevelopmentCareIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Child Development Care in India | Child Development Assessment & Support | Manovaidya";
+    document.title = "Child Development Care in India | Child Development Assessment & Treatment | Manovaidya";
 
     const setMetaTag = (name, content) => {
       let tag = document.querySelector(`meta[name="${name}"]`);
@@ -432,7 +432,7 @@ function ChildDevelopmentCareIndiaPage() {
           "@type": "MedicalWebPage",
           name: "Child Development Care in India",
           description:
-            "Child development care, developmental milestones, assessments, autism, ADHD, speech delay, learning and behaviour support at Manovaidya.",
+            "Child development care, developmental milestones, assessments, autism, ADHD, speech delay, learning and behaviour treatment at Manovaidya.",
           url: `${window.location.origin}/child-development-care-india`,
           medicalAudience: "Parent",
         },
@@ -518,10 +518,10 @@ function ChildDevelopmentCareIndiaPage() {
                 Supporting Healthy Brain Development, Learning, Behaviour & Growth Through Every Stage of Childhood
               </p>
               <h1 className="mt-2 max-w-[680px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Child Development Care & Developmental Support for Children in India
+                Child Development Care & Developmental Treatment for Children in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Child Development Care & Neurodevelopment Support for Children in India
+                Child Development Care & Neurodevelopment Treatment for Children in India
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-assessment" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">
@@ -557,7 +557,7 @@ function ChildDevelopmentCareIndiaPage() {
                 Neuro-Ayurveda Development System
               </div>
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
-                <img src={childHeroImage} alt="Child development care and developmental support for children in India" className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]" />
+                <img src={childHeroImage} alt="Child development care and developmental treatment for children in India" className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]" />
               </div>
             </figure>
           </div>
@@ -587,7 +587,7 @@ function ChildDevelopmentCareIndiaPage() {
               Development in one area often influences progress in another. For example, communication challenges may affect social relationships, while sensory processing differences may influence behaviour, attention or participation in learning activities.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many parents searching for Child Development Care in India, Developmental Delay Support, Child Development Assessment, Autism Support, ADHD Support or Speech Delay Guidance are looking for answers to understand why their child is developing differently. Early understanding is an important first step toward providing appropriate guidance and support.
+              Many parents searching for Child Development Care in India, Developmental Delay Support, Child Development Assessment, Autism Treatment, ADHD Treatment or Speech Delay Guidance are looking for answers to understand why their child is developing differently. Early understanding is an important first step toward providing appropriate guidance and support.
             </p>
           </section>
 
@@ -775,7 +775,7 @@ function ChildDevelopmentCareIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Parents from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India consult Manovaidya for Child Development Assessments, Developmental Guidance, Autism Support, ADHD Support and comprehensive child development care through both online and in-clinic consultations.
+              Parents from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India consult Manovaidya for Child Development Assessments, Developmental Guidance, Autism Treatment, ADHD Treatment and comprehensive child development care through both online and in-clinic consultations.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
               Our aim is to help every child reach their potential while giving parents the clarity, confidence and support they need throughout the developmental journey.

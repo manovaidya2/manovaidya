@@ -9,13 +9,13 @@ import sleepImage from "../images/sleep-disorders-seniors-support-india.png";
 
 const relatedPages = [
   {
-    title: "Memory Loss & Forgetfulness Support",
+    title: "Memory Loss & Forgetfulness Treatment",
     description: "Memory changes, forgetfulness and healthy brain ageing support.",
     href: "/memory-loss-forgetfulness-support-seniors-india/",
     image: memoryImage,
   },
   {
-    title: "Confusion & Disorientation Support",
+    title: "Confusion & Disorientation Treatment",
     description: "Support for confusion, orientation and cognitive wellbeing.",
     href: "/confusion-disorientation-support-seniors-india/",
     image: confusionImage,
@@ -33,7 +33,7 @@ const relatedPages = [
     image: dementiaImage,
   },
   {
-    title: "Depression Support for Seniors",
+    title: "Depression Treatment for Seniors",
     description: "Low mood, emotional wellbeing and healthy ageing support.",
     href: "/senior-depression-support-india/",
     image: depressionImage,

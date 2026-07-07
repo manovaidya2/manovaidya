@@ -261,8 +261,8 @@ const trustItems = [
 
 const internalLinks = [
   { title: "Explore Senior Mental Health Care.", href: "/senior-mental-health-care/" },
-  { title: "Learn about Depression Support for Seniors.", href: "/senior-depression-support-india/" },
-  { title: "Understand Anxiety Support for Seniors.", href: "/senior-anxiety-support-india/" },
+  { title: "Learn about Depression Treatment for Seniors.", href: "/senior-depression-support-india/" },
+  { title: "Understand Anxiety Treatment for Seniors.", href: "/senior-anxiety-support-india/" },
   { title: "Explore Sleep Disorders in Seniors.", href: "/senior-sleep-disorders-support-india/" },
   { title: "Learn about Loneliness & Social Isolation Support.", href: "/senior-loneliness-social-isolation-support-india/" },
   { title: "Explore Healthy Ageing Support.", href: "/healthy-ageing-support-india/" },
@@ -272,16 +272,16 @@ const internalLinks = [
 
 const entityLinks = [
   "Senior Mental Health Care",
-  "Depression Support for Seniors",
-  "Anxiety Support for Seniors",
+  "Depression Treatment for Seniors",
+  "Anxiety Treatment for Seniors",
   "Sleep Disorders in Seniors",
   "Loneliness & Social Isolation Support",
   "Healthy Ageing Support",
   "Caregiver Support",
   "Future Senior Brain Health Cluster",
-  "Dementia Support",
+  "Dementia Treatment",
   "Alzheimer's Disease Support",
-  "Mild Cognitive Impairment (MCI) Support",
+  "Mild Cognitive Impairment \(MCI\) Treatment",
   "Cognitive Decline Support",
   "Brain Health for Seniors",
   "Senior Nutrition for Brain Health",
@@ -295,7 +295,7 @@ const keywordGroups = [
     items: [
       "Memory Loss",
       "Forgetfulness",
-      "Memory Loss Support",
+      "Memory Loss Treatment",
       "Senior Memory Loss",
       "Memory Problems in Elderly",
       "Memory Loss in Seniors",
@@ -404,11 +404,11 @@ const schemaGraph = [
   {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    name: "Memory Loss & Forgetfulness Support for Seniors in India",
+    name: "Memory Loss & Forgetfulness Treatment for Seniors in India",
     url: "https://www.manovaidya.com/memory-loss-forgetfulness-support-seniors-india/",
-    headline: "Memory Loss & Forgetfulness Support for Seniors in India",
+    headline: "Memory Loss & Forgetfulness Treatment for Seniors in India",
     description:
-      "Looking for Memory Loss & Forgetfulness Support for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya.",
+      "Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya.",
     about: ["Memory Loss", "Forgetfulness", "Cognitive Wellbeing", "Healthy Brain Ageing", "Dementia Awareness"],
     primaryImageOfPage: "memory-loss-forgetfulness-support-seniors-india.webp",
   },
@@ -427,7 +427,7 @@ const schemaGraph = [
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
       { "@type": "ListItem", position: 2, name: "Senior Mental Health Care", item: "https://www.manovaidya.com/senior-mental-health-care/" },
-      { "@type": "ListItem", position: 3, name: "Memory Loss & Forgetfulness Support", item: "https://www.manovaidya.com/memory-loss-forgetfulness-support-seniors-india/" },
+      { "@type": "ListItem", position: 3, name: "Memory Loss & Forgetfulness Treatment", item: "https://www.manovaidya.com/memory-loss-forgetfulness-support-seniors-india/" },
     ],
   },
   {
@@ -482,8 +482,8 @@ function MemoryLossForgetfulnessSupportPage() {
   }, []);
 
   React.useEffect(() => {
-    document.title = "Memory Loss & Forgetfulness Support for Seniors in India | Brain Health & Cognitive Wellbeing | Manovaidya";
-    const description = "Looking for Memory Loss & Forgetfulness Support for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya.";
+    document.title = "Memory Loss & Forgetfulness Treatment for Seniors in India | Brain Health & Cognitive Wellbeing | Manovaidya";
+    const description = "Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");
@@ -534,11 +534,11 @@ function MemoryLossForgetfulnessSupportPage() {
                 <span>/</span>
                 <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
                 <span>/</span>
-                <span className="text-[#4b345d]">Memory Loss & Forgetfulness Support</span>
+                <span className="text-[#4b345d]">Memory Loss & Forgetfulness Treatment</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Senior age</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Memory Loss & Forgetfulness Support for Seniors in India
+                Memory Loss & Forgetfulness Treatment for Seniors in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Seniors Understand Memory Changes, Forgetfulness & Cognitive Wellbeing
@@ -609,7 +609,7 @@ function MemoryLossForgetfulnessSupportPage() {
               <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>
             ))}
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Memory Loss & Forgetfulness Support Focuses On</h3>
+              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Memory Loss & Forgetfulness Treatment Focuses On</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   { label: "Memory Loss", Icon: Brain },
@@ -644,7 +644,7 @@ function MemoryLossForgetfulnessSupportPage() {
               "Memory is an important part of daily life. It helps us remember names, recognise faces, learn new information, manage daily activities and stay connected with family and friends.",
               "As people age, the brain naturally changes. Many seniors notice that recalling information may take slightly longer than it did in earlier years. Occasional forgetfulness is often considered a normal part of ageing and does not necessarily indicate a serious medical condition.",
               "However, when memory problems become frequent, interfere with daily life or continue worsening over time, they should be evaluated by a qualified healthcare professional.",
-              "Many families searching for Memory Loss Support in India, Forgetfulness in Seniors, Memory Problems in Elderly People or Healthy Brain Ageing are looking for reliable information to better understand these changes.",
+              "Many families searching for Memory Loss Treatment in India, Forgetfulness in Seniors, Memory Problems in Elderly People or Healthy Brain Ageing are looking for reliable information to better understand these changes.",
               "Recognising the difference between normal ageing and more significant memory problems helps families make informed decisions and seek appropriate support when needed.",
             ].map((text) => (
               <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>
@@ -873,7 +873,7 @@ function MemoryLossForgetfulnessSupportPage() {
               ))}
             </div>
             <h3 className="mt-6 text-[18px] font-black text-[#17111f]">Why Families Across India Trust Manovaidya</h3>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Memory Loss & Forgetfulness Support, Healthy Brain Ageing Guidance and Senior Mental Health Support through both online and in-clinic consultations.</p>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Memory Loss & Forgetfulness Treatment, Healthy Brain Ageing Guidance and Senior Mental Health Support through both online and in-clinic consultations.</p>
             <div className="mt-5 rounded-lg bg-[#fbf9fd] p-5">
               <h3 className="text-[16px] font-black text-[#21142d]">Why Trust Manovaidya?</h3>
               <BulletList items={trustItems} />
@@ -928,7 +928,7 @@ function MemoryLossForgetfulnessSupportPage() {
                     "Book Consultation",
                     "Speak With Our Team",
                     "Get Personalized Guidance",
-                    "Memory Loss & Forgetfulness Support",
+                    "Memory Loss & Forgetfulness Treatment",
                     "Healthy Brain Ageing Guidance",
                   ].map((step) => (
                     <li key={step} className="flex gap-2 text-[14px] font-bold">

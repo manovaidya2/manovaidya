@@ -32,7 +32,7 @@ const pageLinks = [
   { label: "Common Concerns", id: "common-concerns" },
   { label: "Beyond Milestones", id: "beyond-milestones" },
   { label: "Assessment", id: "assessment" },
-  { label: "Development Support", id: "development-support" },
+  { label: "Development Treatment", id: "development-support" },
   { label: "Neuro-Ayurveda System", id: "neuro-ayurveda-system" },
   { label: "How We Support", id: "how-we-support" },
   { label: "Parent Guidance", id: "parent-guidance" },
@@ -286,7 +286,7 @@ function ChildDevelopmentSupportIndiaPage() {
   }, []);
 
   React.useEffect(() => {
-    document.title = "Child Development Support in India | Developmental Assessment & Family Guidance | Manovaidya";
+    document.title = "Child Development Treatment in India | Developmental Assessment & Family Guidance | Manovaidya";
 
     const setMetaTag = (name, content) => {
       let tag = document.querySelector(`meta[name="${name}"]`);
@@ -300,7 +300,7 @@ function ChildDevelopmentSupportIndiaPage() {
 
     setMetaTag(
       "description",
-      "Looking for Child Development Support in India? Learn about developmental assessment, communication, learning and behaviour support through the Neuro-Ayurveda Development System at Manovaidya."
+      "Looking for Child Development Treatment in India? Learn about developmental assessment, communication, learning and behaviour treatment through the Neuro-Ayurveda Development System at Manovaidya."
     );
 
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -316,9 +316,9 @@ function ChildDevelopmentSupportIndiaPage() {
       "@graph": [
         {
           "@type": "MedicalWebPage",
-          name: "Child Development Support in India",
+          name: "Child Development Treatment in India",
           description:
-            "Developmental assessment, communication, learning and behaviour support through the Neuro-Ayurveda Development System.",
+            "Developmental assessment, communication, learning and behaviour treatment through the Neuro-Ayurveda Development System.",
           url: `${window.location.origin}/child-development-support-india`,
           medicalAudience: "Parent",
         },
@@ -334,7 +334,7 @@ function ChildDevelopmentSupportIndiaPage() {
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
             { "@type": "ListItem", position: 2, name: "Child Development Care", item: `${window.location.origin}/child-health-care` },
-            { "@type": "ListItem", position: 3, name: "Child Development Support in India", item: `${window.location.origin}/child-development-support-india` },
+            { "@type": "ListItem", position: 3, name: "Child Development Treatment in India", item: `${window.location.origin}/child-development-support-india` },
           ],
         },
         {
@@ -398,13 +398,13 @@ function ChildDevelopmentSupportIndiaPage() {
                 <span>/</span>
                 <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a>
                 <span>/</span>
-                <span className="text-[#4b345d]">Child Development Support in India</span>
+                <span className="text-[#4b345d]">Child Development Treatment in India</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">
                 Developmental Assessment, Guidance & Family Support
               </p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Child Development Support in India
+                Child Development Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Developmental assessment, communication guidance, family support and long-term child development planning through the Neuro-Ayurveda Development System.
@@ -478,7 +478,7 @@ function ChildDevelopmentSupportIndiaPage() {
               Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System designed to help families better understand developmental concerns and create a clear roadmap for growth, learning and overall development.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Families searching for Child Development Support in India, Developmental Assessment, Child Development Specialist in India or Developmental Guidance often seek clarity regarding their child's strengths, challenges and future developmental needs. Our goal is to provide personalized guidance, structured assessment and long-term developmental support.
+              Families searching for Child Development Treatment in India, Developmental Assessment, Child Development Specialist in India or Developmental Guidance often seek clarity regarding their child's strengths, challenges and future developmental needs. Our goal is to provide personalized guidance, structured assessment and long-term developmental support.
             </p>
           </section>
 
@@ -580,9 +580,9 @@ function ChildDevelopmentSupportIndiaPage() {
           </section>
 
           <section id="development-support" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Child Development Support in India</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">Child Development Treatment in India</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many families searching for Child Development Support in India are looking for more than temporary solutions. They are looking for clarity, direction and a structured developmental roadmap.
+              Many families searching for Child Development Treatment in India are looking for more than temporary solutions. They are looking for clarity, direction and a structured developmental roadmap.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
               Child development may be influenced by:
@@ -712,7 +712,7 @@ function ChildDevelopmentSupportIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Child Development Support, Developmental Assessment and Family Guidance.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Child Development Treatment, Developmental Assessment and Family Guidance.
             </p>
           </section>
 
@@ -769,7 +769,7 @@ function ChildDevelopmentSupportIndiaPage() {
               <div className="p-5">
                 <h2 className="text-[20px] font-black text-[#17111f]">Book a Consultation</h2>
                 <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">
-                  If you are looking for Child Development Support in India, Developmental Assessment, Communication Guidance or personalized developmental support, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+                  If you are looking for Child Development Treatment in India, Developmental Assessment, Communication Guidance or personalized developmental support, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
                 </p>
                 <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">
                   Through a structured assessment and personalized guidance process, families can gain a clearer understanding of their child's developmental needs and explore appropriate next steps for long-term growth, learning and development.

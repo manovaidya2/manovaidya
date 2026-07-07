@@ -262,11 +262,11 @@ function StressBurnoutSupportPage() {
                 <span>/</span>
                 <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
                 <span>/</span>
-                <span className="text-[#4b345d]">Stress & Burnout Support</span>
+                <span className="text-[#4b345d]">Stress & Burnout Treatment</span>
               </nav>
-              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Support</p>
+              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Treatment</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Stress & Burnout Support in India
+                Stress & Burnout Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Adults Better Understand Chronic Stress, Workplace Burnout, Emotional Exhaustion & Mental Wellbeing
@@ -319,7 +319,7 @@ function StressBurnoutSupportPage() {
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
                 <img
                   src={heroImage}
-                  alt="Stress and Burnout Support in India at Manovaidya"
+                  alt="Stress and Burnout Treatment in India at Manovaidya"
                   className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]"
                 />
               </div>
@@ -344,7 +344,7 @@ function StressBurnoutSupportPage() {
             </p>
 
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Stress & Burnout Support Focuses On:</h3>
+              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Stress & Burnout Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   { label: "Chronic Stress", Icon: Activity },
@@ -419,7 +419,7 @@ function StressBurnoutSupportPage() {
               Burnout does not happen overnight. It usually develops gradually when stress continues without sufficient recovery, healthy routines or emotional support.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many adults searching for Stress Support in India, Burnout Support, Workplace Burnout or Chronic Stress are looking for answers because they have noticed persistent exhaustion that is affecting their daily lives. Understanding the difference between temporary stress and long-term burnout is an important step towards choosing appropriate support.
+              Many adults searching for Stress Treatment in India, Burnout Support, Workplace Burnout or Chronic Stress are looking for answers because they have noticed persistent exhaustion that is affecting their daily lives. Understanding the difference between temporary stress and long-term burnout is an important step towards choosing appropriate support.
             </p>
           </section>
 
@@ -614,7 +614,7 @@ function StressBurnoutSupportPage() {
                 <Stethoscope className="h-5 w-5" />
               </span>
               <div>
-                <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Approach to Stress & Burnout Support</h2>
+                <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Approach to Stress & Burnout Treatment</h2>
               </div>
             </div>
 
@@ -774,7 +774,7 @@ function StressBurnoutSupportPage() {
             <div>
               <h2 className="text-[20px] font-black text-[#17111f]">Why Adults Across India Choose Manovaidya</h2>
               <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Stress & Burnout Support, Workplace Stress Guidance and Emotional Wellbeing Support through online and in-clinic consultations.
+                Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Stress & Burnout Treatment, Workplace Stress Guidance and Emotional Wellbeing Support through online and in-clinic consultations.
               </p>
               <div className="mt-3 rounded-lg bg-[#f4ecf8] p-4">
                 <p className="text-[13px] font-bold text-[#3b2e45] mb-2">Our support focuses on:</p>
@@ -899,8 +899,8 @@ function StressBurnoutSupportPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalWebPage",
-                "name": "Stress & Burnout Support in India",
-                "description": "Looking for Stress & Burnout Support in India? Learn about chronic stress, workplace burnout, emotional exhaustion and the Neuro-Ayurveda approach at Manovaidya.",
+                "name": "Stress & Burnout Treatment in India",
+                "description": "Looking for Stress & Burnout Treatment in India? Learn about chronic stress, workplace burnout, emotional exhaustion and the Neuro-Ayurveda approach at Manovaidya.",
                 "url": "https://manovaidya.com/stress-burnout-support-india/"
               })
             }}
@@ -944,7 +944,7 @@ function StressBurnoutSupportPage() {
                   {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "Stress & Burnout Support",
+                    "name": "Stress & Burnout Treatment",
                     "item": "https://manovaidya.com/stress-burnout-support-india/"
                   }
                 ]

@@ -32,7 +32,7 @@ const relatedPages = [
     image: childHeroImage,
   },
   {
-    title: "Child Development Support in India",
+    title: "Child Development Treatment in India",
     href: "/child-development-support-india",
     image: supportFamilyImage,
   },

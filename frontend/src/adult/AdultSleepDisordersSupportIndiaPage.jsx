@@ -263,7 +263,7 @@ function AdultSleepDisordersSupportIndiaPage() {
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Sleep Disorders & Insomnia Support</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Sleep Disorders & Insomnia Support in India
+                Sleep Disorders & Insomnia Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Adults Better Understand Sleep Problems, Insomnia, Poor Sleep Quality & Healthy Sleep
@@ -316,7 +316,7 @@ function AdultSleepDisordersSupportIndiaPage() {
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
                 <img
                   src={heroImage}
-                  alt="Sleep Disorders and Insomnia Support in India at Manovaidya"
+                  alt="Sleep Disorders and Insomnia Treatment in India at Manovaidya"
                   className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]"
                 />
               </div>
@@ -338,7 +338,7 @@ function AdultSleepDisordersSupportIndiaPage() {
             </p>
             
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Sleep Support Focuses On:</h3>
+              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Sleep Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {sleepHighlights.map(({ label, Icon }) => (
                   <li key={label} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
@@ -370,7 +370,7 @@ function AdultSleepDisordersSupportIndiaPage() {
               However, when sleep difficulties become frequent or persistent, they may begin affecting emotional wellbeing, physical health and daily functioning.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many adults searching for Sleep Disorders Support in India, Insomnia Support, Difficulty Sleeping or Poor Sleep Quality are looking for answers because they have been struggling with ongoing sleep problems that interfere with everyday life.
+              Many adults searching for Sleep Disorders Treatment in India, Insomnia Support, Difficulty Sleeping or Poor Sleep Quality are looking for answers because they have been struggling with ongoing sleep problems that interfere with everyday life.
             </p>
 
             <h3 className="mt-6 font-black text-[16px] text-[#21142d]">What Is Insomnia?</h3>
@@ -870,8 +870,8 @@ function AdultSleepDisordersSupportIndiaPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalWebPage",
-                "name": "Sleep Disorders & Insomnia Support in India",
-                "description": "Looking for Sleep Disorders & Insomnia Support in India? Learn about insomnia, poor sleep, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya.",
+                "name": "Sleep Disorders & Insomnia Treatment in India",
+                "description": "Looking for Sleep Disorders & Insomnia Treatment in India? Learn about insomnia, poor sleep, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya.",
                 "url": "https://manovaidya.com/sleep-disorders-insomnia-support-india/"
               })
             }}

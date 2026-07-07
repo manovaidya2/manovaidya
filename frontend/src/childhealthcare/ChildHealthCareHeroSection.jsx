@@ -57,7 +57,7 @@ function ChildHealthCareHeroSection() {
               <h1 className="mt-4 text-[39px] font-bold leading-[1.08] sm:text-[49px] lg:text-[46px] xl:text-[46px]">
                 <span className="text-[#18181b]">Child Health Care &amp;</span>
                 <br />
-                <span className="text-[#8B43BA]">Development Support in India</span>
+                <span className="text-[#8B43BA]">Development Treatment in India</span>
               </h1>
 
               <h2 className="mt-4 max-w-[610px] text-[17px] font-black leading-[1.45] text-[#18181b] sm:text-[19px]">

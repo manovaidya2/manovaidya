@@ -60,7 +60,7 @@ const introParagraphs = [
   "Every child develops at a different pace. However, when communication milestones are significantly delayed or a child experiences persistent difficulties in understanding, expressing or using language, parents often start searching for answers, guidance and support.",
   "At Manovaidya, Speech Delay and Communication Challenges are understood through a broader developmental perspective. Communication development is closely connected with attention, learning, behaviour, social interaction, sensory processing and overall child development.",
   "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System designed to help families better understand developmental needs and create a clear roadmap for communication growth and overall development.",
-  "Whether parents are searching for Speech Delay Support in India, Communication Development Support, Child Development Guidance or developmental assessment, Our approach also focuses on supporting overall Child Development, communication growth, learning readiness and social interaction through a structured developmental framework.",
+  "Whether parents are searching for Speech Delay Treatment in India, Communication Development Support, Child Development Guidance or developmental assessment, Our approach also focuses on supporting overall Child Development, communication growth, learning readiness and social interaction through a structured developmental framework.",
 ];
 
 const speechDelayNotices = [
@@ -206,7 +206,7 @@ const whyChoose = [
 const relatedPages = [
   { title: "Autism Treatment in India", href: "/autism-treatment-india" },
   { title: "ADHD Treatment in India", href: "/child-health-care/adhd-child" },
-  { title: "Child Development Support", href: "/child-health-care" },
+  { title: "Child Development Treatment", href: "/child-health-care" },
   { title: "Behavioural Concerns in Children", href: "/child-health-care/behavioural-concerns-children-india" },
   { title: "Learning & Attention Difficulties", href: "/child-health-care/learning-attention-difficulties-india" },
 ];
@@ -304,7 +304,7 @@ function SpeechDelaySupportIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Speech Delay Support in India | Communication Development & Assessment | Manovaidya";
+    document.title = "Speech Delay Treatment in India | Communication Development & Assessment | Manovaidya";
 
     const setMetaTag = (name, content) => {
       let tag = document.querySelector(`meta[name="${name}"]`);
@@ -318,7 +318,7 @@ function SpeechDelaySupportIndiaPage() {
 
     setMetaTag(
       "description",
-      "Looking for Speech Delay Support in India? Learn about communication development, speech assessment and child development support through the Neuro-Ayurveda Development System at Manovaidya."
+      "Looking for Speech Delay Treatment in India? Learn about communication development, speech assessment and child development support through the Neuro-Ayurveda Development System at Manovaidya."
     );
 
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -334,7 +334,7 @@ function SpeechDelaySupportIndiaPage() {
       "@graph": [
         {
           "@type": "MedicalWebPage",
-          name: "Speech Delay Support in India",
+          name: "Speech Delay Treatment in India",
           description:
             "Speech development assessment, communication guidance and child development support through the Neuro-Ayurveda Development System.",
           url: `${window.location.origin}/speech-delay-support-india`,
@@ -354,7 +354,7 @@ function SpeechDelaySupportIndiaPage() {
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
             { "@type": "ListItem", position: 2, name: "Child Health Care", item: `${window.location.origin}/child-health-care` },
-            { "@type": "ListItem", position: 3, name: "Speech Delay Support in India", item: `${window.location.origin}/speech-delay-support-india` },
+            { "@type": "ListItem", position: 3, name: "Speech Delay Treatment in India", item: `${window.location.origin}/speech-delay-support-india` },
           ],
         },
         {
@@ -626,9 +626,9 @@ function SpeechDelaySupportIndiaPage() {
           </section>
 
           <section id="looking-beyond-words" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">Speech Delay Support in India: Looking Beyond Words</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">Speech Delay Treatment in India: Looking Beyond Words</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Many parents searching for Speech Delay Support in India are often looking for ways to help their child speak more words.
+              Many parents searching for Speech Delay Treatment in India are often looking for ways to help their child speak more words.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
               While speech development is important, communication growth often involves much more.
@@ -792,7 +792,7 @@ function SpeechDelaySupportIndiaPage() {
               ))}
             </div>
             <p className="mt-5 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Speech Delay Support, Communication Development Guidance and Child Development Support.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Speech Delay Treatment, Communication Development Guidance and Child Development Support.
             </p>
           </section>
 
@@ -867,7 +867,7 @@ function SpeechDelaySupportIndiaPage() {
               <div className="p-7 lg:p-10">
                 <h2 className="text-[24px] font-black">Book a Consultation</h2>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                  If you are looking for Speech Delay Support in India, Communication Development Guidance, Child Development Assessment or personalized developmental support, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+                  If you are looking for Speech Delay Treatment in India, Communication Development Guidance, Child Development Assessment or personalized developmental support, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
                 </p>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
                   Through a structured assessment and personalized guidance process, families can gain a clearer understanding of their child's communication needs and explore appropriate next steps for long-term growth and development.

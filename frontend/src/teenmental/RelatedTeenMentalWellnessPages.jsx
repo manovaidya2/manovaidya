@@ -9,13 +9,13 @@ import relationshipImage from "../images/teen-family-support.png";
 
 const relatedPages = [
   {
-    title: "Teen Stress & Anxiety Support",
+    title: "Teen Stress & Anxiety Treatment",
     description: "Stress, worry, overthinking and daily pressure support.",
     href: "/teen-stress-anxiety-support",
     image: stressImage,
   },
   {
-    title: "Teen Depression & Low Mood Support",
+    title: "Teen Depression & Low Mood Treatment",
     description: "Low mood, sadness, loneliness and emotional heaviness.",
     href: "/teen-depression-support",
     image: depressionImage,
@@ -33,13 +33,13 @@ const relatedPages = [
     image: confidenceImage,
   },
   {
-    title: "Teen Screen Addiction Support",
+    title: "Teen Screen Addiction Treatment",
     description: "Screen use, gaming habits and digital wellbeing.",
     href: "/teen-screen-addiction-support",
     image: screenImage,
   },
   {
-    title: "Parent-Teen Relationship Support",
+    title: "Parent-Teen Relationship Treatment",
     description: "Communication, trust and emotional connection at home.",
     href: "/parent-teen-relationship-support",
     image: relationshipImage,

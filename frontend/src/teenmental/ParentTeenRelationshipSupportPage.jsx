@@ -56,7 +56,7 @@ const sections = [
       "Many parents notice that their teenager has become quieter, more argumentative, emotionally distant or less willing to share their thoughts. Some teenagers may spend more time alone, react strongly to simple conversations or become frustrated when parents try to offer advice. These situations often leave parents wondering whether such changes are a normal part of adolescence or a sign that their child needs additional support.",
       "At Manovaidya, we understand that a healthy parent-teen relationship is one of the strongest foundations for emotional wellbeing, confidence and long-term development. Good communication, trust and mutual understanding help teenagers navigate challenges more effectively while also helping parents provide guidance in a supportive way.",
       "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps families better understand teenage behaviour, emotional wellbeing and family dynamics while supporting stronger relationships and healthier communication.",
-      "At Manovaidya, Parent-Teen Relationship Support Focuses On:",
+      "At Manovaidya, Parent-Teen Relationship Treatment Focuses On:",
       "✔ Parent-Teen Communication",
       "✔ Teenage Behaviour Challenges",
       "✔ Emotional Connection",
@@ -74,7 +74,7 @@ const sections = [
       "This change is often confusing for families.",
       "Parents may feel that their teenager no longer listens to them, while teenagers may feel that they are not being understood.",
       "In reality, both parents and teenagers are adjusting to a new stage of life.",
-      "Many families searching for Parent-Teen Relationship Support in India, Parenting Teenagers or Teen Behaviour Support are looking for practical ways to improve communication and rebuild trust.",
+      "Many families searching for Parent-Teen Relationship Treatment in India, Parenting Teenagers or Teen Behaviour Support are looking for practical ways to improve communication and rebuild trust.",
       "Healthy relationships during adolescence are not built by controlling teenagers. They are built through understanding, respect, communication and consistent emotional support.",
       "Teenagers who experience healthy family relationships often feel more comfortable discussing their worries, asking for guidance and navigating life's challenges.",
       "Strong relationships also help teenagers develop confidence, emotional resilience and better decision-making skills."
@@ -192,7 +192,7 @@ const sections = [
     ]
   },
   {
-    "title": "The Neuro-Ayurveda Approach to Parent-Teen Relationship Support",
+    "title": "The Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment",
     "id": "neuro-ayurveda-approach",
     "lines": [
       "At Manovaidya, we understand that relationship challenges are rarely caused by one person alone.",
@@ -345,7 +345,7 @@ const sections = [
     "title": "Why Families Across India Connect With Manovaidya",
     "id": "why-families-across-india-connect-with-manovaidya",
     "lines": [
-      "Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Parent-Teen Relationship Support, Teen Behaviour Guidance and Family Communication Support through both online and in-clinic consultations."
+      "Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Parent-Teen Relationship Treatment, Teen Behaviour Guidance and Family Communication Support through both online and in-clinic consultations."
     ]
   },
   {
@@ -443,7 +443,7 @@ const faqs = [
     "answer": "Parents may consider seeking guidance when communication becomes difficult, arguments become frequent, trust breaks down or emotional wellbeing is affected. A structured assessment can help families better understand challenges and identify practical solutions."
   }
 ];
-const seoNotes = "STEP 1: URL\nFinal URL:\n/parent-teen-relationship-support/\n\n\nSTEP 2: SEO TITLE\nFinal:\nParent-Teen Relationship Support in India | Teen Behaviour & Family Guidance | Manovaidya\n\n\nSTEP 3: META DESCRIPTION\nLooking for Parent-Teen Relationship Support in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.\n\n\nSTEP 4: H1\nParent-Teen Relationship Support in India\n\nOnly one H1.\n\nSTEP 5: H2 STRUCTURE\nUnderstanding Parent-Teen Relationships\n\nCommon Parent-Teen Relationship Challenges\n\nWhy Teenagers Become Distant From Parents\n\nHow Parent-Teen Relationship Challenges Affect Teenagers\n\nThe Neuro-Ayurveda Approach to Parent-Teen Relationship Support\n\nHow Parents Can Build Stronger Relationships With Teenagers\n\nHow Manovaidya Supports Families\n\nWhy Families Choose Manovaidya\n\nAbout Dr. Ankush Garg\n\nFrequently Asked Questions\n\nBook a Consultation\n\n\nSTEP 6: PRIMARY KEYWORDS\nNatural placement throughout page:\nParent Teen Relationship Support\n\nParent Teen Relationship Support in India\n\nTeen Behaviour Support\n\nTeen Communication Problems\n\nTeen Behaviour Problems\n\nTeen Relationship With Parents\n\nTeen Parenting Support\n\nFamily Relationship Support\n\n\nSTEP 7: SECONDARY KEYWORDS\nTeenage Anger\n\nTeenage Attitude Problems\n\nParent Child Communication\n\nParent Teen Trust Issues\n\nTeen Emotional Support\n\nTeen Behaviour Challenges\n\nParenting Teenagers\n\nTeen Family Problems\n\n\nSTEP 8: LOCAL SEO SIGNAL\nAdd after:\nWhy Families Across India Connect With Manovaidya\nFamilies from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Parent-Teen Relationship Support, Teen Behaviour Guidance and Family Communication Support through online and in-clinic consultations.\n\n\nSTEP 9: ABOUT DR. ANKUSH GARG\nAdd:\nBased in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.\n\n\nSTEP 10: IMAGE SEO\nHero Image\nFile Name\nparent-teen-relationship-support-india.webp\n\nALT\nParent Teen Relationship Support in India at Manovaidya\n\n\nCommunication Image\nFile Name\nparent-teen-communication-support.webp\n\nALT\nParent teen communication and trust building support\n\n\nNeuro-Ayurveda Image\nFile Name\nneuro-ayurveda-family-support.webp\n\nALT\nNeuro Ayurveda approach for parent teen relationship support\n\n\nCTA Image\nFile Name\nfamily-relationship-support-india.webp\n\nALT\nFamily relationship and teen behaviour support in India\n\n\nSTEP 11: INTERNAL LINKS\nTeen Mental Wellness Parent Page\nAnchor:\nLearn more about Teen Mental Wellness Support.\n\nLink:\n/teen-mental-wellness-india/\n\n\nTeen Stress & Anxiety Page\nAnchor:\nExplore Teen Stress & Anxiety Support.\n\nLink:\n/teen-stress-anxiety-support/\n\n\nTeen Depression Page\nAnchor:\nLearn about Teen Depression & Low Mood Support.\n\nLink:\n/teen-depression-support/\n\n\nTeen Confidence Page\nAnchor:\nExplore Teen Confidence & Emotional Wellbeing Support.\n\nLink:\n/teen-confidence-emotional-wellbeing/\n\n\nTeen Screen Addiction Page\nAnchor:\nUnderstand Teen Screen Addiction Support.\n\nLink:\n/teen-screen-addiction-support/\n\n\nDr. Ankush Garg Page\nAnchor:\nKnow more about Dr. Ankush Garg.\n\nLink:\n/dr-ankush-garg/\n\n\nSTEP 12: FAQ SCHEMA\nDeveloper ko bolo:\n15 FAQs ko FAQ Schema (JSON-LD) mein convert kare.\n\n\nSTEP 13: BREADCRUMB\nHome\n\n>\n\nTeen Mental Wellness\n\n>\n\nParent-Teen Relationship Support\n\n\nSTEP 14: RELATED PAGES SECTION\nRelated Teen Mental Wellness Pages\n\nTeen Stress & Anxiety Support\n\nTeen Depression & Low Mood Support\n\nExam & Performance Pressure Support\n\nTeen Confidence & Emotional Wellbeing\n\nTeen Screen Addiction Support\n\n\nSTEP 15: CTA SECTION\nHeading:\nConcerned About Your Relationship With Your Teenager?\n\nText:\nBook a structured assessment and personalized guidance session with the Manovaidya team.\n\nButtons:\nBook Consultation\n\nTake Teen Wellness Assessment\n\n\nSTEP 16: SCHEMA (IMPORTANT)\nDeveloper ko bolna:\nAdd:\nMedicalWebPage Schema\n\nAdd:\nFAQ Schema\n\nAdd:\nBreadcrumb Schema\n\nAdd:\nPhysician Schema (Dr Ankush Garg)\n\nYe 4 schemas Teen cluster ke har page mein hone chahiye.";
+const seoNotes = "STEP 1: URL\nFinal URL:\n/parent-teen-relationship-support/\n\n\nSTEP 2: SEO TITLE\nFinal:\nParent-Teen Relationship Treatment in India | Teen Behaviour & Family Guidance | Manovaidya\n\n\nSTEP 3: META DESCRIPTION\nLooking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.\n\n\nSTEP 4: H1\nParent-Teen Relationship Treatment in India\n\nOnly one H1.\n\nSTEP 5: H2 STRUCTURE\nUnderstanding Parent-Teen Relationships\n\nCommon Parent-Teen Relationship Challenges\n\nWhy Teenagers Become Distant From Parents\n\nHow Parent-Teen Relationship Challenges Affect Teenagers\n\nThe Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment\n\nHow Parents Can Build Stronger Relationships With Teenagers\n\nHow Manovaidya Supports Families\n\nWhy Families Choose Manovaidya\n\nAbout Dr. Ankush Garg\n\nFrequently Asked Questions\n\nBook a Consultation\n\n\nSTEP 6: PRIMARY KEYWORDS\nNatural placement throughout page:\nParent Teen Relationship Support\n\nParent Teen Relationship Treatment in India\n\nTeen Behaviour Support\n\nTeen Communication Problems\n\nTeen Behaviour Problems\n\nTeen Relationship With Parents\n\nTeen Parenting Support\n\nFamily Relationship Support\n\n\nSTEP 7: SECONDARY KEYWORDS\nTeenage Anger\n\nTeenage Attitude Problems\n\nParent Child Communication\n\nParent Teen Trust Issues\n\nTeen Emotional Support\n\nTeen Behaviour Challenges\n\nParenting Teenagers\n\nTeen Family Problems\n\n\nSTEP 8: LOCAL SEO SIGNAL\nAdd after:\nWhy Families Across India Connect With Manovaidya\nFamilies from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Parent-Teen Relationship Treatment, Teen Behaviour Guidance and Family Communication Support through online and in-clinic consultations.\n\n\nSTEP 9: ABOUT DR. ANKUSH GARG\nAdd:\nBased in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.\n\n\nSTEP 10: IMAGE SEO\nHero Image\nFile Name\nparent-teen-relationship-support-india.webp\n\nALT\nParent Teen Relationship Treatment in India at Manovaidya\n\n\nCommunication Image\nFile Name\nparent-teen-communication-support.webp\n\nALT\nParent teen communication and trust building support\n\n\nNeuro-Ayurveda Image\nFile Name\nneuro-ayurveda-family-support.webp\n\nALT\nNeuro Ayurveda approach for parent teen relationship support\n\n\nCTA Image\nFile Name\nfamily-relationship-support-india.webp\n\nALT\nFamily relationship and teen behaviour support in India\n\n\nSTEP 11: INTERNAL LINKS\nTeen Mental Wellness Parent Page\nAnchor:\nLearn more about Teen Mental Wellness Treatment.\n\nLink:\n/teen-mental-wellness-india/\n\n\nTeen Stress & Anxiety Page\nAnchor:\nExplore Teen Stress & Anxiety Treatment.\n\nLink:\n/teen-stress-anxiety-support/\n\n\nTeen Depression Page\nAnchor:\nLearn about Teen Depression & Low Mood Treatment.\n\nLink:\n/teen-depression-support/\n\n\nTeen Confidence Page\nAnchor:\nExplore Teen Confidence & Emotional Wellbeing Support.\n\nLink:\n/teen-confidence-emotional-wellbeing/\n\n\nTeen Screen Addiction Page\nAnchor:\nUnderstand Teen Screen Addiction Treatment.\n\nLink:\n/teen-screen-addiction-support/\n\n\nDr. Ankush Garg Page\nAnchor:\nKnow more about Dr. Ankush Garg.\n\nLink:\n/dr-ankush-garg/\n\n\nSTEP 12: FAQ SCHEMA\nDeveloper ko bolo:\n15 FAQs ko FAQ Schema (JSON-LD) mein convert kare.\n\n\nSTEP 13: BREADCRUMB\nHome\n\n>\n\nTeen Mental Wellness\n\n>\n\nParent-Teen Relationship Treatment\n\n\nSTEP 14: RELATED PAGES SECTION\nRelated Teen Mental Wellness Pages\n\nTeen Stress & Anxiety Treatment\n\nTeen Depression & Low Mood Treatment\n\nExam & Performance Pressure Support\n\nTeen Confidence & Emotional Wellbeing\n\nTeen Screen Addiction Treatment\n\n\nSTEP 15: CTA SECTION\nHeading:\nConcerned About Your Relationship With Your Teenager?\n\nText:\nBook a structured assessment and personalized guidance session with the Manovaidya team.\n\nButtons:\nBook Consultation\n\nTake Teen Wellness Assessment\n\n\nSTEP 16: SCHEMA (IMPORTANT)\nDeveloper ko bolna:\nAdd:\nMedicalWebPage Schema\n\nAdd:\nFAQ Schema\n\nAdd:\nBreadcrumb Schema\n\nAdd:\nPhysician Schema (Dr Ankush Garg)\n\nYe 4 schemas Teen cluster ke har page mein hone chahiye.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -464,15 +464,15 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "/" },
     { "@type": "ListItem", position: 2, name: "Teen Mental Wellness", item: "/teen-mental-wellness-india/" },
-    { "@type": "ListItem", position: 3, name: "Parent-Teen Relationship Support", item: "/parent-teen-relationship-support/" },
+    { "@type": "ListItem", position: 3, name: "Parent-Teen Relationship Treatment", item: "/parent-teen-relationship-support/" },
   ],
 };
 
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Parent-Teen Relationship Support in India",
-  description: "Looking for Parent-Teen Relationship Support in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.",
+  name: "Parent-Teen Relationship Treatment in India",
+  description: "Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.",
   url: "/parent-teen-relationship-support/",
   about: ["Parent Teen Relationship Support", "Teen Behaviour Support", "Family Relationship Support"],
 };
@@ -500,10 +500,10 @@ function RelatedPagesCard() {
       <h2 className="text-[15px] font-black text-[#21142d]">Related Teen Mental Wellness Pages</h2>
       <div className="mt-4 space-y-3">
         <a href="/teen-stress-anxiety-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Support
+          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Treatment
         </a>
         <a href="/teen-depression-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <HeartHandshake className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Support
+          <HeartHandshake className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Treatment
         </a>
         <a href="/exam-performance-pressure/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
           <BookOpen className="h-4 w-4 text-[#7835A4]" /> Exam & Performance Pressure Support
@@ -512,7 +512,7 @@ function RelatedPagesCard() {
           <Sparkles className="h-4 w-4 text-[#7835A4]" /> Teen Confidence & Emotional Wellbeing
         </a>
         <a href="/teen-screen-addiction-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Brain className="h-4 w-4 text-[#7835A4]" /> Teen Screen Addiction Support
+          <Brain className="h-4 w-4 text-[#7835A4]" /> Teen Screen Addiction Treatment
         </a>
       </div>
     </SidebarCard>
@@ -567,11 +567,11 @@ const subheadingLines = new Set([
 ]);
 
 const internalLinks = [
-  { text: "Learn more about Teen Mental Wellness Support.", href: "/teen-mental-wellness-india/" },
-  { text: "Explore Teen Stress & Anxiety Support.", href: "/teen-stress-anxiety-support/" },
-  { text: "Learn about Teen Depression & Low Mood Support.", href: "/teen-depression-support/" },
+  { text: "Learn more about Teen Mental Wellness Treatment.", href: "/teen-mental-wellness-india/" },
+  { text: "Explore Teen Stress & Anxiety Treatment.", href: "/teen-stress-anxiety-support/" },
+  { text: "Learn about Teen Depression & Low Mood Treatment.", href: "/teen-depression-support/" },
   { text: "Explore Teen Confidence & Emotional Wellbeing Support.", href: "/teen-confidence-emotional-wellbeing/" },
-  { text: "Understand Teen Screen Addiction Support.", href: "/teen-screen-addiction-support/" },
+  { text: "Understand Teen Screen Addiction Treatment.", href: "/teen-screen-addiction-support/" },
   { text: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
 ];
 
@@ -603,7 +603,7 @@ function SectionImage({ title }) {
     );
   }
 
-  if (title === "The Neuro-Ayurveda Approach to Parent-Teen Relationship Support") {
+  if (title === "The Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment") {
     return (
       <div className="mt-5 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
         <img
@@ -671,14 +671,14 @@ function ParentTeenRelationshipSupportPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Parent-Teen Relationship Support in India | Teen Behaviour & Family Guidance | Manovaidya";
+    document.title = "Parent-Teen Relationship Treatment in India | Teen Behaviour & Family Guidance | Manovaidya";
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
       metaDesc.name = "description";
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = "Looking for Parent-Teen Relationship Support in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
+    metaDesc.content = "Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
 
     const schemas = [faqSchema, breadcrumbSchema, medicalWebPageSchema, physicianSchema];
     const scriptId = "parent-teen-relationship-schema";
@@ -728,10 +728,10 @@ function ParentTeenRelationshipSupportPage() {
                 <span>&gt;</span>
                 <a href="/teen-mental-wellness-india/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
-                <span className="text-[#4b345d]">Parent-Teen Relationship Support</span>
+                <span className="text-[#4b345d]">Parent-Teen Relationship Treatment</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Behaviour & Family Guidance</p>
-              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Parent-Teen Relationship Support in India</h1>
+              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Parent-Teen Relationship Treatment in India</h1>
               <p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Parents & Teenagers Build Better Communication, Trust, Emotional Connection & Healthy Relationships</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a>
@@ -760,7 +760,7 @@ function ParentTeenRelationshipSupportPage() {
                 <Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System
               </div>
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
-                <img src={heroImage} alt="Parent Teen Relationship Support in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
+                <img src={heroImage} alt="Parent Teen Relationship Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
               </div>
             </figure>
           </div>
@@ -780,7 +780,7 @@ function ParentTeenRelationshipSupportPage() {
 
           <section id="faqs" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
-            <p className="mt-2 text-[13px] font-black text-[#7835A4]">Parent-Teen Relationship Support FAQ</p>
+            <p className="mt-2 text-[13px] font-black text-[#7835A4]">Parent-Teen Relationship Treatment FAQ</p>
             <div className="mt-5 space-y-3">
               {faqs.map((faq, index) => (
                 <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">

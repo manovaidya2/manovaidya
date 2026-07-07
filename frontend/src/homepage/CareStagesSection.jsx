@@ -78,7 +78,7 @@ const careStages = [
       "Supporting healthy ageing, memory, cognitive strength and emotional wellbeing",
     items: [
       "Memory Loss",
-      "Dementia Support",
+      "Dementia Treatment",
       "Alzheimer's Care",
       "Ageing & Emotional Wellbeing",
       "Focus & Brain Health",

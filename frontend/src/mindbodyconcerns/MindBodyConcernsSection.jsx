@@ -56,7 +56,7 @@ const concerns = [
     iconClass: "bg-[#dcf4f4] text-[#258f99]",
   },
   {
-    title: "Stress & Headaches Support",
+    title: "Stress & Headaches Treatment",
     description: "Support for tension-type headaches, recurring head pain & stress-related tension.",
     href: "/stress-and-headaches/",
     Icon: HeartPulse,

@@ -34,7 +34,7 @@ const iconMap = {
 
 const fallbackCaseStudies = [
   {
-    title: "Autism Support Care Journey",
+    title: "Autism Treatment Care Journey",
     category: "Autism",
     location: "Family from Delhi NCR",
     duration: "12 weeks",

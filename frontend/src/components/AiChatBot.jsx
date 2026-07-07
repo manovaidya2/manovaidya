@@ -34,7 +34,7 @@ const serviceReferences = [
   ["Child Health Care", "/child-health-care"],
   ["Autism Spectrum Disorder", "/autism-treatment-india"],
   ["ADHD & Hyperactivity", "/child-health-care/adhd-child"],
-  ["Speech Delay Support", "/speech-delay-support-india"],
+  ["Speech Delay Treatment", "/speech-delay-support-india"],
   ["Learning Difficulties", "/learning-attention-difficulties-india"],
   ["Behavioural Challenges", "/behavioural-concerns-children-india"],
   ["Child Development Support", "/child-development-support-india"],
@@ -62,7 +62,7 @@ const serviceReferences = [
   ["Senior Mood & Behaviour Changes", "/sleep-disorders-seniors-support-india/"],
   ["Women Mental Health Concerns", "/women-health-care"],
   ["Women Stress & Anxiety Support", "/women-stress-management-mind-body-balance-india/"],
-  ["Women Depression & Low Mood Support", "/women-depression-low-mood-support-india/"],
+  ["Women Depression & Low Mood Treatment", "/women-depression-low-mood-support-india/"],
   ["Hormonal Mood Changes, PMS & PMDD", "/women-hormonal-pms-pmdd-support-india/"],
   ["Self-Esteem & Body Image Support", "/women-self-esteem-body-image-support-india/"],
   ["Relationship & Emotional Challenges", "/women-relationship-emotional-wellbeing-support-india/"],
@@ -71,12 +71,12 @@ const serviceReferences = [
   ["Mind & Body Concerns", "/mind-body-wellbeing"],
   ["Stress & High Blood Pressure", "/stress-and-high-blood-pressure/"],
   ["Stress IBS Support", "/stress-ibs-support-india/"],
-  ["Stress & Fatigue Support", "/stress-and-fatigue/"],
+  ["Stress & Fatigue Treatment", "/stress-and-fatigue/"],
   ["Stress & Digestive Health", "/stress-and-digestive-health/"],
-  ["Stress & Acidity Support", "/stress-and-acidity/"],
-  ["Stress & Migraine Support", "/stress-and-migraine/"],
-  ["Stress & Headaches Support", "/stress-and-headaches/"],
-  ["Stress & Thyroid Support", "/stress-and-thyroid/"],
+  ["Stress & Acidity Treatment", "/stress-and-acidity/"],
+  ["Stress & Migraine Treatment", "/stress-and-migraine/"],
+  ["Stress & Headaches Treatment", "/stress-and-headaches/"],
+  ["Stress & Thyroid Treatment", "/stress-and-thyroid/"],
 ];
 
 const serviceReferenceText = serviceReferences
@@ -238,7 +238,7 @@ const knowledgeBase = [
     text: `Manovaidya highlights ${resultSummary.rating}, ${resultSummary.families}, and ${resultSummary.videos}. Autism care stories mention noticeable progress in communication and daily activities. Manovaidya confidently shares that with consistent assessment, guidance, follow-up and family involvement, progress or results often start becoming visible. Results can vary by child, condition, age, assessment findings, home routine, consistency and follow-up, so no fixed timeline or identical result is promised for everyone.`
   },
   {
-    title: "Autism Support",
+    title: "Autism Treatment",
     terms: ["autism", "asd", "spectrum", "eye", "speech", "social", "repetitive"],
     text: "Manovaidya provides autism support for children and families through structured developmental understanding, assessment, personalised guidance, parent support and the Neuro-Ayurveda Development System. Autism-related concerns may include delayed speech, reduced eye contact, difficulty with social interaction, repetitive behaviours, sensory sensitivities, behaviour concerns, attention or learning differences. The focus is not on labels alone, but on understanding the child's communication, behaviour, sensory profile, development, sleep, lifestyle and family needs. Families can book a consultation when they notice developmental concerns, speech delay, social communication difficulty, behaviour changes or uncertainty about next steps."
   },
@@ -574,12 +574,20 @@ function AiChatBot() {
     const value = String(rawValue || "").trim();
     if (!step || !value) return;
 
-    const bookingQuestionAnswer = getBookingQuestionAnswer(value, step.prompt);
-    if (bookingQuestionAnswer) {
-      setMessages((current) => [...current, { role: "user", text: value }]);
-      setQuestion("");
-      pushAssistantMessage(bookingQuestionAnswer);
-      return;
+    const isExactOptionMatch = step.options?.some(
+      (opt) =>
+        opt.value.toLowerCase() === value.toLowerCase() ||
+        opt.label.toLowerCase() === value.toLowerCase()
+    );
+
+    if (!isExactOptionMatch) {
+      const bookingQuestionAnswer = getBookingQuestionAnswer(value, step.prompt);
+      if (bookingQuestionAnswer) {
+        setMessages((current) => [...current, { role: "user", text: value }]);
+        setQuestion("");
+        pushAssistantMessage(bookingQuestionAnswer);
+        return;
+      }
     }
 
     if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {

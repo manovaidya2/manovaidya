@@ -144,10 +144,10 @@ function RelatedPagesCard() {
       <h2 className="text-[15px] font-black text-[#21142d]">Related Teen Mental Wellness Pages</h2>
       <div className="mt-4 space-y-3">
         <a href="/teen-stress-anxiety-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Support
+          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Treatment
         </a>
         <a href="/teen-depression-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <HeartHandshake className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Support
+          <HeartHandshake className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Treatment
         </a>
         <a href="/exam-performance-pressure/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
           <BookOpen className="h-4 w-4 text-[#7835A4]" /> Exam & Performance Pressure Support
@@ -156,7 +156,7 @@ function RelatedPagesCard() {
           <Brain className="h-4 w-4 text-[#7835A4]" /> Screen Addiction Support
         </a>
         <a href="/parent-teen-relationship-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Support
+          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Treatment
         </a>
       </div>
     </SidebarCard>
@@ -319,7 +319,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
             <Paragraph>Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps teenagers and families better understand emotional wellbeing while supporting confidence, resilience and long-term growth.</Paragraph>
 
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Teen Confidence & Emotional Wellbeing Support Focuses On:</h3>
+              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Teen Confidence & Emotional Wellbeing Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   { label: "Low Confidence & Self-Doubt", Icon: Sparkles },
@@ -344,7 +344,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
             <h2 className="text-[20px] font-black text-[#17111f]">Understanding Teen Confidence & Emotional Wellbeing</h2>
             <Paragraph>Confidence is the belief that a person can learn, grow and handle challenges, even when situations feel difficult.</Paragraph>
             <Paragraph>During adolescence, teenagers experience rapid emotional, social and personal changes. They begin comparing themselves to peers, thinking more deeply about their future and developing a stronger sense of identity.</Paragraph>
-            <Paragraph>Many families searching for Teen Confidence Support in India, Self-Esteem Support for Teenagers or Teen Emotional Wellbeing Support in India are often looking for a structured approach that helps teenagers develop confidence and emotional resilience.</Paragraph>
+            <Paragraph>Many families searching for Teen Confidence Treatment in India, Self-Esteem Support for Teenagers or Teen Emotional Wellbeing Support in India are often looking for a structured approach that helps teenagers develop confidence and emotional resilience.</Paragraph>
             <Paragraph>Confidence is not something that appears overnight.</Paragraph>
             <Paragraph>It develops through experiences, relationships, learning opportunities and emotional support.</Paragraph>
             <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
@@ -579,8 +579,8 @@ function TeenConfidenceEmotionalWellbeingPage() {
             </div>
 
             <p className="mt-8 text-[15px] font-black leading-7 text-[#17111f]">Why Families Across India Connect With Manovaidya</p>
-            <Paragraph>Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Confidence Support, Emotional Wellbeing Support and Teen Mental Wellness guidance through online and in-clinic consultations.</Paragraph>
-            <Paragraph>Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Confidence Support, Self-Esteem Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.</Paragraph>
+            <Paragraph>Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Confidence Treatment, Emotional Wellbeing Support and Teen Mental Wellness guidance through online and in-clinic consultations.</Paragraph>
+            <Paragraph>Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Confidence Treatment, Self-Esteem Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.</Paragraph>
           </section>
 
           <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm">

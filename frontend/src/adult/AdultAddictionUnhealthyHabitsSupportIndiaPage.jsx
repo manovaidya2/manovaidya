@@ -260,11 +260,11 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
                 <span>/</span>
                 <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
                 <span>/</span>
-                <span className="text-[#4b345d]">Addiction & Unhealthy Habits Support</span>
+                <span className="text-[#4b345d]">Addiction & Unhealthy Habits Treatment</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Addiction & Habit Support</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Addiction & Unhealthy Habits Support in India
+                Addiction & Unhealthy Habits Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Adults Understand Addiction, Break Unhealthy Habits & Improve Emotional Wellbeing
@@ -345,7 +345,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
             </p>
             
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Addiction & Habit Support Focuses On:</h3>
+              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Addiction & Habit Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {highlights.map(({ label, Icon }) => (
                   <li key={label} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
@@ -368,7 +368,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
               Many daily behaviours become part of our routine and can be changed with relatively little effort. However, some habits gradually become repetitive, difficult to control and continue despite causing negative consequences. Understanding the difference between a habit, an unhealthy habit and addiction helps individuals recognise when professional guidance may be beneficial.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many adults searching for Addiction Support in India, How to Break Bad Habits, Behavioural Addiction, Mobile Addiction or Alcohol Addiction Support are often looking for answers because they feel they have lost control over a particular behaviour.
+              Many adults searching for Addiction Treatment in India, How to Break Bad Habits, Behavioural Addiction, Mobile Addiction or Alcohol Addiction Support are often looking for answers because they feel they have lost control over a particular behaviour.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
               Recognising these patterns early is the first step towards building healthier habits and improving emotional wellbeing.
@@ -765,7 +765,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
                 </ul>
               </div>
               <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Addiction & Unhealthy Habits Support through online and in-clinic consultations.
+                Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Addiction & Unhealthy Habits Treatment through online and in-clinic consultations.
               </p>
             </div>
             <img
@@ -876,8 +876,8 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "MedicalWebPage",
-                "name": "Addiction & Unhealthy Habits Support in India",
-                "description": "Looking for Addiction & Unhealthy Habits Support in India? Learn about behavioural addiction, unhealthy habits, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
+                "name": "Addiction & Unhealthy Habits Treatment in India",
+                "description": "Looking for Addiction & Unhealthy Habits Treatment in India? Learn about behavioural addiction, unhealthy habits, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
                 "url": "https://manovaidya.com/addiction-unhealthy-habits-support-india/"
               })
             }}
@@ -921,7 +921,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
                   {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "Addiction & Unhealthy Habits Support",
+                    "name": "Addiction & Unhealthy Habits Treatment",
                     "item": "https://manovaidya.com/addiction-unhealthy-habits-support-india/"
                   }
                 ]

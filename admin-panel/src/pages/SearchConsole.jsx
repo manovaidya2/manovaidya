@@ -83,6 +83,8 @@ export default function SearchConsole() {
 
   const searchConsole = status?.searchConsole;
   const credentialsReady = Boolean(searchConsole?.credentialsConfigured);
+  const oauthClientReady = Boolean(searchConsole?.oauthClientConfigured);
+  const oauthRefreshReady = Boolean(searchConsole?.oauthRefreshTokenConfigured);
   const siteReady = Boolean(searchConsole?.siteConfigured);
   const configuredSite = searchConsole?.siteUrl || SITE_URL;
 
@@ -93,16 +95,16 @@ export default function SearchConsole() {
       ok: siteReady,
     },
     {
-      title: 'Google service account',
-      detail: credentialsReady ? 'Credentials available on backend' : 'Add GOOGLE_SERVICE_ACCOUNT_JSON or GOOGLE_SERVICE_ACCOUNT_BASE64 in backend env',
-      ok: credentialsReady,
+      title: 'OAuth client',
+      detail: oauthClientReady ? 'Client ID and secret available on backend' : 'Add GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET in backend env',
+      ok: oauthClientReady,
     },
     {
-      title: 'Service account access',
-      detail: 'Add service account email as Full user in Google Search Console property settings',
-      ok: credentialsReady,
+      title: 'OAuth refresh token',
+      detail: oauthRefreshReady ? 'Refresh token available on backend' : 'Run backend/scripts/googleSearchConsoleAuth.js once and add GOOGLE_OAUTH_REFRESH_TOKEN in backend env',
+      ok: oauthRefreshReady,
     },
-  ], [configuredSite, credentialsReady, siteReady]);
+  ], [configuredSite, oauthClientReady, oauthRefreshReady, siteReady]);
 
   return (
     <div className="mx-auto w-full max-w-none space-y-6 p-3 md:p-5 lg:p-6">

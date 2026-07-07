@@ -16,13 +16,13 @@ const relatedPages = [
     image: anxietyImage,
   },
   {
-    title: "Adult Depression Support",
+    title: "Adult Depression Treatment",
     description: "Low mood, sadness, emotional exhaustion and motivation.",
     href: "/adult-depression-support",
     image: depressionImage,
   },
   {
-    title: "Stress & Burnout Support",
+    title: "Stress & Burnout Treatment",
     description: "Mental exhaustion, work pressure and emotional overload.",
     href: "/stress-burnout-support-india",
     image: burnoutImage,
@@ -46,7 +46,7 @@ const relatedPages = [
     image: relationshipImage,
   },
   {
-    title: "Addiction & Unhealthy Habits Support",
+    title: "Addiction & Unhealthy Habits Treatment",
     description: "Substance use, repetitive habits and healthier routines.",
     href: "/addiction-unhealthy-habits-support-india",
     image: addictionImage,

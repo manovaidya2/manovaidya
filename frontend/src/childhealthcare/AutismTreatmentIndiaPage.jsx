@@ -206,7 +206,7 @@ const relatedArticles = [
     image: childHeroImage,
   },
   {
-    title: "Child Development Support",
+    title: "Child Development Treatment",
     href: "/child-health-care",
     image: supportFamilyImage,
   },

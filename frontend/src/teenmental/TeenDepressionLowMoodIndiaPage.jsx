@@ -143,7 +143,7 @@ function RelatedPagesCard() {
       <h2 className="text-[15px] font-black text-[#21142d]">Related Teen Mental Wellness Pages</h2>
       <div className="mt-4 space-y-3">
         <a href="/teen-stress-anxiety-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Support
+          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Stress & Anxiety Treatment
         </a>
         <a href="/exam-performance-pressure/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
           <BookOpen className="h-4 w-4 text-[#7835A4]" /> Exam & Performance Pressure
@@ -155,7 +155,7 @@ function RelatedPagesCard() {
           <Brain className="h-4 w-4 text-[#7835A4]" /> Screen Addiction Support
         </a>
         <a href="/parent-teen-relationship-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Support
+          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Treatment
         </a>
       </div>
     </SidebarCard>
@@ -176,14 +176,14 @@ function TeenDepressionLowMoodIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Teen Depression & Low Mood Support in India | Teen Mental Health Support | Manovaidya";
+    document.title = "Teen Depression & Low Mood Treatment in India | Teen Mental Health Support | Manovaidya";
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
       metaDesc.name = "description";
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = "Looking for Teen Depression Support in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.";
+    metaDesc.content = "Looking for Teen Depression Treatment in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.";
 
     const scriptId = "faq-schema-script";
     let script = document.getElementById(scriptId);
@@ -235,11 +235,11 @@ function TeenDepressionLowMoodIndiaPage() {
                 <span>&gt;</span>
                 <a href="/teen-mental-wellness" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
-                <span className="text-[#4b345d]">Teen Depression & Low Mood Support</span>
+                <span className="text-[#4b345d]">Teen Depression & Low Mood Treatment</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Mental Health Support</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Teen Depression & Low Mood Support in India
+                Teen Depression & Low Mood Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Teenagers Build Emotional Strength, Confidence & Better Emotional Wellbeing. Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.
@@ -292,7 +292,7 @@ function TeenDepressionLowMoodIndiaPage() {
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
                 <img
                   src={heroImage}
-                  alt="Teen Depression Support in India at Manovaidya"
+                  alt="Teen Depression Treatment in India at Manovaidya"
                   className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]"
                 />
               </div>
@@ -315,7 +315,7 @@ function TeenDepressionLowMoodIndiaPage() {
             </p>
 
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Teen Depression & Low Mood Support Focuses On:</h3>
+              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Teen Depression & Low Mood Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   { label: "Emotional Wellbeing & Resilience", Icon: HeartHandshake },
@@ -345,7 +345,7 @@ function TeenDepressionLowMoodIndiaPage() {
               However, when sadness becomes persistent, affects daily life and begins influencing behaviour, motivation, confidence and relationships, families often start looking for answers.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many parents searching for Teen Depression Support in India, Teen Mental Health Support in India or guidance for Teen Emotional Wellbeing are often looking for a structured approach that helps them better understand what their teenager may be experiencing.
+              Many parents searching for Teen Depression Treatment in India, Teen Mental Health Treatment in India or guidance for Teen Emotional Wellbeing are often looking for a structured approach that helps them better understand what their teenager may be experiencing.
             </p>
             <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
               <h3 className="text-[15px] font-black text-[#21142d]">Teen depression and low mood can affect teenagers differently:</h3>
@@ -628,7 +628,7 @@ function TeenDepressionLowMoodIndiaPage() {
               Why Families Across India Connect With Manovaidya
             </p>
             <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Depression Support, Teen Mental Health Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.
+              Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Depression Treatment, Teen Mental Health Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.
             </p>
           </section>
 

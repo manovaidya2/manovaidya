@@ -20,7 +20,7 @@ const conditionGroups = [
     items: [
       { label: "Autism Spectrum Disorder", href: "/autism-treatment-india" },
       { label: "ADHD & Hyperactivity", href: "/child-health-care/adhd-child" },
-      { label: "Speech Delay Support", href: "/speech-delay-support-india" },
+      { label: "Speech Delay Treatment", href: "/speech-delay-support-india" },
       { label: "Learning Difficulties", href: "/learning-attention-difficulties-india" },
       { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india" },
       { label: "Child Development Support", href: "/child-development-support-india" },
@@ -87,12 +87,12 @@ const conditionGroups = [
     items: [
       { label: "Stress & High Blood Pressure", href: "/stress-and-high-blood-pressure/" },
       { label: "Stress IBS Support", href: "/stress-ibs-support-india/" },
-      { label: "Stress & Fatigue Support", href: "/stress-and-fatigue/" },
+      { label: "Stress & Fatigue Treatment", href: "/stress-and-fatigue/" },
       { label: "Stress & Digestive Health", href: "/stress-and-digestive-health/" },
-      { label: "Stress & Acidity Support", href: "/stress-and-acidity/" },
-      { label: "Stress & Migraine Support", href: "/stress-and-migraine/" },
-      { label: "Stress & Headaches Support", href: "/stress-and-headaches/" },
-      { label: "Stress & Thyroid Support", href: "/stress-and-thyroid/" },
+      { label: "Stress & Acidity Treatment", href: "/stress-and-acidity/" },
+      { label: "Stress & Migraine Treatment", href: "/stress-and-migraine/" },
+      { label: "Stress & Headaches Treatment", href: "/stress-and-headaches/" },
+      { label: "Stress & Thyroid Treatment", href: "/stress-and-thyroid/" },
     ],
   },
 ];

@@ -200,7 +200,7 @@ function StressMigraineIndiaPage() {
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#8b43ba]">Brain Health</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Stress & Migraine Support in India
+                Stress & Migraine Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Understanding the Relationship Between Stress, Migraine and Emotional Wellbeing.

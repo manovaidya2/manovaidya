@@ -143,7 +143,7 @@ function RelatedPagesCard() {
       <h2 className="text-[15px] font-black text-[#21142d]">Related Teen Mental Wellness Pages</h2>
       <div className="mt-4 space-y-3">
         <a href="/teen-depression-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Support
+          <Activity className="h-4 w-4 text-[#7835A4]" /> Teen Depression & Low Mood Treatment
         </a>
         <a href="/exam-performance-pressure/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
           <BookOpen className="h-4 w-4 text-[#7835A4]" /> Exam & Performance Pressure
@@ -155,7 +155,7 @@ function RelatedPagesCard() {
           <Brain className="h-4 w-4 text-[#7835A4]" /> Screen Addiction Support
         </a>
         <a href="/parent-teen-relationship-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Support
+          <Users className="h-4 w-4 text-[#7835A4]" /> Parent-Teen Relationship Treatment
         </a>
       </div>
     </SidebarCard>
@@ -176,14 +176,14 @@ function TeenStressAnxietyIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Teen Stress & Anxiety Support in India | Teen Mental Health Support | Manovaidya";
+    document.title = "Teen Stress & Anxiety Treatment in India | Teen Mental Health Support | Manovaidya";
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
       metaDesc.name = "description";
       document.head.appendChild(metaDesc);
     }
-    metaDesc.content = "Looking for Teen Stress & Anxiety Support in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.";
+    metaDesc.content = "Looking for Teen Stress & Anxiety Treatment in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.";
 
     const scriptId = "faq-schema-script";
     let script = document.getElementById(scriptId);
@@ -235,11 +235,11 @@ function TeenStressAnxietyIndiaPage() {
                 <span>&gt;</span>
                 <a href="/teen-mental-wellness" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
-                <span className="text-[#4b345d]">Teen Stress & Anxiety Support</span>
+                <span className="text-[#4b345d]">Teen Stress & Anxiety Treatment</span>
               </nav>
-              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Stress & Anxiety Support</p>
+              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Stress & Anxiety Treatment</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Teen Stress & Anxiety Support in India
+                Teen Stress & Anxiety Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Teenagers Build Emotional Resilience, Confidence & Better Emotional Wellbeing. Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.
@@ -292,7 +292,7 @@ function TeenStressAnxietyIndiaPage() {
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
                 <img
                   src={heroImage}
-                  alt="Teen Stress and Anxiety Support in India at Manovaidya"
+                  alt="Teen Stress and Anxiety Treatment in India at Manovaidya"
                   className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]"
                 />
               </div>
@@ -311,14 +311,14 @@ function TeenStressAnxietyIndiaPage() {
               Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps teenagers and families better understand emotional wellbeing while creating a roadmap for healthy growth and long-term resilience.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many families searching for Teen Stress & Anxiety Support in India, Teen Mental Health Support in India or guidance for Teenage Stress and Anxiety are often looking for a structured approach that helps them better understand their teenager's emotional wellbeing and long-term growth.
+              Many families searching for Teen Stress & Anxiety Treatment in India, Teen Mental Health Treatment in India or guidance for Teenage Stress and Anxiety are often looking for a structured approach that helps them better understand their teenager's emotional wellbeing and long-term growth.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many families searching for Teen Anxiety Support in India, Teen Stress & Anxiety Support in India or Teen Mental Health Support in India are often looking for structured guidance and long-term emotional wellbeing support.
+              Many families searching for Teen Anxiety Treatment in India, Teen Stress & Anxiety Treatment in India or Teen Mental Health Treatment in India are often looking for structured guidance and long-term emotional wellbeing support.
             </p>
 
             <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Teen Stress & Anxiety Support Focuses On:</h3>
+              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Teen Stress & Anxiety Treatment Focuses On:</h3>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   { label: "Emotional Wellbeing & Resilience", Icon: HeartHandshake },
@@ -629,7 +629,7 @@ function TeenStressAnxietyIndiaPage() {
             </div>
 
             <p className="mt-5 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Stress & Anxiety Support, Teen Mental Health Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.
+              Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Teen Stress & Anxiety Treatment, Teen Mental Health Support and Teen Emotional Wellbeing guidance through online and in-clinic consultations.
             </p>
           </section>
 

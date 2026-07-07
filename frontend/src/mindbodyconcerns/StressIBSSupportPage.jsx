@@ -185,7 +185,7 @@ function StressIBSSupportPage() {
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#8b43ba]">Digestive Wellbeing</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Stress & IBS Support in India
+                Stress & IBS Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 The Connection Between Stress, Irritable Bowel Syndrome (IBS) and the Gut-Brain Connection.

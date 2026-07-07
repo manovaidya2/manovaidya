@@ -18,7 +18,7 @@ const concerns = [
     Icon: Puzzle,
     iconColor: "#6043c4",
     iconBg: "#eee6ff",
-    linkText: "Explore Autism Support",
+    linkText: "Explore Autism Treatment",
     href: "/autism-treatment-india",
   },
   {
@@ -28,7 +28,7 @@ const concerns = [
     Icon: Brain,
     iconColor: "#d87b27",
     iconBg: "#ffebd6",
-    linkText: "Explore ADHD Support",
+    linkText: "Explore ADHD Treatment",
     href: "/child-health-care/adhd-child",
   },
   {
@@ -62,7 +62,7 @@ const concerns = [
     href: "/behavioural-concerns-children-india",
   },
   {
-    title: "Child Development\nSupport",
+    title: "Child Development\nTreatment",
     description:
       "Holistic support for overall growth, milestones, confidence and emotional wellbeing.",
     Icon: Heart,

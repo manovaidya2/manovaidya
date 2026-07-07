@@ -61,7 +61,7 @@ const introParagraphs = [
   "For many parents, concerns begin when a child struggles to focus, forgets information quickly, has difficulty completing tasks, falls behind academically or requires repeated instructions to understand concepts. These challenges can affect confidence, school performance and overall development.",
   "At Manovaidya, learning and attention difficulties are understood through a broader developmental perspective rather than being viewed as isolated academic concerns. Learning is closely connected with attention, communication, emotional wellbeing, behaviour, sensory processing and developmental readiness.",
   "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System designed to help families better understand learning and attention challenges while creating a clear roadmap for developmental growth and academic readiness.",
-  "Families searching for Learning Difficulties Support in India, Attention Problems in Children, Child Learning Assessment or Academic Development Guidance often seek practical understanding, structured support and long-term developmental direction.",
+  "Families searching for Learning Difficulties Treatment in India, Attention Problems in Children, Child Learning Assessment or Academic Development Guidance often seek practical understanding, structured support and long-term developmental direction.",
 ];
 
 const signGroups = [
@@ -210,7 +210,7 @@ const relatedPages = [
   { title: "ADHD Treatment in India", href: "/adhd-treatment-india/" },
   { title: "Speech Delay & Communication Support", href: "/speech-delay-support-india/" },
   { title: "Behavioural Concerns in Children", href: "/behavioural-concerns-children-india/" },
-  { title: "Child Development Support in India", href: "/child-development-support-india/" },
+  { title: "Child Development Treatment in India", href: "/child-development-support-india/" },
 ];
 
 const internalLinks = [
@@ -218,7 +218,7 @@ const internalLinks = [
   { title: "Learn more about ADHD Treatment in India.", href: "/adhd-treatment-india/" },
   { title: "Explore Speech Delay & Communication Support in India.", href: "/speech-delay-support-india/" },
   { title: "Learn about Behavioural Concerns in Children.", href: "/behavioural-concerns-children-india/" },
-  { title: "Explore Child Development Support in India.", href: "/child-development-support-india/" },
+  { title: "Explore Child Development Treatment in India.", href: "/child-development-support-india/" },
   { title: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
   { title: "Understand the Neuro-Ayurveda Development System.", href: "/neuro-ayurveda-development-system/" },
 ];
@@ -612,9 +612,9 @@ function LearningAttentionDifficultiesIndiaPage() {
           </section>
 
           <section id="learning-support" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">Learning Difficulties Support in India</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">Learning Difficulties Treatment in India</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Many families searching for Learning Difficulties Support in India are looking for practical ways to help their child succeed academically and developmentally.
+              Many families searching for Learning Difficulties Treatment in India are looking for practical ways to help their child succeed academically and developmentally.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">Learning challenges may be influenced by:</p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -751,10 +751,10 @@ function LearningAttentionDifficultiesIndiaPage() {
               ))}
             </div>
             <p className="mt-5 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Learning Difficulties Support, Attention Assessment and Child Development Guidance.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Learning Difficulties Treatment, Attention Assessment and Child Development Guidance.
             </p>
             <p className="mt-3 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR and across India connect with Manovaidya for Learning Difficulties Support, Attention Assessment and Child Development Guidance.
+              Families from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR and across India connect with Manovaidya for Learning Difficulties Treatment, Attention Assessment and Child Development Guidance.
             </p>
           </section>
 

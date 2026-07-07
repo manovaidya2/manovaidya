@@ -22,6 +22,13 @@ const parseServiceAccountCredentials = () => {
   }
 };
 
+const getOAuthConfig = () => ({
+  clientId: process.env.GOOGLE_OAUTH_CLIENT_ID || process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_OAUTH_CLIENT_SECRET || process.env.GOOGLE_SEARCH_CONSOLE_CLIENT_SECRET,
+  redirectUri: process.env.GOOGLE_OAUTH_REDIRECT_URI || 'http://localhost',
+  refreshToken: process.env.GOOGLE_OAUTH_REFRESH_TOKEN || process.env.GOOGLE_SEARCH_CONSOLE_REFRESH_TOKEN,
+});
+
 const formatDate = (date) => date.toISOString().slice(0, 10);
 
 const getDateRange = (days) => {
@@ -34,6 +41,17 @@ const getDateRange = (days) => {
 };
 
 const createSearchConsoleClient = async () => {
+  const oauthConfig = getOAuthConfig();
+  if (oauthConfig.clientId && oauthConfig.clientSecret && oauthConfig.refreshToken) {
+    const authClient = new google.auth.OAuth2(
+      oauthConfig.clientId,
+      oauthConfig.clientSecret,
+      oauthConfig.redirectUri
+    );
+    authClient.setCredentials({ refresh_token: oauthConfig.refreshToken });
+    return google.searchconsole({ version: 'v1', auth: authClient });
+  }
+
   const credentials = parseServiceAccountCredentials();
   const auth = new google.auth.GoogleAuth({
     ...(credentials ? { credentials } : {}),
@@ -44,15 +62,26 @@ const createSearchConsoleClient = async () => {
   return google.searchconsole({ version: 'v1', auth: authClient });
 };
 
-export const getSearchConsoleConfigStatus = () => ({
-  siteConfigured: true,
-  credentialsConfigured: Boolean(
+export const getSearchConsoleConfigStatus = () => {
+  const oauthConfig = getOAuthConfig();
+  const serviceAccountConfigured = Boolean(
     process.env.GOOGLE_SERVICE_ACCOUNT_JSON
     || process.env.GOOGLE_SERVICE_ACCOUNT_BASE64
     || process.env.GOOGLE_APPLICATION_CREDENTIALS
-  ),
-  siteUrl: process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL
-});
+  );
+  const oauthClientConfigured = Boolean(oauthConfig.clientId && oauthConfig.clientSecret);
+  const oauthRefreshTokenConfigured = Boolean(oauthConfig.refreshToken);
+
+  return {
+    siteConfigured: true,
+    credentialsConfigured: serviceAccountConfigured || (oauthClientConfigured && oauthRefreshTokenConfigured),
+    serviceAccountConfigured,
+    oauthClientConfigured,
+    oauthRefreshTokenConfigured,
+    authMode: serviceAccountConfigured ? 'service_account' : oauthClientConfigured ? 'oauth' : 'none',
+    siteUrl: process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL
+  };
+};
 
 export const getBlogPageUrl = (blog) => {
   if (blog.canonicalUrl) return blog.canonicalUrl;
@@ -63,7 +92,7 @@ export const getBlogPageUrl = (blog) => {
 export const getSearchConsoleMetrics = async (blog, requestedDays = 28) => {
   const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL;
   if (!getSearchConsoleConfigStatus().credentialsConfigured) {
-    const error = new Error('Google service account credentials are not configured.');
+    const error = new Error('Google Search Console OAuth refresh token or service account credentials are not configured.');
     error.code = 'SEARCH_CONSOLE_NOT_CONFIGURED';
     throw error;
   }
