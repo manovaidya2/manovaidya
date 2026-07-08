@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Seo from "../components/Seo";
 import {
   Activity,
   ArrowRight,
@@ -191,6 +192,18 @@ function StressHighBloodPressureIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Stress & High Blood Pressure Treatment in India | Mind-Body Health"
+        description="Looking for Stress & High Blood Pressure treatment in India? Learn how chronic stress causes hypertension, cardiovascular risks and how Neuro-Ayurveda helps."
+        keywords="Stress & High Blood Pressure, Hypertension India, Stress Induced Hypertension, Cardiovascular Health, Stress Management for Blood Pressure, Emotional Wellbeing, Mind-Body Health, Blood Pressure Assessment, Neuro-Ayurveda Development System, Cardiovascular Wellbeing"
+        path="/stress-and-high-blood-pressure"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Stress & High Blood Pressure Treatment in India",
+          "description": "Looking for Stress & High Blood Pressure treatment in India? Learn how chronic stress causes hypertension, cardiovascular risks and how Neuro-Ayurveda helps."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         
         <article className="min-w-0">

@@ -24,6 +24,7 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-teen-mental-wellness.pn
 import ctaImage from "../images/teen-emotional-wellbeing-support.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -177,24 +178,6 @@ function TeenConfidenceEmotionalWellbeingPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Teen Confidence & Emotional Wellbeing Support in India | Self-Esteem Support | Manovaidya";
-
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = "Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}/teen-confidence-emotional-wellbeing/`;
-
     const scriptId = "faq-schema-script";
     let script = document.getElementById(scriptId);
     if (!script) {
@@ -236,6 +219,18 @@ function TeenConfidenceEmotionalWellbeingPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Teen Confidence & Emotional Wellbeing Support in India | Self-Esteem Support | Manovaidya"
+        description="Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Teen Confidence Support India, Teen Self-Esteem Treatment, Adolescent Emotional Wellbeing, Teen Self-Doubt, Low Confidence in Teens, Teenage Emotional Resilience, Neuro-Ayurveda Confidence Support, Dr. Ankush Garg"
+        path="/teen-confidence-emotional-wellbeing"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Teen Confidence & Emotional Wellbeing Support in India",
+          "description": "Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

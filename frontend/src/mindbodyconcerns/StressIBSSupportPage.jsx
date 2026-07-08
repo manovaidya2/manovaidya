@@ -25,6 +25,7 @@ import lifestyleImage from "../images/ibs-lifestyle-management.png";
 import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.webp";
 import consultationImage from "../images/ibs-consultation.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -171,8 +172,20 @@ function StressIBSSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Stress & IBS Treatment in India | Gut-Brain Connection | Manovaidya"
+        description="Looking for Stress & IBS treatment in India? Learn about the gut-brain connection, IBS symptoms, triggers and personalised stress management at Manovaidya."
+        keywords="Stress & IBS, IBS Treatment India, Gut-Brain Axis, Irritable Bowel Syndrome, Gut-Brain Connection, Stress and Digestive Health, IBS Symptoms, Stress Management for IBS, Mind-Body Health, Digestive Wellbeing, Neuro-Ayurveda Development System, IBS Assessment, Chronic Stress and IBS, Emotional Wellbeing and Gut Health"
+        path="/stress-ibs-support-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Stress & IBS Treatment in India",
+          "description": "Looking for Stress & IBS treatment in India? Learn about the gut-brain connection, IBS symptoms, triggers and personalised stress management at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
-        
+
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
             <div className="relative z-10">

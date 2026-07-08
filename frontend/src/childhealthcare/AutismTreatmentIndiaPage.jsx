@@ -26,6 +26,7 @@ import ctaImage from "../images/child-wellbeing-sunset-cta.png";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "What is Autism?", id: "what-is-autism" },
@@ -303,31 +304,6 @@ function AutismTreatmentIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Autism Treatment in India | Autism Assessment & Development Support | Manovaidya";
-
-    const setMetaTag = (name, content) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("name", name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMetaTag(
-      "description",
-      "Looking for Autism Treatment in India? Learn about Autism Assessment, Child Development Support and the Neuro-Ayurveda Development System at Manovaidya with Dr. Ankush Garg."
-    );
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}/autism-treatment-india`;
-
     const schema = {
       "@context": "https://schema.org",
       "@graph": [
@@ -402,6 +378,18 @@ function AutismTreatmentIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Autism Treatment in India | Autism Assessment & Development Support | Manovaidya"
+        description="Looking for Autism Treatment in India? Learn about Autism Assessment, Child Development Support and the Neuro-Ayurveda Development System at Manovaidya with Dr. Ankush Garg."
+        keywords="Autism Treatment in India, Autism Assessment, Early Signs of Autism, Autism Spectrum Disorder, Child Development Support, Neuro-Ayurveda Development System, Autism Therapy India, ADHD Treatment India, Speech Delay Support, Parent Guidance for Autism, Sensory Processing Support, Behavioural Support for Autism, Dr. Ankush Garg Autism Specialist, Autism Clinic Delhi NCR, Autism Signs in Children"
+        path="/autism-treatment-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Autism Treatment in India",
+          "description": "Looking for Autism Treatment in India? Learn about Autism Assessment, Child Development Support and the Neuro-Ayurveda Development System at Manovaidya with Dr. Ankush Garg."
+        }}
+      />
       <section className="hidden border-b border-[#eadff1] bg-white">
         <div className="mx-auto flex max-w-[1440px] items-center gap-2 px-4 py-4 text-[11px] font-bold text-[#75677d] sm:px-6 lg:px-8">
           <a href="/" className="transition hover:text-[#7835A4]">Home</a>

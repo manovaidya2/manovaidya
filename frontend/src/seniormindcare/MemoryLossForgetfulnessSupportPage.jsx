@@ -20,6 +20,7 @@ import heroImage from "../images/memory-loss-forgetfulness-support-seniors-india
 import doctorImage from "../images/doctorimg-2.jpeg";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import RelatedSeniorMindCarePages from "./RelatedSeniorMindCarePages";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -482,16 +483,6 @@ function MemoryLossForgetfulnessSupportPage() {
   }, []);
 
   React.useEffect(() => {
-    document.title = "Memory Loss & Forgetfulness Treatment for Seniors in India | Brain Health & Cognitive Wellbeing | Manovaidya";
-    const description = "Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya.";
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", description);
-
     const schemaId = "memory-loss-forgetfulness-schema";
     document.getElementById(schemaId)?.remove();
     const script = document.createElement("script");
@@ -525,6 +516,18 @@ function MemoryLossForgetfulnessSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Memory Loss & Forgetfulness Treatment for Seniors in India | Brain Health & Cognitive Wellbeing | Manovaidya"
+        description="Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Memory Loss Treatment India, Forgetfulness Support, Senior Brain Health, Dementia Awareness, Age-related Memory Changes, Cognitive Wellbeing, Neuro-Ayurveda Memory Care, Memory Assessment, Dr. Ankush Garg, Senior Mental Health"
+        path="/memory-loss-forgetfulness-support-seniors-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Memory Loss & Forgetfulness Treatment for Seniors in India",
+          "description": "Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

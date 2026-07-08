@@ -28,6 +28,7 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-teen-depression.png";
 import ctaImage from "../images/teen-emotional-wellbeing-india.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -176,15 +177,6 @@ function TeenDepressionLowMoodIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Teen Depression & Low Mood Treatment in India | Teen Mental Health Support | Manovaidya";
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = "Looking for Teen Depression Treatment in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya.";
-
     const scriptId = "faq-schema-script";
     let script = document.getElementById(scriptId);
     if (!script) {
@@ -226,6 +218,18 @@ function TeenDepressionLowMoodIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Teen Depression & Low Mood Treatment in India | Teen Mental Health Support | Manovaidya"
+        description="Looking for Teen Depression Treatment in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Teen Depression Treatment India, Teen Low Mood, Adolescent Depression, Teenage Depression Support, Teen Mental Health, Parent Guidance for Teen Depression, Neuro-Ayurveda Teen Care, Emotional Wellbeing, Dr. Ankush Garg"
+        path="/teen-depression-support"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Teen Depression & Low Mood Treatment in India",
+          "description": "Looking for Teen Depression Treatment in India? Learn about signs, causes, emotional wellbeing, parent guidance and the Neuro-Ayurveda approach at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

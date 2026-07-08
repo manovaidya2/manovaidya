@@ -20,6 +20,7 @@ import lifestyleImage from "../images/ibs-lifestyle-management.png";
 import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.webp"; 
 import consultationImage from "../images/ibs-consultation.png"; 
 import doctorImage from "../images/doctorimg-2.jpeg";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -186,8 +187,20 @@ function StressDigestiveHealthIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Stress & Digestive Health in India | Gut-Brain Connection | Manovaidya"
+        description="Looking for Stress & Digestive Health support in India? Learn how stress affects digestion, bloating, appetite and gut-brain wellbeing at Manovaidya."
+        keywords="Stress & Digestive Health, Gut-Brain Connection, Gut-Brain Axis, Stress and Digestion, Digestive Wellbeing, Bloating and Stress, Indigestion, Emotional Wellbeing and Gut Health, Mind-Body Health, Digestive Health Assessment, Neuro-Ayurveda Development System, Stress-Related Digestive Symptoms"
+        path="/stress-and-digestive-health"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Stress & Digestive Health in India",
+          "description": "Looking for Stress & Digestive Health support in India? Learn how stress affects digestion, bloating, appetite and gut-brain wellbeing at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
-        
+
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
             <div className="relative z-10">

@@ -7,6 +7,7 @@ import {
   Newspaper,
   Sparkles,
 } from "lucide-react";
+import Seo from "../components/Seo";
 import heroImage from "../images/media-pr-hero.png";
 
 const articleTitle =
@@ -173,6 +174,18 @@ function MediaPRPage() {
 
   return (
     <main className="bg-[#fbfaff] text-[#251553]">
+      <Seo
+        title="Manovaidya In The Media | PR & News Coverage | Dr. Ankush Garg"
+        description="Explore Manovaidya's media coverage and news features. See how Dr. Ankush Garg is redefining autism and mental health care in India through Neuro-Ayurveda."
+        keywords="Manovaidya media coverage, Dr. Ankush Garg news, Neuro-Ayurveda press, autism care news India, mental health clinic PR, Manovaidya features, DailyHunt, Times Bulletin"
+        path="/media-coverage"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Manovaidya In The Media",
+          "description": "Explore Manovaidya's media coverage and news features. See how Dr. Ankush Garg is redefining autism and mental health care in India through Neuro-Ayurveda."
+        }}
+      />
       <section className="relative overflow-hidden bg-[#f5f0ff]">
         <div className="mx-auto grid max-w-[1500px] items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.04fr_0.96fr] lg:px-10 lg:py-20">
           <div>

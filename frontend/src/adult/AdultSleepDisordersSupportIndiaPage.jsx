@@ -39,6 +39,7 @@ import supportImage from "../images/healthy-sleep-support.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import BookConsultationButton from "../components/BookConsultationButton";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -250,6 +251,11 @@ function AdultSleepDisordersSupportIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Sleep Disorders & Insomnia Treatment in India | Poor Sleep, Insomnia & Healthy Sleep | Manovaidya"
+        description="Looking for Sleep Disorders & Insomnia Treatment in India? Learn about insomnia, poor sleep, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Sleep Disorders Treatment, Sleep Disorders Treatment in India, Insomnia Support, Insomnia Symptoms, Poor Sleep Quality, Difficulty Sleeping, Chronic Sleep Problems, Sleep Hygiene, Healthy Sleep Habits, Daytime Fatigue, Sleep and Mental Health, Emotional Wellbeing, Sleep Assessment"
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

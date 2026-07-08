@@ -25,6 +25,7 @@ import neuroAyurvedaImage from "../images/science-neuro-ayurveda.png";
 import ctaImage from "../images/adult-sunset-cta.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedAdultPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -450,7 +451,6 @@ const faqs = [
     "answer": "You should consider seeking professional guidance if anxiety becomes persistent, difficult to control or begins affecting your work, relationships, sleep or daily life. Frequent overthinking, ongoing worry, panic-like episodes or physical symptoms that interfere with normal functioning should not be ignored. A structured assessment can help identify contributing factors and create a personalized roadmap for improving emotional wellbeing."
   }
 ];
-const seoNotes = "STEP 1: URL\nFinal URL\n/anxiety-support-india/\n\nOR PAHELE CHECK KARTA HAI \nAlternative:\n/anxiety-treatment-india/\n\n\nSTEP 2: SEO TITLE\nFinal\nAdult Anxiety Treatment in India | Anxiety Symptoms, Overthinking & Emotional Wellbeing | Manovaidya\n\n\nSTEP 3: META DESCRIPTION\nLooking for Adult Anxiety Treatment in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya.\n\n\nSTEP 4: H1\nAdult Anxiety Treatment in India\n\nOnly one H1.\n\nSTEP 5: H2 Structure\nUnderstanding Anxiety in Adults\n\nCommon Signs & Symptoms of Anxiety\n\nWhy Anxiety Develops\n\nHow Anxiety Can Affect Daily Life\n\nThe Neuro-Ayurveda Approach to Adult Anxiety Support\n\nHow Adults Can Support Their Emotional Wellbeing\n\nHow Manovaidya Supports Adults\n\nWhy Adults Across India Choose Manovaidya\n\nAbout Dr. Ankush Garg\n\nFrequently Asked Questions\n\nBook a Consultation\n\n\nSTEP 6: PRIMARY KEYWORDS\nNatural placement across the page.\nAdult Anxiety Support\n\nAdult Anxiety Treatment in India\n\nAnxiety Support India\n\nAnxiety Symptoms\n\nGeneralized Anxiety\n\nOverthinking\n\nPanic Episodes\n\nEmotional Wellbeing\n\nPersistent Anxiety\n\nConstant Worry\n\n\nSTEP 7: SECONDARY KEYWORDS\nPhysical Symptoms of Anxiety\n\nAnxiety Attack\n\nStress and Anxiety\n\nAnxiety Disorder\n\nExcessive Worry\n\nMental Wellbeing\n\nEmotional Stress\n\nRestlessness\n\nDifficulty Relaxing\n\nSleep Problems Due to Anxiety\n\n\nSTEP 8: LONG-TAIL KEYWORDS\nNaturally include these phrases throughout the content:\nHow to manage anxiety naturally\n\nHow to reduce overthinking\n\nWhy do I feel anxious all the time\n\nSigns of anxiety in adults\n\nHow anxiety affects daily life\n\nWhat causes anxiety\n\nCan anxiety affect the body\n\nAnxiety and sleep problems\n\nAnxiety and work stress\n\nProfessional support for anxiety\n\n\nSTEP 9: LOCAL SEO\nAdd after:\nWhy Adults Across India Connect With Manovaidya\nAdults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Adult Anxiety Support, Overthinking Support and Emotional Wellbeing guidance through online and in-clinic consultations.\n\n\nSTEP 10: ABOUT DR. ANKUSH GARG\nBased in Delhi NCR, Dr. Ankush Garg supports adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.\n\n\nSTEP 11: IMAGE SEO\nHero Image\nFilename\nadult-anxiety-support-india.webp\n\nALT\nAdult Anxiety Treatment in India at Manovaidya\n\n\nAnxiety Symptoms Image\nFilename\nanxiety-symptoms-adults.webp\n\nALT\nCommon anxiety symptoms in adults\n\n\nNeuro-Ayurveda Image\nFilename\nneuro-ayurveda-anxiety-support.webp\n\nALT\nNeuro Ayurveda approach for adult anxiety support\n\n\nConsultation CTA Image\nFilename\nadult-emotional-wellbeing-support.webp\n\nALT\nAdult emotional wellbeing and anxiety support\n\n\nSTEP 12: INTERNAL LINKS\nAdult Mental Health Hub\nAnchor\nExplore Adult Mental Health Care.\n\nURL\n/adult-mental-health-care/\n\n\nDepression\nAnchor\nLearn about Adult Depression Treatment.\n\nURL\n/adult-depression-support/\n\n\nStress & Burnout\nAnchor\nExplore Stress & Burnout Treatment.\n\nURL\n/stress-burnout-support/\n\n\nSleep Disorders\nAnchor\nUnderstand Sleep & Mood Disorder Support.\n\nURL\n/sleep-disorders-support/\n\n\nOCD\nAnchor\nLearn about OCD Support.\n\nURL\n/ocd-support/\n\n\nBipolar\nAnchor\nExplore Bipolar Disorder Support.\n\nURL\n/bipolar-support/\n\n\nDr Ankush Garg\nAnchor\nKnow more about Dr. Ankush Garg.\n\nURL\n/dr-ankush-garg/\n\n\nSTEP 13: FAQ Schema\nDeveloper:\nImplement all 15 FAQs using JSON-LD FAQ Schema.\n\n\nSTEP 14: Breadcrumb\nHome\n\n>\n\nAdult Mental Health Care\n\n>\n\nAdult Anxiety Support\n\n\nSTEP 15: RELATED PAGES\nAdult Depression Treatment\n\nStress & Burnout Treatment\n\nSleep Disorders & Insomnia Support\n\nOCD Support\n\nBipolar Disorder Support\n\n\nSTEP 16: CTA\nHeading\nConcerned About Persistent Anxiety or Overthinking?\n\nText\nBook a structured assessment and personalized guidance session with the Manovaidya team to better understand your emotional wellbeing.\n\nButtons\nBook Consultation\n\nTake Mental Health Assessment\n\n\nSTEP 17: SCHEMA\nDeveloper ko ye 4 schemas implement karne hain:\n✅ MedicalWebPage Schema\n✅ FAQ Schema\n✅ BreadcrumbList Schema\n✅ Physician Schema (Dr. Ankush Garg)\n\nSTEP 18: E-E-A-T (Very Important)\nIs page mein niche ek small trust section add karna:\nWhy Trust Manovaidya?\nStructured Neuro-Ayurveda Development System\nPersonalized Assessment Before Recommendations\nOnline & In-Clinic Consultations Across India\nHolistic Mind-Body Approach\nGuidance by Dr. Ankush Garg";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -870,15 +870,6 @@ function AdultAnxietySupportIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Adult Anxiety Treatment in India | Anxiety Symptoms, Overthinking & Emotional Wellbeing | Manovaidya";
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = "Looking for Adult Anxiety Treatment in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya.";
-
     const schemas = [faqSchema, breadcrumbSchema, medicalWebPageSchema, physicianSchema];
     const scriptId = "adult-anxiety-support-schema";
     let script = document.getElementById(scriptId);
@@ -912,6 +903,11 @@ function AdultAnxietySupportIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Adult Anxiety Treatment in India | Anxiety Symptoms, Overthinking & Emotional Wellbeing | Manovaidya"
+        description="Looking for Adult Anxiety Treatment in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Adult Anxiety Support, Adult Anxiety Treatment in India, Anxiety Support India, Anxiety Symptoms, Generalized Anxiety, Overthinking, Panic Episodes, Emotional Wellbeing, Persistent Anxiety, Constant Worry, Physical Symptoms of Anxiety, Anxiety Attack, Anxiety Disorder, Excessive Worry, Restlessness, Sleep Problems Due to Anxiety"
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -970,7 +966,6 @@ function AdultAnxietySupportIndiaPage() {
             </div>
           </section>
 
-          <div className="sr-only" aria-hidden="true">{seoNotes}</div>
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

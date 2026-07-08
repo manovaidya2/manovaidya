@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Seo from "../components/Seo";
 import {
   Activity,
   ArrowRight,
@@ -186,6 +187,18 @@ function StressFatigueIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Stress & Fatigue Treatment in India | Mind-Body Health | Manovaidya"
+        description="Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy."
+        keywords="Stress & Fatigue, Chronic Fatigue Treatment India, Stress and Energy Levels, Mental Fatigue, Physical Exhaustion and Stress, Adrenal Fatigue, Emotional Wellbeing, Mind-Body Health, Fatigue Assessment, Neuro-Ayurveda Development System, Low Energy Support"
+        path="/stress-and-fatigue"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Stress & Fatigue Treatment in India",
+          "description": "Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         
         <article className="min-w-0">

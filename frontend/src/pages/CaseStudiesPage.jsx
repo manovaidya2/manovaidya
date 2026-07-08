@@ -17,6 +17,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import NewsletterSection from "../blog/NewsletterSection";
+import Seo from "../components/Seo";
 import api, { getAssetUrl } from "../api/axiosInstance";
 import heroImage from "../images/blog-insights-family.png";
 import childImage from "../images/child-support-family.png";
@@ -144,6 +145,18 @@ function CaseStudiesPage() {
 
   return (
     <main>
+      <Seo
+        title="Case Studies | Real Care Journeys & Outcomes | Manovaidya"
+        description="Browse Manovaidya case studies on autism, speech delay and teen wellness, showing how personalised Neuro-Ayurveda care plans support real family outcomes."
+        keywords="Manovaidya case studies, autism case study, speech delay case study, teen mental wellness case study, child development case studies, Neuro-Ayurveda care journeys, personalised care plans, ADHD case study, family care outcomes, real patient case studies"
+        path="/case-studies"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Case Studies",
+          "description": "Browse Manovaidya case studies on autism, speech delay and teen wellness, showing how personalised Neuro-Ayurveda care plans support real family outcomes."
+        }}
+      />
       <section className="overflow-hidden bg-[#fbfaff]" aria-label="Case Studies">
         <div className="lg:hidden">
           <div className="px-6 pb-8 pt-10 sm:px-10 sm:pb-10 sm:pt-12">

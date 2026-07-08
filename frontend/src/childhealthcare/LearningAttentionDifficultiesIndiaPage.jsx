@@ -27,6 +27,7 @@ import ctaImage from "../images/child-wellbeing-sunset-cta.png";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -308,31 +309,6 @@ function LearningAttentionDifficultiesIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Learning & Attention Difficulties Support in India | Child Learning Assessment | Manovaidya";
-
-    const setMetaTag = (name, content) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("name", name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMetaTag(
-      "description",
-      "Looking for support for learning and attention difficulties in children? Learn about child learning assessment, attention development and developmental support through the Neuro-Ayurveda Development System at Manovaidya."
-    );
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}/learning-attention-difficulties-india`;
-
     const schema = {
       "@context": "https://schema.org",
       "@graph": [
@@ -415,6 +391,18 @@ function LearningAttentionDifficultiesIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Learning & Attention Difficulties Support in India | Child Learning Assessment | Manovaidya"
+        description="Looking for support for learning and attention difficulties in children? Learn about child learning assessment, attention development and developmental support through the Neuro-Ayurveda Development System at Manovaidya."
+        keywords="Learning Difficulties Treatment in India, Attention Problems in Children, Child Learning Assessment, Academic Development Guidance, Learning Difficulties vs Attention Difficulties, Memory Difficulties in Children, Concentration Problems in Children, Poor School Performance, ADHD vs Learning Disability, Neuro-Ayurveda Development System, Learning Support in India, Parent Guidance for Learning Difficulties, Dr. Ankush Garg, Child Learning Specialist Delhi NCR, Academic Performance Concerns"
+        path="/learning-attention-difficulties-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Learning & Attention Difficulties Support in India",
+          "description": "Looking for support for learning and attention difficulties in children? Learn about child learning assessment, attention development and developmental support through the Neuro-Ayurveda Development System at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

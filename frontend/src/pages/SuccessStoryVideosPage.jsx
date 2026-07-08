@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Seo from "../components/Seo";
 import { storyFilters, videoStories } from "../successStory/successStoryData";
 
 function SuccessStoryVideosPage() {
@@ -10,6 +11,11 @@ function SuccessStoryVideosPage() {
 
   return (
     <main className="bg-white px-4 py-10 text-[#071c2b] sm:px-6 lg:px-10">
+      <Seo
+        title="Video Success Stories | Patient Testimonials | Manovaidya"
+        description="Watch video testimonials from families sharing their Manovaidya care experience, filterable by category, with links to the full videos on YouTube."
+        keywords="video success stories, patient video testimonials, Manovaidya YouTube stories, family care experience videos, autism video testimonials, ADHD success videos, child development videos, parent testimonials video, real family stories, Neuro-Ayurveda video reviews"
+      />
       <section className="mx-auto max-w-[1440px]">
         <div className="text-center">
           <p className="text-[13px] font-black uppercase tracking-[0.18em] text-[#8B43BA]">

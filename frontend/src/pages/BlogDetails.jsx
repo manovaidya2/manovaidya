@@ -457,7 +457,7 @@ export default function BlogDetails() {
                 <div className="space-y-4">
                   {relatedBlogs.map(post => (
                     <Link key={post._id} to={`/blog/${post.slug}`} className="group flex gap-4">
-                      <img src={getAssetUrl(post.image)} alt="" className="h-16 w-16 rounded-xl object-cover transition group-hover:opacity-80" />
+                      <img src={getAssetUrl(post.image)} alt={post.title} className="h-16 w-16 rounded-xl object-cover transition group-hover:opacity-80" />
                       <div className="min-w-0">
                         <h4 className="line-clamp-2 text-sm font-bold text-slate-800 transition group-hover:text-teal-700 leading-snug">
                           {post.title}

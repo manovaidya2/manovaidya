@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Seo from "../components/Seo";
 import {
   Activity,
   ArrowRight,
@@ -186,6 +187,18 @@ function StressHeadachesIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+      <Seo
+        title="Stress & Headaches Treatment in India | Mind-Body Health | Manovaidya"
+        description="Looking for Stress & Headaches treatment in India? Learn about tension headaches, stress triggers, and holistic Neuro-Ayurveda relief at Manovaidya."
+        keywords="Stress & Headaches, Tension Headaches India, Stress Headaches Treatment, Headache Relief, Chronic Headaches, Emotional Wellbeing, Mind-Body Health, Headache Assessment, Neuro-Ayurveda Development System, Migraine vs Tension Headache"
+        path="/stress-and-headaches"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Stress & Headaches Treatment in India",
+          "description": "Looking for Stress & Headaches treatment in India? Learn about tension headaches, stress triggers, and holistic Neuro-Ayurveda relief at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         
         <article className="min-w-0">

@@ -25,6 +25,7 @@ import ctaImage from "../images/child-wellbeing-sunset-cta.png";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -400,31 +401,6 @@ function ChildDevelopmentCareIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Child Development Care in India | Child Development Assessment & Treatment | Manovaidya";
-
-    const setMetaTag = (name, content) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("name", name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMetaTag(
-      "description",
-      "Looking for Child Development Care in India? Learn about child development, developmental milestones, assessments, autism, ADHD, speech delay, learning and behaviour support at Manovaidya."
-    );
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}/child-development-care-india`;
-
     const schema = {
       "@context": "https://schema.org",
       "@graph": [
@@ -503,6 +479,18 @@ function ChildDevelopmentCareIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Child Development Care in India | Child Development Assessment & Treatment | Manovaidya"
+        description="Looking for Child Development Care in India? Learn about child development, developmental milestones, assessments, autism, ADHD, speech delay, learning and behaviour support at Manovaidya."
+        keywords="Child Development Care in India, Child Development Assessment, Developmental Milestones, Developmental Delay, Autism Spectrum Disorder Treatment, ADHD Treatment, Speech and Language Development, Learning Difficulties, Behavioural Development, Sensory Processing Support, Motor Development Delay, Emotional Regulation in Children, Neuro-Ayurveda Development System, Dr. Ankush Garg Child Development Specialist, Child Development Clinic Delhi NCR"
+        path="/child-development-care-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Child Development Care in India",
+          "description": "Looking for Child Development Care in India? Learn about child development, developmental milestones, assessments, autism, ADHD, speech delay, learning and behaviour support at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">

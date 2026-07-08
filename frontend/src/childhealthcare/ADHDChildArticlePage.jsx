@@ -27,6 +27,7 @@ import signsImage from "../images/child-signs-reflection.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import RelatedPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -236,6 +237,18 @@ function ADHDChildArticlePage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="ADHD Treatment in India | ADHD Assessment & Attention Support | Manovaidya"
+        description="Looking for ADHD Treatment in India? Learn about ADHD Assessment, attention support, behaviour guidance and child development care at Manovaidya."
+        keywords="ADHD Treatment in India, ADHD Assessment, ADHD Signs and Symptoms in Children, Inattention Symptoms, Hyperactivity Symptoms, Impulsivity in Children, Attention Deficit Hyperactivity Disorder, Child Development Support, Neuro-Ayurveda Development System, Parent Guidance for ADHD, Behaviour Guidance for ADHD, ADHD Assessment Delhi NCR, Dr. Ankush Garg ADHD Specialist, Learning Readiness ADHD, ADHD Treatment Noida Ghaziabad"
+        path="/child-health-care/adhd-child"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "ADHD Treatment in India",
+          "description": "Looking for ADHD Treatment in India? Learn about ADHD Assessment, attention support, behaviour guidance and child development care at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
 
         <article className="min-w-0">

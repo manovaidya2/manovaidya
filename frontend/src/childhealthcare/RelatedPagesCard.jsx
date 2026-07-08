@@ -50,7 +50,7 @@ function RelatedPagesCard() {
       <div className="mt-5 space-y-5">
         {relatedPages.map((article) => (
           <a key={article.title} href={article.href} className="grid grid-cols-[76px_1fr] gap-3">
-            <img src={article.image} alt="" className="h-16 w-[76px] rounded-md object-cover" />
+            <img src={article.image} alt={article.title} className="h-16 w-[76px] rounded-md object-cover" />
             <span>
               <span className="block text-[12px] font-black leading-5 text-[#21142d]">{article.title}</span>
               <span className="mt-1 block text-[11px] font-bold text-[#75677d]">Open page</span>

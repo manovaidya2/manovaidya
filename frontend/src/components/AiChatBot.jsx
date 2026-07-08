@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import { Bot, Loader2, MessageCircle, RotateCcw, Send, Sparkles, X } from "lucide-react";
+import { Bot, MessageCircle, RotateCcw, Send, Sparkles, X } from "lucide-react";
 import api from "../api/axiosInstance";
 
 const greeting = {
@@ -129,8 +129,30 @@ const bookingSteps = [
 const isBookingIntent = (value) =>
   /book|appointment|consultation|consult|doctor|schedule|call\s?back/i.test(value);
 
-const isAgentIntent = (value) =>
-  /agent|human|support|live\s?chat|team|staff|person|representative|connect|baat|bat|insaan|admin/i.test(value);
+const isAgentIntent = (value) => {
+  const cleanValue = normalizeQuestion(value);
+
+  const directTerms = [
+    "agent",
+    "human",
+    "live chat",
+    "livechat",
+    "representative",
+    "insaan",
+    "customer support",
+    "support team",
+    "live support",
+    "helpline",
+    "real person",
+  ];
+  if (hasAnyTerm(cleanValue, directTerms)) return true;
+
+  const connectVerbs = ["connect", "talk", "baat", "bat", "chat", "speak"];
+  const targetWords = ["agent", "team", "support", "someone", "admin", "human", "person", "staff", "insaan"];
+  return connectVerbs.some((verb) =>
+    targetWords.some((target) => new RegExp(`\\b${verb}\\b[\\s\\S]{0,15}\\b${target}\\b`).test(cleanValue))
+  );
+};
 
 const agentLeadSteps = [
   { key: "name", prompt: "Before connecting you to an agent, please share your full name." },
@@ -1140,9 +1162,10 @@ function AiChatBot() {
                 </div>
               ))}
               {isLoading ? (
-                <div className="mr-auto inline-flex max-w-[88%] items-center gap-2 rounded-2xl border border-[#8B43BA]/12 bg-white px-4 py-3 text-[13.5px] font-bold text-[#312448]">
-                  <Loader2 className="h-4 w-4 animate-spin text-[#8B43BA]" />
-                  {agentMode ? "Sending..." : "Preparing a detailed answer..."}
+                <div className="mr-auto inline-flex max-w-[88%] items-center gap-1.5 rounded-2xl border border-[#8B43BA]/12 bg-white px-4 py-3.5">
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70 [animation-delay:-0.3s]" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70 [animation-delay:-0.15s]" />
+                  <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70" />
                 </div>
               ) : null}
               <div ref={chatEndRef} />

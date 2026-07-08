@@ -27,6 +27,7 @@ import ctaImage from "../images/child-wellbeing-sunset-cta.png";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
+import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -304,31 +305,6 @@ function SpeechDelaySupportIndiaPage() {
       document.head.appendChild(link);
     }
 
-    document.title = "Speech Delay Treatment in India | Communication Development & Assessment | Manovaidya";
-
-    const setMetaTag = (name, content) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("name", name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMetaTag(
-      "description",
-      "Looking for Speech Delay Treatment in India? Learn about communication development, speech assessment and child development support through the Neuro-Ayurveda Development System at Manovaidya."
-    );
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `${window.location.origin}/speech-delay-support-india`;
-
     const schema = {
       "@context": "https://schema.org",
       "@graph": [
@@ -412,6 +388,18 @@ function SpeechDelaySupportIndiaPage() {
       className="min-h-screen bg-white text-[#1f1726]"
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
+      <Seo
+        title="Speech Delay Treatment in India | Communication Development & Assessment | Manovaidya"
+        description="Looking for Speech Delay Treatment in India? Learn about communication development, speech assessment and child development support through the Neuro-Ayurveda Development System at Manovaidya."
+        keywords="Speech Delay Treatment in India, Communication Development Support, Child Speech Assessment, Language Delay in Children, Early Signs of Speech Delay, Speech Delay vs Language Delay, Social Communication Challenges, Non-verbal Communication in Children, Neuro-Ayurveda Development System, Speech Development Guidance India, Parent Guidance for Speech Delay, Autism and Speech Delay, Dr. Ankush Garg, Child Development Clinic Delhi NCR, Communication Confidence in Children"
+        path="/speech-delay-support-india"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          "name": "Speech Delay Treatment in India",
+          "description": "Looking for Speech Delay Treatment in India? Learn about communication development, speech assessment and child development support through the Neuro-Ayurveda Development System at Manovaidya."
+        }}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
