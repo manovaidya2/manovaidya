@@ -4,11 +4,12 @@ import api from "../api/axiosInstance";
 
 const greeting = {
   role: "assistant",
-  text: "Namaste. Ask me about Manovaidya services, conditions, consultations, care approach, or available support options.",
+  text: "Namaste. I can help you with Manovaidya services, conditions, consultation details, care approach, and booking support.",
 };
 
 const quickQuestions = [
   "Book consultation",
+  "Connect with agent",
   "Tell me about autism support",
   "How does Neuro-Ayurveda help?",
   "Can I book an online consultation?",
@@ -128,6 +129,14 @@ const bookingSteps = [
 const isBookingIntent = (value) =>
   /book|appointment|consultation|consult|doctor|schedule|call\s?back/i.test(value);
 
+const isAgentIntent = (value) =>
+  /agent|human|support|live\s?chat|team|staff|person|representative|connect|baat|bat|insaan|admin/i.test(value);
+
+const agentLeadSteps = [
+  { key: "name", prompt: "Before connecting you to an agent, please share your full name." },
+  { key: "phone", prompt: "Please share your mobile number." }
+];
+
 const normalizeQuestion = (value) =>
   String(value || "")
     .toLowerCase()
@@ -136,6 +145,139 @@ const normalizeQuestion = (value) =>
     .trim();
 
 const hasAnyTerm = (value, terms) => terms.some((term) => value.includes(term));
+
+const isBookingCancelIntent = (value) => {
+  const cleanValue = normalizeQuestion(value);
+  const mentionsConsultation = hasAnyTerm(cleanValue, ["consultation", "consult", "appointment", "book", "booking"]);
+  const negativeIntent = hasAnyTerm(cleanValue, [
+    "nahi",
+    "nhi",
+    "nahin",
+    "na chahiye",
+    "nahi chahiye",
+    "nhi chahiye",
+    "nahin chahiye",
+    "abhi nahi",
+    "abhi nhi",
+    "cancel",
+    "stop",
+    "mat karo",
+    "no",
+  ]);
+  return negativeIntent && (mentionsConsultation || hasAnyTerm(cleanValue, ["nahi chahiye", "nhi chahiye", "nahin chahiye", "cancel", "stop"]));
+};
+
+const isFillerReply = (value) =>
+  ["ok", "okay", "okk", "haan", "han", "yes", "hmm", "hm", "theek hai", "thik hai"].includes(normalizeQuestion(value));
+
+const isLikelyVisitorQuestion = (value) => {
+  const cleanValue = normalizeQuestion(value);
+  return (
+    /[?؟]/.test(value) ||
+    hasAnyTerm(cleanValue, [
+      "how",
+      "why",
+      "what",
+      "when",
+      "where",
+      "kaise",
+      "kese",
+      "kyu",
+      "kyo",
+      "kya",
+      "kab",
+      "kaha",
+      "kaun",
+      "kon",
+      "fee",
+      "fees",
+      "pay",
+      "payment",
+      "cash",
+      "upi",
+      "card",
+      "slot",
+      "confirm",
+      "aake",
+      "aaunga",
+      "aaungi",
+      "price",
+      "cost",
+      "charge",
+      "doctor",
+      "dr",
+      "medicine",
+      "dawa",
+      "dawai",
+      "result",
+      "review",
+      "rating",
+      "online",
+      "clinic",
+      "query",
+      "doubt",
+      "problem",
+      "कैसे",
+      "क्यों",
+      "क्या",
+      "कब",
+      "कहाँ",
+      "कौन",
+    ])
+  );
+};
+
+const looksLikeBookingSideQuery = (value, stepKey) => {
+  const cleanValue = normalizeQuestion(value);
+  const wordCount = cleanValue.split(" ").filter(Boolean).length;
+  if (isLikelyVisitorQuestion(value)) return true;
+
+  const sideQueryTerms = [
+    "main",
+    "mujhe",
+    "mera",
+    "meri",
+    "pay",
+    "payment",
+    "cash",
+    "upi",
+    "card",
+    "clinic",
+    "online",
+    "aake",
+    "aaunga",
+    "aaungi",
+    "slot",
+    "confirm",
+    "query",
+    "doubt",
+    "problem",
+    "chahiye",
+  ];
+
+  if (hasAnyTerm(cleanValue, sideQueryTerms)) return true;
+  return stepKey === "name" && wordCount > 4;
+};
+
+const getLocalBookingSideAnswer = (question, currentPrompt) => {
+  const value = normalizeQuestion(question);
+
+  if (hasAnyTerm(value, ["pay", "payment", "cash", "upi", "card"])) {
+    return [
+      "Haan, payment ke liye team aapko slot confirmation ke time guide kar degi. Slot payment ke baad confirm hota hai.",
+      currentPrompt,
+    ].join("\n\n");
+  }
+
+  if (hasAnyTerm(value, ["clinic", "aake", "aaunga", "aaungi", "visit"])) {
+    return [
+      "Haan, clinic visit bhi available hai. Noida OPD Tuesday, Thursday aur Saturday ko hoti hai.",
+      currentPrompt,
+    ].join("\n\n");
+  }
+
+  return "";
+};
 
 const isResultIntent = (value) =>
   hasAnyTerm(value, [
@@ -171,10 +313,17 @@ const isMedicineIntent = (value) =>
 const getBookingQuestionAnswer = (question, currentPrompt) => {
   const value = normalizeQuestion(question);
   const isQuestionLike =
-    hasAnyTerm(value, ["kya", "kaun", "kon", "name", "naam", "doctor", "dr", "fee", "fees", "charge", "price", "cost", "medicine", "medicines", "dawa", "dawai", "phone", "number", "call", "rating", "review", "result", "online", "clinic", "कौन", "क्या", "नाम", "डॉक्टर", "दवा", "दवाई"]) ||
+    hasAnyTerm(value, ["how", "kaise", "kese", "kya", "kaun", "kon", "book", "booking", "appointment", "consultation", "consult", "name", "naam", "doctor", "dr", "fee", "fees", "pay", "payment", "cash", "upi", "card", "slot", "confirm", "charge", "price", "cost", "medicine", "medicines", "dawa", "dawai", "phone", "number", "call", "rating", "review", "result", "online", "clinic", "aake", "aaunga", "aaungi", "कैसे", "कौन", "क्या", "नाम", "डॉक्टर", "दवा", "दवाई"]) ||
     /[?؟]/.test(question);
 
   if (!isQuestionLike) return "";
+
+  if (isBookingIntent(value) || hasAnyTerm(value, ["how", "kaise", "kese", "कैसे"])) {
+    return [
+      `Haan, yahin se book ho jayegi. Fee Rs. ${consultationFee} hai; main bas details step by step le lunga.`,
+      currentPrompt,
+    ].join("\n\n");
+  }
 
   if (hasAnyTerm(value, ["doctor", "dr", "name", "naam", "kaun", "kon", "डॉक्टर", "नाम", "कौन"])) {
     return `Doctor name: Dr. Ankush Garg.\n\n${currentPrompt}`;
@@ -187,6 +336,9 @@ const getBookingQuestionAnswer = (question, currentPrompt) => {
   if (hasAnyTerm(value, ["phone", "number", "call", "mobile", "contact"])) {
     return `You can call Manovaidya at ${clinicPhone}.\n\n${currentPrompt}`;
   }
+
+  const localSideAnswer = getLocalBookingSideAnswer(question, currentPrompt);
+  if (localSideAnswer) return localSideAnswer;
 
   if (hasAnyTerm(value, ["online", "clinic", "mode", "visit"])) {
     return `Consultation online aur clinic visit, dono mode me available hai. Noida OPD Tuesday, Thursday and Saturday ko hoti hai, aur slots limited rehte hain.\n\n${currentPrompt}`;
@@ -376,12 +528,12 @@ const getRelevantChunks = async (question) => {
 
   return [
     selectedKnowledge
-    .map((item) => `${item.title}: ${item.text}`)
+      .map((item) => `${item.title}: ${item.text}`)
       .join("\n\n---\n\n"),
     rankedBlogs.length
       ? rankedBlogs
-          .map((blog) => `Related blog: ${blog.title}\n${blog.text}`)
-          .join("\n\n---\n\n")
+        .map((blog) => `Related blog: ${blog.title}\n${blog.text}`)
+        .join("\n\n---\n\n")
       : "",
   ].filter(Boolean).join("\n\n---\n\n")
     .slice(0, 4200);
@@ -421,6 +573,8 @@ const getFastFallbackAnswer = (question) => {
 
 const formatAssistantText = (text) =>
   String(text || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/â€¢/g, "•")
     .replace(/\s+\*\s+/g, "\n• ")
     .replace(/\*\*/g, "")
     .replace(/\*/g, "")
@@ -478,9 +632,16 @@ function ConsultationCta() {
         >
           Book Consultation
         </button>
+        <button
+          type="button"
+          className="rounded-lg border border-[#8B43BA]/25 bg-white px-3 py-2 text-center text-[12px] font-black text-[#8B43BA] transition hover:bg-[#f7effc]"
+          onClick={() => window.dispatchEvent(new CustomEvent("manovaidya:start-agent-chat"))}
+        >
+          Agent Chat
+        </button>
         <a
           href={`tel:+91${clinicPhone}`}
-          className="rounded-lg border border-[#8B43BA]/25 bg-white px-3 py-2 text-center text-[12px] font-black text-[#8B43BA] transition hover:bg-[#f7effc]"
+          className="rounded-lg border border-[#8B43BA]/25 bg-white px-3 py-2 text-center text-[12px] font-black text-[#8B43BA] transition hover:bg-[#f7effc] sm:col-span-2"
         >
           Call {clinicPhone}
         </a>
@@ -496,7 +657,12 @@ function AiChatBot() {
   const [isLoading, setIsLoading] = useState(false);
   const [bookingStep, setBookingStep] = useState(null);
   const [bookingData, setBookingData] = useState({});
+  const [agentLeadStep, setAgentLeadStep] = useState(null);
+  const [agentLeadData, setAgentLeadData] = useState({});
+  const [agentSession, setAgentSession] = useState(null);
+  const [agentMode, setAgentMode] = useState(false);
   const chatEndRef = useRef(null);
+  const seenLiveMessageIds = useRef(new Set());
 
   const canSend = useMemo(
     () => {
@@ -523,6 +689,11 @@ function AiChatBot() {
     setIsLoading(false);
     setBookingStep(null);
     setBookingData({});
+    setAgentLeadStep(null);
+    setAgentLeadData({});
+    setAgentMode(false);
+    setAgentSession(null);
+    seenLiveMessageIds.current = new Set();
   };
 
   const pushAssistantMessage = (text) => {
@@ -532,23 +703,116 @@ function AiChatBot() {
     }, 50);
   };
 
+  const appendLiveMessages = (session) => {
+    const nextMessages = (session?.messages || []).filter((message) => {
+      if (!message._id || seenLiveMessageIds.current.has(message._id)) return false;
+      seenLiveMessageIds.current.add(message._id);
+      return message.sender === "agent" || message.sender === "system";
+    });
+
+    if (!nextMessages.length) return;
+
+    setMessages((current) => [
+      ...current,
+      ...nextMessages.map((message) => ({
+        role: message.sender === "agent" ? "agent" : "assistant",
+        text: message.text,
+      })),
+    ]);
+    window.setTimeout(() => {
+      chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  };
+
+  const startAgentChat = async (initialText = "I want to connect with an agent.", visitorName, visitorPhone, appendUserMessage = true) => {
+    setIsOpen(true);
+    setQuestion("");
+    setBookingStep(null);
+    setBookingData({});
+    setAgentLeadStep(null);
+    setAgentLeadData({});
+    setAgentMode(true);
+    setIsLoading(true);
+    if (appendUserMessage) {
+      setMessages((current) => [...current, { role: "user", text: initialText }]);
+    }
+
+    try {
+      const response = await api.post("/live-chat/sessions", { message: initialText, visitorName, visitorPhone });
+      const session = response.data?.data;
+      if (!session?.sessionKey) throw new Error("Unable to start live chat.");
+
+      (session.messages || []).forEach((message) => {
+        if (message._id) seenLiveMessageIds.current.add(message._id);
+      });
+      setAgentSession(session);
+      pushAssistantMessage(
+        "Aapki detail successfully submit ho gayi hai aur ab aap Manovaidya support team se directly connected hain. Kripya apna sawal yahan likhein, humari team jald hi aapko reply karegi."
+      );
+    } catch (error) {
+      setAgentMode(false);
+      pushAssistantMessage(
+        error.response?.data?.message || "Sorry, agent se connect nahi ho pa raha. Please thodi der baad try karein."
+      );
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  React.useEffect(() => {
+    if (!agentMode || !agentSession?.sessionKey) return undefined;
+
+    const fetchAgentSession = async () => {
+      try {
+        const response = await api.get(`/live-chat/sessions/${agentSession.sessionKey}`);
+        const session = response.data?.data;
+        if (!session) return;
+        setAgentSession(session);
+        appendLiveMessages(session);
+      } catch {
+        // Keep the visitor in the chat; the next poll can recover.
+      }
+    };
+
+    const intervalId = window.setInterval(fetchAgentSession, 4000);
+    void fetchAgentSession();
+    return () => window.clearInterval(intervalId);
+  }, [agentMode, agentSession?.sessionKey]);
+
   const startBookingFlow = () => {
     setIsOpen(true);
     setBookingData({});
     setBookingStep(0);
+    setAgentLeadStep(null);
     pushAssistantMessage(
-      `${reviewNote}\n\n${opdNote}\n\nI can help you book a consultation step by step.\n\n${bookingSteps[0].prompt}`
+      `Haan, bilkul. Dr. Ankush Garg ke saath online consultation book ho sakti hai; fee Rs. ${consultationFee} hai.`
     );
+    window.setTimeout(() => {
+      pushAssistantMessage(bookingSteps[0].prompt);
+    }, 350);
+  };
+
+  const startAgentLeadFlow = () => {
+    setIsOpen(true);
+    setAgentLeadData({});
+    setAgentLeadStep(0);
+    setBookingStep(null);
+    pushAssistantMessage(agentLeadSteps[0].prompt);
   };
 
   React.useEffect(() => {
     const handleStartBooking = () => {
       startBookingFlow();
     };
+    const handleStartAgentChat = () => {
+      startAgentLeadFlow();
+    };
 
     window.addEventListener("manovaidya:start-chat-booking", handleStartBooking);
+    window.addEventListener("manovaidya:start-agent-chat", handleStartAgentChat);
     return () => {
       window.removeEventListener("manovaidya:start-chat-booking", handleStartBooking);
+      window.removeEventListener("manovaidya:start-agent-chat", handleStartAgentChat);
     };
   }, []);
 
@@ -574,6 +838,17 @@ function AiChatBot() {
     const value = String(rawValue || "").trim();
     if (!step || !value) return;
 
+    if (isBookingCancelIntent(value)) {
+      setMessages((current) => [...current, { role: "user", text: value }]);
+      setQuestion("");
+      setBookingStep(null);
+      setBookingData({});
+      pushAssistantMessage(
+        "Koi baat nahi. Kya main jaan sakta hu abhi appointment kyu nahi lena chahte? Aap apni query bata dijiye, main help karta hu."
+      );
+      return;
+    }
+
     const isExactOptionMatch = step.options?.some(
       (opt) =>
         opt.value.toLowerCase() === value.toLowerCase() ||
@@ -588,6 +863,37 @@ function AiChatBot() {
         pushAssistantMessage(bookingQuestionAnswer);
         return;
       }
+
+      if (looksLikeBookingSideQuery(value, step.key)) {
+        setMessages((current) => [...current, { role: "user", text: value }]);
+        setQuestion("");
+
+        const localSideAnswer = getLocalBookingSideAnswer(value, step.prompt);
+        if (localSideAnswer) {
+          pushAssistantMessage(localSideAnswer);
+          return;
+        }
+
+        setIsLoading(true);
+        try {
+          const answer = await askWebsiteAi(value);
+          pushAssistantMessage(`${answer}\n\n${step.prompt}`);
+        } catch {
+          pushAssistantMessage(
+            `Main samajh raha hu. Is query ke liye Manovaidya team aapko better guide kar sakti hai.\n\n${step.prompt}`
+          );
+        } finally {
+          setIsLoading(false);
+        }
+        return;
+      }
+    }
+
+    if (isFillerReply(value) && ["name", "phone", "location"].includes(step.key)) {
+      setMessages((current) => [...current, { role: "user", text: value }]);
+      setQuestion("");
+      pushAssistantMessage(`Thik hai. ${step.prompt}`);
+      return;
     }
 
     if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {
@@ -623,25 +929,110 @@ function AiChatBot() {
     } catch (error) {
       pushAssistantMessage(
         error.response?.data?.message ||
-          "Sorry, the consultation request could not be submitted right now. Please try again."
+        "Sorry, the consultation request could not be submitted right now. Please try again."
       );
     } finally {
       setIsLoading(false);
     }
   };
 
+  const sendAgentMessage = async (rawValue) => {
+    const value = String(rawValue || "").trim();
+    if (!value || isLoading) return;
+
+    if (!agentSession?.sessionKey) {
+      await startAgentChat(value);
+      return;
+    }
+
+    setQuestion("");
+    setMessages((current) => [...current, { role: "user", text: value }]);
+    setIsLoading(true);
+
+    try {
+      const response = await api.post(`/live-chat/sessions/${agentSession.sessionKey}/messages`, {
+        message: value,
+      });
+      const session = response.data?.data;
+      if (session) {
+        (session.messages || []).forEach((message) => {
+          if (message._id && message.sender === "visitor") seenLiveMessageIds.current.add(message._id);
+        });
+        setAgentSession(session);
+        appendLiveMessages(session);
+      }
+    } catch (error) {
+      pushAssistantMessage(
+        error.response?.data?.message || "Message send nahi ho paya. Please dobara try karein."
+      );
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleAgentLeadResponse = async (rawValue) => {
+    const step = agentLeadSteps[agentLeadStep];
+    const value = String(rawValue || "").trim();
+    if (!step || !value) return;
+
+    if (isBookingCancelIntent(value)) {
+      setMessages((current) => [...current, { role: "user", text: value }]);
+      setQuestion("");
+      setAgentLeadStep(null);
+      setAgentLeadData({});
+      pushAssistantMessage(
+        "Koi baat nahi. Aap apni query yaha bta sakte hain."
+      );
+      return;
+    }
+
+    if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {
+      pushAssistantMessage("Please enter a valid 10 digit mobile number.");
+      return;
+    }
+
+    const nextData = { ...agentLeadData, [step.key]: value };
+    setAgentLeadData(nextData);
+    setMessages((current) => [...current, { role: "user", text: value }]);
+    setQuestion("");
+
+    const nextStep = agentLeadStep + 1;
+    if (nextStep < agentLeadSteps.length) {
+      setAgentLeadStep(nextStep);
+      pushAssistantMessage(agentLeadSteps[nextStep].prompt);
+      return;
+    }
+
+    await startAgentChat("Visitor completed lead form and wants to connect.", nextData.name, nextData.phone, false);
+  };
+
   const submitQuestion = async (value = question) => {
     const trimmedQuestion = value.trim();
     if (!trimmedQuestion || isLoading) return;
+
+    if (agentMode) {
+      await sendAgentMessage(trimmedQuestion);
+      return;
+    }
 
     if (bookingStep !== null) {
       await handleBookingResponse(trimmedQuestion);
       return;
     }
 
+    if (agentLeadStep !== null) {
+      await handleAgentLeadResponse(trimmedQuestion);
+      return;
+    }
+
     setQuestion("");
     setIsOpen(true);
     setMessages((current) => [...current, { role: "user", text: trimmedQuestion }]);
+
+    if (isAgentIntent(trimmedQuestion)) {
+      startAgentLeadFlow();
+      return;
+    }
 
     if (isBookingIntent(trimmedQuestion)) {
       startBookingFlow();
@@ -698,7 +1089,7 @@ function AiChatBot() {
               <div className="min-w-0">
                 <h2 className="truncate text-[15px] font-black">Manovaidya AI Assistant</h2>
                 <p className="truncate text-[12px] font-semibold text-white/78">
-                  Guided by Manovaidya information
+                  {agentMode ? "Connected with support team" : "Guided by Manovaidya information"}
                 </p>
               </div>
             </div>
@@ -728,14 +1119,18 @@ function AiChatBot() {
               {messages.map((message, index) => (
                 <div
                   key={`${message.role}-${index}`}
-                  className={`max-w-[88%] rounded-2xl px-4 py-3 text-[13.5px] font-semibold leading-6 ${
-                    message.role === "user"
+                  className={`max-w-[88%] rounded-2xl px-4 py-3 text-[13.5px] font-semibold leading-6 ${message.role === "user"
                       ? "ml-auto bg-[#8B43BA] text-white"
                       : "mr-auto border border-[#8B43BA]/12 bg-white text-[#312448]"
-                  }`}
+                    }`}
                 >
-                  {message.role === "assistant" ? (
+                  {message.role === "assistant" || message.role === "agent" ? (
                     <>
+                      {message.role === "agent" ? (
+                        <p className="mb-1 text-[11px] font-black uppercase tracking-[0.08em] text-[#8B43BA]">
+                          Agent
+                        </p>
+                      ) : null}
                       <AssistantMessage text={message.text} />
                       {message.showCta ? <ConsultationCta /> : null}
                     </>
@@ -747,7 +1142,7 @@ function AiChatBot() {
               {isLoading ? (
                 <div className="mr-auto inline-flex max-w-[88%] items-center gap-2 rounded-2xl border border-[#8B43BA]/12 bg-white px-4 py-3 text-[13.5px] font-bold text-[#312448]">
                   <Loader2 className="h-4 w-4 animate-spin text-[#8B43BA]" />
-                  Preparing a detailed answer...
+                  {agentMode ? "Sending..." : "Preparing a detailed answer..."}
                 </div>
               ) : null}
               <div ref={chatEndRef} />
@@ -756,11 +1151,13 @@ function AiChatBot() {
 
           <div className="border-t border-[#8B43BA]/12 bg-white p-3">
             <div className="mb-3 flex gap-2 overflow-x-auto pb-1">
-              {(bookingStep !== null
-                ? bookingSteps[bookingStep]?.inputType === "select"
-                  ? bookingSteps[bookingStep]?.options?.map((option) => option.label) || []
-                  : []
-                : quickQuestions
+              {(agentMode
+                ? []
+                : bookingStep !== null
+                  ? bookingSteps[bookingStep]?.inputType === "select"
+                    ? bookingSteps[bookingStep]?.options?.map((option) => option.label) || []
+                    : []
+                  : quickQuestions
               ).map((item) => (
                 <button
                   key={item}
@@ -785,7 +1182,7 @@ function AiChatBot() {
                 submitQuestion();
               }}
             >
-              {bookingStep !== null && bookingSteps[bookingStep]?.inputType === "date" ? (
+              {(bookingStep !== null && bookingSteps[bookingStep]?.inputType === "date") ? (
                 <input
                   type="date"
                   value={question}
@@ -811,7 +1208,7 @@ function AiChatBot() {
                   value={question}
                   rows={1}
                   className="min-h-11 flex-1 resize-none rounded-xl border border-[#8B43BA]/18 bg-[#fbfaff] px-3 py-3 text-[14px] font-semibold leading-5 text-[#251553] outline-none transition placeholder:text-slate-400 focus:border-[#8B43BA]"
-                  placeholder={bookingStep !== null ? bookingSteps[bookingStep]?.prompt || "Type your answer..." : "Ask your question..."}
+                  placeholder={agentMode ? "Message agent..." : bookingStep !== null ? bookingSteps[bookingStep]?.prompt || "Type your answer..." : "Ask your question..."}
                   onChange={(event) => setQuestion(event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === "Enter" && !event.shiftKey) {

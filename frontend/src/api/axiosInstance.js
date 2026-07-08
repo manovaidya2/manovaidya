@@ -1,6 +1,12 @@
 import axios from 'axios';
 
-export const API_ORIGIN = 'https://api.manovaidya.org';
+const isLocalHost =
+  typeof window !== 'undefined' &&
+  ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+export const API_ORIGIN =
+  import.meta.env.VITE_API_ORIGIN ||
+  (isLocalHost ? 'http://localhost:5012' : 'https://api.manovaidya.org');
 export const API_BASE_URL = `${API_ORIGIN}/api`;
 
 const api = axios.create({

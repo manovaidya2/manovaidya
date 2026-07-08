@@ -9,6 +9,7 @@ import Analytics from './pages/Analytics';
 import SearchConsole from './pages/SearchConsole';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
+import LiveChats from './pages/LiveChats';
 import { applyAdminAppearance } from './utils/adminSettings';
 
 const PrivateRoute = ({ children }) => {
@@ -38,6 +39,7 @@ function App() {
           {/* Placeholder routes for other sidebar links */}
           <Route path="appointments" element={<Appointments />} />
           <Route path="patients" element={<div className="p-4">Patients Page (Coming Soon)</div>} />
+          <Route path="live-chats" element={<LiveChats />} />
           <Route path="blog" element={<BlogManagement />} />
           <Route path="blogs" element={<Navigate to="/blog" replace />} />
           <Route path="case-studies" element={<CaseStudyManagement />} />
