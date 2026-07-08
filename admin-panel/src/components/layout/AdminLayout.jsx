@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import api from '../../api/axiosInstance';
@@ -23,6 +23,8 @@ export default function AdminLayout() {
   const hasLoadedConsultations = useRef(false);
   const knownConsultationIds = useRef(new Set());
   const toastTimer = useRef(null);
+  const location = useLocation();
+  const isFullWidthPage = location.pathname.includes('/live-chats');
 
   const fetchConsultations = useCallback(async ({ silent = false } = {}) => {
     try {
@@ -107,8 +109,8 @@ export default function AdminLayout() {
           clearLatestNotification={() => setLatestNotification(null)}
         />
         
-        <main>
-          <div className="mx-auto w-full max-w-none p-3 transition-all duration-300 md:p-5 2xl:p-6">
+        <main className="flex-1 flex flex-col">
+          <div className={`mx-auto w-full max-w-none transition-all duration-300 flex-1 flex flex-col ${isFullWidthPage ? 'p-0' : 'p-3 md:p-5 2xl:p-6'}`}>
             <Outlet
               context={{
                 consultations,
