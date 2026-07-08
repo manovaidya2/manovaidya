@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { CheckCircle2, Clock3, MessageCircle, RefreshCw, Send, Search, MoreVertical, Paperclip, Smile } from 'lucide-react';
+import { CheckCircle2, Clock3, MessageCircle, RefreshCw, Send, Search, MoreVertical, Paperclip, Smile, Bell, BellOff, Copy } from 'lucide-react';
 import api from '../api/axiosInstance';
 
 const statusStyles = {
@@ -85,7 +85,81 @@ export default function LiveChats() {
   const [sending, setSending] = useState(false);
   const [error, setError] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [soundEnabled, setSoundEnabled] = useState(() => {
+    return localStorage.getItem('liveChatSound') !== 'false';
+  });
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [toastNotification, setToastNotification] = useState(null);
   const endRef = useRef(null);
+  const settingsMenuRef = useRef(null);
+  const toastTimeoutRef = useRef(null);
+
+  // Close settings dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (settingsMenuRef.current && !settingsMenuRef.current.contains(event.target)) {
+        setSettingsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Request browser notification permission
+  useEffect(() => {
+    if ('Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission();
+    }
+  }, []);
+
+  const toggleSound = () => {
+    const nextState = !soundEnabled;
+    setSoundEnabled(nextState);
+    localStorage.setItem('liveChatSound', String(nextState));
+    if (nextState && 'Notification' in window && Notification.permission === 'default') {
+      Notification.requestPermission();
+    }
+  };
+
+  const showToast = useCallback((title, description, sessionKey = null) => {
+    console.log("showToast called with:", { title, description, sessionKey });
+    console.log("document.hidden:", document.hidden);
+    console.log("visibilityState:", document.visibilityState);
+    console.log("Notification supported:", "Notification" in window);
+    console.log("Notification permission:", Notification.permission);
+
+    // Show in-app visual toast
+    if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
+    setToastNotification({ title, description, id: Date.now() });
+    toastTimeoutRef.current = setTimeout(() => setToastNotification(null), 4000);
+
+    // Show system notification (Temporarily removed isHidden condition as requested in Step 4)
+    if ('Notification' in window && Notification.permission === 'granted') {
+      console.log("Creating desktop notification...");
+      try {
+        const sysNotification = new Notification(title, {
+          body: description,
+          icon: '/favicon.ico',
+          tag: 'manovaidya-chat-notification',
+        });
+        
+        sysNotification.onclick = () => {
+          window.focus();
+          if (sessionKey) {
+            setSelectedId(sessionKey);
+          }
+          sysNotification.close();
+        };
+        
+        setTimeout(() => sysNotification.close(), 5000);
+      } catch (e) {
+        console.error("System notification failed to create:", e);
+      }
+    } else if ('Notification' in window && Notification.permission !== 'denied' && Notification.permission !== 'granted') {
+      console.log("Requesting notification permission...");
+      Notification.requestPermission();
+    }
+  }, []);
 
   const selectedSession = useMemo(
     () => sessions.find((session) => session.sessionKey === selectedId) || null,
@@ -102,31 +176,132 @@ export default function LiveChats() {
     );
   }, [sessions, searchQuery]);
 
+  const prevUnreadTotalRef = useRef(0);
+  const prevSessionsCountRef = useRef(0);
+  
+  const playNotificationSound = useCallback(() => {
+    if (!soundEnabled) return;
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      
+      const playChime = (freq, startTime, duration) => {
+        const oscillator = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        oscillator.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        
+        oscillator.type = 'triangle'; 
+        oscillator.frequency.setValueAtTime(freq, startTime);
+        
+        gainNode.gain.setValueAtTime(0, startTime);
+        gainNode.gain.linearRampToValueAtTime(0.5, startTime + 0.05); // Louder
+        gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+        
+        oscillator.start(startTime);
+        oscillator.stop(startTime + duration);
+      };
+
+      const now = audioCtx.currentTime;
+      // Double chime (Ding-Ding)
+      playChime(880, now, 0.4); 
+      playChime(1108.73, now + 0.15, 0.6); 
+    } catch (e) {
+      console.log("Audio play failed", e);
+    }
+  }, [soundEnabled]);
+
   const fetchSessions = useCallback(async ({ silent = false } = {}) => {
     try {
       if (!silent) setLoading(true);
       setError('');
       const { data } = await api.get('/live-chat/admin/sessions');
       if (!data.success) throw new Error(data.message || 'Failed to fetch live chats');
-      setSessions(data.data || []);
+      
+      const newSessions = data.data || [];
+      setSessions(newSessions);
+      
+      // Calculate total unread messages and find the latest unread session
+      let currentUnreadTotal = 0;
+      let latestUnreadSession = null;
+      let latestUnreadMessage = null;
+      
+      newSessions.forEach(session => {
+        const unreadCount = getUnreadCount(session);
+        currentUnreadTotal += unreadCount;
+        
+        if (unreadCount > 0 && session.messages?.length > 0) {
+          const lastMsg = session.messages[session.messages.length - 1];
+          if (!latestUnreadMessage || new Date(lastMsg.createdAt) > new Date(latestUnreadMessage.createdAt)) {
+            latestUnreadMessage = lastMsg;
+            latestUnreadSession = session;
+          }
+        }
+      });
+
+      console.log("Polling started / fetchSessions completed");
+      console.log("Unread count:", currentUnreadTotal);
+      console.log("Previous unread:", prevUnreadTotalRef.current);
+      console.log("Latest unread session:", latestUnreadSession ? latestUnreadSession.sessionKey : "none");
+
+      // Play sound and show toast if unread count increased or new session created
+      if (silent && (currentUnreadTotal > prevUnreadTotalRef.current || newSessions.length > prevSessionsCountRef.current)) {
+        playNotificationSound();
+        if (latestUnreadSession && latestUnreadMessage) {
+          const name = latestUnreadSession.visitorName || 'Visitor';
+          console.log("showToast called from fetchSessions");
+          if (latestUnreadMessage.sender === 'system') {
+            showToast('New Connection Established', `${name} has requested live support.`, latestUnreadSession.sessionKey);
+          } else {
+            showToast(`New message from ${name}`, latestUnreadMessage.text, latestUnreadSession.sessionKey);
+          }
+        }
+      }
+      
+      prevUnreadTotalRef.current = currentUnreadTotal;
+      prevSessionsCountRef.current = newSessions.length;
       
       // Auto select first session if none selected and not silent update
-      if (!silent && !selectedId && data.data?.[0]?.sessionKey) {
-        setSelectedId(data.data[0].sessionKey);
+      if (!silent && !selectedId && newSessions?.[0]?.sessionKey) {
+        setSelectedId(newSessions[0].sessionKey);
       }
     } catch (err) {
       if (!silent) setError(err.response?.data?.message || err.message || 'Failed to fetch live chats');
     } finally {
       if (!silent) setLoading(false);
     }
-  }, [selectedId]);
+  }, [selectedId, playNotificationSound, showToast]);
 
   useEffect(() => {
     void fetchSessions();
-    const intervalId = window.setInterval(() => {
+    
+    // Use Web Worker to bypass background tab interval throttling
+    const workerCode = `
+      let intervalId;
+      self.onmessage = function(e) {
+        if (e.data === 'start') {
+          intervalId = setInterval(() => {
+            self.postMessage('tick');
+          }, 4000);
+        } else if (e.data === 'stop') {
+          clearInterval(intervalId);
+        }
+      };
+    `;
+    const blob = new Blob([workerCode], { type: 'application/javascript' });
+    const workerUrl = URL.createObjectURL(blob);
+    const worker = new Worker(workerUrl);
+    
+    worker.onmessage = () => {
       void fetchSessions({ silent: true });
-    }, 4000);
-    return () => window.clearInterval(intervalId);
+    };
+    
+    worker.postMessage('start');
+
+    return () => {
+      worker.postMessage('stop');
+      worker.terminate();
+      URL.revokeObjectURL(workerUrl);
+    };
   }, [fetchSessions]);
 
   useEffect(() => {
@@ -204,7 +379,28 @@ export default function LiveChats() {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-64px)] w-full">
+    <div className="flex flex-col h-[calc(100vh-64px)] w-full relative">
+      {/* Toast Notification */}
+      {toastNotification && (
+        <div className="absolute top-4 right-4 z-50 animate-in slide-in-from-top-2 fade-in duration-300">
+          <div className="bg-white rounded-xl shadow-lg border border-slate-200 p-4 flex gap-3 max-w-sm">
+            <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
+              <MessageCircle size={16} />
+            </div>
+            <div>
+              <h4 className="text-sm font-bold text-slate-800">{toastNotification.title}</h4>
+              <p className="text-xs text-slate-500 mt-0.5 line-clamp-2">{toastNotification.description}</p>
+            </div>
+            <button 
+              onClick={() => setToastNotification(null)}
+              className="absolute top-2 right-2 text-slate-400 hover:text-slate-600"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
+
       {error && (
         <div className="m-4 shrink-0 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-700 shadow-sm flex items-center justify-between">
           {error}
@@ -219,6 +415,22 @@ export default function LiveChats() {
         <aside className="w-full md:w-[340px] lg:w-[380px] border-b md:border-b-0 md:border-r border-slate-200 flex flex-col bg-slate-50/30 shrink-0 h-[40vh] md:h-auto">
           {/* Search bar */}
           <div className="p-4 border-b border-slate-200 bg-white">
+            <div className="flex gap-2 mb-3">
+              <button
+                onClick={() => {
+                  console.log("Manual test button clicked");
+                  if ('Notification' in window && Notification.permission === 'granted') {
+                    new Notification("Manual Test", { body: "This is a manual browser notification test.", icon: '/favicon.ico' });
+                  } else {
+                    alert("Notification permission is: " + Notification.permission);
+                    Notification.requestPermission();
+                  }
+                }}
+                className="px-2 py-1 bg-red-100 text-red-600 text-xs font-bold rounded border border-red-200 w-full"
+              >
+                Test Desktop Notification
+              </button>
+            </div>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 h-4 w-4" />
               <input 
@@ -359,9 +571,57 @@ export default function LiveChats() {
                       <span className="hidden sm:inline font-semibold text-sm">Close</span>
                     </button>
                   )}
-                  <button className="h-10 w-10 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-colors shadow-sm ml-1">
-                    <MoreVertical size={18} />
-                  </button>
+                  <div className="relative" ref={settingsMenuRef}>
+                    <button 
+                      onClick={() => setSettingsOpen(!settingsOpen)}
+                      className={`h-10 w-10 flex items-center justify-center rounded-xl border transition-colors shadow-sm ml-1 ${
+                        settingsOpen 
+                          ? 'bg-slate-50 border-slate-300 text-slate-700' 
+                          : 'bg-white border-slate-200 text-slate-400 hover:text-slate-600 hover:bg-slate-50'
+                      }`}
+                    >
+                      <MoreVertical size={18} />
+                    </button>
+                    
+                    {settingsOpen && (
+                      <div className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 overflow-hidden z-50">
+                        <div className="px-4 py-3 border-b border-slate-100 bg-slate-50/50">
+                          <h3 className="text-sm font-bold text-slate-800">Chat Settings</h3>
+                        </div>
+                        <div className="p-2 flex flex-col gap-1">
+                          <button
+                            onClick={() => {
+                              toggleSound();
+                            }}
+                            className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-slate-50 transition-colors"
+                          >
+                            <span className="flex items-center gap-2.5">
+                              {soundEnabled ? (
+                                <Bell size={16} className="text-indigo-500" />
+                              ) : (
+                                <BellOff size={16} className="text-slate-400" />
+                              )}
+                              Sound Alerts
+                            </span>
+                            <div className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${soundEnabled ? 'bg-indigo-500' : 'bg-slate-200'}`}>
+                              <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${soundEnabled ? 'translate-x-4.5' : 'translate-x-1'}`} />
+                            </div>
+                          </button>
+                          
+                          <button
+                            onClick={() => {
+                              navigator.clipboard.writeText(selectedSession.sessionKey);
+                              setSettingsOpen(false);
+                            }}
+                            className="flex items-center gap-2.5 w-full px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-slate-50 transition-colors"
+                          >
+                            <Copy size={16} className="text-slate-400" />
+                            Copy Chat ID
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </header>
 

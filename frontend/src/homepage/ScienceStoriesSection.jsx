@@ -11,6 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import scienceImage from "../images/science-neuro-ayurveda.png";
+import videoThumbnail from "../images/Untitled design.jpg.jpeg";
 
 const focusAreas = [
   { label: "Brain Health", Icon: Brain },
@@ -149,10 +150,11 @@ function ScienceStoriesSection() {
             <div className="mt-5 flex h-[180px] overflow-hidden rounded-xl bg-black shadow-[0_14px_30px_rgba(139,67,186,0.18)]">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"
-                title="Video Testimonial"
+                src="https://www.youtube.com/embed/4EE2fYQUD2c?si=t5IQSgDTwMg-1y3U&autoplay=1"
+                title="YouTube video player"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
             </div>
@@ -162,12 +164,12 @@ function ScienceStoriesSection() {
               className="group relative mt-5 flex h-[180px] w-full items-center justify-center overflow-hidden rounded-xl bg-[#0b0b3b] shadow-[0_14px_30px_rgba(139,67,186,0.18)] transition-all hover:shadow-[0_18px_40px_rgba(139,67,186,0.25)]"
             >
               <img
-                src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src={videoThumbnail}
                 alt="Video thumbnail"
                 className="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-105 group-hover:opacity-60"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2d1b5f]/90 via-[#8B43BA]/30 to-transparent" />
-              
+              <div className="absolute inset-0  to-transparent" />
+
               <div className="relative z-10 flex flex-col items-center justify-center text-center p-4">
                 <div className="relative mb-3 flex h-14 w-14 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-60"></span>
@@ -175,12 +177,12 @@ function ScienceStoriesSection() {
                     <CirclePlay className="h-7 w-7" strokeWidth={2} />
                   </span>
                 </div>
-                <h3 className="text-[20px] font-black leading-tight text-white drop-shadow-md">
+                {/* <h3 className="text-[20px] font-black leading-tight text-white drop-shadow-md">
                   Hear From Our Families
-                </h3>
-                <p className="mt-1 text-[14px] font-bold text-white/90 drop-shadow-sm">
+                </h3> */}
+                {/* <p className="mt-1 text-[14px] font-bold text-white/90 drop-shadow-sm">
                   Click to watch video testimonials
-                </p>
+                </p> */}
               </div>
             </button>
           )}

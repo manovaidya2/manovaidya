@@ -1028,11 +1028,29 @@ function AiChatBot() {
     await startAgentChat("Visitor completed lead form and wants to connect.", nextData.name, nextData.phone, false);
   };
 
+  const closeChatbot = () => {
+    setIsOpen(false);
+    if (agentMode && agentSession?.sessionKey) {
+      api.patch(`/live-chat/admin/sessions/${agentSession.sessionKey}/status`, { status: "closed" }).catch(() => {});
+      resetChat();
+    }
+  };
+
   const submitQuestion = async (value = question) => {
     const trimmedQuestion = value.trim();
     if (!trimmedQuestion || isLoading) return;
 
     if (agentMode) {
+      const lower = trimmedQuestion.toLowerCase();
+      if (lower === "exit" || lower === "close") {
+        api.patch(`/live-chat/admin/sessions/${agentSession.sessionKey}/status`, { status: "closed" }).catch(() => {});
+        pushAssistantMessage("Chat session closed.");
+        window.setTimeout(() => {
+          resetChat();
+          setIsOpen(false);
+        }, 1500);
+        return;
+      }
       await sendAgentMessage(trimmedQuestion);
       return;
     }
@@ -1129,7 +1147,7 @@ function AiChatBot() {
                 type="button"
                 className="flex h-9 w-9 items-center justify-center rounded-full text-white transition hover:bg-white/15"
                 aria-label="Close AI chat"
-                onClick={() => setIsOpen(false)}
+                onClick={closeChatbot}
               >
                 <X className="h-5 w-5" strokeWidth={2.4} />
               </button>
