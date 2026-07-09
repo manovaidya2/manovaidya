@@ -11,6 +11,7 @@ import aiChatRoutes from './routes/aiChatRoutes.js';
 import caseStudyRoutes from './routes/caseStudyRoutes.js';
 import sitemapRoutes from './routes/sitemapRoutes.js';
 import liveChatRoutes from './routes/liveChatRoutes.js';
+import videoRoutes from './routes/videoRoutes.js';
 
 
 
@@ -48,6 +49,7 @@ app.use('/api', aiChatRoutes);
 app.use('/api', caseStudyRoutes);
 app.use('/api', sitemapRoutes);
 app.use('/api', liveChatRoutes);
+app.use('/api', videoRoutes);
 app.use('/', sitemapRoutes);
 
 

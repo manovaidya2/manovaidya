@@ -29,6 +29,21 @@ const formatDate = (value) => {
 const getUnreadCount = (session) =>
   (session?.messages || []).filter((message) => !message.readByAdmin && (message.sender === 'visitor' || message.sender === 'system')).length;
 
+const isIncomingAdminMessage = (message) => message?.sender === 'visitor' || message?.sender === 'system';
+
+const getMessageKey = (session, message, index) =>
+  message?._id || `${session?.sessionKey || 'chat'}-${message?.sender || 'unknown'}-${message?.createdAt || index}-${message?.text || ''}`;
+
+const getVisitorLabel = (session) =>
+  session?.visitorName?.trim() || session?.visitorPhone?.trim() || 'Website Visitor';
+
+const getNotificationDescription = (session, message) => {
+  const text = message?.sender === 'system'
+    ? 'Requested live agent support.'
+    : (message?.text || 'New live chat message.');
+  return session?.visitorPhone ? `${session.visitorPhone} - ${text}` : text;
+};
+
 const getLastMessage = (session) => {
   const last = session?.messages?.[session.messages.length - 1];
   return last?.text || 'No messages yet';
@@ -105,59 +120,89 @@ export default function LiveChats() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Request browser notification permission
-  useEffect(() => {
-    if ('Notification' in window && Notification.permission === 'default') {
-      Notification.requestPermission();
-    }
+  const [notifPermission, setNotifPermission] = useState(() =>
+    'Notification' in window ? Notification.permission : 'unsupported'
+  );
+
+  // Must be called directly from a user click/tap — browsers silently ignore
+  // permission requests that aren't triggered by a real user gesture.
+  const requestNotificationPermission = useCallback(async () => {
+    if (!('Notification' in window)) return;
+    const permission = await Notification.requestPermission();
+    setNotifPermission(permission);
   }, []);
 
   const toggleSound = () => {
     const nextState = !soundEnabled;
     setSoundEnabled(nextState);
     localStorage.setItem('liveChatSound', String(nextState));
-    if (nextState && 'Notification' in window && Notification.permission === 'default') {
-      Notification.requestPermission();
-    }
   };
 
-  const showToast = useCallback((title, description, sessionKey = null) => {
-    console.log("showToast called with:", { title, description, sessionKey });
-    console.log("document.hidden:", document.hidden);
-    console.log("visibilityState:", document.visibilityState);
-    console.log("Notification supported:", "Notification" in window);
-    console.log("Notification permission:", Notification.permission);
+  // Register the service worker used to reliably show desktop notifications
+  // when this tab is in the background. The plain `new Notification()`
+  // constructor only reliably pops up while the calling tab is focused —
+  // browsers throttle/suppress it once you switch to another tab.
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/live-chat-sw.js').catch(() => {});
+    }
+  }, []);
 
+  // When the admin clicks a background notification, the service worker
+  // posts the session key back here so we can jump straight to that chat.
+  useEffect(() => {
+    if (!('serviceWorker' in navigator)) return undefined;
+    const handleMessage = (event) => {
+      if (event.data?.type === 'live-chat-notification-click' && event.data.sessionKey) {
+        window.focus();
+        setSelectedId(event.data.sessionKey);
+      }
+    };
+    navigator.serviceWorker.addEventListener('message', handleMessage);
+    return () => navigator.serviceWorker.removeEventListener('message', handleMessage);
+  }, []);
+
+  const showToast = useCallback(async (title, description, sessionKey = null) => {
     // Show in-app visual toast
     if (toastTimeoutRef.current) clearTimeout(toastTimeoutRef.current);
     setToastNotification({ title, description, id: Date.now() });
     toastTimeoutRef.current = setTimeout(() => setToastNotification(null), 4000);
 
-    // Show system notification (Temporarily removed isHidden condition as requested in Step 4)
-    if ('Notification' in window && Notification.permission === 'granted') {
-      console.log("Creating desktop notification...");
+    if (!('Notification' in window) || Notification.permission !== 'granted') return;
+
+    const options = {
+      body: description,
+      icon: '/favicon.png',
+      // Unique tag per message so a new message never silently replaces
+      // (and suppresses the popup for) a still-visible earlier one.
+      tag: `manovaidya-chat-${sessionKey || 'session'}-${Date.now()}`,
+      data: { sessionKey },
+    };
+
+    try {
+      // Background-tab notifications need to go through a service worker —
+      // Chrome/Edge frequently drop plain `new Notification()` calls once
+      // this tab loses focus.
+      if ('serviceWorker' in navigator) {
+        const registration = await navigator.serviceWorker.ready;
+        await registration.showNotification(title, options);
+        return;
+      }
+      throw new Error('serviceWorker unsupported');
+    } catch {
+      // Fallback for browsers without service worker support — still works
+      // reliably as long as this tab stays focused.
       try {
-        const sysNotification = new Notification(title, {
-          body: description,
-          icon: '/favicon.ico',
-          tag: 'manovaidya-chat-notification',
-        });
-        
+        const sysNotification = new Notification(title, options);
         sysNotification.onclick = () => {
           window.focus();
-          if (sessionKey) {
-            setSelectedId(sessionKey);
-          }
+          if (sessionKey) setSelectedId(sessionKey);
           sysNotification.close();
         };
-        
         setTimeout(() => sysNotification.close(), 5000);
       } catch (e) {
-        console.error("System notification failed to create:", e);
+        console.error('System notification failed to create:', e);
       }
-    } else if ('Notification' in window && Notification.permission !== 'denied' && Notification.permission !== 'granted') {
-      console.log("Requesting notification permission...");
-      Notification.requestPermission();
     }
   }, []);
 
@@ -176,8 +221,8 @@ export default function LiveChats() {
     );
   }, [sessions, searchQuery]);
 
-  const prevUnreadTotalRef = useRef(0);
-  const prevSessionsCountRef = useRef(0);
+  const hasLoadedSessionsRef = useRef(false);
+  const knownIncomingMessageKeysRef = useRef(new Set());
   
   const playNotificationSound = useCallback(() => {
     if (!soundEnabled) return;
@@ -220,45 +265,39 @@ export default function LiveChats() {
       const newSessions = data.data || [];
       setSessions(newSessions);
       
-      // Calculate total unread messages and find the latest unread session
-      let currentUnreadTotal = 0;
-      let latestUnreadSession = null;
-      let latestUnreadMessage = null;
+      const nextIncomingKeys = new Set();
+      const newlyArrivedMessages = [];
       
-      newSessions.forEach(session => {
-        const unreadCount = getUnreadCount(session);
-        currentUnreadTotal += unreadCount;
-        
-        if (unreadCount > 0 && session.messages?.length > 0) {
-          const lastMsg = session.messages[session.messages.length - 1];
-          if (!latestUnreadMessage || new Date(lastMsg.createdAt) > new Date(latestUnreadMessage.createdAt)) {
-            latestUnreadMessage = lastMsg;
-            latestUnreadSession = session;
+      newSessions.forEach((session) => {
+        (session.messages || []).forEach((message, index) => {
+          if (!isIncomingAdminMessage(message)) return;
+
+          const messageKey = getMessageKey(session, message, index);
+          nextIncomingKeys.add(messageKey);
+
+          if (hasLoadedSessionsRef.current && !knownIncomingMessageKeysRef.current.has(messageKey)) {
+            newlyArrivedMessages.push({ session, message });
           }
-        }
+        });
       });
 
-      console.log("Polling started / fetchSessions completed");
-      console.log("Unread count:", currentUnreadTotal);
-      console.log("Previous unread:", prevUnreadTotalRef.current);
-      console.log("Latest unread session:", latestUnreadSession ? latestUnreadSession.sessionKey : "none");
+      if (silent && newlyArrivedMessages.length > 0) {
+        newlyArrivedMessages.sort((a, b) => new Date(a.message.createdAt || 0) - new Date(b.message.createdAt || 0));
+        const latest = newlyArrivedMessages[newlyArrivedMessages.length - 1];
+        const name = getVisitorLabel(latest.session);
+        const isConnectionRequest = latest.message.sender === 'system';
+        const extraCount = newlyArrivedMessages.length > 1 ? ` (+${newlyArrivedMessages.length - 1} more)` : '';
 
-      // Play sound and show toast if unread count increased or new session created
-      if (silent && (currentUnreadTotal > prevUnreadTotalRef.current || newSessions.length > prevSessionsCountRef.current)) {
         playNotificationSound();
-        if (latestUnreadSession && latestUnreadMessage) {
-          const name = latestUnreadSession.visitorName || 'Visitor';
-          console.log("showToast called from fetchSessions");
-          if (latestUnreadMessage.sender === 'system') {
-            showToast('New Connection Established', `${name} has requested live support.`, latestUnreadSession.sessionKey);
-          } else {
-            showToast(`New message from ${name}`, latestUnreadMessage.text, latestUnreadSession.sessionKey);
-          }
-        }
+        showToast(
+          isConnectionRequest ? `Agent request from ${name}${extraCount}` : `New message from ${name}${extraCount}`,
+          getNotificationDescription(latest.session, latest.message),
+          latest.session.sessionKey
+        );
       }
       
-      prevUnreadTotalRef.current = currentUnreadTotal;
-      prevSessionsCountRef.current = newSessions.length;
+      knownIncomingMessageKeysRef.current = nextIncomingKeys;
+      hasLoadedSessionsRef.current = true;
       
       // Auto select first session if none selected and not silent update
       if (!silent && !selectedId && newSessions?.[0]?.sessionKey) {
@@ -415,22 +454,21 @@ export default function LiveChats() {
         <aside className="w-full md:w-[340px] lg:w-[380px] border-b md:border-b-0 md:border-r border-slate-200 flex flex-col bg-slate-50/30 shrink-0 h-[40vh] md:h-auto">
           {/* Search bar */}
           <div className="p-4 border-b border-slate-200 bg-white">
-            <div className="flex gap-2 mb-3">
+            {notifPermission === 'default' && (
               <button
-                onClick={() => {
-                  console.log("Manual test button clicked");
-                  if ('Notification' in window && Notification.permission === 'granted') {
-                    new Notification("Manual Test", { body: "This is a manual browser notification test.", icon: '/favicon.ico' });
-                  } else {
-                    alert("Notification permission is: " + Notification.permission);
-                    Notification.requestPermission();
-                  }
-                }}
-                className="px-2 py-1 bg-red-100 text-red-600 text-xs font-bold rounded border border-red-200 w-full"
+                onClick={requestNotificationPermission}
+                className="flex items-center gap-2 mb-3 w-full px-3 py-2 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-xl border border-indigo-200 hover:bg-indigo-100 transition-colors"
               >
-                Test Desktop Notification
+                <Bell size={14} />
+                Enable desktop notifications for new messages
               </button>
-            </div>
+            )}
+            {notifPermission === 'denied' && (
+              <div className="flex items-center gap-2 mb-3 w-full px-3 py-2 bg-amber-50 text-amber-700 text-xs font-medium rounded-xl border border-amber-200">
+                <BellOff size={14} />
+                Desktop notifications are blocked. Enable them in your browser's site settings.
+              </div>
+            )}
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 h-4 w-4" />
               <input 
@@ -607,7 +645,29 @@ export default function LiveChats() {
                               <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${soundEnabled ? 'translate-x-4.5' : 'translate-x-1'}`} />
                             </div>
                           </button>
-                          
+
+                          <button
+                            onClick={() => {
+                              if (notifPermission === 'default') requestNotificationPermission();
+                            }}
+                            disabled={notifPermission !== 'default'}
+                            className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-slate-50 transition-colors disabled:hover:bg-transparent"
+                          >
+                            <span className="flex items-center gap-2.5">
+                              {notifPermission === 'granted' ? (
+                                <Bell size={16} className="text-indigo-500" />
+                              ) : (
+                                <BellOff size={16} className="text-slate-400" />
+                              )}
+                              Desktop Notifications
+                            </span>
+                            <span className="text-xs font-semibold text-slate-400">
+                              {notifPermission === 'granted' && 'Enabled'}
+                              {notifPermission === 'denied' && 'Blocked'}
+                              {notifPermission === 'default' && 'Click to enable'}
+                            </span>
+                          </button>
+
                           <button
                             onClick={() => {
                               navigator.clipboard.writeText(selectedSession.sessionKey);

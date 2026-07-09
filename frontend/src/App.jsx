@@ -64,6 +64,7 @@ import SuccessStoryVideosPage from "./pages/SuccessStoryVideosPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
 import CaseStudyDetails from "./pages/CaseStudyDetails";
 import MediaPRPage from "./pages/MediaPRPage";
+import VideoLibraryPage from "./pages/VideoLibraryPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -214,6 +215,8 @@ function App() {
           <Route path="/blog/:slug" element={<BlogDetails />} />
           <Route path="/media-coverage" element={<MediaPRPage />} />
           <Route path="/media-coverage/" element={<MediaPRPage />} />
+          <Route path="/video-library" element={<VideoLibraryPage />} />
+          <Route path="/video-library/" element={<VideoLibraryPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

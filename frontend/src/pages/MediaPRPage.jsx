@@ -8,7 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import Seo from "../components/Seo";
-import heroImage from "../images/media-pr-hero.png";
+import heroImage from "../images/doctorimg-2.jpeg";
 
 const articleTitle =
   "How Dr. Ankush Garg is Redefining Autism Care in India Through Ayurveda";
@@ -166,6 +166,72 @@ function getHostname(url) {
   }
 }
 
+function getMediaIcon(name) {
+  const icons = {
+    DailyHunt: "https://play-lh.googleusercontent.com/hob_fdd8pV3AI8K2rv49MumzgdqmBcYW8BfuquYzGtFpsDu-JabZmvZhxm8oNNIX3bg",
+    "Republic News India": "https://republicnewsindia.com/wp-content/uploads/2023/07/Republic-News-India-New-Logo-PNG-300x100.png",
+    Flipboard: "https://cdn-icons-png.flaticon.com/512/356/356016.png",
+    "The Indian Bulletin": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuz3VKDe7AFMIN0cfpYSNELBqav7HuHuhtkQ&s",
+    "RD Times": "https://rdtimes.in/wp-content/uploads/2022/02/RD-Times-Logo-PNG-1.png",
+    "Abhyuday Times": "https://abhyudaytimes.com/wp-content/uploads/2022/11/Abhyuday-Times-Logo-PNG-300x62.png",
+    "Hindustan Saga": "https://i0.wp.com/hindustansaga.com/wp-content/uploads/2022/03/cropped-Hindustan-Saga-Logo-PNG.png?w=397&ssl=1",
+    "Let India Shine": "https://letindiashine.com/wp-content/uploads/2021/06/cropped-Let-India-Shine-PNG-300x56.png",
+    "Indian Scoops": "https://indianscoops.com/wp-content/uploads/2024/12/Indian-Scoops-01-PNG-1.png",
+    "News Outlook": "https://news-outlook.com/wp-content/uploads/2024/03/cropped-News-Outlook-PNG.png",
+    "Times Bulletin": "https://times-bulletin.com/wp-content/uploads/2021/08/Times-Bulletin-PNG-300x54.png",
+    "Indian Sentinel": "https://indiansentinel.in/wp-content/uploads/2021/04/cropped-Indian-Sentinel-Copy-scaled-1.jpg",
+    "National Age": "https://nationalage.com/wp-content/themes/jnews/assets/img/logo@2x.png",
+    "India Thrive": "https://thriveindia.org/wp-content/uploads/2025/04/cropped-Thrive-India_Logo_White-background.png",
+    "Prevalent India": "https://i0.wp.com/prevalentindia.com/wp-content/uploads/2022/03/cropped-Prevalent-India-PNG.png?w=411&ssl=1",
+    "The Fortune India": "https://thefortuneindia.com/wp-content/uploads/2017/11/cropped-The-Fortune-India-PNG-2.png",
+    "Pioneer News": "https://pioneernews.co.in/wp-content/uploads/2022/02/Pioneer-News-PNG-1.png",
+    "India Influencive": "https://indiainfluencive.com/wp-content/uploads/2022/02/India-Influencive-PNG-3.png",
+    "Bharat Herald": "https://bharatherald.com/wp-content/uploads/2021/07/cropped-small-1.png",
+    "Youth News Express": "https://youthnewsexpress.com/wp-content/uploads/2021/09/small-1.png",
+    "The Telegraph News": "https://thetelegraphnews.com/wp-content/uploads/2021/08/small.png",
+    "News Mint 24": "https://newsmint24.com/wp-content/uploads/2021/07/News-Mint24-PNG-1-300x70.png",
+    "Press Journal": "https://press-journal.com/wp-content/uploads/2021/08/cropped-Press-Journal-PNG-1.png",
+    "News Head": "https://newshead.in/wp-content/uploads/2022/11/News-Head-PNG.png",
+    "India News 24": "https://indianews24.co/wp-content/uploads/2021/07/cropped-India-News24-PNG.png",
+    "RKD Live": "https://rkdlive.com/wp-content/uploads/2021/06/cropped-small-2.png",
+    "The National Reader": "https://thenationalreader.com/wp-content/uploads/2022/11/cropped-The-National-Reader-PNG.png",
+    "Scroll News": "https://scrollnews.in/wp-content/uploads/2022/03/Scroll-News-PNG-1.png",
+    "Country First": "https://countryfirst.co.in/wp-content/uploads/2022/11/Country-First-PNG.png",
+    "News Streamline": "https://newsstreamline.com/wp-content/uploads/2021/06/cropped-cropped-cropped-News-Streamline-PNG-1-2048x352.png",
+    "Metro City News": "https://metrocitynews.in/wp-content/uploads/2022/03/Metro-City-News-PNG.png",
+    "Gujarat Journal": "https://gujaratjournal.in/wp-content/uploads/2022/03/Gujarat-Journal-png.png",
+    "My Maharashtra": "https://mymaharashtra.co.in/wp-content/uploads/2022/08/png.png",
+    "Telangana Post": "https://telanganapost.co.in/wp-content/uploads/2017/11/cropped-cropped-png-1.png",
+    "Bharat Mirror": "https://telanganapost.co.in/wp-content/uploads/2017/11/cropped-cropped-png-1.png",
+  };
+
+  return icons[name] || "";
+}
+
+function MediaLogo({ name, size = "md" }) {
+  const icon = getMediaIcon(name);
+  const boxSize = size === "lg" ? "h-16 w-32" : "h-16 w-28";
+  const iconSize = size === "lg" ? "h-7 w-7" : "h-6 w-6";
+
+  return (
+    <div className={`relative flex ${boxSize} shrink-0 items-center justify-center overflow-hidden rounded-[8px] border border-[#eadff4] bg-white p-2 shadow-sm`}>
+      <Newspaper className={`${iconSize} text-[#8b43ba]`} />
+      {icon ? (
+        <img
+          src={icon}
+          alt={`${name} logo`}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          className="absolute inset-2 h-[calc(100%-1rem)] w-[calc(100%-1rem)] rounded-[6px] bg-white object-contain"
+          onError={(event) => {
+            event.currentTarget.style.display = "none";
+          }}
+        />
+      ) : null}
+    </div>
+  );
+}
+
 function MediaPRPage() {
   const uniqueDomains = useMemo(
     () => new Set(mediaLinks.map((item) => getHostname(item.url))).size,
@@ -228,7 +294,7 @@ function MediaPRPage() {
             <img
               src={heroImage}
               alt="Manovaidya media coverage and autism care press room"
-              className="h-[360px] w-full rounded-[8px] object-cover shadow-2xl shadow-[#251553]/15 sm:h-[440px]"
+              className="h-[360px] w-full rounded-[8px] object-cover object-center shadow-2xl shadow-[#251553]/15 sm:h-[440px]"
             />
             <div className="absolute bottom-4 left-4 right-4 rounded-[8px] border border-white/60 bg-white/95 p-4 shadow-xl backdrop-blur">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[#8b43ba]">
@@ -285,9 +351,7 @@ function MediaPRPage() {
                 className="group rounded-[8px] border border-[#eadff4] bg-[#fbfaff] p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#8b43ba]/45 hover:bg-white hover:shadow-xl hover:shadow-[#251553]/10"
               >
                 <div className="flex items-start justify-between gap-5">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[8px] bg-[#eaf7f3] text-[#16745d]">
-                    <Newspaper className="h-6 w-6" />
-                  </div>
+                  <MediaLogo name={item.name} size="lg" />
                   <span className="rounded-full bg-white px-3 py-1 text-xs font-black text-[#8b43ba] shadow-sm">
                     #{index + 1}
                   </span>
@@ -338,6 +402,7 @@ function MediaPRPage() {
                 className="group flex min-h-[132px] flex-col justify-between rounded-[8px] border border-[#e2d4f0] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#8b43ba]/50 hover:shadow-lg"
               >
                 <div className="flex items-start justify-between gap-4">
+                  <MediaLogo name={item.name} />
                   <div className="min-w-0">
                     <h3 className="text-base font-black text-[#251553] transition group-hover:text-[#8b43ba]">
                       {item.name}
@@ -346,7 +411,7 @@ function MediaPRPage() {
                       {getHostname(item.url)}
                     </p>
                   </div>
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[8px] bg-[#fff4e4] text-[#a65b13]">
+                  <div className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-[8px] bg-[#fff4e4] text-[#a65b13]">
                     <ArrowUpRight className="h-4 w-4" />
                   </div>
                 </div>

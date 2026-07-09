@@ -120,7 +120,7 @@ const navItems = [
       { label: "Blog", href: "/blog" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Media & PR", href: "/media-coverage" },
-      { label: "Video Library", href: "/success-stories#video-stories" },
+      { label: "Video Library", href: "/video-library" },
     ],
   },
   // { label: "Our Approach", href: "/about/approach" },

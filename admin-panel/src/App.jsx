@@ -10,6 +10,7 @@ import SearchConsole from './pages/SearchConsole';
 import Login from './pages/Login';
 import Settings from './pages/Settings';
 import LiveChats from './pages/LiveChats';
+import VideoManagement from './pages/VideoManagement';
 import { applyAdminAppearance } from './utils/adminSettings';
 
 const PrivateRoute = ({ children }) => {
@@ -43,6 +44,7 @@ function App() {
           <Route path="blog" element={<BlogManagement />} />
           <Route path="blogs" element={<Navigate to="/blog" replace />} />
           <Route path="case-studies" element={<CaseStudyManagement />} />
+          <Route path="video-library" element={<VideoManagement />} />
           <Route path="analytics" element={<Analytics />} />
           <Route path="search-console" element={<SearchConsole />} />
           <Route path="settings" element={<Settings />} />

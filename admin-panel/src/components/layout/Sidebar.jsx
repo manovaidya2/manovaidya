@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Users, Calendar, Settings, FileText, Activity, BriefcaseBusiness, ChevronLeft, ChevronRight, X, BarChart3, MessageCircle } from 'lucide-react';
+import { LayoutDashboard, Users, Calendar, Settings, FileText, Activity, BriefcaseBusiness, ChevronLeft, ChevronRight, X, BarChart3, MessageCircle, Video } from 'lucide-react';
 import Logo from '../../assets/manovaidya-logo (2).png';
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { icon: Users, label: 'Patients', path: '/patients' },
   { icon: FileText, label: 'Blogs', path: '/blog' },
   { icon: BriefcaseBusiness, label: 'Case Studies', path: '/case-studies' },
+  { icon: Video, label: 'Video Library', path: '/video-library' },
   { icon: Activity, label: 'Analytics', path: '/analytics' },
   { icon: BarChart3, label: 'Search Console', path: '/search-console' },
   { icon: Settings, label: 'Settings', path: '/settings' },
