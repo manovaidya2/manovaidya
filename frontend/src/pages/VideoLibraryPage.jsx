@@ -209,7 +209,7 @@ function VideoLibraryPage() {
       />
 
       <section className="border-b border-[#eadff1] bg-white" aria-label="Video Library">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,0.92fr)_minmax(360px,0.8fr)] lg:items-center lg:px-8">
+        <div className="mx-auto grid gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,0.92fr)_minmax(360px,0.8fr)] lg:items-center lg:px-8">
           <div>
             <span className="inline-flex items-center gap-2 rounded-md border border-[#8B43BA]/20 bg-[#fbf7fd] px-3 py-1.5 text-[12px] font-black uppercase tracking-[0.16em] text-[#8B43BA]">
               <VideoIcon size={14} /> Video Library

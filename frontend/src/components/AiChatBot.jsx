@@ -4,7 +4,7 @@ import api from "../api/axiosInstance";
 
 const greeting = {
   role: "assistant",
-  text: "Namaste. I can help you with Manovaidya services, conditions, consultation details, care approach, and booking support.",
+  text: "Namaste. Main Manovaidya ke services, symptoms, consultation, fees, online/clinic visit, results aur booking ke baare me help kar sakta hu. Aap apna question simple words me puch sakte hain.",
 };
 
 const quickQuestions = [
@@ -30,6 +30,7 @@ const clinicPhone = "7823838638";
 const consultationFee = "599";
 const opdNote = "Consultation fee is Rs. 599. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so please book your slot and complete payment to confirm it.";
 const medicineNote = "Medicine cost fixed nahi hoti. Har child/person, disease/condition aur symptoms alag hote hain, isliye Manovaidya me customized medicine di jati hai. Medicine condition details aur har symptom profile ke according banti hai. Exact medicine cost assessment ke baad team confirm karti hai.";
+const onlineConsultationNote = `Haan, online consultation available hai. Dr. Ankush Garg ke saath online consultation book ho sakti hai; consultation fee Rs. ${consultationFee} hai. Booking ke time name, phone, location, date aur preferred time share karna hota hai.`;
 
 const serviceReferences = [
   ["Child Health Care", "/child-health-care"],
@@ -127,7 +128,47 @@ const bookingSteps = [
 ];
 
 const isBookingIntent = (value) =>
-  /book|appointment|consultation|consult|doctor|schedule|call\s?back/i.test(value);
+  /book|appointment|schedule|call\s?back/i.test(value) ||
+  /\b(consultation|consult|doctor)\b/i.test(value);
+
+const isDirectBookingCommand = (value) => {
+  const cleanValue = normalizeQuestion(value);
+  const infoQuestionTerms = [
+    "can",
+    "kya",
+    "kaise",
+    "how",
+    "fee",
+    "fees",
+    "cost",
+    "price",
+    "charge",
+    "online",
+    "clinic",
+    "timing",
+    "available",
+    "possible",
+    "ho sakta",
+    "hota",
+  ];
+
+  if (cleanValue === "book consultation") return true;
+  if (hasAnyTerm(cleanValue, infoQuestionTerms) || /[?ØŸ]/.test(value)) return false;
+
+  return hasAnyTerm(cleanValue, [
+    "book appointment",
+    "appointment book",
+    "book my appointment",
+    "book slot",
+    "slot book",
+    "schedule appointment",
+    "consultation book",
+    "consult book",
+    "mujhe appointment chahiye",
+    "appointment chahiye",
+    "consultation chahiye",
+  ]);
+};
 
 const isAgentIntent = (value) => {
   const cleanValue = normalizeQuestion(value);
@@ -332,6 +373,26 @@ const isMedicineIntent = (value) =>
     "medicine cost",
   ]);
 
+const isOnlineConsultationQuestion = (value) => {
+  const cleanValue = normalizeQuestion(value);
+  return (
+    hasAnyTerm(cleanValue, ["online", "video", "phone call", "call consultation", "remote"]) &&
+    hasAnyTerm(cleanValue, ["consultation", "consult", "appointment", "book", "doctor"])
+  );
+};
+
+const isFeeIntent = (value) =>
+  hasAnyTerm(value, ["fee", "fees", "charge", "price", "cost", "kitna", "paisa", "payment", "pay"]);
+
+const isDoctorIntent = (value) =>
+  hasAnyTerm(value, ["doctor", "dr", "ankush", "naam", "name", "kaun", "kon"]);
+
+const isContactIntent = (value) =>
+  hasAnyTerm(value, ["phone", "number", "mobile", "call", "contact", "whatsapp", "helpline"]);
+
+const isOpdIntent = (value) =>
+  hasAnyTerm(value, ["opd", "clinic", "visit", "noida", "timing", "time", "day", "days", "aake", "aaunga", "aaungi"]);
+
 const getBookingQuestionAnswer = (question, currentPrompt) => {
   const value = normalizeQuestion(question);
   const isQuestionLike =
@@ -387,6 +448,49 @@ const getExactLocalAnswer = (question) => {
     return medicineNote;
   }
 
+  if (asksAutism) {
+    return [
+      "Manovaidya me autism support ka focus sirf label par nahi hota, balki child ke speech, eye contact, behaviour, sensory issues, sleep, routine aur family concerns ko detail me samajhne par hota hai.",
+      "Autism-related concerns me delayed speech, name response kam hona, eye contact kam hona, social interaction difficulty, repetitive behaviour, sensory sensitivity, hyperactivity ya learning/attention issues dikh sakte hain.",
+      "Consultation me Dr. Ankush Garg child ki history aur current symptoms ko assess karke personalised guidance, parent support aur Neuro-Ayurveda Development System ke according next steps batate hain.",
+      "Agar aapko child ke development, speech, behaviour ya social communication ko lekar doubt hai, to structured consultation best next step rahega.",
+    ].join("\n\n");
+  }
+
+  if (hasAnyTerm(value, ["service", "services", "treatment", "support", "kis cheez", "kya kya", "help"])) {
+    return [
+      "Manovaidya child, teen, adult, women, senior aur mind-body wellbeing concerns me support provide karta hai.",
+      "Main autism, ADHD, speech delay, anxiety, depression, stress, sleep, memory, women hormonal/mood concerns, PCOD-related stress, IBS/acidity/migraine/fatigue jaise topics par website ke according guide kar sakta hu.",
+      "Aap apna symptom ya concern likh dijiye, main uske according simple answer aur relevant next step bata dunga.",
+    ].join("\n\n");
+  }
+
+  if (isOnlineConsultationQuestion(value)) {
+    return [
+      onlineConsultationNote,
+      "Online consultation me team pehle concern/history samajhti hai, phir personalised guidance aur next steps batati hai.",
+    ].join("\n\n");
+  }
+
+  if (isFeeIntent(value) && !isMedicineIntent(value)) {
+    return [
+      `Consultation fee Rs. ${consultationFee} hai.`,
+      "Slot limited rehte hain, aur payment ke baad slot confirm hota hai. Medicine cost fixed nahi hoti; wo assessment ke baad symptom profile ke according confirm hoti hai.",
+    ].join("\n\n");
+  }
+
+  if (isDoctorIntent(value)) {
+    return "Manovaidya me consultation Dr. Ankush Garg ke saath hoti hai. Aap online consultation ya Noida clinic visit ke liye slot book kar sakte hain.";
+  }
+
+  if (isContactIntent(value)) {
+    return `Aap Manovaidya team ko ${clinicPhone} par call kar sakte hain. Chat me "Connect with agent" choose karke support team se bhi connect ho sakte hain.`;
+  }
+
+  if (isOpdIntent(value)) {
+    return opdNote;
+  }
+
   if (asksResult && asksAutism) {
     return [
       "Haan, Manovaidya confidence ke saath bolta hai ki consistent assessment, guidance, follow-up aur family involvement ke baad progress/result dikhna start ho jata hai. Autism Care Journey me communication aur daily activities me noticeable progress mention hai.",
@@ -406,6 +510,11 @@ const getExactLocalAnswer = (question) => {
 };
 
 const knowledgeBase = [
+  {
+    title: "Manovaidya Website Overview",
+    terms: ["manovaidya", "website", "services", "help", "support", "treatment", "care", "condition", "symptom"],
+    text: "Manovaidya provides structured support for child development, autism, ADHD, speech delay, teen mental wellness, adult mental health, women's emotional wellbeing, senior mind and memory care, and mind-body stress-related concerns. The website focuses on assessment, personalised guidance, Neuro-Ayurveda Development System, family involvement, online consultation, clinic OPD and success stories. The assistant should behave like a helpful clinic guide: answer the exact question first, then suggest the next useful step."
+  },
   {
     title: "Results, Reviews and Success Stories",
     terms: ["result", "review", "rating", "success", "testimonial", "google", "kaisa"],
@@ -429,7 +538,12 @@ const knowledgeBase = [
   {
     title: "Consultation and Online Support",
     terms: ["consultation", "book", "online", "appointment", "clinic", "assessment", "fee", "slot", "opd"],
-    text: `Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. Consultation fee is Rs. ${consultationFee}. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it. Online consultations are available for many concerns, with assessment, history-taking, personalised guidance and follow-up planning. A consultation can help families understand the concern, decide the right support direction and create a practical care plan.`
+    text: `Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. ${onlineConsultationNote} OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it. Online consultations include concern/history understanding, personalised guidance and follow-up planning. A consultation can help families understand the concern, decide the right support direction and create a practical care plan.`
+  },
+  {
+    title: "How to Book or Connect with Team",
+    terms: ["book consultation", "connect agent", "agent", "human", "team", "support team", "lead", "form", "online consultation"],
+    text: "The chat has quick actions for Book consultation and Connect with agent. Book consultation collects name, phone, location, consultation mode, preferred date and preferred time. Connect with agent collects name and phone, then opens live support chat. The quick question 'Can I book an online consultation?' should stay available and should answer clearly that online consultation is available."
   },
   {
     title: "Customized Medicine Guidance",
@@ -457,6 +571,11 @@ const knowledgeBase = [
     title: "Mind Body Wellbeing",
     terms: ["mind", "body", "stress", "tension", "fatigue", "sleep", "digestion"],
     text: "Manovaidya explains mind-body wellbeing as the connection between emotional stress, physical symptoms, sleep, digestion, fatigue, tension and lifestyle patterns. Support focuses on understanding the whole person and improving emotional balance, routines, sleep quality, brain health and long-term wellbeing."
+  },
+  {
+    title: "Safety and Emergency Guidance",
+    terms: ["emergency", "suicide", "self harm", "chest pain", "seizure", "urgent", "danger", "severe", "help now"],
+    text: "For emergencies, severe symptoms, self-harm thoughts, suicidal thoughts, sudden weakness, severe chest pain, breathing difficulty, seizures, loss of consciousness or other urgent warning signs, the visitor should seek immediate medical help or emergency services. The website assistant should not delay emergency care."
   }
 ];
 
@@ -510,7 +629,7 @@ const fetchBlogKnowledge = async () => {
 const getTokens = (question) =>
   String(question || "")
     .toLowerCase()
-    .split(/[^a-z0-9]+/i)
+    .split(/[^a-z0-9\u0900-\u097f]+/i)
     .filter((token) => token.length > 2);
 
 const scoreText = (text, tokens) => {
@@ -566,9 +685,12 @@ async function askWebsiteAi(question) {
   const response = await api.post("/ai-chat", {
     question,
     context: [
+      "Tone rule: reply like a helpful human clinic assistant. Use simple Hinglish when the visitor writes Hinglish/Hindi, and simple English when the visitor writes English. Be warm, direct, and easy to understand.",
       "Answer rule: directly answer the visitor's exact question first. If the visitor asks about result, reviews, rating, Google result or success, do not explain the whole service first. Mention rating/success signals only if present in context. Say Manovaidya confidently shares that with consistent assessment, guidance, follow-up and family involvement, progress or results often start becoming visible, while exact outcomes vary person to person and no fixed timeline or identical result is promised for everyone.",
       `Booking rule: consultation fee is Rs. ${consultationFee}. Noida OPD is available only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it.`,
+      `Online consultation rule: ${onlineConsultationNote}`,
       `Medicine rule: ${medicineNote}`,
+      "Flow rule: do not remove or rename the Book consultation, Connect with agent, or Can I book an online consultation quick actions. If the visitor wants booking or a human agent, guide them to those actions.",
       "Reference rule: if the visitor asks about a listed service, disease, condition, symptoms, or page, include the most relevant Manovaidya page reference from the supplied context.",
       context,
     ].join("\n\n"),
@@ -587,10 +709,14 @@ const getFastFallbackAnswer = (question) => {
   if (exactAnswer) return exactAnswer;
 
   if (/autism|asd|spectrum/i.test(question)) {
-    return "Manovaidya supports autism-related concerns through structured developmental assessment, personalised guidance and family-centred support.\n\nAutism concerns may include delayed speech, reduced eye contact, social communication difficulty, repetitive behaviours, sensory sensitivity, attention or behaviour challenges.\n\nThe care approach focuses on understanding the child as an individual: communication, behaviour, sensory needs, sleep, routines, family concerns and development stage.\n\nA consultation can help families understand what may be happening, what support direction is suitable, and how to plan the next steps with professional guidance.";
+    return "Haan, Manovaidya autism-related concerns me structured assessment aur personalised guidance provide karta hai.\n\nCommon concerns: delayed speech, reduced eye contact, social communication difficulty, repetitive behaviour, sensory sensitivity, attention ya behaviour challenges.\n\nCare me child ke communication, behaviour, sensory needs, sleep, routine aur family concerns ko samjha jata hai.\n\nBest next step: consultation book karke child ka current concern detail me discuss karein.";
   }
 
-  return "Manovaidya can help with child, teen, adult, women, senior and mind-body wellbeing concerns through structured assessment and personalised guidance.\n\nFor a more personalised answer, please book a consultation or speak with the Manovaidya team.";
+  if (/online|consultation|appointment|book/i.test(question)) {
+    return onlineConsultationNote;
+  }
+
+  return "Main help kar sakta hu, lekin is question ke liye mujhe exact concern thoda aur clear chahiye.\n\nAap condition/symptom ka naam likh sakte hain, ya Book consultation / Connect with agent choose kar sakte hain for personalised guidance.";
 };
 
 const formatAssistantText = (text) =>
@@ -659,7 +785,7 @@ function ConsultationCta() {
           className="rounded-lg border border-[#8B43BA]/25 bg-white px-3 py-2 text-center text-[12px] font-black text-[#8B43BA] transition hover:bg-[#f7effc]"
           onClick={() => window.dispatchEvent(new CustomEvent("manovaidya:start-agent-chat"))}
         >
-          Agent Chat
+          Connect with Agent
         </button>
         <a
           href={`tel:+91${clinicPhone}`}
@@ -1074,7 +1200,7 @@ function AiChatBot() {
       return;
     }
 
-    if (isBookingIntent(trimmedQuestion)) {
+    if (isDirectBookingCommand(trimmedQuestion)) {
       startBookingFlow();
       return;
     }

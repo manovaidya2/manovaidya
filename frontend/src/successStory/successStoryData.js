@@ -44,13 +44,8 @@ export const stats = [
 export const storyFilters = [
   "All",
   "Autism",
-  "ADHD",
-  "Speech Delay",
-  "Child Development",
-  "Anxiety",
-  "Depression",
+  "Mental Health",
   "PCOD",
-  "Stress Management",
 ];
 
 export const featuredStories = [
@@ -75,27 +70,22 @@ export const featuredStories = [
 ];
 
 export const videoStories = [
-  { id: 1, title: "Autism Care Journey", type: "Parent Story", location: "Delhi NCR", embedId: "gYgPy11WNV8", isIframe: true, category: "Autism" },
-  { id: 2, title: "Child Development Progress Story", type: "Parent Feedback", location: "Noida", embedId: "ZRsjg5Onbqo", isIframe: true, category: "Child Development" },
-  { id: 3, title: "Speech & Communication Progress", type: "Parent Feedback", location: "Delhi", embedId: "OQg0gMNgIdo", isIframe: true, category: "Speech Delay" },
-  { id: 4, title: "Behaviour Improvement Story", type: "Parent Story", location: "Gurgaon", embedId: "b0OzBNn9F_s", isIframe: true, category: "Autism" },
-  { id: 5, title: "Eye Contact & Attention Progress", type: "Parent Feedback", location: "Jaipur", embedId: "lqhpefWYP2E", isIframe: true, category: "Autism" },
-  { id: 6, title: "Autism Parent Experience", type: "Parent Story", location: "Lucknow", embedId: "DP-crCP4rLo", isIframe: true, category: "Autism" },
-  { id: 7, title: "Child Development Support Journey", type: "Family Feedback", location: "Mumbai", embedId: "oRaZRWeA-Sk", isIframe: true, category: "Child Development" },
-  { id: 9, title: "Autism Treatment Experience", type: "Parent Story", location: "India", embedId: "FJuj_jAmgqI", isIframe: true, category: "Autism" },
-  { id: 10, title: "Autism Parent Feedback Story", type: "Parent Story", location: "India", embedId: "tSJp1Ca9Gdg", isIframe: true, category: "Autism" },
-  { id: 11, title: "Child Behaviour Improvement Journey", type: "Parent Feedback", location: "Delhi NCR", embedId: "myQ5ThUSY8A", isIframe: true, category: "Child Development" },
-  { id: 12, title: "Autism Development Progress Story", type: "Family Feedback", location: "Noida", embedId: "bj63Qv-NM8o", isIframe: true, category: "Autism" },
-  { id: 13, title: "Autism Care Experience", type: "Parent Story", location: "India", embedId: "80fFVYSS_gA", isIframe: true, category: "Autism" },
-  { id: 14, title: "Mental Health Recovery Journey", type: "Patient Story", location: "India", embedId: "oWMqqacIIpQ", isIframe: true, category: "Depression" },
-  { id: 15, title: "Anxiety & Stress Care Experience", type: "Patient Feedback", location: "Delhi NCR", embedId: "rBOGwlYSfUY", isIframe: true, category: "Anxiety" },
-  { id: 16, title: "Emotional Wellbeing Improvement Story", type: "Patient Story", location: "India", embedId: "IxrOVghEjuo", isIframe: true, category: "Stress Management" },
-  { id: 19, title: "PCOD Recovery Journey - Patient Story", type: "Patient Story", location: "India", embedId: "FpoI2UP8U5Q", isIframe: true, category: "PCOD" },
-  { id: 20, title: "PCOD Treatment Success Story", type: "Patient Feedback", location: "Delhi NCR", embedId: "hpdRFoN_QbQ", isIframe: true, category: "PCOD" },
-  { id: 21, title: "Hormonal Balance & PCOD Care", type: "Patient Story", location: "Mumbai", embedId: "5ExgDOjgKBQ", isIframe: true, category: "PCOD" },
-  { id: 22, title: "Mental Health Success Story", type: "Patient Feedback", location: "Bangalore", embedId: "BNky0xqh34c", isIframe: true, category: "Depression" },
-  { id: 23, title: "PCOD Lifestyle Changes Story", type: "Patient Story", location: "Pune", embedId: "pEPKzewCl8w", isIframe: true, category: "PCOD" },
-  { id: 24, title: "PCOD & Fertility Success Story", type: "Patient Feedback", location: "Chennai", embedId: "0SesCeeh6q8", isIframe: true, category: "PCOD" },
+  { id: 1, title: "Autism Testimonial Video 1", type: "Parent Testimonial", location: "India", embedId: "P1EzrOrCBaQ", isIframe: true, category: "Autism" },
+  { id: 2, title: "Autism Testimonial Video 2", type: "Parent Testimonial", location: "India", embedId: "T5COBNiZBPA", isIframe: true, category: "Autism" },
+  { id: 3, title: "Autism Testimonial Video 3", type: "Parent Testimonial", location: "India", embedId: "CFmxG7ag8aw", isIframe: true, category: "Autism" },
+  { id: 4, title: "Autism Testimonial Video 4", type: "Parent Testimonial", location: "India", embedId: "yE5B2b6Nz-I", isIframe: true, category: "Autism" },
+  { id: 5, title: "Autism Testimonial Video 5", type: "Parent Testimonial", location: "India", embedId: "zWGZu4FyvZk", isIframe: true, category: "Autism" },
+  { id: 6, title: "Autism Testimonial Video 6", type: "Parent Testimonial", location: "India", embedId: "kpLxO-rhE4Y", isIframe: true, category: "Autism" },
+  { id: 7, title: "Autism Testimonial Video 7", type: "Parent Testimonial", location: "India", embedId: "DB_20OKcSPU", isIframe: true, category: "Autism" },
+  { id: 8, title: "Autism Testimonial Video 8", type: "Parent Testimonial", location: "India", embedId: "txI3ibnhYsQ", isIframe: true, category: "Autism" },
+  { id: 9, title: "Autism Testimonial Video 9", type: "Parent Testimonial", location: "India", embedId: "qrbAJOdX3u0", isIframe: true, category: "Autism" },
+  { id: 10, title: "Autism Testimonial Video 10", type: "Parent Testimonial", location: "India", embedId: "-qY0JodSp20", isIframe: true, category: "Autism" },
+  { id: 11, title: "Autism Testimonial Video 11", type: "Parent Testimonial", location: "India", embedId: "IcJ6fd0rbME", isIframe: true, category: "Autism" },
+  { id: 12, title: "Mental Health Testimonial Video 1", type: "Patient Testimonial", location: "India", embedId: "L2awCtw7Z10", isIframe: true, category: "Mental Health" },
+  { id: 13, title: "Mental Health Testimonial Video 2", type: "Patient Testimonial", location: "India", embedId: "H1X9SBY8lYc", isIframe: true, category: "Mental Health" },
+  { id: 14, title: "Mental Health Testimonial Video 3", type: "Patient Testimonial", location: "India", embedId: "ethPzmvNBZI", isIframe: true, category: "Mental Health" },
+  { id: 15, title: "Mental Health Testimonial Video 4", type: "Patient Testimonial", location: "India", embedId: "yHBcuzzd4Po", isIframe: true, category: "Mental Health" },
+  { id: 16, title: "PCOD & Mental Stress Testimonial", type: "Patient Testimonial", location: "India", embedId: "pAx7KRw2pkA", isIframe: true, category: "PCOD" },
 ];
 
 export const categories = [

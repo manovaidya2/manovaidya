@@ -46,18 +46,13 @@ const YouTubeIcon = () => (
   </svg>
 );
 
-const LinkedInIcon = () => (
-  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
-    <path d="M6.8 8.8H3.5V20h3.3V8.8zM5.1 3.4a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.5 13.7c0-3.1-1.7-5.1-4.4-5.1a3.8 3.8 0 0 0-3.4 1.9V8.8H9.5V20h3.3v-5.8c0-1.6.8-2.7 2.2-2.7 1.3 0 2.1.9 2.1 2.7V20h3.4v-6.3z" />
-  </svg>
-);
-
 const socialLinks = [
-  { label: "Facebook", Icon: FacebookIcon, href: "https://www.facebook.com/search/top?q=manovaidya" },
-  { label: "Instagram", Icon: InstagramIcon, href: "https://www.instagram.com/explore/search/keyword/?q=manovaidya" },
-  { label: "YouTube", Icon: YouTubeIcon, href: "https://www.youtube.com/results?search_query=manovaidya" },
-  { label: "LinkedIn", Icon: LinkedInIcon, href: "https://www.linkedin.com/search/results/all/?keywords=manovaidya" },
+  { label: "Facebook", Icon: FacebookIcon, href: "https://www.facebook.com/ManovaidyaAutismADHD/" },
+  { label: "Instagram", Icon: InstagramIcon, href: "https://www.instagram.com/manovaidya/" },
+  { label: "YouTube", Icon: YouTubeIcon, href: "https://www.youtube.com/@manovaidyaclinic" },
 ];
+
+const youtubeHref = "https://www.youtube.com/@manovaidyaclinic";
 
 const mapHref = "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Clinic%20VS%20Plaza%20Near%20Vigyan%20Hospital%20Atta%20Market%20Sector%2022%20Noida";
 
@@ -181,12 +176,17 @@ function Footer() {
             </a> */}
           </div>
 
-          <div className="mt-5 flex items-center gap-3 text-xs font-bold text-[#6a5983]">
-            <span className="flex h-5 w-7 items-center justify-center rounded bg-[#8B43BA] text-[10px] font-black text-white">
-              yt
+          <a
+            href={youtubeHref}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 flex items-center gap-3 text-xs font-bold text-[#6a5983] transition hover:text-[#8B43BA]"
+          >
+            <span className="flex h-6 w-7 items-center justify-center rounded bg-[#8B43BA] text-white">
+              <YouTubeIcon />
             </span>
-            ManoVaidya wellness updates
-          </div>
+            YouTube Channel
+          </a>
         </div>
       </div>
     </footer>
