@@ -134,9 +134,9 @@ function Footer() {
               </span>
             </a>
 
-            <a href="tel:+917823894080" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
+            <a href="tel:+917823838638" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
               <Phone className="h-5 w-5 text-[#8B43BA]" />
-              +91 7823894080
+              +91 7823838638
             </a>
 
             <a href="mailto:manovaidya@gmail.com" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
@@ -166,7 +166,7 @@ function Footer() {
             </BookConsultationButton>
 
             {/* <a
-              href="https://wa.me/917823894080"
+              href="https://wa.me/917823838638"
               target="_blank"
               rel="noreferrer"
               className="flex h-14 w-14 items-center justify-center rounded-full bg-[#22c55e] text-white shadow-[0_14px_28px_rgba(34,197,94,0.34)] transition hover:bg-[#16a34a]"

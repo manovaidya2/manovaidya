@@ -259,7 +259,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
                   Book Consultation
                 </a>
                 <a
-                  href="tel:+917823894080"
+                  href="tel:+917823838638"
                   className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]"
                 >
                   Speak With Our Team
@@ -656,10 +656,10 @@ function TeenConfidenceEmotionalWellbeingPage() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
-                <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
+                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
                   Book Consultation
                 </a>
-                <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">
+                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">
                   Take Teen Wellness Assessment
                 </a>
               </div>
@@ -727,10 +727,10 @@ function TeenConfidenceEmotionalWellbeingPage() {
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
               Get a personalized plan for your teenager from our experts.
             </p>
-            <a href="tel:+917823894080" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">
+            <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
           </SidebarCard>
         </div>
       </section>

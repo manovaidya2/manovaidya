@@ -223,7 +223,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Manovaidya Clinic",
   address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
-  telephone: "+917823894080",
+  telephone: "+917823838638",
 };
 
 function SidebarCard({ children, className = "", id }) {
@@ -280,9 +280,9 @@ function ContentSection({ section }) {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
-            <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Book Teen Assessment</a>
-            <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Talk to Our Team</a>
-            <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Schedule Consultation</a>
+            <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Book Teen Assessment</a>
+            <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Talk to Our Team</a>
+            <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Schedule Consultation</a>
           </div>
         </div>
         <img src={wellbeingImage} alt="Book teen mental health assessment at Manovaidya" className="h-40 w-full object-cover object-center sm:h-52" />
@@ -487,8 +487,8 @@ function TeenMentalHealthCareIndiaPage() {
             <CalendarCheck className="h-9 w-9 text-[#7835A4]" />
             <h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Teen Assessment</h2>
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get structured teen mental health assessment and personalised guidance from our team.</p>
-            <a href="tel:+917823894080" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p>
+            <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
           </SidebarCard>
         </div>
       </section>

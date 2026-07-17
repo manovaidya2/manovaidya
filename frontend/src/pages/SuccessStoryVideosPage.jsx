@@ -3,11 +3,17 @@ import { ArrowRight } from "lucide-react";
 import Seo from "../components/Seo";
 import { storyFilters, videoStories } from "../successStory/successStoryData";
 
+const pageVideoStories = [
+  ...videoStories,
+  { id: 21, title: "Mental Health Testimonial Video 9", type: "Patient Testimonial", location: "India", embedId: "9b_9gXQ2Lhs", isIframe: true, category: "Mental Health" },
+  { id: 22, title: "Mental Health Testimonial Video 10", type: "Patient Testimonial", location: "India", embedId: "VuaJJuh77gc", isIframe: true, category: "Mental Health" },
+];
+
 function SuccessStoryVideosPage() {
   const [activeFilter, setActiveFilter] = React.useState("All");
   const visibleStories = activeFilter === "All"
-    ? videoStories
-    : videoStories.filter((story) => story.category === activeFilter);
+    ? pageVideoStories
+    : pageVideoStories.filter((story) => story.category === activeFilter);
 
   return (
     <main className="bg-white px-4 py-10 text-[#071c2b] sm:px-6 lg:px-10">

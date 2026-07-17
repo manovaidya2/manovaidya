@@ -54,7 +54,7 @@ function SuccessStoryCta() {
             you and your family.
           </p>
           <a
-            href="tel:+919523435814"
+            href="tel:+917823838638"
             className="mt-7 inline-flex h-14 items-center justify-center gap-3 rounded-lg bg-[#fbb81f] px-7 text-[15px] font-black text-[#141414] shadow-[0_16px_28px_rgba(0,0,0,0.15)] transition hover:bg-[#ffc847]"
           >
             <CalendarDays className="h-5 w-5" />

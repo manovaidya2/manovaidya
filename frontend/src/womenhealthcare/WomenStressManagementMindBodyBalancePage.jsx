@@ -549,7 +549,7 @@ function WomenStressManagementMindBodyBalancePage() {
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(139,67,186,0.22)] transition hover:bg-[#8B43BA]">
                   Book Consultation
                 </a>
-                <a href="tel:+917823894080" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#8B43BA] bg-white px-5 text-[12px] font-black text-[#8B43BA] transition hover:bg-[#fbf7ff]">
+                <a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#8B43BA] bg-white px-5 text-[12px] font-black text-[#8B43BA] transition hover:bg-[#fbf7ff]">
                   Talk to Our Team
                 </a>
               </div>
@@ -658,7 +658,7 @@ function WomenStressManagementMindBodyBalancePage() {
                 <h3 className="mb-2 text-[18px] font-black">Book Your Consultation with Manovaidya Today</h3>
                 <p className="text-[14px] font-bold text-[#fbf7ff]">Manovaidya Clinic</p>
                 <p className="text-[14px] font-bold text-[#fbf7ff]">Noida, Uttar Pradesh, India</p>
-                <a href="tel:+917823894080" className="mt-5 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#8B43BA] transition hover:bg-[#fbf9fd]">
+                <a href="tel:+917823838638" className="mt-5 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#8B43BA] transition hover:bg-[#fbf9fd]">
                   Contact Us Now
                 </a>
               </div>
@@ -710,10 +710,10 @@ function WomenStressManagementMindBodyBalancePage() {
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
               Get structured stress management and mind-body balance guidance from Manovaidya.
             </p>
-            <a href="tel:+917823894080" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
+            <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
           </SidebarCard>
 
           <SidebarCard>
@@ -742,7 +742,7 @@ function WomenStressManagementMindBodyBalancePage() {
             </div>
           </div>
           <div className="flex flex-wrap gap-3 lg:justify-end">
-            <a href="tel:+917823894080" className="inline-flex h-11 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
+            <a href="tel:+917823838638" className="inline-flex h-11 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
               Call Now
             </a>
             <a href="mailto:care@manovaidya.com" className="inline-flex h-11 items-center justify-center rounded-md border border-[#8B43BA] px-5 text-[12px] font-black text-[#8B43BA] transition hover:bg-[#fbf9fd]">

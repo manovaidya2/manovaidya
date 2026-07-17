@@ -515,7 +515,7 @@ function ChildDevelopmentCareIndiaPage() {
                 <a href="#book-assessment" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">
                   Book Child Assessment
                 </a>
-                <a href="tel:+917823894080" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">
+                <a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">
                   Talk to Our Team
                 </a>
               </div>
@@ -843,9 +843,9 @@ function ChildDevelopmentCareIndiaPage() {
                   Book a structured Child Development Assessment with Manovaidya to better understand your child's communication, learning, behaviour, attention and overall developmental needs.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-3">
-                  <a href="tel:+917823894080" className="inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Child Assessment</a>
-                  <a href="tel:+917823894080" className="inline-flex h-10 items-center justify-center rounded-md border border-[#7835A4] px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
-                  <a href="tel:+917823894080" className="inline-flex h-10 items-center justify-center rounded-md border border-[#eadff1] px-5 text-[12px] font-black text-[#51465a] transition hover:border-[#7835A4] hover:text-[#7835A4]">Schedule Consultation</a>
+                  <a href="tel:+917823838638" className="inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Child Assessment</a>
+                  <a href="tel:+917823838638" className="inline-flex h-10 items-center justify-center rounded-md border border-[#7835A4] px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
+                  <a href="tel:+917823838638" className="inline-flex h-10 items-center justify-center rounded-md border border-[#eadff1] px-5 text-[12px] font-black text-[#51465a] transition hover:border-[#7835A4] hover:text-[#7835A4]">Schedule Consultation</a>
                 </div>
               </div>
               <img src={ctaImage} alt="Book child development assessment with Manovaidya" className="h-full min-h-[240px] w-full object-cover" />
@@ -904,7 +904,7 @@ function ChildDevelopmentCareIndiaPage() {
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
               Get a structured child development assessment and personalised guidance.
             </p>
-            <a href="tel:+917823894080" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">
+            <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">
               Book Now
             </a>
           </SidebarCard>

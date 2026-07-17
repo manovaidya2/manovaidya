@@ -18,7 +18,7 @@ function SuccessStoryBottomBar() {
             <Users className="h-4 w-4 text-[#8B43BA]" />
             Expert Team
           </span>
-          <a href="tel:+919523435814" className="flex items-center justify-center gap-2 text-[#073c47]">
+          <a href="tel:+917823838638" className="flex items-center justify-center gap-2 text-[#073c47]">
             <PhoneCall className="h-4 w-4 text-[#8B43BA]" />
             +91 95234 35814
           </a>
@@ -32,7 +32,7 @@ function SuccessStoryBottomBar() {
             Results shown are specific to the individuals and may not guarantee similar outcomes for everyone.
           </p>
           <a
-            href="tel:+919523435814"
+            href="tel:+917823838638"
             className="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-lg bg-[#ffb91d] px-7 text-[14px] font-black text-[#141414] shadow-[0_12px_22px_rgba(0,0,0,0.12)]"
           >
             <CalendarDays className="h-4 w-4" />

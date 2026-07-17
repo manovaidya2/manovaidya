@@ -812,8 +812,8 @@ function ContentSection({ section }) {
             {section.lines.map((line) => <p key={line} className="text-[14px] font-semibold leading-7 text-[#e5d5f2]">{line}</p>)}
           </div>
           <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
-            <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Book Consultation</a>
-            <a href="tel:+917823894080" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Take Mental Health Assessment</a>
+            <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Book Consultation</a>
+            <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Take Mental Health Assessment</a>
           </div>
         </div>
         <img src={ctaImage} alt="Adult emotional wellbeing and anxiety support" className="h-40 w-full object-cover object-center sm:h-52" />
@@ -922,7 +922,7 @@ function AdultAnxietySupportIndiaPage() {
               <p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Anxiety, Constant Worry, Panic & Emotional Wellbeing</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a>
-                <a href="tel:+917823894080" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
+                <a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-5">
                 <div className="flex items-center gap-3"><img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" /><div><p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p><p className="text-[12px] font-bold text-[#75677d]">Mental Health Specialist</p></div></div>
@@ -973,7 +973,7 @@ function AdultAnxietySupportIndiaPage() {
           <SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">On this page</h2><nav className="mt-5 space-y-3.5">{pageLinks.map(({ label, id }) => (<a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}><span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcF]"}`} />{label}</a>))}</nav></SidebarCard>
           <SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Categories</h2><div className="mt-4 space-y-3">{categories.map(({ label, count, Icon }) => (<a key={label} href="#categories" className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span><span>{count}</span></a>))}</div></SidebarCard>
           <RelatedAdultPagesCard />
-          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation-sidebar"><CalendarCheck className="h-9 w-9 text-[#7835A4]" /><h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2><p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get personalized anxiety and emotional wellbeing guidance from our experts.</p><a href="tel:+917823894080" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a><p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p></SidebarCard>
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation-sidebar"><CalendarCheck className="h-9 w-9 text-[#7835A4]" /><h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2><p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get personalized anxiety and emotional wellbeing guidance from our experts.</p><a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a><p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p></SidebarCard>
         </div>
       </section>
 

@@ -473,7 +473,7 @@ function DementiaAlzheimersCareSupportPage() {
       {
         "@type": "LocalBusiness",
         name: "Manovaidya Clinic",
-        telephone: "+917823894080",
+        telephone: "+917823838638",
         address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
       },
     ],
@@ -519,7 +519,7 @@ function DementiaAlzheimersCareSupportPage() {
                   Book Consultation
                 </a>
                 <a
-                  href="tel:+917823894080"
+                  href="tel:+917823838638"
                   className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]"
                 >
                   Talk to Our Team
@@ -644,7 +644,7 @@ function DementiaAlzheimersCareSupportPage() {
                 <h3 className="mb-2 text-[18px] font-black">Book Your Consultation with Manovaidya Today</h3>
                 <p className="text-[14px] font-bold text-[#e5d5f2]">Manovaidya Clinic</p>
                 <p className="text-[14px] font-bold text-[#e5d5f2]">Noida, Uttar Pradesh, India</p>
-                <a href="tel:+917823894080" className="mt-5 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
+                <a href="tel:+917823838638" className="mt-5 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
                   Contact Us Now
                 </a>
               </div>
@@ -706,12 +706,12 @@ function DementiaAlzheimersCareSupportPage() {
               Get structured senior cognitive health guidance from Manovaidya.
             </p>
             <a
-              href="tel:+917823894080"
+              href="tel:+917823838638"
               className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]"
             >
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823894080</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
           </SidebarCard>
 
           <SidebarCard>
