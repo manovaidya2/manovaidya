@@ -88,6 +88,8 @@ export const videoStories = [
   { id: 16, title: "PCOD & Mental Stress Testimonial", type: "Patient Testimonial", location: "India", embedId: "pAx7KRw2pkA", isIframe: true, category: "PCOD" },
   { id: 17, title: "Mental Health Testimonial Video 5", type: "Patient Testimonial", location: "India", embedId: "GV24TNwFo_k", isIframe: true, category: "Mental Health" },
   { id: 18, title: "Mental Health Testimonial Video 6", type: "Patient Testimonial", location: "India", embedId: "8A-lM_CQ1XU", isIframe: true, category: "Mental Health" },
+  { id: 19, title: "Mental Health Testimonial Video 7", type: "Patient Testimonial", location: "India", embedId: "fBpPDtd_Atw", isIframe: true, category: "Mental Health" },
+  { id: 20, title: "Mental Health Testimonial Video 8", type: "Patient Testimonial", location: "India", embedId: "bjjLj90eZB8", isIframe: true, category: "Mental Health" },
 ];
 
 export const categories = [
