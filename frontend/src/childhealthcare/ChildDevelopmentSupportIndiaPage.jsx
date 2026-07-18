@@ -70,37 +70,37 @@ const developmentAreas = [
 const commonConcerns = [
   {
     title: "Autism Spectrum Disorder (ASD)",
-    text: "Challenges related to communication, social interaction, behaviour and developmental growth.",
+    text: "Challenges with communication, social interaction, behaviour, and overall development.",
     Icon: Puzzle,
   },
   {
     title: "ADHD",
-    text: "Difficulties involving attention, focus, impulsivity and emotional regulation.",
+    text: "Difficulty with attention, focus, impulse control, and managing emotions.",
     Icon: Brain,
   },
   {
-    title: "Speech Delay & Communication Challenges",
-    text: "Concerns related to language development, communication skills and expressive abilities.",
+    title: "Speech & Language Delays",
+    text: "Delays in speaking, understanding language, or communicating effectively.",
     Icon: MessageCircle,
   },
   {
-    title: "Behavioural Concerns",
-    text: "Tantrums, emotional outbursts, aggression, defiance and behavioural difficulties.",
+    title: "Behavioural Challenges",
+    text: "Frequent tantrums, aggression, difficulty following instructions, or other behavioural concerns.",
     Icon: Users,
   },
   {
     title: "Learning & Attention Difficulties",
-    text: "Academic challenges, concentration concerns and learning-related struggles.",
+    text: "Problems with learning, concentration, memory, or school performance.",
     Icon: BookOpen,
   },
   {
-    title: "Social Development Challenges",
-    text: "Difficulties interacting with peers, building relationships and participating in social situations.",
+    title: "Social Skills Challenges",
+    text: "Difficulty making friends, interacting with others, or participating in social activities.",
     Icon: HeartHandshake,
   },
   {
-    title: "Emotional Regulation Concerns",
-    text: "Managing emotions, frustration tolerance and emotional wellbeing.",
+    title: "Emotional Regulation Difficulties",
+    text: "Trouble managing emotions, coping with frustration, or handling everyday situations.",
     Icon: Heart,
   },
 ];
@@ -108,28 +108,15 @@ const commonConcerns = [
 const assessmentGroups = [
   {
     title: "Developmental History",
-    items: [
-      "Early developmental milestones",
-      "Communication development",
-      "Learning patterns",
-      "Behaviour observations",
-      "Parent concerns",
-    ],
+    items: [],
   },
   {
     title: "Developmental Understanding",
-    items: [
-      "Communication abilities",
-      "Attention profile",
-      "Learning readiness",
-      "Social interaction",
-      "Emotional regulation",
-      "Behavioural patterns",
-    ],
+    items: [],
   },
   {
     title: "Family Perspective",
-    items: ["Parent observations", "Daily functioning", "Developmental goals", "Family concerns"],
+    items: [],
   },
 ];
 
@@ -148,27 +135,27 @@ const pillars = [
   {
     title: "Brain Nourishment System",
     Icon: Brain,
-    text: "Supports understanding of developmental, cognitive and learning-related factors.",
+    text: "Helps understand your child's development, learning and thinking skills.",
   },
   {
     title: "Gut Response System",
     Icon: HeartHandshake,
-    text: "Focuses on overall wellbeing and developmental functioning.",
+    text: "Supports your child's overall well-being and development.",
   },
   {
     title: "Neural Network System",
     Icon: Sparkles,
-    text: "Helps understand communication, learning and developmental readiness.",
+    text: "Helps understand communication, learning and developmental needs.",
   },
   {
     title: "Sensory Integration System",
     Icon: Waves,
-    text: "Supports understanding of sensory influences that may affect behaviour, communication and participation.",
+    text: "Helps understand how sensory needs affect behaviour, communication and participation.",
   },
   {
     title: "Behaviour Guidance System",
     Icon: ShieldCheck,
-    text: "Helps families understand behavioural patterns and developmental responses.",
+    text: "Helps families understand their child's behaviour and development.",
   },
 ];
 
@@ -176,7 +163,7 @@ const supportPoints = [
   "Developmental Assessment",
   "Communication Development",
   "Learning Readiness",
-  "Behaviour Understanding",
+  "Behaviour Support",
   "Parent Guidance",
   "Emotional Wellbeing",
   "Progress Monitoring",
@@ -184,22 +171,22 @@ const supportPoints = [
 ];
 
 const parentGuidanceItems = [
-  "Developmental understanding",
-  "Behaviour management strategies",
-  "Communication opportunities",
-  "Learning support",
-  "Family participation",
-  "Long-term developmental planning",
+  "Understanding their child's development",
+  "Managing everyday behaviours",
+  "Supporting communication",
+  "Encouraging learning and development",
+  "Involving the whole family",
+  "Planning for long-term growth and progress",
 ];
 
 const whyChoose = [
-  "Structured Neuro-Ayurveda Development System",
   "Personalized Developmental Assessment",
-  "Child-Centred & Family-Centred Approach",
-  "Focus on Communication, Learning & Behaviour",
-  "Long-Term Guidance & Progress Tracking",
-  "Individualized Development Planning",
-  "Compassionate and Structured Support",
+  "Child & Family-Centred Care",
+  "Support for Learning, Behaviour & Communication",
+  "Individual Development Plan",
+  "Regular Progress Tracking",
+  "Compassionate Support",
+  "Long-Term Guidance",
 ];
 
 const relatedPages = [
@@ -212,54 +199,54 @@ const relatedPages = [
 
 const faqs = [
   {
-    question: "1. What is child development?",
+    question: "What is child development?",
     answer:
-      "Child development refers to the physical, cognitive, emotional, behavioural, communication and social growth that occurs throughout childhood. Development is a continuous process through which children learn new skills, build relationships, understand the world around them and become more independent over time. Every child develops at a unique pace, and developmental progress may vary from one child to another. Child development involves multiple interconnected areas, including communication, learning, behaviour, emotional wellbeing and social interaction. Understanding development as a whole helps parents better recognize both strengths and areas where additional support may be beneficial.",
+      "Child development is the process of how children grow, learn, communicate, behave, and interact with others. Every child develops at their own pace. Understanding your child's development helps identify their strengths and any areas where they may benefit from extra support.",
   },
   {
-    question: "2. What are the 4 types of child development?",
+    question: "What are the 4 types of child development?",
     answer:
-      "Child development is commonly understood through four major developmental areas: physical development, cognitive development, social-emotional development and communication or language development. Physical development involves movement, coordination and motor skills. Cognitive development includes learning, thinking, memory and problem-solving abilities. Social-emotional development focuses on relationships, emotional regulation and social interaction. Communication development involves understanding language, expressing thoughts and interacting with others. These developmental areas work together and influence one another throughout childhood. A child's overall development is best understood by looking at all developmental domains rather than focusing on a single area.",
+      "Child development has four main areas: physical, cognitive, social-emotional, and communication. These include movement, learning, thinking, emotions, relationships, and language. All these areas work together to support a child's overall growth and development.",
   },
   {
-    question: "3. What are the common child development concerns?",
+    question: "What are the common child development concerns?",
     answer:
-      "Common child development concerns may include speech delay, communication difficulties, attention challenges, behavioural concerns, learning difficulties, emotional regulation issues, social interaction challenges and developmental milestone delays. Some children may experience difficulties in one area, while others may have challenges across multiple developmental domains. Every child develops differently, and not all developmental variations indicate a serious concern. However, when parents notice persistent challenges that affect daily functioning, learning or social participation, a structured developmental assessment can help provide greater clarity regarding the child's strengths, developmental needs and future support requirements.",
+      "Common child development concerns include speech delay, communication difficulties, behaviour challenges, learning problems, attention issues, emotional regulation difficulties, social interaction challenges, and delayed developmental milestones. A developmental assessment helps parents understand their child's strengths, needs, and the right support for healthy development.",
   },
   {
-    question: "4. What is a red flag in child development?",
+    question: "What is a red flag in child development?",
     answer:
-      "A developmental red flag refers to a sign that may indicate a child is not progressing as expected in one or more developmental areas. Examples may include significant delays in communication, limited social interaction, difficulty responding to others, persistent behavioural concerns or delays in age-appropriate developmental milestones. Red flags do not automatically mean that a child has a developmental disorder. They simply indicate that further developmental understanding may be helpful. Early recognition of developmental concerns allows families to gain clarity and better understand the child's developmental profile, strengths and areas requiring support.",
+      "A developmental red flag is a sign that a child may need extra support in their growth or development. It may include delays in speech, communication, social interaction, behaviour, or other developmental milestones. Identifying these signs early helps families better understand their child's needs and seek the right guidance.",
   },
   {
-    question: "5. When should parents worry about developmental delays?",
+    question: "When should parents worry about developmental delays?",
     answer:
-      "Parents may consider seeking guidance when they notice that developmental milestones appear significantly delayed compared to age expectations or when concerns continue over time without improvement. Difficulties related to communication, learning, attention, behaviour, social interaction or emotional regulation may also warrant further understanding. It is important not to rely solely on comparisons with other children, as every child develops differently. However, persistent concerns should not be ignored. A developmental assessment can help families understand whether observed differences represent normal variation or whether additional developmental support may be beneficial.",
+      "Parents should consider seeking guidance if their child has ongoing delays in speech, learning, behaviour, attention, social interaction, or other developmental milestones. Every child develops at their own pace, but if concerns continue, a developmental assessment can help understand your child's needs and the right support.",
   },
   {
-    question: "6. What are developmental milestones?",
+    question: "What are developmental milestones?",
     answer:
-      "Developmental milestones are skills and abilities that children typically achieve as they grow and develop. These milestones may include communication abilities, motor skills, social interaction, emotional regulation, learning skills and daily living activities. Milestones provide general guidelines for understanding developmental progress, but they are not strict rules that apply equally to every child. Some children reach milestones earlier, while others may take more time. Looking at developmental milestones helps parents and professionals understand overall growth and identify areas where additional support or assessment may be helpful.",
+      "Developmental milestones are skills that children usually learn as they grow, such as speaking, moving, learning, playing, and interacting with others. Every child develops at their own pace. Tracking these developmental milestones helps parents understand their child's progress and identify if extra support may be needed.",
   },
   {
-    question: "7. Can a child with developmental delay catch up?",
+    question: "Can a child with developmental delay catch up?",
     answer:
-      'Many children with developmental delays continue developing skills and making meaningful progress over time. Developmental outcomes vary depending on the child\'s individual profile, strengths, challenges and support systems. Some children may catch up in specific developmental areas, while others may continue benefiting from ongoing developmental guidance and support. Rather than focusing solely on whether a child will "catch up," it is often more helpful to understand the child\'s developmental needs and create a structured plan for growth and learning. Early understanding and personalized support can help families navigate developmental challenges more effectively.',
+      "Many children with developmental delays make good progress with the right guidance and support. Every child develops differently. Early assessment and a personalized development plan can help children build skills, improve learning, and reach their full potential.",
   },
   {
-    question: "8. How can parents support child development at home?",
+    question: "How can parents support child development at home?",
     answer:
-      "Parents play a central role in supporting child development. Everyday interactions such as talking, reading, playing, encouraging exploration and creating positive learning experiences can support growth across multiple developmental areas. Consistent routines, emotional support, healthy sleep habits and opportunities for social interaction also contribute to development. It is important for parents to focus on progress rather than comparison and to create an environment where children feel supported and encouraged. Understanding the child's individual strengths and developmental needs helps families provide more meaningful and effective support at home.",
+      "Parents play an important role in their child's development. Talking, reading, playing, following healthy routines, and giving love and encouragement help children learn and grow. Understanding your child's strengths and needs helps you provide the right support at home.",
   },
   {
-    question: "9. What is the Neuro-Ayurveda Development System?",
+    question: "What is the Neuro-Ayurveda Development System?",
     answer:
-      "The Neuro-Ayurveda Development System is a structured framework developed by Dr. Ankush Garg to help families better understand developmental, behavioural and mental wellness concerns. The system focuses on five interconnected pillars: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. Together, these pillars provide a broader developmental perspective that helps families understand communication, learning, behaviour, emotional wellbeing and overall development. The goal is to create a structured roadmap that supports long-term developmental understanding and family guidance.",
+      "The Neuro-Ayurveda Development System, developed by Dr. Ankush Garg, helps families understand child development, behaviour, and mental wellbeing. It focuses on five key areas to support communication, learning, behaviour, emotional wellbeing, and overall development through personalized guidance.",
   },
   {
-    question: "10. How does Manovaidya assess and support child development?",
+    question: "How does Manovaidya assess and support child development?",
     answer:
-      "At Manovaidya, child development assessment focuses on understanding the child as a whole rather than evaluating a single concern in isolation. The assessment process may include developmental history, communication abilities, learning patterns, behaviour observations, social interaction, emotional regulation and parent concerns. Based on this understanding, families receive personalized guidance and a structured developmental roadmap tailored to the child's individual needs. Support focuses on developmental understanding, parent guidance, progress tracking and long-term family support through the Neuro-Ayurveda Development System. The goal is to help families move forward with greater clarity, confidence and direction.",
+      "At Manovaidya, we look at your child's overall development, including communication, learning, behaviour, emotions, and social skills. Based on the assessment, families receive personalized guidance, a development plan, and ongoing support to help their child grow with confidence.",
   },
 ];
 
@@ -395,7 +382,7 @@ function ChildDevelopmentSupportIndiaPage() {
                 Child Development Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Developmental assessment, communication guidance, family support and long-term child development planning through the Neuro-Ayurveda Development System.
+                Helps parents understand their child's development, communication, and future needs while providing guidance for long-term growth.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -403,7 +390,7 @@ function ChildDevelopmentSupportIndiaPage() {
                   href="#book-consultation"
                   className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]"
                 >
-                  Book Development Assessment
+                  Book Development Assessment 
                 </a>
                 <a
                   href="tel:+917823838638"
@@ -453,20 +440,25 @@ function ChildDevelopmentSupportIndiaPage() {
           </div>
 
           <section id="introduction" className="mt-8">
+            {/* <h2 className="text-[20px] font-black text-[#17111f]">Key takeaways</h2> */}
+            <h2 className="mt-5 text-[20px] font-black text-[#17111f]">Introduction</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Every child grows, learns and develops in a unique way. While some children achieve developmental milestones naturally, others may experience challenges related to communication, behaviour, attention, learning, social interaction or overall development.
+              Helps parents understand their child's development, communication, and future needs while providing guidance for long-term growth.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              For many parents, concerns begin with small observations. A child may not be speaking as expected, may have difficulty paying attention, struggle with social interaction, experience behavioural challenges or show delays in developmental milestones. Over time, these concerns often lead families to search for answers, guidance and structured support.
+              Every child grows, learns and develops at their own pace. While many children reach developmental milestones as expected, some may face challenges with communication, behaviour, attention, learning, social interaction or overall development.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, Child Development is understood through a comprehensive developmental perspective that looks beyond individual symptoms. Development is influenced by multiple interconnected factors including communication, learning, behaviour, emotional wellbeing, attention, sensory processing and social interaction.
+              For many parents, concerns start with small changes they notice in their child. A child may not be speaking as expected, have difficulty paying attention, struggle to interact with others, show behavioural challenges or reach developmental milestones later than expected. As these concerns continue, families often look for answers, guidance and the right support to help their child grow and thrive.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System designed to help families better understand developmental concerns and create a clear roadmap for growth, learning and overall development.
+              At Manovaidya, child development is viewed through a comprehensive approach that goes beyond individual symptoms. A child's development is shaped by many interconnected factors, including communication, learning, behaviour, emotional wellbeing, attention, sensory processing and social interaction.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Families searching for Child Development Treatment in India, Developmental Assessment, Child Development Specialist in India or Developmental Guidance often seek clarity regarding their child's strengths, challenges and future developmental needs. Our goal is to provide personalized guidance, structured assessment and long-term developmental support.
+              Led by Dr. Ankush Garg, an Autism, ADHD, Child Development and Mental Health Specialist in India, Manovaidya follows the Neuro-Ayurveda Development System to help families understand developmental concerns and create a personalized roadmap for their child's growth, learning and overall development.
+            </p>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+              Families looking for child development support, developmental assessment, a child development specialist in India or developmental guidance often want a better understanding of their child's strengths, challenges and future developmental needs. Our goal is to provide personalized guidance, structured assessment and long-term support to help every child reach their full potential.
             </p>
           </section>
 
@@ -490,14 +482,14 @@ function ChildDevelopmentSupportIndiaPage() {
               Every child develops at a different pace. Some variations are part of normal development, while others may indicate the need for a deeper developmental understanding.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, development is viewed as a dynamic process influenced by multiple interconnected factors rather than a checklist of milestones.
+              At Manovaidya, development is viewed as a dynamic process influenced by multiple interconnected factors rather than a checklist of developmental milestones.
             </p>
           </section>
 
           <section id="common-concerns" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">Common Child Development Concerns</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Parents may seek developmental support for a wide range of concerns, including:
+              Parents may seek developmental support for a variety of concerns, including:
             </p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {commonConcerns.map(({ title, text, Icon }) => (
@@ -519,16 +511,16 @@ function ChildDevelopmentSupportIndiaPage() {
           <section id="beyond-milestones" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
             <h2 className="text-[20px] font-black text-[#17111f]">Understanding Child Development Beyond Milestones</h2>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              One of the most common misconceptions about development is that it is measured only by milestones.
+              Many people think child development is only about reaching milestones. However, development is much more than that.
             </p>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              In reality, child development is much broader. A child may achieve certain milestones but still experience challenges related to communication, learning, behaviour, emotional regulation or social interaction.
+              A child may achieve expected milestones but still have difficulties with communication, learning, behaviour, emotional regulation, or social skills.
             </p>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              Similarly, some children may develop more slowly in one area while showing strengths in others. This is why developmental understanding should focus on the whole child rather than isolated concerns.
+              Some children may also develop more slowly in one area while doing very well in others. Every child has their own unique strengths and challenges.
             </p>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              At Manovaidya, child development is viewed through a broader framework that helps families understand the various factors influencing growth, learning and developmental progress.
+              At Manovaidya, we take a whole-child approach to development. We look at all aspects of a child's growth to better understand their needs and support their overall learning and wellbeing.
             </p>
           </section>
 
@@ -537,10 +529,10 @@ function ChildDevelopmentSupportIndiaPage() {
             <div className="mt-4 grid gap-6 lg:grid-cols-[1fr_270px] lg:items-center">
               <div>
                 <p className="text-[14px] font-semibold leading-7 text-[#51465a]">
-                  Every child has a unique developmental profile.
+                  Every child develops in their own unique way.
                 </p>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                  Assessment at Manovaidya focuses on understanding the child as a whole rather than evaluating a single concern in isolation.
+                  At Manovaidya, our assessment looks at the whole child, not just one specific concern. This helps us understand their strengths, challenges, and overall developmental needs.
                 </p>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
                   The assessment process may include:
@@ -560,7 +552,7 @@ function ChildDevelopmentSupportIndiaPage() {
                   ))}
                 </div>
                 <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                  The goal is to provide families with a clearer understanding of developmental strengths, challenges and support needs.
+                  The main intention is to help families better understand their child's strengths, areas of need, and the support that will help them learn, develop, and participate in everyday life.
                 </p>
               </div>
               <img src={supportFamilyImage} alt="Doctor and parent discussion for developmental assessment" className="h-[230px] w-full rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />
@@ -593,7 +585,7 @@ function ChildDevelopmentSupportIndiaPage() {
           <section id="neuro-ayurveda-system" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Development System</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, developmental support is guided by the Neuro-Ayurveda Development System developed by Dr. Ankush Garg.
+              At Manovaidya, developmental support is guided by the Neuro-Ayurveda Development System developed by Dr. Ankush Garg. The framework is built around five interconnected pillars that work together to provide a comprehensive understanding of a child's development and support long-term growth.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
               The system focuses on five interconnected pillars:
@@ -623,10 +615,10 @@ function ChildDevelopmentSupportIndiaPage() {
             <div>
               <h2 className="text-[20px] font-black text-[#17111f]">How We Support Children & Families</h2>
               <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Support at Manovaidya begins with understanding the child rather than focusing only on a diagnosis or symptom.
+                At Manovaidya, we focus on understanding your child first-not just the diagnosis.
               </p>
               <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Our approach focuses on:
+                We provide support for:
               </p>
               <ul className="mt-4 space-y-2.5">
                 {supportPoints.map((point) => (
@@ -637,7 +629,7 @@ function ChildDevelopmentSupportIndiaPage() {
                 ))}
               </ul>
               <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Every child receives individualized guidance based on developmental needs and family goals.
+                Every child receives a personalized plan based on their unique needs and your family's goals.
               </p>
             </div>
             <img src={signsImage} alt="Child learning and growth illustration" className="h-[230px] w-full rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />
@@ -646,15 +638,15 @@ function ChildDevelopmentSupportIndiaPage() {
           <section id="parent-guidance" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
             <h2 className="text-[20px] font-black text-[#17111f]">Parent Guidance & Family Support</h2>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              Developmental concerns affect the entire family, not just the child.
+              Developmental concerns can affect the whole family, not just the child.
             </p>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              Many parents experience uncertainty, confusion and anxiety while trying to understand their child's developmental needs.
+              Many parents feel worried, confused or unsure when trying to understand their child's developmental needs.
             </p>
             <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              At Manovaidya, parent guidance is considered an essential part of developmental support.
+              At Manovaidya, parents are an important part of their child's developmental journey. We provide guidance and support to help families better understand their child's needs and feel more confident about the next steps.
             </p>
-            <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">Families receive guidance regarding:</p>
+            <p className="mt-3 text-[13px] font-bold leading-6 text-[#3b2e45]">Families receive guidance on:</p>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
               {parentGuidanceItems.map((item) => (
                 <span key={item} className="flex gap-2 rounded-md bg-white px-3 py-2 text-[12px] font-bold text-[#51465a] ring-1 ring-[#eadff1]">
@@ -664,26 +656,26 @@ function ChildDevelopmentSupportIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[13px] font-bold leading-6 text-[#3b2e45]">
-              The goal is to help parents move forward with greater confidence and clarity.
+              Our goal is to help parents make informed decisions and support their child's development with greater confidence and clarity.
             </p>
           </section>
 
           <section id="how-we-work" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">How We Work at Manovaidya</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Every child is unique, which is why support at Manovaidya begins with understanding the child as a whole rather than focusing on developmental concerns alone.
+              Every child is unique, so at Manovaidya we begin by understanding the child as a whole, not just their developmental concerns.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Our process starts with a detailed assessment to understand developmental history, communication abilities, learning needs, behaviour patterns, emotional wellbeing and family concerns.
+              Our process starts with a detailed assessment to understand your child's developmental history, communication, learning, behaviour, emotional wellbeing and your family's concerns.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Based on this understanding, families receive personalized guidance and a structured developmental roadmap tailored to their child's individual needs.
+              Based on this assessment, we provide personalized guidance and create a structured development plan that is tailored to your child's individual needs.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Rather than following a one-size-fits-all approach, Manovaidya follows the Neuro-Ayurveda Development System to help families better understand the factors that may influence development, communication, behaviour, learning and overall wellbeing.
+              Instead of using the same approach for every child, Manovaidya follows the Neuro-Ayurveda Development System to help families better understand the factors that may influence their child's development, communication, behaviour, learning and overall wellbeing.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Support focuses on assessment, parent guidance, developmental planning, progress tracking and long-term family support.
+              Our support includes developmental assessment, parent guidance, personalized planning, progress monitoring and ongoing family support to help your child grow with confidence.
             </p>
           </section>
 
@@ -700,7 +692,7 @@ function ChildDevelopmentSupportIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Child Development Treatment, Developmental Assessment and Family Guidance.
+              Parents from Delhi, Noida, Greater Noida, Ghaziabad, NCR, and across India choose Manovaidya for child development support and guidance.
             </p>
           </section>
 
@@ -711,13 +703,13 @@ function ChildDevelopmentSupportIndiaPage() {
                 <p className="text-[12px] font-bold text-[#75677d]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
                 <h2 className="text-[16px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
                 <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+                  Dr. Ankush Garg is the Founder of Manovaidya and the creator of the Neuro-Ayurveda Development System.
                 </p>
                 <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  His work focuses on Autism Spectrum Disorder (ASD), ADHD, Child Development, Speech & Communication Challenges, Behavioural Concerns, Learning Difficulties, Teen Mental Health, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support.
+                  He supports children, teenagers, adults, women, and senior citizens with Autism (ASD), ADHD, child development, speech and communication difficulties, behavioural concerns, learning difficulties, and mental health challenges.
                 </p>
                 <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  Through detailed assessment, individualized guidance and family-centred support, he helps families better understand developmental concerns and move forward with greater clarity, confidence and direction.
+                  Through detailed assessments, personalized guidance, and family-centred care, he helps families understand their concerns and take the right steps for healthy growth and development.
                 </p>
               </div>
             </div>
@@ -757,10 +749,10 @@ function ChildDevelopmentSupportIndiaPage() {
               <div className="p-5">
                 <h2 className="text-[20px] font-black text-[#17111f]">Book a Consultation</h2>
                 <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">
-                  If you are looking for Child Development Treatment in India, Developmental Assessment, Communication Guidance or personalized developmental support, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+                  If you are looking for child development support, a developmental assessment, communication guidance, or personalized care for your child, you can book a consultation with Dr. Ankush Garg and the Manovaidya team.
                 </p>
                 <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">
-                  Through a structured assessment and personalized guidance process, families can gain a clearer understanding of their child's developmental needs and explore appropriate next steps for long-term growth, learning and development.
+                  Through a detailed assessment and personalized guidance, families can better understand their child's developmental needs and receive the right support for their child's growth, learning, and overall development.
                 </p>
                 <a href="tel:+917823838638" className="mt-5 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">
                   Book Now
@@ -855,4 +847,3 @@ function ChildDevelopmentSupportIndiaPage() {
 }
 
 export default ChildDevelopmentSupportIndiaPage;
-

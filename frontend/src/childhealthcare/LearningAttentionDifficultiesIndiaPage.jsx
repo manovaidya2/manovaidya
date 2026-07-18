@@ -58,152 +58,137 @@ const categories = [
 ];
 
 const introParagraphs = [
-  "Every child learns differently. Some children easily understand new concepts, follow instructions and adapt to academic demands, while others may experience challenges related to concentration, attention, memory, learning speed or academic performance.",
-  "For many parents, concerns begin when a child struggles to focus, forgets information quickly, has difficulty completing tasks, falls behind academically or requires repeated instructions to understand concepts. These challenges can affect confidence, school performance and overall development.",
-  "At Manovaidya, learning and attention difficulties are understood through a broader developmental perspective rather than being viewed as isolated academic concerns. Learning is closely connected with attention, communication, emotional wellbeing, behaviour, sensory processing and developmental readiness.",
-  "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System designed to help families better understand learning and attention challenges while creating a clear roadmap for developmental growth and academic readiness.",
-  "Families searching for Learning Difficulties Treatment in India, Attention Problems in Children, Child Learning Assessment or Academic Development Guidance often seek practical understanding, structured support and long-term developmental direction.",
+  "Every child learns in their own unique way. Some children quickly grasp new concepts, follow directions, and adjust to educational expectations, while others may face difficulties with focus, attention, memory, learning pace, or overall academic success.",
+  "Many parents are concerned when a child has trouble paying attention, forgets things easily, struggles to finish tasks, falls behind in school, or needs repeated instructions to understand ideas. These difficulties can affect the child's confidence, learning, emotional health and overall growth.",
+  "At Manovaidya, we ensure that learning and attention challenges are understood through a comprehensive child developmental assessment approach rather than being considered as separate academic issues. Learning is closely linked with attention, communication, emotional health, behaviour, sensory integration, and overall developmental preparedness.",
+  "Parents seeking help for children's learning challenges, attention difficulties, educational assessments, or academic progress often need clear understanding, organized support, and guidance for their child's long-term development.",
 ];
 
 const signGroups = [
   {
-    title: "Attention Challenges",
-    items: ["Difficulty maintaining focus", "Easily distracted", "Difficulty completing tasks", "Frequently shifting attention"],
+    title: "What things are involved in Difficulty with focus?",
+    items: ["Limited attention span", "Attention gets easily diverted", "Struggling to finish tasks", "Tends to jump between tasks"],
   },
   {
-    title: "Learning Challenges",
-    items: ["Difficulty understanding concepts", "Slow learning pace", "Requiring repeated instructions", "Academic struggles"],
+    title: "What components are present with learning difficulties?",
+    items: ["Difficulty in processing new ideas", "Gradual leaning process", "Needs frequent repitition", "Academic challenges"],
   },
   {
-    title: "Memory Difficulties",
-    items: ["Forgetting recently learned information", "Difficulty recalling instructions", "Poor retention of concepts"],
+    title: "What memorizing difficulties does a child face?",
+    items: ["Short term memory challenges", "Trouble remembering directions", "Reduced ability to retain concepts"],
   },
   {
-    title: "School-Related Concerns",
+    title: "What academic concern does a child have regarding learning?",
     items: [
-      "Homework challenges",
-      "Difficulty staying organized",
-      "Reduced classroom participation",
-      "Academic underperformance",
-      "Poor School Performance",
-      "Academic Difficulties",
-      "Child Not Focusing in Studies",
+      "Struggles with assignments",
+      "Lack of organizing skills",
+      "Limited participation in class activities",
+      "Decline in academic performance",
+      "Academic struggles",
+      "Learning challenges",
+      "Difficulty concentrating in studies",
     ],
   },
   {
-    title: "Behaviour During Learning",
-    items: ["Frustration during study activities", "Avoiding academic tasks", "Low confidence in learning situations", "Academic Performance Concerns"],
-  },
-  {
-    title: "Academic Performance Concerns",
-    items: [
-      "Falling behind in school",
-      "Difficulty completing classwork",
-      "Poor academic performance",
-      "Difficulty keeping up with age-appropriate learning expectations",
-    ],
+    title: "What are the Behaviour challenges a child gets During Learning?",
+    items: ["Challenges with learning", "Procrastination and avoiding schoolwork", "Lack of confidence in learning academic abilities", "Concerns regarding academic performance"],
   },
 ];
 
 const learningInfluences = [
-  "Attention skills",
-  "Communication abilities",
-  "Emotional wellbeing",
-  "Behavioural patterns",
-  "Sensory processing",
-  "Developmental readiness",
-  "Social interaction",
+  "Concentration problems in children",
+  "Communication and expressive skills",
+  "Emotional health",
+  "Behavioural tendencies",
+  "Sensory functioning",
+  "Readiness for learning",
+  "Social communication",
 ];
 
 const assessmentGroups = [
   {
-    title: "Developmental History",
+    title: "What does growth and development history contain?",
     Icon: CalendarCheck,
-    items: ["Early development", "Learning patterns", "Academic concerns", "Parent observations"],
+    items: ["Early childhood development", "Learning characteristics", "Educational concerns", "Parental insights"],
   },
   {
-    title: "Learning Understanding",
+    title: "What challenges does the learner experience in understanding, processing, and applying new concepts?",
     Icon: BookOpen,
-    items: ["Attention profile", "Memory skills", "Communication abilities", "Learning readiness", "Behaviour during learning"],
-  },
-  {
-    title: "Family Perspective",
-    Icon: Users,
-    items: ["Parent concerns", "School challenges", "Developmental goals", "Long-term priorities"],
+    items: ["Attention characteristics", "Memorizing capabilities", "Interaction skills", "Learning capacity", "Learning approach and habits"],
   },
 ];
 
 const supportFactors = [
-  "Attention difficulties",
-  "Communication concerns",
-  "Behavioural factors",
-  "Emotional wellbeing",
-  "Developmental readiness",
-  "Environmental influences",
+  "Concentration problem in children",
+  "Interaction difficulties",
+  "Behavioral patterns and responses",
+  "Emotional health",
+  "Developmental progress by age",
+  "External factors",
 ];
 
 const neuroPillars = [
   {
     title: "Brain Nourishment System",
     Icon: Brain,
-    text: "Supports understanding of cognitive development, learning and attention.",
+    text: "Supports the assessment and understanding of cognitive development, learning processes, and attention patterns.",
   },
   {
     title: "Gut Response System",
     Icon: HeartHandshake,
-    text: "Focuses on overall wellbeing and developmental functioning.",
+    text: "Addresses overall health, wellbeing, and developmental progress.",
   },
   {
     title: "Neural Network System",
     Icon: Sparkles,
-    text: "Helps understand learning readiness, memory and developmental growth.",
+    text: "Helps understand learning ability, memory, growth and development.",
   },
   {
     title: "Sensory Integration System",
     Icon: Waves,
-    text: "Supports understanding of sensory influences affecting attention and learning.",
+    text: "Helps in identifying how sensory experiences affect focus and educational outcomes.",
   },
   {
     title: "Behaviour Guidance System",
     Icon: ShieldCheck,
-    text: "Helps families understand behavioural influences that may affect academic participation and learning.",
+    text: "Helps families in recognising how behavioural patterns may impeach their academic performances.",
   },
 ];
 
 const supportPoints = [
   "Learning Assessment",
-  "Attention Understanding",
+  "Understanding attention",
   "Developmental Planning",
-  "Parent Guidance",
-  "Academic Readiness",
-  "Communication Development",
-  "Progress Monitoring",
-  "Long-Term Family Support",
+  "Parental support",
+  "School learning readiness",
+  "Communication growth skills",
+  "Tracking progress",
+  "On going family support",
 ];
 
 const parentConcerns = [
-  "Worry about academic progress",
-  "Frustration during homework",
-  "Confusion about learning difficulties",
-  "Concerns regarding future success",
+  "Learning patterns",
+  "Developmental factors",
+  "Confidence building",
+  "Growth over time",
 ];
 
 const howWeWorkSteps = [
-  { title: "Assessment", desc: "Understand your child's profile", Icon: Brain },
-  { title: "Learning Patterns", desc: "Identify learning needs", Icon: BookOpen },
-  { title: "Personalised Plan", desc: "Create a developmental roadmap", Icon: Activity },
-  { title: "Parent Guidance", desc: "Support family confidence", Icon: Users },
-  { title: "Progress Tracking", desc: "Monitor long-term growth", Icon: CalendarCheck },
+  { title: "Learning Assessment", desc: "Deeper understanding of child's profile", Icon: Brain },
+  { title: "Identifying learning difficulty patterns", desc: "Figuring out the areas where child feels difficulty in learning", Icon: BookOpen },
+  { title: "Customized plan", desc: "A proper framework is created to ensure long term development", Icon: Activity },
+  { title: "Proper support and guidance to parents", desc: "Helps in building family confidence", Icon: Users },
+  { title: "Monitoring sustainable progress for long run", desc: "Tracking long term growth performance", Icon: CalendarCheck },
 ];
 
 const whyChoose = [
-  "Structured Neuro-Ayurveda Development System",
-  "Personalized Learning Assessment",
-  "Child-Centred & Family-Centred Approach",
-  "Focus on Learning, Attention & Development",
-  "Long-Term Guidance & Progress Tracking",
-  "Individualized Development Planning",
-  "Compassionate and Structured Support",
+  "Structured Neuro-Ayurveda Development System Approach",
+  "Personal learning & growth analysis",
+  "Child led and family supported model",
+  "Supporting the learning skills, concentration and overall development",
+  "Ongoing support and progress tracking",
+  "Personalized Growth Planning",
+  "Empathetic and systematic guidance",
 ];
 
 const relatedPages = [
@@ -226,64 +211,64 @@ const internalLinks = [
 
 const faqs = [
   {
-    question: "1. What are learning and attention difficulties?",
-    answer: "Learning and attention difficulties refer to challenges that may affect a child's ability to focus, understand information, remember concepts, complete tasks or perform effectively in learning environments. Some children may struggle primarily with concentration and attention, while others may experience difficulties related to learning, memory, comprehension or academic performance. These challenges can affect school participation, confidence and daily functioning. Every child is unique, and learning difficulties can vary significantly in severity and presentation. Understanding a child's overall developmental profile is often the first step toward identifying appropriate support and guidance.",
+    question: "What are the learning and attention difficulties?",
+    answer: "Learning and attention difficulties are challenges that may affect a child's ability to focus, understand, remember, and complete tasks. They can influence academic performance, confidence, and daily activities. Each child's needs are different, and understanding their development helps identify suitable support.",
   },
   {
-    question: "2. What are the early signs of learning difficulties in children?",
-    answer: "Early signs of learning difficulties may include difficulty understanding age-appropriate concepts, needing repeated instructions, trouble remembering information, slow academic progress, difficulty recognizing letters or numbers and challenges completing learning tasks. Some children may also become frustrated during learning activities or avoid tasks they find difficult. Early signs can vary depending on the child's age and developmental stage. Identifying concerns early can help families better understand the child's learning profile and provide appropriate developmental support when needed.",
+    question: "What are the early signs of learning difficulties in children?",
+    answer: "Early signs of learning difficulties in children may include trouble understanding concepts, needing repeated instructions, poor memory, slow academic progress, difficulty recognizing letters or numbers, and avoiding challenging tasks. Early identification helps families understand a child's needs and provide suitable support.",
   },
   {
-    question: "3. What are the common signs of attention difficulties in children?",
-    answer: "Children with attention difficulties may struggle to stay focused, become easily distracted, have difficulty completing tasks, forget instructions or frequently shift from one activity to another. Some children may appear restless, while others may simply have trouble maintaining concentration for extended periods. Attention difficulties can affect learning, classroom participation, organization and daily routines. Since attention is closely connected to learning and development, understanding these challenges can help families identify effective support strategies that promote long-term growth and participation.",
+    question: "What are the common signs of attention difficulties in children?",
+    answer: "Children with attention difficulties may have trouble focusing, get distracted easily, forget instructions, or find it hard to complete tasks. These challenges can affect learning, participation, organization, and daily activities. Understanding these difficulties helps families provide the right support for children's growth and development.",
   },
   {
-    question: "4. What is the difference between a learning disability and ADHD?",
-    answer: "A learning disability primarily affects the way a child processes, understands or uses information during learning activities. ADHD mainly affects attention, focus, impulsivity and self-regulation. Although these conditions can sometimes occur together, they are not the same. A child with ADHD may understand concepts well but struggle to stay focused, while a child with a learning disability may have difficulty learning specific skills despite paying attention. A structured assessment can help identify the child's unique strengths, challenges and support needs.",
+    question: "What is the difference between a learning disability and ADHD?",
+    answer: "A learning disability affects how a child understands and uses information, while ADHD mainly affects attention, focus, impulsivity, and self-control. Though they can occur together, they are different. A child with ADHD may understand concepts but struggle to focus, whereas a child with a learning disability may find specific skills difficult. Learning Assessment for children helps identify strengths, challenges, and support needs.",
   },
   {
-    question: "5. Do learning disabilities affect intelligence?",
-    answer: "No. Learning disabilities do not automatically indicate lower intelligence. Many children with learning difficulties have average or above-average intelligence but may process information differently. Difficulties in reading, writing, memory, attention or academic performance should not be viewed as a measure of a child's overall potential. Every child has unique strengths and abilities. Understanding how a child learns can help families focus on supporting development, confidence and long-term success rather than making assumptions about intelligence.",
+    question: "Do learning disabilities affect intelligence?",
+    answer: "No. Learning disabilities do not mean a child has low intelligence. Many children with learning difficulties have average or above-average intelligence but learn in different ways. Problems with reading, writing, memory, or attention do not define a child's abilities. Every child has unique strengths, and the right support can help them grow and succeed.",
   },
   {
-    question: "6. Why does my child struggle to focus on studies?",
-    answer: "Difficulty focusing on studies can be influenced by many different factors, including attention challenges, learning difficulties, emotional stress, communication concerns, developmental readiness or environmental distractions. Some children may find it difficult to maintain concentration for long periods, while others may struggle because they do not fully understand the learning material. Poor focus should not always be viewed as laziness or lack of interest. Understanding the factors influencing attention and learning can help families identify practical ways to support academic participation and developmental growth.",
+    question: "Why does my child struggle to focus on studies?",
+    answer: "Difficulty focusing on studies can happen due to many reasons, such as attention problems, learning difficulties, stress, communication issues, lack of readiness, or distractions. Some children may struggle to concentrate for a long time, while others may have trouble understanding the material. Poor focus is not always a sign of laziness or lack of interest. Identifying the causes of learning difficulties can help families provide better support for learning and development.",
   },
   {
-    question: "7. Why does my child forget things so quickly?",
-    answer: "Children may forget information for a variety of reasons, including attention difficulties, learning challenges, memory processing differences, emotional stress or difficulty understanding concepts fully. In some cases, children may appear forgetful because they were not fully focused when information was presented. Memory is closely connected with attention, learning and developmental readiness. Understanding a child's learning profile can help families determine whether forgetfulness is part of normal development or whether additional developmental support may be beneficial.",
+    question: "Why does my child forget things so quickly?",
+    answer: "Children may forget things for many reasons, such as trouble paying attention, learning difficulties, stress, or not fully understanding the information. Sometimes, children seem forgetful because they were not focused when learning. Memory depends on attention, learning, and development. Understanding a child's learning needs can help families know if forgetfulness is normal or if extra support is needed.",
   },
   {
-    question: "8. Can learning difficulties affect school performance?",
-    answer: "Yes. Learning difficulties can influence a child's ability to understand lessons, complete assignments, retain information and participate effectively in classroom activities. Children may experience challenges in reading, writing, comprehension, memory, organization or task completion. These difficulties can sometimes affect confidence and motivation in school settings. However, school performance alone does not define a child's abilities or potential. Understanding learning strengths and challenges helps families create more effective strategies that support both academic development and overall wellbeing.",
+    question: "Can learning difficulties affect school performances?",
+    answer: "Yes. Learning difficulties can make it harder for children to understand lessons, complete work, remember information, and take part in class activities. They may struggle with reading, writing, memory, or organization, which can affect confidence. Understanding their strengths and challenges helps families provide the right support for learning and growth.",
   },
   {
-    question: "9. Can communication difficulties affect learning?",
-    answer: "Yes. Communication plays an important role in learning. Children often rely on communication skills to understand instructions, ask questions, express ideas and participate in educational activities. Difficulties with language understanding, expressive communication or social communication can sometimes influence learning experiences. Communication challenges may affect classroom participation, comprehension and confidence. Looking at communication and learning together often provides a clearer understanding of a child's developmental profile and support needs.",
+    question: "Can communication difficulties affect learning?",
+    answer: "Yes. Communication is important for learning. Children use it to understand instructions, ask questions, share ideas, and join activities. Communication difficulties may affect learning, participation, and confidence. Understanding these needs helps provide the right support.",
   },
   {
-    question: "10. Can learning disabilities be overcome?",
-    answer: "Every child is unique, and developmental outcomes vary from one child to another. Many children with learning difficulties continue developing important skills and making meaningful progress over time when they receive appropriate guidance, support and opportunities for learning. Rather than focusing only on whether learning difficulties can be completely overcome, it is often more helpful to understand the child's strengths, challenges and individual learning style. A structured developmental approach can help children build confidence, develop skills and reach their potential while supporting long-term growth and participation.",
+    question: "Can learning abilities be improved or developed over time?",
+    answer: "Every child is unique and develops at their own pace. With proper support and guidance, children with learning difficulties can build skills, gain confidence, and make steady progress while reaching their potential.",
   },
   {
-    question: "11. How can parents support learning and attention development at home?",
-    answer: "Parents play an important role in supporting learning and attention development through everyday interactions and routines. Creating a structured environment, maintaining consistent schedules, encouraging reading, engaging in meaningful conversations and providing opportunities for learning through play can support developmental growth. Breaking tasks into smaller steps, reducing unnecessary distractions and offering positive encouragement may also help children remain engaged during learning activities. Every child learns differently, so understanding individual strengths and challenges helps parents provide support that matches the child's developmental needs and learning style.",
+    question: "How can parents support learning and attention development at home?",
+    answer: "Parents support children's learning and attention development through daily routines, guidance, and encouragement. Understanding a child's strengths and challenges helps parents provide the right support for their growth and learning style.",
   },
   {
-    question: "12. What activities can help improve attention and learning skills?",
-    answer: "Many everyday activities can support attention and learning development. Reading together, storytelling, puzzles, memory games, creative activities, problem-solving tasks and interactive learning experiences can encourage concentration and cognitive engagement. Activities that involve listening, following instructions, turn-taking and communication may also support attention and learning skills. The goal is not simply to improve academic performance but to encourage curiosity, participation and developmental growth. Activities should be adapted according to the child's age, interests and developmental profile to create meaningful learning experiences.",
+    question: "What activities can help in improving attention and learning skills?",
+    answer: "Everyday activities can help improve a child's attention and learning skills. Reading, storytelling, puzzles, memory games, creative play, problem-solving activities and interactive tasks can support focus, thinking and communication. These activities encourage curiosity, participation and growth. They should be planned according to the child's age, interests and developmental needs.",
   },
   {
-    question: "13. When should parents seek help for learning and attention difficulties?",
-    answer: "Parents may consider seeking guidance when learning or attention challenges begin affecting school performance, daily functioning, confidence or participation in age-appropriate activities. Persistent difficulties with concentration, memory, academic progress, task completion or following instructions may indicate the need for a deeper developmental understanding. Seeking support does not mean something is necessarily wrong with the child. Instead, it provides families with greater clarity regarding developmental strengths, challenges and practical strategies that may support long-term learning and growth.",
+    question: "When should parents seek help for learning and attention difficulties?",
+    answer: "Parents may consider seeking support when learning or attention challenges begin to affect their child's schoolwork, daily activities, confidence, or enjoyment of age-appropriate tasks. Guidance can help families better understand their child's strengths, needs, and ways to support their growth and learning.",
   },
   {
-    question: "14. What is the Neuro-Ayurveda Development System?",
-    answer: "The Neuro-Ayurveda Development System is a structured framework developed by Dr. Ankush Garg to help families better understand developmental, behavioural and mental wellness concerns. The system focuses on five interconnected pillars: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. Together, these pillars provide a broader developmental perspective that helps families understand learning, attention, communication, behaviour, emotional wellbeing and overall development. The goal is to create a structured roadmap that supports long-term developmental understanding and family guidance.",
+    question: "What is the Neuro Ayurveda Development system?",
+    answer: "The Neuro-Ayurveda Development System, developed by Dr. Ankush Garg, helps families better understand their child's development, behaviour, and emotional wellbeing. It focuses on five key areas: Brain Nourishment, Gut Response, Neural Network, Sensory Integration, and Behaviour Guidance. Together, these areas help parents understand their child's learning, attention, communication, emotions, and overall growth. The system provides a simple and structured approach to guide families in supporting their child's development.",
   },
   {
-    question: "15. How does Manovaidya assess and support children with learning and attention difficulties?",
-    answer: "At Manovaidya, learning and attention assessment focuses on understanding the child as a whole rather than evaluating academic performance alone. The assessment process may include developmental history, attention abilities, learning patterns, communication skills, behaviour observations, school-related concerns and parent feedback. Based on this understanding, families receive personalized guidance and a structured developmental roadmap tailored to their child's individual needs. Support focuses on developmental understanding, parent guidance, progress monitoring and long-term family support through the Neuro-Ayurveda Development System. The goal is to help children build confidence, strengthen learning participation and support overall developmental growth.",
+    question: "How does Manovaidya assess and support children with learning and attention difficulties?",
+    answer: "At Manovaidya, learning and attention assessments focus on understanding the child's overall development, including learning patterns, attention, communication, behaviour, and parent concerns. Families receive personalized guidance and a structured plan to support confidence, learning, and long-term development through the Neuro-Ayurveda Development System.",
   },
 ];
 
@@ -314,7 +299,7 @@ function LearningAttentionDifficultiesIndiaPage() {
       "@graph": [
         {
           "@type": "MedicalWebPage",
-          name: "Learning & Attention Difficulties Support in India",
+          name: "Learning and Attention Support Services in India",
           description:
             "Learning assessment, attention support and child development guidance through the Neuro-Ayurveda Development System.",
           url: `${window.location.origin}/learning-attention-difficulties-india`,
@@ -336,7 +321,7 @@ function LearningAttentionDifficultiesIndiaPage() {
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
             { "@type": "ListItem", position: 2, name: "Child Development Care", item: `${window.location.origin}/child-health-care` },
-            { "@type": "ListItem", position: 3, name: "Learning & Attention Difficulties Support in India", item: `${window.location.origin}/learning-attention-difficulties-india` },
+            { "@type": "ListItem", position: 3, name: "Learning and Attention Support Services in India", item: `${window.location.origin}/learning-attention-difficulties-india` },
           ],
         },
         {
@@ -392,14 +377,14 @@ function LearningAttentionDifficultiesIndiaPage() {
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
       <Seo
-        title="Learning & Attention Difficulties Support in India | Child Learning Assessment | Manovaidya"
+        title="Learning and Attention Support Services in India | Child Learning Assessment | Manovaidya"
         description="Looking for support for learning and attention difficulties in children? Learn about child learning assessment, attention development and developmental support through the Neuro-Ayurveda Development System at Manovaidya."
         keywords="Learning Difficulties Treatment in India, Attention Problems in Children, Child Learning Assessment, Academic Development Guidance, Learning Difficulties vs Attention Difficulties, Memory Difficulties in Children, Concentration Problems in Children, Poor School Performance, ADHD vs Learning Disability, Neuro-Ayurveda Development System, Learning Support in India, Parent Guidance for Learning Difficulties, Dr. Ankush Garg, Child Learning Specialist Delhi NCR, Academic Performance Concerns"
         path="/learning-attention-difficulties-india"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
-          "name": "Learning & Attention Difficulties Support in India",
+          "name": "Learning and Attention Support Services in India",
           "description": "Looking for support for learning and attention difficulties in children? Learn about child learning assessment, attention development and developmental support through the Neuro-Ayurveda Development System at Manovaidya."
         }}
       />
@@ -414,12 +399,12 @@ function LearningAttentionDifficultiesIndiaPage() {
                 <span>/</span>
                 <span className="text-[#4b345d]">Learning & Attention</span>
               </nav>
-              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Learning & Attention Difficulties Support in India</p>
+              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Learning and Attention Support Services in India</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
                 Learning Assessment, Attention Support & Child Development Guidance
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Learning & Attention Difficulties Support in India
+                Learning and Attention Support Services in India
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -487,29 +472,29 @@ function LearningAttentionDifficultiesIndiaPage() {
           <section id="what-are-learning-difficulties" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">What are Learning & Attention Difficulties?</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Learning and attention difficulties refer to challenges that may affect a child's ability to concentrate, process information, remember concepts, follow instructions or perform academic tasks effectively.
+              Learning and attention difficulties are challenges that can make it harder for a child to focus, understand information, remember things, follow instructions, or complete schoolwork.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              These challenges can vary significantly from one child to another.
+              These challenges are different for every child.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Some children may struggle primarily with attention and focus, while others may experience difficulties with learning, comprehension, memory or task completion.
+              Some children may have trouble paying attention and staying focused, while others may find it difficult to learn, understand, remember, or complete tasks.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Understanding these challenges requires looking beyond school performance and considering the child's overall developmental profile.
+              To understand these challenges, it is important to look beyond school achievement and take into account the child's overall development.
             </p>
           </section>
 
           <section id="learning-vs-attention" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">Learning Difficulties vs Attention Difficulties</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">What is the difference between learning difficulties and attention difficulties?</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Some children struggle primarily with learning new concepts, while others experience difficulties maintaining attention and focus. Although these concerns can occur together, they are not always the same. Understanding the difference helps families identify the most appropriate developmental support and guidance.
+              Some children may find it harder to understand and learn new things, while others may struggle with staying focused and paying attention. Sometimes these challenges can happen together, but they are not always the same. Knowing the difference can help families understand their child's needs and choose the right support to help them grow and succeed.
             </p>
           </section>
 
           <section id="common-signs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs of Learning & Attention Difficulties</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Parents may notice concerns such as:</p>
+            <h2 className="text-[20px] font-black text-[#17111f]">What are the Common Signs of Learning & Attention Difficulties?</h2>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Parents may observe some signs such as</p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {signGroups.map((group) => (
                 <div key={group.title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
@@ -530,9 +515,9 @@ function LearningAttentionDifficultiesIndiaPage() {
           <section id="beyond-academics" className="mt-9">
             <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5 lg:flex lg:items-center lg:gap-7">
               <div className="lg:max-w-[43%] lg:shrink-0">
-                <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">Understanding Learning Beyond Academics</h2>
+                <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">How do you understand learning beyond academic achievement?</h2>
                 <p className="mt-3 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">
-                  One of the most common misconceptions is that learning difficulties are only related to intelligence.
+                  One of the most common myths is that learning difficulties are determined only by intelligence.
                 </p>
               </div>
               <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:mt-0 lg:flex-1">
@@ -547,13 +532,10 @@ function LearningAttentionDifficultiesIndiaPage() {
               </div>
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              In reality, learning is influenced by many developmental factors.
+              Learning depends on more than intelligence alone. A child may be intelligent and capable but still face challenges with focus, memory, processing information, managing emotions, or communicating effectively.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A child may be intelligent and capable while still struggling with attention, memory, processing speed, emotional regulation or communication.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, learning challenges are understood through a broader developmental framework rather than focusing only on academic performance.
+              At Manovaidya, learning challenges are understood as part of overall development, rather than only academic performance.
             </p>
             <img
               src={signsImage}
@@ -564,13 +546,13 @@ function LearningAttentionDifficultiesIndiaPage() {
 
           <section id="assessment" className="mt-9">
             <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
-              <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">Learning & Attention Assessment at Manovaidya</h2>
-              <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">Every child has a unique learning profile.</p>
+              <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">What is the Learning & Attention Assessment at Manovaidya?</h2>
+              <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">Every child has an Individual learning profile.</p>
               <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">
-                Assessment focuses on understanding the child as a whole rather than evaluating academic performance alone.
+                Assessment emphasizes a holistic understanding of the child rather than solely measuring academic performance.
               </p>
-              <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">The assessment process may include:</p>
-              <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">The assessment process may consist of:</p>
+              <div className="mt-5 grid gap-3 sm:grid-cols-2">
                 {assessmentGroups.map(({ title, items, Icon }) => (
                   <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf8fd] p-4">
                     <span className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#7835A4] shadow-[0_6px_14px_rgba(58,31,90,0.07)]">
@@ -589,7 +571,7 @@ function LearningAttentionDifficultiesIndiaPage() {
                 ))}
               </div>
               <div className="mx-auto mt-4 max-w-[620px] rounded-md bg-[#f1f5ef] px-4 py-2 text-center text-[12px] font-black leading-5 text-[#5b5360]">
-                The goal is to provide families with greater clarity regarding learning strengths, challenges and support needs.
+                The aim is to provide families with a clearer understanding of learning abilities, challenges, and needed support.
               </div>
             </div>
             <img
@@ -600,11 +582,11 @@ function LearningAttentionDifficultiesIndiaPage() {
           </section>
 
           <section id="learning-support" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">Learning Difficulties Treatment in India</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">What are the treatment options for learning difficulties in India?</h2>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Many families searching for Learning Difficulties Treatment in India are looking for practical ways to help their child succeed academically and developmentally.
+              Many families searching for learning support in India want practical solutions to help their child learn and grow.
             </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">Learning challenges may be influenced by:</p>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">What are the Factors affecting learning challenges?</p>
             <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {supportFactors.map((item) => (
                 <div key={item} className="rounded-lg border border-[#eadff1] bg-white p-4 text-center">
@@ -616,7 +598,7 @@ function LearningAttentionDifficultiesIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Support focuses on understanding these interconnected factors and helping families create a structured developmental plan that supports learning and growth.
+              Support helps children and parents understand these areas and work together to create a simple plan that encourages learning, growth, and development.
             </p>
           </section>
 
@@ -625,12 +607,12 @@ function LearningAttentionDifficultiesIndiaPage() {
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
                 <Stethoscope className="h-5 w-5" />
               </span>
-              <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Development System</h2>
+              <h2 className="text-[20px] font-black text-[#17111f]">How does the Neuro-Ayurveda Development System work?</h2>
             </div>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, learning and attention support is guided by the Neuro-Ayurveda Development System developed by Dr. Ankush Garg.
+              At Manovaidya, learning and attention support is based on the Neuro-Ayurveda Development System by Dr. Ankush Garg.
             </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">The framework focuses on five interconnected pillars:</p>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">The framework comprises five interconnected core pillars:</p>
             <img
               src={neuroDiagramImage}
               alt="5 Pillar Neuro-Ayurveda Development System Diagram"
@@ -650,7 +632,7 @@ function LearningAttentionDifficultiesIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Together, these pillars provide a structured framework for understanding learning and developmental growth.
+              Collectively, these pillars provide a structured foundation for exploring learning and personal growth.
             </p>
           </section>
 
@@ -670,15 +652,15 @@ function LearningAttentionDifficultiesIndiaPage() {
               </ul>
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Every child receives individualized guidance based on developmental needs and learning profile.
+              Every child gets personalized support based on their learning needs and abilities.
             </p>
           </section>
 
           <section id="parent-guidance" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">Parent Guidance & Family Support</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">Learning challenges often affect the entire family.</p>
+            <h2 className="text-[20px] font-black text-[#17111f]">How do we provide support to parents and families at Manovaidya?</h2>
+            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">Learning difficulties often impact the whole family.</p>
             <div className="mt-4 flex flex-wrap items-center gap-2">
-              <span className="font-bold text-[#3b2e45]">Parents may experience:</span>
+              <span className="font-bold text-[#3b2e45]">Parents receive guidance for:</span>
               {parentConcerns.map((item) => (
                 <span key={item} className="rounded-full bg-white px-3 py-1 text-[12px] font-black text-[#7835A4] ring-1 ring-[#eadff1]">
                   {item}
@@ -686,7 +668,7 @@ function LearningAttentionDifficultiesIndiaPage() {
               ))}
             </div>
             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              At Manovaidya, parent guidance helps families better understand learning patterns and developmental influences while supporting long-term growth and confidence.
+              At Manovaidya, parents receive guidance to better understand learning patterns and developmental factors while helping children build confidence and grow over time.
             </p>
             <img
               src={supportFamilyImage}
@@ -697,7 +679,7 @@ function LearningAttentionDifficultiesIndiaPage() {
 
           <section id="how-we-work" className="mt-9">
             <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
-              <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">How We Work at Manovaidya</h2>
+              <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">How do we work at Manovaidya to help children with learning difficulties?</h2>
               <div className="mt-5 grid gap-3 sm:grid-cols-5 sm:items-start lg:flex lg:items-center lg:justify-between">
                 {howWeWorkSteps.map(({ title, desc, Icon }, index) => (
                   <React.Fragment key={title}>
@@ -716,18 +698,18 @@ function LearningAttentionDifficultiesIndiaPage() {
               </div>
             </div>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Support begins with understanding the child's developmental profile, learning patterns, communication abilities, behaviour and family concerns.
+              Meaningful support begins with a deep understanding of the child's development, learning processes, communication abilities, behaviour, and family concerns.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Based on this understanding, families receive personalized guidance and a structured developmental roadmap.
+              By Using this approach, families receive customized guidance and a structured plan for development.
             </p>
             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Rather than following a one-size-fits-all approach, Manovaidya follows the Neuro-Ayurveda Development System to help families better understand the factors influencing learning, attention and overall development.
+              Manovaidya uses the Neuro-Ayurveda Development System to help parents understand their child's unique needs and the factors that affect learning, attention, and overall growth.
             </p>
           </section>
 
           <section id="why-families-choose" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Families Choose Manovaidya</h2>
+            <h2 className="text-[20px] font-black text-[#17111f]">Why do Families choose Manovaidya for improving the learning needs of their child?</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {whyChoose.map((item) => (
                 <div key={item} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
@@ -739,10 +721,7 @@ function LearningAttentionDifficultiesIndiaPage() {
               ))}
             </div>
             <p className="mt-5 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, NCR and across India connect with Manovaidya for Learning Difficulties Treatment, Attention Assessment and Child Development Guidance.
-            </p>
-            <p className="mt-3 text-[14px] font-bold leading-7 text-[#51465a]">
-              Families from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR and across India connect with Manovaidya for Learning Difficulties Treatment, Attention Assessment and Child Development Guidance.
+              Parents from Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, Faridabad, NCR, and across India connect with Manovaidya for compassionate support with Learning Difficulties, Attention Assessment, and Child Development Guidance.
             </p>
           </section>
 
@@ -753,13 +732,13 @@ function LearningAttentionDifficultiesIndiaPage() {
                 <p className="text-[12px] font-black uppercase tracking-[0.1em] text-[#7835A4]">About Dr. Ankush Garg</p>
                 <h2 className="mt-1 text-[18px] font-black text-[#17111f]">Autism, ADHD, Child Development & Mental Health Specialist in India</h2>
                 <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+                  Dr. Ankush Garg is the founder of Manovaidya and introduced the Neuro-Ayurveda Development System.
                 </p>
                 <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  His work focuses on Autism Spectrum Disorder (ASD), ADHD, Child Development, Speech & Communication Challenges, Behavioural Concerns, Learning Difficulties, Teen Mental Health, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support.
+                  His main focus is on Autism Spectrum Disorder (ASD), ADHD, child development, speech and communication challenges, behavioural issues, learning difficulties, teen mental health, adult mental wellbeing, women's emotional health, and senior mental health support.
                 </p>
                 <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  Through detailed assessment, individualized guidance and family-centred support, he helps families better understand developmental concerns and move forward with greater clarity, confidence and direction.
+                  With the help of thoughtful learning assessment for children evaluation, tailored guidance, and compassionate family support, he helps families gain a clearer understanding of developmental concerns and move ahead with confidence and reassurance.
                 </p>
               </div>
             </div>
@@ -814,18 +793,18 @@ function LearningAttentionDifficultiesIndiaPage() {
           <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
             <div className="grid gap-0 lg:grid-cols-[1fr_320px]">
               <div className="p-7 lg:p-10">
-                <h2 className="text-[24px] font-black">Book a Consultation</h2>
+                <h2 className="text-[24px] font-black">Schedule a Consultation</h2>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                  If you are looking for support for learning difficulties, attention challenges, academic concerns or developmental guidance, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+                  If you or your child need guidance with learning difficulties, attention concerns, academic struggles, or developmental support, you can book a consultation with Dr. Ankush Garg and the Manovaidya team.
                 </p>
                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                  Through a structured assessment and personalized guidance process, families can gain a clearer understanding of learning patterns, developmental needs and appropriate next steps for long-term growth and development.
+                  Through a supportive learning assessment for children and personalized guidance journey, families can better recognize individual learning strengths, developmental needs, and meaningful next steps for growth in the long run.
                 </p>
                 <a
                   href="tel:+917823838638"
                   className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]"
                 >
-                  Contact Us Now
+                  Contact us now
                 </a>
               </div>
               <div className="relative h-64 w-full lg:h-full">
@@ -934,4 +913,3 @@ function LearningAttentionDifficultiesIndiaPage() {
 }
 
 export default LearningAttentionDifficultiesIndiaPage;
-
