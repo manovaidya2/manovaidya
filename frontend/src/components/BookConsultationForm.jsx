@@ -71,42 +71,42 @@ function BookConsultationForm({ onSuccess }) {
   };
 
   return (
-    <form className="space-y-4" onSubmit={handleSubmit}>
-      <div className="rounded-xl border border-violet-100 bg-violet-50/70 p-3 text-[12px] font-bold leading-5 text-[#4d3a61]">
+    <form className="space-y-3" onSubmit={handleSubmit}>
+      <div className="rounded-lg border border-violet-100 bg-violet-50/70 p-2.5 text-[11px] font-bold leading-4 text-[#4d3a61]">
         Rs. 599 consultation fee. OPD days: Tue, Thu, Sat. Limited slots. Payment confirms your slot.
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-[#272047]">Name</label>
+        <label className="block text-[13px] font-bold text-[#272047]">Name</label>
         <input
           type="text"
           name="name"
           value={form.name}
           onChange={handleChange}
-          className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+          className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-[#272047]">Phone</label>
+        <label className="block text-[13px] font-bold text-[#272047]">Phone</label>
         <input
           type="tel"
           name="phone"
           value={form.phone}
           onChange={handleChange}
-          className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+          className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-[#272047]">Consultation Mode</label>
+        <label className="block text-[13px] font-bold text-[#272047]">Consultation Mode</label>
         <select
           name="consultationMode"
           value={form.consultationMode}
           onChange={handleChange}
-          className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+          className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
           required
         >
           <option value="" disabled>Select Mode</option>
@@ -115,26 +115,26 @@ function BookConsultationForm({ onSuccess }) {
         </select>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-3">
         <div>
-          <label className="block text-sm font-bold text-[#272047]">Date</label>
+          <label className="block text-[13px] font-bold text-[#272047]">Date</label>
           <input
             type="date"
             name="preferredDate"
             value={form.preferredDate}
             onChange={handleChange}
             min={new Date().toISOString().split("T")[0]}
-            className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+            className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
             required
           />
         </div>
         <div>
-          <label className="block text-sm font-bold text-[#272047]">Time</label>
+          <label className="block text-[13px] font-bold text-[#272047]">Time</label>
           <select
             name="preferredTime"
             value={form.preferredTime}
             onChange={handleChange}
-            className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+            className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
             required
           >
             <option value="" disabled>Select Time</option>
@@ -148,13 +148,13 @@ function BookConsultationForm({ onSuccess }) {
       </div>
 
       <div>
-        <label className="block text-sm font-bold text-[#272047]">Message</label>
+        <label className="block text-[13px] font-bold text-[#272047]">Message</label>
         <textarea
-          rows="2"
+          rows="1"
           name="message"
           value={form.message}
           onChange={handleChange}
-          className="mt-1.5 block w-full rounded-lg border border-violet-200 px-3 py-2 text-sm text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+          className="mt-1 block min-h-[44px] w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
         />
       </div>
 
@@ -171,7 +171,7 @@ function BookConsultationForm({ onSuccess }) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-2 w-full rounded-lg bg-[#8b43ba] px-4 py-2.5 text-[15px] font-black text-white shadow-[0_10px_18px_rgba(139,67,186,0.24)] transition hover:bg-[#7835a4] focus:outline-none focus:ring-2 focus:ring-[#8b43ba] focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-violet-300"
+        className="mt-1 w-full rounded-lg bg-[#8b43ba] px-4 py-2 text-[14px] font-black text-white shadow-[0_10px_18px_rgba(139,67,186,0.24)] transition hover:bg-[#7835a4] focus:outline-none focus:ring-2 focus:ring-[#8b43ba] focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-violet-300"
       >
         {isSubmitting ? "Submitting..." : "Submit Request"}
       </button>

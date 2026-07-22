@@ -102,6 +102,7 @@ export const videoStories = [
   { id: 30, title: "Success Story Video 30", type: "Patient Testimonial", location: "India", embedId: "5ExgDOjgKBQ", isIframe: true, category: "Mental Health" },
   { id: 31, title: "Success Story Video 31", type: "Patient Testimonial", location: "India", embedId: "hpdRFoN_QbQ", isIframe: true, category: "Mental Health" },
   { id: 32, title: "Success Story Video 32", type: "Patient Testimonial", location: "India", embedId: "FpoI2UP8U5Q", isIframe: true, category: "Mental Health" },
+  { id: 35, title: "Success Story Video 35", type: "Patient Testimonial", location: "India", embedId: "dqnA6Kq8ZG8", isIframe: true, category: "Mental Health" },
 ];
 
 export const categories = [
@@ -328,4 +329,3 @@ export const faqs = [
   "How long does progress usually take?",
   "Can I submit my own story?",
 ];
-

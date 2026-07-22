@@ -4,22 +4,53 @@ import { storyFilters, videoStories } from "./successStoryData";
 
 function SuccessStoryVideos({ activeFilter, onFilterChange }) {
   const carouselRef = React.useRef(null);
+  const [isCarouselPaused, setIsCarouselPaused] = React.useState(false);
   const visibleStories = activeFilter === "All"
     ? videoStories
     : videoStories.filter((story) => story.category === activeFilter);
 
-  const scrollStories = (direction) => {
+  const scrollStories = React.useCallback((direction) => {
     if (!carouselRef.current) return;
 
+    const carousel = carouselRef.current;
     const card = carouselRef.current.querySelector("article");
     const gap = 24;
-    const scrollAmount = card ? card.offsetWidth + gap : carouselRef.current.clientWidth;
+    const scrollAmount = card ? card.offsetWidth + gap : carousel.clientWidth;
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    const nextLeft = carousel.scrollLeft + scrollAmount;
+    const prevLeft = carousel.scrollLeft - scrollAmount;
 
-    carouselRef.current.scrollBy({
+    if (direction === "next" && nextLeft >= maxScrollLeft - 8) {
+      carousel.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+
+    if (direction === "prev" && prevLeft <= 0) {
+      carousel.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
+      return;
+    }
+
+    carousel.scrollBy({
       left: direction === "next" ? scrollAmount : -scrollAmount,
       behavior: "smooth",
     });
-  };
+  }, []);
+
+  React.useEffect(() => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollTo({ left: 0, behavior: "smooth" });
+    }
+  }, [activeFilter]);
+
+  React.useEffect(() => {
+    if (isCarouselPaused || visibleStories.length <= 1) return undefined;
+
+    const slideTimer = window.setInterval(() => {
+      scrollStories("next");
+    }, 3500);
+
+    return () => window.clearInterval(slideTimer);
+  }, [isCarouselPaused, scrollStories, visibleStories.length]);
 
   return (
     <section id="video-stories" className="mx-auto  px-4 pb-4 sm:px-6 lg:px-10">
@@ -46,7 +77,13 @@ function SuccessStoryVideos({ activeFilter, onFilterChange }) {
         ))}
       </div>
 
-      <div className="relative mt-8">
+      <div
+        className="relative mt-8"
+        onMouseEnter={() => setIsCarouselPaused(true)}
+        onMouseLeave={() => setIsCarouselPaused(false)}
+        onFocus={() => setIsCarouselPaused(true)}
+        onBlur={() => setIsCarouselPaused(false)}
+      >
         <button
           type="button"
           aria-label="Previous stories"
