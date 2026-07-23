@@ -409,7 +409,8 @@ function buildRawFaqs(lines) {
 
 const rawFaqs = buildRawFaqs(rawFaqLines);
 const autismPageUrl = "https://manovaidya.org/autism-treatment-india";
-const autismMetaTitle = "Autism Treatment in India with Personalized Care | Manovaidya";
+const autismTitle = "Autism Treatment in India for Children";
+const autismMetaTitle = `${autismTitle} | Manovaidya`;
 const autismMetaDescription =
   "Looking for Autism Treatment in India? Learn about Autism Assessment, Child Development Support and the Neuro-Ayurveda Development System at Manovaidya with Dr. Ankush Garg.";
 const autismMetaKeywords =
@@ -430,12 +431,12 @@ const autismSchema = {
   "@graph": [
     {
       "@type": "MedicalWebPage",
-      name: "Autism Treatment in India",
+      name: autismTitle,
       description: autismMetaDescription,
       url: autismPageUrl,
       medicalAudience: "Parent",
       about: [
-        "Autism Treatment in India",
+        autismTitle,
         "Autism Assessment",
         "Autism Spectrum Disorder",
         "Child Development Support",
@@ -447,7 +448,7 @@ const autismSchema = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://manovaidya.org" },
         { "@type": "ListItem", position: 2, name: "Child Health Care", item: "https://manovaidya.org/child-health-care" },
-        { "@type": "ListItem", position: 3, name: "Autism Treatment in India", item: autismPageUrl },
+        { "@type": "ListItem", position: 3, name: autismTitle, item: autismPageUrl },
       ],
     },
     autismFaqSchema,
@@ -905,7 +906,7 @@ const PinterestShareIcon = () => (
 
 function FloatingShareBar() {
   const pageUrl = typeof window !== "undefined" ? window.location.href : "https://www.manovaidya.com/autism-treatment-india";
-  const pageTitle = "Autism Treatment, ADHD, Child Development & Mental Health Clinic in India";
+  const pageTitle = autismTitle;
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedTitle = encodeURIComponent(pageTitle);
   const shareItems = [
@@ -1098,7 +1099,7 @@ function AutismTreatmentIndiaPage() {
           <span>/</span>
           <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a>
           <span>/</span>
-          <span className="text-[#21142d]">Autism Treatment in India</span>
+          <span className="text-[#21142d]">{autismTitle}</span>
         </div>
       </section>
 
@@ -1154,11 +1155,11 @@ function AutismTreatmentIndiaPage() {
             <span>/</span>
             <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a>
             <span>/</span>
-            <span className="text-[#4b345d]">Autism Treatment in India</span>
+            <span className="text-[#4b345d]">{autismTitle}</span>
           </nav>
-          <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Autism Treatment in India</p>
+          <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{autismTitle}</p>
           <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-            Autism Treatment, ADHD, Child Development & Mental Health Clinic in India
+            {autismTitle}
           </h1>
           <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
             Autism assessment, child development support and structured Neuro-Ayurveda guidance for families seeking clarity, confidence and a long-term developmental roadmap.
