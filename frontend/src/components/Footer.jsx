@@ -128,8 +128,8 @@ function Footer() {
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#8B43BA]" />
               <span>
                 Manovaidya Clinic
-                <span className="block">VS Plaza, Near Vigyan Hospital,</span>
-                <span className="block">Atta Market, Pocket L, Sector 22,</span>
+                <span className="block">VS Plaza, near vinayak hospital,</span>
+                <span className="block">Atta Market, Pocket E, Sector 27,</span>
                 <span className="block">Noida, Uttar Pradesh 201301</span>
               </span>
             </a>
