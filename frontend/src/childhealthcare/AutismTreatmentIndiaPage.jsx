@@ -519,6 +519,52 @@ const articleLinkRules = [
   { label: "Autism Blogs", href: "/blog", pattern: /Autism Blogs/i },
 ];
 
+const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+
+      if (linkedRuleKeys.has(ruleKey)) {
+        return;
+      }
+
+      const match = remaining.match(rule.pattern);
+
+      if (match) {
+        candidates.push({
+          index: match.index,
+          length: match[0].length,
+          ruleKey,
+        });
+      }
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+
+    if (!candidates.length) {
+      break;
+    }
+
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+
+  return ruleKeys;
+}
+
 function VisualBlock({ heading }) {
   if (heading === "What are the early signs of Autism Spectrum Disorder?") {
     return (
@@ -679,7 +725,7 @@ function VisualBlock({ heading }) {
   return null;
 }
 
-function FaqAccordion({ openFaq, setOpenFaq, onCitationClick }) {
+function FaqAccordion({ openFaq, setOpenFaq, onCitationClick, ruleKeysByLine }) {
   return (
     <section id="faqs" className="mt-9">
       <div className="mb-4 flex items-center gap-4">
@@ -706,7 +752,11 @@ function FaqAccordion({ openFaq, setOpenFaq, onCitationClick }) {
               <div className="space-y-3 px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
                 {faq.answer.map((answerLine, answerIndex) => (
                   <p key={answerIndex} style={{ whiteSpace: "pre-wrap" }}>
-                    <ArticleLinkedText text={answerLine} onCitationClick={onCitationClick} />
+                    <ArticleLinkedText
+                      text={answerLine}
+                      onCitationClick={onCitationClick}
+                      allowedRuleKeys={ruleKeysByLine.get(`faq-${answerIndex}`)}
+                    />
                   </p>
                 ))}
               </div>
@@ -781,64 +831,88 @@ function LinkifiedText({ text }) {
   });
 }
 
-function ArticleLinkedText({ text, onCitationClick }) {
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
   const source = String(text);
   const citationPattern = /\[(\d+|S\d+|L\d+)\]/;
-  const keywordPattern = articleLinkRules
-    .map((rule) => rule.pattern.source)
-    .join("|");
-  const combinedPattern = keywordPattern
-    ? new RegExp(`${citationPattern.source}|${keywordPattern}`, "i")
-    : citationPattern;
   const parts = [];
-  let remaining = source;
+  const linkedRuleKeysInText = new Set();
+  let cursor = 0;
   let safety = 0;
 
-  while (remaining && safety < 100) {
+  while (cursor < source.length && safety < 100) {
     safety += 1;
-    const match = remaining.match(combinedPattern);
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
 
-    if (!match) {
+    if (citationMatch) {
+      candidates.push({
+        index: citationMatch.index,
+        text: citationMatch[0],
+        citationId: citationMatch[1],
+        type: "citation",
+      });
+    }
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) {
+        return;
+      }
+
+      const keywordMatch = remaining.match(rule.pattern);
+
+      if (keywordMatch) {
+        candidates.push({
+          index: keywordMatch.index,
+          text: keywordMatch[0],
+          rule,
+          ruleKey,
+          type: "keyword",
+        });
+      }
+    });
+
+    if (!candidates.length) {
       parts.push(remaining);
       break;
     }
 
-    if (match.index > 0) {
-      parts.push(remaining.slice(0, match.index));
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+
+    if (absoluteIndex > cursor) {
+      parts.push(source.slice(cursor, absoluteIndex));
     }
 
-    const matchedText = match[0];
-    const citation = matchedText.match(citationPattern);
-
-    if (citation) {
+    if (next.type === "citation") {
       parts.push(
         <button
-          key={`${matchedText}-${parts.length}`}
+          key={`${next.text}-${parts.length}`}
           type="button"
-          onClick={() => onCitationClick(citation[1])}
+          onClick={() => onCitationClick(next.citationId)}
           className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
         >
-          {matchedText}
+          {next.text}
         </button>
       );
     } else {
-      const rule = articleLinkRules.find((item) => item.pattern.test(matchedText));
-      if (rule) {
-        parts.push(
-          <a
-            key={`${matchedText}-${parts.length}`}
-            href={rule.href}
-            className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
-          >
-            {matchedText}
-          </a>
-        );
-      } else {
-        parts.push(matchedText);
-      }
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a
+          key={`${next.text}-${parts.length}`}
+          href={next.rule.href}
+          className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+        >
+          {next.text}
+        </a>
+      );
     }
 
-    remaining = remaining.slice(match.index + matchedText.length);
+    cursor = absoluteIndex + next.text.length;
   }
 
   return parts.map((part, index) =>
@@ -984,18 +1058,58 @@ function FloatingShareBar() {
 
 function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
   const usedHeadingIds = new Set();
+  const ruleKeysByLine = new Map();
+  const linkedRuleKeys = new Set();
 
-  const renderLine = (line, index, keyPrefix = "line") => {
+  const collectLine = (line, index, keyPrefix = "line") => {
     const text = line.trimEnd();
     const trimmedText = text.trim();
 
     if (!trimmedText) {
-      return <div key={`${keyPrefix}-${index}`} className="h-2" aria-hidden="true" />;
+      return;
+    }
+
+    if (index === 0 && keyPrefix === "line") {
+      return;
+    }
+
+    if (trimmedText.endsWith("?") || nonQuestionHeadings.has(trimmedText)) {
+      return;
+    }
+
+    const ruleKeys = getArticleLinkRuleKeysForText(text, linkedRuleKeys);
+
+    if (ruleKeys.size) {
+      ruleKeysByLine.set(`${keyPrefix}-${index}`, ruleKeys);
+    }
+  };
+
+  visibleArticleLines.forEach((line, index) => collectLine(line, index));
+
+  if (openFaq !== null && rawFaqs[openFaq]) {
+    rawFaqs[openFaq].answer.forEach((answerLine, answerIndex) => {
+      const ruleKeys = getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys);
+
+      if (ruleKeys.size) {
+        ruleKeysByLine.set(`faq-${answerIndex}`, ruleKeys);
+      }
+    });
+  }
+
+  consultationArticleLines.forEach((line, index) => collectLine(line, index, "consultation"));
+
+  const renderLine = (line, index, keyPrefix = "line") => {
+    const text = line.trimEnd();
+    const trimmedText = text.trim();
+    const key = `${keyPrefix}-${index}`;
+
+    if (!trimmedText) {
+      return <div key={key} className="h-2" aria-hidden="true" />;
     }
 
     if (index === 0 && keyPrefix === "line") {
       return (
-        <h2 key={`${keyPrefix}-${index}`} className="text-[22px] font-black leading-snug text-[#17111f] sm:text-[26px]" style={{ whiteSpace: "pre-wrap" }}>
+        <h2 key={key} className="text-[22px] font-black leading-snug text-[#17111f] sm:text-[26px]" style={{ whiteSpace: "pre-wrap" }}>
           <ArticleLinkedText text={text} onCitationClick={onCitationClick} />
         </h2>
       );
@@ -1009,7 +1123,7 @@ function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
       }
 
       return (
-        <React.Fragment key={`${keyPrefix}-${index}`}>
+        <React.Fragment key={key}>
           <h3 id={id} className="scroll-mt-28 pt-4 text-[18px] font-black leading-snug text-[#17111f]" style={{ whiteSpace: "pre-wrap" }}>
             <ArticleLinkedText text={text} onCitationClick={onCitationClick} />
           </h3>
@@ -1019,8 +1133,12 @@ function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
     }
 
     return (
-      <p key={`${keyPrefix}-${index}`} style={{ whiteSpace: "pre-wrap" }}>
-        <ArticleLinkedText text={text} onCitationClick={onCitationClick} />
+      <p key={key} style={{ whiteSpace: "pre-wrap" }}>
+        <ArticleLinkedText
+          text={text}
+          onCitationClick={onCitationClick}
+          allowedRuleKeys={ruleKeysByLine.get(key)}
+        />
       </p>
     );
   };
@@ -1028,7 +1146,12 @@ function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
   return (
     <section id="what-is-autism" className="mt-8 space-y-3 text-[14px] font-semibold leading-7 text-[#51465a]">
       {visibleArticleLines.map((line, index) => renderLine(line, index))}
-      <FaqAccordion openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={onCitationClick} />
+      <FaqAccordion
+        openFaq={openFaq}
+        setOpenFaq={setOpenFaq}
+        onCitationClick={onCitationClick}
+        ruleKeysByLine={ruleKeysByLine}
+      />
       {consultationArticleLines.map((line, index) => renderLine(line, index, "consultation"))}
     </section>
   );

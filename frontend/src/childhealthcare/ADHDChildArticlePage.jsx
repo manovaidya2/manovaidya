@@ -29,7 +29,7 @@ import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transpare
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
-const rawArticleContent = "ADHD Care in India: Assessment, Attention Support & Child Development \r\n\r\n\r\nIntroduction\r\nBegin your child's ADHD assessment journey with compassionate guidance and personalized support. \r\n\r\nEach child has a unique way of learning, thinking, and growing. Some children are naturally curious, playful, and full of energy. However, when parents acknowledge few signs and symptoms in children such as attention difficulties, hyperactivity or impulsive behaviour begin to affect learning, daily routines, school performance and social interactions, then they start looking for explainations. \r\n\r\n\r\nAttention Deficit Hyperactivity Disorder (ADHD) is a common neurodevelopmental condition that affects children. It can influence their ability to pay attention, stay focused, manage behaviour and emotions, learn effectively, and carry out everyday tasks. \r\nAt Manovaidya, we understand that ADHD extends beyond a child being \"too active\" or \"not listening.\" Attention, behaviour, learning readiness, emotional wellbeing, and overall development are deeply interconnected. This is why we focus on understanding the child as a whole rather than just observing a few symptoms.\r\n Led by Dr. Ankush Garg, an ADHD specialist, Autism, Child Development, and Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System that helps families gain deeper insight into their child’s developmental requirements and establish a clear pathway for sustained growth, progress, and support.\r\nFor families looking for ADHD treatment in India, ADHD assessments, developmental guidance, or help with attention and behaviour-related concerns, we are committed to providing understanding, structured direction, and individualized care.\r\nFamilies from all across India, Delhi, Noida, Greater Noida, Ghaziabad and NCR seek personalized guidance from Dr Ankush Garg for ADHD, Autism, Child Development, and Mental Health support through a structured Neuro-Ayurveda Development System. \r\n\r\nWhat does ADHD treatment at Manovaidya focus on? \r\nAt Manovaidya, ADHD Treatment Focuses On:\r\nBuilding Focus & Attention\r\nImproving Learning & School Skills\r\nSupporting Behaviour & Emotional Control\r\nGuiding Parents & Families\r\nEnhancing Brain Growth & Thinking Skills\r\nCreating Personalized Growth Plans\r\n\r\n\r\n\r\n\r\nWhat is ADHD?\r\nADHD( Attention Deficit Hyperactivity Disorder) is a Neurodevelopmental Disorder that may affect a  child’s capacity to sustain focus, control actions, manage impulsive responses, and organize everyday tasks. Each child with ADHD symptoms is unique. Every parent must understand that it is not caused by ineffective parenting, low intellectual ability, or a child’s refusal to pay attention. It is a neurodevelopmental condition that influences how children interpret information, sustain attention, manage impulses and behaviours, and interact with the world around them. Some children might experience difficulty staying focused, follow instructions, or concentrate on tasks, while others may be more active, act quickly without thinking, or experience a combination of these challenges. The way ADHD affects a child can vary greatly, and each child may show signs in their own unique way.\r\n\r\nMany parents first observe the signs when their child:\r\nFaces difficulty in focusing on activities\r\nForgets instructions and important details\r\nGets distracted easily\r\nStruggles in staying physically calm\r\nFaces difficulty waiting for their turn to speak and express their views\r\nHas difficulty in finishing assignments\r\nActs quickly and impulsively without analysing the consequences of the situation\r\n\r\nWhat are the common signs and symptoms of ADHD?\r\nADHD signs and symptoms can look different depending on a child’s development, age, and unique needs. Every child may sometimes struggle with focus or display extra energy, but ADHD- child behaving challenges are often more enduring and may meaningfully affect daily functioning. \r\n What are the inattention symptoms?\r\nChildren who have issues in paying attention may\r\nFind difficulty in focusing on tasks.\r\nGets distracted easily.\r\nOften forgets instructions.\r\nMisplace personal items\r\nMake mistakes in academics.\r\nFind it difficult to finish tasks on their own\r\nHave trouble planning and organizing activities\r\nSeem like they are not listening when spoken to\r\nAvoid activities that need long periods of focus\r\nMove quickly from one activity to another\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nWhat are the Hyperactivity Symptoms?\r\nSome children with ADHD symptoms may display higher levels of physical activity than expected for their age. Common signs may include: \r\nDifficulty in sitting for long duration\r\nContinuous moment and hyperactivity\r\nTalks excessively\r\nConstantly fidgeting\r\nInappropriate running and climbing\r\nRestless during structured activities\r\nConstant need to be active\r\nImpatient\r\nSymptoms of hyperactivity often become more visible in classrooms, where sustained attention, seated behavior, and routine following are expected. \r\nWhat are impulsivity symptoms?\r\nImpulsivity is the tendency to react immediately rather than thinking through the possible outcomes. Some of the common examples include:\r\nTalking over others.\r\nAnswering too quickly without understanding the question\r\nTrouble waiting\r\nNot thinking before taking action\r\nSudden bursts of emotion\r\nPoor self control\r\nDifficulty following important instructions\r\nTaking unnecessary risks\r\nImpulsivity may interfere with learning, peer relationships, family interactions, and emotional regulation. \r\nHow can we understand ADHD beyond observable behaviour?\r\nADHD is more than a behavioural challenge. It relates to how the brain develops, manages emotions, supports learning, handles daily tasks, and influences overall quality of life. \r\n\r\n-Brain growth and capacity\r\n- Emotional regulation and awareness\r\n-Learning capacity\r\n- Planning & organizational skills\r\n- Behavioral support and environment\r\n\r\nParents are often told:\r\nYour child is lazy and lacks motivation\r\nYour child needs more discipline and stronger routine\r\nYour child is misbehaving and extremely naughty\r\nYour child will outgrow this phase\r\n\r\nWhile behaviour may be one of the most noticeable signs of ADHD, the condition often affects many areas of a child’s development that may not always be easy to see.\r\nA child’s attention, ability to manage emotions, organize tasks, stay motivated, prepare for learning, and respond to situations are all connected and play an important role in their overall growth and development.\r\nFor example\r\n-Difficulty staying focused may affect learning.\r\n-Problems managing emotions may influence behaviour.\r\n-Difficulties with planning and organizing may affect daily tasks.\r\n-Acting without thinking may affect social relationships.\r\n-Trouble paying attention may influence academic performance.\r\nThis wider understanding of development is an important part of the Neuro-Ayurveda Development System followed at Manovaidya.Instead of looking only at what can be observed, the main intention is to understand the reasons that may affect attention, learning, behaviour, and overall growth. This helps families get clearer advice and a more organised plan for ongoing support. \r\nHow is the ADHD assessment carried out at Manovaidya? \r\nAt Manovaidya we have a comprehensive ADHD screening assessment  which helps immensely in understanding your child’s special strengths, difficulties and needs.\r\nStep 1\r\n Parent Conversation\r\nStep 2\r\n Child Development Check\r\nStep 3\r\n Behaviour and Attention Check\r\nStep 4\r\n Report and Understanding\r\nStep 5\r\n Personalised Support\r\nOur aim is to provide understanding, not just the ADHD diagnosis. We help you know your child better.\r\nEvery child is one of a kind, and each developmental path unfolds differently. Many parents spend months or even years trying to identify the reasons behind their child’s struggles with attention, focus, learning, behaviour, or managing emotions. Sometimes, children may be percieved  as lazy, careless, stubborn, or disobedient when they may actually be experiencing challenges with attention, learning, or overall development.\r\nAt Manovaidya, ADHD assessment looks at the child’s complete developmental journey, helping understand their strengths, challenges, and needs instead of focusing on a single behaviour or symptom.\r\nThe ADHD screening process is designed for parents to gather clarity about:\r\nAbility to gain focus\r\nLearning capacity\r\nAcademic skills\r\nBehaviour patterns and tendencies\r\nAbility to manage emotions\r\nImpulsive behaviours\r\n Social skills\r\nAdaptative functioning\r\nStrengths and capabilities\r\nADHD support requirements \r\nHere the focus is not merely on identifying concerns, but also on providing families with a comprehensive understanding of their child’s developmental functioning and establishing a structured framework for future support and progress. \r\nWhat Are the Steps in the ADHD Assessment Process? \r\nComprehensive Parent Discussion \r\nUnderstanding a child’s developmental journey, school experiences, attention needs, behaviours, learning habits, emotions, everyday routines, sleep, eating preferences, and family observations. \r\nUnderstanding Cognitive and Learning Processes \r\nEvaluating attention strengths and areas of difficulty, learning readiness, behavioural patterns, emotional regulation skills, organizational abilities, social functioning, and academic challenges. \r\nPersonalized Guidance\r\nProviding parent training in ADHD, behaviour strategies, learning guidance, routine planning, emotional regulation tools, and progress tracking. \r\nWhat Are the Next Steps in ADHD Treatment in India Beyond Symptom Management? \r\nMany families looking for ADHD Treatment in India are searching for effective approaches to improve concentration, control hyperactive ADHD child behaviors, and help their child succeed in school. \r\nAlthough these goals are significant, addressing only apparent symptoms may not fully capture the child’s broader developmental requirements. \r\nDifficulties with focus improvement in ADHD, self-control, managing emotions, learning, and planning skills are often linked and can affect each other. \r\nFor example\r\n-Difficulty concentrating may affect learning.\r\n-Challenges with emotional regulation may influence behaviour.\r\n-Difficulties with executive functioning may affect planning and organization.\r\n-Impulsive behaviours may influence peer interactions.\r\n-Academic challenges may impact confidence and self-esteem.\r\nAt Manovaidya, ADHD is recognized through a broader understanding of child development. Rather than focusing only on individual symptoms, the goal is to understand the factors that may influence attention, behaviour, learning and overall well being.\r\nThis concept serves as the guiding framework for the Neuro-Ayurveda Development System. \r\nWhat is the Neuro Ayurveda Development system?\r\nAt Manovaidya, developmental, behavioural, and attention-related concerns are supported through the Neuro-Ayurveda Development System, a Holistic ADHD treatment framework developed by Dr. Ankush Garg. \r\nThe system is developed to help families better understand the various connected factors that may shape a child’s learning, attention, behaviour, emotional regulation, and overall development. \r\nInstead of focusing only on symptoms, the Neuro-Ayurveda Development System looks at the child’s complete developmental needs through five connected pillars. \r\nPillar 1: Brain Nourishment System\r\nBrain development supports learning, attention, memory, communication, and social skills. The Brain Nourishment System focuses on building healthy cognitive foundations by supporting attention, learning, communication, memory, thinking skills, and emotional balance. The goal is to strengthen growth and development.\r\nPillar 2: Gut Response System\r\nA healthy gut supports overall health and development. Many children with developmental concerns may have picky eating, tummy troubles, food sensitivities, bowel changes, or appetite issues. The Gut Response System helps understand how digestion may affect a child’s growth, comfort, and daily functioning.\r\nPillar 3: Neural Network System\r\nChildren grow and learn through connections in the brain. The Neural Network System helps us understand how brain development can affect learning, attention, communication, and behaviour. It focuses on supporting areas like learning skills, communication, focus, responses, and social interaction.\r\n‘\r\n\r\n\r\n\r\n\r\nPillar 4: Sensory Integration System\r\nMany children with autism experience sensory differences. They may be sensitive to sounds, lights, textures, or busy places, while some may seek extra sensory experiences. Understanding your child’s sensory needs, preferences, and ways to stay calm can help families support their comfort, daily activities, and participation.\r\n\r\nPillar 5: Behaviour Guidance System\r\nBehaviour is a way children communicate their needs, feelings, and challenges. The Behaviour Guidance System helps families understand why behaviours happen, including developmental needs, triggers, and emotions. The goal is to support children with positive guidance instead of only reacting to behaviours. \r\n\r\nHow We Work at Manovaidya?\r\nA structured, step-by-step process designed for sustainable development and real change. \r\n-Assessment\r\n-Understanding\r\n- Recognize strengths, challenges, and growth areas\r\n- Individualised Development Strategy\r\n-Parent Empowerment & Support\r\n- Continuous Monitoring & Improvement\r\n\r\nEvery child is different, and at Manovaidya, support starts by seeing and understanding the child as a whole person, not just a simple ADHD diagnosis. \r\nOur journey begins with a detailed understanding of your child’s developmental journey, including their communication skills, behaviour, learning style, attention needs, sensory experiences, and your family’s concerns. With this understanding, we provide personalized guidance and create a clear developmental plan that supports your child’s unique strengths, challenges, and individual growth.\r\nInstead of using a one-size-fits-all method, Manovaidya uses the Neuro-Ayurveda Development System to help families understand the various factors that shape communication, focus, behaviour, learning, emotional balance, and overall growth. \r\nSupport is designed to help families through ADHD child behaviour assessment, parent guidance, developmental planning, progress updates and continued support, so parents can move forward with more clarity, confidence and hope.\r\nEvery child is different and grows in their own way. At Manovaidya, support begins with understanding each child through a detailed assessment, learning about their development and providing personalized guidance that meets their individual needs instead of following a one-size-fits-all approach.\r\nHow Do We Support Children with ADHD?\r\nAt Manovaidya, every child receives personalized support because each one has a unique journey, with their own strengths, passions, challenges, and developmental needs. \r\nOur approach focus on:\r\n-Knowing the child’s unique needs\r\n-Finding the child’s strengths\r\n- Finding areas where support is needed\r\n-Parent training for ADHD\r\n-Helping with learning and focus\r\n-Checking growth and progress regularly\r\n-Supporting healthy growth and happiness\r\nThe focus is not just on quick behaviour changes but on long-term growth and development through organized support and family involvement. Many families reach out to Manovaidya while exploring ADHD treatment options in India because they seek individualized guidance for attention challenges, behaviour, learning, and overall child well being. \r\nWhat are the benefits of Parent Training on ADHD for families? \r\nADHD affects both the child and the broader family environment. \r\nMany parents struggle with:\r\nFeeling emotionally drained\r\nFeeling overwhelmed\r\nConstant emotional strain\r\nFeeling worn down\r\nEmotional overload\r\nParenting fatigue\r\nFeeling stretched too thin\r\nAt Manovaidya, parent training on ADHD is regarded as an essential part of the developmental journey. \r\nFamilies are guided in understanding their ADHD child behaviour, attention, learning,  emotional needs, daily routines, and long-term development journey.\r\n As parents gain deeper understanding and self-assurance, they are better prepared to nurture their child’s learning, behaviour, and overall development. When parents feel well informed and confident, they are usually better able to help their child’s learning, behaviour, and overall wellbeing. \r\nOur goal is to help families transition from uncertainty and overwhelm to clarity, confidence, and positive steps forward. \r\nWhy Families Choose Manovaidya\r\nSelecting the appropriate support for a child with ADHD can feel daunting. Parents often receive a range of opinions about difficulties with focus, activity levels, learning, and behaviour. \r\nSome of them are encouraged to only focus on academics while others are advised to focus primarily on behaviour regulation. Over time, many families begin seeking a more organised and holistic ADHD treatment with proper understanding of their child’s developmental requirements \r\nAt Manovaidya our goal is to help families understand the complete picture of development. We look beyond individual symptoms to address attention, learning, behaviour, emotional regulation, and overall growth together through a structured Neuro-Ayurveda Development System. \r\nFamilies across Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, and India rely on Manovaidya for ADHD assessment, child development insights, and personalized support to help children thrive.\r\nPersonalized Growth Understanding \r\nEvery child has their own unique qualities. ADHD Assessment and support are adapted to their specific strengths, challenges, and growth needs.  \r\nHolistic Neuro-Ayurvedic Development Program \r\nThe five-pillar framework helps families understand the different influences that can impact attention, learning, behaviour, emotional regulation, and overall development. \r\nFamily focused approach\r\nParents are supported throughout the journey with guidance that helps families build clarity, confidence, and understanding in nurturing their child’s growth needs . \r\n\r\n\r\nLong term/ Sustainable growth strategy\r\nThe goal is to support enduring developmental progress rather than focusing solely on immediate behavioural outcomes. \r\nPersonalised Support & Progress Monitoring \r\nFamilies receive personalised support and practical recommendations to navigate developmental progress and future goals. \r\nSupport for Diverse Developmental Needs \r\nThe approach may help children who face difficulties with focus, learning, behaviour, managing emotions, social relationships, and organisational skills. \r\nFamilies across India choose Manovaidya for guided ADHD recovery support, personalized recommendations, and a long-term plan for their child’s development. \r\nAbout\r\nAnkush Garg\r\nADHD, Autism, Child Development & Mental Health Specialist in India\r\nDr. Ankush Garg is the Founder of Manovaidya and the creator of the Neuro-Ayurveda Development System, a personalized framework that helps support developmental, behavioural, and mental wellness through a holistic ADHD treatment approach. \r\nHis work supports children, teenagers, adults, and seniors with a wide range of emotional, developmental, and behavioural needs. He works with families dealing with ADHD, Autism Spectrum Disorder (ASD), child development concerns, behaviour challenges, speech and communication difficulties, teen mental health concerns, adult emotional wellbeing, women’s mental health, stress management, and the emotional needs of older adults.\r\nThrough Manovaidya, Dr. Ankush Garg brings together Ayurvedic traditions and modern approaches to understanding the brain, behaviour, emotions, and cognitive health. His approach focuses on understanding the root cause, giving personal guidance, supporting families, and planning for long-term overall health.\r\nThrough comprehensive evaluation, individualized recommendations, and ongoing support, he helps children, adults, and families understand their challenges and take small meaningful steps forward with confidence and direction. Families across India connect with Dr. Ankush Garg for ADHD, Autism, Child Development, and Mental Health guidance through a compassionate, customized, and systematic Neuro-Ayurveda Development Program. \r\n\r\nFrequently asked questions\r\nWhat is ADHD?\r\nADHD is a developmental condition that can affect a child’s attention, behaviour, emotions and daily activities. Children with ADHD may have difficulty focusing, following instructions, managing impulses or staying organized. Every child experiences ADHD differently. At Manovaidya, we look at the child as a whole, supporting their learning, emotional wellbeing and overall development.\r\nWhat are the first signs of ADHD?\r\nEarly signs of ADHD can include trouble focusing, getting distracted easily, forgetting things, being very active, acting without thinking, and having difficulty following instructions. Children may struggle to finish tasks, lose things often, interrupt others, or find it hard to wait their turn. These signs are often noticed more when they start school and need to follow routines. While some distraction and high energy are normal, ongoing difficulties that affect daily life may need a developmental check.\r\nWhat are the 6 symptoms of ADHD?\r\nADHD can affect each child differently. Common ADHD symptoms include trouble focusing, easy distraction, forgetfulness, impulsive actions, high activity levels, and difficulty following instructions. Some children may struggle with tasks, organization, or emotions, while others may interrupt or act quickly without thinking. Understanding these signs helps parents recognize their child’s needs and offer the right support.\r\nAt what age can adhd symptoms become noticeable?\r\nADHD symptoms may appear in the preschool years and often become clearer when children start school. Challenges may include difficulty with focus, following instructions, controlling impulses, managing activity levels or emotions. Since every child develops differently, a professional assessment can help determine whether behaviours are part of typical development or need extra support.\r\nWhat causes someone to develop ADHD?\r\nADHD is a difference in brain development that can be influenced by genetics and early life factors. It is not caused by parenting style, discipline or a child’s intelligence. ADHD can affect attention, behaviour and everyday skills in different ways. Every child is unique, and understanding ADHD helps parents provide the support, encouragement and guidance their child needs to grow and succeed.\r\n\r\n\r\n\r\nCan ADHD improve with age?\r\nChildren with ADHD can learn and improve their attention, emotions, organization, and self-control as they grow. ADHD is a lifelong condition, but children continue to develop new skills during childhood, teenage years, and adulthood. Every child is different and grows with the help of family support, routines, learning, and guidance. Parents can focus on their child’s strengths, confidence, independence, and everyday skills. With patience, care, and support, children can learn to manage challenges and do well over time.\r\nIs ADHD linked to high IQ?\r\nADHD and intelligence are different. A child with ADHD can be smart, average, or need extra support, like any other child. Many children with ADHD are creative, curious, energetic, and think in special ways. ADHD may make focus, self-control, or organization harder, which can affect school work. But ADHD does not decide how intelligent a child is. Knowing a child’s strengths and needs helps them learn and grow better.\r\nDoes screen time cause ADHD?\r\nResearch does not show that screen time causes ADHD, but excessive use may affect focus, sleep, behaviour, emotions and routines. Healthy screen habits, balanced activities, play and sleep support children’s development. Screen time is only one of many factors affecting attention. \r\nWhat are natural ways to manage ADHD symptoms? \r\nParents can help children with ADHD by making daily routines, encouraging exercise, ensuring good sleep, and creating a calm, caring environment. Simple steps, visual reminders, and praise can improve daily life. Being consistent works better than strict rules. Every child is different, so support should match their needs. At Manovaidya, parents receive guidance to understand their child’s attention, behaviour, learning, and development through a simple and personal approach.\r\nHow can I manage ADHD symptoms at home?\r\nHome support helps children with ADHD handle daily challenges. Parents can build consistent routines, set clear goals, limit distractions, and promote healthy habits. Patience, encouragement, and guidance can boost confidence and emotional control. Since every child is different, a proper assessment can help identify the best support strategies.\r\n\r\n\r\nWhat habits can help manage ADHD? \r\nHealthy daily habits can support children with ADHD by improving focus and routine. Regular sleep, exercise, organized spaces, and clear schedules can make daily tasks easier. Small steps, visual cues, and positive support help children stay on track. Since every child is different, habits should match their needs and strengths.\r\nWhat are the 7  triggers that make ADHD worse ? \r\nSome things can make ADHD symptoms harder for children to manage, such as poor sleep, too much screen time, stressful situations, lack of routine, less physical activity, and too many demands at school. These things do not cause ADHD, but they can make difficulties more noticeable. Knowing what affects your child can help parents create a supportive and caring environment.\r\nHow to improve focus with ADHD without medication?\r\nBetter focus comes from simple strategies like routines, smaller tasks, fewer distractions, reminders, healthy sleep, and exercise. Attention difficulties are not a sign of laziness. The right support can help people learn and work better.\r\nCan a child with ADHD study in a regular school? \r\nMany children with ADHD do well in regular schools. The best learning environment depends on their needs, strengths, and support required. Some may need extra help or adjustments, while others can learn well in a regular classroom. A developmental assessment can help parents choose the right option.\r\nHow does Manovaidya assess and support children with ADHD? \r\nAt Manovaidya, ADHD assessment helps understand your child’s unique needs, strengths, and challenges. We look at attention, learning, behaviour, emotions, school concerns, and your inputs as a parent. Based on this, we provide a personalized plan to support your child’s growth, confidence, and overall development through the Neuro-Ayurveda Development System.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nSchedule a Consultation \r\nIf you are looking for ADHD support, ADHD assessment, learning help, or child development guidance in India, you can book a consultation with Dr. Ankush Garg and the Manovaidya team.\r\nThrough a simple assessment and personalized guidance, families can better understand their child’s needs and find the right support for learning, growth, and well-being.\r\nBegin your journey\r\n-Cognitive behavioural therapy for ADHD\r\n-Personalized Development Plan \r\n- Parent Coaching & Family Support \r\n- Neuro-Ayurveda Development System \r\n- Structured Growth Strategy \r\nSchedule Your Consultation with Manovaidya Today\r\nManovaidya Clinic\r\nNoida, Uttar Pradesh, India \r\n\r\n";
+const rawArticleContent = "ADHD Care in India: Assessment, Attention Support & Child Development \r\n\r\n\r\nCore insights \r\n\r\n\r\nIntroduction\r\nUnderstanding ADHD Beyond Behaviour\r\nManovaidya ADHD Assessment Process\r\nSteps in ADHD Assessment\r\nBeyond Symptom Management in ADHD\r\nNeuro Ayurveda Development System\r\nHow Manovaidya Works\r\nSupporting Children with ADHD\r\nBenefits of Parent ADHD Training\r\nWhy Choose Manovaidya\r\nAbout Dr. Ankush Garg\r\nFrequently Asked Questions\r\nSchedule Your Consultation Today\r\n\r\nIntroduction\r\n\r\n\r\nTake your child's ADHD evaluation with a gentle hand and tailored assistance.\r\nAll children learn, think and grow in their own individual ways. There are children who are curious, playful and energetic by nature. But when parents see little or no symptoms in their child (difficulty paying attention, hyperactivity or impulsive behaviour begins to interfere with learning, daily functioning, problems with school work, and social functioning), the parents begin to search for explanations. [1][2][3]\r\n\r\n\r\nAttention Deficit Hyperactivity Disorder (ADHD) is a frequent neurodevelopmental disorder that impacts kids. It can affect their concentration/attention, focus, behaviour and emotions, learning, and daily functioning. [1][2][3][4]\r\n\r\n\r\nWe recognize at Manovaidya that ADHD is more than a child \"running around\" or \"not listening. There are clear linkages between attention/behaviour, readiness to learn, emotional wellbeing, and overall development. That is why we need to see the child for more that just a few symptoms. [2][3][4][5]\r\n\r\n\r\nUnder the leadership of Dr. Ankush Garg, an ADHD specialist, Autism, Child Development, and Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda Development System which empowers families to understand their child's developmental needs and provides a clear developmental trajectory for long-term growth, progression, and support.\r\nWhether you are seeking ADHD assessments in India or developmental guidance, or assistance with attention and behaviour-related issues, we are dedicated to offering you understanding and structured direction, while also supplying customized care and attention.\r\n\r\n\r\nDr Ankush Garg provides expert guidance and support to families from all over India, Delhi, Noida, Greater Noida, Ghaziabad and NCR on ADHD, Autism, Child Development and Mental Health under a well-designed Neuro-Ayurveda Development System.\r\n\r\n\r\nWhat does ADHD treatment at Manovaidya focus on? \r\n\r\n\r\nThe focus of ADHD treatment at Manovaidya is:\r\nBuilding Focus & Attention\r\nImproving Learning & School Skills\r\nAiding in Behaviour & Emotional Control\r\nGuiding Parents & Families\r\nEnhancing Brain Growth & Thinking Skills\r\nDeveloping and implementing a Personalized Growth Plan\r\n\r\nWhat is ADHD?\r\n\r\n\r\nAttention Deficit Hyperactivity Disorder (ADHD) is a Neurodevelopmental Disorder that can impact a child's ability to concentrate, regulate their behavior, control their impulsiveness, and manage their daily activities. [1][2][3][4]\r\n\r\n\r\nEach child with ADHD symptoms is unique. All parents should be aware that it is not a result of a failure in parenting, lack of intellectual capability or the child's inability to pay attention. It is a neurodevelopmental disorder that affects how children process and understand information, focus attention, control their impulses, and interact with others and the environment. [1][2][3][4]\r\n\r\n\r\nSome children may have trouble holding their attention, taking turns, or focus on activities; some may be more active than others, act impulsively without thinking or have a mixture of these problems. Attention Deficit Hyperactivity Disorder (ADHD) can manifest in many different ways and for some children may not even show up. [1][2][3][4]\r\n\r\n\r\nThe first clues may be found by the parents when the child:\r\n\r\n\r\nHas trouble concentrating in activities. [1][2][3]\r\nForgets instructions and important details. [1][2][5]\r\nGets distracted easily. [1][2][3]\r\nStruggles in staying physically calm. [1][2][3]\r\nHas trouble taking turns with others to speak and express opinions [1][2][3]\r\nHas difficulty in finishing assignments. [1][2][5]\r\nActs quickly and impulsively without thinking of implications of situation. [1][2][4][5]\r\n\r\nWhat are the common signs and symptoms of ADHD?\r\n\r\n\r\nSigns and symptoms of ADHD may vary from child to child, depending on their development and age as well as their individual needs. Sometimes, all children find it difficult to concentrate or exhibit hyperactivity, but, symptoms of ADHD-child behaving problems are more persistent and can realistically impact the children's functioning. [1][2][3][4]\r\n\r\n What are the inattention symptoms?\r\n\r\n\r\nChildren who have issues in paying attention may\r\nHave trouble paying attention to work. [1][2][3]\r\nGets distracted easily. [1][2][3]\r\nOften forgets instructions. [1][2][3]\r\nMisplace personal items. [1][2][3]\r\nGet wrong answers to schoolwork. [1][2][3]\r\nHave trouble completing tasks independently. [1][2][5]\r\nHave trouble planning and organizing activities. [2][5]\r\nLook as if they're not listening when talking to them. [1][2][3]\r\nTry not to do things that require prolonged concentration. [1][2][3]\r\nSpend time from one activity to another. [1][2][3]\r\n\r\nWhat are the Hyperactivity Symptoms?\r\n\r\n\r\nChildren with symptoms of ADHD may be more physically active at their age than their peers. Common signs may include: [1][2][3][4]\r\nTrouble sitting up for long periods of time. [1][2][3]\r\nOngoing hyperactivity and/or moment. [1][2][3]\r\nTalks excessively. [1][2][3]\r\nConstantly fidgeting. [1][2][3]\r\nThe inappropriate use of running and climbing. [1][2][3]\r\nAvoids regular routines or rituals. [1][2][3]\r\nConstant need to be active. [1][2][3]\r\nImpatient. [1][2][3]\r\nThe hyperactivity may be more apparent in the classroom, where attention span, sitting and routine are required. [2][3]\r\n\r\nWhat are impulsivity symptoms?\r\n\r\n\r\nImpulsivity is when a person wants to do something without considering the consequences. Some of the common examples include: [1][2][3][4]\r\nTalking over others. [1][2][3]\r\nQuick answer without comprehending the question. [1][2][3]\r\nTrouble waiting. [1][2][3]\r\nNot thinking before taking action. [1][2][3][5]\r\nSudden outbursts of emotion. [4][5]\r\nPoor self control. [4][5]\r\nChallenge to follow key directions. [1][2][5]\r\nTaking unnecessary risks. [1][4][5]\r\nImpulsivity can impair learning, social or family relationships, and emotional self-regulation. [2][4][5]\r\n\r\nHow can we understand ADHD beyond observable behaviour?\r\n\r\n\r\nADHD is more than a behaviour problem. It is related to brain development, emotional regulation, learning, everyday functioning and well-being. [1][2][3][4][5]\r\n\r\n\r\nThe brain grows and develops [4][5][9]\r\nEmotional regulation and awareness [4][5]\r\nLearning capacity [2][4][5]\r\nPlanning & organizational skills [5]\r\nBehavioral supports and environment [2][3][7]\r\n\r\n\r\nParents are usually given advice such as:\r\n\r\n\r\nYour child doesn't want to be productive or work hard.Your child is lazy and unmotivated.\r\nYou need to give your child more structure and discipline.\r\nYour child is misbehaving and extremely naughty\r\nYour child will move on from this stage\r\nAlthough behaviour is one of the most obvious symptoms of ADHD, it can also impact many aspects of a child's development, which may not always be apparent. [1][2][3][4]\r\nThe way a child attends to, regulates, organizes, motivates and prepares for learning and responds to situations is all linked to the child's overall growth and development. [4][5]\r\n\r\n\r\nFor example\r\n\r\n\r\nDifficulty concentration could have a negative impact on learning. [2][4][5]\r\nEmotional regulation challenges can impact on behaviour. [4][5]\r\nPlanning and organizing can be a challenge, impacting daily functioning. [5]\r\nThe impulsive behavior may have an impact on social relationships. [4][5]\r\nThe problem with concentration can affect studies. [2][3][4]\r\n\r\n\r\nThe broader knowledge of development is integral to the Neuro-Ayurveda Development System practiced at Manovaidya. The primary focus is to understand the reasons that could impact attention, learning, behaviour and growth, rather than just observing them. This can assist families to receive more coherent guidance and a more structured approach to future support.\r\n\r\nHow is the ADHD assessment carried out at Manovaidya? \r\n\r\n\r\nAt Manovaidya we have a comprehensive ADHD screening assessment which helps immensely in understanding your child’s special strengths, difficulties and needs. [2][3]\r\n\r\n\r\nStep 1: Parent Conversation [2][3]\r\nStep 2: Child Development Check [2] [3]\r\nStep 3: Behaviour and Attention Check [2] [3]\r\nStep 4: Report and Understanding [2][3]\r\nStep 5: Personalised Support [2][3][7]\r\n\r\n\r\nWe are not looking to just give you the diagnosis of ADHD, we are looking to give you a level of understanding. Help you to know your child better. [2][3]\r\n\r\n\r\nEach child is unique and their development will be unique. Parents spend months or years trying to figure out what is causing their child to have trouble paying attention, focussing, learning, behaving or regulating emotions. Sometimes, children may be regarded as lazy, careless, stubborn or disobedient when they may have problems with attention, learning or overall development. [1][2][3][4]\r\n\r\n\r\nAt Manovaidya, ADHD assessment considers the child's whole developmental trajectory to help to understand the individual's strengths, weaknesses and requirements rather than just a single behaviour or symptom. [2][3]\r\n\r\n\r\nThe ADHD screening process is for parents to get clarity on:\r\n\r\n\r\nAbility to gain focus [2][3]\r\nLearning capacity [2][3]\r\nAcademic skills [2][3]\r\nPatterns and tendencies of behaviour [2][3]\r\nSkill in self-regulation of emotions [2][3]\r\nImpulsive behaviours [1][2][3]\r\nSocial skills [2][3]\r\nAdaptative functioning [2][3]\r\nStrengths and capabilities [2][3]\r\nADHD support requirements [2][3][7]\r\n\r\n\r\nThe emphasis is not just on outlining concerns, but on giving families a full picture of their child's developmental needs and setting up a planned system of support and progression. [2][3][7]\r\n\r\nWhat Are the Steps in the ADHD Assessment Process? \r\n\r\n\r\nComprehensive Parent Discussion\r\n\r\n\r\nKnowing a child's developmental history, school experiences, attention requirements, behaviours, learning styles, emotions, daily habits, sleep patterns, eating habits and families. [2][3]\r\n\r\n\r\nRecognizing the functioning of cognitive and learning processes.Knowledge of cognitive and learning processes.\r\n\r\nUnderstanding Cognitive and Learning Processes \r\n\r\n\r\nAssessing strengths and areas of difficulty with attention, readiness to learn, behavioural patterns, emotional regulation skills, organizational skills, social functioning and academic challenges. [2][3][4][5]\r\n\r\n\r\nPersonalized Guidance\r\n\r\n\r\nDelivering parent training on ADHD, behaviour strategies, learning guidance, planning routine, tools for emotional regulation and tracking of progress. [2][3][6][7]\r\n\r\nWhat Are the Next Steps in ADHD Treatment in India Beyond Symptom Management? \r\n\r\nA number of families are on the lookout for ADHD Treatment in India that can help them concentrate, manage the behavioral issues of ADHD children and assist their child to excel in school. [2][3]\r\n\r\n\r\nWhile important, these objectives are important, they might not adequately reflect the child's overall developmental needs. [2][4][5]\r\n\r\n\r\nPoor attention, self-control, emotional control, learning and planning skills are frequently interconnected and may interact in ADHD. [4][5]\r\n\r\n\r\nFor example\r\n\r\n\r\nHaving trouble focusing can impact learning. [2][4][5]\r\nEmotion-regulation issues may impact on behavior. [4][5]\r\nExecutive functioning problems can impact planning and organization. [5]\r\nPeer interactions could be affected by impulsive behaviours. [4][5]\r\nAcademic struggles can have a negative effect on self-confidence and self-esteem. [2][4]\r\n\r\n\r\nThe understanding of child development is broader, so ADHD is known at Manovaidya. The aim is not to just look at individual symptoms but to consider what factors could affect attention, behaviour, learning and overall well being. [2][3][4]\r\n\r\n\r\nThe Neuro-Ayurveda Development System is based on this concept.\r\n\r\n\r\nWhat is the Neuro Ayurveda Development system?\r\n\r\n\r\nDr. Ankush Garg's Neuro-Ayurveda Development System (NADS) is the framework of holistic ADHD treatment that is supported at Manovaidya, which also includes developmental, behavioural and attention related issues.\r\n\r\n\r\nThe system is designed to inform the family of the different factors that are interrelated and could influence a child's learning, attention, behaviour, emotional regulation and child development.\r\n\r\n\r\nThe Neuro-Ayurveda Development System (NADS) takes a holistic approach to the child's overall developmental requirements, using five interconnected pillars to address various aspects.\r\n\r\n\r\nNote: The following five pillars are a description of Manovaidya's proprietary framework, and should not be cited with the framework itself. The following scientific statements are cited—the statements in each pillar.\r\n\r\nPillar 1: Brain Nourishment System\r\n\r\n\r\nLearning, attention, memory, communication and social skills are supported by brain development. [4][5][9][10]\r\nThe Brain Nourishment System emphasizes the development of healthy cognitive foundations by strengthening attention, learning, communication, memory, thinking skills and emotional balance. The target is to enhance the growth and development. [4][5][9]\r\n\r\nPillar 2: Gut Response System:\r\n\r\n\r\nOverall health & development depends on a healthy gut. [8]\t\t\r\nChildren who are concerned about development might have picky eating, tummy problems, food sensitivities, bowel changes, or appetite problems. [8][10]\r\nThe Gut Response System is designed to explain how digestion can impact a child's growth, comfort and functioning throughout the day. [8]\r\n\r\n\r\nMandatory caution:\r\n\r\n\r\nGut–brain research provides information on biological communication and potential connections. It does not confirm gut as the sole cause of autism nor does it actually prove that treating the gut is the cause of autism. [8]\r\n\r\nPillar 3: A Neural Network System\r\n\r\n\r\nChildren develop and learn via the brain's connections. [4][9]\r\nThe Neural Network System is a tool that will help us to understand how brain development can impact learning, attention, communication, and behaviour. [4][5][9]\r\nIt supports in learning skills, communication, focus, responses and social interaction.\r\nFurther learning and practice can assist in skill development and participation, however, there are a range of individual progress and outcomes. [5][9][10]\r\n\r\nPillar 4: Sensory Integration System\r\n\r\n\r\nA lot of kids with autism have sensory sensitivities. [2][3]\r\nThey can be sensitive to sound, lights, textures and crowded areas or may want additional sensory experiences. [2][3]\r\nAwareness of what your child's sensory needs, preferences and how to keep yourself calm can assist the family to support your child's comfort, daily activities and participation. [2][3][10]\r\n\r\nPillar 5: Behaviour Guidance System\r\n\r\n\r\nChildren express their needs, feelings and difficulties through behaviour. [2][7][10]\r\nThe Behaviour Guidance System assists families to understand the causes of behaviour including developmental needs, triggers and feelings. [2][5][7]\r\nThe aim is to assist children with positive guidance rather than just responding to behaviours. [2][6][7]\r\n\r\nHow We Work at Manovaidya?\r\n\r\n\r\nAn organized, step-by-step procedure that aims for sustainable development and real change.\r\n\r\n\r\nAssessment [2][3]\r\nUnderstanding [2][3]\r\nIdentify strengths, weaknesses and areas for development [2][3]\r\nIndividualised Development Strategy [2][3]\r\nParent Empowerment & Support [2][6][7]\r\nContinuous Monitoring & Improvement [2][3][7]\r\n\r\n\r\nChildren are unique and at Manovaidya, support begins with taking the time to see and experience the child as a whole person, not merely an ADHD diagnosis. [2][3][4]\r\n\r\n\r\nWe start by understanding your child's development and their communication skills, behaviours, learning style, attention requirements, sensory experiences and family concerns. Using this understanding we provide individual guidance and develop an individual developmental plan to support your child's strengths, challenges and individual growth. [2][3]\r\n\r\n\r\nManovaidya does not employ a 'one size fits all' approach, but does introduce a 'Neuro-Ayurveda Development System' to make the family aware of different factors influencing communication, focus, behaviour, learning, emotional balance and overall growth.\r\nSupport is meant to assist families in the process of your child being assessed for ADHD, guide parents, plan your child's development, update you on your child's progress, and provide ongoing support to help parents move forward with greater clarity, confidence and hope. [2][3][6][7]\r\n\r\n\r\nAll children develop in their own unique way and at their own rate. At Manovaidya, the whole child is assessed in detail, and support is geared towards each child rather than applying a 'one size fits all' philosophy to all children. [2][3]\r\n\r\n\r\n\r\nHow Do We Support Children with ADHD?\r\n\r\n\r\nEvery child at Manovaidya is supported individually, each child has a journey, each has strengths, passions, challenges and needs for development.\r\n\r\n\r\nOur approach focus on:\r\n\r\n\r\nKnowing the child’s unique needs [2][3]\r\nFinding the child’s strengths [2][3]\r\nIdentifying the need for support in various areas [2][3]\r\nThe training of parents in ADHD [2][6][7]\r\nAssisting in learning and concentration [2][3][5]\r\nChecking growth and progress regularly [2][3][7]\r\nPromoting healthy development and wellbeing [10]\r\n\r\n\r\nThe emphasis is not only on rapid change in behaviour but also on growth and development in a systematic manner with family involvement. [2][6][7]\r\n\r\n\r\nMany families contact Manovaidya when they are considering the treatment of ADHD in India because they are looking for personalized management and direction for their child's attention difficulties, behavior, and learning development, as well as their child's overall health and wellbeing.\r\n\r\n\r\nWhat are the benefits of Parent Training on ADHD for families? \r\n\r\nThe child and the family environment are affected by ADHD. [2][3][4]\r\n\r\n\r\nIt is common for parents to have these difficulties:\r\n\r\n\r\nFeeling emotionally drained\r\nFeeling overwhelmed\r\nConstant emotional strain\r\nFeeling worn down\r\nEmotional overload\r\nParenting fatigue\r\nBeing overwhelmed by work.\r\n\r\n\r\nParent training for ADHD is seen as an integral aspect of the developmental process at Manovaidya. [2][3][6][7]\r\n\r\n\r\nFamilies are helped to understand their child with ADHD's behaviour, attention, learning, emotional requirements and daily routines as well as the long-term journey of their child's growth. [2][3][6][7]\r\n\r\n\r\nThe more parents understand and become confident, they will be able to care for their child's learning, behaviour and overall development. Parents stay well informed and confident and are likely to be better able to support their child's learning, behaviour and wellbeing. [2][6][7][10]\r\nWe want to be able to take away the uncertainty and overwhelm that families may experience and replace them with clarity, confidence and steps toward improvement.\r\n\r\nWhy Families Choose Manovaidya?\r\n\r\n\r\nIt can be overwhelming to choose the right support for a child with ADHD. Parents are likely to be told by a variety of people that they have problems with attention, activity levels, learning and behaviour. [2][3][4]\r\n\r\n\r\nSome of them are encouraged to only focus on academics while others are advised to focus primarily on behaviour regulation. Many families start to look at a more structured and comprehensive approach to treating ADHD with awareness of their child's developmental needs as the years go on. [2][3][7]\r\n\r\n\r\nOur mission at Manovaidya is to make families fully aware of the whole development. We don't just treat individual symptoms, but we focus on attention, learning, behaviour, emotional regulation and growth in a structured Neuro-Ayurveda Development System.\r\nChildren and families throughout Delhi, Noida, Greater Noida, Ghaziabad, Gurgaon, and India trust Manovaidya for ADHD evaluations, child development understanding, and individualised help enabling children to flourish.\r\n\r\n\r\nPersonalized Growth Understanding\r\n\r\n\r\nAll children are different. ADHD Assessment and support are tailored to their strengths, challenges, and growth needs. [2][3]\r\n\r\n\r\nHolistic Neuro-Ayurvedic Development Program\r\n\r\n\r\nThe five pillars framework assists families to understand the various factors that may have an effect on attention, learning, behaviour, emotional regulation and overall development.\r\n\r\n\r\nFamily focused approach\r\n\r\n\r\nParents are guided throughout the process, helping them to develop clarity, confidence and understanding in how to foster their child's growth needs. [2][6][7]\r\n\r\n\r\nLong term/ Sustainable growth strategy\r\n\r\n\r\nThe aim is to promote sustained developmental development, not just immediate behaviour outcomes. [2][7][10]\r\n\r\n\r\nPersonalised Support & Progress Monitoring \r\nFamilies receive personalised support and practical recommendations to navigate developmental progress and future goals.  [2][3][7]\r\nSupport for Diverse Developmental Needs \r\nThe method can benefit children with attention, learning, behaviour, emotional control, social and organisational problems. [2][3][4][5]\r\n\r\n\r\nParents all over India select Manovaidya for ADHD Individualised progress support, tailored recommendations and a long-term development plan for their child.\r\n\r\n\r\nAbout\r\n\r\n\r\nDr Ankush Garg\r\n\r\n\r\nADHD, Autism, Child Development & Mental Health Specialist in India\r\n\r\n\r\nDr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System, a unique and personalized approach for developmental, behavioural and mental wellness based on a holistic treatment of ADHD.\r\n\r\n\r\nHis work is for children, adolescents, adults and seniors with diverse emotional, developmental, and behavioral needs.\r\n\r\n\r\nHe works with families of children and young people with ADHD, teens with mental health needs, adults with emotional well-being concerns, women with mental health concerns, older adults with emotional needs, and families with concerns about child development, behaviour, speech and communication.\r\n\r\n\r\nDr. Ankush Garg marries Ayurvedic Wisdom with the latest cutting edge of research in brain, behaviour, emotions and cognitive health through Manovaidya.\r\n\r\n\r\nHe emphasizes an understanding of the underlying cause, individual guidance, helping families and long-term overall health planning.\r\n\r\n\r\nHe provides children, adults, and families with the tools needed to move forward in small meaningful ways and with confidence and direction through thorough evaluation and individualized recommendations and support.\r\n\r\n\r\nA compassionate, customized and systematic programme of Neuro-Ayurveda Development Program with Dr. Ankush Garg, provides guidance to families across India on ADHD, Autism, Child Development and Mental Health.\r\n\r\nFrequently asked questions\r\n\r\n\r\nWhat is ADHD?\r\n\r\n\r\nThe problem of ADHD is a development disorder which can impact a child's attention, behavior, emotions and activities. Children with ADHD might struggle to concentrate, listen to instructions, or control their impulses or organization. ADHD is a unique condition for each child. We consider the child as a whole person at Manovaidya and work on their learning, emotional well being and overall development. [1][2][3][4]\r\n\r\nWhat are the first symptoms of ADHD?\r\n\r\n\r\nSymptoms of ADHD include difficulty sustaining attention, easily distracted, forgetful, hyperactive, impulsive and difficulty taking turns. Kids might have trouble completing tasks, misplace items frequently, interrupt people or not be able to take turns. Signs are frequently observed more at school when they begin to have to follow routines. Distraction and high energy are normal, but if it is ongoing and the life is impacted, it may be time for a developmental check. [1][2][3][4]\r\n\r\nWhat are the 6 symptoms of ADHD?\r\n\r\n\r\nEach child with ADHD may be impacted in a different way. Symptoms of ADHD include but are not limited to: difficulty paying attention, distractibility, forgetfulness, impulsivity, hyperactivity, and an inability to follow instructions. Some children may become overwhelmed, disorganized, or emotional, or they may interrupt and act impulsively without considering their actions. Knowing what to look for enables parents to identify their children's needs and provide them with the necessary supports. [1][2][3][4][5]\r\n\r\nAt what age can adhd symptoms become noticeable?\r\n\r\n\r\nSymptoms of ADHD can be seen in preschool years and often come into the open around the time that children begin to attend school. Difficulties might be with focus, instructions, impulse control, activity and/or emotions. Every child is unique and a professional evaluation might be useful to identify if behaviours are developing normally or there is additional support required. [1][2][3]\r\n\r\nWhat causes someone to develop ADHD?\r\n\r\n\r\nADHD is a difference in brain development which can be genetic and/or early life related. Does not result from parenting style, discipline or child's intelligence. Attention, behavior and functional abilities are affected in various ways by ADHD. Each kid is unique, and with insight into ADHD, parents can better support, encourage and guide their child to grow and thrive. [1][2][3][4]\r\n\r\nCan ADHD improve with age?\r\nChildren with ADHD can grow and learn to better focus, regulate their emotions, organize, and control themselves. ADHD is a lifetime disorder, and kids can learn new things throughout childhood, teens and adulthood. All children are unique and develop through their own families' support, routines, learning and guidance. Parents will be able to concentrate on their child's strengths, confidence, independence and daily skills. Children can learn to cope with adversity and succeed with patience, care and support. [2][3][4][6][7]\r\n\r\nIs ADHD linked to high IQ?\r\n\r\n\r\nADHD and intelligence are different. A child with ADHD can be among the smart kids, average kids, or helpful kids, just like other kids. Children with ADHD are creative, curious, energetic and think in special ways. Focus, self-control or organisation might be difficult, due to ADHD, meaning that schoolwork can be impacted. However, ADHD doesn't dictate the intelligence of a child. When educators know a child's strengths and needs, they are better able to help him/her learn and grow. [1][2][3][4]\r\n\r\nDoes screen time cause ADHD?\r\n\r\nThere is no evidence screen time contributes to the development of ADHD but high levels of screen time can impact focus, sleep, behaviour, emotions and routines. Children's development is promoted through healthy screen use, balances with activities, play and sleep. Screen time is just one of the many factors that impact attention. [2][3][10]\r\n\r\nWhat are natural ways to manage ADHD symptoms? \r\n\r\n\r\nHelp children with ADHD by establishing a calm, caring environment, encouraging physical activity, ensuring a good night's sleep and establishing daily routines. Changes in daily life can be improved with simple steps, visual reminders and praise. Being consistent works better than strict rules. All children are unique and need support that is tailored to their individual needs. At Manovaidya, parents are provided with guidance to understand their child's attention, behaviour, learning and development in a simple and personal way. [2][3][6][7][10]\r\n\r\nHow can I manage ADHD symptoms at home?\r\n\r\nWith home support children with ADHD can manage their daily life. Parents can establish regular schedules, set goals, minimize distractions and encourage healthy habits. Patience, encouragement, guidance can be used to improve confidence and emotional control. Assessment is important as all children are unique and the best way to support a child may depend on this. [2][3][6][7]\r\nWhat habits can help manage ADHD? \r\nYou can help children with ADHD with healthy daily habits to help focus and routine. Structured schedules, organized spaces, exercise and regular sleep make daily tasks easier. Children are supported to stay on track with small steps, visual cues and positive support. Each child is unique and habits should reflect this. [2][3][6][7][10]\r\n\r\nWhat are the 7  triggers that make ADHD worse ? \r\n\r\n\r\nFactors that may make ADHD symptoms more difficult for children: Not getting enough sleep, excessive screen time, stressful situations, irregular schedule, not being active enough, and too many demands at school. These are not the causes of ADHD, but can make symptoms more apparent. Being aware of what impacts your child is half the battle for a supportive and caring environment at home. [2][3][6][10]\r\n\r\nHow to improve focus with ADHD without medication?\r\n\r\n\r\nSimple strategies such as routines, smaller tasks, fewer distractions, reminders, healthy sleep and exercise habits help improve focus. Difficulty with attention is not an indicator of laziness! The right support can facilitate learning and working. [2][3][6][7]\r\n\r\nCan a child with ADHD study in a regular school? \r\n\r\n\r\nNumerous children with ADHD are able to thrive in the regular school setting. Their needs and strengths and what support they need will influence the best learning environment. Some may require additional assistance or modifications, or may benefit from instruction in a standard classroom. A developmental assessment may be able to assist parents in making their decision. [2][3]\r\n\r\nHow does Manovaidya assess and support children with ADHD? \r\n\r\n\r\nADHD assessment at Manovaidya will provide insight on your child's unique needs, strengths, and challenges. We explore attention, learning, behaviour, emotions, school issues and parent inputs. With this information, we design a tailor-made path for your child's development to build their confidence, grow their self-assurance and enhance their overall development using the Neuro-Ayurveda Development System.\r\n\r\nSchedule a Consultation\r\n\r\n\r\nIf you are searching for ADHD support, Assessment, learning support or guidance for child development in India, you can schedule an appointment with Dr. Ankush Garg and Manovaidya Team.\r\n\r\n\r\nFamilies can gain insight into their child's needs, and the best support for learning, growth and well-being, through an easy assessment and personalized guidance.\r\n\r\n\r\nBegin your journey\r\nCBT for ADHD [2][3]\r\nPersonalized Development Plan\r\nParent Coaching & Family Support [2][6][7]\r\nNeuro-Ayurveda Development System\r\nStructured Growth Strategy\r\n\r\n\r\nMake an appointment with Manovaidya Today\r\nManovaidya Clinic\r\nThe period of time is known as Noidabad, Uttar Pradesh, India.\r\n\r\nSchedule Your Consultation with Manovaidya Today\r\nManovaidya Clinic\r\nNoida, Uttar Pradesh, India \r\n\r\n\r\nReferences\r\n\r\n\r\n[1] American Psychiatric Association (DSM-5-TR)\r\n https://www.psychiatry.org/psychiatrists/practice/dsm\r\n[2] American Academy of Pediatrics ADHD Clinical Practice Guideline\r\n https://publications.aap.org/pediatrics/article/144/4/e20192528/38516/Clinical-Practice-Guideline-for-the-Diagnosis\r\n[3] NICE Guideline NG87 – Attention Deficit Hyperactivity Disorder: Diagnosis and Management\r\n https://www.nice.org.uk/guidance/ng87\r\n[4] World Federation of ADHD International Consensus Statement\r\n https://doi.org/10.1016/j.neubiorev.2021.01.022\r\n[5] CDC – ADHD Treatment\r\n https://www.cdc.gov/adhd/treatment/index.html\r\n[6] Harvard Center on the Developing Child\r\n https://developingchild.harvard.edu/\r\n[7] WHO – Nurturing Care Framework\r\n https://nurturing-care.org/\r\n[8] Charaka Samhita\r\n https://archive.org/details/CharakaSamhitaEnglish\r\n[9] Kashyapa Samhita (Classical Ayurvedic Text)\r\n Recommended citation: Kashyapa Samhita (Vriddha Jivakiya Tantra), translated by Prof. P.V. Tewari, Chaukhambha Vishvabharati.\r\n (There is no official free government PDF comparable to the others.)\r\n[10] Ministry of AYUSH, Government of India\r\n https://ayush.gov.in/\r\n\r\n";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -55,6 +55,22 @@ const categories = [
   { label: "Child Development", count: 11, Icon: Baby },
   { label: "Parenting", count: 9, Icon: Users },
   { label: "Mental Health", count: 13, Icon: HeartHandshake },
+];
+
+const coreInsightItems = [
+  "Introduction",
+  "Understanding ADHD Beyond Behaviour",
+  "Manovaidya ADHD Assessment Process",
+  "Steps in ADHD Assessment",
+  "Beyond Symptom Management in ADHD",
+  "Neuro Ayurveda Development System",
+  "How Manovaidya Works",
+  "Supporting Children with ADHD",
+  "Benefits of Parent ADHD Training",
+  "Why Choose Manovaidya",
+  "About Dr. Ankush Garg",
+  "Frequently Asked Questions",
+  "Schedule Your Consultation Today",
 ];
 
 const beyondBehaviourHighlights = [
@@ -187,7 +203,39 @@ const faqs = [
 
 const nonQuestionHeadings = new Set([
   "ADHD Care in India: Assessment, Attention Support & Child Development",
+  "Core insights",
   "Introduction",
+  "Understanding ADHD Beyond Behaviour",
+  "Manovaidya ADHD Assessment Process",
+  "Steps in ADHD Assessment",
+  "Beyond Symptom Management in ADHD",
+  "Neuro Ayurveda Development System",
+  "How Manovaidya Works",
+  "Supporting Children with ADHD",
+  "Benefits of Parent ADHD Training",
+  "Why Choose Manovaidya",
+  "About Dr. Ankush Garg",
+  "Frequently Asked Questions",
+  "Schedule Your Consultation Today",
+  "What does ADHD treatment at Manovaidya focus on?",
+  "The first clues may be found by the parents when the child:",
+  "What are the inattention symptoms?",
+  "What are the Hyperactivity Symptoms?",
+  "What are impulsivity symptoms?",
+  "The ADHD screening process is for parents to get clarity on:",
+  "What Are the Steps in the ADHD Assessment Process?",
+  "Comprehensive Parent Discussion",
+  "Understanding Cognitive and Learning Processes",
+  "Personalized Guidance",
+  "For example",
+  "Mandatory caution:",
+  "Pillar 2: Gut Response System:",
+  "Pillar 3: A Neural Network System",
+  "About",
+  "Dr Ankush Garg",
+  "Begin your journey",
+  "Make an appointment with Manovaidya Today",
+  "References",
   "Pillar 1: Brain Nourishment System",
   "Pillar 2: Gut Response System",
   "Pillar 3: Neural Network System",
@@ -223,7 +271,9 @@ const headingIds = new Map([
   ["What are the benefits of Parent Training on ADHD for families?", "parent-guidance"],
   ["Why Families Choose Manovaidya", "why-families-choose"],
   ["About", "about-dr-ankush-garg"],
+  ["About Dr. Ankush Garg", "about-dr-ankush-garg"],
   ["Frequently asked questions", "faqs"],
+  ["Frequently Asked Questions", "faqs"],
   ["Schedule a Consultation", "book-consultation"],
 ]);
 
@@ -316,9 +366,21 @@ const hiddenAboutLineTexts = new Set([
 
 const rawContentLines = rawArticleContent.replace(/\r\n/g, "\n").split("\n");
 const rawFaqStartIndex = rawContentLines.findIndex((line) => line.trim() === "Frequently asked questions");
+const rawReferencesIndex = rawContentLines.findIndex((line) => line.trim() === "References");
 const rawConsultationIndex = rawContentLines.findIndex((line) => line.trim() === "Schedule a Consultation");
-const visibleArticleLines = rawFaqStartIndex >= 0 ? rawContentLines.slice(0, rawFaqStartIndex) : rawContentLines;
-const consultationArticleLines = rawConsultationIndex >= 0 ? rawContentLines.slice(rawConsultationIndex) : [];
+const rawArticleStartIndex = rawContentLines.findIndex(
+  (line, index) =>
+    line.trim() === "Introduction" &&
+    rawContentLines.slice(0, index).some((previousLine) => previousLine.trim() === "Schedule Your Consultation Today")
+);
+const articleEndIndex =
+  rawFaqStartIndex >= 0 ? rawFaqStartIndex : rawReferencesIndex >= 0 ? rawReferencesIndex : rawContentLines.length;
+const consultationEndIndex = rawReferencesIndex >= 0 ? rawReferencesIndex : rawContentLines.length;
+const visibleArticleLines = rawContentLines.slice(rawArticleStartIndex >= 0 ? rawArticleStartIndex : 0, articleEndIndex);
+const consultationArticleLines =
+  rawConsultationIndex >= 0 ? rawContentLines.slice(rawConsultationIndex, consultationEndIndex) : [];
+const fullMedicalReferenceContent =
+  rawReferencesIndex >= 0 ? rawContentLines.slice(rawReferencesIndex).join("\n") : "References";
 const rawFaqLines =
   rawFaqStartIndex >= 0 && rawConsultationIndex > rawFaqStartIndex
     ? rawContentLines.slice(rawFaqStartIndex + 1, rawConsultationIndex)
@@ -356,6 +418,88 @@ function buildRawFaqs(lines) {
 }
 
 const rawFaqs = buildRawFaqs(rawFaqLines);
+
+const articleLinkRules = [
+  { href: "/child-health-care", pattern: /Child Health Care/i },
+  { href: "/child-development-care-india", pattern: /Child Development/i },
+  { href: "/child-development-support-india", pattern: /Child Development Support/i },
+  { href: "/learning-attention-difficulties-india", pattern: /Learning (?:and|&) Attention/i },
+  { href: "/learning-attention-difficulties-india", pattern: /Learning (?:Support|Readiness|Skills|capacity)/i },
+  { href: "/learning-attention-difficulties-india", pattern: /Attention (?:Support|Deficit Hyperactivity Disorder|and Focus|& Focus)/i },
+  { href: "#adhd-assessment", pattern: /ADHD Assessment/i },
+  { href: "#adhd-assessment", pattern: /ADHD screening/i },
+  { href: "#adhd-assessment", pattern: /ADHD evaluation/i },
+  { href: "#book-consultation", pattern: /ADHD Treatment in India/i },
+  { href: "#book-consultation", pattern: /ADHD treatment/i },
+  { href: "#book-consultation", pattern: /ADHD support/i },
+  { href: "#parent-guidance", pattern: /Parent (?:Training|Coaching|Guidance|Support)/i },
+  { href: "/behavioural-concerns-children-india", pattern: /Behaviour Guidance/i },
+  { href: "/behavioural-concerns-children-india", pattern: /Behaviour(?:al)? (?:Control|Challenges|Concerns|Support)/i },
+  { href: "/behavioural-concerns-children-india", pattern: /Behavior(?:al)? (?:Control|Challenges|Concerns|Support)/i },
+  { href: "#neuro-ayurveda-system", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/approach", pattern: /Brain Nourishment System/i },
+  { href: "/about/approach", pattern: /Gut Response System/i },
+  { href: "/about/approach", pattern: /Neural Network System/i },
+  { href: "/about/approach", pattern: /Sensory Integration System/i },
+  { href: "/about/approach", pattern: /Behaviour Guidance System/i },
+  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/autism-treatment-india", pattern: /Autism/i },
+  { href: "/speech-delay-support-india", pattern: /Speech/i },
+  { href: "/adult-mental-health-care-india", pattern: /Mental Health/i },
+  { href: "/adult-emotional-wellbeing-support-india", pattern: /Emotional Wellbeing/i },
+  { href: "/stress-burnout-support-india", pattern: /Stress/i },
+  { href: "/sleep-disorders-insomnia-support-india", pattern: /Sleep/i },
+  { href: "/success-stories", pattern: /Success Stories/i },
+  { href: "/blog", pattern: /ADHD Blogs/i },
+];
+
+const articleKeywordLinks = [
+  { text: "ADHD", href: "#book-consultation" },
+  { text: "attention", href: "/learning-attention-difficulties-india" },
+  { text: "focus", href: "/learning-attention-difficulties-india" },
+  { text: "learning", href: "/learning-attention-difficulties-india" },
+  { text: "behaviour", href: "/behavioural-concerns-children-india" },
+  { text: "behavior", href: "/behavioural-concerns-children-india" },
+  { text: "developmental", href: "/child-development-support-india" },
+  { text: "ADHD Treatment in India", href: "#book-consultation" },
+  { text: "ADHD treatment", href: "#book-consultation" },
+  { text: "ADHD support", href: "#book-consultation" },
+  { text: "ADHD assessments", href: "#adhd-assessment" },
+  { text: "ADHD Assessment", href: "#adhd-assessment" },
+  { text: "ADHD screening", href: "#adhd-assessment" },
+  { text: "ADHD evaluation", href: "#adhd-assessment" },
+  { text: "Attention Deficit Hyperactivity Disorder", href: "/learning-attention-difficulties-india" },
+  { text: "Attention Support", href: "/learning-attention-difficulties-india" },
+  { text: "Learning Support", href: "/learning-attention-difficulties-india" },
+  { text: "Learning Readiness", href: "/learning-attention-difficulties-india" },
+  { text: "Learning Skills", href: "/learning-attention-difficulties-india" },
+  { text: "Child Development Support", href: "/child-development-support-india" },
+  { text: "Child Development", href: "/child-development-care-india" },
+  { text: "Parent Training", href: "#parent-guidance" },
+  { text: "Parent Coaching", href: "#parent-guidance" },
+  { text: "Parent Guidance", href: "#parent-guidance" },
+  { text: "Parent Support", href: "#parent-guidance" },
+  { text: "Behaviour Control", href: "/behavioural-concerns-children-india" },
+  { text: "Behavioral Challenges", href: "/behavioural-concerns-children-india" },
+  { text: "Behavioural Concerns", href: "/behavioural-concerns-children-india" },
+  { text: "Neuro-Ayurveda Development System", href: "#neuro-ayurveda-system" },
+  { text: "Brain Nourishment System", href: "/about/approach" },
+  { text: "Gut Response System", href: "/about/approach" },
+  { text: "Neural Network System", href: "/about/approach" },
+  { text: "Behaviour Guidance System", href: "/about/approach" },
+  { text: "Dr. Ankush Garg", href: "/about/doctor" },
+  { text: "Dr Ankush Garg", href: "/about/doctor" },
+  { text: "Manovaidya", href: "/about/manovaidya" },
+  { text: "Autism", href: "/autism-treatment-india" },
+  { text: "Speech", href: "/speech-delay-support-india" },
+  { text: "Mental Health", href: "/adult-mental-health-care-india" },
+  { text: "Emotional Wellbeing", href: "/adult-emotional-wellbeing-support-india" },
+  { text: "Stress", href: "/stress-burnout-support-india" },
+  { text: "Sleep", href: "/sleep-disorders-insomnia-support-india" },
+  { text: "Success Stories", href: "/success-stories" },
+  { text: "ADHD Blogs", href: "/blog" },
+];
 
 function VisualBlock({ heading }) {
   if (heading === "About") {
@@ -565,7 +709,195 @@ function VisualBlock({ heading }) {
   return null;
 }
 
-function FaqAccordion({ openFaq, setOpenFaq }) {
+function LinkifiedText({ text }) {
+  const urlPattern = /(https?:\/\/[^\s]+)/g;
+  const parts = String(text).split(urlPattern);
+
+  return parts.map((part, index) => {
+    if (!part.startsWith("http://") && !part.startsWith("https://")) {
+      return <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment>;
+    }
+
+    return (
+      <a key={`${part}-${index}`} href={part} target="_blank" rel="noreferrer">
+        {part}
+      </a>
+    );
+  });
+}
+
+function ArticleLinkedText({ text, onCitationClick, allowedKeywordKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/i;
+  const parts = [];
+  const linkedKeywordKeysInText = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 500) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) {
+      candidates.push({
+        index: citationMatch.index,
+        text: citationMatch[0],
+        citationId: citationMatch[1],
+        type: "citation",
+      });
+    }
+
+    articleKeywordLinks.forEach((rule) => {
+      const ruleKey = rule.text.toLowerCase();
+
+      if (!allowedKeywordKeys || !allowedKeywordKeys.has(ruleKey)) {
+        return;
+      }
+
+      if (linkedKeywordKeysInText.has(ruleKey)) {
+        return;
+      }
+
+      const keywordIndex = remaining.toLowerCase().indexOf(rule.text.toLowerCase());
+
+      if (keywordIndex >= 0) {
+        candidates.push({
+          index: keywordIndex,
+          text: remaining.slice(keywordIndex, keywordIndex + rule.text.length),
+          rule,
+          ruleKey,
+          type: "keyword",
+        });
+      }
+    });
+
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+
+    if (absoluteIndex > cursor) {
+      parts.push(source.slice(cursor, absoluteIndex));
+    }
+
+    if (next.type === "citation") {
+      parts.push(
+        <button
+          key={`${next.text}-${parts.length}`}
+          type="button"
+          onClick={() => onCitationClick(next.citationId)}
+          className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+        >
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedKeywordKeysInText.add(next.ruleKey);
+      parts.push(
+        <a
+          key={`${next.text}-${parts.length}`}
+          href={next.rule.href}
+          className="rounded-sm bg-[#f4ecf8]/70 px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/70 decoration-2 underline-offset-2 transition hover:bg-[#eadbf4] hover:text-[#4c1d6b]"
+        >
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, index) =>
+    typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part
+  );
+}
+
+function ResourceReferenceText({ text }) {
+  return String(text).split("\n").map((line, index) => {
+    const referenceMatch = line.match(/^\[(\d+)\]/);
+
+    return (
+      <div
+        key={`${line}-${index}`}
+        id={referenceMatch ? `reference-${referenceMatch[1]}` : undefined}
+        className={referenceMatch ? "scroll-mt-28" : undefined}
+      >
+        <LinkifiedText text={line} />
+      </div>
+    );
+  });
+}
+
+function MedicalReferencesBlock() {
+  const [heading, ...referenceLines] = fullMedicalReferenceContent.split("\n");
+  const referenceBody = referenceLines.join("\n");
+
+  return (
+    <section className="mt-5 rounded-xl border border-[#eadff1] bg-[#fbf9fd] p-6 sm:p-8" id="medical-references">
+      <h2 className="mb-4 text-[22px] font-black leading-tight text-[#2d1b45]">
+        {heading}
+      </h2>
+      <div className="max-w-full whitespace-pre-wrap break-words text-[14px] font-semibold leading-7 text-[#51465a] [&_a]:break-all [&_a]:text-[#7835A4] [&_a]:underline">
+        <ResourceReferenceText text={referenceBody} />
+      </div>
+    </section>
+  );
+}
+
+function CoreInsightsBlock({ onCitationClick }) {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">
+            ADHD Care in India
+          </p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Core insights</h2>
+          <ul className="mt-4 space-y-2.5">
+            {coreInsightItems.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our Autism, ADHD and Child Development newsletter for more care tips from our experts.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]"
+            />
+            <button
+              type="button"
+              className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]"
+            >
+              Join Now
+            </button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FaqAccordion({ openFaq, setOpenFaq, onCitationClick, keywordKeysByLine }) {
   return (
     <section id="faqs" className="mt-9">
       <h2 className="text-[20px] font-black text-[#17111f]">Frequently asked questions</h2>
@@ -585,7 +917,11 @@ function FaqAccordion({ openFaq, setOpenFaq }) {
               <div className="space-y-3 px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
                 {faq.answer.map((answerLine, answerIndex) => (
                   <p key={answerIndex} style={{ whiteSpace: "pre-wrap" }}>
-                    {answerLine}
+                    <ArticleLinkedText
+                      text={answerLine}
+                      onCitationClick={onCitationClick}
+                      allowedKeywordKeys={keywordKeysByLine.get(`faq-${answerIndex}`)}
+                    />
                   </p>
                 ))}
               </div>
@@ -597,8 +933,62 @@ function FaqAccordion({ openFaq, setOpenFaq }) {
   );
 }
 
-function RawArticleContent({ openFaq, setOpenFaq }) {
+function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
   const usedHeadingIds = new Set();
+  const keywordKeysByLine = new Map();
+  const linkedKeywordKeys = new Set();
+
+  const collectKeywordKeys = (lineKey, text) => {
+    const normalizedText = String(text).toLowerCase();
+    const allowedKeywordKeys = new Set();
+
+    articleKeywordLinks.forEach((rule) => {
+      const ruleKey = rule.text.toLowerCase();
+
+      if (!linkedKeywordKeys.has(ruleKey) && normalizedText.includes(ruleKey)) {
+        linkedKeywordKeys.add(ruleKey);
+        allowedKeywordKeys.add(ruleKey);
+      }
+    });
+
+    if (allowedKeywordKeys.size) {
+      keywordKeysByLine.set(lineKey, allowedKeywordKeys);
+    }
+  };
+
+  const collectLine = (line, index, keyPrefix = "line") => {
+    const text = line.trimEnd();
+    const trimmedText = text.trim();
+
+    if (!trimmedText) {
+      return;
+    }
+
+    if (hiddenIconStepLineTexts.has(trimmedText) || hiddenAboutLineTexts.has(trimmedText)) {
+      return;
+    }
+
+    if (index === 0 && keyPrefix === "line") {
+      return;
+    }
+
+    if (trimmedText.endsWith("?") || nonQuestionHeadings.has(trimmedText)) {
+      return;
+    }
+
+    const bulletText = trimmedText.replace(/^-+\s*/, "");
+    collectKeywordKeys(`${keyPrefix}-${index}`, trimmedText.startsWith("-") || bulletLineTexts.has(bulletText) ? bulletText : text);
+  };
+
+  visibleArticleLines.forEach((line, index) => collectLine(line, index));
+
+  if (openFaq !== null && rawFaqs[openFaq]) {
+    rawFaqs[openFaq].answer.forEach((answerLine, answerIndex) => {
+      collectKeywordKeys(`faq-${answerIndex}`, answerLine);
+    });
+  }
+
+  consultationArticleLines.forEach((line, index) => collectLine(line, index, "consultation"));
 
   const renderLine = (line, index, keyPrefix = "line") => {
     const text = line.trimEnd();
@@ -606,7 +996,7 @@ function RawArticleContent({ openFaq, setOpenFaq }) {
     const key = keyPrefix + "-" + index;
 
     if (!trimmedText) {
-      return <div key={key} className="h-2" aria-hidden="true" />;
+      return null;
     }
 
     if (hiddenIconStepLineTexts.has(trimmedText) || hiddenAboutLineTexts.has(trimmedText)) {
@@ -630,7 +1020,7 @@ function RawArticleContent({ openFaq, setOpenFaq }) {
 
       return (
         <React.Fragment key={key}>
-          <h3 id={id} className="scroll-mt-28 pt-4 text-[18px] font-black leading-snug text-[#17111f]" style={{ whiteSpace: "pre-wrap" }}>
+          <h3 id={id} className="scroll-mt-28 pt-3 text-[18px] font-black leading-snug text-[#17111f]" style={{ whiteSpace: "pre-wrap" }}>
             {text}
           </h3>
           <VisualBlock heading={trimmedText} />
@@ -644,22 +1034,37 @@ function RawArticleContent({ openFaq, setOpenFaq }) {
       return (
         <div key={key} className="flex items-start gap-3 pl-2">
           <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#7835A4]" aria-hidden="true" />
-          <p style={{ whiteSpace: "pre-wrap" }}>{bulletText}</p>
+          <p style={{ whiteSpace: "pre-wrap" }}>
+            <ArticleLinkedText
+              text={bulletText}
+              onCitationClick={onCitationClick}
+              allowedKeywordKeys={keywordKeysByLine.get(key)}
+            />
+          </p>
         </div>
       );
     }
 
     return (
       <p key={key} style={{ whiteSpace: "pre-wrap" }}>
-        {text}
+        <ArticleLinkedText
+          text={text}
+          onCitationClick={onCitationClick}
+          allowedKeywordKeys={keywordKeysByLine.get(key)}
+        />
       </p>
     );
   };
 
   return (
-    <section id="introduction" className="mt-8 space-y-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+    <section id="introduction" className="mt-6 space-y-2 text-[14px] font-semibold leading-6 text-[#51465a]">
       {visibleArticleLines.map((line, index) => renderLine(line, index))}
-      <FaqAccordion openFaq={openFaq} setOpenFaq={setOpenFaq} />
+      <FaqAccordion
+        openFaq={openFaq}
+        setOpenFaq={setOpenFaq}
+        onCitationClick={onCitationClick}
+        keywordKeysByLine={keywordKeysByLine}
+      />
       {consultationArticleLines.map((line, index) => renderLine(line, index, "consultation"))}
     </section>
   );
@@ -673,10 +1078,105 @@ function SidebarCard({ children, className = "" }) {
   );
 }
 
+const FacebookShareIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M14 8.5V6.8c0-.8.2-1.3 1.3-1.3h1.5V2.7c-.7-.1-1.5-.2-2.3-.2-2.8 0-4.7 1.7-4.7 4.8v1.2H6.7v3.2h3.1V21h3.8v-9.3h3.1l.5-3.2H14z" />
+  </svg>
+);
+
+const XShareIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M13.8 10.6 21.1 2h-1.7l-6.3 7.4L8 2H2.2l7.6 11.1L2.2 22h1.7l6.7-7.8 5.4 7.8h5.8l-8-11.4Zm-2.4 2.8-.8-1.1L4.5 3.3h2.7l5 7.4.8 1.1 6.5 9.4h-2.7l-5.4-7.8Z" />
+  </svg>
+);
+
+const FlipboardShareIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M3 3h18v6h-6v6H9v6H3V3Zm6 6h6V3H9v6Zm0 0H3v6h6V9Zm6 0v6h6V9h-6Z" />
+  </svg>
+);
+
+const PinterestShareIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
+    <path d="M12.2 2C6.7 2 3 5.6 3 10.3c0 3.1 1.7 5 3.4 5 .6 0 .9-1.6.9-2.1 0-.6-1.4-1.7-1.4-3.9 0-3.2 2.4-5.4 5.6-5.4 2.7 0 4.8 1.6 4.8 4.4 0 2.1-.9 6.1-3.6 6.1-1 0-1.8-.7-1.8-1.7 0-1.5 1-2.9 1-4.4 0-2.6-3.7-2.1-3.7 1 0 .7.1 1.4.4 2L7 18.1c-.5 2.1.1 4.6.1 4.8 0 .1.1.1.2.1.3-.4 3.2-3.8 3.8-5.8.2-.6.9-3.4.9-3.4.5.9 1.8 1.7 3.2 1.7 4.2 0 5.8-4.1 5.8-7.2C21 4.5 17.4 2 12.2 2Z" />
+  </svg>
+);
+
+function FloatingShareBar() {
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://manovaidya.org/child-health-care/adhd-child";
+  const pageTitle = "ADHD Treatment in India";
+  const encodedUrl = encodeURIComponent(pageUrl);
+  const encodedTitle = encodeURIComponent(pageTitle);
+  const shareItems = [
+    {
+      label: "Facebook",
+      icon: <FacebookShareIcon />,
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      className: "bg-[#3b5998]",
+    },
+    {
+      label: "X",
+      icon: <XShareIcon />,
+      href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
+      className: "bg-black",
+    },
+    {
+      label: "Flipboard",
+      icon: <FlipboardShareIcon />,
+      href: `https://share.flipboard.com/bookmarklet/popout?v=2&url=${encodedUrl}&title=${encodedTitle}`,
+      className: "bg-[#e12828]",
+    },
+    {
+      label: "Pinterest",
+      icon: <PinterestShareIcon />,
+      href: "https://in.pinterest.com/manovaidya0390/",
+      className: "bg-[#bd081c]",
+    },
+    {
+      label: "Email",
+      icon: <Mail className="h-3.5 w-3.5" />,
+      href: `mailto:?subject=${encodedTitle}&body=${encodedUrl}`,
+      className: "bg-[#d91b87]",
+    },
+  ];
+
+  return (
+    <div className="fixed left-0 top-1/2 z-40 hidden -translate-y-1/2 flex-col shadow-[0_8px_24px_rgba(15,23,42,0.16)] sm:flex">
+      {shareItems.map((item) => (
+        <a
+          key={item.label}
+          href={item.href}
+          target={item.label === "Email" ? undefined : "_blank"}
+          rel={item.label === "Email" ? undefined : "noreferrer"}
+          aria-label={item.label === "Pinterest" ? "Follow on Pinterest" : `Share on ${item.label}`}
+          className={`flex h-[34px] w-[34px] items-center justify-center border-b border-white/35 text-white transition hover:w-10 ${item.className}`}
+        >
+          {item.icon}
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function ADHDChildArticlePage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
-  const [showNeuroPillars, setShowNeuroPillars] = React.useState(false);
+  const [showResources, setShowResources] = React.useState(false);
+  const articleShareLinks = [
+    { label: "f", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/child-health-care/adhd-child", title: "Share on Facebook" },
+    { label: "x", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/child-health-care/adhd-child&text=ADHD%20Treatment%20in%20India", title: "Share on X" },
+    { label: "in", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/child-health-care/adhd-child", title: "Share on LinkedIn" },
+    { label: "wa", href: "https://wa.me/?text=ADHD%20Treatment%20in%20India%20https://manovaidya.org/child-health-care/adhd-child", title: "Share on WhatsApp" },
+  ];
+
+  const handleCitationClick = React.useCallback((referenceId) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      document
+        .getElementById(`reference-${referenceId}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   React.useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -731,6 +1231,7 @@ function ADHDChildArticlePage() {
           "description": "Looking for ADHD Treatment in India? Learn about ADHD Assessment, attention support, behaviour guidance and child development care at Manovaidya."
         }}
       />
+      <FloatingShareBar />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
 
         <article className="min-w-0">
@@ -776,12 +1277,14 @@ function ADHDChildArticlePage() {
                 </div>
                 <div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]">
                   <span>Share:</span>
-                  {["f", "x", "in", "wa"].map((label) => (
+                  {articleShareLinks.map(({ label, href, title }) => (
                     <a
                       key={label}
-                      href="#share"
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
                       className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white"
-                      aria-label="Share article"
+                      aria-label={title}
                     >
                       {label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}
                     </a>
@@ -805,10 +1308,124 @@ function ADHDChildArticlePage() {
             </figure>
           </div>
 
-          <RawArticleContent openFaq={openFaq} setOpenFaq={setOpenFaq} />
+          <CoreInsightsBlock onCitationClick={handleCitationClick} />
+
+          <RawArticleContent
+            openFaq={openFaq}
+            setOpenFaq={setOpenFaq}
+            onCitationClick={handleCitationClick}
+          />
+
+          <div className="mt-8">
+            <button
+              type="button"
+              onClick={() => setShowResources((current) => !current)}
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]"
+              aria-expanded={showResources}
+              aria-controls="medical-references"
+            >
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} />
+            </button>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
+
+          <section id="book-consultation" className="relative mt-12 overflow-hidden rounded-xl bg-gradient-to-br from-[#7835A4] to-[#4c1d6b] text-white shadow-xl">
+            <div className="grid gap-0 lg:grid-cols-[1fr_320px]">
+              <div className="z-10 p-8 lg:p-10">
+                <p className="mb-2 text-[13px] font-black uppercase tracking-[0.1em] text-[#d8b4e2]">Book a Consultation</p>
+                <h2 className="mb-4 text-[26px] font-black leading-tight sm:text-[32px]">Take the First Step Today</h2>
+                <div className="mb-6 space-y-4 text-[14px] font-semibold leading-7 text-[#f0e7f6]">
+                  <p>
+                    If you are searching for ADHD support, Assessment, learning support or guidance for child development in India, you can schedule an appointment with Dr. Ankush Garg and Manovaidya Team.
+                  </p>
+                  <p>
+                    Families can gain insight into their child's needs, and the best support for learning, growth and well-being, through an easy assessment and personalized guidance.
+                  </p>
+                </div>
+
+                <ul className="mb-8 grid gap-3 sm:grid-cols-2">
+                  {[
+                    "CBT for ADHD",
+                    "Personalized Development Plan",
+                    "Parent Coaching & Family Support",
+                    "Neuro-Ayurveda Development System",
+                    "Structured Growth Strategy",
+                  ].map((step) => (
+                    <li key={step} className="flex gap-2 text-[14px] font-bold text-white">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
+                      {step}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-wrap items-center gap-4 border-t border-white/20 pt-6">
+                  <a
+                    href="tel:+917823838638"
+                    className="inline-flex h-12 items-center justify-center rounded-lg bg-white px-8 text-[15px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff] hover:shadow-lg"
+                  >
+                    Contact Us Now
+                  </a>
+                  <div>
+                    <p className="text-[13px] font-bold">Manovaidya Clinic</p>
+                    <p className="text-[12px] text-[#e5d5f2]">Noida, Uttar Pradesh, India</p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative h-64 w-full lg:h-full">
+                <img src={supportFamilyImage} alt="Family receiving ADHD and child development support guidance at Manovaidya" className="absolute inset-0 h-full w-full object-cover" loading="lazy" decoding="async" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#4c1d6b] to-transparent opacity-80 mix-blend-multiply lg:bg-gradient-to-l lg:opacity-90"></div>
+              </div>
+            </div>
+          </section>
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya ADHD autism child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">
+                  Authorised & Clinically Reviewed by Dr Ankush Garg
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Clinical Focus: Autism, ADHD, Child Development and Mental Health
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Last Updated: [20-07-2026]
+                </p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15">
+                <Brain className="h-5 w-5" />
+              </span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
+          <SidebarCard>
+            <p className="text-[15px] font-black text-[#21142d]">Follow Manovaidya</p>
+            <div className="mt-4 flex items-center gap-3">
+              {articleShareLinks.map(({ label, href, title }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-[#7835A4] text-white shadow-[0_10px_22px_rgba(120,53,164,0.22)] transition hover:bg-[#632b86]"
+                  aria-label={title}
+                >
+                  {label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}
+                </a>
+              ))}
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
             <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3">
@@ -861,7 +1478,7 @@ function ADHDChildArticlePage() {
 
           <RelatedPagesCard />
 
-          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
             <CalendarCheck className="h-9 w-9 text-[#7835A4]" />
             <h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2>
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">

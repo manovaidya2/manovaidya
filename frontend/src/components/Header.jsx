@@ -123,6 +123,7 @@ const navItems = [
       { label: "Video Library", href: "/video-library" },
     ],
   },
+  { label: "Contact Us", href: "/contact-us" },
   // { label: "Our Approach", href: "/about/approach" },
 ];
 
