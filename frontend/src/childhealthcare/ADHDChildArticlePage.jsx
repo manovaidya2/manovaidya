@@ -1158,6 +1158,138 @@ function FloatingShareBar() {
   );
 }
 
+const adhdPageUrl = "https://manovaidya.org/child-health-care/adhd-child";
+const adhdPageTitle = "ADHD Treatment in India | ADHD Assessment | Manovaidya";
+const adhdPageDescription =
+  "Looking for ADHD Treatment in India? Get expert ADHD assessment, personalized child development support, and parent guidance at Manovaidya.";
+const adhdPageKeywords =
+  "ADHD Treatment in India, ADHD Assessment, Attention Deficit Hyperactivity Disorder, ADHD Diagnosis, Child ADHD Treatment, ADHD Specialist, ADHD Symptoms in Children, Parent Guidance for ADHD, Child Development Support, Behavioural Support for ADHD, Personalized ADHD Care, Neuro-Ayurveda Development System, Manovaidya";
+const adhdFaqSchemaItems = [
+  {
+    question: "What is ADHD?",
+    answer: "The problem of ADHD is a development disorder which can impact a child's attention, behavior, emotions and activities. Children with ADHD might struggle to concentrate, listen to instructions, or control their impulses or organization. ADHD is a unique condition for each child. We consider the child as a whole person at Manovaidya and work on their learning, emotional well being and overall development. [1][2][3][4]",
+  },
+  {
+    question: "What are the first symptoms of ADHD?",
+    answer: "Symptoms of ADHD include difficulty sustaining attention, easily distracted, forgetful, hyperactive, impulsive and difficulty taking turns. Kids might have trouble completing tasks, misplace items frequently, interrupt people or not be able to take turns. Signs are frequently observed more at school when they begin to have to follow routines. Distraction and high energy are normal, but if it is ongoing and the life is impacted, it may be time for a developmental check. [1][2][3][4]",
+  },
+  {
+    question: "What are the 6 symptoms of ADHD?",
+    answer: "Each child with ADHD may be impacted in a different way. Symptoms of ADHD include but are not limited to: difficulty paying attention, distractibility, forgetfulness, impulsivity, hyperactivity, and an inability to follow instructions. Some children may become overwhelmed, disorganized, or emotional, or they may interrupt and act impulsively without considering their actions. Knowing what to look for enables parents to identify their children's needs and provide them with the necessary supports. [1][2][3][4][5]",
+  },
+  {
+    question: "At what age can adhd symptoms become noticeable?",
+    answer: "Symptoms of ADHD can be seen in preschool years and often come into the open around the time that children begin to attend school. Difficulties might be with focus, instructions, impulse control, activity and/or emotions. Every child is unique and a professional evaluation might be useful to identify if behaviours are developing normally or there is additional support required. [1][2][3]",
+  },
+  {
+    question: "What causes someone to develop ADHD?",
+    answer: "ADHD is a difference in brain development which can be genetic and/or early life related. Does not result from parenting style, discipline or child's intelligence. Attention, behavior and functional abilities are affected in various ways by ADHD. Each kid is unique, and with insight into ADHD, parents can better support, encourage and guide their child to grow and thrive. [1][2][3][4]",
+  },
+  {
+    question: "Can ADHD improve with age?",
+    answer: "Children with ADHD can grow and learn to better focus, regulate their emotions, organize, and control themselves. ADHD is a lifetime disorder, and kids can learn new things throughout childhood, teens and adulthood. All children are unique and develop through their own families' support, routines, learning and guidance. Parents will be able to concentrate on their child's strengths, confidence, independence and daily skills. Children can learn to cope with adversity and succeed with patience, care and support. [2][3][4][6][7]",
+  },
+  {
+    question: "Is ADHD linked to high IQ?",
+    answer: "ADHD and intelligence are different. A child with ADHD can be among the smart kids, average kids, or helpful kids, just like other kids. Children with ADHD are creative, curious, energetic and think in special ways. Focus, self-control or organisation might be difficult, due to ADHD, meaning that schoolwork can be impacted. However, ADHD doesn't dictate the intelligence of a child. When educators know a child's strengths and needs, they are better able to help him/her learn and grow. [1][2][3][4]",
+  },
+  {
+    question: "Does screen time cause ADHD?",
+    answer: "There is no evidence screen time contributes to the development of ADHD but high levels of screen time can impact focus, sleep, behaviour, emotions and routines. Children's development is promoted through healthy screen use, balances with activities, play and sleep. Screen time is just one of the many factors that impact attention. [2][3][10]",
+  },
+  {
+    question: "What are natural ways to manage ADHD symptoms?",
+    answer: "Help children with ADHD by establishing a calm, caring environment, encouraging physical activity, ensuring a good night's sleep and establishing daily routines. Changes in daily life can be improved with simple steps, visual reminders and praise. Being consistent works better than strict rules. All children are unique and need support that is tailored to their individual needs. At Manovaidya, parents are provided with guidance to understand their child's attention, behaviour, learning and development in a simple and personal way. [2][3][6][7][10]",
+  },
+  {
+    question: "How can I manage ADHD symptoms at home?",
+    answer: "With home support children with ADHD can manage their daily life. Parents can establish regular schedules, set goals, minimize distractions and encourage healthy habits. Patience, encouragement, guidance can be used to improve confidence and emotional control. Assessment is important as all children are unique and the best way to support a child may depend on this. [2][3][6][7]",
+  },
+  {
+    question: "What habits can help manage ADHD?",
+    answer: "You can help children with ADHD with healthy daily habits to help focus and routine. Structured schedules, organized spaces, exercise and regular sleep make daily tasks easier. Children are supported to stay on track with small steps, visual cues and positive support. Each child is unique and habits should reflect this. [2][3][6][7][10]",
+  },
+  {
+    question: "What are the 7  triggers that make ADHD worse ?",
+    answer: "Factors that may make ADHD symptoms more difficult for children: Not getting enough sleep, excessive screen time, stressful situations, irregular schedule, not being active enough, and too many demands at school. These are not the causes of ADHD, but can make symptoms more apparent. Being aware of what impacts your child is half the battle for a supportive and caring environment at home. [2][3][6][10]",
+  },
+  {
+    question: "How to improve focus with ADHD without medication?",
+    answer: "Simple strategies such as routines, smaller tasks, fewer distractions, reminders, healthy sleep and exercise habits help improve focus. Difficulty with attention is not an indicator of laziness! The right support can facilitate learning and working. [2][3][6][7]",
+  },
+  {
+    question: "Can a child with ADHD study in a regular school?",
+    answer: "Numerous children with ADHD are able to thrive in the regular school setting. Their needs and strengths and what support they need will influence the best learning environment. Some may require additional assistance or modifications, or may benefit from instruction in a standard classroom. A developmental assessment may be able to assist parents in making their decision. [2][3]",
+  },
+  {
+    question: "How does Manovaidya assess and support children with ADHD?",
+    answer: "ADHD assessment at Manovaidya will provide insight on your child's unique needs, strengths, and challenges. We explore attention, learning, behaviour, emotions, school issues and parent inputs. With this information, we design a tailor-made path for your child's development to build their confidence, grow their self-assurance and enhance their overall development using the Neuro-Ayurveda Development System.",
+  },
+];
+const adhdPageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "@id": `${adhdPageUrl}#medical-webpage`,
+      name: "ADHD Treatment in India",
+      headline: "ADHD Treatment in India: ADHD Assessment, Attention & Child Development Support",
+      description: adhdPageDescription,
+      url: adhdPageUrl,
+      medicalAudience: "Parent",
+      about: [
+        "ADHD Treatment in India",
+        "ADHD Assessment",
+        "Attention Deficit Hyperactivity Disorder",
+        "Child Development Support",
+        "Neuro-Ayurveda Development System",
+      ],
+      reviewedBy: {
+        "@id": "https://manovaidya.org/about/doctor#physician",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${adhdPageUrl}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://manovaidya.org" },
+        { "@type": "ListItem", position: 2, name: "Child Health Care", item: "https://manovaidya.org/child-health-care" },
+        { "@type": "ListItem", position: 3, name: "ADHD Treatment in India", item: adhdPageUrl },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${adhdPageUrl}#faq`,
+      mainEntity: adhdFaqSchemaItems.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://manovaidya.org/about/doctor#physician",
+      name: "Dr. Ankush Garg",
+      url: "https://manovaidya.org/about/doctor",
+      medicalSpecialty: ["Mental Health", "Child Development", "ADHD", "Autism"],
+      worksFor: {
+        "@type": "MedicalOrganization",
+        name: "Manovaidya",
+        url: "https://manovaidya.org",
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Noida",
+        addressRegion: "Uttar Pradesh",
+        addressCountry: "IN",
+      },
+    },
+  ],
+};
+
 function ADHDChildArticlePage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
@@ -1220,16 +1352,11 @@ function ADHDChildArticlePage() {
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
       <Seo
-        title="ADHD Treatment in India | ADHD Assessment & Attention Support | Manovaidya"
-        description="Looking for ADHD Treatment in India? Learn about ADHD Assessment, attention support, behaviour guidance and child development care at Manovaidya."
-        keywords="ADHD Treatment in India, ADHD Assessment, ADHD Signs and Symptoms in Children, Inattention Symptoms, Hyperactivity Symptoms, Impulsivity in Children, Attention Deficit Hyperactivity Disorder, Child Development Support, Neuro-Ayurveda Development System, Parent Guidance for ADHD, Behaviour Guidance for ADHD, ADHD Assessment Delhi NCR, Dr. Ankush Garg ADHD Specialist, Learning Readiness ADHD, ADHD Treatment Noida Ghaziabad"
+        title={adhdPageTitle}
+        description={adhdPageDescription}
+        keywords={adhdPageKeywords}
         path="/child-health-care/adhd-child"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "ADHD Treatment in India",
-          "description": "Looking for ADHD Treatment in India? Learn about ADHD Assessment, attention support, behaviour guidance and child development care at Manovaidya."
-        }}
+        schema={adhdPageSchema}
       />
       <FloatingShareBar />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
