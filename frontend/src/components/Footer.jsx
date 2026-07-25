@@ -159,6 +159,7 @@ function Footer() {
 
           <div className="mt-5 flex flex-wrap items-center gap-5">
             <BookConsultationButton
+
               showIcon
               className="inline-flex h-12 items-center gap-3 rounded-md bg-[#8B43BA] px-6 text-sm font-black text-white shadow-[0_14px_28px_rgba(139,67,186,0.28)] transition hover:bg-[#7835a4]"
             >
@@ -195,3 +196,5 @@ function Footer() {
 }
 
 export default Footer;
+
+

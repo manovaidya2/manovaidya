@@ -1158,7 +1158,7 @@ const fetchBlogKnowledge = async () => {
   if (blogKnowledgeCache) return blogKnowledgeCache;
 
   try {
-    const response = await api.get("/blogs");
+    const response = await api.get("/blogs?status=published");
     const blogs = Array.isArray(response.data?.data) ? response.data.data : [];
 
     blogKnowledgeCache = blogs

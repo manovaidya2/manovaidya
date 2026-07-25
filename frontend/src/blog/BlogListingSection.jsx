@@ -41,7 +41,7 @@ function BlogListingSection() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const { data } = await api.get('/blogs');
+        const { data } = await api.get('/blogs?status=published');
         if (data.success) {
           setBlogs(data.data);
           setPopularPosts(data.data.slice(0, 4));

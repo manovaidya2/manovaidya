@@ -413,3 +413,98 @@ body {
   margin: 1rem auto;
   border-radius: 0.75rem;
 }
+
+.jodit-wysiwyg h1,
+.admin-blog-preview h1 {
+  margin: 1.25rem 0 0.75rem;
+  color: #0f172a;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.jodit-wysiwyg h2,
+.admin-blog-preview h2 {
+  margin: 1.15rem 0 0.65rem;
+  color: #1e293b;
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.jodit-wysiwyg h3,
+.admin-blog-preview h3 {
+  margin: 1rem 0 0.5rem;
+  color: #334155;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.jodit-wysiwyg p,
+.admin-blog-preview p {
+  margin: 0 0 0.85rem;
+  line-height: 1.7;
+}
+
+.jodit-wysiwyg ul,
+.admin-blog-preview ul {
+  margin: 0.85rem 0 1rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.jodit-wysiwyg ol,
+.admin-blog-preview ol {
+  margin: 0.85rem 0 1rem;
+  padding-left: 1.5rem;
+  list-style: decimal;
+}
+
+.jodit-wysiwyg li,
+.admin-blog-preview li {
+  margin: 0.35rem 0;
+  line-height: 1.65;
+}
+
+.jodit-wysiwyg blockquote,
+.admin-blog-preview blockquote {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid #8b43ba;
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: #f5f3ff;
+  color: #43385f;
+  font-style: italic;
+}
+
+.jodit-wysiwyg table,
+.admin-blog-preview table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.jodit-wysiwyg th,
+.jodit-wysiwyg td,
+.admin-blog-preview th,
+.admin-blog-preview td {
+  border: 1px solid #cbd5e1;
+  padding: 0.6rem;
+  vertical-align: top;
+}
+
+.jodit-wysiwyg th,
+.admin-blog-preview th {
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+.jodit-wysiwyg .draft-section,
+.admin-blog-preview .draft-section {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 1px dashed #d97706;
+  border-radius: 0.85rem;
+  background: #fffbeb;
+}

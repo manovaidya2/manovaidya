@@ -12,6 +12,7 @@ const initialFormData = {
   content: '',
   authorName: '',
   status: 'published',
+  showOnFrontend: true,
   faq: [],
   metaTitle: '',
   metaDescription: '',
@@ -56,8 +57,10 @@ export default function BlogForm({ blog, onClose, onSave }) {
   const [formData, setFormData] = useState(() => blog
     ? { ...initialFormData, ...blog, faq: blog.faq || [] }
     : initialFormData);
+  const contentDraftRef = useRef(formData.content);
   const [imageFile, setImageFile] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [loadingAction, setLoadingAction] = useState(null);
   const [error, setError] = useState(null);
   const [youtubeInput, setYoutubeInput] = useState('');
   const [linkedImage, setLinkedImage] = useState({ imageUrl: '', linkUrl: '', alt: '', newTab: true });
@@ -68,6 +71,18 @@ export default function BlogForm({ blog, onClose, onSave }) {
     placeholder: 'Start typing your blog content... Use headings, images, links, tables and videos.',
     height: 500,
     minHeight: 420,
+    controls: {
+      paragraph: {
+        list: {
+          p: 'Paragraph',
+          h1: 'Heading 1',
+          h2: 'Heading 2',
+          h3: 'Heading 3',
+          h4: 'Heading 4',
+          blockquote: 'Quote'
+        }
+      }
+    },
     toolbarAdaptive: false,
     toolbarSticky: false,
     spellcheck: true,
@@ -126,9 +141,10 @@ export default function BlogForm({ blog, onClose, onSave }) {
   }), []);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, type, checked, value } = e.target;
+    const fieldValue = type === 'checkbox' ? checked : value;
     setFormData(prev => {
-      const nextData = { ...prev, [name]: value };
+      const nextData = { ...prev, [name]: fieldValue };
       if (name === 'title' && !blog && !prev.slug) {
         nextData.slug = value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
       }
@@ -143,16 +159,21 @@ export default function BlogForm({ blog, onClose, onSave }) {
   };
 
   const handleContentChange = (value) => {
-    setFormData(prev => ({ ...prev, content: value }));
+    contentDraftRef.current = value;
+  };
+
+  const syncContentState = (value) => {
+    contentDraftRef.current = value;
+    setFormData(prev => (prev.content === value ? prev : { ...prev, content: value }));
   };
 
   const insertHtmlIntoEditor = (html) => {
     if (editor.current?.s) {
       editor.current.s.focus();
       editor.current.s.insertHTML(html);
-      handleContentChange(editor.current.value);
+      syncContentState(editor.current.value);
     } else {
-      handleContentChange(`${formData.content}${html}`);
+      syncContentState(`${contentDraftRef.current || formData.content}${html}`);
     }
   };
 
@@ -180,6 +201,12 @@ export default function BlogForm({ blog, onClose, onSave }) {
     insertHtmlIntoEditor(imageHtml);
     setLinkedImage({ imageUrl: '', linkUrl: '', alt: '', newTab: true });
     setEditorNotice({ type: 'success', text: 'Clickable image content mein insert ho gayi.' });
+  };
+
+  const insertDraftSection = () => {
+    const draftHtml = '<section class="draft-section"><h2>Draft Section Heading</h2><p>Yahan par apna draft content likhein.</p><ul><li>Important point one</li><li>Important point two</li></ul></section><p><br></p>';
+    insertHtmlIntoEditor(draftHtml);
+    setEditorNotice({ type: 'success', text: 'Draft section content mein add ho gaya.' });
   };
 
   const generateSchemaMarkup = () => {
@@ -230,11 +257,17 @@ export default function BlogForm({ blog, onClose, onSave }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const submitterStatus = e.nativeEvent?.submitter?.value;
+    const nextStatus = ['draft', 'published'].includes(submitterStatus)
+      ? submitterStatus
+      : formData.status;
+
     setLoading(true);
+    setLoadingAction(nextStatus);
     setError(null);
 
     try {
-      let editorContent = editor.current?.value || formData.content;
+      let editorContent = editor.current?.value || contentDraftRef.current || formData.content;
       if (!editorContent.trim()) throw new Error('Blog content is required.');
 
       // Enforce alt tags for all images in the editor content
@@ -262,7 +295,7 @@ export default function BlogForm({ blog, onClose, onSave }) {
         }
       }
 
-      const dataToSubmit = { ...formData, content: editorContent };
+      const dataToSubmit = { ...formData, status: nextStatus, content: editorContent };
       const submitData = new FormData();
       Object.keys(dataToSubmit).forEach(key => {
         if (key === 'faq') {
@@ -291,6 +324,7 @@ export default function BlogForm({ blog, onClose, onSave }) {
       setError(err.response?.data?.message || err.message);
     } finally {
       setLoading(false);
+      setLoadingAction(null);
     }
   };
 
@@ -378,6 +412,22 @@ export default function BlogForm({ blog, onClose, onSave }) {
                 </select>
               </div>
 
+              <div className="flex items-center rounded-lg border border-slate-200 bg-slate-50 p-3">
+                <label className="flex cursor-pointer items-start gap-3 text-sm text-slate-700">
+                  <input
+                    type="checkbox"
+                    name="showOnFrontend"
+                    checked={formData.showOnFrontend !== false}
+                    onChange={handleChange}
+                    className="mt-0.5 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
+                  />
+                  <span>
+                    <span className="block font-semibold text-slate-900">Show on frontend</span>
+                    <span className="text-xs text-slate-500">Checked rahega to published blog website par dikhega.</span>
+                  </span>
+                </label>
+              </div>
+
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-900">Blog Image</label>
                 <input
@@ -413,8 +463,8 @@ export default function BlogForm({ blog, onClose, onSave }) {
                 value={formData.content}
                 config={editorConfig}
                 tabIndex={1}
-                onBlur={newContent => handleContentChange(newContent)}
-                onChange={() => { }}
+                onBlur={newContent => syncContentState(newContent)}
+                onChange={newContent => handleContentChange(newContent)}
               />
 
               <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
@@ -469,6 +519,30 @@ export default function BlogForm({ blog, onClose, onSave }) {
                     <p className="mt-2 text-[11px] leading-4 text-slate-500">Editor ki existing image ko double-click karke bhi Link, Alt, Size aur Alignment edit kar sakte hain.</p>
                   </div>
                 </div>
+
+                <div className="mt-4 rounded-xl border border-amber-100 bg-white p-4 shadow-sm">
+                  <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-slate-800">
+                    <Plus size={18} className="text-amber-600" /> Draft section
+                  </div>
+                  <p className="text-[11px] leading-4 text-slate-500">Heading, paragraph aur bullet points wala editable draft block add karein.</p>
+                  <button type="button" onClick={insertDraftSection} className="mt-3 inline-flex items-center gap-2 rounded-lg bg-amber-600 px-3 py-2 text-xs font-semibold text-white transition hover:bg-amber-700">
+                    <Plus size={15} /> Add draft section
+                  </button>
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div className="mb-4 flex items-center gap-2">
+                  <Sparkles size={18} className="text-blue-600" />
+                  <div>
+                    <h4 className="text-sm font-semibold text-slate-900">Live content preview</h4>
+                    <p className="text-xs text-slate-500">Editor mein jo H1, H2, bullets, links, tables ya media add karenge, woh yahan live dikhega.</p>
+                  </div>
+                </div>
+                <div
+                  className="admin-blog-preview min-h-28 rounded-xl border border-slate-100 bg-slate-50 p-5 text-sm text-slate-700"
+                  dangerouslySetInnerHTML={{ __html: formData.content || '<p>Preview yahan dikhega...</p>' }}
+                />
               </div>
             </div>
 
@@ -599,7 +673,7 @@ export default function BlogForm({ blog, onClose, onSave }) {
               )}
             </div>
 
-            <div className="flex items-center justify-end space-x-3 border-t pt-4">
+            <div className="flex flex-col gap-3 border-t pt-4 sm:flex-row sm:items-center sm:justify-end">
               <button
                 type="button"
                 onClick={onClose}
@@ -609,10 +683,21 @@ export default function BlogForm({ blog, onClose, onSave }) {
               </button>
               <button
                 type="submit"
+                name="statusAction"
+                value="draft"
                 disabled={loading}
-                className="rounded-lg bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 disabled:opacity-50"
+                className="rounded-lg border border-amber-300 bg-amber-50 px-5 py-2.5 text-center text-sm font-semibold text-amber-800 hover:bg-amber-100 focus:outline-none focus:ring-4 focus:ring-amber-100 disabled:opacity-50"
               >
-                {loading ? 'Saving...' : 'Save Blog'}
+                {loading && loadingAction === 'draft' ? 'Saving draft...' : 'Save as Draft'}
+              </button>
+              <button
+                type="submit"
+                name="statusAction"
+                value="published"
+                disabled={loading}
+                className="rounded-lg bg-emerald-600 px-5 py-2.5 text-center text-sm font-semibold text-white hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-200 disabled:opacity-50"
+              >
+                {loading && loadingAction === 'published' ? 'Publishing...' : 'Publish Live'}
               </button>
             </div>
           </form>

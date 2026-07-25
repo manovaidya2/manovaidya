@@ -151,6 +151,8 @@ export default function BlogManagement() {
   const [aiReview, setAiReview] = useState(null);
   const [aiReviewLoading, setAiReviewLoading] = useState(false);
   const [aiReviewError, setAiReviewError] = useState('');
+  const [publishingId, setPublishingId] = useState(null);
+  const [visibilitySavingId, setVisibilitySavingId] = useState(null);
   const [quickOptions, setQuickOptions] = useState(() => getAdminQuickOptions());
 
   const fetchBlogs = async () => {
@@ -295,6 +297,42 @@ export default function BlogManagement() {
       }
     } catch (err) {
       alert(`Error deleting blog: ${err.response?.data?.message || err.message}`);
+    }
+  };
+
+  const handlePublishBlog = async (blog) => {
+    if (!blog?._id) return;
+    try {
+      setPublishingId(blog._id);
+      const { data } = await api.put(`/blogs/${blog._id}`, { status: 'published', showOnFrontend: true });
+      if (!data.success) {
+        throw new Error(data.message || 'Failed to publish blog');
+      }
+      const publishedBlog = data.data || { ...blog, status: 'published', showOnFrontend: true };
+      setBlogs((prev) => prev.map((item) => item._id === blog._id ? { ...item, ...publishedBlog, status: 'published', showOnFrontend: true } : item));
+    } catch (err) {
+      alert(`Error publishing blog: ${err.response?.data?.message || err.message}`);
+    } finally {
+      setPublishingId(null);
+    }
+  };
+
+  const handleFrontendVisibilityChange = async (blog, showOnFrontend) => {
+    if (!blog?._id) return;
+    try {
+      setVisibilitySavingId(blog._id);
+      setBlogs((prev) => prev.map((item) => item._id === blog._id ? { ...item, showOnFrontend } : item));
+      const { data } = await api.put(`/blogs/${blog._id}`, { showOnFrontend });
+      if (!data.success) {
+        throw new Error(data.message || 'Failed to update frontend visibility');
+      }
+      const updatedBlog = data.data || { ...blog, showOnFrontend };
+      setBlogs((prev) => prev.map((item) => item._id === blog._id ? { ...item, ...updatedBlog, showOnFrontend } : item));
+    } catch (err) {
+      setBlogs((prev) => prev.map((item) => item._id === blog._id ? { ...item, showOnFrontend: blog.showOnFrontend !== false } : item));
+      alert(`Error updating frontend visibility: ${err.response?.data?.message || err.message}`);
+    } finally {
+      setVisibilitySavingId(null);
     }
   };
 
@@ -486,10 +524,25 @@ export default function BlogManagement() {
                       </span>
                     </td>
                     <td className="px-6 py-4">
-                      <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${blog.status === 'published' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
-                        <span className={`h-1.5 w-1.5 rounded-full ${blog.status === 'published' ? 'bg-emerald-500' : 'bg-amber-500'}`} />
-                        {blog.status}
-                      </span>
+                      <div className="flex flex-col items-start gap-1.5">
+                        <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${blog.status === 'published' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
+                          <span className={`h-1.5 w-1.5 rounded-full ${blog.status === 'published' ? 'bg-emerald-500' : 'bg-amber-500'}`} />
+                          {blog.status}
+                        </span>
+                        <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-bold ${blog.status === 'published' && blog.showOnFrontend !== false ? 'bg-blue-50 text-blue-700' : 'bg-slate-100 text-slate-500'}`}>
+                          {blog.status === 'published' && blog.showOnFrontend !== false ? 'Frontend visible' : 'Frontend hidden'}
+                        </span>
+                        <label className="mt-1 flex cursor-pointer items-center gap-2 text-[11px] font-semibold text-slate-600">
+                          <input
+                            type="checkbox"
+                            checked={blog.showOnFrontend !== false}
+                            disabled={visibilitySavingId === blog._id}
+                            onChange={(event) => handleFrontendVisibilityChange(blog, event.target.checked)}
+                            className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 disabled:cursor-not-allowed disabled:opacity-60"
+                          />
+                          Show on frontend
+                        </label>
+                      </div>
                     </td>
                     <td className="px-6 py-4">
                       <button
@@ -528,6 +581,18 @@ export default function BlogManagement() {
                     <td className="px-6 py-4 font-medium text-slate-700">{blog.views}</td>
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-1.5 opacity-80 transition group-hover:opacity-100">
+                        {blog.status !== 'published' && (
+                          <button
+                            type="button"
+                            onClick={() => handlePublishBlog(blog)}
+                            disabled={publishingId === blog._id}
+                            className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-600 px-3 py-2 text-xs font-bold text-white transition hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
+                            title="Publish blog live"
+                          >
+                            <CheckCircle2 size={15} />
+                            {publishingId === blog._id ? 'Publishing...' : 'Publish'}
+                          </button>
+                        )}
                         <button onClick={() => handleEdit(blog)} className="rounded-lg p-2 text-blue-600 transition hover:bg-blue-50" title="Edit">
                           <Edit2 size={17} />
                         </button>

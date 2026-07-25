@@ -150,6 +150,10 @@ const blogSchema = new mongoose.Schema({
     enum: ['draft', 'published'],
     default: 'published'
   },
+  showOnFrontend: {
+    type: Boolean,
+    default: true
+  },
   createdAt: {
     type: Date,
     default: Date.now

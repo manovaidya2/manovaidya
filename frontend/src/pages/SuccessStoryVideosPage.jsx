@@ -5,7 +5,7 @@ import { storyFilters, videoStories } from "../successStory/successStoryData";
 
 const pageVideoStories = [
   ...videoStories,
-  { id: 33, title: "Mental Health Testimonial Video 9", type: "Patient Testimonial", location: "India", embedId: "9b_9gXQ2Lhs", isIframe: true, category: "Mental Health" },
+  { id: 33, title: "Autism Testimonial Video 12", type: "Parent Testimonial", location: "India", embedId: "9b_9gXQ2Lhs", isIframe: true, category: "Autism" },
   { id: 34, title: "Mental Health Testimonial Video 10", type: "Patient Testimonial", location: "India", embedId: "VuaJJuh77gc", isIframe: true, category: "Mental Health" },
 ];
 

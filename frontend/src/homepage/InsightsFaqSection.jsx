@@ -114,7 +114,7 @@ function InsightsFaqSection() {
 
     const fetchBlogs = async () => {
       try {
-        const response = await api.get("/blogs");
+        const response = await api.get("/blogs?status=published");
         const blogList = Array.isArray(response.data?.data) ? response.data.data : [];
         const publishedBlogs = blogList
           .filter((blog) => !blog.status || blog.status === "published")

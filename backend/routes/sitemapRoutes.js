@@ -33,7 +33,7 @@ const buildUrl = ({ loc, lastmod, priority = '0.8', changefreq = 'weekly' }) => 
 router.get('/sitemap.xml', async (req, res) => {
   try {
     const [blogs, caseStudies] = await Promise.all([
-      Blog.find({ status: 'published', robots: { $ne: 'noindex,nofollow' } })
+      Blog.find({ status: 'published', showOnFrontend: { $ne: false }, robots: { $ne: 'noindex,nofollow' } })
         .select('slug canonicalUrl updatedAt createdAt robots')
         .sort({ updatedAt: -1 })
         .lean(),

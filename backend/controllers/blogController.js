@@ -1,9 +1,20 @@
 import Blog from '../models/Blog.js';
 
+const publicBlogFilter = {
+  status: 'published',
+  showOnFrontend: { $ne: false }
+};
+
+const normalizeBooleanFields = (data) => {
+  if (data.showOnFrontend === 'true') data.showOnFrontend = true;
+  if (data.showOnFrontend === 'false') data.showOnFrontend = false;
+};
+
 // Create a new blog
 export const createBlog = async (req, res) => {
   try {
     const blogData = req.body;
+    normalizeBooleanFields(blogData);
     
     // Handle image upload
     if (req.file) {
@@ -49,7 +60,12 @@ export const createBlog = async (req, res) => {
 // Get all blogs
 export const getAllBlogs = async (req, res) => {
   try {
-    const blogs = await Blog.find().sort({ createdAt: -1 });
+    const filter = req.query.status === 'published'
+      ? publicBlogFilter
+      : req.query.status
+        ? { status: req.query.status }
+        : {};
+    const blogs = await Blog.find(filter).sort({ createdAt: -1 });
     res.status(200).json({
       success: true,
       data: blogs
@@ -68,7 +84,7 @@ export const getAllBlogs = async (req, res) => {
 export const getBlogBySlug = async (req, res) => {
   try {
     const { slug } = req.params;
-    const blog = await Blog.findOne({ slug });
+    const blog = await Blog.findOne({ slug, ...publicBlogFilter });
 
     if (!blog) {
       return res.status(404).json({
@@ -127,6 +143,7 @@ export const updateBlog = async (req, res) => {
   try {
     const { id } = req.params;
     const updateData = req.body;
+    normalizeBooleanFields(updateData);
     
     // Handle image upload
     if (req.file) {
@@ -229,7 +246,13 @@ export const deleteBlog = async (req, res) => {
 export const getBlogsByCategory = async (req, res) => {
   try {
     const { category } = req.params;
-    const blogs = await Blog.find({ category }).sort({ createdAt: -1 });
+    const filter = req.query.status === 'published'
+      ? { category, ...publicBlogFilter }
+      : {
+        category,
+        ...(req.query.status ? { status: req.query.status } : {})
+      };
+    const blogs = await Blog.find(filter).sort({ createdAt: -1 });
 
     res.status(200).json({
       success: true,
@@ -249,7 +272,13 @@ export const getBlogsByCategory = async (req, res) => {
 export const searchBlogs = async (req, res) => {
   try {
     const { q } = req.query;
+    const visibilityFilter = req.query.status === 'published'
+      ? publicBlogFilter
+      : req.query.status
+        ? { status: req.query.status }
+        : {};
     const blogs = await Blog.find({
+      ...visibilityFilter,
       $or: [
         { title: { $regex: q, $options: 'i' } },
         { shortDescription: { $regex: q, $options: 'i' } },
