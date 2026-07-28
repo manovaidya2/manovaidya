@@ -308,13 +308,12 @@ export default function BlogDetails() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="w-full lg:w-[45%] shrink-0 overflow-hidden rounded-[32px] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)]"
+              className="aspect-video w-full shrink-0 overflow-hidden rounded-[32px] bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] lg:w-[45%]"
             >
               <img
                 src={getAssetUrl(blog.image)}
                 alt={blog.imageAlt || blog.title}
-                className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
-                style={{ aspectRatio: '4/3' }}
+                className="h-full w-full object-contain"
               />
             </motion.figure>
           )}
