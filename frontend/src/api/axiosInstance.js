@@ -8,6 +8,9 @@ export const API_ORIGIN =
   import.meta.env.VITE_API_ORIGIN ||
   (isLocalHost ? 'http://localhost:5012' : 'https://api.manovaidya.org');
 export const API_BASE_URL = `${API_ORIGIN}/api`;
+export const ASSET_ORIGIN =
+  import.meta.env.VITE_ASSET_ORIGIN ||
+  (isLocalHost ? 'https://api.manovaidya.org' : API_ORIGIN);
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -18,7 +21,7 @@ const api = axios.create({
 
 export const getAssetUrl = (path) => {
   if (!path || /^https?:\/\//i.test(path)) return path;
-  const origin = API_BASE_URL.replace(/\/api\/?$/, '') || API_ORIGIN;
+  const origin = ASSET_ORIGIN.replace(/\/api\/?$/, '');
   return `${origin}${path.startsWith('/') ? path : `/${path}`}`;
 };
 

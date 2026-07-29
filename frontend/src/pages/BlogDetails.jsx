@@ -249,15 +249,15 @@ export default function BlogDetails() {
 
       <div className="mx-auto mt-10 w-full  px-4 sm:px-6 lg:px-10">
         {/* Hero Section (2-Column) */}
-        <div className="mb-12 flex flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mb-12 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between xl:gap-10">
           {/* Text Content */}
-          <header className="flex-1 lg:max-w-[50%]">
+          <header className="flex-1 lg:max-w-[43%] xl:max-w-[42%]">
             {blog.category && (
               <span className="mb-4 inline-block text-[11px] font-extrabold uppercase tracking-widest text-[#0F766E]">
                 {blog.category}
               </span>
             )}
-            <h1 className="mb-5 text-3xl font-extrabold leading-[1.15] tracking-tight text-[#0F172A] sm:text-4xl md:text-[42px] lg:text-[52px]">
+            <h1 className="mb-5 text-3xl font-extrabold leading-[1.15] tracking-tight text-[#0F172A] sm:text-[34px] md:text-[38px] lg:text-[44px]">
               {blog.title}
             </h1>
 
@@ -308,12 +308,12 @@ export default function BlogDetails() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="aspect-video w-full shrink-0 overflow-hidden rounded-[32px] bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] lg:w-[45%]"
+              className="w-full shrink-0 overflow-hidden rounded-[32px] bg-white shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] lg:w-[53%] xl:w-[55%]"
             >
               <img
                 src={getAssetUrl(blog.image)}
                 alt={blog.imageAlt || blog.title}
-                className="h-full w-full object-contain"
+                className="block h-auto w-full"
               />
             </motion.figure>
           )}

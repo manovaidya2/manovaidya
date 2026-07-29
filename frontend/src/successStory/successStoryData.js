@@ -93,7 +93,7 @@ export const videoStories = [
   { id: 19, title: "Mental Health Testimonial Video 7", type: "Patient Testimonial", location: "India", embedId: "fBpPDtd_Atw", isIframe: true, category: "Mental Health" },
   { id: 20, title: "Autism Testimonial Video 13", type: "Parent Testimonial", location: "India", embedId: "bjjLj90eZB8", isIframe: true, category: "Autism" },
   { id: 21, title: "Success Story Video 21", type: "Patient Testimonial", location: "India", embedId: "myQ5ThUSY8A", isIframe: true, category: "Mental Health" },
-  { id: 22, title: "Success Story Video 22", type: "Patient Testimonial", location: "India", embedId: "80fFVYSS_gA", isIframe: true, category: "Mental Health" },
+  { id: 22, title: "Success Story Video 22", type: "Patient Testimonial", location: "India", embedId: "80fFVYSS_gA", embedUrl: "https://www.youtube.com/embed/80fFVYSS_gA?si=OpjmYS4_j2IQw0kG", isIframe: true, category: "Mental Health" },
   { id: 23, title: "Success Story Video 23", type: "Patient Testimonial", location: "India", embedId: "HTDrnSTkFSQ", isIframe: true, category: "Mental Health" },
   { id: 24, title: "Autism Testimonial Video 14", type: "Parent Testimonial", location: "India", embedId: "bj63Qv-NM8o", isIframe: true, category: "Autism" },
   { id: 25, title: "OCD Success Story Video 25", type: "Patient Testimonial", location: "India", embedId: "VoGQR0AJwdw", isIframe: true, category: "OCD" },

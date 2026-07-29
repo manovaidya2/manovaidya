@@ -15,6 +15,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import aboutFamilyImage from "../images/about-family-care.png";
+import BookConsultationButton from "../components/BookConsultationButton";
 
 const focusAreas = [
   {
@@ -212,13 +213,12 @@ function AboutDoctorFocusSection() {
                 Take the first step towards clarity and better outcomes. Book
                 your consultation with Dr. Ankush Garg today.
               </p>
-              <a
-                href="/contact"
+              <BookConsultationButton
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-white px-6 text-[13px] font-black text-[#251553] shadow-[0_14px_24px_rgba(20,10,42,0.18)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_30px_rgba(20,10,42,0.22)]"
               >
                 Book Consultation
                 <ArrowRight className="h-4 w-4" strokeWidth={2.4} />
-              </a>
+              </BookConsultationButton>
             </div>
           </div>
         </div>

@@ -225,6 +225,35 @@ function Header() {
   }, []);
 
   React.useEffect(() => {
+    const handleBookConsultationClick = (event) => {
+      const trigger = event.target.closest("a, button");
+
+      if (!trigger || trigger.closest('[data-consultation-modal="true"]')) {
+        return;
+      }
+
+      const label = trigger.textContent?.replace(/\s+/g, " ").trim().toLowerCase();
+      const isBookConsultation =
+        label === "book consultation" ||
+        label === "book a consultation" ||
+        label.includes("book consultation");
+
+      if (!isBookConsultation) {
+        return;
+      }
+
+      event.preventDefault();
+      closeMenu();
+      setIsConsultationModalOpen(true);
+    };
+
+    document.addEventListener("click", handleBookConsultationClick, true);
+    return () => {
+      document.removeEventListener("click", handleBookConsultationClick, true);
+    };
+  }, []);
+
+  React.useEffect(() => {
     if (!isMenuOpen) return undefined;
 
     const previousOverflow = document.body.style.overflow;
@@ -637,7 +666,7 @@ function Header() {
 
       {isConsultationModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#120b2a]/45 p-4 backdrop-blur-sm">
-          <div className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-[0_18px_42px_rgba(45,27,95,0.16)]">
+          <div data-consultation-modal="true" className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-[0_18px_42px_rgba(45,27,95,0.16)]">
             <button
               type="button"
               className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-violet-50 text-violet-800 hover:bg-violet-100"
