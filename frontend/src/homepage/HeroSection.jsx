@@ -21,7 +21,7 @@ const carePillars = [
 ];
 
 const stats = [
-  { value: "8+", label: "Years Experience", Icon: Sparkles },
+  { value: "7+", label: "Years Experience", Icon: Sparkles },
   { value: "1000+", label: "Families Guided", Icon: Users },
   { value: "20K+", label: "Consultations", Icon: Network },
   { value: "Across", label: "India", Icon: MapPin },

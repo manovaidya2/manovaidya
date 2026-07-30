@@ -236,7 +236,14 @@ function Header() {
       const isBookConsultation =
         label === "book consultation" ||
         label === "book a consultation" ||
-        label.includes("book consultation");
+        label === "book now" ||
+        label === "contact us now" ||
+        label.includes("book consultation") ||
+        label.includes("book assessment") ||
+        label.includes("book autism assessment") ||
+        label.includes("book adhd assessment") ||
+        label.includes("book development assessment") ||
+        label.includes("book child consultation");
 
       if (!isBookConsultation) {
         return;
