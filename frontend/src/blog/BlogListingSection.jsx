@@ -32,6 +32,22 @@ const categoriesData = [
   { name: "Gut Health", count: 6, Icon: Apple },
 ];
 
+const publicTestContentPattern = /(?:\btesting\s+blog\b|\btest\s+blog\b|\bdummy\b|\bdemo\b|lorem\s+ipsum)/i;
+
+const hasPublicTestContent = (blog) =>
+  publicTestContentPattern.test(
+    [
+      blog?.title,
+      blog?.slug,
+      blog?.shortDescription,
+      blog?.metaTitle,
+      blog?.metaDescription,
+      blog?.content,
+    ]
+      .filter(Boolean)
+      .join(" ")
+  );
+
 function BlogListingSection() {
   const [blogs, setBlogs] = useState([]);
   const [popularPosts, setPopularPosts] = useState([]);
@@ -43,8 +59,11 @@ function BlogListingSection() {
       try {
         const { data } = await api.get('/blogs?status=published');
         if (data.success) {
-          setBlogs(data.data);
-          setPopularPosts(data.data.slice(0, 4));
+          const publicBlogs = Array.isArray(data.data)
+            ? data.data.filter((blog) => !hasPublicTestContent(blog))
+            : [];
+          setBlogs(publicBlogs);
+          setPopularPosts(publicBlogs.slice(0, 4));
         }
       } catch (err) {
         setError(err.response?.data?.message || err.message);
@@ -56,9 +75,10 @@ function BlogListingSection() {
   }, []);
 
   return (
-    <section id="articles" className="bg-[#fbfcfa] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-      <div className="mx-auto grid w-full max-w-[1320px] gap-8 xl:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="min-w-0">
+    <React.Fragment>
+      <section id="articles" className="bg-[#fbfcfa] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div className="mx-auto grid w-full max-w-[1320px] gap-8 xl:grid-cols-[minmax(0,1fr)_300px]">
+          <div className="min-w-0">
           <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <h2 className="text-[28px] font-extrabold tracking-[-0.035em] text-[#111b17] sm:text-[32px]">
               Latest Blogs
@@ -230,8 +250,9 @@ function BlogListingSection() {
             </BookConsultationButton>
           </div>
         </aside>
-      </div>
-    </section>
+        </div>
+      </section>
+    </React.Fragment>
   );
 }
 

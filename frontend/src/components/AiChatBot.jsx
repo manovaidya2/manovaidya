@@ -509,7 +509,7 @@ const websitePageKnowledge = [
   {
     "title": "successStoryData",
     "source": "successStory/successStoryData.js",
-    "text": "Mere child ko hyperactivity ki problem thi aur wo ek jagah zyada der shant nahi baith pata tha. Is wajah se use kahin bhi le jana kaafi mushkil ho jata tha aur behaviour ko manage karna bhi challenging lagta tha. Phir hum Manovaidya mein consult karne gaye jahan hume proper guidance aur support mila. Dheere-dheere treatment ke baad behaviour mein positive changes dekhne ko mile aur ab mera child pehle se kaafi calm aur manageable hai. Hi my self shashank nd my daughter name is naysha.....my daughter doesn't respond her name ..cnt speek word...I don't know how can we do . After we join manovadya last 6 mnth before...nd now we are happy ..my daughter response ...but nt proper ..but yes it's do..my experience with manovadya. Is good..after phase 1 medicine..now we start phase 2. ...so thanx dr ankush garg sir.. My 17 year old daughter was suffering from anxiety, mood swings and overthinking. As parents, hum kafi worried the ki ye problem kya hai. We tried many things for it at home and hamne doctor ko bhi consult kiya, but kuch khas benefit nahi hua. After starting treatment from Manovaidya, hamne kaafi positive changes dekhe and ab vo kafi calm feel krti hai. So thanks to the Manovaidya team who helped us a lot. Mere bete Shahzain ko ADHD and autism diagnose hua tha. 2 months me hi bahut improvement hua hai... staff and doctor are very supportive. Doctor bhut ache h sab ache se smjhate h 2 mhine se ab mera bacha pehle se theek hone laga h hmari bat sun ne laga h ceeje smjhane laga h. Dr. Ankush Garg completely changed my perspective on mental health. My son struggled with ADHD for years. After 3 months at Manovaidya we saw remarkable improvement in his focus and behaviour. I had been suffering from severe anxiety and sleep disorders for years. At Manovaidya, Dr. Garg identified the root cause and within 2 months my sleep improved drastically. Best decision I made for my daughter who is autistic. The team crafted a customized plan combining diet changes, therapies and Ayurvedic medicines. We have seen visible improvement. I had severe OCD and depression and had almost given up hope. Dr. Garg listened patiently, explained everything clearly, and the treatment helped"
+    "text": "Mere child ko hyperactivity ki problem thi aur wo ek jagah zyada der shant nahi baith pata tha. Is wajah se use kahin bhi le jana kaafi mushkil ho jata tha aur behaviour ko manage karna bhi challenging lagta tha. Phir hum Manovaidya mein consult karne gaye jahan hume proper guidance aur support mila. Dheere-dheere treatment ke baad behaviour mein positive changes dekhne ko mile aur ab mera child pehle se kaafi calm aur manageable hai. Hi my self shashank nd my daughter name is naysha.....my daughter doesn't respond her name ..cnt speek word...I don't know how can we do . After we join manovadya last 6 mnth before...nd now we are happy ..my daughter response ...but nt proper ..but yes it's do..my experience with manovadya. Is good..after phase 1 medicine..now we start phase 2. ...so thanx dr ankush garg sir.. My 17 year old daughter was suffering from anxiety, mood swings and overthinking. As parents, hum kafi worried the ki ye problem kya hai. We tried many things for it at home and hamne doctor ko bhi consult kiya, but kuch khas benefit nahi hua. After starting treatment from Manovaidya, hamne kaafi positive changes dekhe and ab vo kafi calm feel krti hai. So thanks to the Manovaidya team who helped us a lot. Mere bete Shahzain ko ADHD and autism diagnose hua tha. 2 months me hi bahut improvement hua hai... staff and doctor are very supportive. Doctor bhut ache h sab ache se smjhate h 2 mhine se ab mera bacha pehle se theek hone laga h hmari bat sun ne laga h ceeje smjhane laga h. Dr. Ankush Garg completely changed my perspective on mental health. My son struggled with ADHD for years. After 3 months at Manovaidya we saw remarkable improvement in his focus and behaviour. I had been suffering from severe anxiety and sleep disorders for years. At Manovaidya, Dr. Garg identified the root cause and within 2 months my sleep improved drastically. The right decision I made for my daughter who is autistic. The team crafted a customized plan combining diet changes, therapies and Ayurvedic medicines. We have seen visible improvement. I had severe OCD and depression and had almost given up hope. Dr. Garg listened patiently, explained everything clearly, and the treatment helped"
   },
   {
     "title": "SuccessStoryHero",
@@ -766,7 +766,7 @@ const agentLeadSteps = [
 const normalizeQuestion = (value) =>
   String(value || "")
     .toLowerCase()
-    .replace(/[^a-z0-9\u0900-\u097f]+/gi, " ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -1192,7 +1192,7 @@ const fetchBlogKnowledge = async () => {
 const getTokens = (question) =>
   String(question || "")
     .toLowerCase()
-    .split(/[^a-z0-9\u0900-\u097f]+/i)
+    .split(/[^\p{L}\p{N}]+/u)
     .filter((token) => token.length > 2);
 
 const scoreText = (text, tokens) => {
@@ -1288,7 +1288,7 @@ const getFastFallbackAnswer = (question) => {
   if (exactAnswer) return exactAnswer;
 
   if (/autism|asd|spectrum/i.test(question)) {
-    return "Haan, Manovaidya autism-related concerns me structured assessment aur personalised guidance provide karta hai.\n\nCommon concerns: delayed speech, reduced eye contact, social communication difficulty, repetitive behaviour, sensory sensitivity, attention ya behaviour challenges.\n\nCare me child ke communication, behaviour, sensory needs, sleep, routine aur family concerns ko samjha jata hai.\n\nBest next step: consultation book karke child ka current concern detail me discuss karein.";
+    return "Haan, Manovaidya autism-related concerns me structured assessment aur personalised guidance provide karta hai.\n\nCommon concerns: delayed speech, reduced eye contact, social communication difficulty, repetitive behaviour, sensory sensitivity, attention ya behaviour challenges.\n\nCare me child ke communication, behaviour, sensory needs, sleep, routine aur family concerns ko samjha jata hai.\n\nNext step: consultation book karke child ka current concern detail me discuss karein.";
   }
 
   if (/online|consultation|appointment|book/i.test(question)) {

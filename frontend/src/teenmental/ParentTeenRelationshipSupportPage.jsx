@@ -48,14 +48,139 @@ const categories = [
   { label: "Screen Addiction", count: 8, Icon: Brain },
 ];
 
+const keyTakeaways = [
+  "Understanding Parent-Teen Relationship Challenges",
+  "Signs of Communication and Trust Problems",
+  "Why Teenagers Become Distant From Parents",
+  "Impact of Family Conflict on Teen Wellbeing",
+  "How to Improve Parent-Teen Communication",
+  "Building Trust and Emotional Safety at Home",
+  "Healthy Boundaries and Growing Independence",
+  "Managing Anger, Arguments and Teen Behaviour",
+  "Neuro-Ayurveda Approach to Family Support",
+  "Parent Guidance and Family-Centred Counselling",
+  "Manovaidya's Assessment and Support Process",
+  "When Parents Should Consider an Assessment",
+  "Why Families Choose Manovaidya",
+  "Online and In-Clinic Support Across India",
+  "About Dr. Ankush Garg",
+  "Related Teen Mental Wellness Resources",
+  "FAQs on Parent-Teen Relationships",
+];
+
+const fullMedicalReferenceContent = `References
+[1] World Health Organization - Mental Health of Adolescents
+https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
+[2] World Health Organization - Positive Family Relationships in Adolescence
+https://www.who.int/data/gho/indicator-metadata-registry/imr-details/proportion-of-adolescents-reporting-positive-family-relationships
+[3] Zapf H, et al. - Parent-Child Communication and Adolescent Mental Health: A Systematic Review
+https://pubmed.ncbi.nlm.nih.gov/38827979/
+[4] Lin SC, et al. - Child Emotion Regulation, Family Factors and Internalizing Symptoms: A Meta-Analysis
+https://pubmed.ncbi.nlm.nih.gov/37803878/
+[5] Havighurst SS, et al. - Emotion-Focused Parenting Interventions for Child and Adolescent Mental Health Problems
+https://pubmed.ncbi.nlm.nih.gov/32858599/
+[6] Parenting and Family Interventions for Child and Adolescent Mental Health in Low- and Middle-Income Countries
+https://pubmed.ncbi.nlm.nih.gov/38631272/
+[7] Charaka Samhita - Sattvavajaya
+https://www.carakasamhitaonline.com/index.php/Sattvavajaya
+[8] Charaka Samhita - Manas: Mind and Mental Health
+https://www.carakasamhitaonline.com/index.php?title=Manas
+[9] Charaka Samhita, Sutra Sthana 8 - Indriyopakramaniya Adhyaya
+https://www.carakasamhitaonline.com/index.php/Indriyopakramaniya_Adhyaya
+[10] Charaka Samhita, Chikitsa Sthana 1 - Rasayana Adhyaya: Achara Rasayana
+https://www.carakasamhitaonline.com/index.php/Rasayana_Adhyaya
+
+Reference Note
+This article uses recognised public health resources, peer-reviewed research and classical Ayurvedic texts for adolescent mental health, positive family relationships, parent-child communication, emotion regulation, family interventions and Ayurvedic concepts related to Manas, Sattvavajaya, Sadvritta and Achara Rasayana.
+
+Classical Ayurvedic references are included for conceptual understanding of mind regulation, healthy conduct, respectful communication, sensory balance and whole-person wellbeing. They are not modern diagnostic criteria and should not be interpreted as a guaranteed cure for family conflict, teen behaviour concerns or teen mental health conditions.
+
+Authorised & Clinically Reviewed by Dr Ankush Garg
+Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
+Clinical Focus: Autism, ADHD, Child Development, Teen Mental Wellness and Mental Health`;
+
+const articleLinkRules = [
+  { label: "Parent-Teen Relationship Treatment in India", href: "#introduction", pattern: /Parent-Teen Relationship Treatment in India/i },
+  { label: "Parent-Teen Relationship Treatment", href: "#understanding-parent-teen-relationships", pattern: /Parent-Teen Relationship Treatment/i },
+  { label: "Parent-Teen Relationship", href: "#understanding-parent-teen-relationships", pattern: /Parent-Teen Relationship/i },
+  { label: "Parent-Teen Relationships", href: "#understanding-parent-teen-relationships", pattern: /Parent-Teen Relationships/i },
+  { label: "Parent-Teen Communication", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Parent-Teen Communication/i },
+  { label: "Parent Guidance", href: "#how-manovaidya-supports-families", pattern: /Parent Guidance/i },
+  { label: "Parenting Teenagers", href: "#understanding-parent-teen-relationships", pattern: /Parenting Teenagers/i },
+  { label: "Teen Behaviour Support", href: "#common-parent-teen-relationship-challenges", pattern: /Teen Behaviour Support/i },
+  { label: "Teenage Behaviour", href: "#common-parent-teen-relationship-challenges", pattern: /Teenage Behaviour/i },
+  { label: "Behavioural Challenges", href: "#common-parent-teen-relationship-challenges", pattern: /Behavioural Challenges/i },
+  { label: "Family Conflict Resolution", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Family Conflict Resolution/i },
+  { label: "Family Conflict", href: "#how-parent-teen-relationship-challenges-affect-teenagers", pattern: /Family Conflict/i },
+  { label: "Family Support", href: "#how-manovaidya-supports-families", pattern: /Family Support/i },
+  { label: "Family-Centred Counselling", href: "#how-manovaidya-supports-families", pattern: /Family-Centred Counselling/i },
+  { label: "Healthy Boundaries", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Healthy Boundaries/i },
+  { label: "Emotional Safety", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Emotional Safety/i },
+  { label: "Emotional Wellbeing", href: "#how-parent-teen-relationship-challenges-affect-teenagers", pattern: /Emotional Wellbeing/i },
+  { label: "Emotional Connection", href: "#introduction", pattern: /Emotional Connection/i },
+  { label: "Trust Building", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Trust Building/i },
+  { label: "Communication Challenges", href: "#common-parent-teen-relationship-challenges", pattern: /Communication Challenges/i },
+  { label: "Academic Pressure", href: "/exam-performance-pressure", pattern: /Academic Pressure/i },
+  { label: "Screen Addiction", href: "/teen-screen-addiction-support/", pattern: /Screen Addiction/i },
+  { label: "Screen Use", href: "/teen-screen-addiction-support/", pattern: /Screen Use/i },
+  { label: "Social Media", href: "/teen-screen-addiction-support/", pattern: /Social Media/i },
+  { label: "Teen Stress & Anxiety", href: "/teen-stress-anxiety-support/", pattern: /Teen Stress (?:&|and) Anxiety/i },
+  { label: "Teen Depression", href: "/teen-depression-support/", pattern: /Teen Depression/i },
+  { label: "Teen Confidence", href: "/teen-confidence-emotional-wellbeing/", pattern: /Teen Confidence/i },
+  { label: "Teen Mental Wellness", href: "/teen-mental-wellness-india/", pattern: /Teen Mental Wellness/i },
+  { label: "Mental Health", href: "/teen-mental-wellness-india/", pattern: /Mental Health/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Neuro-Ayurveda", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
+  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+];
+
+const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (linkedRuleKeys.has(ruleKey)) return;
+
+      const match = remaining.match(rule.pattern);
+      if (match) {
+        candidates.push({ index: match.index, length: match[0].length, ruleKey });
+      }
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+    if (!candidates.length) break;
+
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+
+  return ruleKeys;
+}
+
 const sections = [
   {
     "title": "Introduction",
     "id": "introduction",
     "lines": [
-      "The teenage years are a period of significant emotional, social and personal growth. During this stage, teenagers begin developing their own identity, becoming more independent and learning to make decisions about their future. While this growth is a natural part of adolescence, it can also create misunderstandings, communication gaps and conflicts within families.",
+      "The teenage years are a period of significant emotional, social and personal growth. During this stage, teenagers begin developing their own identity, becoming more independent and learning to make decisions about their future. While this growth is a natural part of adolescence, it can also create misunderstandings, communication gaps and conflicts within families. [1]",
       "Many parents notice that their teenager has become quieter, more argumentative, emotionally distant or less willing to share their thoughts. Some teenagers may spend more time alone, react strongly to simple conversations or become frustrated when parents try to offer advice. These situations often leave parents wondering whether such changes are a normal part of adolescence or a sign that their child needs additional support.",
-      "At Manovaidya, we understand that a healthy parent-teen relationship is one of the strongest foundations for emotional wellbeing, confidence and long-term development. Good communication, trust and mutual understanding help teenagers navigate challenges more effectively while also helping parents provide guidance in a supportive way.",
+      "At Manovaidya, we understand that a healthy parent-teen relationship is one of the strongest foundations for emotional wellbeing, confidence and long-term development. Good communication, trust and mutual understanding help teenagers navigate challenges more effectively while also helping parents provide guidance in a supportive way. [2] [3]",
       "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps families better understand teenage behaviour, emotional wellbeing and family dynamics while supporting stronger relationships and healthier communication.",
       "At Manovaidya, Parent-Teen Relationship Treatment Focuses On:",
       "✔ Parent-Teen Communication",
@@ -76,7 +201,7 @@ const sections = [
       "Parents may feel that their teenager no longer listens to them, while teenagers may feel that they are not being understood.",
       "In reality, both parents and teenagers are adjusting to a new stage of life.",
       "Many families searching for Parent-Teen Relationship Treatment in India, Parenting Teenagers or Teen Behaviour Support are looking for practical ways to improve communication and rebuild trust.",
-      "Healthy relationships during adolescence are not built by controlling teenagers. They are built through understanding, respect, communication and consistent emotional support.",
+      "Healthy relationships during adolescence are not built by controlling teenagers. They are built through understanding, respect, communication and consistent emotional support. [2] [3]",
       "Teenagers who experience healthy family relationships often feel more comfortable discussing their worries, asking for guidance and navigating life's challenges.",
       "Strong relationships also help teenagers develop confidence, emotional resilience and better decision-making skills."
     ]
@@ -126,7 +251,7 @@ const sections = [
       "This growing independence may sometimes be misunderstood as rejection.",
       "Emotional Changes",
       "Adolescence involves significant emotional development.",
-      "Teenagers may experience mood changes, uncertainty and increased emotional sensitivity while learning to manage new experiences.",
+      "Teenagers may experience mood changes, uncertainty and increased emotional sensitivity while learning to manage new experiences. [1]",
       "Academic Pressure",
       "School expectations, examinations and future career concerns may leave teenagers feeling emotionally overwhelmed, making them less likely to communicate openly.",
       "Peer Relationships",
@@ -137,7 +262,7 @@ const sections = [
       "Online engagement may replace meaningful conversations if healthy boundaries are not maintained.",
       "Fear of Judgement",
       "Some teenagers avoid talking because they fear criticism, punishment or not being understood.",
-      "Creating an emotionally safe environment often encourages more open communication.",
+      "Creating an emotionally safe environment often encourages more open communication. [3] [5]",
       "Communication Patterns",
       "When conversations become focused only on academics, rules or mistakes, teenagers may become reluctant to share their emotions or daily experiences.",
       "Many parents worry that emotional distance today may permanently damage their relationship with their teenager. In most situations, healthy communication, understanding and consistent emotional support can help rebuild trust and strengthen family relationships over time."
@@ -148,7 +273,7 @@ const sections = [
     "id": "how-parent-teen-relationship-challenges-affect-teenagers",
     "lines": [
       "The relationship between parents and teenagers influences much more than daily communication.",
-      "A healthy family relationship provides emotional security, trust and guidance during one of the most important stages of life. When communication becomes difficult or conflicts continue for a long time, teenagers may find it harder to manage emotions, make decisions and navigate everyday challenges.",
+      "A healthy family relationship provides emotional security, trust and guidance during one of the most important stages of life. When communication becomes difficult or conflicts continue for a long time, teenagers may find it harder to manage emotions, make decisions and navigate everyday challenges. [2] [3]",
       "Understanding how relationship challenges influence overall wellbeing often helps families focus on building connection rather than simply correcting behaviour.",
       "Emotional Wellbeing",
       "Teenagers who feel misunderstood or emotionally disconnected may experience:",
@@ -159,11 +284,11 @@ const sections = [
       "Feelings of loneliness",
       "Difficulty expressing emotions",
       "Many teenagers want support from their parents but struggle to communicate what they are feeling.",
-      "Creating an emotionally safe environment often encourages healthier conversations and stronger relationships.",
+      "Creating an emotionally safe environment often encourages healthier conversations and stronger relationships. [3] [4] [5]",
       "Confidence & Self-Esteem",
       "The way teenagers experience communication at home often influences how they view themselves.",
       "Constant criticism, comparison or frequent conflict may gradually reduce confidence and self-belief.",
-      "On the other hand, encouragement, trust and respectful communication help teenagers develop emotional resilience and healthier self-esteem.",
+      "On the other hand, encouragement, trust and respectful communication help teenagers develop emotional resilience and healthier self-esteem. [2] [4] [5]",
       "Behaviour",
       "Behaviour is often a form of communication.",
       "When teenagers become angry, distant or argumentative, it does not always mean they are being intentionally difficult.",
@@ -179,7 +304,7 @@ const sections = [
       "Supporting emotional wellbeing at home often creates a stronger foundation for academic growth.",
       "Social Relationships",
       "Teenagers learn communication, trust and emotional regulation within their family environment.",
-      "Positive parent-teen relationships often help teenagers build healthier friendships and stronger interpersonal skills.",
+      "Positive parent-teen relationships often help teenagers build healthier friendships and stronger interpersonal skills. [2] [3]",
       "When family communication improves, teenagers frequently become more comfortable expressing themselves in other areas of life as well.",
       "Long-Term Development",
       "The teenage years help shape future confidence, communication skills and emotional resilience.",
@@ -198,7 +323,7 @@ const sections = [
     "lines": [
       "At Manovaidya, we understand that relationship challenges are rarely caused by one person alone.",
       "Rather than focusing only on behaviour or communication problems, we look at the broader factors that may influence emotional wellbeing, confidence, behaviour, family interactions and overall development.",
-      "The Neuro-Ayurveda Development System helps families better understand these challenges through five interconnected pillars.",
+      "The Neuro-Ayurveda Development System helps families better understand these challenges through five interconnected pillars. Ayurvedic concepts around Manas, Sattvavajaya, Sadvritta and Achara Rasayana provide conceptual support for mind regulation, healthy conduct, respectful communication and emotional balance. [7] [8] [9] [10]",
       "Brain Nourishment System",
       "Healthy communication begins with healthy emotional and cognitive functioning.",
       "The Brain Nourishment System focuses on understanding factors that may influence:",
@@ -217,7 +342,7 @@ const sections = [
       "Reduced energy",
       "Lifestyle imbalance",
       "Sleep disturbances",
-      "The Gut Response System focuses on understanding how overall wellbeing may influence emotional balance and daily functioning.",
+      "The Gut Response System focuses on understanding how overall wellbeing may influence emotional balance and daily functioning. Ayurvedic philosophy traditionally views diet, sleep, lifestyle and mental wellbeing as interconnected. [7] [8]",
       "Neural Network System",
       "Every experience contributes to patterns of thinking and responding.",
       "The Neural Network System focuses on understanding:",
@@ -236,7 +361,7 @@ const sections = [
       "Digital stimulation",
       "Daily routines",
       "may influence behaviour, communication and emotional responses.",
-      "Understanding these influences often helps families create healthier home environments.",
+      "Understanding these influences often helps families create healthier home environments. [9] [10]",
       "Behaviour Guidance System",
       "Behaviour is often a reflection of underlying emotional experiences.",
       "Teenagers experiencing relationship challenges may show:",
@@ -257,7 +382,7 @@ const sections = [
       "Small and consistent changes often strengthen family relationships over time.",
       "Listen Before Giving Advice",
       "Teenagers often want to feel heard before they are corrected.",
-      "Listening calmly without interrupting helps create emotional safety and encourages open communication.",
+      "Listening calmly without interrupting helps create emotional safety and encourages open communication. [3] [5]",
       "Avoid Judging Every Conversation",
       "If every discussion turns into criticism or advice, teenagers may stop sharing their thoughts.",
       "Showing curiosity and understanding often builds stronger trust.",
@@ -385,23 +510,23 @@ const sections = [
 const faqs = [
   {
     "question": "1. Why doesn't my teenager talk to me anymore?",
-    "answer": "Many teenagers become more private as they grow and develop independence. Academic pressure, friendships, emotional changes and fear of judgement may reduce communication. This does not always mean they no longer trust their parents. Creating a calm and supportive environment often helps teenagers open up over time."
+    "answer": "Many teenagers become more private as they grow and develop independence. Academic pressure, friendships, emotional changes and fear of judgement may reduce communication. This does not always mean they no longer trust their parents. Creating a calm and supportive environment often helps teenagers open up over time. [1] [3]"
   },
   {
     "question": "2. Why is my teenager always angry with me?",
-    "answer": "Teenagers often experience emotional, social and academic pressures that may lead to frustration or irritability. Sometimes anger is actually a sign of stress, confusion or feeling misunderstood. Staying calm, listening carefully and avoiding constant criticism can help improve communication and reduce conflict."
+    "answer": "Teenagers often experience emotional, social and academic pressures that may lead to frustration or irritability. Sometimes anger is actually a sign of stress, confusion or feeling misunderstood. Staying calm, listening carefully and avoiding constant criticism can help improve communication and reduce conflict. [4] [5]"
   },
   {
     "question": "3. How can I improve my relationship with my teenager?",
-    "answer": "Building a stronger relationship starts with trust, communication and quality time. Listening without judgement, respecting growing independence and showing interest in your teenager's life can strengthen emotional connection. Small positive interactions often make a big difference over time."
+    "answer": "Building a stronger relationship starts with trust, communication and quality time. Listening without judgement, respecting growing independence and showing interest in your teenager's life can strengthen emotional connection. Small positive interactions often make a big difference over time. [2] [3] [5]"
   },
   {
     "question": "4. Why do teenagers become distant from parents?",
-    "answer": "Teenagers naturally seek more independence as they develop their identity. Academic pressure, peer relationships, emotional changes and excessive screen use may also contribute to emotional distance. Maintaining open communication and emotional support can help preserve connection during adolescence."
+    "answer": "Teenagers naturally seek more independence as they develop their identity. Academic pressure, peer relationships, emotional changes and excessive screen use may also contribute to emotional distance. Maintaining open communication and emotional support can help preserve connection during adolescence. [1] [3]"
   },
   {
     "question": "5. How should parents communicate with teenagers?",
-    "answer": "The most effective communication involves listening first, staying calm and avoiding immediate criticism. Teenagers are more likely to share their thoughts when they feel respected and understood. Open conversations often help build trust and strengthen family relationships."
+    "answer": "The most effective communication involves listening first, staying calm and avoiding immediate criticism. Teenagers are more likely to share their thoughts when they feel respected and understood. Open conversations often help build trust and strengthen family relationships. [3] [5]"
   },
   {
     "question": "6. What should I do if my teenager doesn't listen to me?",
@@ -409,15 +534,15 @@ const faqs = [
   },
   {
     "question": "7. How do I handle frequent arguments with my teenager?",
-    "answer": "Frequent arguments can often be reduced by staying calm, choosing the right time for discussions and focusing on solutions rather than blame. Listening carefully and avoiding emotional reactions may help create healthier communication and reduce conflict."
+    "answer": "Frequent arguments can often be reduced by staying calm, choosing the right time for discussions and focusing on solutions rather than blame. Listening carefully and avoiding emotional reactions may help create healthier communication and reduce conflict. [3] [5]"
   },
   {
     "question": "8. Is teenage rebellion normal?",
-    "answer": "A certain level of independence-seeking behaviour is a normal part of adolescence. Teenagers often question rules and explore their own opinions. However, if behaviour begins affecting emotional wellbeing, relationships or daily functioning, additional support may be helpful."
+    "answer": "A certain level of independence-seeking behaviour is a normal part of adolescence. Teenagers often question rules and explore their own opinions. However, if behaviour begins affecting emotional wellbeing, relationships or daily functioning, additional support may be helpful. [1]"
   },
   {
     "question": "9. How can I build trust with my teenager?",
-    "answer": "Trust develops through honesty, consistency and respectful communication. Keeping promises, listening without judgement and respecting appropriate privacy can help strengthen trust and improve parent-teen relationships over time."
+    "answer": "Trust develops through honesty, consistency and respectful communication. Keeping promises, listening without judgement and respecting appropriate privacy can help strengthen trust and improve parent-teen relationships over time. [2] [3]"
   },
   {
     "question": "10. How can I discipline my teenager without damaging our relationship?",
@@ -425,11 +550,11 @@ const faqs = [
   },
   {
     "question": "11. Can family relationships affect teen mental health?",
-    "answer": "Yes. Supportive family relationships can strengthen confidence, emotional wellbeing and resilience. Ongoing conflict, communication problems or emotional distance may increase stress and affect a teenager's overall wellbeing."
+    "answer": "Yes. Supportive family relationships can strengthen confidence, emotional wellbeing and resilience. Ongoing conflict, communication problems or emotional distance may increase stress and affect a teenager's overall wellbeing. [2] [3] [4]"
   },
   {
     "question": "12. How can parents support teenagers emotionally?",
-    "answer": "Parents can support teenagers by listening without judgement, validating emotions and providing consistent encouragement. Creating a safe space where teenagers feel comfortable sharing their thoughts often strengthens emotional wellbeing and trust."
+    "answer": "Parents can support teenagers by listening without judgement, validating emotions and providing consistent encouragement. Creating a safe space where teenagers feel comfortable sharing their thoughts often strengthens emotional wellbeing and trust. [4] [5]"
   },
   {
     "question": "13. How does Manovaidya support families?",
@@ -437,7 +562,7 @@ const faqs = [
   },
   {
     "question": "14. Can parent guidance improve teenage behaviour?",
-    "answer": "In many situations, yes. Behaviour is often influenced by communication, family dynamics and emotional wellbeing. Small changes in parenting approaches can sometimes lead to meaningful improvements in behaviour and family relationships."
+    "answer": "In many situations, yes. Behaviour is often influenced by communication, family dynamics and emotional wellbeing. Small changes in parenting approaches can sometimes lead to meaningful improvements in behaviour and family relationships. [5] [6]"
   },
   {
     "question": "15. When should parents seek professional guidance?",
@@ -490,6 +615,188 @@ function SidebarCard({ children, className = "", id }) {
     <aside id={id} className={`rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] ${className}`}>
       {children}
     </aside>
+  );
+}
+
+const CitationClickContext = React.createContext({
+  onCitationClick: null,
+});
+
+function Citation({ id, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={() => onClick(id)}
+      className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+    >
+      [{id}]
+    </button>
+  );
+}
+
+function CitationText({ text, onCitationClick, allowedRuleKeys }) {
+  const linkContext = React.useContext(CitationClickContext);
+  const citationHandler = onCitationClick || linkContext?.onCitationClick;
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) {
+      candidates.push({
+        index: citationMatch.index,
+        text: citationMatch[0],
+        citationId: citationMatch[1],
+        type: "citation",
+      });
+    }
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) {
+        candidates.push({
+          index: keywordMatch.index,
+          text: keywordMatch[0],
+          rule,
+          ruleKey,
+          type: "keyword",
+        });
+      }
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+
+    if (absoluteIndex > cursor) {
+      parts.push(source.slice(cursor, absoluteIndex));
+    }
+
+    if (next.type === "citation") {
+      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, index) =>
+    typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">
+            Parent-Teen Relationship Support
+          </p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeaways.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our teen mental wellness newsletter for family communication, trust and parent guidance insights from our experts.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]"
+            />
+            <button
+              type="button"
+              className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]"
+            >
+              Join Now
+            </button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LinkifiedText({ text }) {
+  const urlPattern = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlPattern);
+
+  return parts.map((part, index) => {
+    if (!part.startsWith("http://") && !part.startsWith("https://")) {
+      return <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment>;
+    }
+
+    return (
+      <a key={`${part}-${index}`} href={part} target="_blank" rel="noreferrer">
+        {part}
+      </a>
+    );
+  });
+}
+
+function ResourceReferenceText({ text }) {
+  return text.split("\n").map((line, index) => {
+    const referenceMatch = line.match(/^\[(\d+)\]/);
+
+    return (
+      <div
+        key={`${line}-${index}`}
+        id={referenceMatch ? `reference-${referenceMatch[1]}` : undefined}
+        className={referenceMatch ? "scroll-mt-28" : undefined}
+      >
+        <LinkifiedText text={line} />
+      </div>
+    );
+  });
+}
+
+function MedicalReferencesBlock() {
+  const [heading, ...referenceLines] = fullMedicalReferenceContent.split("\n");
+  const referenceBody = referenceLines.join("\n");
+
+  return (
+    <section className="mt-5 rounded-xl border border-[#eadff1] bg-[#fbf9fd] p-6 sm:p-8" id="medical-references">
+      <h2 className="mb-4 text-[22px] font-black leading-tight text-[#2d1b45]">{heading}</h2>
+      <div className="max-w-full whitespace-pre-wrap break-words text-[14px] font-semibold leading-7 text-[#51465a] [&_a]:break-all [&_a]:text-[#7835A4] [&_a]:underline">
+        <ResourceReferenceText text={referenceBody} />
+      </div>
+    </section>
   );
 }
 
@@ -574,21 +881,34 @@ const internalLinks = [
   { text: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
 ];
 
-function ContentLine({ line }) {
-  if (subheadingLines.has(line)) {
-    return <h3 className="mt-5 text-[16px] font-black text-[#21142d]">{line}</h3>;
+function ContentLine({ line, onCitationClick, allowedRuleKeys }) {
+  const cleanLine = line
+    .replace(/^âœ”\s*/, "")
+    .replace(/^ðŸ“ž\s*/, "")
+    .replace(/^complete karenge\.$/, "");
+
+  if (!cleanLine) {
+    return null;
   }
 
-  if (line.startsWith("?") || line.startsWith("??")) {
+  if (subheadingLines.has(line) || subheadingLines.has(cleanLine)) {
+    return <h3 className="mt-5 text-[16px] font-black text-[#21142d]">{cleanLine}</h3>;
+  }
+
+  if (line.startsWith("?") || line.startsWith("??") || line.startsWith("âœ”") || line.startsWith("ðŸ“ž")) {
     return (
       <p className="mt-2 flex gap-2 text-[13.5px] font-bold leading-6 text-[#51465a]">
         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-        <span>{line}</span>
+        <span><CitationText text={cleanLine} onCitationClick={onCitationClick} allowedRuleKeys={allowedRuleKeys} /></span>
       </p>
     );
   }
 
-  return <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{line}</p>;
+  return (
+    <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+      <CitationText text={cleanLine} onCitationClick={onCitationClick} allowedRuleKeys={allowedRuleKeys} />
+    </p>
+  );
 }
 
 function SectionImage({ title }) {
@@ -617,15 +937,21 @@ function SectionImage({ title }) {
   return null;
 }
 
-function ContentSection({ section }) {
+function ContentSection({ section, onCitationClick, ruleKeysByLine }) {
   if (section.title === "Book a Consultation") {
     return (
       <section id={section.id} className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
         <div className="p-6 sm:p-8">
           <h2 className="text-[22px] font-black leading-tight">Book a Consultation</h2>
           <div className="mt-3 space-y-1">
-            {section.lines.map((line) => (
-              <p key={line} className="text-[14px] font-semibold leading-7 text-[#e5d5f2]">{line}</p>
+            {section.lines.map((line, index) => (
+              <p key={line} className="text-[14px] font-semibold leading-7 text-[#e5d5f2]">
+                <CitationText
+                  text={line.replace(/^ðŸ“ž\s*/, "").replace(/^complete karenge\.$/, "")}
+                  onCitationClick={onCitationClick}
+                  allowedRuleKeys={ruleKeysByLine?.get(`${section.id}-${index}`)}
+                />
+              </p>
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
@@ -648,7 +974,12 @@ function ContentSection({ section }) {
       {section.title === "Introduction" && <h2 className="text-[20px] font-black text-[#17111f]">Helping Parents & Teenagers Build Better Communication, Trust, Emotional Connection & Healthy Relationships</h2>}
       <div className="mt-3">
         {section.lines.map((line, index) => (
-          <ContentLine key={`${section.id}-${index}`} line={line} />
+          <ContentLine
+            key={`${section.id}-${index}`}
+            line={line}
+            onCitationClick={onCitationClick}
+            allowedRuleKeys={ruleKeysByLine?.get(`${section.id}-${index}`)}
+          />
         ))}
       </div>
       <SectionImage title={section.title} />
@@ -659,6 +990,56 @@ function ContentSection({ section }) {
 function ParentTeenRelationshipSupportPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
+  const [showResources, setShowResources] = React.useState(false);
+  const pageUrl = "https://manovaidya.org/parent-teen-relationship-support";
+  const pageTitle = "Parent-Teen Relationship Treatment in India | Manovaidya";
+  const encodedPageUrl = encodeURIComponent(pageUrl);
+  const encodedPageTitle = encodeURIComponent(pageTitle);
+  const articleShareLinks = [
+    { label: "f", href: `https://www.facebook.com/sharer/sharer.php?u=${encodedPageUrl}`, title: "Share on Facebook" },
+    { label: "x", href: `https://twitter.com/intent/tweet?url=${encodedPageUrl}&text=${encodedPageTitle}`, title: "Share on X" },
+    { label: "in", href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedPageUrl}&title=${encodedPageTitle}`, title: "Share on LinkedIn" },
+    { label: "wa", href: `https://api.whatsapp.com/send?text=${encodedPageTitle}%20${encodedPageUrl}`, title: "Share on WhatsApp" },
+  ];
+
+  const handleCitationClick = React.useCallback((referenceId) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      document
+        .getElementById(`reference-${referenceId}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
+
+  const ruleKeysByLine = React.useMemo(() => {
+    const ruleKeys = new Map();
+    const linkedRuleKeys = new Set();
+
+    sections.forEach((section) => {
+      section.lines.forEach((line, index) => {
+        const cleanLine = line
+          .replace(/^âœ”\s*/, "")
+          .replace(/^ðŸ“ž\s*/, "")
+          .replace(/^complete karenge\.$/, "");
+
+        if (!cleanLine || subheadingLines.has(line) || subheadingLines.has(cleanLine)) return;
+
+        const lineRuleKeys = getArticleLinkRuleKeysForText(cleanLine, linkedRuleKeys);
+        if (lineRuleKeys.size) {
+          ruleKeys.set(`${section.id}-${index}`, lineRuleKeys);
+        }
+      });
+    });
+
+    faqs.forEach((faq, index) => {
+      const lineRuleKeys = getArticleLinkRuleKeysForText(faq.answer, linkedRuleKeys);
+      if (lineRuleKeys.size) {
+        ruleKeys.set(`faq-${index}`, lineRuleKeys);
+      }
+    });
+
+    return ruleKeys;
+  }, []);
 
   React.useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -707,8 +1088,13 @@ function ParentTeenRelationshipSupportPage() {
     };
   }, []);
 
+  const linkRenderContext = {
+    onCitationClick: handleCitationClick,
+  };
+
   return (
-    <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+    <CitationClickContext.Provider value={linkRenderContext}>
+      <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
         title="Parent-Teen Relationship Treatment in India | Teen Behaviour & Family Guidance | Manovaidya"
         description="Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya."
@@ -749,8 +1135,8 @@ function ParentTeenRelationshipSupportPage() {
                 </div>
                 <div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]">
                   <span>Share:</span>
-                  {["f", "x", "in", "wa"].map((label) => (
-                    <a key={label} href="#share" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label="Share article">
+                  {articleShareLinks.map(({ label, href, title }) => (
+                    <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>
                       {label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}
                     </a>
                   ))}
@@ -767,7 +1153,18 @@ function ParentTeenRelationshipSupportPage() {
             </figure>
           </div>
 
-          {sections.map((section) => <ContentSection key={section.id} section={section} />)}
+          <KeyTakeawaysBlock />
+
+          {sections
+            .filter((section) => section.id !== "book-consultation")
+            .map((section) => (
+              <ContentSection
+                key={section.id}
+                section={section}
+                onCitationClick={handleCitationClick}
+                ruleKeysByLine={ruleKeysByLine}
+              />
+            ))}
 
           <section id="internal-links" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
             <h2 className="text-[18px] font-black text-[#17111f]">Helpful Teen Mental Wellness Links</h2>
@@ -782,7 +1179,6 @@ function ParentTeenRelationshipSupportPage() {
 
           <section id="faqs" className="mt-9">
             <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
-            <p className="mt-2 text-[13px] font-black text-[#7835A4]">Parent-Teen Relationship Treatment FAQ</p>
             <div className="mt-5 space-y-3">
               {faqs.map((faq, index) => (
                 <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
@@ -794,7 +1190,13 @@ function ParentTeenRelationshipSupportPage() {
                   </button>
                   {openFaq === index && (
                     <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
-                      <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">{faq.answer}</p>
+                      <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">
+                        <CitationText
+                          text={faq.answer}
+                          onCitationClick={handleCitationClick}
+                          allowedRuleKeys={ruleKeysByLine.get(`faq-${index}`)}
+                        />
+                      </p>
                     </div>
                   )}
                 </div>
@@ -802,9 +1204,62 @@ function ParentTeenRelationshipSupportPage() {
             </div>
           </section>
 
+          <div className="mt-8">
+            <button
+              type="button"
+              onClick={() => setShowResources((current) => !current)}
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]"
+              aria-expanded={showResources}
+              aria-controls="medical-references"
+            >
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} />
+            </button>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
+
+          <ContentSection
+            section={sections.find((section) => section.id === "book-consultation")}
+            onCitationClick={handleCitationClick}
+            ruleKeysByLine={ruleKeysByLine}
+          />
+
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img
+                src={doctorImage}
+                alt="Dr Ankush Garg Manovaidya parent teen relationship family guidance clinician"
+                className="h-12 w-12 shrink-0 rounded-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">
+                  Authorised & Clinically Reviewed by Dr Ankush Garg
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Clinical Focus: Teen Mental Wellness, Autism, ADHD, Child Development and Mental Health
+                </p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">
+                  Last Updated: [20-07-2026]
+                </p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15">
+                <Brain className="h-5 w-5" />
+              </span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
             <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3">
@@ -864,9 +1319,9 @@ function ParentTeenRelationshipSupportPage() {
           </form>
         </div>
       </section>
-    </main>
+      </main>
+    </CitationClickContext.Provider>
   );
 }
 
 export default ParentTeenRelationshipSupportPage;
-

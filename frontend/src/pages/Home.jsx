@@ -12,8 +12,8 @@ function Home() {
   return (
     <React.Fragment>
       <Seo
-        title="Best Neuro-Ayurveda Mental Health Clinic in India | Manovaidya"
-        description="Manovaidya offers Neuro-Ayurveda care for every life stage, blending Ayurveda with modern science to support child development, mental health and emotional wellbeing."
+        title="Manovaidya | Child Development & Mental Health Clinic in Noida"
+        description="Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns."
         keywords="Neuro-Ayurveda clinic, mental health clinic India, child development care, ADHD support, autism support, anxiety care, Ayurveda mental health, Dr. Ankush Garg, family wellness, online consultation India"
         path="/"
         schema={{
@@ -21,7 +21,7 @@ function Home() {
           "@type": "MedicalOrganization",
           "name": "Manovaidya",
           "url": "https://manovaidya.org",
-          "description": "Manovaidya offers Neuro-Ayurveda care for every life stage, blending Ayurveda with modern science to support child development, mental health and emotional wellbeing."
+          "description": "Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns."
         }}
       />
       <main>

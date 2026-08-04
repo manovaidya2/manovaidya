@@ -22,9 +22,7 @@ const reasons = [
 ];
 
 const stats = [
-  { value: "10+", label: "Years of\nExperience" },
-  { value: "50,000+", label: "Families\nSupported" },
-  { value: "20+", label: "Specialized\nPrograms" },
+  { value: "7+", label: "Years of Focused\nExperience" },
   { value: "India Wide", label: "Online & In-Person\nConsultations" },
 ];
 
@@ -162,7 +160,7 @@ function TeenMentalTrustFaqSection() {
             </div>
           </div>
 
-          <div className="grid self-center grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="grid self-center grid-cols-2 gap-3">
             {stats.map(({ value, label }) => (
               <article
                 key={value}

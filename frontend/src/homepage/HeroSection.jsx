@@ -21,11 +21,9 @@ const carePillars = [
 ];
 
 const stats = [
-  { value: "7+", label: "Years Experience", Icon: Sparkles },
-  { value: "1000+", label: "Families Guided", Icon: Users },
-  { value: "20K+", label: "Consultations", Icon: Network },
-  { value: "Across", label: "India", Icon: MapPin },
-  { value: "Online", label: "Consultations", Icon: MonitorCheck },
+  { value: "7+", label: "Years of Focused Experience", Icon: Sparkles },
+  { value: "Noida", label: "Clinic Location", Icon: MapPin },
+  { value: "Online", label: "Support Across India", Icon: MonitorCheck },
 ];
 
 function HeroSection() {
@@ -48,13 +46,12 @@ function HeroSection() {
 
         <div className="relative mx-auto w-full px-4 py-8 sm:px-8 sm:py-10 lg:min-h-[640px] lg:px-12">
           <div className="w-full max-w-[560px] pt-1 lg:pt-4">
-            <p className="text-[clamp(23px,7vw,28px)] font-medium leading-tight text-white/95">
-              Neuro-Ayurveda Care for
+            <p className="text-[clamp(24px,7vw,32px)] font-bold leading-tight text-white/95">
+              Every Mind. <span className="text-[#8b43ba]">Every Stage.</span>
             </p>
 
-            <h1 className="mt-2 text-[clamp(42px,13vw,70px)] font-bold leading-[1] tracking-tight text-white">
-              Every Mind.
-              <span className="block text-[#8b43ba]">Every Stage.</span>
+            <h1 className="mt-3 max-w-[620px] text-[clamp(36px,10vw,56px)] font-bold leading-[1.05] tracking-tight text-white">
+              Child Development and Mental Health Clinic in Noida
             </h1>
 
             <p className="mt-5 max-w-[540px] text-[clamp(16px,4.7vw,20px)] font-semibold leading-[1.55] text-violet-50/90">
@@ -96,13 +93,11 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="mt-10 grid w-full max-w-[680px] grid-cols-2 gap-4 border-t border-violet-300/12 pt-6 sm:mt-12 sm:grid-cols-3 sm:gap-5 lg:absolute lg:bottom-8 lg:left-12 lg:mt-0 lg:w-[660px] lg:max-w-none lg:grid-cols-5 lg:border-t-0 lg:pt-0">
-            {stats.map(({ value, label, Icon }, index) => (
+          <div className="mt-10 grid w-full max-w-[620px] grid-cols-1 gap-4 border-t border-violet-300/12 pt-6 min-[420px]:grid-cols-3 sm:mt-12 sm:gap-5 lg:absolute lg:bottom-8 lg:left-12 lg:mt-0 lg:w-[620px] lg:max-w-none lg:grid-cols-3 lg:border-t-0 lg:pt-0">
+            {stats.map(({ value, label, Icon }) => (
               <div
                 key={`${value}-${label}`}
-                className={`flex min-w-0 items-center gap-3 border-b border-violet-300/14 pb-3 sm:pr-4 lg:border-r lg:pb-0 lg:last:border-r-0 ${
-                  index === stats.length - 1 ? "col-span-2 justify-center sm:col-span-1 sm:justify-start" : ""
-                }`}
+                className="flex min-w-0 items-center gap-3 border-b border-violet-300/14 pb-3 min-[420px]:pr-4 lg:border-r lg:pb-0 lg:last:border-r-0"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-violet-300/25 bg-white/5 text-violet-100">
                   <Icon className="h-6 w-6" strokeWidth={1.7} />

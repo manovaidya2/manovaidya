@@ -51,12 +51,158 @@ const categories = [
   { label: "Emotional Wellbeing", count: 10, Icon: HeartHandshake },
 ];
 
+const keyTakeaways = [
+  "Understanding Adult Depression and Emotional Wellbeing",
+  "Common Emotional, Physical and Cognitive Signs",
+  "Persistent Low Mood and Loss of Interest",
+  "How Depression Affects Work, Sleep and Relationships",
+  "Main Causes of Depression in Adults",
+  "Difference Between Sadness and Depression",
+  "Why Early Understanding Matters",
+  "Neuro-Ayurveda Approach to Depression Support",
+  "Brain, Gut, Sensory and Behavioural Factors",
+  "Healthy Sleep, Movement and Daily Routines",
+  "Manovaidya's Assessment and Support Process",
+  "When to Consider a Professional Assessment",
+  "Online and In-Clinic Depression Support",
+  "Why Adults Across India Choose Manovaidya",
+  "About Dr. Ankush Garg",
+  "Helpful Adult Mental Health Resources",
+  "FAQs About Adult Depression Treatment",
+];
+
+const referenceResources = [
+  {
+    n: 1,
+    title: "World Health Organization - Depressive Disorder",
+    url: "https://www.who.int/news-room/fact-sheets/detail/depression",
+    supports: "Depression symptoms, duration, impact on daily functioning and treatment context.",
+  },
+  {
+    n: 2,
+    title: "National Institute of Mental Health - Depression",
+    url: "https://www.nimh.nih.gov/health/topics/depression",
+    supports: "Signs, symptoms, types and treatment resources for depression.",
+  },
+  {
+    n: 3,
+    title: "NIMH - Depression: What You Need to Know",
+    url: "https://www.nimh.nih.gov/health/publications/depression",
+    supports: "Adult depression symptoms including irritability, withdrawal, sleep and responsibility changes.",
+  },
+  {
+    n: 4,
+    title: "NICE Guideline NG222 - Depression in Adults",
+    url: "https://www.nice.org.uk/guidance/ng222",
+    supports: "Adult depression identification, treatment and management guidance.",
+  },
+  {
+    n: 5,
+    title: "Mayo Clinic - Depression Symptoms and Causes",
+    url: "https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007",
+    supports: "Depression symptoms, sleep, appetite, fatigue and lifestyle context.",
+  },
+  {
+    n: 6,
+    title: "Mayo Clinic - Depression and Exercise",
+    url: "https://www.mayoclinic.org/diseases-conditions/depression/in-depth/depression-and-exercise/art-20046495",
+    supports: "Physical activity and emotional wellbeing support.",
+  },
+  {
+    n: 7,
+    title: "Review - Gut Microbiota, Anxiety and Depression",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30060277/",
+    supports: "Research context for gut-brain axis and depression associations.",
+  },
+  {
+    n: 8,
+    title: "Charaka Samhita - Manas",
+    url: "https://www.carakasamhitaonline.com/index.php?title=Manas",
+    supports: "Ayurvedic conceptual understanding of mind and mental wellbeing.",
+  },
+  {
+    n: 9,
+    title: "Charaka Samhita - Sattvavajaya",
+    url: "https://www.carakasamhitaonline.com/index.php/Sattvavajaya",
+    supports: "Ayurvedic conceptual support for mind regulation and emotional balance.",
+  },
+  {
+    n: 10,
+    title: "Charaka Samhita - Indriyopakramaniya Adhyaya",
+    url: "https://www.carakasamhitaonline.com/index.php/Indriyopakramaniya_Adhyaya",
+    supports: "Ayurvedic conceptual support for regulated sensory engagement.",
+  },
+  {
+    n: 11,
+    title: "Charaka Samhita - Sadvritta",
+    url: "https://www.carakasamhitaonline.com/index.php/Sadvritta",
+    supports: "Ayurvedic conceptual support for healthy conduct, routines and lifestyle balance.",
+  },
+];
+
+const articleLinkRules = [
+  { label: "Adult Depression Treatment in India", href: "#introduction", pattern: /Adult Depression Treatment in India/i },
+  { label: "Adult Depression Treatment", href: "#understanding-depression-in-adults", pattern: /Adult Depression Treatment/i },
+  { label: "Depression Treatment in India", href: "#understanding-depression-in-adults", pattern: /Depression Treatment in India/i },
+  { label: "Depression Symptoms", href: "#common-signs-and-symptoms-of-depression", pattern: /Depression Symptoms/i },
+  { label: "Persistent Low Mood", href: "#understanding-depression-in-adults", pattern: /Persistent Low Mood/i },
+  { label: "Persistent Sadness", href: "#common-signs-and-symptoms-of-depression", pattern: /Persistent Sadness/i },
+  { label: "Loss of Interest", href: "#common-signs-and-symptoms-of-depression", pattern: /Loss of Interest/i },
+  { label: "Low Motivation", href: "#how-depression-can-affect-daily-life", pattern: /Low Motivation/i },
+  { label: "Emotional Exhaustion", href: "#how-depression-can-affect-daily-life", pattern: /Emotional Exhaustion/i },
+  { label: "Depression Assessment", href: "#how-manovaidya-supports-adults", pattern: /Depression Assessment/i },
+  { label: "Emotional Wellbeing Guidance", href: "#how-adults-can-support-their-emotional-wellbeing", pattern: /Emotional Wellbeing Guidance/i },
+  { label: "Emotional Wellbeing", href: "#how-adults-can-support-their-emotional-wellbeing", pattern: /Emotional Wellbeing/i },
+  { label: "Adult Mental Health", href: "/adult-mental-health-care/", pattern: /Adult Mental Health/i },
+  { label: "Adult Anxiety", href: "/anxiety-support-india/", pattern: /Adult Anxiety/i },
+  { label: "Stress & Burnout", href: "/stress-burnout-support/", pattern: /Stress (?:&|and) Burnout/i },
+  { label: "Sleep Problems", href: "/sleep-disorders-support/", pattern: /Sleep Problems/i },
+  { label: "OCD", href: "/ocd-support/", pattern: /OCD/i },
+  { label: "Bipolar Disorder", href: "/bipolar-support/", pattern: /Bipolar Disorder/i },
+  { label: "Neuro-Ayurveda Development System", href: "#neuro-ayurveda-approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+];
+
+const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (linkedRuleKeys.has(ruleKey)) return;
+
+      const match = remaining.match(rule.pattern);
+      if (match) candidates.push({ index: match.index, length: match[0].length, ruleKey });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+    if (!candidates.length) break;
+
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+
+  return ruleKeys;
+}
+
 const sections = [
   {
     "title": "Introduction",
     "id": "introduction",
     "lines": [
-      "Everyone experiences sadness, disappointment or emotional ups and downs at different stages of life. These feelings are a natural response to difficult situations and usually improve with time. However, when sadness, loss of interest or emotional exhaustion continues for weeks and begins affecting daily life, relationships, work or overall wellbeing, it may indicate something more than temporary low mood.",
+      "Everyone experiences sadness, disappointment or emotional ups and downs at different stages of life. These feelings are a natural response to difficult situations and usually improve with time. However, when sadness, loss of interest or emotional exhaustion continues for weeks and begins affecting daily life, relationships, work or overall wellbeing, it may indicate something more than temporary low mood. [1] [2]",
       "Many adults experiencing depression describe feeling emotionally drained, disconnected or unable to enjoy activities they once found meaningful. Some struggle with low motivation, disturbed sleep, fatigue or difficulty concentrating, while others may appear physically healthy but silently carry emotional distress every day.",
       "At Manovaidya, we understand that depression is not simply about feeling sad. Emotional wellbeing is influenced by multiple interconnected factors, including lifestyle, sleep, emotional health, daily routines and overall mind-body balance.",
       "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows the Neuro-Ayurveda Development System to help individuals better understand depression, emotional wellbeing and the factors influencing long-term mental health.",
@@ -74,7 +220,7 @@ const sections = [
     "id": "understanding-depression-in-adults",
     "lines": [
       "Depression is more than simply feeling sad after a difficult day or stressful event.",
-      "While sadness is a normal human emotion that usually improves with time, depression may involve persistent emotional, physical and behavioural changes that continue for weeks or longer and begin affecting everyday life.",
+      "While sadness is a normal human emotion that usually improves with time, depression may involve persistent emotional, physical and behavioural changes that continue for weeks or longer and begin affecting everyday life. [1] [3]",
       "Many adults searching for Depression Treatment in India, Depression Symptoms, or Help for Persistent Low Mood are looking for answers because they have noticed ongoing emotional changes that are affecting their work, family life or relationships.",
       "Depression may influence the way a person:",
       "Thinks",
@@ -125,14 +271,14 @@ const sections = [
       "Loss of interest in hobbies",
       "Declining work performance",
       "Spending excessive time alone",
-      "Experiencing some of these symptoms occasionally does not necessarily mean someone has depression. However, if these symptoms persist for several weeks and begin affecting daily life, relationships or work, seeking professional guidance may be beneficial."
+      "Experiencing some of these symptoms occasionally does not necessarily mean someone has depression. However, if these symptoms persist for several weeks and begin affecting daily life, relationships or work, seeking professional guidance may be beneficial. [1] [2] [4]"
     ]
   },
   {
     "title": "Why Depression Develops",
     "id": "why-depression-develops",
     "lines": [
-      "Depression rarely develops because of one single reason.",
+      "Depression rarely develops because of one single reason. [1] [5]",
       "In many situations, it results from a combination of emotional, lifestyle, environmental and biological factors.",
       "Understanding these influences often helps individuals gain a broader perspective on their emotional wellbeing.",
       "Chronic Stress",
@@ -144,7 +290,7 @@ const sections = [
       "Financial & Career Pressure",
       "Job insecurity, financial difficulties or professional challenges may increase emotional stress and reduce overall wellbeing.",
       "Lifestyle Habits",
-      "Irregular sleep, poor daily routines, limited physical activity and ongoing lifestyle imbalance may influence emotional wellbeing.",
+      "Irregular sleep, poor daily routines, limited physical activity and ongoing lifestyle imbalance may influence emotional wellbeing. [5] [6]",
       "Major Life Changes",
       "Events such as loss of a loved one, relocation, serious illness, divorce or significant personal changes may increase emotional vulnerability.",
       "Biological & Individual Factors",
@@ -166,7 +312,7 @@ const sections = [
     "title": "How Depression Can Affect Daily Life",
     "id": "how-depression-can-affect-daily-life",
     "lines": [
-      "Depression can influence much more than mood. It may affect emotional wellbeing, relationships, work performance, physical health and overall quality of life.",
+      "Depression can influence much more than mood. It may affect emotional wellbeing, relationships, work performance, physical health and overall quality of life. [1] [3]",
       "Many people continue managing their daily responsibilities while silently struggling with emotional exhaustion, low motivation or persistent sadness. Because these changes often develop gradually, they may go unnoticed until they begin affecting multiple areas of life.",
       "Understanding how depression influences daily functioning is an important step towards recognizing when additional support may be beneficial.",
       "Emotional Wellbeing",
@@ -234,7 +380,7 @@ const sections = [
     "lines": [
       "At Manovaidya, depression is understood through a broader and more holistic perspective.",
       "Rather than focusing only on symptoms, we aim to understand the interconnected factors influencing emotional wellbeing, lifestyle, behaviour and overall health.",
-      "The Neuro-Ayurveda Development System helps individuals better understand depression through five interconnected pillars.",
+      "The Neuro-Ayurveda Development System helps individuals better understand depression through five interconnected pillars. Ayurvedic concepts around Manas, Sattvavajaya, regulated sensory engagement and Sadvritta provide traditional conceptual support for mind regulation, healthy conduct and emotional balance. [8] [9] [10] [11]",
       "Brain Nourishment System",
       "Healthy emotional wellbeing depends on healthy brain function.",
       "The Brain Nourishment System focuses on understanding factors that may influence:",
@@ -246,7 +392,7 @@ const sections = [
       "Confidence",
       "Supporting brain nourishment may help individuals better understand emotional balance and daily functioning.",
       "Gut Response System",
-      "The relationship between gut health and emotional wellbeing continues to receive increasing scientific attention.",
+      "The relationship between gut health and emotional wellbeing continues to receive increasing scientific attention. [7]",
       "Many adults experiencing depression also report:",
       "Appetite changes",
       "Digestive discomfort",
@@ -293,7 +439,7 @@ const sections = [
       "Maintain Healthy Sleep Habits",
       "Consistent sleep supports emotional balance, concentration and overall wellbeing.",
       "Stay Physically Active",
-      "Regular movement and physical activity support both physical and emotional health.",
+      "Regular movement and physical activity support both physical and emotional health. [6]",
       "Build Structured Daily Routines",
       "Simple daily routines provide stability and may help improve motivation and emotional balance.",
       "Stay Connected",
@@ -331,7 +477,7 @@ const sections = [
       "Low motivation affecting work or relationships",
       "Feelings of hopelessness",
       "Emotional difficulties interfering with daily life",
-      "A structured assessment can help you better understand the factors influencing your emotional wellbeing and provide a personalised roadmap towards long-term support and recovery.",
+      "A structured assessment can help you better understand the factors influencing your emotional wellbeing and provide a personalised roadmap towards long-term support and recovery. [2] [4]",
       "Our goal is to help individuals move from emotional exhaustion and persistent low mood towards greater emotional balance, confidence, resilience and overall wellbeing."
     ]
   },
@@ -503,6 +649,93 @@ const physicianSchema = {
   areaServed: ["Delhi", "Noida", "Gurgaon", "Faridabad", "Ghaziabad", "India"],
 };
 
+const CitationClickContext = React.createContext({
+  onCitationClick: null,
+  ruleKeysByText: new Map(),
+});
+
+function Citation({ id, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={() => onClick?.(id)}
+      className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+    >
+      [{id}]
+    </button>
+  );
+}
+
+function CitationText({ text, allowedRuleKeys, onCitationClick }) {
+  const linkContext = React.useContext(CitationClickContext);
+  const citationHandler = onCitationClick || linkContext?.onCitationClick;
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) {
+      candidates.push({
+        index: citationMatch.index,
+        text: citationMatch[0],
+        citationId: citationMatch[1],
+        type: "citation",
+      });
+    }
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) {
+        candidates.push({
+          index: keywordMatch.index,
+          text: keywordMatch[0],
+          rule,
+          ruleKey,
+          type: "keyword",
+        });
+      }
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+
+    if (next.type === "citation") {
+      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, index) =>
+    typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part
+  );
+}
+
 const subheadingLines = new Set([
   "Emotional Symptoms",
   "Physical Symptoms",
@@ -631,15 +864,67 @@ function RelatedPagesCard() {
   );
 }
 
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Depression Treatment in India</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeaways.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">Join our adult mental wellness newsletter for depression, mood, sleep and emotional wellbeing insights.</p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#eadff1] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">Resources</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Modern science and Ayurvedic reference resources used for this page.</p>
+      <div className="mt-5 space-y-4">
+        {referenceResources.map((reference) => (
+          <article key={reference.n} id={`reference-${reference.n}`} className="scroll-mt-32 rounded-lg border border-[#eadff1] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#7835A4] underline underline-offset-2">{reference.url}</a>
+            <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">Supports: {reference.supports}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function isCheckLine(line) {
-  return line.startsWith("?") || line.startsWith("??") || line.startsWith("??") || line.startsWith("??");
+  return /^[^\w\d[]+/.test(line);
 }
 
 function PlainLine({ line }) {
-  if (isCheckLine(line)) {
-    return <p className="mt-2 flex gap-2 text-[13.5px] font-bold leading-6 text-[#51465a]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" /><span>{line}</span></p>;
+  const { ruleKeysByText, onCitationClick } = React.useContext(CitationClickContext);
+  const isMarkedLine = /^[^\w\d[]+/.test(line);
+  const cleanLine = isMarkedLine ? line.replace(/^[^\w\d[]+\s*/, "") : line;
+
+  if (isMarkedLine) {
+    return <p className="mt-2 flex gap-2 text-[13.5px] font-bold leading-6 text-[#51465a]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" /><span><CitationText text={cleanLine} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByText.get(line)} /></span></p>;
   }
-  return <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{line}</p>;
+  return <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]"><CitationText text={cleanLine} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByText.get(line)} /></p>;
 }
 
 function isShortListLine(line) {
@@ -647,16 +932,19 @@ function isShortListLine(line) {
 }
 
 function BulletListCard({ items, columns = true }) {
+  const { ruleKeysByText, onCitationClick } = React.useContext(CitationClickContext);
+
   return (
     <div className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
       <ul className={`space-y-2 ${columns ? "sm:columns-2" : ""}`}>
-        {items.map((item) => <li key={item} className="flex break-inside-avoid gap-2 text-[13px] font-bold leading-6 text-[#51465a]"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" />{item}</li>)}
+        {items.map((item) => <li key={item} className="flex break-inside-avoid gap-2 text-[13px] font-bold leading-6 text-[#51465a]"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" /><CitationText text={item.replace(/^[^\w\d[]+\s*/, "")} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByText.get(item)} /></li>)}
       </ul>
     </div>
   );
 }
 
 function FocusGridCard({ title, items }) {
+  const { ruleKeysByText, onCitationClick } = React.useContext(CitationClickContext);
   const icons = [CloudRain, HeartHandshake, Activity, Sparkles, ShieldCheck, Brain];
   return (
     <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
@@ -664,8 +952,8 @@ function FocusGridCard({ title, items }) {
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item, index) => {
           const Icon = icons[index % icons.length];
-          const label = item.replace(/^[???????????]+s*/, "");
-          return <li key={item} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]"><span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-7 w-7" strokeWidth={1.8} /></span><span>{label}</span></li>;
+          const label = item.replace(/^[^\w\d[]+\s*/, "");
+          return <li key={item} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]"><span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-7 w-7" strokeWidth={1.8} /></span><span><CitationText text={label} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByText.get(item)} /></span></li>;
         })}
       </ul>
     </div>
@@ -764,6 +1052,49 @@ function ContentSection({ section }) {
 function AdultDepressionSupportIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
+  const [showResources, setShowResources] = React.useState(false);
+  const pageUrl = "https://manovaidya.org/adult-depression-support/";
+  const pageTitle = "Adult Depression Treatment in India | Manovaidya";
+  const encodedPageUrl = encodeURIComponent(pageUrl);
+  const encodedPageTitle = encodeURIComponent(pageTitle);
+  const articleShareLinks = [
+    { label: "f", href: `https://www.facebook.com/sharer/sharer.php?u=${encodedPageUrl}`, title: "Share on Facebook" },
+    { label: "x", href: `https://twitter.com/intent/tweet?url=${encodedPageUrl}&text=${encodedPageTitle}`, title: "Share on X" },
+    { label: "in", href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedPageUrl}&title=${encodedPageTitle}`, title: "Share on LinkedIn" },
+    { label: "wa", href: `https://api.whatsapp.com/send?text=${encodedPageTitle}%20${encodedPageUrl}`, title: "Share on WhatsApp" },
+  ];
+
+  const handleCitationClick = React.useCallback((referenceId) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      document
+        .getElementById(`reference-${referenceId}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
+
+  const ruleKeysByText = React.useMemo(() => {
+    const ruleKeys = new Map();
+    const linkedRuleKeys = new Set();
+    const collect = (line) => {
+      if (!line || subheadingLines.has(line)) return;
+      const cleanLine = line.replace(/^[^\w\d[]+\s*/, "");
+      const lineRuleKeys = getArticleLinkRuleKeysForText(cleanLine, linkedRuleKeys);
+      if (lineRuleKeys.size) ruleKeys.set(line, lineRuleKeys);
+    };
+
+    sections.forEach((section) => section.lines.forEach(collect));
+    faqs.forEach((faq) => collect(faq.answer));
+    trustItems.forEach(collect);
+    internalLinks.forEach((link) => collect(link.text));
+
+    return ruleKeys;
+  }, []);
+
+  const linkRenderContext = React.useMemo(() => ({
+    onCitationClick: handleCitationClick,
+    ruleKeysByText,
+  }), [handleCitationClick, ruleKeysByText]);
 
   React.useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -803,7 +1134,8 @@ function AdultDepressionSupportIndiaPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
+    <CitationClickContext.Provider value={linkRenderContext}>
+      <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
         title="Adult Depression Treatment in India | Depression Symptoms, Low Mood & Emotional Wellbeing | Manovaidya"
         description="Looking for Adult Depression Treatment in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya."
@@ -811,20 +1143,24 @@ function AdultDepressionSupportIndiaPage() {
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
-          <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3"><div className="relative z-10"><nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>&gt;</span><a href="/adult-mental-health-care/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span><span className="text-[#4b345d]">Adult Depression Treatment</span></nav><p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p><h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Depression Treatment in India</h1><p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Depression, Persistent Low Mood & Emotional Wellbeing</p><div className="mt-6 flex flex-wrap items-center gap-3"><a href="#book-a-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a><a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a></div><div className="mt-6 flex flex-wrap items-center gap-5"><div className="flex items-center gap-3"><img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" /><div><p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p><p className="text-[12px] font-bold text-[#75677d]">Mental Health Specialist</p></div></div><div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]"><span>Share:</span>{["f", "x", "in", "wa"].map((label) => <a key={label} href="#share" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label="Share article">{label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}</a>)}</div></div></div><figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none"><div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex"><Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System</div><div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Depression Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div></figure></div>
+          <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3"><div className="relative z-10"><nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>&gt;</span><a href="/adult-mental-health-care/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span><span className="text-[#4b345d]">Adult Depression Treatment</span></nav><p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p><h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Depression Treatment in India</h1><p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Depression, Persistent Low Mood & Emotional Wellbeing</p><div className="mt-6 flex flex-wrap items-center gap-3"><a href="#book-a-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a><a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a></div><div className="mt-6 flex flex-wrap items-center gap-5"><div className="flex items-center gap-3"><img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" /><div><p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p><p className="text-[12px] font-bold text-[#75677d]">Mental Health Specialist</p></div></div><div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]"><span>Share:</span>{articleShareLinks.map(({ label, href, title }) => <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>{label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}</a>)}</div></div></div><figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none"><div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex"><Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System</div><div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Depression Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div></figure></div>
+
+          <KeyTakeawaysBlock />
 
           {sections.map((section) => <ContentSection key={section.id} section={section} />)}
 
-          <section id="trust" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5"><h2 className="text-[20px] font-black text-[#17111f]">Why Trust Manovaidya?</h2><div className="mt-4 grid gap-3 sm:grid-cols-2">{trustItems.map((item) => <div key={item} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />{item}</div>)}</div></section>
+          <section id="trust" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5"><h2 className="text-[20px] font-black text-[#17111f]">Why Trust Manovaidya?</h2><div className="mt-4 grid gap-3 sm:grid-cols-2">{trustItems.map((item) => <div key={item} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" /><CitationText text={item} allowedRuleKeys={ruleKeysByText.get(item)} /></div>)}</div></section>
           <section id="internal-links" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5"><h2 className="text-[18px] font-black text-[#17111f]">Helpful Adult Mental Health Links</h2><div className="mt-4 grid gap-3 sm:grid-cols-2">{internalLinks.map((link) => <a key={link.href} href={link.href} className="flex items-center gap-2 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline"><ArrowRight className="h-4 w-4" />{link.text}</a>)}</div></section>
-          <section id="faqs" className="mt-9"><h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2><div className="mt-5 space-y-3">{faqs.map((faq, index) => <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]"><button onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === index}><span className="text-[14px] font-black text-[#21142d]">{faq.question}</span><span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform ${openFaq === index ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"}`}><ChevronDown className="h-4 w-4" /></span></button>{openFaq === index && <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4"><p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">{faq.answer}</p></div>}</div>)}</div></section>
+          <section id="faqs" className="mt-9"><h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2><div className="mt-5 space-y-3">{faqs.map((faq, index) => <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]"><button onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === index}><span className="text-[14px] font-black text-[#21142d]">{faq.question}</span><span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform ${openFaq === index ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"}`}><ChevronDown className="h-4 w-4" /></span></button>{openFaq === index && <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4"><p className="text-[13.5px] font-semibold leading-6 text-[#51465a]"><CitationText text={faq.answer} allowedRuleKeys={ruleKeysByText.get(faq.answer)} /></p></div>}</div>)}</div></section>
+
+          <div className="mt-8"><button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references"><BookOpen className="h-4 w-4" />Resources<ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} /></button>{showResources && <MedicalReferencesBlock />}</div>
         </article>
-        <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5"><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Search</h2><label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3"><input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" /><Search className="h-4 w-4 text-[#7835A4]" /></label></SidebarCard><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">On this page</h2><nav className="mt-5 space-y-3.5">{pageLinks.map(({ label, id }) => <a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}><span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcF]"}`} />{label}</a>)}</nav></SidebarCard><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Categories</h2><div className="mt-4 space-y-3">{categories.map(({ label, count, Icon }) => <a key={label} href="#categories" className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span><span>{count}</span></a>)}</div></SidebarCard><RelatedAdultPagesCard /><SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation-sidebar"><CalendarCheck className="h-9 w-9 text-[#7835A4]" /><h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2><p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get personalized depression and emotional wellbeing guidance from our experts.</p><a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a><p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p></SidebarCard></div>
+        <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5"><SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]"><a href="/about/doctor" className="flex items-start gap-3"><img src={doctorImage} alt="Dr Ankush Garg Manovaidya adult depression and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" /><div><p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Adult Mental Health, Depression, Anxiety, Stress, Teen Wellness, Autism, ADHD and Child Development</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p></div></a><div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span><p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p></div></SidebarCard><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Search</h2><label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3"><input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" /><Search className="h-4 w-4 text-[#7835A4]" /></label></SidebarCard><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">On this page</h2><nav className="mt-5 space-y-3.5">{pageLinks.map(({ label, id }) => <a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}><span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcF]"}`} />{label}</a>)}</nav></SidebarCard><SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Categories</h2><div className="mt-4 space-y-3">{categories.map(({ label, count, Icon }) => <a key={label} href="#categories" className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span><span>{count}</span></a>)}</div></SidebarCard><RelatedAdultPagesCard /><SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation-sidebar"><CalendarCheck className="h-9 w-9 text-[#7835A4]" /><h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2><p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get personalized depression and emotional wellbeing guidance from our experts.</p><a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a><p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p></SidebarCard></div>
       </section>
       <section className="border-y border-[#eadff1] bg-[#fbf9fd]"><div className="mx-auto grid max-w-[1440px] gap-5 px-4 py-6 sm:px-6 lg:grid-cols-[1fr_460px] lg:items-center lg:px-8"><div className="flex items-center gap-4"><span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-white text-[#7835A4] shadow-sm"><Mail className="h-8 w-8" /></span><div><h2 className="text-[18px] font-black text-[#21142d]">Stay Updated with Insights That Matter</h2><p className="mt-1 text-[13px] font-bold text-[#5f5367]">Subscribe to expert articles, adult mental wellness tips and Manovaidya updates.</p></div></div><form className="flex gap-3"><input type="email" placeholder="Enter your email address" className="min-w-0 flex-1 rounded-md border border-[#eadff1] px-4 text-[12px] font-bold outline-none focus:border-[#7835A4]" /><button className="h-11 rounded-md bg-[#7835A4] px-6 text-[12px] font-black text-white transition hover:bg-[#632b86]">Subscribe</button></form></div></section>
-    </main>
+      </main>
+    </CitationClickContext.Provider>
   );
 }
 
 export default AdultDepressionSupportIndiaPage;
-

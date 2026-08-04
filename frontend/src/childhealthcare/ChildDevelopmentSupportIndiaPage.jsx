@@ -233,6 +233,71 @@ const floatingShareLinks = [
   },
 ];
 
+const articleLinkRules = [
+  { label: "Child Health Care", href: "/child-health-care", pattern: /Child Health Care/i },
+  { label: "Child Development Treatment", href: "/child-development-support-india", pattern: /Child Development Treatment/i },
+  { label: "Child Development Support", href: "/child-development-support-india", pattern: /Child Development Support/i },
+  { label: "Developmental Assessment", href: "#assessment", pattern: /Developmental Assessment/i },
+  { label: "Developmental Screening", href: "#assessment", pattern: /Developmental screening/i },
+  { label: "Child Development Assessment", href: "#assessment", pattern: /Child Development Assessment/i },
+  { label: "Parent Guidance", href: "#parent-guidance", pattern: /Parent Guidance/i },
+  { label: "Family Support", href: "#parent-guidance", pattern: /Family Support/i },
+  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india", pattern: /Autism Spectrum Disorder(?: \(ASD\))?/i },
+  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+  { label: "Speech and Language Delays", href: "/speech-delay-support-india", pattern: /Speech (?:&|and) Language Delays/i },
+  { label: "Speech Delay", href: "/speech-delay-support-india", pattern: /Speech Delay/i },
+  { label: "Communication Development", href: "/speech-delay-support-india", pattern: /Communication Development/i },
+  { label: "Learning and Attention Difficulties", href: "/learning-attention-difficulties-india", pattern: /Learning (?:&|and) Attention Difficulties/i },
+  { label: "Learning Skills", href: "/learning-attention-difficulties-india", pattern: /Learning Skills/i },
+  { label: "Attention and Concentration", href: "/learning-attention-difficulties-india", pattern: /Attention (?:&|and) Concentration/i },
+  { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioural Challenges/i },
+  { label: "Behaviour Support", href: "/behavioural-concerns-children-india", pattern: /Behaviour Support/i },
+  { label: "Sensory Processing", href: "#neuro-ayurveda-system", pattern: /Sensory Processing/i },
+  { label: "Sensory Integration System", href: "/about/approach", pattern: /Sensory Integration System/i },
+  { label: "Brain Nourishment System", href: "/about/approach", pattern: /Brain Nourishment System/i },
+  { label: "Gut Response System", href: "/about/approach", pattern: /Gut Response System/i },
+  { label: "Neural Network System", href: "/about/approach", pattern: /Neural Network System/i },
+  { label: "Behaviour Guidance System", href: "/about/approach", pattern: /Behaviour Guidance System/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development (?:Support )?System/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Book a Consultation", href: "#book-consultation", pattern: /Book a (?:Child )?Consultation/i },
+];
+
+const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (linkedRuleKeys.has(ruleKey)) return;
+
+      const match = remaining.match(rule.pattern);
+      if (match) candidates.push({ index: match.index, length: match[0].length, ruleKey });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+    if (!candidates.length) break;
+
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+
+  return ruleKeys;
+}
+
 const manovaidyaSocialLinks = [
   { label: "Facebook", href: "https://www.facebook.com/manovaidya", Icon: () => <span className="text-[11px] font-black">f</span> },
   { label: "Instagram", href: "https://www.instagram.com/manovaidya/", Icon: () => <span className="text-[11px] font-black">ig</span> },
@@ -409,17 +474,79 @@ function KeyTakeawaysBlock() {
   );
 }
 
-function renderWithCitations(text, onCitationClick) {
-  const parts = text.split(/(\[\d+\])/g);
-  return parts.map((part, index) => {
-    const match = part.match(/^\[(\d+)\]$/);
-    if (!match) return part;
-    return (
-      <button key={`citation-${index}-${match[1]}`} type="button" onClick={() => onCitationClick(match[1])} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#7835A4] underline decoration-[#c9addb] underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]" aria-label={`Open resource ${match[1]}`}>
-        {part}
-      </button>
-    );
-  });
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) {
+      candidates.push({
+        index: citationMatch.index,
+        text: citationMatch[0],
+        citationId: citationMatch[1],
+        type: "citation",
+      });
+    }
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) {
+        candidates.push({
+          index: keywordMatch.index,
+          text: keywordMatch[0],
+          rule,
+          ruleKey,
+          type: "keyword",
+        });
+      }
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+
+    if (absoluteIndex > cursor) {
+      parts.push(source.slice(cursor, absoluteIndex));
+    }
+
+    if (next.type === "citation") {
+      parts.push(
+        <button key={`${next.text}-${parts.length}`} type="button" onClick={() => onCitationClick(next.citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#7835A4] underline decoration-[#c9addb] underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]" aria-label={`Open resource ${next.citationId}`}>
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, index) =>
+    typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part
+  );
 }
 
 function IconGrid({ items, columns = "sm:grid-cols-2 lg:grid-cols-4" }) {
@@ -635,7 +762,7 @@ function buildFaqsFromLines(lines) {
   return faqs;
 }
 
-function FaqAccordion({ faqs, openFaq, setOpenFaq, onCitationClick }) {
+function FaqAccordion({ faqs, openFaq, setOpenFaq, onCitationClick, ruleKeysByLine }) {
   return (
     <section id="faqs" className="scroll-mt-28 pt-4">
       <div className="mb-4 flex items-center gap-4">
@@ -662,7 +789,11 @@ function FaqAccordion({ faqs, openFaq, setOpenFaq, onCitationClick }) {
               <div className="space-y-3 px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
                 {faq.answer.map((answerLine, answerIndex) => (
                   <p key={`${faq.question}-${answerIndex}`}>
-                    {renderWithCitations(answerLine, onCitationClick)}
+                    <ArticleLinkedText
+                      text={answerLine}
+                      onCitationClick={onCitationClick}
+                      allowedRuleKeys={ruleKeysByLine.get(`faq-${index}-${answerIndex}`)}
+                    />
                   </p>
                 ))}
               </div>
@@ -681,6 +812,35 @@ function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
   const faqStartIndex = lines.indexOf("Frequently Asked Questions (FAQs)");
   const faqEndIndex = lines.indexOf("Book a Consultation");
   const parsedFaqs = buildFaqsFromLines(lines);
+  const ruleKeysByLine = new Map();
+  const linkedRuleKeys = new Set();
+
+  const collectLineLinks = (line, index) => {
+    const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+
+    if (faqMode || headings.has(line) || line === "Book Now") return;
+
+    const next = lines[index + 1] || "";
+    const isShortTitle = line.length < 72 && !/[.]/.test(line) && next && !headings.has(line) && !line.startsWith("[") && !line.startsWith("http") && line !== "Modern Science" && line !== "Ayurvedic References" && line !== "May include:" && line !== "Support for:" && line !== "Factors which can affect child development include:" && line !== "Families are given advice on:";
+
+    if (isShortTitle || line === "May include:" || line === "Support for:" || line === "Factors which can affect child development include:" || line === "Families are given advice on:") return;
+
+    const ruleKeys = getArticleLinkRuleKeysForText(line, linkedRuleKeys);
+    if (ruleKeys.size) {
+      ruleKeysByLine.set(`line-${index}`, ruleKeys);
+    }
+  };
+
+  lines.forEach((line, index) => collectLineLinks(line, index));
+
+  parsedFaqs.forEach((faq, faqIndex) => {
+    faq.answer.forEach((answerLine, answerIndex) => {
+      const ruleKeys = getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys);
+      if (ruleKeys.size) {
+        ruleKeysByLine.set(`faq-${faqIndex}-${answerIndex}`, ruleKeys);
+      }
+    });
+  });
 
   return (
     <div className="mt-8 space-y-4">
@@ -696,6 +856,7 @@ function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
               openFaq={openFaq}
               setOpenFaq={setOpenFaq}
               onCitationClick={onCitationClick}
+              ruleKeysByLine={ruleKeysByLine}
             />
           );
         }
@@ -707,7 +868,9 @@ function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
         if (headings.has(line)) {
           return (
             <section key={`section-${index}`} id={id} className="scroll-mt-28 pt-4">
-              <h2 className="text-[20px] font-black leading-tight text-[#17111f]">{renderWithCitations(line, onCitationClick)}</h2>
+              <h2 className="text-[20px] font-black leading-tight text-[#17111f]">
+                <ArticleLinkedText text={line} onCitationClick={onCitationClick} />
+              </h2>
               <VisualBlock heading={line} />
             </section>
           );
@@ -725,20 +888,28 @@ function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
         const isShortTitle = line.length < 72 && !/[.]/.test(line) && next && !headings.has(line) && !line.startsWith("[") && !line.startsWith("http") && line !== "Modern Science" && line !== "Ayurvedic References" && line !== "May include:" && line !== "Support for:" && line !== "Factors which can affect child development include:" && line !== "Families are given advice on:";
 
         if (line === "May include:" || line === "Support for:" || line === "Factors which can affect child development include:" || line === "Families are given advice on:") {
-          return <p key={`lead-${index}`} className="pt-2 text-[13px] font-black leading-6 text-[#3b2e45]">{renderWithCitations(line, onCitationClick)}</p>;
+          return (
+            <p key={`lead-${index}`} className="pt-2 text-[13px] font-black leading-6 text-[#3b2e45]">
+              <ArticleLinkedText text={line} onCitationClick={onCitationClick} />
+            </p>
+          );
         }
 
         if (isShortTitle) {
           return (
             <h3 key={`h3-${index}`} className={`pt-3 text-[15px] font-black leading-6 ${faqMode ? "text-[#7835A4]" : "text-[#21142d]"}`}>
-              {renderWithCitations(line, onCitationClick)}
+              <ArticleLinkedText text={line} onCitationClick={onCitationClick} />
             </h3>
           );
         }
 
         return (
           <p key={`p-${index}`} className="text-[14px] font-semibold leading-7 text-[#51465a]">
-            {renderWithCitations(line, onCitationClick)}
+            <ArticleLinkedText
+              text={line}
+              onCitationClick={onCitationClick}
+              allowedRuleKeys={ruleKeysByLine.get(`line-${index}`)}
+            />
           </p>
         );
       })}

@@ -30,9 +30,7 @@ const concerns = [
 ];
 
 const stats = [
-  { value: "10+", label: "Years of\nExperience", Icon: UsersRound },
-  { value: "50,000+", label: "Teenagers & Families\nSupported", Icon: UsersRound },
-  { value: "20+", label: "Specialized\nPrograms", Icon: Sparkles },
+  { value: "7+", label: "Years of Focused\nExperience", Icon: UsersRound },
   { value: "India Wide", label: "Online & In-Person\nConsultations", Icon: MapPin },
 ];
 
@@ -113,7 +111,7 @@ function TeenMentalWellnessHeroSection() {
             </div>
           </div>
 
-          <div className="mt-7 grid overflow-hidden rounded-xl bg-white/96 shadow-[0_12px_30px_rgba(45,31,87,0.13)] ring-1 ring-[#e4dfed] backdrop-blur sm:grid-cols-2 lg:grid-cols-4 xl:absolute xl:-bottom-1 xl:right-10 xl:mt-0 xl:w-[650px]">
+          <div className="mt-7 grid overflow-hidden rounded-xl bg-white/96 shadow-[0_12px_30px_rgba(45,31,87,0.13)] ring-1 ring-[#e4dfed] backdrop-blur sm:grid-cols-2 xl:absolute xl:-bottom-1 xl:right-10 xl:mt-0 xl:w-[420px]">
             {stats.map(({ value, label, Icon }, index) => (
               <article
                 key={value}

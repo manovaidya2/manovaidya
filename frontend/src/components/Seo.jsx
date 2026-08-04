@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 export const SITE_URL = "https://manovaidya.org";
-export const DEFAULT_TITLE = "Best Neuro-Ayurveda Mental Health Clinic in India | Manovaidya";
+export const DEFAULT_TITLE = "Manovaidya | Child Development & Mental Health Clinic in Noida";
 export const DEFAULT_DESCRIPTION =
-  "Discover expert Neuro-Ayurveda care for anxiety, stress, depression, OCD, ADHD & autism with personalized treatment at Manovaidya.";
+  "Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns.";
 const DEFAULT_IMAGE = `${SITE_URL}/favicon%20(4).png`;
 
 const normalizePath = (pathname) => {
@@ -21,31 +21,33 @@ function Seo({ title, description, path, image, noindex = false, keywords, schem
   const resolvedImage = image || DEFAULT_IMAGE;
 
   return (
-    <Helmet>
-      <title>{resolvedTitle}</title>
-      <meta name="description" content={resolvedDescription} />
-      {keywords ? <meta name="keywords" content={keywords} /> : null}
-      <link rel="canonical" href={canonicalUrl} />
-      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+    <React.Fragment>
+      <Helmet>
+        <title>{resolvedTitle}</title>
+        <meta name="description" content={resolvedDescription} />
+        {keywords ? <meta name="keywords" content={keywords} /> : null}
+        <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Manovaidya" />
-      <meta property="og:title" content={resolvedTitle} />
-      <meta property="og:description" content={resolvedDescription} />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={resolvedImage} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Manovaidya" />
+        <meta property="og:title" content={resolvedTitle} />
+        <meta property="og:description" content={resolvedDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:image" content={resolvedImage} />
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={resolvedTitle} />
-      <meta name="twitter:description" content={resolvedDescription} />
-      <meta name="twitter:image" content={resolvedImage} />
-      
-      {schema && (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      )}
-    </Helmet>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={resolvedTitle} />
+        <meta name="twitter:description" content={resolvedDescription} />
+        <meta name="twitter:image" content={resolvedImage} />
+        
+        {schema && (
+          <script type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        )}
+      </Helmet>
+    </React.Fragment>
   );
 }
 

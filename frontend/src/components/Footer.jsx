@@ -14,7 +14,7 @@ const quickLinks = [
   { label: "Blogs", path: "/blog" },
   { label: "Conditions", path: "/child-health-care" },
   { label: "Case Studies", path: "/case-studies" },
-  { label: "Best Ayurvedic Doctor", path: "/about/doctor" },
+  { label: "Ayurvedic Doctor", path: "/about/doctor" },
 ];
 
 const programs = [
@@ -196,5 +196,4 @@ function Footer() {
 }
 
 export default Footer;
-
 

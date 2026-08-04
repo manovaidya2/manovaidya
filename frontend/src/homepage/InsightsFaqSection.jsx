@@ -19,6 +19,22 @@ const fallbackImages = [
   nutritionImage,
 ];
 
+const publicTestContentPattern = /(?:\btesting\s+blog\b|\btest\s+blog\b|\bdummy\b|\bdemo\b|lorem\s+ipsum)/i;
+
+const hasPublicTestContent = (blog) =>
+  publicTestContentPattern.test(
+    [
+      blog?.title,
+      blog?.slug,
+      blog?.shortDescription,
+      blog?.metaTitle,
+      blog?.metaDescription,
+      blog?.content,
+    ]
+      .filter(Boolean)
+      .join(" ")
+  );
+
 const fallbackArticles = [
   {
     title: "Understanding Autism & How to Support",
@@ -118,12 +134,13 @@ function InsightsFaqSection() {
         const blogList = Array.isArray(response.data?.data) ? response.data.data : [];
         const publishedBlogs = blogList
           .filter((blog) => !blog.status || blog.status === "published")
+          .filter((blog) => !hasPublicTestContent(blog))
           .slice(0, 6);
 
         if (isMounted) {
           setBlogs(publishedBlogs);
         }
-      } catch (error) {
+      } catch {
         if (isMounted) {
           setBlogs([]);
         }
@@ -151,22 +168,23 @@ function InsightsFaqSection() {
   }, [blogs]);
 
   return (
-    <section className="bg-[#fbfaff] px-4 py-10 sm:px-6 lg:px-10">
-      <div className="mx-auto w-full">
-        <div className="grid items-start gap-5 xl:grid-cols-[1.08fr_0.92fr]">
-          <div className="rounded-2xl border border-[#8B43BA]/15 bg-white p-4 shadow-[0_14px_34px_rgba(139,67,186,0.08)] sm:p-5">
-            <div className="flex items-center justify-between gap-4">
-              <h2 className="text-[clamp(24px,2.1vw,34px)] font-bold leading-tight text-[#8B43BA]">
-                Expert Insights & Resources.
-              </h2>
-              <Link
-                to="/blog"
-                className="hidden items-center gap-2 text-[13px] font-black text-[#8B43BA] sm:inline-flex"
-              >
-                View All Articles
-                <ArrowRight className="h-4 w-4" strokeWidth={2.3} />
-              </Link>
-            </div>
+    <React.Fragment>
+      <section className="bg-[#fbfaff] px-4 py-10 sm:px-6 lg:px-10">
+        <div className="mx-auto w-full">
+          <div className="grid items-start gap-5 xl:grid-cols-[1.08fr_0.92fr]">
+            <div className="rounded-2xl border border-[#8B43BA]/15 bg-white p-4 shadow-[0_14px_34px_rgba(139,67,186,0.08)] sm:p-5">
+              <div className="flex items-center justify-between gap-4">
+                <h2 className="text-[clamp(24px,2.1vw,34px)] font-bold leading-tight text-[#8B43BA]">
+                  Expert Insights & Resources.
+                </h2>
+                <Link
+                  to="/blog"
+                  className="hidden items-center gap-2 text-[13px] font-black text-[#8B43BA] sm:inline-flex"
+                >
+                  View All Articles
+                  <ArrowRight className="h-4 w-4" strokeWidth={2.3} />
+                </Link>
+              </div>
 
             <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {articles.slice(0, 6).map(({ title, image, alt, href }) => (
@@ -272,8 +290,9 @@ function InsightsFaqSection() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </React.Fragment>
   );
 }
 
