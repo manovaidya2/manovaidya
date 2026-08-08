@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
+import FloatingShareBar from "./components/FloatingShareBar";
 import Header from "./components/Header";
 import ApproachPage from "./pages/ApproachPage";
 import AboutDoctorPage from "./pages/AboutDoctorPage";
@@ -93,6 +94,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
+        <FloatingShareBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutDoctorPage />} />

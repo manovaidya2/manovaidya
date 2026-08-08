@@ -11,7 +11,7 @@ import {
 const reasons = [
   {
     title: "Structured Assessment",
-    description: "In-depth evaluation to identify root causes.",
+    description: "In-depth evaluation to understand individual needs.",
     Icon: ClipboardCheck,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA] ring-[#8B43BA]/20",
   },
@@ -23,7 +23,7 @@ const reasons = [
   },
   {
     title: "Neuro-Ayurveda Approach",
-    description: "Ancient wisdom backed by modern neuroscience.",
+    description: "Ayurvedic wisdom considered alongside modern health understanding.",
     Icon: Brain,
     iconClass: "bg-emerald-100 text-[#35a852] ring-emerald-200/70",
   },

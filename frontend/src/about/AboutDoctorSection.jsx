@@ -15,13 +15,15 @@ function AboutDoctorSection() {
             About Dr. Ankush Garg
           </h1>
           <h2 className="mt-3 max-w-[720px] text-[24px] font-black leading-tight text-[#8B43BA] sm:mt-4 sm:text-[clamp(25px,2.65vw,42px)]">
-            Autism, ADHD, Child Development & Mental Health Specialist in India
+            Ayurvedacharya, Founder of Manovaidya
           </h2>
 
           <p className="mt-5 max-w-[760px] text-[14px] font-bold leading-7 text-slate-700 sm:mt-7 sm:text-[15px] sm:leading-8">
-            Dr. Ankush Garg is an Ayurvedacharya with 7+ years of experience in
-            Autism, ADHD, Child Development and Mental Health care. Founder of
-            Manovaidya and Creator of the Neuro-Ayurveda Development System.
+            Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and
+            developer of the Neuro-Ayurveda Development System. He has 7+ years
+            of focused experience in child development and mental wellness. His
+            ongoing PhD research explores the relationship between the
+            gut-brain axis, behaviour and emotional wellbeing.
           </p>
 
           <div className="mt-6 flex gap-4 rounded-2xl bg-[#8B43BA]/8 px-4 py-5 shadow-[0_12px_30px_rgba(139,67,186,0.08)] sm:mt-8 sm:gap-5 sm:px-7 sm:py-6">
@@ -29,10 +31,10 @@ function AboutDoctorSection() {
               <UsersRound className="h-9 w-9 sm:h-12 sm:w-12" strokeWidth={1.65} />
             </span>
             <p className="text-[13.5px] font-bold leading-7 text-[#251553] sm:text-[15px] sm:leading-8">
-              His mission is simple - to understand the root causes, not just
-              manage the symptoms, and to help individuals and families move
-              from confusion to clarity, confidence and long-term wellness
-              through personalised care and guidance.
+              His mission is simple - to understand each person beyond symptoms
+              and help individuals and families move from confusion to clarity,
+              confidence and practical wellbeing through personalised care and
+              guidance.
             </p>
           </div>
         </div>
@@ -54,8 +56,7 @@ function AboutDoctorSection() {
               </span>
               <p className="text-[13px] font-semibold leading-6 text-white/90 sm:text-[14px] sm:leading-7">
                 Families across India trust Manovaidya for thoughtful
-                assessment, personalised roadmap and long-term support for
-                better outcomes.
+                assessment, personalised guidance and ongoing support.
               </p>
             </div>
 

@@ -173,7 +173,7 @@ function CaseStudyDetails() {
                 className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-md border border-violet-200 bg-white px-5 py-3 text-sm font-black text-[#8b43ba] transition hover:border-[#8b43ba]"
               >
                 <PhoneCall className="h-4 w-4" />
-                Call 7823838638
+                Call +91 78238 38638
               </a>
             </div>
           </aside>

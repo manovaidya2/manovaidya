@@ -5,11 +5,11 @@ import doctorPortrait from "../images/doctorimg-2.jpeg";
 const insightCards = [
   {
     Icon: UsersRound,
-    text: "Many parents come after a long and confusing journey, looking for clarity around their child's development, behaviour, learning or emotions. Our approach focuses on understanding the deeper factors and creating a structured roadmap for long-term growth and well-being.",
+    text: "Many parents come after a long and confusing journey, looking for clarity around their child's development, behaviour, learning or emotions. Our approach focuses on understanding the wider factors involved and creating a structured roadmap for steady growth and wellbeing.",
   },
   {
     Icon: HeartHandshake,
-    text: "Today, families trust us for our holistic, family-centred and science-backed approach that goes beyond symptom management and focuses on overall wellness, long-term growth and better quality of life.",
+    text: "Today, families trust us for a holistic, family-centred approach that goes beyond symptom management and focuses on overall wellness, practical guidance and better quality of life.",
   },
 ];
 
@@ -46,15 +46,15 @@ function AboutDoctorBioSection() {
             About Dr. Ankush Garg
           </h2>
           <h3 className="mt-2 text-[14px] font-black leading-6 text-[#6540c5] sm:text-[16px]">
-            Autism, ADHD, Child Development & Mental Health Specialist in India
+            Ayurvedacharya, Founder of Manovaidya
           </h3>
 
           <p className="mt-4 max-w-[920px] text-[13.5px] font-bold leading-7 text-[#251553] sm:text-[15px] sm:leading-8">
-            Dr. Ankush Garg is the Founder of Manovaidya and Creator of the
-            Neuro-Ayurveda Development System. He is an Ayurvedacharya and a
-            Brain-Gut Axis Specialist, with ongoing PhD research focused on
-            understanding how gut health influences brain development,
-            behaviour, emotional wellbeing and neurodevelopmental conditions.
+            Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and
+            developer of the Neuro-Ayurveda Development System. He has 7+ years
+            of focused experience in child development and mental wellness. His
+            ongoing PhD research explores the relationship between the
+            gut-brain axis, behaviour and emotional wellbeing.
           </p>
 
           <div className="mt-5 space-y-3.5 sm:mt-6 sm:space-y-4">
@@ -77,7 +77,7 @@ function AboutDoctorBioSection() {
             Over the years, Dr. Ankush Garg has worked with children, adults and
             families seeking support for developmental, behavioural and mental
             wellness concerns through a structured Neuro-Ayurveda approach
-            focused on long-term guidance and individualised care.
+            focused on practical guidance and individualised care.
           </p>
         </div>
       </div>

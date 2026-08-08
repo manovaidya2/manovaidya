@@ -473,31 +473,6 @@ const articleShareLinks = [
   { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Stress%20and%20Burnout%20Treatment%20in%20India%20https://www.manovaidya.com/stress-burnout-support-india" },
 ];
 
-const floatingShareLinks = [
-  { title: "Share on Facebook", href: articleShareLinks[0].href, className: "bg-[#3d5b9b] hover:bg-[#334e86]", Icon: () => <span className="font-sans text-[16px] font-bold leading-none">f</span> },
-  { title: "Share on X", href: articleShareLinks[1].href, className: "bg-[#050505] hover:bg-[#1d1d1d]", Icon: () => <span className="font-sans text-[15px] font-normal leading-none">X</span> },
-  {
-    title: "Share on Flipboard",
-    href: "https://share.flipboard.com/bookmarklet/popout?v=2&url=https://www.manovaidya.com/stress-burnout-support-india&title=Stress%20and%20Burnout%20Treatment%20in%20India",
-    className: "bg-[#f4212e] hover:bg-[#dc1c28]",
-    Icon: () => (
-      <span className="grid h-[11px] w-[11px] grid-cols-3 grid-rows-3 gap-px" aria-hidden="true">
-        <span className="bg-white" />
-        <span className="bg-white" />
-        <span />
-        <span className="bg-white" />
-        <span />
-        <span />
-        <span className="bg-white" />
-        <span className="bg-white" />
-        <span />
-      </span>
-    ),
-  },
-  { title: "Share on Pinterest", href: "https://pinterest.com/pin/create/button/?url=https://www.manovaidya.com/stress-burnout-support-india&description=Stress%20and%20Burnout%20Treatment%20in%20India", className: "bg-[#d1052b] hover:bg-[#b90426]", Icon: () => <span className="font-serif text-[18px] font-black leading-none">p</span> },
-  { title: "Share by Email", href: "mailto:?subject=Stress%20and%20Burnout%20Treatment%20in%20India&body=https://www.manovaidya.com/stress-burnout-support-india", className: "bg-[#df178a] hover:bg-[#c9147c]", Icon: () => <Mail className="h-[12px] w-[12px]" strokeWidth={2.15} /> },
-];
-
 const articleLinkRules = [
   { href: "/stress-burnout-support-india/", pattern: /Stress (?:&|and) Burnout Treatment/i },
   { href: "/stress-burnout-support-india/", pattern: /Stress Treatment in India/i },
@@ -669,25 +644,6 @@ function SidebarCard({ children, className = "" }) {
     <aside className={`rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] ${className}`}>
       {children}
     </aside>
-  );
-}
-
-function FloatingShareBar() {
-  return (
-    <div className="fixed left-0 top-[140px] z-40 hidden w-8 flex-col shadow-[0_8px_16px_rgba(15,23,42,0.14)] sm:flex">
-      {floatingShareLinks.map(({ href, title, className, Icon }) => (
-        <a
-          key={title}
-          href={href}
-          target={href.startsWith("mailto:") ? undefined : "_blank"}
-          rel={href.startsWith("mailto:") ? undefined : "noreferrer"}
-          aria-label={title}
-          className={`flex h-8 w-8 items-center justify-center border-b border-white/30 text-white transition duration-200 hover:brightness-110 ${className}`}
-        >
-          <Icon />
-        </a>
-      ))}
-    </div>
   );
 }
 
@@ -1140,7 +1096,6 @@ function StressBurnoutSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <FloatingShareBar />
       <Seo
         title="Stress & Burnout Treatment in India | Chronic Stress, Burnout & Emotional Wellbeing | Manovaidya"
         description="Stress and burnout support in India with chronic stress signs, workplace burnout, emotional exhaustion, structured assessment and Neuro-Ayurveda guidance."

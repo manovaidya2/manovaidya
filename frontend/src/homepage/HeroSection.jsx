@@ -17,7 +17,7 @@ const carePillars = [
   { label: "Ancient Wisdom\nModern Science", Icon: Brain },
   { label: "Personalised\nCare Plans", Icon: Users },
   { label: "Holistic\nHealing", Icon: ShieldCheck },
-  { label: "Evidence-\nBased Approach", Icon: Network },
+  { label: "Evidence-\nInformed Approach", Icon: Network },
 ];
 
 const stats = [

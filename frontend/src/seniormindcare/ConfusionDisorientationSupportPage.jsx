@@ -6,16 +6,13 @@ import {
   CalendarCheck,
   CheckCircle2,
   ChevronDown,
-  CloudRain,
   HeartHandshake,
   Mail,
   Search,
   Share2,
   ShieldCheck,
   Sparkles,
-  Utensils,
   Users,
-  Waves,
 } from "lucide-react";
 import heroImage from "../images/confusion-disorientation-support-seniors-india.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
@@ -23,298 +20,977 @@ import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transpare
 import RelatedSeniorMindCarePages from "./RelatedSeniorMindCarePages";
 import Seo from "../components/Seo";
 
+const pageTitle = "Confusion & Disorientation Treatment for Seniors in India";
+const pageUrl = "https://www.manovaidya.com/confusion-disorientation-support-seniors-india";
+
+const articleRaw = `Key Takeaways
+Understanding Confusion and Disorientation
+Normal Ageing vs Cognitive Confusion
+Temporary and Persistent Confusion
+Delirium, Dementia and Alzheimer’s
+Common Signs of Disorientation
+Causes of Confusion in Seniors
+Impact on Independence and Safety
+Supporting Healthy Cognitive Function
+Neuro-Ayurveda Cognitive Wellbeing Approach
+Manovaidya Assessment and Support Process
+When Urgent Medical Care Matters
+FAQs About Confusion in Seniors
+Senior Cognitive Health
+Confusion & Disorientation Treatment for Seniors in India
+Helping Seniors Understand the Confusion, Disorientation & Cognitive Wellbeing
+Forgetfulness can happen from time to time as one gets older. It should not be overlooked, though, when an older person is often confused, not knowing where familiar places are, not knowing time or understanding everyday situations. [1][2]
+A senior's confusion and disorientation can impact their sense of confidence, independence and quality of life. Others lose track of time, don't know where they are, don't remember the day or date, can't follow conversations, or may be unable to make simple decisions that once came easily. These changes are upsetting to seniors as well as to their families and caregivers. [2][6]
+To grasp the fact that confusion in seniors can stem from a wide variety of causes. Other causes may be temporary and curable such as dehydration, infection, side effects of medications, insufficient sleep, vitamin deficiency or metabolic disorders. Others can have a neurological cause, like delirium, dementia or Alzheimer's. Since causes can differ significantly, medical evaluation is necessary to find out the cause. [1][2][3][4][5]
+Any sudden confusion is not a normal part of getting older. In some cases, it might indicate a serious health issue where immediate medical attention is needed. [1][3]
+At Manovaidya, we understand that healthy ageing means ensuring cognitive wellbeing as well as emotional health, daily functioning and overall quality of life. Knowing what causes this confusion can lead seniors and families to make decisions and get wise advice. [6][7]
+Under the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist, India, Manovaidya adheres to the Neuro-Ayurveda Development System to ensure that seniors and their families better understand what confusion and disorientation means, and the many factors that affect the healthy cognitive ageing process.
+
+At Manovaidya, Confusion & Disorientation Treatment Focuses On:
+Confusion in Older Adults
+Disorientation
+Sudden Confusion
+Thinking Difficulties
+Cognitive Changes
+Delirium Awareness
+Dementia Awareness
+Healthy Brain Ageing
+Understanding Confusion & Disorientation
+Confusion is a state of uncertainty in thinking, comprehending information, making decisions or appropriately responding to situations. [1]
+Disorientation is the inability to identify time, place, surroundings and sometimes even people. The person could lose touch with time, place or become confused about familiar places. [2]
+Confusion is a normal part of ageing but can occur from time to time, and if it is persistent or sudden, it needs to be evaluated. They should not be immediately taken to mean that there is dementia as there can be many medical conditions that cause such changes. [1][2][3]
+Families concerned about Confusion in Elderly People, Disorientation in Seniors, Mental Confusion in Older Adults or Cognitive Changes in Ageing are often seeking accurate information to understand the meaning of these symptoms and when seeking help is advisable.
+Normal Ageing vs Confusion
+As a person ages, his or her memory and processing speed will naturally begin to change, but not to the degree that it causes significant confusion. [6]
+Normal Age-Related Changes
+Often, healthy seniors may experience a variety of things, such as:
+Has trouble recalling names.
+Misplace everyday items.
+Requires reminders for appointments.
+Pipe your knowledge of new technology at a slower pace.
+Pause briefly while searching for the right word.
+These changes typically do not affect one's ability to live independently at home. [6]
+Confusion That Needs Attention
+If a senior: Professional assessment is recommended if:
+Frequently becomes confused about time or place.
+Has difficulty following a simple conversation.
+Is abnormally sleepy or hard to wake.
+Has trouble recognising familiar surroundings.
+Becomes increasingly disoriented.
+Experiences sudden changes in thinking or behaviour.
+Many things can cause these symptoms and they shouldn't be overlooked. [1][2][3]
+
+What is the difference between Temporary and Persistent Confusion?
+There are different causes of confusion.
+Temporary Confusion
+There may be temporary confusion because of:
+Dehydration
+Fever
+Medication side effects
+Poor sleep
+Low blood sugar
+Acute illness
+Stress
+Among the many causes of short term illnesses, are those that are improved when the underlying cause is identified and treated. [1][3][4][5]
+Persistent Confusion
+Confusion that slowly worsens or persists over time may need thorough medical evaluation to determine if any neurological or other medical issues are causing the confusion. [1][2][6]
+
+Delirium, Dementia & Alzheimer's Disease
+This can lead to misunderstanding and a mix up of these terms, but they refer to different conditions. [1][2]
+Delirium
+Delirium is a rapid onset of attention and thinking changes that occur in hours to days. It may be caused by a previous medical disease, such as an infection, dehydration, side effects from a medicine or sickness. Delirium can be a medical emergency, so there is a need to evaluate the sudden onset of confusion promptly. [1][2][3]
+Dementia
+Dementia describes a collection of conditions which over time and over time affect memory, thinking, communication and daily functioning. [2][6]
+Alzheimer's Disease
+Alzheimer's disease is the biggest risk factor of dementia, however, this is not the only cause of dementia. Knowing these differences helps families to not make assumptions and promotes early medical evaluation. [2][6]
+Common Signs & Symptoms of Confusion
+One or more areas of everyday functioning may be confused.
+Thinking Difficulties
+Some seniors experience:
+Difficulty concentrating
+Slower thinking
+Poor judgement
+Difficulty understanding conversations
+Trouble following instructions
+Difficulty making decisions
+[2][6]
+
+Disorientation
+There are people who get lost as to:
+Time
+Date
+Place
+Familiar surroundings
+Daily schedules
+[1][2]
+Behavioural Changes
+Some seniors may:
+Restate the same questions
+Become restless
+Feel anxious
+Withdraw socially
+Become unusually irritable
+Show reduced confidence
+[2][6]
+
+Daily Life Changes
+Over time, confusion can become a problem and make it difficult with the following activities:
+Taking medicines correctly
+Preparing meals
+Managing finances
+Keeping appointments
+Following conversations
+Doing familiar household activities
+[2][6]
+
+What Causes Confusion in Seniors?
+There are various causes of confusion.
+Dementia is not the cause of all cases of confusion. [1][2]
+Some common causes include:
+Dehydration
+Water balance can become easily disturbed in the older age group, possibly impairing cognition and alertness. [4]
+Infections
+Sometimes older people experience confusion due to urinary tract infections, chest infections and various other diseases. [1][3]
+Medication Side Effects
+Certain medications can affect alertness, focus or thinking. [3]
+Poor Sleep
+Lack of or poor sleep can impact attention and cognitive function. [5]
+Depression & Anxiety
+Emotional health disorders can affect attention, memory and judgment. [6]
+Vitamin Deficiencies
+Some vitamin deficiency can lead to cognitive changes, such as a vitamin B12 deficiency. [6]
+Thyroid Disorders
+Changes in thyroid function may affect energy levels, concentration and thinking. [6]
+Delirium
+Any sudden confusion that happens due to a medical illness needs immediate medical evaluation. [1]
+Dementia
+Growing neurological disorders can have a gradual impact on thinking, reasoning and orientation. [2][6]
+Alzheimer's Disease
+One of the potential causes of progressive cognitive deficits is Alzheimer's disease, which should be thoroughly evaluated. [2][6]
+Why Early Understanding Matters
+Some families think that it is OK that they are mixing up when they are getting older.
+But if a person keeps on being confused or suddenly becomes confused, it should not be overlooked. Early assessment can assist in the identification of reversible medical conditions, timely intervention and appropriate advice for seniors and their families. [1][2][3]
+Detecting changes in cognition early also helps to ensure independence, safety and better quality of life. [2][6]
+
+How Confusion & Disorientation Can Affect Daily Life
+Confusion is more than just a loss of memory. It may impact on a senior's thought, speech, everyday living and his or her independence. [2][6]
+Others may have a few times of confusion, others may see some changes that start to have an impact on their confidence and routine little by little. Families may notice their family member is more reliant, hesitant, and/or anxious to do tasks he or she used to know.
+Early recognition of these changes enables families to provide timely and appropriate support and, if needed, seek medical evaluation. [1][2]
+
+Independence
+Older adults appreciate their independence and the ability to perform daily activities. Over time, confusion can make it more challenging to:
+Follow daily routines
+Remember appointments
+Take medications correctly
+Prepare meals safely
+Manage finances
+Organise personal belongings
+Do familiar home chores
+[2][6]
+Emotional Wellbeing
+Emotional health can also be impacted by confusion. Many seniors experience:
+Frustration
+Anxiety
+Embarrassment
+Reduced confidence
+Lack of confidence
+Be careful not to get addicted to the drug.
+[6][7]
+
+Relationships
+Senior citizen confusion can alter the manner in which the individual interacts with family members and friends. Sometimes a family member finds they notice that their loved one:
+Repeats the same questions
+Has trouble hearing and understanding what is said
+Misunderstands situations
+Easily go off task
+Needs frequent reassurance
+Comes across as avoiding social interactions
+[2][6]
+
+Daily Activities
+Clear thinking is required for numerous day-to-day duties. Confusion can affect:
+Shopping
+Cooking
+Managing money
+Following instructions
+Remembering important dates
+Travelling independently
+Using mobile phones or other technology
+[2][6]
+Safety
+There is an increased risk of accidents or unsafe situations if there is confusion. Families should be concerned if an older adult:
+Ensures appliances are turned off
+Misses important medications
+Wanders wanders from familiar places
+Has difficulty recognising emergencies
+Becomes confused while crossing roads
+Is unable to recall emergency contact information
+[2][6]
+
+The Neuro-Ayurveda Approach to Healthy Cognitive Wellbeing
+Cognitive wellbeing is considered in Manovaidya from a holistic approach.
+The Neuro-Ayurveda Development System is not just about confusion but about the multitude of factors that could impact thinking, emotional health, behavior and healthy aging.
+Supporting Healthy Cognitive Function
+While the brain undergoes changes throughout life, certain healthy lifestyle practices can help maintain cognitive health. [2][5][6]
+Stay Well Hydrated
+Dizziness and confusion in older persons may be due to dehydration and this is a common and often unrecognized cause. Plenty of hydration all day helps maintain overall health and cognitive function. [4]
+Prioritise Healthy Sleep
+Sleep promotes concentration, memory and mental clarity. [5][6]
+Eat a Balanced Diet
+Fruits and vegetables, whole grains, healthy fats and sufficient protein are all nourishing components of a healthy meal which contributes to healthy living and healthy ageing. [6][7]
+Stay Mentally Active
+The mind is stimulated with reading, puzzles, board games, new hobbies and frequent talking. [6]
+Remain Physically Active
+Physical and cognitive wellbeing is supported through the use of walking, stretching, yoga and other age appropriate activities. [6][7]
+Maintain Familiar Routines
+Establishing routines daily can help minimize confusion and create a sense of security. [6]
+Regular Medical check-ups
+Periodic medical care can assist identify well being issues that could lead to confusion or cognitive modifications. [1][2]
+
+How Manovaidya Supports Seniors
+At Manovaidya, support is not about only confusion, but understanding of the person.
+We have a clear process which covers:
+Step 1: Comprehensive Assessment
+Awareness of cognitive issues, emotional health and well-being, lifestyle factors, sleep patterns, nutrition, and medications and daily functioning.
+Step 2: Personalized Guidance
+Offering the customized recommendations that are planned specifically for every senior based on their cognitive, emotional and lifestyle requirements.
+Step 3: Brain Health & Emotional Wellbeing Support
+Support for older people and families to understand confusion and problems with orientation, and practical strategies to help everyday living.
+Step 4: Neuro-Ayurveda Development System
+Using the five pillars approach to understanding cognitive wellbeing, behaviour, lifestyle and healthy ageing.
+Step 5: Progress Tracking & Family Guidance
+Developing a plan that structures the process for seniors and caregivers to be aware of changes, reinforce healthy habits, and promote ongoing good health.
+
+When Should You Consider Professional Guidance?
+If a senior, you should seek professional advice:
+Frequently becomes confused about time or place.
+Experiences abrupt changes in mental status/confusion.
+Has trouble keeping up in conversations.
+Has difficulties with basic daily tasks.
+Shows noticeable changes in behaviour or personality.
+Shows confusion which impairs independence or safety.
+Has developing worsening cognitive symptoms.
+The structured evaluation may help to identify potential contributing factors and help direct appropriate next steps. [1][2]
+If there is sudden confusion, it is severe and can be accompanied by other symptoms like weakness, difficulty talking, fever, chest pain or loss of consciousness, it is necessary to immediately seek emergency medical attention because it can be a sign of a serious medical condition. [1][3]
+We want to support healthy cognitive ageing and enhance quality of life for elderly and their families, and help them understand what is going on when they are confused, in a way that is compassionate and personal.
+
+Why Families Across India Choose Manovaidya
+A senior's confusion or disorientation can be troublesome for seniors and their families. Minor shifts in thought, attitude and/or decision making may trigger safety, independence and health issues in thinking.
+While in Manovaidya we know that not every confusion is caused by the same reason. Some episodes can be temporary and affect dehydration, infections, medications or sleep disorders but others could be linked to age-related cognitive issues. We do not assume anything but look at the person as a whole.
+We want to support seniors to maintain their dignity, confidence and highest possible quality of life using a structured assessment, personalised guidance and holistic approach.
+
+Comprehensive Cognitive & Orientation Assessment
+All seniors go through cognitive changes to one degree or another. We then assess cognitive, functional, emotional, sleep, lifestyle, nutritional, medication, family and personal support concerns so we can provide personalised guidance.
+Frequent confusion
+Lack of orientation (on familiar places)
+Misorientation of time or date
+Trouble following conversations
+Reduced attention
+Behavioural changes
+Emotional distress
+Difficulty managing everyday activities
+
+Neuro-Ayurveda Development System
+Manovaidya applies the Neuro-Ayurveda Development system which is a systematic model to healthy cognitive ageing with five pillars.
+Brain Nourishment System
+Gut Response System
+Neural Network System
+Sensory Integration System
+Behaviour Guidance System
+
+Personalized Guidance
+All people are unique. Recommendations are tailored to cognitive issues, emotional health, lifestyle, sleep patterns, daily habits, diet, medical conditions, and individual objectives.
+Cognitive concerns
+Emotional wellbeing
+Lifestyle habits
+Sleep quality
+Daily routine
+Nutrition
+Medical history
+Personal goals
+
+Holistic Cognitive Health Perspective
+Healthy ageing is about more than just preserving memory. We take a holistic approach to brain health, emotional well-being, nutrition, lifestyle choices, sleep patterns, physical activity and social interactions. [5][6][7]
+Brain health
+Emotional wellbeing
+Nutrition
+Lifestyle habits
+Sleep quality
+Physical activity
+Social engagement
+
+Focus on Independence & Healthy Ageing
+We aim to support seniors in staying as independent as they can, and to provide for healthy cognitive functioning, emotional health and confidence in the functioning of everyday life.
+Independence
+Healthy cognitive function
+Emotional wellbeing
+Confidence
+Supportive routines
+
+Ongoing Support & Family Guidance
+As seniors' needs evolve over time, regular follow-up and structured progress tracking support seniors and caregivers to track change, reinforce healthy routines and make informed decisions.
+Regular follow-up
+Structured progress tracking
+Caregiver support
+Healthy routines
+Informed decisions
+
+Why Families Across India Trust Manovaidya
+Manovaidya connects with families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India for online and in-clinic consultations to offer them Confusion & Disorientation Treatment, Healthy Cognitive Ageing Guidance and Senior Mental Health Support.
+
+Why Trust Manovaidya?
+Structured Neuro-Ayurveda Development System
+Tailored Assessment Prior to Recommendation
+Senior-Focused Holistic Care
+Online & In-Clinic Consultations in India
+Instructed by Dr. Ankush Garg
+Family-Centred Support
+Focus on Healthy Cognitive Ageing
+
+About
+Dr. Ankush Garg
+Autism, ADHD, Child Development & Mental Health Specialist in India
+Dr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System.
+His work extends across Child Development, Adult Mental Health and Senior Mental Health, with a focus on understanding the relationship between brain health, emotional wellbeing and overall quality of life.
+Many families seek guidance when an older loved one experiences confusion, disorientation or changes in thinking. Through structured assessment, personalised guidance, lifestyle recommendations and continuous follow-up, Dr. Ankush Garg helps seniors and families better understand cognitive concerns while supporting healthy ageing through the Neuro-Ayurveda Development System.
+Based in Delhi NCR, Dr. Ankush Garg supports seniors and families across India through structured assessment, personalised guidance and holistic mental health care.
+Based in Delhi NCR, Dr. Ankush Garg supports seniors and families across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
+Frequently Asked Questions
+1. What causes confusion in elderly people?
+There are numerous reasons for confusion in the elderly. Dehydration, urinary tract infections (UTIs), side effects of medications, inadequate sleep, vitamin deficiencies, thyroid issues, depression, anxiety and neurological diseases like dementia are common causes. Sudden confusion in some cases can be a medical emergency and a very serious condition. As a result of the various causes, it is essential to have a good medical evaluation to find out what the cause is. [1][2][3][4][6]
+
+2. What is the difference between confusion and dementia?
+Confusion is one symptom and can occur suddenly or gradually and may be caused by many different factors, including temporary medical conditions. Dementia is a collection of progressive disorders that impact on memory, thinking, reasoning and daily functioning over time. Not all those who are confused have dementia. A thorough evaluation by a health care professional will determine the cause. [1][2][6]
+
+3. What is disorientation in older adults?
+Disorientation is a lack of orientation regarding time, place, people or surroundings. May not know the date, be confused about the location, or not be able to recognise familiar environments and places. Disorientation can result from medical problems that are temporary or longer-term neurological issues. If disorientation gets worse or appears new, it should be evaluated with the help of a trained health care provider. [1][2]
+
+4. Is confusion a normal part of ageing?
+No. While people might take a bit longer to think, remember or process information as they get older, there is no universal rule that great confusion is a normal aspect of aging. If there is any confusion, disorientation or sudden changes in thinking, this should always be evaluated to see if there is an underlying cause. [1][2][6]
+
+5. Can dehydration cause confusion in seniors?
+Yes. Older adults often become confused because of dehydration. Dehydration is a risk to seniors because they may not feel thirsty as they get older. It is essential for people to keep drinking fluids properly even when they are confused, but sudden confusion should still be medically assessed to see if there are other causes. [1][4]
+
+6. Can infections cause sudden confusion?
+Yes. Sometimes, older people experience confusion or altered state of awareness due to infections such as urinary tract infections (UTIs), pneumonia and other serious conditions. Confusion, unusual drowsiness or disorientation in an older person can be a sign of a sudden illness and should be treated as a medical emergency. [1][3]
+
+7. What is delirium?
+Delirium is an abrupt alteration of attention, awareness and thinking that typically occurs within hours or days. It may be due to an underlying medical condition like an infection, dehydration, or side effects of medications and/or a metabolic imbalance. Delirium differs from dementia in that it can happen quickly and may need immediate medical assessment and therapy. [1][2]
+
+8. Can poor sleep cause confusion?
+Yes. Bad sleep may impact concentration, focus and mental sharpness. Older adults with long-term sleep issues may experience more daytime forgetfulness and/or confusion. Better sleep hygiene can help improve cognitive function, but if there is persistent confusion, always check with a health care provider. [5][6]
+
+9. Can medications cause confusion in older adults?
+Yes. Alertness, thinking and orientation can be affected by some medicines that can be bought without a prescription or by mixing different medicines. The elderly may be more vulnerable to the side effects of medications. If confusion begins once a medication has been started or a medication has been changed, this should be discussed with the doctor or other healthcare professional who prescribes the medication. Never stop taking medication without medical advice. [1][3]
+
+10. When is confusion a medical emergency?
+Sudden confusion is always a serious matter. If confusion occurs suddenly or with fever, weakness, trouble speaking, severe headache, chest pain, seizure, loss of consciousness or changes in vision, immediate medical treatment is recommended. These signs and symptoms can be a sign of a serious medical problem that needs immediate attention. [1][3]
+
+11. Can confusion be treated?
+Treatment is based on the underlying cause. Dehydration, infection, side effects of medication, sleep difficulties or medical conditions can cause confusion, which can improve if these conditions are managed. When confusion is associated with progressive neurological disorders, the treatment is centered on managing the symptoms, maintaining quality of life and supporting the person in need and the family. A thorough medical evaluation is required to help decide on a course of action. [1][2][3][6]
+
+12. How can families help a confused elderly person?
+Families can help by talking to seniors in a relaxed tone, keeping their usual schedule, reminding them to drink plenty of fluids and eat well, reminding them to take their medications, avoiding lots of things that would cause them to stress and accompanying them to get medical checks up if necessary. Anxiety can be reduced and the senior's level of security enhanced by patience, reassuring and respectful communication. [2][5][6]
+
+13. How does Manovaidya support seniors with confusion?
+Understanding the person is not only essential, but the first step in providing help, at Manovaidya. We support families and seniors to understand what can affect their cognitive wellbeing, emotional health, lifestyle habits and behaviours, through structured assessment and personalised guidance using the Neuro-Ayurveda Development System. We aim to promote health and wellbeing, and functional ability for people to age well through a holistic and personalised approach.
+
+14. Can confusion improve with treatment?
+The degree of improvement will depend on the cause of the problem. If the confusion is a temporary symptom of a condition like dehydration, infection or side effects from a medication, your confusion may get better once you get medical treatment. If there is confusion that is linked to long term neurological conditions, focus can be on symptom management, achieving independence if possible and enhancing quality of life. The best plan can be suggested by a health professional after assessing the situation. [1][2][3]
+
+15. When should families seek professional guidance for confusion?
+The following are signs of trouble and should be taken as a warning sign that it is time to seek professional advice, if an older person experiences confusion or disorientation regularly, difficulty following conversations, behaviour or personality changes, problem with everyday tasks or confusion that causes problems with safety or independence. If confusion occurs quickly or rapidly gets worse, you should seek immediate medical attention, because it could indicate an underlying serious condition. [1][2][3]
+Book a Consultation
+Need to be concerned about confusion or disorientation in self or someone you love?
+When confusion, difficulty recognising familiar places, changes in thinking and/or disorientation have begun to impact daily life, it's important to understand the cause.
+We assist the senior and family to understand the changes in the brain with a structured assessment, personalised guidance and the Neuro-Ayurveda Development System at Manovaidya.
+Make an appointment to assess today!
+Book Consultation
+Speak With Our Team
+Get Personalized Guidance
+Confusion & Disorientation Treatment
+Healthy Cognitive Ageing Guidance
+Promote Healthy Cognitive Ageing With the Right Guidance
+Manovaidya Clinic
+Noida, Uttar Pradesh, India`;
+
+const references = [
+  { n: 1, title: "Grover S, Avasthi A. Clinical Practice Guidelines for Management of Delirium in Elderly. Indian Journal of Psychiatry. 2018.", url: "https://pubmed.ncbi.nlm.nih.gov/29535468/", supports: "Sudden confusion, delirium symptoms, underlying medical causes, assessment aur management ke liye sabse relevant clinical reference hai." },
+  { n: 2, title: "Adsule P, Mohanaselvan A, Schoo C. Differentiating Delirium Versus Dementia in Older Adults. StatPearls. 2026.", url: "https://pubmed.ncbi.nlm.nih.gov/34033356/", supports: "Delirium ke sudden onset aur dementia ke gradual progression ke difference ko explain karta hai." },
+  { n: 3, title: "Rummans TA, Evans JM, Krahn LE, Fleming KC. Delirium in Elderly Patients: Evaluation and Management. Mayo Clinic Proceedings. 1995.", url: "https://pubmed.ncbi.nlm.nih.gov/7564554/", supports: "Infections, medication changes, neurological, cardiac, pulmonary aur metabolic conditions ko confusion ke possible causes ke roop mein support karta hai." },
+  { n: 4, title: "Edmonds CJ, et al. A Systematic Review of the Effects of Dehydration on Health Outcomes in Older Adults. Archives of Gerontology and Geriatrics. 2021.", url: "https://pubmed.ncbi.nlm.nih.gov/33636649/", supports: "Older adults mein dehydration aur poorer cognitive performance ke possible association ko support karta hai." },
+  { n: 5, title: "Kong J, et al. Sleep Disorders Affect Cognitive Function in Adults: An Overview of Systematic Reviews and Meta-Analyses. 2024.", url: "https://pubmed.ncbi.nlm.nih.gov/38469285/", supports: "Poor sleep ke attention, working memory, alertness aur cognitive performance par impact ko support karta hai." },
+  { n: 6, title: "Petersen RC, Lopez O, Armstrong MJ, et al. Practice Guideline Update Summary: Mild Cognitive Impairment. Neurology. 2018.", url: "https://pubmed.ncbi.nlm.nih.gov/29282327/", supports: "Cognitive assessment, functional impairment, medication review, regular monitoring, exercise aur cognitive training ke liye relevant guideline hai." },
+  { n: 7, title: "Charaka Samhita. Rasayana—Healthy Ageing, Memory, Strength and Longevity.", url: "https://www.carakasamhitaonline.com/index.php?title=Rasayana", supports: "Healthy ageing, memory, vitality aur cognitive wellbeing ke traditional Ayurvedic framework ko support karta hai." },
+  { n: 8, title: "Charaka Samhita. Manas—Mind, Cognition and Mental Wellbeing.", url: "https://www.carakasamhitaonline.com/index.php?title=Manas", supports: "Thinking, understanding, attention, memory, emotional wellbeing aur mind-related Ayurvedic concepts ke liye relevant hai." }
+];
+
+const keyTakeaways = [
+  "Understanding Confusion and Disorientation",
+  "Normal Ageing vs Cognitive Confusion",
+  "Temporary and Persistent Confusion",
+  "Delirium, Dementia and Alzheimer’s",
+  "Common Signs of Disorientation",
+  "Causes of Confusion in Seniors",
+  "Impact on Independence and Safety",
+  "Supporting Healthy Cognitive Function",
+  "Neuro-Ayurveda Cognitive Wellbeing Approach",
+  "Manovaidya Assessment and Support Process",
+  "When Urgent Medical Care Matters",
+  "FAQs About Confusion in Seniors"
+];
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding", id: "understanding-confusion" },
   { label: "Ageing vs Confusion", id: "normal-ageing-vs-confusion" },
   { label: "Temporary vs Persistent", id: "temporary-vs-persistent" },
   { label: "Delirium & Dementia", id: "delirium-dementia" },
-  { label: "Signs & Symptoms", id: "common-signs-symptoms" },
+  { label: "Signs", id: "common-signs-symptoms" },
   { label: "Causes", id: "what-causes-confusion" },
+  { label: "Early Understanding", id: "early-understanding" },
   { label: "Daily Life", id: "daily-life-impact" },
   { label: "Neuro-Ayurveda", id: "neuro-ayurveda-approach" },
   { label: "Healthy Function", id: "supporting-cognitive-function" },
   { label: "How We Support", id: "how-manovaidya-supports" },
+  { label: "When to Seek Help", id: "professional-guidance" },
   { label: "Why Families Choose", id: "why-families-choose" },
   { label: "About Doctor", id: "about-dr-ankush-garg" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Consultation", id: "book-consultation" },
 ];
 
-const focusItems = [
-  { label: "Confusion in Older Adults", Icon: CloudRain },
-  { label: "Disorientation", Icon: Search },
-  { label: "Sudden Confusion", Icon: Activity },
-  { label: "Thinking Difficulties", Icon: Brain },
-  { label: "Cognitive Changes", Icon: Sparkles },
-  { label: "Delirium Awareness", Icon: ShieldCheck },
-  { label: "Dementia Awareness", Icon: HeartHandshake },
-  { label: "Healthy Brain Ageing", Icon: CheckCircle2 },
+const sectionIdByTitle = {
+  "Senior Cognitive Health": "introduction",
+  "Understanding Confusion & Disorientation": "understanding-confusion",
+  "Normal Ageing vs Confusion": "normal-ageing-vs-confusion",
+  "What is the difference between Temporary and Persistent Confusion?": "temporary-vs-persistent",
+  "Delirium, Dementia & Alzheimer's Disease": "delirium-dementia",
+  "Common Signs & Symptoms of Confusion": "common-signs-symptoms",
+  "What Causes Confusion in Seniors?": "what-causes-confusion",
+  "Why Early Understanding Matters": "early-understanding",
+  "How Confusion & Disorientation Can Affect Daily Life": "daily-life-impact",
+  "The Neuro-Ayurveda Approach to Healthy Cognitive Wellbeing": "neuro-ayurveda-approach",
+  "Supporting Healthy Cognitive Function": "supporting-cognitive-function",
+  "How Manovaidya Supports Seniors": "how-manovaidya-supports",
+  "When Should You Consider Professional Guidance?": "professional-guidance",
+  "Why Families Across India Choose Manovaidya": "why-families-choose",
+  "About": "about-dr-ankush-garg",
+  "Frequently Asked Questions": "faqs",
+  "Book a Consultation": "book-consultation",
+};
+
+const headings = new Set([...Object.keys(sectionIdByTitle), pageTitle]);
+const hiddenIntroLines = new Set(["Key Takeaways", ...keyTakeaways, pageTitle]);
+const shortTitleExclusions = new Set([
+  "Book a Cognitive Assessment",
+  "Confusion in Older Adults",
+  "Disorientation",
+  "Sudden Confusion",
+  "Thinking Difficulties",
+  "Cognitive Changes",
+  "Delirium Awareness",
+  "Dementia Awareness",
+  "Healthy Brain Ageing",
+  "Normal Age-Related Changes",
+  "Confusion That Needs Attention",
+  "Temporary Confusion",
+  "Persistent Confusion",
+  "Delirium",
+  "Dementia",
+  "Alzheimer's Disease",
+  "Behavioural Changes",
+  "Daily Life Changes",
+  "Dehydration",
+  "Infections",
+  "Medication Side Effects",
+  "Poor Sleep",
+  "Depression & Anxiety",
+  "Vitamin Deficiencies",
+  "Thyroid Disorders",
+  "Independence",
+  "Emotional Wellbeing",
+  "Relationships",
+  "Daily Activities",
+  "Safety",
+  "Stay Well Hydrated",
+  "Prioritise Healthy Sleep",
+  "Eat a Balanced Diet",
+  "Stay Mentally Active",
+  "Remain Physically Active",
+  "Maintain Familiar Routines",
+  "Regular Medical check-ups",
+  "Step 1: Comprehensive Assessment",
+  "Step 2: Personalized Guidance",
+  "Step 3: Brain Health & Emotional Wellbeing Support",
+  "Step 4: Neuro-Ayurveda Development System",
+  "Step 5: Progress Tracking & Family Guidance",
+  "Comprehensive Cognitive & Orientation Assessment",
+  "Neuro-Ayurveda Development System",
+  "Personalized Guidance",
+  "Holistic Cognitive Health Perspective",
+  "Focus on Independence & Healthy Ageing",
+  "Ongoing Support & Family Guidance",
+  "Why Families Across India Trust Manovaidya",
+  "Why Trust Manovaidya?",
+  "Dr. Ankush Garg",
+  "Autism, ADHD, Child Development & Mental Health Specialist in India",
+  "Make an appointment to assess today!"
+]);
+
+const leadLines = new Set([
+  "Book a Cognitive Assessment",
+  "Confusion in Older Adults",
+  "Disorientation",
+  "Sudden Confusion",
+  "Thinking Difficulties",
+  "Cognitive Changes",
+  "Delirium Awareness",
+  "Dementia Awareness",
+  "Healthy Brain Ageing",
+  "Normal Age-Related Changes",
+  "Confusion That Needs Attention",
+  "Temporary Confusion",
+  "Persistent Confusion",
+  "Delirium",
+  "Dementia",
+  "Alzheimer's Disease",
+  "Behavioural Changes",
+  "Daily Life Changes",
+  "Dehydration",
+  "Infections",
+  "Medication Side Effects",
+  "Poor Sleep",
+  "Depression & Anxiety",
+  "Vitamin Deficiencies",
+  "Thyroid Disorders",
+  "Independence",
+  "Emotional Wellbeing",
+  "Relationships",
+  "Daily Activities",
+  "Safety",
+  "Stay Well Hydrated",
+  "Prioritise Healthy Sleep",
+  "Eat a Balanced Diet",
+  "Stay Mentally Active",
+  "Remain Physically Active",
+  "Maintain Familiar Routines",
+  "Regular Medical check-ups",
+  "Step 1: Comprehensive Assessment",
+  "Step 2: Personalized Guidance",
+  "Step 3: Brain Health & Emotional Wellbeing Support",
+  "Step 4: Neuro-Ayurveda Development System",
+  "Step 5: Progress Tracking & Family Guidance",
+  "Comprehensive Cognitive & Orientation Assessment",
+  "Neuro-Ayurveda Development System",
+  "Personalized Guidance",
+  "Holistic Cognitive Health Perspective",
+  "Focus on Independence & Healthy Ageing",
+  "Ongoing Support & Family Guidance",
+  "Why Families Across India Trust Manovaidya",
+  "Why Trust Manovaidya?",
+  "Dr. Ankush Garg",
+  "Autism, ADHD, Child Development & Mental Health Specialist in India",
+  "Make an appointment to assess today!",
+  "At Manovaidya, Confusion & Disorientation Treatment Focuses On:",
+  "Often, healthy seniors may experience a variety of things, such as:",
+  "If a senior: Professional assessment is recommended if:",
+  "There may be temporary confusion because of:",
+  "Some seniors experience:",
+  "There are people who get lost as to:",
+  "Some seniors may:",
+  "Over time, confusion can become a problem and make it difficult with the following activities:",
+  "Some common causes include:",
+  "Over time, confusion can make it more challenging to:",
+  "Many seniors experience:",
+  "Sometimes a family member finds they notice that their loved one:",
+  "Clear thinking is required for numerous day-to-day duties. Confusion can affect:",
+  "Families should be concerned if an older adult:",
+  "We have a clear process which covers:",
+  "If a senior, you should seek professional advice:"
+]);
+
+const articleLinkRules = [
+  { href: "/confusion-disorientation-support-seniors-india/", pattern: /Confusion & Disorientation Treatment/i },
+  { href: "/confusion-disorientation-support-seniors-india/", pattern: /Confusion in Elderly People/i },
+  { href: "/confusion-disorientation-support-seniors-india/", pattern: /Disorientation in Seniors/i },
+  { href: "/confusion-disorientation-support-seniors-india/", pattern: /Mental Confusion in Older Adults/i },
+  { href: "#temporary-vs-persistent", pattern: /Temporary Confusion/i },
+  { href: "#temporary-vs-persistent", pattern: /Persistent Confusion/i },
+  { href: "#delirium-dementia", pattern: /delirium/i },
+  { href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /dementia/i },
+  { href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Alzheimer's disease/i },
+  { href: "#daily-life-impact", pattern: /independence/i },
+  { href: "#supporting-cognitive-function", pattern: /healthy cognitive ageing/i },
+  { href: "/senior-sleep-disorders-support-india/", pattern: /sleep/i },
+  { href: "/senior-anxiety-support-india/", pattern: /stress/i },
+  { href: "/senior-depression-support-india/", pattern: /depression/i },
+  { href: "/senior-mental-health-care/", pattern: /Senior Mental Health Support/i },
+  { href: "/about/approach", pattern: /Neuro[-s]Ayurveda Development System/i },
+  { href: "/about/doctor", pattern: /Dr.?s+Ankushs+Garg/i },
+  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "#professional-guidance", pattern: /professional guidance/i },
 ];
 
 const categories = [
-  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake },
-  { label: "Confusion", count: 10, Icon: CloudRain },
-  { label: "Dementia Awareness", count: 8, Icon: ShieldCheck },
-  { label: "Healthy Ageing", count: 11, Icon: Sparkles },
-  { label: "Caregiver Support", count: 9, Icon: Users },
-  { label: "Cognitive Wellbeing", count: 13, Icon: Activity },
+  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care/" },
+  { label: "Confusion", count: 10, Icon: Brain, href: "/confusion-disorientation-support-seniors-india/" },
+  { label: "Dementia Awareness", count: 8, Icon: ShieldCheck, href: "/dementia-alzheimers-care-support-seniors-india/" },
+  { label: "Healthy Ageing", count: 11, Icon: Sparkles, href: "#supporting-cognitive-function" },
+  { label: "Caregiver Support", count: 9, Icon: Users, href: "/caregiver-support-india/" },
+  { label: "Cognitive Wellbeing", count: 13, Icon: Activity, href: "#daily-life-impact" },
 ];
 
-const symptomGroups = [
-  {
-    title: "Thinking Difficulties",
-    text: "Some seniors experience:",
-    items: ["Difficulty concentrating", "Slower thinking", "Poor judgement", "Difficulty understanding conversations", "Trouble following instructions", "Difficulty making decisions"],
-    Icon: Brain,
-  },
-  {
-    title: "Disorientation",
-    text: "Some individuals become confused about:",
-    items: ["Time", "Date", "Place", "Familiar surroundings", "Daily schedules"],
-    Icon: Search,
-  },
-  {
-    title: "Behavioural Changes",
-    text: "Some seniors may:",
-    items: ["Repeat the same questions", "Become restless", "Feel anxious", "Withdraw socially", "Become unusually irritable", "Show reduced confidence"],
-    Icon: HeartHandshake,
-  },
-  {
-    title: "Daily Life Changes",
-    text: "Confusion may gradually interfere with everyday activities such as:",
-    items: ["Taking medicines correctly", "Preparing meals", "Managing finances", "Keeping appointments", "Following conversations", "Performing familiar household tasks"],
-    Icon: CalendarCheck,
-  },
+const focusItems = [
+  { label: "Confusion in Older Adults", Icon: Brain },
+  { label: "Disorientation", Icon: Search },
+  { label: "Sudden Confusion", Icon: Activity },
+  { label: "Thinking Difficulties", Icon: CalendarCheck },
+  { label: "Cognitive Changes", Icon: HeartHandshake },
+  { label: "Delirium Awareness", Icon: ShieldCheck },
+  { label: "Dementia Awareness", Icon: Sparkles },
+  { label: "Healthy Brain Ageing", Icon: CheckCircle2 },
 ];
 
-const causes = [
-  { title: "Dehydration", desc: "Older adults are more likely to become dehydrated, which can sometimes affect thinking and alertness." },
-  { title: "Infections", desc: "Urinary tract infections, chest infections and other illnesses may sometimes cause sudden confusion in older adults." },
-  { title: "Medication Side Effects", desc: "Some medicines may influence alertness, concentration or thinking." },
-  { title: "Poor Sleep", desc: "Insufficient or disrupted sleep may affect attention and cognitive performance." },
-  { title: "Depression & Anxiety", desc: "Emotional health conditions may influence concentration, memory and decision-making." },
-  { title: "Vitamin Deficiencies", desc: "Certain vitamin deficiencies, including vitamin B12 deficiency, may contribute to cognitive changes." },
-  { title: "Thyroid Disorders", desc: "Changes in thyroid function may affect energy levels, concentration and thinking." },
-  { title: "Delirium", desc: "Sudden confusion caused by an underlying medical illness requires urgent medical assessment." },
-  { title: "Dementia", desc: "Progressive neurological conditions may gradually affect thinking, reasoning and orientation." },
-  { title: "Alzheimer's Disease", desc: "Alzheimer's disease is one possible cause of progressive cognitive decline and requires comprehensive medical evaluation." },
+const symptomItems = [
+  { label: "Thinking Difficulties", Icon: Brain },
+  { label: "Disorientation", Icon: Search },
+  { label: "Behavioural Changes", Icon: HeartHandshake },
+  { label: "Daily Life Changes", Icon: CalendarCheck },
 ];
 
-const dailyLifeCards = [
-  {
-    title: "Independence",
-    desc: "Many older adults value their independence and ability to manage everyday responsibilities. Confusion may gradually make it difficult to:",
-    items: ["Follow daily routines", "Remember appointments", "Take medications correctly", "Prepare meals safely", "Manage finances", "Organise personal belongings", "Complete familiar household tasks"],
-  },
-  {
-    title: "Emotional Wellbeing",
-    desc: "Confusion can also affect emotional health. Many seniors experience:",
-    items: ["Frustration", "Anxiety", "Embarrassment", "Reduced confidence", "Fear of making mistakes", "Worry about becoming dependent"],
-  },
-  {
-    title: "Relationships",
-    desc: "Confusion may change the way seniors interact with family members and friends. Families sometimes notice that their loved one:",
-    items: ["Repeats the same questions", "Has difficulty following conversations", "Misunderstands situations", "Becomes irritated more easily", "Needs frequent reassurance", "Withdraws from social interactions"],
-  },
-  {
-    title: "Daily Activities",
-    desc: "Thinking clearly is essential for many everyday responsibilities. Confusion may interfere with:",
-    items: ["Shopping", "Cooking", "Managing money", "Following instructions", "Remembering important dates", "Travelling independently", "Using mobile phones or other technology"],
-  },
-  {
-    title: "Safety",
-    desc: "Confusion may increase the risk of accidents or unsafe situations. Families should pay attention if an older adult:",
-    items: ["Leaves appliances switched on", "Misses important medications", "Wanders away from familiar places", "Has difficulty recognising emergencies", "Becomes confused while crossing roads", "Cannot remember emergency contact information"],
-  },
-];
-
-const neuroPillars = [
-  {
-    title: "Brain Nourishment System",
-    Icon: Brain,
-    text: "Healthy brain function supports attention, thinking, decision-making and emotional balance. The Brain Nourishment System focuses on understanding factors that may influence: Mental clarity, Attention, Memory, Decision-making, Emotional regulation, Cognitive resilience. Supporting overall brain health may contribute to healthier cognitive ageing.",
-  },
-  {
-    title: "Gut Response System",
-    Icon: Utensils,
-    text: "Growing research suggests that physical wellbeing and brain health are closely connected. Many seniors experiencing confusion also report: Reduced appetite, Digestive concerns, Poor nutrition, Low energy. The Gut Response System focuses on understanding how lifestyle and physical wellbeing may influence healthy ageing.",
-  },
-  {
-    title: "Neural Network System",
-    Icon: Sparkles,
-    text: "Healthy brain ageing depends upon maintaining active neural pathways. Activities such as: Learning new skills, Reading, Solving puzzles, Conversation, Mental stimulation may help support cognitive engagement throughout later life.",
-  },
-  {
-    title: "Sensory Integration System",
-    Icon: Waves,
-    text: "The brain continuously processes information from the surrounding environment. Maintaining regular exposure to familiar environments, meaningful activities and positive sensory experiences may help support orientation and emotional wellbeing.",
-  },
-  {
-    title: "Behaviour Guidance System",
-    Icon: ShieldCheck,
-    text: "Confusion often leads to changes in behaviour. Some seniors may: Become withdrawn, Avoid social situations, Feel less confident, Become restless, Depend more heavily on family members. Understanding these behaviours with compassion rather than frustration helps families create a more supportive environment.",
-  },
-];
-
-const healthyFunctionItems = [
-  { title: "Stay Well Hydrated", desc: "Dehydration is a common and sometimes overlooked cause of confusion in older adults. Drinking enough fluids throughout the day supports overall health and cognitive function." },
-  { title: "Prioritise Healthy Sleep", desc: "Good quality sleep supports attention, memory and clear thinking." },
-  { title: "Eat a Balanced Diet", desc: "Nutritious meals that include fruits, vegetables, whole grains, healthy fats and adequate protein support overall health and healthy ageing." },
-  { title: "Stay Mentally Active", desc: "Reading, puzzles, board games, learning new hobbies and regular conversation help keep the mind engaged." },
-  { title: "Remain Physically Active", desc: "Walking, stretching, yoga and other age-appropriate activities support physical and cognitive wellbeing." },
-  { title: "Maintain Familiar Routines", desc: "Consistent daily routines help reduce confusion and provide a greater sense of security." },
-  { title: "Attend Regular Medical Check-ups", desc: "Routine medical care helps identify health conditions that may contribute to confusion or cognitive changes." },
+const causeItems = [
+  { label: "Dehydration", Icon: Sparkles },
+  { label: "Infections", Icon: Activity },
+  { label: "Medication Side Effects", Icon: BookOpen },
+  { label: "Poor Sleep", Icon: HeartHandshake },
+  { label: "Depression & Anxiety", Icon: Brain },
+  { label: "Vitamin Deficiencies", Icon: ShieldCheck },
+  { label: "Thyroid Disorders", Icon: CalendarCheck },
+  { label: "Delirium", Icon: Search },
+  { label: "Dementia", Icon: Users },
+  { label: "Alzheimer's Disease", Icon: CheckCircle2 },
 ];
 
 const supportSteps = [
-  { step: "Step 1", title: "Comprehensive Assessment", desc: "Understanding cognitive concerns, emotional wellbeing, lifestyle habits, sleep quality, nutrition, medications and daily functioning.", Icon: Search },
-  { step: "Step 2", title: "Personalized Guidance", desc: "Providing individualized recommendations based on each senior's cognitive, emotional and lifestyle needs.", Icon: BookOpen },
-  { step: "Step 3", title: "Brain Health & Emotional Wellbeing Support", desc: "Helping seniors and families better understand confusion, orientation difficulties and practical strategies that support everyday life.", Icon: Brain },
-  { step: "Step 4", title: "Neuro-Ayurveda Development System", desc: "Applying the five-pillar framework to understand cognitive wellbeing, behaviour, lifestyle and healthy ageing.", Icon: Sparkles },
-  { step: "Step 5", title: "Progress Tracking & Family Guidance", desc: "Creating a structured roadmap that helps seniors and caregivers monitor changes, strengthen healthy routines and support long-term wellbeing.", Icon: CalendarCheck },
+  { label: "Assessment", Icon: Search },
+  { label: "Personalized Guidance", Icon: BookOpen },
+  { label: "Brain Health Support", Icon: Brain },
+  { label: "Neuro-Ayurveda", Icon: Sparkles },
+  { label: "Family Guidance", Icon: CalendarCheck },
 ];
 
-const professionalGuidanceItems = [
-  "Frequently becomes confused about time or place.",
-  "Has sudden confusion or disorientation.",
-  "Experiences increasing difficulty following conversations.",
-  "Struggles with routine daily activities.",
-  "Shows noticeable changes in behaviour or personality.",
-  "Has confusion that interferes with independence or safety.",
-  "Develops rapidly worsening cognitive symptoms.",
-];
-
-const whyChooseCards = [
-  {
-    title: "Comprehensive Cognitive & Orientation Assessment",
-    desc: "Every senior experiences cognitive changes differently. Our structured assessment helps us understand cognitive concerns, daily functioning, emotional wellbeing, sleep quality, lifestyle habits, nutrition, current medications, family support and personal goals before creating personalised guidance.",
-    points: ["Frequent confusion", "Difficulty recognising familiar places", "Disorientation about time or date", "Trouble following conversations", "Reduced attention", "Behavioural changes", "Emotional distress", "Difficulty managing everyday activities"],
-  },
-  {
-    title: "Neuro-Ayurveda Development System",
-    desc: "Manovaidya follows the Neuro-Ayurveda Development System, a structured framework that understands healthy cognitive ageing through five interconnected pillars.",
-    points: ["Brain Nourishment System", "Gut Response System", "Neural Network System", "Sensory Integration System", "Behaviour Guidance System"],
-  },
-  {
-    title: "Personalized Guidance",
-    desc: "Every individual's needs are different. Recommendations are personalised according to cognitive concerns, emotional wellbeing, lifestyle habits, sleep quality, daily routine, nutrition, medical history and personal goals.",
-    points: ["Cognitive concerns", "Emotional wellbeing", "Lifestyle habits", "Sleep quality", "Daily routine", "Nutrition", "Medical history", "Personal goals"],
-  },
-  {
-    title: "Holistic Cognitive Health Perspective",
-    desc: "Healthy ageing involves more than maintaining memory. Our approach considers the relationship between brain health, emotional wellbeing, nutrition, lifestyle habits, sleep quality, physical activity and social engagement.",
-    points: ["Brain health", "Emotional wellbeing", "Nutrition", "Lifestyle habits", "Sleep quality", "Physical activity", "Social engagement"],
-  },
-  {
-    title: "Focus on Independence & Healthy Ageing",
-    desc: "Our goal is to help seniors remain as independent as possible while supporting healthy cognitive function, emotional wellbeing and confidence in daily life.",
-    points: ["Independence", "Healthy cognitive function", "Emotional wellbeing", "Confidence", "Supportive routines"],
-  },
-  {
-    title: "Ongoing Support & Family Guidance",
-    desc: "Regular follow-up and structured progress tracking help seniors and caregivers monitor changes, strengthen healthy routines and make informed decisions as needs evolve over time.",
-    points: ["Regular follow-up", "Structured progress tracking", "Caregiver support", "Healthy routines", "Informed decisions"],
-  },
-];
-
-const internalLinks = [
-  { title: "Explore Senior Mental Health Care.", href: "/senior-mental-health-care/" },
-  { title: "Learn about Memory Loss & Forgetfulness Treatment.", href: "/memory-loss-forgetfulness-support-seniors-india/" },
-  { title: "Explore Depression Treatment for Seniors.", href: "/senior-depression-support-india/" },
-  { title: "Understand Anxiety Treatment for Seniors.", href: "/senior-anxiety-support-india/" },
-  { title: "Learn about Sleep Disorders in Seniors.", href: "/senior-sleep-disorders-support-india/" },
-  { title: "Explore Healthy Ageing Support.", href: "/healthy-ageing-support-india/" },
-  { title: "Learn about Caregiver Support.", href: "/caregiver-support-india/" },
-  { title: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
-];
-
-const trustItems = [
-  "Structured Neuro-Ayurveda Development System",
-  "Personalized Assessment Before Recommendations",
-  "Senior-Focused Holistic Care",
-  "Online & In-Clinic Consultations Across India",
-  "Guidance by Dr. Ankush Garg",
-  "Family-Centred Support",
-  "Focus on Healthy Cognitive Ageing",
-];
-
-const faqs = [
-  { question: "1. What causes confusion in elderly people?", answer: "Confusion in older adults can have many possible causes. Common reasons include dehydration, infections such as urinary tract infections (UTIs), medication side effects, poor sleep, vitamin deficiencies, thyroid disorders, depression, anxiety and neurological conditions such as dementia. In some cases, sudden confusion may indicate a serious medical problem that requires immediate medical attention. Because the causes vary widely, a proper medical evaluation is important to identify the underlying reason." },
-  { question: "2. What is the difference between confusion and dementia?", answer: "Confusion is a symptom that may develop suddenly or gradually and can have many different causes, including temporary medical conditions. Dementia is a group of progressive disorders that affect memory, thinking, reasoning and daily functioning over time. Not every person experiencing confusion has dementia. A healthcare professional can determine the underlying cause through a comprehensive assessment." },
-  { question: "3. What is disorientation in older adults?", answer: "Disorientation refers to difficulty recognising time, place, surroundings or familiar people. An older adult may forget the date, become confused about where they are or have trouble recognising familiar environments. Disorientation may occur due to temporary medical conditions or longer-term neurological disorders. Any new or worsening disorientation should be assessed by a qualified healthcare professional." },
-  { question: "4. Is confusion a normal part of ageing?", answer: "No. Although ageing may slightly slow thinking or make it take longer to recall information, significant confusion is not considered a normal part of healthy ageing. Persistent confusion, disorientation or sudden changes in thinking should always be evaluated to determine their underlying cause." },
-  { question: "5. Can dehydration cause confusion in seniors?", answer: "Yes. Dehydration is a common and sometimes overlooked cause of confusion in older adults. Seniors are more vulnerable to dehydration because the sensation of thirst often decreases with age. Maintaining adequate fluid intake is important for overall health, but sudden confusion should still be medically evaluated to rule out other possible causes." },
-  { question: "6. Can infections cause sudden confusion?", answer: "Yes. Infections, particularly urinary tract infections (UTIs), pneumonia and other serious illnesses, may sometimes cause sudden confusion or changes in alertness in older adults. If a senior suddenly becomes confused, unusually drowsy or disoriented, prompt medical assessment is recommended because these symptoms may indicate an acute illness." },
-  { question: "7. What is delirium?", answer: "Delirium is a sudden change in attention, awareness and thinking that usually develops over hours or days. It is often caused by an underlying medical condition such as an infection, dehydration, medication effects or metabolic imbalance. Delirium is different from dementia because it develops rapidly and often requires urgent medical evaluation and treatment." },
-  { question: "8. Can poor sleep cause confusion?", answer: "Yes. Poor sleep can affect concentration, attention and mental clarity. Long-term sleep problems may make older adults feel more forgetful or confused during the day. Improving sleep quality may support better cognitive function, but persistent confusion should always be assessed by a healthcare professional." },
-  { question: "9. Can medications cause confusion in older adults?", answer: "Yes. Some prescription medicines, over-the-counter medications or interactions between multiple medicines may affect alertness, thinking or orientation. Older adults are often more sensitive to medication side effects. If confusion begins after starting or changing a medication, it should be discussed with the prescribing healthcare professional. Medications should never be stopped without medical advice." },
-  { question: "10. When is confusion a medical emergency?", answer: "Sudden confusion should always be taken seriously. Immediate medical care is recommended if confusion develops suddenly or is accompanied by symptoms such as fever, weakness, difficulty speaking, severe headache, chest pain, seizures, loss of consciousness or changes in vision. These symptoms may indicate a serious medical condition that requires urgent evaluation." },
-  { question: "11. Can confusion be treated?", answer: "Treatment depends entirely on the underlying cause. Confusion related to dehydration, infections, medication side effects, sleep problems or certain medical conditions may improve when those causes are appropriately managed. If confusion is related to progressive neurological disorders, treatment focuses on managing symptoms, maintaining quality of life and supporting the individual and family. A comprehensive medical assessment is essential to determine the appropriate approach." },
-  { question: "12. How can families help a confused elderly person?", answer: "Families can support an older adult by communicating calmly, maintaining consistent daily routines, encouraging hydration and nutrition, ensuring medications are taken correctly, reducing unnecessary environmental stress and accompanying them for medical evaluation when needed. Patience, reassurance and respectful communication often help reduce anxiety and improve the senior's sense of security." },
-  { question: "13. How does Manovaidya support seniors with confusion?", answer: "At Manovaidya, support begins with understanding the individual rather than focusing only on confusion. Through structured assessment, personalised guidance and the Neuro-Ayurveda Development System, we help seniors and families understand cognitive wellbeing, emotional health, lifestyle habits and behavioural changes that may influence confusion. Our goal is to support healthy ageing, daily functioning and overall wellbeing through a holistic and personalised approach." },
-  { question: "14. Can confusion improve with treatment?", answer: "Improvement depends on the underlying cause. Temporary confusion caused by conditions such as dehydration, infections or medication side effects may improve after appropriate medical care. When confusion is associated with long-term neurological conditions, the focus is often on symptom management, maintaining independence where possible and improving quality of life. A healthcare professional can recommend the most appropriate plan after evaluation." },
-  { question: "15. When should families seek professional guidance for confusion?", answer: "Families should seek professional guidance if an older adult develops frequent confusion, disorientation, increasing difficulty following conversations, changes in behaviour or personality, trouble managing everyday activities or confusion that interferes with safety or independence. If confusion develops suddenly or rapidly worsens, immediate medical evaluation is recommended, as it may be a sign of a serious underlying condition." },
-];
-
-const schemaGraph = [
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    name: "Confusion & Disorientation Treatment for Seniors in India",
-    url: "https://www.manovaidya.com/confusion-disorientation-support-seniors-india/",
-    headline: "Confusion & Disorientation Treatment for Seniors in India",
-    description: "Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about confusion in older adults, disorientation, possible causes, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
-    about: ["Confusion in Elderly", "Disorientation", "Cognitive Changes", "Delirium Awareness", "Healthy Cognitive Ageing"],
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question.replace(/^\d+\.\s*/, ""),
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
-      { "@type": "ListItem", position: 2, name: "Senior Mental Health Care", item: "https://www.manovaidya.com/senior-mental-health-care/" },
-      { "@type": "ListItem", position: 3, name: "Confusion & Disorientation Treatment", item: "https://www.manovaidya.com/confusion-disorientation-support-seniors-india/" },
-    ],
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    name: "Dr. Ankush Garg",
-    medicalSpecialty: ["Mental Health", "Child Development", "Senior Mental Health"],
-    address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "India" },
-  },
+const articleShareLinks = [
+  { label: "f", href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`, title: "Share on Facebook" },
+  { label: "x", href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(pageTitle)}`, title: "Share on X" },
+  { label: "in", href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(pageUrl)}&title=${encodeURIComponent(pageTitle)}`, title: "Share on LinkedIn" },
+  { label: "wa", href: `https://api.whatsapp.com/send?text=${encodeURIComponent(`${pageTitle} ${pageUrl}`)}`, title: "Share on WhatsApp" },
 ];
 
 function SidebarCard({ children, className = "" }) {
   return <aside className={`rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] ${className}`}>{children}</aside>;
 }
 
-function BulletList({ items, columns = true }) {
+function getArticleLinkRuleKey(rule) {
+  return `${rule.href}|${rule.pattern.source}`;
+}
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (linkedRuleKeys.has(ruleKey)) return;
+      const match = remaining.match(rule.pattern);
+      if (match) candidates.push({ index: match.index, length: match[0].length, ruleKey });
+    });
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+    if (!candidates.length) break;
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+  return ruleKeys;
+}
+
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const parts = [];
+  const linkedRuleKeysInText = new Set();
+  let cursor = 0;
+  let safety = 0;
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) candidates.push({ index: keywordMatch.index, text: keywordMatch[0], rule, ruleKey, type: "keyword" });
+    });
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+    if (next.type === "citation") {
+      parts.push(
+        <button key={`${next.text}-${parts.length}`} type="button" onClick={() => onCitationClick(next.citationId)} className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]" aria-label={`Open resource ${next.citationId}`}>
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+    cursor = absoluteIndex + next.text.length;
+  }
+  return parts.map((part, index) => (typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part));
+}
+
+function IconGrid({ items, columns = "sm:grid-cols-2 lg:grid-cols-3" }) {
   return (
-    <ul className={`mt-3 grid gap-2 ${columns ? "sm:grid-cols-2" : ""}`}>
-      {items.map((item) => (
-        <li key={item} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]">
-          <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#7835A4]" />
-          {item}
-        </li>
+    <div className={`mt-4 grid gap-3 ${columns}`}>
+      {items.map(({ label, Icon }) => (
+        <div key={label} className="flex items-center gap-3 rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4]"><Icon className="h-5 w-5" /></span>
+          <span className="text-[12.5px] font-black leading-5 text-[#21142d]">{label}</span>
+        </div>
       ))}
-    </ul>
+    </div>
+  );
+}
+
+function VisualBlock({ heading }) {
+  if (heading === "Senior Cognitive Health") return <IconGrid items={focusItems} />;
+  if (heading === "Common Signs & Symptoms of Confusion") return <IconGrid items={symptomItems} columns="sm:grid-cols-2" />;
+  if (heading === "What Causes Confusion in Seniors?") return <IconGrid items={causeItems} columns="sm:grid-cols-2 lg:grid-cols-4" />;
+  if (heading === "The Neuro-Ayurveda Approach to Healthy Cognitive Wellbeing") {
+    return (
+      <div className="mt-5 overflow-hidden rounded-lg border border-[#eadff1] bg-[#fbf9fd]">
+        <img src={neuroDiagramImage} alt="Neuro Ayurveda approach for senior cognitive wellbeing support" className="h-auto w-full object-contain p-4" loading="lazy" decoding="async" />
+      </div>
+    );
+  }
+  if (heading === "How Manovaidya Supports Seniors") {
+    return (
+      <div className="mt-5 grid gap-3 sm:grid-cols-5 sm:items-start">
+        {supportSteps.map(({ label, Icon }) => (
+          <div key={label} className="flex min-h-[94px] flex-col items-center justify-start text-center">
+            <span className="mb-2 flex h-11 w-11 items-center justify-center rounded-full border border-[#dce7d8] bg-[#f7fbf5] text-[#7835A4]"><Icon className="h-6 w-6" strokeWidth={1.8} /></span>
+            <span className="text-[11px] font-black leading-4 text-[#2f2636]">{label}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  if (heading === "Book a Consultation") {
+    return (
+      <div className="mt-5 overflow-hidden rounded-xl bg-[#7835A4] text-white">
+        <div className="p-7">
+          <p className="text-[12px] font-black uppercase tracking-[0.08em] text-[#d8b4e2]">Book a Consultation</p>
+          <h3 className="mt-2 text-[25px] font-black leading-tight">Support Healthy Brain Ageing With the Right Guidance</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#f0e7f6]">Book a structured assessment and personalized guidance session with the Manovaidya team.</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a href="tel:+917823838638" className="inline-flex h-11 items-center justify-center rounded-lg bg-white px-6 text-[13px] font-black text-[#7835A4]">Contact Us Now</a>
+            <a href="tel:+917823838638" className="inline-flex h-11 items-center justify-center rounded-lg border border-white px-6 text-[13px] font-black text-white">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return null;
+}
+
+function buildFaqsFromLines(lines) {
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
+  const faqEndIndex = lines.indexOf("Book a Consultation");
+  if (faqStartIndex < 0) return [];
+  const faqLines = lines.slice(faqStartIndex + 1, faqEndIndex < 0 ? lines.length : faqEndIndex);
+  const faqs = [];
+  faqLines.forEach((line) => {
+    if (/^\d+\.\s/.test(line) && line.endsWith("?")) {
+      faqs.push({ question: line, answer: [] });
+      return;
+    }
+    if (faqs.length) faqs[faqs.length - 1].answer.push(line);
+  });
+  return faqs;
+}
+
+function FaqAccordion({ faqs, openFaq, setOpenFaq, onCitationClick, ruleKeysByLine }) {
+  return (
+    <section id="faqs" className="scroll-mt-28 pt-4">
+      <div className="mb-4 flex items-center gap-4">
+        <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
+        <div className="hidden h-px flex-1 bg-[#eadff1] sm:block" />
+      </div>
+      <div className="overflow-hidden rounded-lg border border-[#eadff1] bg-white">
+        {faqs.map((faq, index) => (
+          <div key={faq.question} className="border-b border-[#eadff1] last:border-b-0">
+            <button type="button" onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left text-[13px] font-black text-[#21142d] transition hover:bg-[#fbf7ff]" aria-expanded={openFaq === index}>
+              {faq.question}
+              <ChevronDown className={`h-4 w-4 shrink-0 text-[#7835A4] transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
+            </button>
+            {openFaq === index && (
+              <div className="space-y-3 px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
+                {faq.answer.map((answerLine, answerIndex) => (
+                  <p key={`${faq.question}-${answerIndex}`}>
+                    <ArticleLinkedText text={answerLine} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByLine.get(`faq-${index}-${answerIndex}`)} />
+                  </p>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function isShortTitleLine(line, next) {
+  return line.length < 82 && !/[.]/.test(line) && next && !headings.has(line) && !line.startsWith("[") && !line.startsWith("http") && !shortTitleExclusions.has(line) && !leadLines.has(line);
+}
+
+function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
+  const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
+  const introIndex = Math.max(0, allLines.indexOf("Senior Cognitive Health"));
+  const lines = allLines.slice(introIndex).filter((line) => !hiddenIntroLines.has(line));
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
+  const faqEndIndex = lines.indexOf("Book a Consultation");
+  const parsedFaqs = buildFaqsFromLines(lines);
+  const ruleKeysByLine = new Map();
+  const linkedRuleKeys = new Set();
+
+  const collectLineLinks = (line, index) => {
+    const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+    if (faqMode || headings.has(line) || leadLines.has(line)) return;
+    const next = lines[index + 1] || "";
+    if (isShortTitleLine(line, next)) return;
+    const ruleKeys = getArticleLinkRuleKeysForText(line, linkedRuleKeys);
+    if (ruleKeys.size) ruleKeysByLine.set(`line-${index}`, ruleKeys);
+  };
+
+  lines.forEach((line, index) => collectLineLinks(line, index));
+  parsedFaqs.forEach((faq, faqIndex) => {
+    faq.answer.forEach((answerLine, answerIndex) => {
+      const ruleKeys = getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys);
+      if (ruleKeys.size) ruleKeysByLine.set(`faq-${faqIndex}-${answerIndex}`, ruleKeys);
+    });
+  });
+
+  return (
+    <div className="mt-8 space-y-4">
+      {lines.map((line, index) => {
+        const id = sectionIdByTitle[line];
+        const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+        if (line === "Frequently Asked Questions") return <FaqAccordion key={`faq-accordion-${index}`} faqs={parsedFaqs} openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={onCitationClick} ruleKeysByLine={ruleKeysByLine} />;
+        if (faqMode) return null;
+        if (headings.has(line)) {
+          return (
+            <section key={`section-${index}`} id={id} className="scroll-mt-28 pt-4">
+              <h2 className="text-[20px] font-black leading-tight text-[#17111f]">{line === "Senior Cognitive Health" ? "Senior Cognitive Health" : line === "About" ? "About Dr. Ankush Garg" : line}</h2>
+              <VisualBlock heading={line} />
+            </section>
+          );
+        }
+        const next = lines[index + 1] || "";
+        if (leadLines.has(line)) {
+          return (
+            <p key={`lead-${index}`} className="pt-2 text-[13px] font-black leading-6 text-[#3b2e45]">
+              <ArticleLinkedText text={line} onCitationClick={onCitationClick} />
+            </p>
+          );
+        }
+        if (isShortTitleLine(line, next)) return <h3 key={`h3-${index}`} className="pt-3 text-[15px] font-black leading-6 text-[#21142d]">{line}</h3>;
+        return (
+          <p key={`p-${index}`} className="text-[14px] font-semibold leading-7 text-[#51465a]">
+            <ArticleLinkedText text={line} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByLine.get(`line-${index}`)} />
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Senior Cognitive Care</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeaways.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">Join our senior cognitive health newsletter for care tips from our experts.</p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#eadff1] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">Final Suggested References</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">References from the supplied confusion and disorientation content.</p>
+      <div className="mt-5 space-y-4">
+        {references.map((reference) => (
+          <article key={reference.n} id={`reference-${reference.n}`} className="scroll-mt-32 rounded-lg border border-[#eadff1] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#7835A4] underline underline-offset-2">{reference.url}</a>
+            {reference.supports && <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">Supports: {reference.supports}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
 function ConfusionDisorientationSupportPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
+  const [showResources, setShowResources] = React.useState(false);
   const [openFaq, setOpenFaq] = React.useState(0);
-  const [showNeuroPillars, setShowNeuroPillars] = React.useState(false);
+
+  const handleCitationClick = React.useCallback((referenceNumber) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      const target = document.getElementById(`reference-${referenceNumber}`) || document.getElementById("medical-references");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   React.useEffect(() => {
     const fontId = "senior-confusion-martel-font";
@@ -325,17 +1001,6 @@ function ConfusionDisorientationSupportPage() {
       link.href = "https://fonts.googleapis.com/css2?family=Martel:wght@400&display=swap";
       document.head.appendChild(link);
     }
-  }, []);
-
-  React.useEffect(() => {
-    const schemaId = "confusion-disorientation-schema";
-    document.getElementById(schemaId)?.remove();
-    const script = document.createElement("script");
-    script.id = schemaId;
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schemaGraph);
-    document.head.appendChild(script);
-    return () => document.getElementById(schemaId)?.remove();
   }, []);
 
   React.useEffect(() => {
@@ -357,20 +1022,11 @@ function ConfusionDisorientationSupportPage() {
     };
   }, []);
 
+  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
+
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo
-        title="Confusion & Disorientation Treatment for Seniors in India | Cognitive Health | Manovaidya"
-        description="Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about confusion in older adults, disorientation, possible causes, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya."
-        keywords="Confusion in Elderly, Disorientation, Confusion in Seniors, Senior Confusion, Mental Confusion, Cognitive Changes, Thinking Problems in Elderly, Senior Cognitive Health, Healthy Brain Ageing, Delirium, Dementia, Alzheimer's Disease, Orientation Problems, Cognitive Decline, Brain Health, Senior Mental Health"
-        path="/confusion-disorientation-support-seniors-india"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Confusion & Disorientation Treatment for Seniors in India",
-          "description": "Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about confusion in older adults, disorientation, possible causes, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya."
-        }}
-      />
+      <Seo title={`${pageTitle} | Cognitive Wellbeing | Manovaidya`} description="Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about sudden confusion, disorientation, delirium, dementia awareness, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya." keywords="Confusion Treatment India, Disorientation in Seniors, Senior Cognitive Health, Delirium Awareness, Dementia Awareness, Cognitive Wellbeing, Neuro-Ayurveda Cognitive Care, Cognitive Assessment, Dr. Ankush Garg, Senior Mental Health" path="/confusion-disorientation-support-seniors-india" />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -378,17 +1034,13 @@ function ConfusionDisorientationSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/senior-mental-health-care/" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
+                <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Confusion & Disorientation Treatment</span>
               </nav>
-              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Senior Cognitive Health</p>
-              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Confusion & Disorientation Treatment for Seniors in India
-              </h1>
-              <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Helping Seniors Understand Confusion, Disorientation & Cognitive Wellbeing
-              </p>
+              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Senior Cognitive Care</p>
+              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">{pageTitle}</h1>
+              <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Seniors Understand Confusion, Disorientation & Cognitive Wellbeing</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Cognitive Assessment</a>
                 <a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
@@ -398,13 +1050,13 @@ function ConfusionDisorientationSupportPage() {
                   <img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" />
                   <div>
                     <p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p>
-                    <p className="text-[12px] font-bold text-[#75677d]">May 20, 2025 · 10 min read</p>
+                    <p className="text-[12px] font-bold text-[#75677d]">Reviewed senior confusion support guidance</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]">
                   <span>Share:</span>
-                  {["f", "x", "in", "wa"].map((label) => (
-                    <a key={label} href="#share" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label="Share article">
+                  {articleShareLinks.map(({ label, href, title }) => (
+                    <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>
                       {label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}
                     </a>
                   ))}
@@ -422,250 +1074,99 @@ function ConfusionDisorientationSupportPage() {
             </figure>
           </div>
 
-          <section id="introduction" className="mt-8">
-            {[
-              "As people grow older, occasional forgetfulness may become more common. However, when an older adult frequently appears confused, has difficulty recognising familiar places, loses track of time or struggles to understand everyday situations, it should not be ignored.",
-              "Confusion and disorientation can affect a senior's confidence, independence and overall quality of life. Some individuals become unsure about where they are, forget the day or date, have difficulty following conversations or seem unable to make simple decisions that were once easy. These changes can be distressing not only for seniors but also for their families and caregivers.",
-              "It is important to understand that confusion in older adults has many possible causes. Some causes may be temporary and treatable, including dehydration, infections, medication side effects, poor sleep, vitamin deficiencies or metabolic problems. Others may be related to neurological conditions such as delirium, dementia or Alzheimer's disease. Because the causes vary widely, professional medical evaluation is important to determine the underlying reason.",
-              "Sudden confusion should never be dismissed as a normal part of ageing. In some situations, it may signal an urgent medical condition that requires immediate attention.",
-              "At Manovaidya, we believe healthy ageing involves supporting cognitive wellbeing, emotional health, daily functioning and overall quality of life. Understanding the reasons behind confusion can help seniors and families make informed decisions and seek appropriate guidance.",
-              "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows the Neuro-Ayurveda Development System to help seniors and families better understand confusion, disorientation and the many factors that influence healthy cognitive ageing.",
-            ].map((text) => <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>)}
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Confusion & Disorientation Treatment Focuses On</h3>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {focusItems.map(({ label, Icon }) => (
-                  <li key={label} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-7 w-7" strokeWidth={1.8} /></span>
-                    <span>{label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
+          <KeyTakeawaysBlock />
+          <RawArticleContent onCitationClick={handleCitationClick} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
-          <section id="understanding-confusion" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Understanding Confusion & Disorientation</h2>
-            {[
-              "Confusion is a condition in which an individual finds it difficult to think clearly, understand information, make decisions or respond appropriately to situations.",
-              "Disorientation refers to difficulty recognising time, place, surroundings or sometimes even familiar people. A person may forget where they are, what day it is or become uncertain about familiar environments.",
-              "While occasional lapses in attention may occur with normal ageing, persistent or sudden confusion deserves careful evaluation. These symptoms should never automatically be assumed to be dementia because many medical conditions can produce similar changes.",
-              "Families searching for Confusion in Elderly People, Disorientation in Seniors, Mental Confusion in Older Adults or Cognitive Changes in Ageing are often looking for reliable information to understand what these symptoms may mean and when professional help should be considered.",
-            ].map((text) => <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>)}
-          </section>
-
-          <section id="normal-ageing-vs-confusion" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Normal Ageing vs Confusion</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Growing older naturally brings small changes in memory and processing speed, but these are different from significant confusion.</p>
-            <div className="mt-5 grid gap-4 lg:grid-cols-2">
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-                <h3 className="text-[16px] font-black text-[#21142d]">Normal Age-Related Changes</h3>
-                <p className="mt-2 text-[13px] font-bold text-[#5a5063]">Many healthy seniors may occasionally:</p>
-                <BulletList items={["Take longer to remember names.", "Misplace everyday items.", "Need reminders for appointments.", "Learn new technology more slowly.", "Pause briefly while searching for the right word."]} columns={false} />
-                <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">These changes usually do not interfere with daily independence.</p>
-              </div>
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm">
-                <h3 className="text-[16px] font-black text-[#21142d]">Confusion That Needs Attention</h3>
-                <p className="mt-2 text-[13px] font-bold text-[#5a5063]">Professional assessment is recommended if a senior:</p>
-                <BulletList items={["Frequently becomes confused about time or place.", "Cannot follow simple conversations.", "Appears unusually drowsy or difficult to wake.", "Has trouble recognising familiar surroundings.", "Becomes increasingly disoriented.", "Experiences sudden changes in thinking or behaviour."]} columns={false} />
-                <p className="mt-3 text-[13px] font-bold leading-6 text-[#51465a]">These symptoms may have many possible causes and should not be ignored.</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="temporary-vs-persistent" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-6">
-            <h2 className="text-[20px] font-black text-[#17111f]">Temporary vs Persistent Confusion</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Not all confusion has the same cause.</p>
-            <h3 className="mt-4 text-[16px] font-black text-[#21142d]">Temporary Confusion</h3>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">Temporary confusion may occur due to:</p>
-            <BulletList items={["Dehydration", "Fever", "Medication side effects", "Poor sleep", "Low blood sugar", "Acute illness", "Stress"]} />
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Many temporary causes improve when the underlying problem is identified and treated.</p>
-            <h3 className="mt-4 text-[16px] font-black text-[#21142d]">Persistent Confusion</h3>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">Confusion that gradually worsens or continues over time may require detailed medical assessment to identify possible neurological or other health conditions.</p>
-          </section>
-
-          <section id="delirium-dementia" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Delirium, Dementia & Alzheimer's Disease</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">These terms are often confused but describe different conditions.</p>
-            {[
-              { title: "Delirium", text: "Delirium is a sudden change in attention and thinking that develops over hours or days. It is often triggered by an underlying medical condition such as an infection, dehydration, medication effects or illness. Because delirium can be a medical emergency, sudden confusion should be assessed immediately." },
-              { title: "Dementia", text: "Dementia is a group of conditions that gradually affect memory, thinking, communication and daily functioning over time." },
-              { title: "Alzheimer's Disease", text: "Alzheimer's disease is the most common cause of dementia, but it is not the only one. Understanding these differences helps families avoid making assumptions while encouraging timely medical evaluation." },
-            ].map(({ title, text }) => (
-              <div key={title} className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <h3 className="text-[15px] font-black text-[#21142d]">{title}</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">{text}</p>
-              </div>
-            ))}
-          </section>
-
-          <section id="common-signs-symptoms" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs & Symptoms of Confusion</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">Confusion may affect several aspects of daily life.</p>
-            <div className="mt-5 space-y-5">
-              {symptomGroups.map(({ title, text, items, Icon }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                  <div className="mb-3 flex items-center gap-3"><Icon className="h-5 w-5 text-[#7835A4]" /><h3 className="text-[16px] font-black text-[#21142d]">{title}</h3></div>
-                  <p className="mb-3 mt-2 text-[13px] font-bold text-[#51465a]">{text}</p>
-                  <ul className="space-y-2 sm:columns-2">
-                    {items.map((step) => <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]"><span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" />{step}</li>)}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="what-causes-confusion" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Causes Confusion in Seniors?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Confusion can have many possible causes.</p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Not every episode of confusion indicates dementia.</p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Some common causes include:</p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {causes.map(({ title, desc }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]"><h3 className="text-[15px] font-black text-[#21142d]">{title}</h3><p className="mt-2 text-[12.5px] font-semibold leading-6 text-[#5a5063]">{desc}</p></div>)}
-            </div>
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="text-[16px] font-black text-[#21142d]">Why Early Understanding Matters</h3>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Many families assume confusion is simply part of growing older.</p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">However, persistent or sudden confusion should never be ignored. Early assessment may help identify reversible medical conditions, support timely treatment and provide appropriate guidance for seniors and their families.</p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Recognising cognitive changes early also helps maintain independence, improve safety and support better quality of life.</p>
-            </div>
-          </section>
-
-          <section id="daily-life-impact" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Confusion & Disorientation Can Affect Daily Life</h2>
-            {[
-              "Confusion affects much more than memory alone. It can influence a senior's ability to think clearly, communicate, manage daily activities and maintain independence.",
-              "Some seniors experience only occasional episodes of confusion, while others notice gradual changes that begin affecting their confidence and routine. Families may observe that their loved one becomes more dependent, hesitant or anxious while performing tasks that were once familiar.",
-              "Recognising these changes early helps families provide appropriate support while seeking timely medical evaluation when necessary.",
-            ].map((text) => <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>)}
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {dailyLifeCards.map(({ title, desc, items }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]"><h3 className="text-[15px] font-black text-[#21142d]">{title}</h3><p className="mt-2 text-[12.5px] font-semibold leading-6 text-[#5a5063]">{desc}</p><BulletList items={items} columns={false} /></div>)}
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-approach" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Approach to Healthy Cognitive Wellbeing</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">At Manovaidya, cognitive wellbeing is viewed through a holistic perspective.</p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Rather than focusing only on confusion itself, the Neuro-Ayurveda Development System helps individuals understand the many factors that may influence thinking, emotional wellbeing, behaviour and healthy ageing.</p>
-            <img src={neuroDiagramImage} alt="Neuro Ayurveda approach for confusion and cognitive wellbeing in seniors" className="mt-5 mb-5 max-h-[400px] w-full rounded-lg border border-[#eadff1] bg-white object-contain p-4 shadow-sm" />
-            <button type="button" onClick={() => setShowNeuroPillars((current) => !current)} className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.18)] transition hover:bg-[#5f2785]" aria-expanded={showNeuroPillars}>
-              {showNeuroPillars ? "Show Less" : "Read More"}
+          <div className="mt-6">
+            <button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references">
+              Resources
+              <ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} />
             </button>
-            {showNeuroPillars && (
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                {neuroPillars.map(({ title, text, Icon }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)] last:sm:col-span-2"><div className="mb-3 flex items-center gap-3"><span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-6 w-6" strokeWidth={1.8} /></span><h3 className="text-[15px] font-black leading-5 text-[#21142d]">{title}</h3></div><p className="text-[13px] font-semibold leading-6 text-[#5a5063]">{text}</p></div>)}
-              </div>
-            )}
-          </section>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
 
-          <section id="supporting-cognitive-function" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Supporting Healthy Cognitive Function</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Although ageing naturally changes the brain over time, healthy lifestyle habits may support cognitive wellbeing.</p>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {healthyFunctionItems.map(({ title, desc }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm"><h3 className="text-[15px] font-black text-[#21142d]">{title}</h3><p className="mt-2 text-[12.5px] font-semibold leading-6 text-[#5a5063]">{desc}</p></div>)}
-            </div>
-          </section>
-
-          <section id="how-manovaidya-supports" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Manovaidya Supports Seniors</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">At Manovaidya, support begins with understanding the individual rather than focusing only on confusion.</p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Our structured process includes:</p>
-            <div className="mt-5 grid gap-4">
-              {supportSteps.map(({ step, title, desc, Icon }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm"><div className="flex gap-4"><span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-5 w-5" /></span><div><p className="text-[12px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{step}</p><h3 className="mt-1 text-[15px] font-black text-[#21142d]">{title}</h3><p className="mt-2 text-[12.5px] font-semibold leading-6 text-[#5a5063]">{desc}</p></div></div></div>)}
-            </div>
-            <div className="mt-6 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="text-[16px] font-black text-[#21142d]">When Should You Consider Professional Guidance?</h3>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">You should consider seeking professional guidance if a senior:</p>
-              <BulletList items={professionalGuidanceItems} />
-              <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">A structured assessment can help identify possible contributing factors and guide appropriate next steps. If confusion develops suddenly, is severe, or is accompanied by symptoms such as weakness, difficulty speaking, fever, chest pain or loss of consciousness, immediate emergency medical care is essential, as these symptoms may indicate a serious medical condition.</p>
-              <p className="mt-3 text-[14px] font-bold leading-7 text-[#51465a]">Our goal is to help seniors and their families better understand confusion, support healthy cognitive ageing and improve quality of life through compassionate, personalised guidance.</p>
-            </div>
-          </section>
-
-          <section id="why-families-choose" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Families Across India Choose Manovaidya</h2>
-            {[
-              "Confusion and disorientation in older adults can be worrying for both seniors and their families. Small changes in thinking, orientation or decision-making often raise questions about safety, independence and future health.",
-              "At Manovaidya, we understand that confusion does not always have the same cause. Some episodes may be temporary and related to dehydration, infections, medications or sleep problems, while others may be associated with age-related cognitive conditions. Our approach focuses on understanding the whole person rather than making assumptions based on symptoms alone.",
-              "Through structured assessment, personalised guidance and a holistic perspective, we aim to help seniors maintain dignity, confidence and the highest possible quality of life.",
-            ].map((text) => <p key={text} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">{text}</p>)}
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {whyChooseCards.map(({ title, desc, points }) => <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm"><h3 className="text-[15px] font-black text-[#21142d]">{title}</h3><p className="mt-2 text-[12.5px] font-semibold leading-6 text-[#5a5063]">{desc}</p><BulletList items={points} columns={false} /></div>)}
-            </div>
-            <h3 className="mt-6 text-[18px] font-black text-[#17111f]">Why Families Across India Trust Manovaidya</h3>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">Families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Confusion & Disorientation Treatment, Healthy Cognitive Ageing Guidance and Senior Mental Health Support through both online and in-clinic consultations.</p>
-            <div className="mt-5 rounded-lg bg-[#fbf9fd] p-5"><h3 className="text-[16px] font-black text-[#21142d]">Why Trust Manovaidya?</h3><BulletList items={trustItems} /></div>
-          </section>
-
-          <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-6 shadow-sm">
-            <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start">
-              <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full border-2 border-white object-cover shadow-sm" />
-              <div>
-                <p className="text-[12px] font-black uppercase tracking-[0.1em] text-[#7835A4]">About Dr. Ankush Garg</p>
-                <h2 className="mt-1 text-[18px] font-black text-[#17111f]">Autism, ADHD, Child Development & Mental Health Specialist in India</h2>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">Dr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System.</p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">His work extends across Child Development, Adult Mental Health and Senior Mental Health, with a focus on understanding the relationship between brain health, emotional wellbeing and overall quality of life.</p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">Many families seek guidance when an older loved one experiences confusion, disorientation or changes in thinking. Through structured assessment, personalised guidance, lifestyle recommendations and continuous follow-up, Dr. Ankush Garg helps seniors and families better understand cognitive concerns while supporting healthy ageing through the Neuro-Ayurveda Development System.</p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">Based in Delhi NCR, Dr. Ankush Garg supports seniors and families across India through structured assessment, personalised guidance and holistic mental health care.</p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">Based in Delhi NCR, Dr. Ankush Garg supports seniors and families across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="faqs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
-            <div className="mt-4 overflow-hidden rounded-lg border border-[#eadff1] bg-white">
-              {faqs.map((faq, index) => <div key={faq.question} className="border-b border-[#eadff1] last:border-b-0"><button type="button" onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left text-[13px] font-black text-[#21142d]" aria-expanded={openFaq === index}>{faq.question}<ChevronDown className={`h-4 w-4 shrink-0 text-[#7835A4] transition-transform ${openFaq === index ? "rotate-180" : ""}`} /></button>{openFaq === index && <p className="px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">{faq.answer}</p>}</div>)}
-            </div>
-          </section>
-
-          <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
-            <div className="p-7">
-              <h2 className="text-[24px] font-black">Book a Consultation</h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">Concerned About Confusion or Disorientation in Yourself or a Loved One?</p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">If confusion, difficulty recognising familiar places, changes in thinking or disorientation have started affecting daily life, understanding the underlying cause is an important first step.</p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">At Manovaidya, we help seniors and families better understand cognitive changes through structured assessment, personalised guidance and the Neuro-Ayurveda Development System.</p>
-              <div className="mt-6">
-                <h3 className="mb-3 text-[16px] font-black">Book Your Assessment Today</h3>
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {["Book Consultation", "Speak With Our Team", "Get Personalized Guidance", "Confusion & Disorientation Treatment", "Healthy Cognitive Ageing Guidance"].map((step) => <li key={step} className="flex gap-2 text-[14px] font-bold"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />{step}</li>)}
-                </ul>
-              </div>
-              <div className="mt-8 border-t border-[#8e45bb] pt-6">
-                <h3 className="mb-2 text-[18px] font-black">Support Healthy Cognitive Ageing With the Right Guidance</h3>
-                <p className="text-[14px] font-bold text-[#e5d5f2]">Manovaidya Clinic</p>
-                <p className="text-[14px] font-bold text-[#e5d5f2]">Noida, Uttar Pradesh, India</p>
-                <a href="tel:+917823838638" className="mt-5 inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Contact Us Now</a>
-              </div>
-            </div>
-          </section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Confusion and disorientation treatment support for seniors in India.", url: pageUrl }) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
-          <SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Search</h2><label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3"><input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" /><Search className="h-4 w-4 text-[#7835A4]" /></label></SidebarCard>
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya senior cognitive care clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Senior Mental Health, Memory Changes and Cognitive Wellbeing</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
-            <h2 className="text-[15px] font-black text-[#21142d]">On this page</h2>
+            <p className="text-[15px] font-black text-[#21142d]">Search</p>
+            <label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3">
+              <input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" />
+              <Search className="h-4 w-4 text-[#7835A4]" />
+            </label>
+          </SidebarCard>
+
+          <SidebarCard>
+            <p className="text-[15px] font-black text-[#21142d]">On this page</p>
             <nav className="mt-5 space-y-3.5">
-              {pageLinks.map(({ label, id }) => <a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}><span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcF]"}`} />{label}</a>)}
+              {pageLinks.map(({ label, id }) => (
+                <a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}>
+                  <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcf]"}`} />
+                  {label}
+                </a>
+              ))}
             </nav>
           </SidebarCard>
-          <SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Categories</h2><div className="mt-4 space-y-3">{categories.map(({ label, count, Icon }) => <a key={label} href="#why-families-choose" className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span><span>{count}</span></a>)}</div></SidebarCard>
-          <SidebarCard><h2 className="text-[15px] font-black text-[#21142d]">Internal Links</h2><div className="mt-4 space-y-3">{internalLinks.map(({ title, href }) => <a key={title} href={href} className="block text-[12px] font-bold leading-5 text-[#51465a] transition hover:text-[#7835A4]">{title}</a>)}</div></SidebarCard>
+
+          <SidebarCard>
+            <p className="text-[15px] font-black text-[#21142d]">Categories</p>
+            <div className="mt-4 space-y-3">
+              {categories.map(({ label, count, Icon, href }) => (
+                <a key={label} href={href} className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
+                  <span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span>
+                  <span>{count}</span>
+                </a>
+              ))}
+            </div>
+          </SidebarCard>
+
           <RelatedSeniorMindCarePages />
-          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]"><CalendarCheck className="h-9 w-9 text-[#7835A4]" /><h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2><p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Book a structured assessment and personalized guidance session with the Manovaidya team.</p><a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a><p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p></SidebarCard>
+
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <CalendarCheck className="h-9 w-9 text-[#7835A4]" />
+            <p className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</p>
+            <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Book a structured assessment and personalized guidance session with the Manovaidya team.</p>
+            <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">Noida, Uttar Pradesh, India</p>
+          </SidebarCard>
         </div>
       </section>
 
       <section className="border-y border-[#eadff1] bg-white">
         <div className="mx-auto grid max-w-[1440px] gap-5 px-4 py-6 sm:px-6 lg:grid-cols-[1fr_460px] lg:items-center lg:px-8">
-          <div className="flex items-center gap-4"><span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Mail className="h-8 w-8" /></span><div><h2 className="text-[18px] font-black text-[#21142d]">Stay Updated with Insights That Matter</h2><p className="mt-1 text-[13px] font-bold text-[#5f5367]">Subscribe to expert articles, senior mental health tips and Manovaidya updates.</p></div></div>
-          <form className="flex gap-3"><input type="email" placeholder="Enter your email address" className="min-w-0 flex-1 rounded-md border border-[#eadff1] px-4 text-[12px] font-bold outline-none focus:border-[#7835A4]" /><button className="h-11 rounded-md bg-[#7835A4] px-6 text-[12px] font-black text-white transition hover:bg-[#632b86]">Subscribe</button></form>
+          <div className="flex items-center gap-4">
+            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Mail className="h-8 w-8" /></span>
+            <div>
+              <h2 className="text-[18px] font-black text-[#21142d]">Stay Updated with Insights That Matter</h2>
+              <p className="mt-1 text-[13px] font-bold text-[#5f5367]">Subscribe to expert articles, senior mental health tips and Manovaidya updates.</p>
+            </div>
+          </div>
+          <form className="flex gap-3">
+            <input type="email" placeholder="Enter your email address" className="min-w-0 flex-1 rounded-md border border-[#eadff1] px-4 text-[12px] font-bold outline-none focus:border-[#7835A4]" />
+            <button type="button" className="h-11 rounded-md bg-[#7835A4] px-6 text-[12px] font-black text-white transition hover:bg-[#632b86]">Subscribe</button>
+          </form>
         </div>
       </section>
-
     </main>
   );
 }
 
 export default ConfusionDisorientationSupportPage;
-

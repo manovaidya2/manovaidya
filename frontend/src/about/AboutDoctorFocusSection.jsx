@@ -88,7 +88,7 @@ const focusAreas = [
 
 const familyReasons = [
   {
-    text: "Structured & Root-Cause Based Approach",
+    text: "Structured Assessment & Care Approach",
     color: "text-[#65b86c]",
     bg: "bg-[#65b86c]/12",
   },
@@ -103,7 +103,7 @@ const familyReasons = [
     bg: "bg-[#65b86c]/12",
   },
   {
-    text: "Long-Term Results & Progress Tracking",
+    text: "Ongoing Support & Progress Review",
     color: "text-[#7090e4]",
     bg: "bg-[#7090e4]/12",
   },
@@ -118,7 +118,7 @@ const familyReasons = [
     bg: "bg-[#8B43BA]/10",
   },
   {
-    text: "Compassionate, Scientific and Care",
+    text: "Compassionate, Structured Care",
     color: "text-[#766bd8]",
     bg: "bg-[#766bd8]/10",
   },
@@ -200,7 +200,7 @@ function AboutDoctorFocusSection() {
                 <p className="mt-2 max-w-[620px] text-[13px] font-semibold leading-6 text-white/86 sm:text-[14px]">
                   If you are looking for support for Autism, ADHD, Child
                   Development Concerns, Mental Health or Behavioural Challenges,
-                  we are here to help with a personalised roadmap and long-term
+                  we are here to help with a personalised roadmap and ongoing
                   care.
                 </p>
               </div>
@@ -210,8 +210,8 @@ function AboutDoctorFocusSection() {
 
             <div className="grid gap-4 sm:grid-cols-[1fr_auto] sm:items-center">
               <p className="text-[13px] font-semibold leading-6 text-white/86 sm:text-[14px]">
-                Take the first step towards clarity and better outcomes. Book
-                your consultation with Dr. Ankush Garg today.
+                Take the first step towards clarity and personalised guidance.
+                Book your consultation with Dr. Ankush Garg today.
               </p>
               <BookConsultationButton
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-white px-6 text-[13px] font-black text-[#251553] shadow-[0_14px_24px_rgba(20,10,42,0.18)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_30px_rgba(20,10,42,0.22)]"

@@ -392,7 +392,7 @@ function CaseStudiesPage() {
                   className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-violet-200 bg-white px-5 text-[11px] font-extrabold text-[#8b43ba] transition hover:border-[#8b43ba]"
                 >
                   <PhoneCall className="h-3.5 w-3.5" />
-                  Call 7823838638
+                  Call +91 78238 38638
                 </a>
               </div>
             </div>

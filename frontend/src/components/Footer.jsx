@@ -54,7 +54,7 @@ const socialLinks = [
 
 const youtubeHref = "https://www.youtube.com/@manovaidyaclinic";
 
-const mapHref = "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Clinic%20VS%20Plaza%20Near%20Vigyan%20Hospital%20Atta%20Market%20Sector%2022%20Noida";
+const mapHref = "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Ayurvedic%20Clinic%20VS%20Plaza%20Near%20Vinayak%20Hospital%20Atta%20Market%20Pocket%20E%20Sector%2027%20Noida%20Uttar%20Pradesh%20201301";
 
 function Footer() {
   return (
@@ -127,21 +127,21 @@ function Footer() {
             >
               <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#8B43BA]" />
               <span>
-                Manovaidya Clinic
-                <span className="block">VS Plaza, near vinayak hospital,</span>
+                Manovaidya Ayurvedic Clinic
+                <span className="block">VS Plaza, Near Vinayak Hospital,</span>
                 <span className="block">Atta Market, Pocket E, Sector 27,</span>
-                <span className="block">Noida, Uttar Pradesh 201301</span>
+                <span className="block">Noida, Uttar Pradesh - 201301</span>
               </span>
             </a>
 
             <a href="tel:+917823838638" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
               <Phone className="h-5 w-5 text-[#8B43BA]" />
-              +91 7823838638
+              +91 78238 38638
             </a>
 
-            <a href="mailto:manovaidya@gmail.com" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
+            <a href="mailto:manovaidya2@gmail.com" className="flex items-center gap-4 transition hover:text-[#8B43BA]">
               <Mail className="h-5 w-5 text-[#8B43BA]" />
-              manovaidya@gmail.com
+              manovaidya2@gmail.com
             </a>
 
             <span className="inline-flex rounded-md border border-[#8B43BA]/20 bg-white px-4 py-2 text-xs font-black text-[#8B43BA] shadow-sm">
@@ -196,4 +196,3 @@ function Footer() {
 }
 
 export default Footer;
-

@@ -9,8 +9,8 @@ function AboutDoctorPage() {
   return (
     <main>
       <Seo
-        title="Dr. Ankush Garg | Autism, ADHD & Mental Health Specialist"
-        description="Meet Dr. Ankush Garg, Founder of Manovaidya, Autism, ADHD & Child Development Specialist offering personalised Neuro-Ayurveda care."
+        title="Dr. Ankush Garg | Ayurvedacharya & Founder of Manovaidya"
+        description="Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and developer of the Neuro-Ayurveda Development System, with 7+ years of focused experience."
         keywords="Dr. Ankush Garg, Ankush Garg, Autism Specialist India, ADHD Specialist India, Child Development Specialist, Mental Health Specialist India, Brain Gut Axis Specialist, Neuro Ayurveda, Neuro-Ayurveda Development System, Manovaidya, Autism Treatment India, ADHD Treatment India, Child Behaviour Specialist, Developmental Disorders, Holistic Mental Health, Ayurvedacharya"
         path="/about/doctor"
         schema={{
@@ -20,7 +20,7 @@ function AboutDoctorPage() {
             "@type": "Person",
             "name": "Dr. Ankush Garg",
             "jobTitle": "Ayurvedacharya, Founder of Manovaidya",
-            "description": "Meet Dr. Ankush Garg, Ayurvedacharya and founder of Manovaidya, with 7+ years of experience in Autism, ADHD, child development and mental health care."
+            "description": "Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and developer of the Neuro-Ayurveda Development System, with 7+ years of focused experience in child development and mental wellness."
           }
         }}
       />

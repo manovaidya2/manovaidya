@@ -27,6 +27,7 @@ const consultationTimes = [
 
 const reviewNote = "Consultation with Dr. Ankush Garg. Google rating 4.9/5 from positive patient reviews.";
 const clinicPhone = "7823838638";
+const clinicPhoneDisplay = "+91 78238 38638";
 const consultationFee = "599";
 const opdNote = "Consultation fee is Rs. 599. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so please book your slot and complete payment to confirm it.";
 const medicineNote = "Medicine cost fixed nahi hoti. Har child/person, disease/condition aur symptoms alag hote hain, isliye Manovaidya me customized medicine di jati hai. Medicine condition details aur har symptom profile ke according banti hai. Exact medicine cost assessment ke baad team confirm karti hai.";
@@ -314,7 +315,7 @@ const websitePageKnowledge = [
   {
     "title": "Footer",
     "source": "components/Footer.jsx",
-    "text": "); const socialLinks = [ { label: \"Facebook\", Icon: FacebookIcon, href: \"https://www.facebook.com/ManovaidyaAutismADHD/\" }, { label: \"Instagram\", Icon: InstagramIcon, href: \"https://www.instagram.com/manovaidya/\" }, { label: \"YouTube\", Icon: YouTubeIcon, href: \"https://www.youtube.com/@manovaidyaclinic\" }, ]; const youtubeHref = \"https://www.youtube.com/@manovaidyaclinic\"; const mapHref = \"https://www.google.com/maps/search/?api=1&query=Manovaidya%20Clinic%20VS%20Plaza%20Near%20Vigyan%20Hospital%20Atta%20Market%20Sector%2022%20Noida\"; function Footer() { return ( Across India - Online Consultations Available"
+    "text": "); const socialLinks = [ { label: \"Facebook\", Icon: FacebookIcon, href: \"https://www.facebook.com/ManovaidyaAutismADHD/\" }, { label: \"Instagram\", Icon: InstagramIcon, href: \"https://www.instagram.com/manovaidya/\" }, { label: \"YouTube\", Icon: YouTubeIcon, href: \"https://www.youtube.com/@manovaidyaclinic\" }, ]; const youtubeHref = \"https://www.youtube.com/@manovaidyaclinic\"; const mapHref = \"https://www.google.com/maps/search/?api=1&query=Manovaidya%20Ayurvedic%20Clinic%20VS%20Plaza%20Near%20Vinayak%20Hospital%20Atta%20Market%20Pocket%20E%20Sector%2027%20Noida%20Uttar%20Pradesh%20201301\"; function Footer() { return ( Across India - Online Consultations Available"
   },
   {
     "title": "Header",
@@ -339,17 +340,17 @@ const websitePageKnowledge = [
   {
     "title": "InsightsFaqSection",
     "source": "homepage/InsightsFaqSection.jsx",
-    "text": "({ title: blog.title, image: getAssetUrl(blog.image) || fallbackImages[index % fallbackImages.length], alt: blog.imageAlt || blog.title, href: blog.slug ? `/blog/ ` : \"/blog\", })); }, [blogs]); return ( { const isOpen = openIndex === index; return ( Take the First Step Towards a Better You Personalised. Compassionate. Proven. Understanding Autism & How to Support How Gut Health Affects Your Mental Health Managing Stress Naturally with Ayurveda ADHD in Teens: Signs, Causes & Care Sleep Hygiene Tips for Better Mental Wellbeing Nutrition & Diet for Brain & Gut Health What is Neuro-Ayurveda & how does it help? Neuro-Ayurveda combines Ayurvedic principles with modern brain and nervous-system understanding to support mental health, behaviour, sleep, emotions, gut health and overall wellbeing. How does gut health affect mental health? The gut and brain communicate through hormones, nerves, immunity and inflammation. Better digestion, food habits and gut balance can support mood, focus, sleep and stress response. Yes. Long-term stress can affect sleep, digestion, headaches, fatigue, immunity, blood pressure and emotional regulation. A holistic plan helps calm the system at root level. Yes, many concerns can be assessed and followed up effectively online through structured history-taking, care plans, lifestyle guidance and regular progress reviews. It depends on the concern, duration, severity and consistency with the plan. Some people notice early improvements, while deeper concerns need regular follow-up and sustained care. Do you offer personalised care plans? Yes. Care plans are personalised based on age, symptoms, history, lifestyle, digestion, sleep, emotional patterns and family needs. Do you support patients outside Delhi NCR? Yes. Online consultations are available across India, with guidance, follow-ups and care planning provided remotely. Can digestive issues affect mood and behaviour? Yes. Digestive discomfort, poor gut balance and food sensitivities can influence mood, sleep, irritability, focus and behaviour in many people. Why is emotional wellbeing important? Emotional wellbeing supports confidence, relationships, learning, work performance, sleep and phy"
+    "text": "({ title: blog.title, image: getAssetUrl(blog.image) || fallbackImages[index % fallbackImages.length], alt: blog.imageAlt || blog.title, href: blog.slug ? `/blog/ ` : \"/blog\", })); }, [blogs]); return ( { const isOpen = openIndex === index; return ( Take the First Step Towards a Better You Personalised. Compassionate. Structured. Understanding Autism & How to Support How Gut Health Affects Your Mental Health Managing Stress Naturally with Ayurveda ADHD in Teens: Signs, Causes & Care Sleep Hygiene Tips for Better Mental Wellbeing Nutrition & Diet for Brain & Gut Health What is Neuro-Ayurveda & how does it help? Neuro-Ayurveda combines Ayurvedic principles with modern brain and nervous-system understanding to support mental health, behaviour, sleep, emotions, gut health and overall wellbeing. How does gut health affect mental health? The gut and brain communicate through hormones, nerves, immunity and inflammation. Better digestion, food habits and gut balance can support mood, focus, sleep and stress response. Yes. Long-term stress can affect sleep, digestion, headaches, fatigue, immunity, blood pressure and emotional regulation. A structured plan can support healthier routines, coping skills and overall wellbeing. Yes, many concerns can be assessed and followed up effectively online through structured history-taking, care plans, lifestyle guidance and regular progress reviews. It depends on the concern, duration, severity and consistency with the plan. Some people notice early improvements, while deeper concerns need regular follow-up and sustained care. Do you offer personalised care plans? Yes. Care plans are personalised based on age, symptoms, history, lifestyle, digestion, sleep, emotional patterns and family needs. Do you support patients outside Delhi NCR? Yes. Online consultations are available across India, with guidance, follow-ups and care planning provided remotely. Can digestive issues affect mood and behaviour? Yes. Digestive discomfort, poor gut balance and food sensitivities can influence mood, sleep, irritability, focus and behaviour in many people. Why is emotional wellbeing important? Emotional wellbeing supports confidence, relationships, learning, work performance, sleep and phy"
   },
   {
     "title": "ScienceStoriesSection",
     "source": "homepage/ScienceStoriesSection.jsx",
-    "text": "We combine the timeless wisdom of Ayurveda with the latest neuroscience to understand how the brain, gut, emotions and lifestyle are deeply connected. Our holistic approach focuses on restoring balance at the root level, not just managing symptoms."
+    "text": "We consider Ayurvedic wisdom alongside modern health understanding to explore how the brain, gut, emotions and lifestyle are deeply connected. Our approach considers the interconnected roles of lifestyle, emotional wellbeing, development, behaviour and physical health."
   },
   {
     "title": "WhyChooseSection",
     "source": "homepage/WhyChooseSection.jsx",
-    "text": "In-depth evaluation to identify root causes. Tailored plans for each child, teen or adult. Ancient wisdom backed by modern neuroscience. Empowering families with tools and ongoing support. Regular follow-ups to track and support progress."
+    "text": "In-depth evaluation to understand individual needs. Tailored plans for each child, teen or adult. Ayurvedic wisdom considered alongside modern health understanding. Empowering families with tools and ongoing support. Regular follow-ups to track and support progress."
   },
   {
     "title": "MindBodyConcernsSection",
@@ -980,7 +981,7 @@ const getBookingQuestionAnswer = (question, currentPrompt) => {
   }
 
   if (hasAnyTerm(value, ["phone", "number", "call", "mobile", "contact"])) {
-    return `You can call Manovaidya at ${clinicPhone}.\n\n${currentPrompt}`;
+    return `You can call Manovaidya at ${clinicPhoneDisplay}.\n\n${currentPrompt}`;
   }
 
   const localSideAnswer = getLocalBookingSideAnswer(question, currentPrompt);
@@ -1047,7 +1048,7 @@ const getExactLocalAnswer = (question) => {
   }
 
   if (isContactIntent(value)) {
-    return `Aap Manovaidya team ko ${clinicPhone} par call kar sakte hain. Chat me "Connect with agent" choose karke support team se bhi connect ho sakte hain.`;
+    return `Aap Manovaidya team ko ${clinicPhoneDisplay} par call kar sakte hain. Chat me "Connect with agent" choose karke support team se bhi connect ho sakte hain.`;
   }
 
   if (isOpdIntent(value)) {
@@ -1370,7 +1371,7 @@ function ConsultationCta() {
           href={`tel:+91${clinicPhone}`}
           className="rounded-lg border border-[#8B43BA]/25 bg-white px-3 py-2 text-center text-[12px] font-black text-[#8B43BA] transition hover:bg-[#f7effc] sm:col-span-2"
         >
-          Call {clinicPhone}
+          Call {clinicPhoneDisplay}
         </a>
       </div>
     </div>

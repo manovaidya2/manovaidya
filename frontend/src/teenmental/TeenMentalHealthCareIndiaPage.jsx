@@ -488,7 +488,7 @@ function TeenMentalHealthCareIndiaPage() {
             <h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Teen Assessment</h2>
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get structured teen mental health assessment and personalised guidance from our team.</p>
             <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 78238 38638</p>
           </SidebarCard>
         </div>
       </section>

@@ -355,7 +355,7 @@ The thoughtful assessment and tailored guidance process can give families insigh
 Contact us now
 
 
-Call us: +91-7823838638
+Call us: +91 78238 38638
 Email: manovaidya2@gmail.com`;
 
 const speechReferenceContent = `References
@@ -2104,7 +2104,7 @@ function SpeechDelaySupportIndiaPage() {
             >
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 78238 38638</p>
           </SidebarCard>
         </div>
       </section>

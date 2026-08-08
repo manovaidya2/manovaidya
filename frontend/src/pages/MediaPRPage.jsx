@@ -441,7 +441,7 @@ function MediaPRPage() {
           </div>
 
           <a
-            href="mailto:contact@manovaidya.com?subject=Media%20Inquiry%20for%20Manovaidya"
+            href="mailto:manovaidya2@gmail.com?subject=Media%20Inquiry%20for%20Manovaidya"
             className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-white px-6 text-sm font-black text-[#251553] transition hover:-translate-y-0.5 hover:bg-[#fff4e4]"
           >
             Contact Media Team

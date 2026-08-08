@@ -69,14 +69,14 @@ function NeuroAyurvedaSystemSection() {
             <p>
               At Manovaidya, we use a 5-pillar integrated Neuro-Ayurveda
               Development System. It combines the wisdom of Ayurveda with
-              modern science to understand the root causes behind developmental
-              and mental health concerns.
+              contemporary health understanding to explore the factors that may
+              influence developmental and mental wellness concerns.
             </p>
             <p>
               This system helps us look at brain health, digestion, behaviour,
               emotions, sensory processing and lifestyle together - so every
               individual receives care that is personalised, practical and
-              focused on long-term improvement and real-life outcomes.
+              focused on everyday wellbeing and real-life support.
             </p>
           </div>
 
@@ -137,8 +137,8 @@ function NeuroAyurvedaSystemSection() {
             <p className="mt-6 sm:mt-8">
               Together, these pillars help us create personalised care plans
               that support communication, behaviour, learning, emotions and
-              overall well-being - so individuals and families can see
-              meaningful progress with long-term support.
+              overall well-being - so individuals and families receive
+              structured guidance for meaningful progress.
             </p>
           </div>
         </div>

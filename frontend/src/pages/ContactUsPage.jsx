@@ -32,20 +32,20 @@ const initialForm = {
 const contactCards = [
   {
     label: "Call",
-    value: "+91 7823838638",
+    value: "+91 78238 38638",
     href: "tel:+917823838638",
     Icon: Phone,
   },
   {
     label: "Email",
-    value: "manovaidya@gmail.com",
-    href: "mailto:manovaidya@gmail.com",
+    value: "manovaidya2@gmail.com",
+    href: "mailto:manovaidya2@gmail.com",
     Icon: Mail,
   },
   {
     label: "Clinic",
-    value: "Manovaidya Clinic, VS Plaza, near vinayak hospital, Atta Market, Pocket E, Sector 27, Noida, Uttar Pradesh 201301",
-    href: "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Clinic%20VS%20Plaza%20Near%20Vigyan%20Hospital%20Atta%20Market%20Sector%2022%20Noida",
+    value: "Manovaidya Ayurvedic Clinic, VS Plaza, Near Vinayak Hospital, Atta Market, Pocket E, Sector 27, Noida, Uttar Pradesh - 201301",
+    href: "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Ayurvedic%20Clinic%20VS%20Plaza%20Near%20Vinayak%20Hospital%20Atta%20Market%20Pocket%20E%20Sector%2027%20Noida%20Uttar%20Pradesh%20201301",
     Icon: MapPin,
   },
 ];

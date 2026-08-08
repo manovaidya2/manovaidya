@@ -1,37 +1,25 @@
 import React from "react";
 import {
   Activity,
-  ArrowRight,
-  Baby,
+  BatteryLow,
+  BedDouble,
   BookOpen,
   Brain,
+  Briefcase,
   CalendarCheck,
   CheckCircle2,
   ChevronDown,
+  Clock,
   HeartHandshake,
   Mail,
-  MessageCircle,
-  Puzzle,
   Search,
   Share2,
   ShieldCheck,
   Sparkles,
-  Stethoscope,
-  Utensils,
   Users,
   Waves,
-  Briefcase,
-  BatteryLow,
-  Clock,
-  Coffee,
-  ClipboardList,
-  BedDouble,
-  Moon,
-  CloudRain,
-  Sun
 } from "lucide-react";
 
-// Using the filenames provided in the SEO plan
 import heroImage from "../images/sleep-disorders-support-india.png";
 import symptomsImage from "../images/insomnia-symptoms-adults.png";
 import neuroDiagramImage from "../images/neuro-ayurveda-system-diagram-transparent.png";
@@ -41,177 +29,624 @@ import RelatedPagesCard from "./RelatedPagesCard";
 import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
+const pageTitle = "Sleep Disorders & Insomnia Treatment in India";
+const pageUrl = "https://www.manovaidya.com/sleep-disorders-insomnia-support-india";
+
+const articleRaw = "Key Takeaways\nUnderstanding Sleep Disorders and Insomnia\nDifference Between Temporary and Chronic Sleep Problems\nCommon Night-Time and Daytime Symptoms\nMain Causes of Poor Sleep and Insomnia\nImpact on Mood, Memory and Concentration\nEffect on Energy, Work and Relationships\nStress, Anxiety and Lifestyle-Related Sleep Issues\nHealthy Sleep Habits and Sleep Hygiene\nNeuro-Ayurveda Approach to Sleep Support\nManovaidya’s Assessment and Support Process\nWhen to Seek Professional Guidance\nFAQs About Sleep Disorders and Insomnia\nSleep Disorders & Insomnia Support\nSleep Disorders & Insomnia Treatment in India\nIndia is a world of immense variety and diversity.India is a country with plenty of diversity and variation.\nThis course is for anyone who has experienced poor sleep or insomnia and wants to learn more about those issues to improve their sleep.\nFor physical and emotional health, a good night's sleep is critical.[4] For most adults, sleep can get challenging from time to time due to stress, traveling, sickness or changes in usual pattern. In most cases, these temporary sleeplessness is resolved as soon as the main problem is resolved.\nHowever when this sleep problem persists for weeks or months, it may start to impact energy levels, concentration, emotional wellbeing, work performance and overall quality of life.[1][5] Some people have a hard time falling asleep, others might wake up several times during the night or get up earlier than they should and not be able to fall asleep again. These persistent sleep problems might go along with insomnia or other sleep issues.[1]\nWe believe that sleep issues are far more than the amount of sleep you get.We know that at Manovaidya sleep issues are not just about the hours you sleep. There are a number of factors that affect healthy sleep, such as emotional well being, stress, daily rhythms, lifestyle and overall mind-body balance.[7][8]\nUnder the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Expert in India, Manovaidya has been conducting various seminars in the field of Neuro-Ayurveda Development System, aimed at people to better understand sleep disorders, insomnia and the factors influencing long-term sleep health and emotional wellbeing.\n\nAt Manovaidya, Sleep Treatment Focuses On:\nDifficulty Falling Asleep\nFrequent Night Awakenings\nPoor Sleep Quality\nDaytime Fatigue\nHealthy Sleep & Emotional Wellbeing\nInsomnia\n\nUnderstanding Sleep Disorders & Insomnia\nSleep is one of the most natural healing processes of the body. It gives the brain and body rest, replenishes energy and prepares for the day ahead.[4][6]\nEveryone suffers from sleepless nights every now and then. Stress-related, travel-induced or illness-induced sleep disturbances typically resolve after a short time.\nWhen sleep problems occur regularly or for a long time, however, they can start to impact emotional health, physical health and functioning in daily life.[1][5]\nLots of adults who are struggling with Sleep Disorder Treatment in India, Insomnia Support, Difficulty Sleeping or Poor Sleep Quality are seeking answers as they have an on-going sleep issue which is affecting their daily lives.\n\nWhat Is Insomnia?\nInsomnia is one of the most common sleep problems! [1]\nThose who are unable to sleep may find that they have:\n• Difficulty falling asleep\n• Refusing to lie down or sleeping in bed for an extended period of time\n• Waking too early\nInability to feel refreshed after sleep\n• Difficulty falling or staying asleep, despite the amount of sleep time spent\nSome may experience a reduced duration of insomnia and others may experience a prolonged duration of insomnia. Understanding the pattern, and why it's occurring is an important step in improving sleep health.[1][2]\nTemporary vs Chronic Sleep Problems\nTemporary Sleep Problems\nShort-term sleep disturbances can be caused by:\n• Stressful situations\n • Travel\n • Temporary illness\n • Changes in routine\n • Important life events\nThese tend to improve with change in circumstances.\n\nChronic Sleep Problems\nIf it is not helping sleep, it is difficult for a few weeks or longer and is affecting daily life, work or emotional well being, it may be beneficial to get a professional opinion.[1]\nIf sleep problems continue, they do not happen as part of being a normal part of life or accepted as a given. [1]\n\nCommon Signs & Symptoms of Sleep Disorders are:Common Signs & Symptoms of Sleep Disorders include:\nThere are many different signs and symptoms of sleep disorders.There are some common symptoms and signs that indicate sleep disorders.\nProblems with sleep can affect more than just at night. They have a powerful effect on physical stamina, emotional health, concentration and performance during the day.[5][6]\n\nNight-Time Symptoms\nDifficulty falling asleep\nWaking up a lot at night\nRising to early from the alarm clocks\nRestless sleep\nInability to get to sleep or stay asleep\nPoor sleep quality\n\nDaytime Symptoms\nConstant tiredness\nLow energy\nDifficulty concentrating\nBrain fog\nReduced productivity\nDaytime sleepiness\nThese symptoms tend to occur in individuals who are not sleeping well or not sleeping enough, particularly those who are experiencing chronic sleep difficulties or insomnia.\n\nEmotional Symptoms\nSleep disturbances can also have an impact on emotional health. Some individuals experience:[5]\n• Irritability\n• Mood changes\n• Increased stress\n• Reduced emotional resilience\n• Feeling mentally exhausted\n\nCognitive Symptoms\nSleep issues may occur in those with:[6]\n• Memory\n• Attention\n• Decision making\n• Learning\n• Mental clarity\nCommon first symptoms of adult ADHD include problems focussing attention and becoming aware of how sleep is affecting them.\n\nWhat are the causes of sleep problems?\nWhen people have trouble sleeping, there are several things that can often be a factor, but not always. These influences are important to understand, as they will better enable individuals to understand their sleep health.\nStress\nWhen we are stressed, our mind will not rest before going to sleep, which makes it hard to get restful sleep and keeps us awake at night.Stress won't let our mind de-stress before sleep, making it difficult to get a good night's rest and keeping us awake at night.\nAnxiety\nWorrying and overthinking can make you more aware of your mind and impact sleep.[1][8]\nDepression\nDepressing individuals may sleep too little or too much, or both, and may experience a lack of feeling refreshed after sleep. [5]\nLifestyle Habits\nPoor sleep can result from a lack of a regular nighttime routine, overindulgence in caffeine, and other bad sleep habits or routines.\nScreen Exposure\nSome people may find it hard to sleep because of the presence of their mobile phone, laptop computer or other electronic gadget near their bed at night.[2]\nShift Work\nThe body's rhythm of sleep and wakefulness may disturb when the body rhythm is changed by shifting rhythms and work during the night.[2]\nPhysical Health Conditions\nMedical conditions or chronic pain can interfere with sleep [1].\nAgeing\nOlder adults' sleep patterns vary with age and some may sleep more lightly or for shorter periods than younger adults.[4]\nWhy Early Understanding Matters\nPeople will often tolerate poor sleep for months or years, thinking that it will get better.\nDifficulty sleeping can eventually interfere with emotional health, physical wellbeing, concentration, work productivity and quality of life[1][5][6] and early detection of sleep problems will help individuals realise what is causing the problem and what advice they should be following to avoid the situation spiralling out of control.\nThe effects of poor sleep on everyday functioning.The impact of poor sleep on everyday functioning.\nSleep is one of the most important healing activities that the body undertakes and when the body does not get a sufficient amount of sleep, it can be seen beyond the bedroom. Bad sleep can affect emotional health, physical health, ability to focus, productivity and relationships.[5][6]\nIt's common for adults to think that their lack of sleep is a normal part of their busy lives. But if sleep continues to be a problem, it can start to interfere with other aspects of life over time and lower quality of life.[1]\n\nEmotional Wellbeing\nPoor sleep may make it more difficult to regulate emotions and cope with everyday challenges.[5] People who have chronic sleep issues say they suffer from:\n• Increased irritability\n• Mood swings\n• Feeling emotionally overwhelmed\n• Reduced patience\n• Difficulty relaxing\n• Increased emotional sensitivity\nBrain Function & Concentration\nGood sleep is essential for the brain to learn, remember & make decisions.[6] If sleep is continually disturbed, some people might suffer from:\n• Difficulty concentrating\n• Brain fog\n• Forgetfulness\n• Reduced attention span\n• Slower thinking\n• Poor decision-making\n\nPhysical Wellbeing\nToo much sleep can cause you to experience: [4][7]\n• Persistent fatigue\n• Low energy\n• Reduced physical performance\n• Headaches\n• Muscle discomfort\n• Daytime tiredness\n\nWork Performance\nIn adults, insomnia can affect productivity and/or mental functioning, and can be accompanied by:\nDifficulty completing tasks\nReduced motivation\nIncreased number of errors in the workplace\nLower productivity\nDifficulty managing workload\nReduced creativity\nRelationships\nSome people develop the following disorders as a result of bad sleep:\nEasily frustrated\nLess patient\nEmotionally distant\nLess interested in interaction with others\nMore vocal and expressive when speaking to others\nDaily Energy & Quality of Life\nIndividuals with chronic insomnia may also be fatigued during the day, which may affect their ability to:\nExercise\nEnjoy hobbies\nTake time to spend time with family.\nStay productive\nMaintain healthy routines[7]\nThe Neuro-Ayurveda Approach to Sleep Disorders & Insomnia Support\nHealthy sleep at Manovaidya is experienced in a different way. Instead of just sleeping problems, we want to learn what factors contribute to good sleep, emotional health, lifestyle and health.[7][8]\nThe Neuro-Ayurveda Development System is built around five interrelated pillars that aid in understanding the sleep concerns.\nHow Adults Can Improve Healthy Sleep Habits\nTo improve sleep, it typically takes practice.[2]\nMaintain a Consistent Sleep Schedule:\nBedtime and morning times should be the same for most days.[2][4]\nReduce Screen Exposure Before Bed:\nUsing mobile phones, laptops and other electronic devices less before bed may aid the mind in preparing for sleep.[2]\nCreate a Relaxing Bedtime Routine:\nReading, light stretching, meditation or relaxation exercises can help some people relax before bedtime.[2][8]\nStay Physically Active:\nExercising regularly helps to stay physically healthy and maintain healthy sleep habits.[4][7]\nLimit Stimulants Late in the Day:\nCaffeine, and other stimulants, may negatively affect sleep quality in some people, so try to limit their intake late in the day.[2]\nManage Daily Stress:\nHealthy ways to manage stress, relaxation techniques, and structured daily routine could enhance emotional health and sleep.[2][7][8]\nHow Manovaidya Supports Adults\nSupport at Manovaidya starts with an understanding of the individual, not with sleep symptoms. A systematic, systematic approach for a measured improvement and development over time.\nStep 1: Comprehensive Assessment – Sleep patterns, emotional wellbeing, lifestyle habits, stress levels and daily routine and concerns.\nStep 2: Personalized Guidance - Personalised recommendations according to each person's sleep issues, lifestyle and emotional health.\nStep 3: Emotional Wellbeing Support: Facilitating understanding of sleep difficulties, stress and healthy coping strategies in a systematic way.[2]\nStep 4: Neuro-Ayurveda Development System: Applying the 5 pillar approach to sleep health, emotional wellbeing, behaviour, lifestyle and mind body balance.[7][8]\nStep 5: Progress Tracking & Follow-Up: Establishing a plan to track progress and build more healthy sleep habits over time.\nWe aim to be clear, we don't aim to be relaxed. We become familiar with your sleep you deeply.\nWhen is it a good time to consider an Assessment?\nIf you have the following symptoms, you might need professional advice:\nInsomnia for several weeks\nFrequent night awakenings\nPersistent daytime fatigue\nPoor sleep, impacting work or relationships\nDifficulty concentrating due to lack of sleep\nEmotional upset associated with insomnia\nContinued inability to sleep that impacts daily functioning\nA structured assessment can assist in identifying factors that may impact sleep and a tailored plan for better sleep and emotional wellness.[1]\nWe aim to assist the person to get a more restful night's sleep, feel refreshed and alert during the day, have emotional stability and feel better overall.\n\n\nWhy Adults Across India choose Manovaidya?\nConstant sleep disturbances can be physically draining and emotionally overwhelming.[1][5] Many adults experience problems falling asleep and waking up during the night, or feel tired upon waking in the morning – and think that their sleep is of poor quality because of their busy lives.[1]\nOur support concentrates on:\nComprehensive Sleep Assessment\nNeuro-Ayurveda Development System\nPersonalized Guidance\nHolistic Mind-Body Perspective\nLong-Term Sleep Health\nOngoing Support & Progress Tracking\nAdults of Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and other cities of India reach Manovaidya for Sleep Disorders & Insomnia Support, Healthy Sleep Guidance and Emotional Wellbeing support via online and in-clinic consultation services.\nAbout\nDr. Ankush Garg\nMental Health & Wellness Specialist\nBased in Delhi NCR, Dr. Ankush Garg supports adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.\nHis work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured, personalized and holistic approach.\nMany adults experiencing insomnia, disturbed sleep, poor sleep quality or persistent daytime fatigue seek guidance to better understand the factors influencing their sleep and emotional wellbeing. Through structured assessment and personalized guidance, Dr. Ankush Garg helps individuals better understand healthy sleep while supporting long-term emotional wellbeing.\n\nFrequently Asked Questions\n\n1. Why can't I sleep at night?\n\nThere are several factors that could be responsible for a poor night's sleep, including stress, anxiety, sleep issues, excessive screen time, lifestyle and other health conditions. Some have difficulties falling asleep or get up a lot at night. If sleep problems last for weeks and are causing problems with energy level, mood or everyday functioning, an expert assessment of the cause of the poor sleep may be helpful. [1][2]\n\n2. What causes insomnia?\n\nSome emotional, lifestyle and physical causes may lead to insomnia. A prolonged stress, anxiety and depression; irregular sleeping routine; excessive caffeine; late night screen time; shift work; some medical conditions. As each person has his or her own unique insomnia, it's important to understand what may be the root cause of the condition. [1][2][8]\n\n3. What are the symptoms of insomnia?\n\nThe signs of insomnia are: getting to sleep; waking up during the night; waking up too early; feeling unrefreshed after waking and tired during the day. Low concentration, irritability, low energy and productivity are also common symptoms experienced by many people. If these problems persist and interfere with normal daily activities, it might be necessary to have a professional evaluation. [1][5][6]\n\n4. How much sleep do adults need?\n\nThe normal healthy grown-up adult needs 7 to 9 hours of rest each night for physical and psychological health. Everyone sleeps differently and needs various amounts of sleep, depending on their age, health and lifestyle. Also, the quality of sleep is important; if you're getting the right amount of sleep but waking up feeling tired, it may also indicate a sleep issue. [4]\n\n6. Can stress and anxiety cause sleep problems?\n\nYes. Some of the most frequent causes of poor sleep are stress and anxiety. Continued anxiety, racing thoughts and stressed feelings may make it difficult to fall asleep or stay asleep. Long-term sleep improvement can be achieved through the use of stress-reduction techniques, good sleep hygiene and the appropriate treatment of stress factors. [1][2][8]\n\n6. How do doctors diagnose insomnia?\n\nInsomnia is diagnosed by understanding a patient's sleep history, symptoms, lifestyle habits and the impact of sleep issues on their daily life. May inquire about sleep patterns, stress, medications, emotional and overall health. If another sleep disorder is suspected, additional medical examination and/or sleep studies may be suggested. [1]\n\n7. How can I check if I have a sleep disorder?\n\nIf you find that you are having trouble sleeping regularly, getting up a lot at night, feeling tired during the day or not getting a good night's sleep for several weeks, it may be beneficial to see a professional for an evaluation. The sleep pattern, lifestyle, emotional state and medical history is looked at to get an understanding of what could be the cause or causes and then provide guidance. [1]\n\n8. Can insomnia be managed without medication?\n\nMany people have mild or moderate insomnia that can be enhanced with sleep hygiene, establishing a consistent sleep schedule, managing stress, avoiding electronics before bed and making lifestyle changes. The best treatment depends on the cause of the sleep disorder. Seek a competent health care provider's advice for chronic or severe sleep difficulties. [1][2][3]\n\n9. What is good sleep hygiene?\n\nSleep hygiene are good sleeping habits. This includes consistent bedtimes, reducing caffeine intake later in the day, not using screens before bed, making a comfortable place to sleep and a relaxing bedtime routine. Adopting sound sleep hygiene on a regular basis can help to enhance sleep quality and wellbeing. [2][4]\n\n10. Can lack of sleep affect mental health?\n\nYes. There is a strong relationship between problem sleeping and mental health. Persistent sleep difficulties can impact emotional health, make people irritable, make it hard to focus and make it tougher to handle regular stress. Sleep disturbance can also be a symptom of anxiety, depression, and/or chronic stress. Restful sleep can often be an important part of one's emotional health. [1][5]\n\n12. Can poor sleep affect memory and concentration?\n\nYes. Good sleep is a crucial factor in memory, learning and concentration. When you don't get a good sleep, you may feel brain fog, forgetful, slow to think and unable to focus during the day. People are more attentive, have clearer minds and are more productive after a good night's sleep. [6]\n\n13. What are the long-term effects of poor sleep?\n\nOver time, sleeping poorly can impact emotional health, physical health, work, memory, concentration and quality of life. Other common symptoms are continuous fatigue, loss of motivation and difficulty with everyday activities. If sleep disturbances are recognized early, and treated, the long term effects can be reduced. [1][5][6]\n\n13. Can lifestyle changes improve sleep quality?\n\nYes. There are several people who can benefit for healthy lifestyle habits to improve sleep. It can take time, but in time a regular bedtime routine, keeping your body active, coping with stress and avoiding screens before you go to sleep can help to improve the quality of your sleep. The best approach to help with lifestyle changes is to have a personalised professional support. [2][4][7]\n\n\n14. How does Manovaidya support adults with sleep disorders?\n\nThe initial step in supporting at Manovaidya is to understand the individual instead of sleep symptoms. Structured assessment, personalized guidance along with the Neuro-Ayurveda Development System can assist a person in understanding the emotional, behavioural and lifestyle factors which may be impacting sleep. We aim to help to induce healthier sleep, emotional balance and wellbeing in a holistic approach. [7][8]\n\n15. When should I seek professional guidance for sleep problems?\n\nIf it takes a couple of weeks, or if it begins to affect other areas of your life, including work, relationships, emotional well-being and daily activities, get professional assistance. Many people may experience difficulty falling asleep, waking up multiple times at night or feeling tired during the day and/or poor sleep quality, and these symptoms may not be ignored. The structured assessments undertaken at Manovaidya can assist in identifying factors at the root of the sleep difficulty and provide personalised guidance that can result in improved sleep and wellbeing. [1]\n\nStruggling to get to sleep or can't get to sleep?\n\nBook a guided evaluation and personalized sleep direction session with Manovaidya team, learn more about what you worry about in your sleep, emotional health and overall well-being.\n\nWhy Trust Manovaidya?\n\nStructured Neuro-Ayurveda Development System\n\nPersonalized Assessment Before Recommendations: To make personalized recommendations for each student.\n\nOnline & In-Clinic Consultations in all over India.\n\nHolistic Mind-Body Approach\n\nTaught by Ankush Garg Ph.D.\n\nEmphasize Healthy Sleep & Long-Term Wellbeing\n\nMake the First Step to Improved Sleep & Emotional Wellness.\n\nIf you are having difficulty sleeping, if you can't get to sleep, if you wake up at night and can't fall back asleep, if you have non-restorative sleep, if you are losing sleep, if you are fatigued or if you are sleep deprived, we can help you.";
+
+const references = [
+  {
+    "n": "1",
+    "title": "Qaseem A, Kansagara D, Forciea MA, Cooke M, Denberg TD. Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of Physicians. Annals of Internal Medicine. 2016.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27136449/",
+    "supports": "Chronic insomnia management, assessment and when professional support is recommended."
+  },
+  {
+    "n": "2",
+    "title": "Edinger JD, Arnedt JT, Bertisch SM, et al. Behavioral and Psychological Treatments for Chronic Insomnia Disorder in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline. Journal of Clinical Sleep Medicine. 2021.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33164742/",
+    "supports": "Behavioral and psychological treatments, sleep hygiene and insomnia care."
+  },
+  {
+    "n": "3",
+    "title": "Trauer JM, Qian MY, Doyle JS, Rajaratnam SMW, Cunnington D. Cognitive Behavioral Therapy for Chronic Insomnia: A Systematic Review and Meta-analysis. Annals of Internal Medicine. 2015.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26054060/",
+    "supports": "CBT for chronic insomnia and evidence-based sleep support."
+  },
+  {
+    "n": "4",
+    "title": "Watson NF, Badr MS, Belenky G, et al. Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society. Journal of Clinical Sleep Medicine. 2015.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26039963/",
+    "supports": "Recommended adult sleep duration and healthy sleep context."
+  },
+  {
+    "n": "5",
+    "title": "Palmer CA, Alfano CA. Sleep Loss and Emotion: A Systematic Review and Meta-analysis. Psychological Bulletin. 2024.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38127505/",
+    "supports": "Sleep loss, emotional wellbeing, mood and daily functioning."
+  },
+  {
+    "n": "6",
+    "title": "Charaka Samhita. Nidra (Sleep) – Trayopastambha (Three Pillars of Life).",
+    "url": "https://www.carakasamhitaonline.com/index.php/Nidra",
+    "supports": "Ayurvedic reference for Nidra and sleep as a pillar of life."
+  },
+  {
+    "n": "7",
+    "title": "Charaka Samhita. Dinacharya (Healthy Daily Routine & Lifestyle).",
+    "url": "https://www.carakasamhitaonline.com/index.php/Dinacharya",
+    "supports": "Ayurvedic Dinacharya, healthy daily routine and lifestyle support."
+  },
+  {
+    "n": "8",
+    "title": "Charaka Samhita. Tistraishaniya Adhyaya (Sattvavajaya Chikitsa – Mental Regulation).",
+    "url": "https://www.carakasamhitaonline.com/index.php?title=Tistraishaniya_Adhyaya",
+    "supports": "Ayurvedic Sattvavajaya and mental regulation context."
+  }
+];
+
+const keyTakeaways = [
+  "Understanding Sleep Disorders and Insomnia",
+  "Difference Between Temporary and Chronic Sleep Problems",
+  "Common Night-Time and Daytime Symptoms",
+  "Main Causes of Poor Sleep and Insomnia",
+  "Impact on Mood, Memory and Concentration",
+  "Effect on Energy, Work and Relationships",
+  "Stress, Anxiety and Lifestyle-Related Sleep Issues",
+  "Healthy Sleep Habits and Sleep Hygiene",
+  "Neuro-Ayurveda Approach to Sleep Support",
+  "Manovaidya's Assessment and Support Process",
+  "When to Seek Professional Guidance",
+  "FAQs About Sleep Disorders and Insomnia",
+];
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
-  { label: "Understanding Insomnia", id: "understanding-insomnia" },
+  { label: "Understanding Sleep", id: "understanding-sleep" },
   { label: "Signs & Symptoms", id: "signs-and-symptoms" },
-  { label: "Causes of Sleep Problems", id: "causes" },
-  { label: "Health Impact", id: "health-impact" },
-  { label: "Neuro-Ayurveda System", id: "neuro-ayurveda-system" },
-  { label: "Improving Sleep Habits", id: "improving-sleep" },
+  { label: "Causes", id: "causes" },
+  { label: "Early Understanding", id: "early-understanding" },
+  { label: "Daily Life Impact", id: "daily-life-impact" },
+  { label: "Neuro-Ayurveda", id: "neuro-ayurveda" },
+  { label: "Sleep Habits", id: "sleep-habits" },
   { label: "How We Support", id: "how-we-support" },
-  { label: "Why Choose Us", id: "why-choose-us" },
-  { label: "About Dr. Ankush Garg", id: "about-dr-ankush-garg" },
+  { label: "Why Manovaidya", id: "why-manovaidya" },
+  { label: "About Doctor", id: "about-doctor" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Consultation", id: "book-consultation" },
 ];
 
-const categories = [
-  { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake },
-  { label: "Sleep Disorders", count: 12, Icon: BedDouble },
-  { label: "Stress & Burnout", count: 12, Icon: BatteryLow },
-  { label: "Anxiety & Depression", count: 14, Icon: Brain },
-  { label: "Work-Life Balance", count: 9, Icon: Briefcase },
-  { label: "Neuro-Ayurveda", count: 10, Icon: Sparkles },
+const sectionIdByTitle = {
+  "Sleep Disorders & Insomnia Support": "introduction",
+  "Understanding Sleep Disorders & Insomnia": "understanding-sleep",
+  "Common Signs & Symptoms of Sleep Disorders": "signs-and-symptoms",
+  "What are the causes of sleep problems?": "causes",
+  "Why Early Understanding Matters": "early-understanding",
+  "How Poor Sleep Can Affect Daily Life": "daily-life-impact",
+  "The Neuro-Ayurveda Approach to Sleep Disorders & Insomnia Support": "neuro-ayurveda",
+  "How Adults Can Improve Healthy Sleep Habits": "sleep-habits",
+  "How Manovaidya Supports Adults": "how-we-support",
+  "Why Adults Across India choose Manovaidya?": "why-manovaidya",
+  "About": "about-doctor",
+  "Frequently Asked Questions": "faqs",
+  "Struggling to get to sleep or can't get to sleep?": "book-consultation",
+};
+
+const headings = new Set([...Object.keys(sectionIdByTitle), pageTitle]);
+const hiddenIntroLines = new Set(["Key Takeaways", ...keyTakeaways, pageTitle]);
+const shortTitleExclusions = new Set([
+  "Modern Science",
+  "Ayurvedic References",
+  "People with insomnia may experience:",
+  "Short-term sleep disturbances can be caused by:",
+  "Sleep disturbances can also have an impact on emotional health. Some individuals experience:",
+  "Sleep problems can affect:",
+  "Poor sleep may make it more difficult to regulate emotions and cope with everyday challenges. People who have chronic sleep issues say they suffer from:",
+  "Good sleep is essential for the brain to learn, remember & make decisions. If sleep is continually disturbed, some people might suffer from:",
+  "Rest is very linked to your physical healing. Excessive sleep problems can lead to:",
+  "Insomnia can impair productivity and/or mental performance. Adults may notice:",
+  "Bad sleep can also impact interaction and associations. Some individuals become:",
+  "People who have persistent sleeping difficulties also feel tired during the day. This could make them less able to:",
+  "If you have the following symptoms, you might need professional advice:",
+  "Our support concentrates on:",
+  "Why Trust Manovaidya?",
+]);
+
+const leadLines = new Set([...shortTitleExclusions, "At Manovaidya, Sleep Treatment Focuses On:"]);
+
+const articleLinkRules = [
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Disorders? (?:&|and) Insomnia(?: Treatment)?/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Disorder Treatment in India/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Insomnia Support/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Difficulty Sleeping/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Poor Sleep Quality/i },
+  { href: "/stress-burnout-support-india/", pattern: /stress/i },
+  { href: "/anxiety-support-india/", pattern: /anxiety/i },
+  { href: "/depression-treatment-india/", pattern: /depression/i },
+  { href: "/adult-mental-health-care-india/", pattern: /Adult Mental Health/i },
+  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "#sleep-habits", pattern: /Healthy Sleep Habits/i },
+  { href: "#sleep-habits", pattern: /Sleep Hygiene/i },
+  { href: "#daily-life-impact", pattern: /emotional wellbeing/i },
 ];
 
-const sleepHighlights = [
+const categories = [
+  { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake, href: "/adult-mental-wellness/" },
+  { label: "Sleep Disorders", count: 12, Icon: BedDouble, href: "/sleep-disorders-insomnia-support-india/" },
+  { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
+  { label: "Anxiety Support", count: 14, Icon: Brain, href: "/anxiety-support-india/" },
+  { label: "Depression Support", count: 13, Icon: Activity, href: "/depression-treatment-india/" },
+  { label: "Work-Life Balance", count: 9, Icon: Briefcase, href: "/stress-burnout-support-india/#manage-stress" },
+];
+
+const focusItems = [
   { label: "Difficulty Falling Asleep", Icon: BedDouble },
   { label: "Frequent Night Awakenings", Icon: Clock },
   { label: "Poor Sleep Quality", Icon: Activity },
   { label: "Daytime Fatigue", Icon: BatteryLow },
   { label: "Healthy Sleep & Emotional Wellbeing", Icon: HeartHandshake },
+  { label: "Insomnia", Icon: MoonIcon },
 ];
 
-const assessmentSteps = [
-  { 
-    step: "Step 1", 
-    title: "Comprehensive Assessment", 
-    desc: "Understanding sleep patterns, emotional wellbeing, lifestyle habits, stress levels, daily routines and personal concerns.",
-    Icon: ClipboardList 
-  },
-  { 
-    step: "Step 2", 
-    title: "Personalized Guidance", 
-    desc: "Providing individualized recommendations based on each person's sleep concerns, lifestyle and emotional wellbeing.",
-    Icon: BookOpen 
-  },
-  { 
-    step: "Step 3", 
-    title: "Emotional Wellbeing Support", 
-    desc: "Helping individuals better understand sleep problems, stress and healthy coping strategies through a structured approach.",
-    Icon: HeartHandshake 
-  },
-  { 
-    step: "Step 4", 
-    title: "Neuro-Ayurveda Development System", 
-    desc: "Applying the five-pillar framework to understand sleep health, emotional wellbeing, behaviour, lifestyle and mind-body balance.",
-    Icon: Sparkles 
-  },
-  { 
-    step: "Step 5", 
-    title: "Progress Tracking & Follow-Up", 
-    desc: "Creating a structured roadmap that helps individuals monitor progress and develop healthier sleep habits over time.",
-    Icon: ShieldCheck 
-  },
+function MoonIcon({ className = "" }) {
+  return <BedDouble className={className} />;
+}
+
+const symptomItems = [
+  { label: "Night-Time Symptoms", Icon: BedDouble },
+  { label: "Daytime Symptoms", Icon: BatteryLow },
+  { label: "Emotional Symptoms", Icon: HeartHandshake },
+  { label: "Cognitive Symptoms", Icon: Brain },
 ];
 
-const neuroAyurvedaPillars = [
-  {
-    title: "Brain Nourishment System",
-    Icon: Brain,
-    text: "Healthy sleep depends upon healthy brain function. The Brain Nourishment System focuses on understanding factors that may influence: Sleep regulation, Mental relaxation, Emotional balance, Memory, Concentration, Recovery. Supporting brain nourishment helps individuals better understand healthy sleep and overall wellbeing.",
-  },
-  {
-    title: "Gut Response System",
-    Icon: Utensils,
-    text: "Growing research highlights the relationship between gut health and sleep quality. Many adults experiencing poor sleep also report: Digestive discomfort, Irregular eating habits, Low energy, Lifestyle imbalance. The Gut Response System focuses on understanding how overall physical wellbeing may influence healthy sleep.",
-  },
-  {
-    title: "Neural Network System",
-    Icon: Sparkles,
-    text: "Daily habits gradually shape sleep patterns. The Neural Network System focuses on understanding: Bedtime routines, Overthinking patterns, Stress responses, Sleep habits, Behavioural routines. Recognising these patterns helps individuals build healthier sleep behaviours over time.",
-  },
-  {
-    title: "Sensory Integration System",
-    Icon: Waves,
-    text: "Modern lifestyles expose adults to constant stimulation. Common factors include: Mobile phones, Laptops, Social media, Television, Bright lights, Continuous notifications. Reducing unnecessary stimulation before bedtime may help support healthier sleep routines.",
-  },
-  {
-    title: "Behaviour Guidance System",
-    Icon: ShieldCheck,
-    text: "Sleep is strongly influenced by behaviour. Adults experiencing insomnia often develop habits that unintentionally worsen sleep difficulties. Examples include: Irregular sleep schedules, Spending excessive time in bed awake, Late-night screen use, Skipping physical activity, Working until bedtime. Understanding these behavioural patterns allows individuals to gradually develop healthier sleep habits.",
-  },
+const causeItems = [
+  { label: "Stress", Icon: Waves },
+  { label: "Anxiety", Icon: Brain },
+  { label: "Depression", Icon: HeartHandshake },
+  { label: "Lifestyle Habits", Icon: Clock },
+  { label: "Screen Exposure", Icon: Sparkles },
+  { label: "Shift Work", Icon: Briefcase },
+  { label: "Physical Health Conditions", Icon: ShieldCheck },
+  { label: "Ageing", Icon: Users },
 ];
 
-const faqs = [
-  {
-    question: "1. Why can't I sleep at night?",
-    answer: "Difficulty sleeping at night can happen for many reasons, including stress, anxiety, irregular sleep routines, excessive screen use, lifestyle habits or certain health conditions. Some people struggle to fall asleep, while others wake up frequently during the night. If sleep problems continue for several weeks and begin affecting your energy, mood or daily life, a professional assessment may help identify the contributing factors."
-  },
-  {
-    question: "2. What causes insomnia?",
-    answer: "Insomnia can develop due to a combination of emotional, lifestyle and physical factors. Common causes include ongoing stress, anxiety, depression, irregular sleep schedules, excessive caffeine, late-night screen use, shift work and certain medical conditions. Since every individual experiences insomnia differently, understanding the underlying causes is an important step towards improving sleep quality."
-  },
-  {
-    question: "3. What are the symptoms of insomnia?",
-    answer: "Common symptoms of insomnia include difficulty falling asleep, waking frequently during the night, waking too early, feeling unrefreshed after sleep and daytime fatigue. Many people also experience poor concentration, irritability, low energy and reduced productivity. Persistent sleep problems that affect daily functioning may require professional evaluation."
-  },
-  {
-    question: "4. How much sleep do adults need?",
-    answer: "Most healthy adults generally need 7 to 9 hours of sleep each night for optimal physical and emotional wellbeing. Individual sleep needs may vary depending on age, health and lifestyle. The quality of sleep is equally important, as sleeping for enough hours but waking up tired may still indicate an underlying sleep concern."
-  },
-  {
-    question: "5. Can stress and anxiety cause sleep problems?",
-    answer: "Yes. Stress and anxiety are among the most common reasons people experience difficulty sleeping. Ongoing worry, racing thoughts and emotional tension can make it harder to fall asleep or stay asleep. Improving stress management, maintaining healthy sleep habits and addressing the underlying causes may help support better sleep over time."
-  },
-  {
-    question: "6. How do doctors diagnose insomnia?",
-    answer: "Doctors diagnose insomnia by understanding a person's sleep history, symptoms, lifestyle habits and how sleep problems affect daily life. They may ask about bedtime routines, stress levels, medications, emotional wellbeing and overall health. In some cases, additional medical evaluation or sleep studies may be recommended if another sleep disorder is suspected."
-  },
-  {
-    question: "7. How can I check if I have a sleep disorder?",
-    answer: "If you regularly experience difficulty sleeping, frequent night awakenings, excessive daytime tiredness or poor sleep quality for several weeks, it may be helpful to seek a professional assessment. Healthcare professionals evaluate sleep patterns, lifestyle, emotional wellbeing and medical history to better understand the possible causes and recommend appropriate guidance."
-  },
-  {
-    question: "8. Can insomnia be managed without medication?",
-    answer: "Many individuals with mild or moderate insomnia benefit from improving sleep hygiene, maintaining a regular sleep schedule, managing stress, reducing screen exposure before bedtime and making healthy lifestyle changes. The most appropriate approach depends on the underlying cause of the sleep problem. Persistent or severe insomnia should always be evaluated by a qualified healthcare professional."
-  },
-  {
-    question: "9. What is good sleep hygiene?",
-    answer: "Sleep hygiene refers to healthy habits that support better sleep. These include maintaining a consistent bedtime, limiting caffeine late in the day, reducing screen time before sleep, creating a quiet and comfortable sleeping environment and following a relaxing bedtime routine. Practising good sleep hygiene consistently may help improve both sleep quality and overall wellbeing."
-  },
-  {
-    question: "10. Can lack of sleep affect mental health?",
-    answer: "Yes. Poor sleep and mental health are closely connected. Ongoing sleep problems may affect emotional wellbeing, increase irritability, reduce concentration and make it more difficult to cope with everyday stress. Sleep difficulties may also occur alongside anxiety, depression or chronic stress. Improving sleep is often an important part of supporting overall emotional wellbeing."
-  },
-  {
-    question: "11. Can poor sleep affect memory and concentration?",
-    answer: "Yes. Healthy sleep plays an important role in memory, learning and concentration. Poor sleep may lead to brain fog, forgetfulness, slower thinking and difficulty focusing on everyday tasks. When sleep quality improves, many people also notice better attention, clearer thinking and improved productivity."
-  },
-  {
-    question: "12. What are the long-term effects of poor sleep?",
-    answer: "Persistent poor sleep may gradually affect emotional wellbeing, physical health, work performance, memory, concentration and overall quality of life. Many individuals also experience ongoing fatigue, reduced motivation and difficulty managing everyday responsibilities. Identifying and addressing sleep problems early may help reduce their long-term impact."
-  },
-  {
-    question: "13. Can lifestyle changes improve sleep quality?",
-    answer: "Yes. Healthy lifestyle habits can support better sleep for many people. Maintaining a regular sleep schedule, staying physically active, managing stress, reducing screen exposure before bedtime and following good sleep hygiene practices may improve sleep quality over time. Lifestyle changes are often most effective when combined with personalised professional guidance."
-  },
-  {
-    question: "14. How does Manovaidya support adults with sleep disorders?",
-    answer: "At Manovaidya, support begins with understanding the individual rather than focusing only on sleep symptoms. Through structured assessment, personalized guidance and the Neuro-Ayurveda Development System, we help individuals better understand the emotional, behavioural and lifestyle factors that may be influencing their sleep. Our goal is to support healthier sleep, emotional balance and long-term wellbeing through a holistic approach."
-  },
-  {
-    question: "15. When should I seek professional guidance for sleep problems?",
-    answer: "You should consider seeking professional guidance if sleep problems continue for several weeks or begin affecting your work, relationships, emotional wellbeing or daily activities. Difficulty falling asleep, frequent night awakenings, persistent daytime fatigue or poor sleep quality should not be ignored. At Manovaidya, structured assessments help identify contributing factors and provide personalized guidance to support healthier sleep and long-term wellbeing."
-  }
+const supportSteps = [
+  "Step 1: Comprehensive Assessment",
+  "Step 2: Personalized Guidance",
+  "Step 3: Emotional Wellbeing Support",
+  "Step 4: Neuro-Ayurveda Development System",
+  "Step 5: Progress Tracking & Follow-Up",
 ];
 
-function SidebarCard({ children, className = "", id = "" }) {
+function SidebarCard({ children, className = "" }) {
   return (
-    <aside id={id} className={`rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] ${className}`}>
+    <aside className={`rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] ${className}`}>
       {children}
     </aside>
   );
 }
 
+function getArticleLinkRuleKey(rule) {
+  return `${rule.href}|${rule.pattern.source}`;
+}
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const source = String(text);
+  const ruleKeys = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (linkedRuleKeys.has(ruleKey)) return;
+      const match = remaining.match(rule.pattern);
+      if (match) candidates.push({ index: match.index, length: match[0].length, ruleKey });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.length - a.length);
+    if (!candidates.length) break;
+
+    const next = candidates[0];
+    linkedRuleKeys.add(next.ruleKey);
+    ruleKeys.add(next.ruleKey);
+    cursor += next.index + next.length;
+  }
+
+  return ruleKeys;
+}
+
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const parts = [];
+  const linkedRuleKeysInText = new Set();
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) {
+      candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+    }
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) candidates.push({ index: keywordMatch.index, text: keywordMatch[0], rule, ruleKey, type: "keyword" });
+    });
+
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+
+    if (next.type === "citation") {
+      parts.push(
+        <button
+          key={`${next.text}-${parts.length}`}
+          type="button"
+          onClick={() => onCitationClick(next.citationId)}
+          className="mx-0.5 inline cursor-pointer rounded px-0.5 font-black text-[#7835A4] underline decoration-[#7835A4]/40 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+        >
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a
+          key={`${next.text}-${parts.length}`}
+          href={next.rule.href}
+          className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
+        >
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, index) => (typeof part === "string" ? <React.Fragment key={`${part}-${index}`}>{part}</React.Fragment> : part));
+}
+
+function IconGrid({ items, columns = "sm:grid-cols-2 lg:grid-cols-3" }) {
+  return (
+    <div className={`mt-4 grid gap-3 ${columns}`}>
+      {items.map(({ label, Icon }) => (
+        <div key={label} className="flex items-center gap-3 rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4]">
+            <Icon className="h-5 w-5" />
+          </span>
+          <span className="text-[12.5px] font-black leading-5 text-[#21142d]">{label}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function VisualBlock({ heading }) {
+  if (heading === "Sleep Disorders & Insomnia Support") return <IconGrid items={focusItems} />;
+  if (heading === "Common Signs & Symptoms of Sleep Disorders") {
+    return (
+      <div className="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_260px] lg:items-center">
+        <IconGrid items={symptomItems} columns="sm:grid-cols-2" />
+        <img src={symptomsImage} alt="Insomnia symptoms and poor sleep quality in adults" className="w-full rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]" loading="lazy" decoding="async" />
+      </div>
+    );
+  }
+  if (heading === "What are the causes of sleep problems?") return <IconGrid items={causeItems} columns="sm:grid-cols-2 lg:grid-cols-4" />;
+
+  if (heading === "The Neuro-Ayurveda Approach to Sleep Disorders & Insomnia Support") {
+    return (
+      <div className="mt-5 overflow-hidden rounded-xl border border-[#eadff1] bg-[#fbf9fd]">
+        <img src={neuroDiagramImage} alt="Neuro-Ayurveda Development System for sleep support" className="h-auto w-full object-contain p-4" loading="lazy" decoding="async" />
+      </div>
+    );
+  }
+
+  if (heading === "How Manovaidya Supports Adults") {
+    return (
+      <div className="mt-4 rounded-xl border border-[#eadff1] bg-[#fbf9fd] p-5">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          {supportSteps.map((step) => (
+            <div key={step} className="rounded-lg bg-white p-4 text-center text-[11px] font-black leading-5 text-[#21142d] shadow-sm">
+              <CheckCircle2 className="mx-auto mb-2 h-5 w-5 text-[#7835A4]" />
+              {step}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (heading === "Why Adults Across India choose Manovaidya?") {
+    return <img src={supportImage} alt="Healthy sleep and insomnia support at Manovaidya" className="mt-5 w-full rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]" loading="lazy" decoding="async" />;
+  }
+
+  if (heading === "About") {
+    return (
+      <div className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)]">
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-lg object-cover" loading="lazy" decoding="async" />
+          <div>
+            <p className="text-[12px] font-bold text-[#75677d]">Mental Health & Wellness Specialist</p>
+            <p className="mt-2 text-[14px] font-black text-[#21142d]">Founder, Manovaidya | Creator of the Neuro-Ayurveda Development System</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (heading === "Struggling to get to sleep or can't get to sleep?") {
+    return (
+      <div className="mt-4 overflow-hidden rounded-xl bg-gradient-to-br from-[#7835A4] to-[#4c1d6b] text-white shadow-xl">
+        <div className="grid gap-0 lg:grid-cols-[1fr_280px]">
+          <div className="p-6 sm:p-8">
+            <p className="text-[13px] font-black uppercase tracking-[0.1em] text-[#d8b4e2]">Book Consultation</p>
+            <h3 className="mt-2 text-[25px] font-black leading-tight">Take the First Step Towards Better Sleep</h3>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {["Structured Assessment", "Personalized Guidance", "Online & In-Clinic Support", "Long-Term Wellbeing"].map((step) => (
+                <div key={step} className="flex gap-2 text-[13px] font-bold text-white">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
+                  {step}
+                </div>
+              ))}
+            </div>
+            <BookConsultationButton className="mt-6 inline-flex h-11 items-center justify-center rounded-md bg-white px-6 text-[13px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
+              Book Consultation
+            </BookConsultationButton>
+          </div>
+          <div className="relative h-60 lg:h-full">
+            <img src={supportImage} alt="Book sleep disorders consultation at Manovaidya" className="absolute inset-0 h-full w-full object-cover" loading="lazy" decoding="async" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#4c1d6b] to-transparent opacity-80 mix-blend-multiply lg:bg-gradient-to-l" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+function buildFaqsFromLines(lines) {
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
+  const faqEndIndex = lines.indexOf("Struggling to get to sleep or can't get to sleep?");
+  if (faqStartIndex < 0) return [];
+
+  const faqLines = lines.slice(faqStartIndex + 1, faqEndIndex < 0 ? lines.length : faqEndIndex);
+  const faqs = [];
+
+  faqLines.forEach((line) => {
+    if (/^\d+\.\s/.test(line) && line.endsWith("?")) {
+      faqs.push({ question: line, answer: [] });
+      return;
+    }
+
+    if (faqs.length) faqs[faqs.length - 1].answer.push(line);
+  });
+
+  return faqs;
+}
+
+function FaqAccordion({ faqs, openFaq, setOpenFaq, onCitationClick, ruleKeysByLine }) {
+  return (
+    <section id="faqs" className="scroll-mt-28 pt-4">
+      <div className="mb-4 flex items-center gap-4">
+        <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
+        <div className="hidden h-px flex-1 bg-[#eadff1] sm:block" />
+      </div>
+      <div className="overflow-hidden rounded-lg border border-[#eadff1] bg-white">
+        {faqs.map((faq, index) => (
+          <div key={faq.question} className="border-b border-[#eadff1] last:border-b-0">
+            <button type="button" onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left text-[13px] font-black text-[#21142d] transition hover:bg-[#fbf7ff]" aria-expanded={openFaq === index}>
+              {faq.question}
+              <ChevronDown className={`h-4 w-4 shrink-0 text-[#7835A4] transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
+            </button>
+            {openFaq === index && (
+              <div className="space-y-3 px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
+                {faq.answer.map((answerLine, answerIndex) => (
+                  <p key={`${faq.question}-${answerIndex}`}>
+                    <ArticleLinkedText text={answerLine} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByLine.get(`faq-${index}-${answerIndex}`)} />
+                  </p>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function isShortTitleLine(line, next) {
+  return line.length < 76 && !/[.]/.test(line) && next && !headings.has(line) && !line.startsWith("[") && !line.startsWith("http") && !shortTitleExclusions.has(line) && !leadLines.has(line);
+}
+
+function getBulletText(line) {
+  const bulletText = line.replace(/^(?:â€¢|•)\s*/u, "").trim();
+  return bulletText === line ? null : bulletText;
+}
+
+function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
+  const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
+  const introIndex = Math.max(0, allLines.indexOf("Sleep Disorders & Insomnia Support"));
+  const lines = allLines.slice(introIndex).filter((line) => !hiddenIntroLines.has(line));
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
+  const faqEndIndex = lines.indexOf("Struggling to get to sleep or can't get to sleep?");
+  const parsedFaqs = buildFaqsFromLines(lines);
+  const ruleKeysByLine = new Map();
+  const linkedRuleKeys = new Set();
+
+  const collectLineLinks = (line, index) => {
+    const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+    if (faqMode || headings.has(line) || leadLines.has(line)) return;
+
+    const next = lines[index + 1] || "";
+    if (isShortTitleLine(line, next)) return;
+
+    const ruleKeys = getArticleLinkRuleKeysForText(getBulletText(line) || line, linkedRuleKeys);
+    if (ruleKeys.size) ruleKeysByLine.set(`line-${index}`, ruleKeys);
+  };
+
+  lines.forEach((line, index) => collectLineLinks(line, index));
+  parsedFaqs.forEach((faq, faqIndex) => {
+    faq.answer.forEach((answerLine, answerIndex) => {
+      const ruleKeys = getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys);
+      if (ruleKeys.size) ruleKeysByLine.set(`faq-${faqIndex}-${answerIndex}`, ruleKeys);
+    });
+  });
+
+  return (
+    <div className="mt-8 space-y-4">
+      {lines.map((line, index) => {
+        const id = sectionIdByTitle[line];
+        const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+
+        if (line === "Frequently Asked Questions") {
+          return <FaqAccordion key={`faq-accordion-${index}`} faqs={parsedFaqs} openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={onCitationClick} ruleKeysByLine={ruleKeysByLine} />;
+        }
+
+        if (faqMode) return null;
+
+        if (headings.has(line)) {
+          return (
+            <section key={`section-${index}`} id={id} className="scroll-mt-28 pt-4">
+              <h2 className="text-[20px] font-black leading-tight text-[#17111f]">{line === "About" ? "About Dr. Ankush Garg" : line}</h2>
+              <VisualBlock heading={line} />
+            </section>
+          );
+        }
+
+        const next = lines[index + 1] || "";
+        const bulletText = getBulletText(line);
+
+        if (leadLines.has(line)) {
+          return (
+            <p key={`lead-${index}`} className="pt-2 text-[13px] font-black leading-6 text-[#3b2e45]">
+              <ArticleLinkedText text={line} onCitationClick={onCitationClick} />
+            </p>
+          );
+        }
+
+        if (bulletText) {
+          return (
+            <p key={`bullet-${index}`} className="flex gap-3 pl-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+              <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" />
+              <span>
+                <ArticleLinkedText text={bulletText} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByLine.get(`line-${index}`)} />
+              </span>
+            </p>
+          );
+        }
+
+        if (isShortTitleLine(line, next)) {
+          return <h3 key={`h3-${index}`} className="pt-3 text-[15px] font-black leading-6 text-[#21142d]">{line}</h3>;
+        }
+
+        return (
+          <p key={`p-${index}`} className="text-[14px] font-semibold leading-7 text-[#51465a]">
+            <ArticleLinkedText text={line} onCitationClick={onCitationClick} allowedRuleKeys={ruleKeysByLine.get(`line-${index}`)} />
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Sleep Disorders & Insomnia Support</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeaways.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our adult sleep and emotional wellbeing newsletter for care tips from our experts.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#eadff1] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">Final Suggested References</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">References from the supplied sleep disorders and insomnia content.</p>
+      <div className="mt-5 space-y-4">
+        {references.map((reference) => (
+          <article key={reference.n} id={`reference-${reference.n}`} className="scroll-mt-32 rounded-lg border border-[#eadff1] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#7835A4] underline underline-offset-2">{reference.url}</a>
+            {reference.supports && <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">Supports: {reference.supports}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function AdultSleepDisordersSupportIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
+  const [showResources, setShowResources] = React.useState(false);
   const [openFaq, setOpenFaq] = React.useState(0);
-  const [showNeuroPillars, setShowNeuroPillars] = React.useState(false);
+  const encodedPageUrl = encodeURIComponent(pageUrl);
+  const encodedPageTitle = encodeURIComponent(pageTitle);
+  const articleShareLinks = [
+    { label: "f", href: `https://www.facebook.com/sharer/sharer.php?u=${encodedPageUrl}`, title: "Share on Facebook" },
+    { label: "x", href: `https://twitter.com/intent/tweet?url=${encodedPageUrl}&text=${encodedPageTitle}`, title: "Share on X" },
+    { label: "in", href: `https://www.linkedin.com/shareArticle?mini=true&url=${encodedPageUrl}&title=${encodedPageTitle}`, title: "Share on LinkedIn" },
+    { label: "wa", href: `https://api.whatsapp.com/send?text=${encodedPageTitle}%20${encodedPageUrl}`, title: "Share on WhatsApp" },
+  ];
+
+  const handleCitationClick = React.useCallback((referenceNumber) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      const target = document.getElementById(`reference-${referenceNumber}`) || document.getElementById("medical-references");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   React.useEffect(() => {
-    const fontId = "adhd-martel-font";
+    const fontId = "sleep-disorders-martel-font";
     if (!document.getElementById(fontId)) {
       const link = document.createElement("link");
       link.id = fontId;
@@ -225,21 +660,16 @@ function AdultSleepDisordersSupportIndiaPage() {
     const updateActiveSection = () => {
       const scrollMarker = window.scrollY + 170;
       let currentSection = pageLinks[0].id;
-
       pageLinks.forEach(({ id }) => {
         const section = document.getElementById(id);
-        if (section && section.offsetTop <= scrollMarker) {
-          currentSection = id;
-        }
+        if (section && section.offsetTop <= scrollMarker) currentSection = id;
       });
-
       setActiveSection(currentSection);
     };
 
     updateActiveSection();
     window.addEventListener("scroll", updateActiveSection, { passive: true });
     window.addEventListener("resize", updateActiveSection);
-
     return () => {
       window.removeEventListener("scroll", updateActiveSection);
       window.removeEventListener("resize", updateActiveSection);
@@ -247,738 +677,106 @@ function AdultSleepDisordersSupportIndiaPage() {
   }, []);
 
   return (
-    <main
-      className="min-h-screen bg-white text-[#1f1726]"
-      style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
-    >
+    <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Sleep Disorders & Insomnia Treatment in India | Poor Sleep, Insomnia & Healthy Sleep | Manovaidya"
-        description="Looking for Sleep Disorders & Insomnia Treatment in India? Learn about insomnia, poor sleep, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya."
-        keywords="Sleep Disorders Treatment, Sleep Disorders Treatment in India, Insomnia Support, Insomnia Symptoms, Poor Sleep Quality, Difficulty Sleeping, Chronic Sleep Problems, Sleep Hygiene, Healthy Sleep Habits, Daytime Fatigue, Sleep and Mental Health, Emotional Wellbeing, Sleep Assessment"
+        title="Sleep Disorders & Insomnia Treatment in India | Poor Sleep & Healthy Sleep | Manovaidya"
+        description="Sleep disorders and insomnia support in India with signs, causes, sleep hygiene, emotional wellbeing and Neuro-Ayurveda guidance."
+        keywords="Sleep Disorders Treatment in India, Insomnia Support, Poor Sleep Quality, Difficulty Sleeping, Sleep Hygiene, Healthy Sleep Habits, Daytime Fatigue, Sleep and Mental Health"
+        path="/sleep-disorders-insomnia-support-india"
+        image={heroImage}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "MedicalWebPage",
+          name: pageTitle,
+          description: "Sleep disorders and insomnia support in India with signs, causes, sleep hygiene, emotional wellbeing and Neuro-Ayurveda guidance.",
+        }}
       />
+
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
             <div className="relative z-10">
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
-                <a href="/" className="transition hover:text-[#7835A4]">Home</a>
-                <span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
-                <span>/</span>
-                <span className="text-[#4b345d]">Sleep Disorders & Insomnia Support</span>
+                <a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span>
+                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>/</span>
+                <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Sleep Disorders & Insomnia Support</p>
-              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Sleep Disorders & Insomnia Treatment in India
-              </h1>
+              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">{pageTitle}</h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Helping Adults Better Understand Sleep Problems, Insomnia, Poor Sleep Quality & Healthy Sleep
+                Helping adults better understand sleep problems, insomnia, poor sleep quality and healthy sleep.
               </p>
-
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <a
-                  href="#book-consultation"
-                  className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]"
-                >
-                  Book Assessment
-                </a>
-                <a
-                  href="tel:+917823838638"
-                  className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]"
-                >
-                  Talk to Our Team
-                </a>
+                <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Assessment</a>
+                <a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a>
               </div>
-
               <div className="mt-6 flex flex-wrap items-center gap-5">
-                <div className="flex items-center gap-3">
-                  <img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" />
-                  <div>
-                    <p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p>
-                    <p className="text-[12px] font-bold text-[#75677d]">May 25, 2025 · 10 min read</p>
-                  </div>
-                </div>
+                <p className="text-[12px] font-bold text-[#75677d]">Last Updated: [20-07-2026]</p>
                 <div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]">
                   <span>Share:</span>
-                  {["f", "x", "in", "wa"].map((label) => (
-                    <a
-                      key={label}
-                      href="#share"
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white"
-                      aria-label="Share article"
-                    >
+                  {articleShareLinks.map(({ label, href, title }) => (
+                    <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>
                       {label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}
                     </a>
                   ))}
                 </div>
               </div>
             </div>
-
             <figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none">
               <div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex">
                 <Brain className="mb-1 h-5 w-5" />
                 Neuro-Ayurveda Development System
               </div>
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
-                <img
-                  src={heroImage}
-                  alt="Sleep Disorders and Insomnia Treatment in India at Manovaidya"
-                  className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]"
-                />
+                <img src={heroImage} alt="Sleep Disorders and Insomnia Treatment in India at Manovaidya" loading="eager" fetchPriority="high" decoding="async" sizes="(min-width: 1024px) 42vw, 100vw" className="h-[248px] w-full object-cover object-right sm:h-[315px] lg:h-[355px]" />
               </div>
             </figure>
           </div>
 
-          <section id="introduction" className="mt-8">
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A good night's sleep is essential for both physical health and emotional wellbeing. Most adults occasionally experience difficulty sleeping because of stress, travel, illness or changes in routine. In many cases, these temporary sleep disturbances improve once the underlying situation changes.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              However, when difficulty sleeping continues for weeks or months, it may begin affecting energy levels, concentration, emotional wellbeing, work performance and overall quality of life. Some people struggle to fall asleep, while others wake up repeatedly during the night or wake much earlier than expected and cannot return to sleep. These ongoing sleep difficulties may be associated with insomnia or other sleep-related concerns.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, we understand that sleep problems are not simply about the number of hours you sleep. Healthy sleep is influenced by multiple interconnected factors, including lifestyle, emotional wellbeing, stress, daily routines and overall mind-body balance.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows the Neuro-Ayurveda Development System to help individuals better understand sleep disorders, insomnia and the factors influencing long-term sleep health and emotional wellbeing.
-            </p>
-            
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Sleep Treatment Focuses On:</h3>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {sleepHighlights.map(({ label, Icon }) => (
-                  <li key={label} className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                    <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                      <Icon className="h-7 w-7" strokeWidth={1.8} />
-                    </span>
-                    <span>{label}</span>
-                  </li>
-                ))}
-                <li className="flex min-h-[122px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                  <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                    <Moon className="h-7 w-7" strokeWidth={1.8} />
-                  </span>
-                  <span>Insomnia</span>
-                </li>
-              </ul>
-            </div>
-          </section>
+          <KeyTakeawaysBlock />
+          <RawArticleContent onCitationClick={handleCitationClick} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
-          <section id="understanding-insomnia" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Understanding Sleep Disorders & Insomnia</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Sleep is one of the body's most important natural recovery processes. It allows the brain and body to rest, restore energy and prepare for the next day.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Most people experience occasional sleepless nights from time to time. Temporary sleep problems caused by stress, travel or illness usually improve within a short period.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              However, when sleep difficulties become frequent or persistent, they may begin affecting emotional wellbeing, physical health and daily functioning.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many adults searching for Sleep Disorders Treatment in India, Insomnia Support, Difficulty Sleeping or Poor Sleep Quality are looking for answers because they have been struggling with ongoing sleep problems that interfere with everyday life.
-            </p>
-
-            <h3 className="mt-6 font-black text-[16px] text-[#21142d]">What Is Insomnia?</h3>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Insomnia is one of the most common sleep-related concerns.
-            </p>
-            
-            <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
-              <h3 className="text-[15px] font-black text-[#21142d]">People with insomnia may experience:</h3>
-              <ul className="mt-3 space-y-2.5">
-                {[
-                  "Difficulty falling asleep",
-                  "Waking frequently during the night",
-                  "Waking too early",
-                  "Feeling unrefreshed after sleeping",
-                  "Poor quality sleep despite spending enough time in bed"
-                ].map((step) => (
-                  <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                    {step}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Some people experience temporary insomnia, while others may experience sleep difficulties over a longer period. Understanding the pattern and possible contributing factors is an important step towards improving sleep health.
-            </p>
-
-            <h3 className="mt-6 font-black text-[16px] text-[#21142d]">Temporary vs Chronic Sleep Problems</h3>
-            
-            <div className="mt-4 grid gap-5 sm:grid-cols-2">
-              <div className="rounded-lg bg-[#f4ecf8] p-5">
-                <h4 className="font-bold text-[#3b2e45] mb-2 text-[14px]">Temporary Sleep Problems</h4>
-                <p className="text-[13px] font-semibold leading-6 text-[#51465a] mb-2">Short-term sleep disturbances may occur because of:</p>
-                <ul className="space-y-1.5">
-                  {["Stressful situations", "Travel", "Temporary illness", "Changes in routine", "Important life events"].map(item => (
-                    <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-[13px] font-semibold leading-6 text-[#51465a] mt-2 italic">These usually improve once the situation changes.</p>
-              </div>
-              
-              <div className="rounded-lg bg-[#f4ecf8] p-5">
-                <h4 className="font-bold text-[#3b2e45] mb-2 text-[14px]">Chronic Sleep Problems</h4>
-                <p className="text-[13px] font-semibold leading-6 text-[#51465a]">
-                  When difficulty sleeping continues for several weeks or longer and begins affecting daily life, work or emotional wellbeing, professional assessment may be helpful.
-                </p>
-                <p className="text-[13px] font-bold text-[#7835A4] mt-3">
-                  Persistent sleep difficulties should not simply be accepted as a normal part of life.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section id="signs-and-symptoms" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs & Symptoms of Sleep Disorders</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Sleep problems can affect much more than the night. They often influence physical energy, emotional wellbeing, concentration and daily performance.
-            </p>
-
-            <img src={symptomsImage} alt="Common symptoms of insomnia and sleep disorders in adults" className="w-full mt-4 h-[350px] rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />
-
-            <div className="mt-5 space-y-5">
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <Moon className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Night-Time Symptoms</h3>
-                </div>
-                <ul className="space-y-2 sm:columns-2">
-                  {["Difficulty falling asleep", "Frequent waking during the night", "Waking earlier than planned", "Restless sleep", "Feeling unable to return to sleep", "Poor sleep quality"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <Sun className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Daytime Symptoms</h3>
-                </div>
-                <ul className="space-y-2 sm:columns-2">
-                  {["Constant tiredness", "Low energy", "Difficulty concentrating", "Brain fog", "Reduced productivity", "Daytime sleepiness"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <HeartHandshake className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Emotional Symptoms</h3>
-                </div>
-                <p className="text-[13px] font-semibold text-[#5a5063] mb-3">Poor sleep may also affect emotional wellbeing. Some individuals experience:</p>
-                <ul className="space-y-2 sm:columns-2">
-                  {["Irritability", "Mood changes", "Increased stress", "Reduced emotional resilience", "Feeling mentally exhausted"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <Brain className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Cognitive Symptoms</h3>
-                </div>
-                <p className="text-[13px] font-semibold text-[#5a5063] mb-3">Sleep problems may influence:</p>
-                <ul className="space-y-2 sm:columns-2">
-                  {["Memory", "Attention", "Decision making", "Learning", "Mental clarity"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-[13px] font-semibold text-[#5a5063] mt-3 italic">Many adults first notice reduced concentration before recognising that poor sleep may be contributing to these changes.</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="causes" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Causes Sleep Problems?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Sleep difficulties usually develop because of several contributing factors rather than one single cause. Understanding these influences helps individuals better understand their sleep health.
-            </p>
-
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Stress", text: "Ongoing stress may make it difficult for the mind to relax before bedtime, leading to difficulty falling asleep or staying asleep." },
-                { title: "Anxiety", text: "Persistent worry and overthinking may increase mental alertness and interfere with healthy sleep." },
-                { title: "Depression", text: "Some individuals experiencing depression may sleep too little, while others may sleep much longer than usual but still feel tired." },
-                { title: "Lifestyle Habits", text: "Irregular sleep schedules, excessive caffeine, poor daily routines and unhealthy habits may contribute to disturbed sleep." },
-                { title: "Screen Exposure", text: "Using mobile phones, laptops or other digital devices close to bedtime may make it harder for some people to fall asleep." },
-                { title: "Shift Work", text: "Changing work schedules and night shifts can disrupt the body's natural sleep-wake cycle." },
-                { title: "Physical Health Conditions", text: "Some medical conditions or ongoing physical discomfort may interfere with healthy sleep." },
-                { title: "Ageing", text: "Sleep patterns naturally change with age, and some older adults may experience lighter or shorter sleep than younger adults." }
-              ].map((item) => (
-                 <div key={item.title} className="rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
-                    <h3 className="text-[15px] font-black text-[#21142d]">{item.title}</h3>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#51465a]">{item.text}</p>
-                 </div>
-              ))}
-            </div>
-            
-            <div className="mt-5 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-              <h3 className="text-[16px] font-black text-[#21142d]">Why Early Understanding Matters</h3>
-              <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Many people ignore sleep problems for months or even years, assuming they will improve on their own. However, persistent poor sleep can gradually affect emotional wellbeing, physical health, concentration, work performance and overall quality of life. Recognising sleep difficulties early allows individuals to understand the contributing factors and seek appropriate guidance before the problem becomes more disruptive.
-              </p>
-            </div>
-          </section>
-
-          <section id="health-impact" className="mt-9 rounded-lg bg-[#f4ecf8] p-5">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Poor Sleep Can Affect Daily Life</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Sleep is one of the body's most important recovery processes. When sleep is disturbed for a prolonged period, its effects are often seen far beyond the bedroom. Poor sleep can influence emotional wellbeing, physical health, concentration, productivity and relationships.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#3b2e45]">
-              Many adults assume that sleeping less is simply part of a busy lifestyle. However, persistent sleep problems may gradually affect multiple areas of daily functioning and reduce overall quality of life.
-            </p>
-            
-            <div className="mt-5 space-y-4">
-              {[
-                {
-                  title: "Emotional Wellbeing", 
-                  desc: "Poor sleep may make it more difficult to regulate emotions and cope with everyday challenges. Many adults experiencing ongoing sleep problems report:",
-                  list: ["Increased irritability", "Mood swings", "Feeling emotionally overwhelmed", "Reduced patience", "Difficulty relaxing", "Increased emotional sensitivity"]
-                },
-                {
-                  title: "Brain Function & Concentration", 
-                  desc: "The brain depends on quality sleep for learning, memory and decision-making. When sleep is consistently disturbed, some individuals may experience:",
-                  list: ["Difficulty concentrating", "Brain fog", "Forgetfulness", "Reduced attention span", "Slower thinking", "Poor decision-making"]
-                },
-                {
-                  title: "Physical Wellbeing", 
-                  desc: "Sleep is closely connected with physical recovery. Long-term poor sleep may contribute to:",
-                  list: ["Persistent fatigue", "Low energy", "Reduced physical performance", "Headaches", "Muscle discomfort", "Daytime tiredness"]
-                },
-                {
-                  title: "Work Performance", 
-                  desc: "Sleep problems may reduce productivity and mental performance. Adults may notice:",
-                  list: ["Difficulty completing tasks", "Reduced motivation", "More mistakes at work", "Lower productivity", "Difficulty managing workload", "Reduced creativity"]
-                },
-                {
-                  title: "Relationships", 
-                  desc: "Poor sleep may also affect communication and relationships. Some individuals become:",
-                  list: ["Easily frustrated", "Less patient", "Emotionally distant", "Less interested in social interaction", "More reactive during conversations"]
-                },
-                {
-                  title: "Daily Energy & Quality of Life", 
-                  desc: "Many people with ongoing sleep problems feel tired throughout the day. This may reduce their ability to:",
-                  list: ["Exercise", "Enjoy hobbies", "Spend time with family", "Stay productive", "Maintain healthy routines"]
-                }
-              ].map((item, idx) => (
-                <div key={idx} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-                  <h3 className="text-[16px] font-black leading-5 text-[#21142d] mb-2">{item.title}</h3>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">{item.desc}</p>
-                  <ul className="mt-2 space-y-1 pl-4 list-disc list-inside text-[13px] font-semibold text-[#5a5063]">
-                    {item.list.map((li, index) => <li key={index}>{li}</li>)}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-system" className="mt-9">
-            <div className="flex gap-3 mb-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                <Stethoscope className="h-5 w-5" />
-              </span>
-              <div>
-                <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Approach to Sleep Disorders & Insomnia Support</h2>
-              </div>
-            </div>
-            
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, healthy sleep is understood through a broader perspective. Rather than focusing only on sleeping difficulties, we aim to understand the interconnected factors influencing sleep quality, emotional wellbeing, lifestyle and overall health.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The Neuro-Ayurveda Development System helps individuals better understand sleep concerns through five interconnected pillars.
-            </p>
-            
-            <img
-              src={neuroDiagramImage}
-              alt="Neuro Ayurveda approach for sleep disorders and insomnia support"
-              className="mt-5 w-full h-auto object-contain max-h-[400px] mb-5 rounded-lg border border-[#eadff1] bg-white shadow-sm p-4"
-            />
-            
-            <button
-              type="button"
-              onClick={() => setShowNeuroPillars((current) => !current)}
-              className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.18)] transition hover:bg-[#5f2785]"
-              aria-expanded={showNeuroPillars}
-            >
-              {showNeuroPillars ? "Show Less" : "Read More"}
+          <div className="mt-8">
+            <button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references">
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} />
             </button>
-            
-            {showNeuroPillars && (
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                 {neuroAyurvedaPillars.map(({ title, text, Icon }) => (
-                  <div
-                    key={title}
-                    className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)] last:sm:col-span-2"
-                  >
-                    <div className="mb-3 flex items-center gap-3">
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                        <Icon className="h-6 w-6" strokeWidth={1.8} />
-                      </span>
-                      <h3 className="text-[15px] font-black leading-5 text-[#21142d]">{title}</h3>
-                    </div>
-                    <p className="text-[13px] font-semibold leading-6 text-[#5a5063]">{text}</p>
-                  </div>
-                 ))}
-              </div>
-            )}
-          </section>
-
-          <section id="improving-sleep" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">How Adults Can Improve Healthy Sleep Habits</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-               Improving sleep usually requires consistency rather than a single quick solution.
-             </p>
-             <div className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5">
-               <ul className="grid sm:grid-cols-2 gap-4">
-                 {[
-                   "Maintain a Consistent Sleep Schedule: Going to bed and waking up at similar times each day helps support the body's natural sleep cycle.",
-                   "Reduce Screen Exposure Before Bed: Limiting mobile phones, laptops and other digital devices before bedtime may help the mind prepare for sleep.",
-                   "Create a Relaxing Bedtime Routine: Reading, light stretching, meditation or relaxation exercises may help some individuals unwind before sleep.",
-                   "Stay Physically Active: Regular physical activity supports both physical health and healthy sleep patterns.",
-                   "Limit Stimulants Late in the Day: Reducing caffeine and other stimulants in the evening may improve sleep quality for some individuals.",
-                   "Manage Daily Stress: Healthy stress management, relaxation techniques and structured routines may improve both emotional wellbeing and sleep."
-                 ].map((item, idx) => {
-                   const [boldText, normalText] = item.split(': ');
-                   return (
-                     <li key={idx} className="flex gap-2 text-[14px] font-semibold text-[#51465a]">
-                       <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-[#7835A4]" />
-                       <span><strong className="text-[#21142d]">{boldText}:</strong> {normalText}</span>
-                     </li>
-                   );
-                 })}
-               </ul>
-             </div>
-          </section>
-
-          <section id="how-we-support" className="mt-9">
-            <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
-              <div className="flex items-start gap-3">
-                <div>
-                  <h2 className="text-[17px] font-black leading-snug text-[#5d268d] sm:text-[18px]">
-                    How Manovaidya Supports Adults
-                  </h2>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">
-                    At Manovaidya, support begins with understanding the individual rather than focusing only on sleep symptoms. A structured, step-by-step process designed for long-term growth and real change.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5 grid gap-3 sm:grid-cols-5 sm:items-start lg:flex lg:items-start lg:justify-between">
-                {assessmentSteps.map(({ step, title, desc, Icon }, index) => (
-                  <React.Fragment key={title}>
-                    <div className="flex min-h-[94px] flex-col items-center justify-start text-center">
-                      <span className="mb-2 flex h-11 w-11 items-center justify-center rounded-full border border-[#dce7d8] bg-[#f7fbf5] text-[#7835A4]">
-                        <Icon className="h-6 w-6" strokeWidth={1.8} />
-                      </span>
-                      <span className="text-[11px] font-black leading-4 text-[#2f2636]">{step}: {title}</span>
-                      <span className="mt-1 max-w-[128px] text-[10px] font-semibold leading-4 text-[#3b2e45]">
-                        {desc}
-                      </span>
-                    </div>
-                    {index < assessmentSteps.length - 1 && (
-                      <ArrowRight className="mx-1 mt-3 hidden h-6 w-6 shrink-0 text-[#9a6fbc] lg:block" strokeWidth={2.2} />
-                    )}
-                  </React.Fragment>
-                ))}
-              </div>
-              
-              <div className="mx-auto mt-6 max-w-[560px] rounded-md bg-[#f1f5ef] px-4 py-2 text-center text-[12px] font-black leading-5 text-[#5b5360]">
-                Our goal is clarity, not just temporary relief. We help you understand your sleep deeply.
-              </div>
-            </div>
-
-            <h3 className="mt-6 font-black text-[16px] text-[#21142d]">When Should You Consider an Assessment?</h3>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">You may consider seeking professional guidance if you experience:</p>
-            
-            <div className="mt-4 rounded-lg bg-[#f4ecf8] p-5">
-              <ul className="grid sm:grid-cols-2 gap-3">
-                {[
-                  "Difficulty sleeping for several weeks",
-                  "Frequent night awakenings",
-                  "Persistent daytime fatigue",
-                  "Poor sleep affecting work or relationships",
-                  "Difficulty concentrating due to lack of sleep",
-                  "Emotional distress related to poor sleep",
-                  "Ongoing insomnia affecting daily life"
-                ].map((step) => (
-                  <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                    {step}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A structured assessment can help identify the factors influencing your sleep and provide a personalised roadmap towards healthier sleep and improved emotional wellbeing.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Our goal is to help individuals move from restless nights and daytime exhaustion towards healthier sleep, greater mental clarity, improved emotional balance and better overall wellbeing.
-            </p>
-          </section>
-
-          <section id="why-choose-us" className="mt-9 grid gap-6 lg:grid-cols-[1fr_300px] lg:items-center">
-            <div>
-              <h2 className="text-[20px] font-black text-[#17111f]">Why Adults Across India Choose Manovaidya</h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Living with ongoing sleep problems can be physically exhausting and emotionally overwhelming. Many adults silently struggle with difficulty falling asleep, frequent night awakenings or waking up feeling tired every morning, believing that poor sleep is simply part of a busy lifestyle.
-              </p>
-              <div className="mt-3 rounded-lg bg-[#f4ecf8] p-4">
-                <p className="text-[13px] font-bold text-[#3b2e45] mb-2">Our support focuses on:</p>
-                <ul className="grid sm:grid-cols-2 gap-1.5">
-                  {[
-                    "Comprehensive Sleep Assessment", 
-                    "Neuro-Ayurveda Development System", 
-                    "Personalized Guidance", 
-                    "Holistic Mind-Body Perspective", 
-                    "Long-Term Sleep Health", 
-                    "Ongoing Support & Progress Tracking"
-                  ].map(item => (
-                    <li key={item} className="flex gap-2 text-[12.5px] font-semibold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India connect with Manovaidya for Sleep Disorders & Insomnia Support, Healthy Sleep Guidance and Emotional Wellbeing Support through online and in-clinic consultations.
-              </p>
-            </div>
-            <img
-              src={supportImage}
-              alt="Healthy sleep and insomnia support at Manovaidya"
-              className="w-full rounded-lg object-cover shadow-[0_12px_30px_rgba(58,31,90,0.08)]"
-            />
-          </section>
-
-          <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-6 shadow-sm">
-            <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start">
-              <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm border-2 border-white" />
-              <div>
-                <p className="text-[12px] font-black uppercase tracking-[0.1em] text-[#7835A4]">About</p>
-                <h2 className="mt-1 text-[18px] font-black text-[#17111f]">Dr. Ankush Garg</h2>
-                <p className="mt-1 text-[13px] font-bold text-[#51465a]">Mental Health & Wellness Specialist</p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  Based in Delhi NCR, Dr. Ankush Garg supports adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
-                </p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured, personalized and holistic approach.
-                </p>
-                <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
-                  Many adults experiencing insomnia, disturbed sleep, poor sleep quality or persistent daytime fatigue seek guidance to better understand the factors influencing their sleep and emotional wellbeing. Through structured assessment and personalized guidance, Dr. Ankush Garg helps individuals better understand healthy sleep while supporting long-term emotional wellbeing.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section id="faqs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
-            <div className="mt-4 overflow-hidden rounded-lg border border-[#eadff1] bg-white">
-              {faqs.map((faq, index) => (
-                <div key={faq.question} className="border-b border-[#eadff1] last:border-b-0">
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left text-[13px] font-black text-[#21142d]"
-                    aria-expanded={openFaq === index}
-                  >
-                    {faq.question}
-                    <ChevronDown
-                      className={`h-4 w-4 shrink-0 text-[#7835A4] transition-transform ${openFaq === index ? "rotate-180" : ""
-                        }`}
-                    />
-                  </button>
-                  {openFaq === index && (
-                    <p className="px-4 pb-4 text-[12.5px] font-semibold leading-6 text-[#5f5367]">
-                      {faq.answer}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
-            <div className="p-7">
-              <h2 className="text-[24px] font-black">Struggling With Poor Sleep or Insomnia?</h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                Book a structured assessment and personalized guidance session with the Manovaidya team to better understand your sleep concerns, emotional wellbeing and overall health.
-              </p>
-
-              <div className="mt-6">
-                <h3 className="text-[16px] font-black mb-3">Why Trust Manovaidya?</h3>
-                <ul className="grid sm:grid-cols-2 gap-3">
-                  {[
-                    "Structured Neuro-Ayurveda Development System",
-                    "Personalized Assessment Before Recommendations",
-                    "Online & In-Clinic Consultations Across India",
-                    "Holistic Mind-Body Approach",
-                    "Guidance by Dr. Ankush Garg",
-                    "Focus on Healthy Sleep & Long-Term Wellbeing"
-                  ].map((step) => (
-                    <li key={step} className="flex gap-2 text-[14px] font-bold">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-[#8e45bb]">
-                <h3 className="text-[18px] font-black mb-2">Take the First Step Towards Better Sleep & Emotional Wellbeing</h3>
-                <p className="text-[14px] font-bold text-[#e5d5f2]">Whether you are experiencing difficulty falling asleep, frequent night awakenings, poor sleep quality or persistent tiredness, our team is here to help.</p>
-
-                <div className="flex flex-col sm:flex-row gap-4 mt-5">
-                  <a
-                    href="tel:+917823838638"
-                    className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]"
-                  >
-                    Take Mental Health Assessment
-                  </a>
-                  <BookConsultationButton
-                    className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#8e45bb]"
-                  >
-                    Book Consultation
-                  </BookConsultationButton>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          {/* Schema generation */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "MedicalWebPage",
-                "name": "Sleep Disorders & Insomnia Treatment in India",
-                "description": "Looking for Sleep Disorders & Insomnia Treatment in India? Learn about insomnia, poor sleep, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya.",
-                "url": "https://manovaidya.com/sleep-disorders-insomnia-support-india/"
-              })
-            }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": faqs.map(faq => ({
-                  "@type": "Question",
-                  "name": faq.question,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": faq.answer
-                  }
-                }))
-              })
-            }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://manovaidya.com/"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Adult Mental Health Care",
-                    "item": "https://manovaidya.com/adult-mental-health-care/"
-                  },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Sleep Disorders & Insomnia Support",
-                    "item": "https://manovaidya.com/sleep-disorders-insomnia-support-india/"
-                  }
-                ]
-              })
-            }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Physician",
-                "name": "Dr. Ankush Garg",
-                "url": "https://manovaidya.com/dr-ankush-garg/",
-                "image": "https://manovaidya.com/images/doctorimg-2.jpeg",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Delhi NCR",
-                  "addressCountry": "IN"
-                },
-                "medicalSpecialty": "Psychiatry"
-              })
-            }}
-          />
-
+            {showResources && <MedicalReferencesBlock />}
+          </div>
         </article>
 
-        <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
+        <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya sleep disorders clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Adult Mental Wellness, Sleep-Related Concerns and Mental Health</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
-            <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
+            <p className="text-[15px] font-black text-[#21142d]">Search</p>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3">
-              <input
-                type="search"
-                placeholder="Search topics..."
-                className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]"
-              />
+              <input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" />
               <Search className="h-4 w-4 text-[#7835A4]" />
             </label>
           </SidebarCard>
 
           <SidebarCard>
-            <h2 className="text-[15px] font-black text-[#21142d]">On this page</h2>
+            <p className="text-[15px] font-black text-[#21142d]">On this page</p>
             <nav className="mt-5 space-y-3.5">
               {pageLinks.map(({ label, id }) => (
-                <a
-                  key={id}
-                  href={`#${id}`}
-                  onClick={() => setActiveSection(id)}
-                  className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id
-                      ? "bg-[#f0e7f6] text-[#7835A4]"
-                      : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"
-                    }`}
-                >
-                  <span
-                    className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcF]"
-                      }`}
-                  />
+                <a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}>
+                  <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcf]"}`} />
                   {label}
                 </a>
               ))}
@@ -986,14 +784,11 @@ function AdultSleepDisordersSupportIndiaPage() {
           </SidebarCard>
 
           <SidebarCard>
-            <h2 className="text-[15px] font-black text-[#21142d]">Categories</h2>
+            <p className="text-[15px] font-black text-[#21142d]">Categories</p>
             <div className="mt-4 space-y-3">
-              {categories.map(({ label, count, Icon }) => (
-                <a key={label} href="#categories" className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
-                  <span className="flex items-center gap-2">
-                    <Icon className="h-4 w-4 text-[#7835A4]" />
-                    {label}
-                  </span>
+              {categories.map(({ label, count, Icon, href }) => (
+                <a key={label} href={href} className="flex items-center justify-between text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]">
+                  <span className="flex items-center gap-2"><Icon className="h-4 w-4 text-[#7835A4]" />{label}</span>
                   <span>{count}</span>
                 </a>
               ))}
@@ -1002,18 +797,12 @@ function AdultSleepDisordersSupportIndiaPage() {
 
           <RelatedPagesCard />
 
-          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]" id="book-consultation">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
             <CalendarCheck className="h-9 w-9 text-[#7835A4]" />
-            <h2 className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</h2>
-            <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
-              Get a personalized plan for your emotional wellbeing from our experts.
-            </p>
-            <BookConsultationButton
-              className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]"
-            >
-              Book Now
-            </BookConsultationButton>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
+            <p className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</p>
+            <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">Get a personalized plan for your sleep and emotional wellbeing from our experts.</p>
+            <BookConsultationButton className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white transition hover:bg-[#632b86]">Book Now</BookConsultationButton>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">Noida, Uttar Pradesh, India</p>
           </SidebarCard>
         </div>
       </section>
@@ -1021,25 +810,15 @@ function AdultSleepDisordersSupportIndiaPage() {
       <section className="border-y border-[#eadff1] bg-white">
         <div className="mx-auto grid max-w-[1440px] gap-5 px-4 py-6 sm:px-6 lg:grid-cols-[1fr_460px] lg:items-center lg:px-8">
           <div className="flex items-center gap-4">
-            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-              <Mail className="h-8 w-8" />
-            </span>
+            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Mail className="h-8 w-8" /></span>
             <div>
               <h2 className="text-[18px] font-black text-[#21142d]">Stay Updated with Insights That Matter</h2>
-              <p className="mt-1 text-[13px] font-bold text-[#5f5367]">
-                Subscribe to expert articles, wellbeing tips and Manovaidya updates.
-              </p>
+              <p className="mt-1 text-[13px] font-bold text-[#5f5367]">Subscribe to expert articles, wellbeing tips and Manovaidya updates.</p>
             </div>
           </div>
           <form className="flex gap-3">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="min-w-0 flex-1 rounded-md border border-[#eadff1] px-4 text-[12px] font-bold outline-none focus:border-[#7835A4]"
-            />
-            <button className="h-11 rounded-md bg-[#7835A4] px-6 text-[12px] font-black text-white transition hover:bg-[#632b86]">
-              Subscribe
-            </button>
+            <input type="email" placeholder="Enter your email address" className="min-w-0 flex-1 rounded-md border border-[#eadff1] px-4 text-[12px] font-bold outline-none focus:border-[#7835A4]" />
+            <button className="h-11 rounded-md bg-[#7835A4] px-6 text-[12px] font-black text-white transition hover:bg-[#632b86]">Subscribe</button>
           </form>
         </div>
       </section>
@@ -1048,4 +827,3 @@ function AdultSleepDisordersSupportIndiaPage() {
 }
 
 export default AdultSleepDisordersSupportIndiaPage;
-

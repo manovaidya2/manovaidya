@@ -717,7 +717,7 @@ function WomenRelationshipEmotionalWellbeingSupportPage() {
             <a href="tel:+917823838638" className="mt-4 inline-flex h-10 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 78238 38638</p>
           </SidebarCard>
 
           <SidebarCard>
@@ -749,7 +749,7 @@ function WomenRelationshipEmotionalWellbeingSupportPage() {
             <a href="tel:+917823838638" className="inline-flex h-11 items-center justify-center rounded-md bg-[#8B43BA] px-5 text-[12px] font-black text-white transition hover:bg-[#8B43BA]">
               Call Now
             </a>
-            <a href="mailto:care@manovaidya.com" className="inline-flex h-11 items-center justify-center rounded-md border border-[#8B43BA] px-5 text-[12px] font-black text-[#8B43BA] transition hover:bg-[#fbf9fd]">
+            <a href="mailto:manovaidya2@gmail.com" className="inline-flex h-11 items-center justify-center rounded-md border border-[#8B43BA] px-5 text-[12px] font-black text-[#8B43BA] transition hover:bg-[#fbf9fd]">
               Email Us
             </a>
           </div>

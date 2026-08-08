@@ -82,7 +82,7 @@ const faqs = [
   {
     question: "Can stress affect physical health?",
     answer:
-      "Yes. Long-term stress can affect sleep, digestion, headaches, fatigue, immunity, blood pressure and emotional regulation. A holistic plan helps calm the system at root level.",
+      "Yes. Long-term stress can affect sleep, digestion, headaches, fatigue, immunity, blood pressure and emotional regulation. A structured plan can support healthier routines, coping skills and overall wellbeing.",
   },
   {
     question: "Is online consultation effective?",
@@ -268,7 +268,7 @@ function InsightsFaqSection() {
                   Take the First Step Towards a Better You
                 </h2>
                 <p className="mt-2 text-[16px] font-semibold text-white/88">
-                  Personalised. Compassionate. Proven.
+                  Personalised. Compassionate. Structured.
                 </p>
               </div>
             </div>

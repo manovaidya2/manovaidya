@@ -1197,7 +1197,7 @@ function ExamPerformancePressureIndiaPage() {
             >
               Book Now
             </a>
-            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 7823838638</p>
+            <p className="mt-4 text-[12px] font-bold text-[#51465a]">or Call: +91 78238 38638</p>
           </SidebarCard>
         </div>
       </section>
