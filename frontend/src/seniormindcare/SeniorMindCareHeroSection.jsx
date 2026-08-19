@@ -69,7 +69,7 @@ function SeniorMindCareHeroSection() {
                 <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
               </a>
               <a
-                href="#programs"
+                href="/senior-mental-health-care-india"
                 className="inline-flex h-[50px] min-w-[182px] items-center justify-center gap-5 rounded-md border-2 border-[#8B43BA] bg-white/90 px-6 text-[13px] font-black text-[#8B43BA] transition hover:bg-[#8B43BA]/5"
               >
                 Explore Programs

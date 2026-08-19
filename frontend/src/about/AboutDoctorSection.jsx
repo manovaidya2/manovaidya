@@ -1,5 +1,5 @@
 import React from "react";
-import { Brain, CircleCheck, UsersRound } from "lucide-react";
+import { Brain, CircleCheck } from "lucide-react";
 import aboutFamilyImage from "../images/about-family-care.png";
 
 function AboutDoctorSection() {
@@ -22,21 +22,9 @@ function AboutDoctorSection() {
             Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and
             developer of the Neuro-Ayurveda Development System. He has 7+ years
             of focused experience in child development and mental wellness. His
-            ongoing PhD research explores the relationship between the
+            PhD research explores the relationship between the
             gut-brain axis, behaviour and emotional wellbeing.
           </p>
-
-          <div className="mt-6 flex gap-4 rounded-2xl bg-[#8B43BA]/8 px-4 py-5 shadow-[0_12px_30px_rgba(139,67,186,0.08)] sm:mt-8 sm:gap-5 sm:px-7 sm:py-6">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-[#8B43BA] sm:h-16 sm:w-16">
-              <UsersRound className="h-9 w-9 sm:h-12 sm:w-12" strokeWidth={1.65} />
-            </span>
-            <p className="text-[13.5px] font-bold leading-7 text-[#251553] sm:text-[15px] sm:leading-8">
-              His mission is simple - to understand each person beyond symptoms
-              and help individuals and families move from confusion to clarity,
-              confidence and practical wellbeing through personalised care and
-              guidance.
-            </p>
-          </div>
         </div>
 
         <div className="relative mx-auto w-full max-w-[620px] sm:pb-32 lg:pb-28">

@@ -8,7 +8,7 @@ import AboutDoctorPage from "./pages/AboutDoctorPage";
 import AboutManovaidyaPage from "./pages/AboutManovaidyaPage";
 import Home from "./pages/Home";
 import MindBodyWellbeingPage from "./pages/MindBodyWellbeingPage";
-import MindBodyStressTensionSupportPage from "./mindbodyconcerns/MindBodyStressTensionSupportPage";
+import MindBodyHealthCareIndiaPage from "./mindbodyconcerns/MindBodyHealthCareIndiaPage";
 import StressIBSSupportPage from "./mindbodyconcerns/StressIBSSupportPage";
 import StressAcidityIndiaPage from "./mindbodyconcerns/StressAcidityIndiaPage";
 import StressDigestiveHealthIndiaPage from "./mindbodyconcerns/StressDigestiveHealthIndiaPage";
@@ -33,6 +33,7 @@ import WomenSelfEsteemBodyImageSupportPage from "./womenhealthcare/WomenSelfEste
 import WomenRelationshipEmotionalWellbeingSupportPage from "./womenhealthcare/WomenRelationshipEmotionalWellbeingSupportPage";
 import WomenPregnancyPostpartumMotherhoodMentalHealthSupportPage from "./womenhealthcare/WomenPregnancyPostpartumMotherhoodMentalHealthSupportPage";
 import WomenLifeTransitionsCareerPressureSupportPage from "./womenhealthcare/WomenLifeTransitionsCareerPressureSupportPage";
+import WomenMentalHealthCareIndiaPage from "./womenhealthcare/WomenMentalHealthCareIndiaPage";
 import AdultMentalWellnessPage from "./pages/AdultMentalWellnessPage";
 import AdultMentalHealthCareIndiaPage from "./adult/AdultMentalHealthCareIndiaPage";
 import AdultAnxietySupportIndiaPage from "./adult/AdultAnxietySupportIndiaPage";
@@ -102,8 +103,8 @@ function App() {
           <Route path="/about/manovaidya" element={<AboutManovaidyaPage />} />
           <Route path="/about/approach" element={<ApproachPage />} />
           <Route path="/mind-body-wellbeing" element={<MindBodyWellbeingPage />} />
-          <Route path="/mind-body-health-care-india" element={<MindBodyStressTensionSupportPage />} />
-          <Route path="/mind-body-health-care-india/" element={<MindBodyStressTensionSupportPage />} />
+          <Route path="/mind-body-health-care-india" element={<MindBodyHealthCareIndiaPage />} />
+          <Route path="/mind-body-health-care-india/" element={<MindBodyHealthCareIndiaPage />} />
           <Route path="/stress-ibs-support-india" element={<StressIBSSupportPage />} />
           <Route path="/stress-ibs-support-india/" element={<StressIBSSupportPage />} />
           <Route path="/stress-and-acidity" element={<StressAcidityIndiaPage />} />
@@ -138,6 +139,8 @@ function App() {
           <Route path="/sleep-disorders-seniors-support-india" element={<SeniorSleepDisordersSupportPage />} />
           <Route path="/sleep-disorders-seniors-support-india/" element={<SeniorSleepDisordersSupportPage />} />
           <Route path="/women-health-care" element={<WomenHealthCarePage />} />
+          <Route path="/women-mental-health-care-india" element={<WomenMentalHealthCareIndiaPage />} />
+          <Route path="/women-mental-health-care-india/" element={<WomenMentalHealthCareIndiaPage />} />
           <Route path="/women-stress-management-mind-body-balance-india" element={<WomenStressManagementMindBodyBalancePage />} />
           <Route path="/women-stress-management-mind-body-balance-india/" element={<WomenStressManagementMindBodyBalancePage />} />
           <Route path="/women-depression-low-mood-support-india" element={<WomenDepressionLowMoodSupportPage />} />

@@ -3,6 +3,7 @@ import Seo from "../components/Seo";
 import {
   Activity,
   ArrowRight,
+  BookOpen,
   Brain,
   CalendarCheck,
   CheckCircle2,
@@ -24,81 +25,180 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
-  { label: "Stress-Related Headaches", id: "stress-related-headaches" },
-  { label: "Stress Connection", id: "stress-connection" },
-  { label: "Symptoms & Triggers", id: "symptoms-triggers" },
-  { label: "Warning Signs", id: "warning-signs" },
-  { label: "Assessment Process", id: "assessment-process" },
-  { label: "Neuro-Ayurveda System", id: "neuro-ayurveda-system" },
-  { label: "Support Approach", id: "support-approach" },
-  { label: "Why Choose Us", id: "why-choose-us" },
+  { label: "Stress-Related Headaches", id: "what-are-stress-related-headaches" },
+  { label: "Stress Connection", id: "how-are-stress-and-headaches-connected" },
+  { label: "Tension-Type Headaches", id: "understanding-tension-type-headaches" },
+  { label: "Symptoms & Triggers", id: "common-symptoms-of-stress-related-headaches" },
+  { label: "Warning Signs", id: "warning-signs-you-should-not-ignore" },
+  { label: "Assessment Process", id: "our-stress-and-headache-assessment-process" },
+  { label: "Neuro-Ayurveda System", id: "the-neuro-ayurveda-development-system" },
+  { label: "Support Approach", id: "how-we-support-individuals-with-stress-related-headaches" },
+  { label: "Why Choose Us", id: "why-people-across-india-choose-manovaidya" },
   { label: "About Dr. Ankush Garg", id: "about-dr-ankush-garg" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Assessment", id: "book-assessment" },
 ];
 
-const faqs = [
-  {
-    question: "1. Can stress cause headaches?",
-    answer: "Yes. Stress is a common trigger for tension-type headaches. It can increase muscle tension, disturb sleep and change daily routines, all of which may contribute to head pain in some people. Because headaches have many possible causes, frequent or severe symptoms should still be medically assessed."
-  },
-  {
-    question: "2. What is a stress headache?",
-    answer: "A stress headache usually refers to a tension-type headache that appears or becomes more noticeable during emotional or physical pressure. It often feels like a dull ache, steady pressure or a tight band around the head, sometimes with tension in the neck and shoulders."
-  },
-  {
-    question: "3. What is the difference between a stress headache and a migraine?",
-    answer: "A stress headache is commonly a tension-type headache and usually causes mild to moderate pressure on both sides of the head. Migraine is a neurological condition that may involve intense throbbing pain, nausea, sensitivity to light or sound and, in some people, an aura. A healthcare professional can help distinguish between them."
-  },
-  {
-    question: "4. What are the common symptoms of stress-related headaches?",
-    answer: "Typical symptoms include a dull ache, pressure across the forehead, tightness on both sides of the head, neck stiffness, shoulder tension, mental fatigue and difficulty concentrating. A persistent, severe or unusual headache should be medically evaluated."
-  },
-  {
-    question: "5. Can anxiety trigger headaches?",
-    answer: "It can. Some people notice that headaches occur more often when anxiety is high or emotional pressure has continued for several days. Since anxiety is only one possible factor, ongoing or worsening headaches should not be explained by stress alone without proper assessment."
-  },
-  {
-    question: "6. Can poor sleep contribute to headaches?",
-    answer: "Yes. Too little sleep, irregular sleeping hours or repeatedly disturbed sleep can contribute to headaches in some people. A reasonably consistent sleep routine supports both brain health and general wellbeing."
-  },
-  {
-    question: "7. Can long hours of screen time cause headaches?",
-    answer: "Prolonged screen use can lead to eye strain, poor posture and muscle tension around the neck and shoulders. For some people, that combination contributes to headaches. Regular breaks, better ergonomics and appropriate eye assessment may help when screen-related strain is suspected."
-  },
-  {
-    question: "8. When should I seek immediate medical attention for a headache?",
-    answer: "Seek emergency care for a sudden severe headache or a headache accompanied by weakness, confusion, speech difficulty, seizures, loss of consciousness, fever, sudden vision changes or a recent significant head injury. These warning signs require urgent medical evaluation."
-  },
-  {
-    question: "9. Can dehydration contribute to headaches?",
-    answer: "Yes. Not drinking enough fluid can cause or worsen headaches in some people, particularly during hot weather, physical activity or long working hours. Regular hydration supports overall health and may reduce dehydration-related head pain."
-  },
-  {
-    question: "10. What is a Stress & Headache assessment?",
-    answer: "It is a structured review of headache history, pain pattern, emotional wellbeing, stress, sleep, work routine, screen exposure, hydration, nutrition and general health. The assessment is used to identify relevant patterns and guide personalised support."
-  },
-  {
-    question: "11. How does Manovaidya support individuals experiencing stress-related headaches?",
-    answer: "Manovaidya looks beyond the latest episode of pain and considers emotional wellbeing, daily routine and mind-body health together. Structured assessment, personalised guidance and the Neuro-Ayurveda Development System are used to help the person understand the wider pattern."
-  },
-  {
-    question: "12. What is the Neuro-Ayurveda Development System?",
-    answer: "It is Manovaidya's five-pillar framework covering Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. The framework brings emotional wellbeing, brain health and lifestyle into the same assessment, alongside personalised guidance."
-  },
-  {
-    question: "13. Can managing stress help reduce headache episodes?",
-    answer: "For some people, managing everyday stress can reduce exposure to one important headache trigger. Regular sleep, hydration, balanced meals, physical activity and relaxation may be useful, but they are additions to proper diagnosis and treatment rather than replacements for them."
-  },
-  {
-    question: "14. Is every headache caused by stress?",
-    answer: "No. Headaches can result from dehydration, infection, sinus conditions, eye strain, high blood pressure, migraine, neurological disorders and several other causes. Stress is only one factor among many, so recurring headaches should be assessed on their own pattern and symptoms."
-  },
-  {
-    question: "15. Why should I choose Manovaidya for Stress & Headache support?",
-    answer: "Manovaidya combines a structured Stress & Headache Assessment with personalised guidance and the Neuro-Ayurveda Development System. The approach considers emotional health, brain health and lifestyle together while continuing to recognise the importance of appropriate medical care."
-  }
+const rawSourceContent = "Key Takeaways\nUnderstanding Stress, Headaches & Brain Health\nStress & Tension-Type Headache Connection\nCommon Symptoms of Stress-Related Headaches\nCommon Headache Triggers\nStress, Muscle Tension & Emotional Wellbeing\nSleep, Screen Time, Posture & Headaches\nWarning Signs That Need Medical Attention\nHealthy Lifestyle Habits for Headache Support\nStress Management & Healthy Routine Guidance\nNeuro-Ayurveda Development System\nManovaidya Stress & Headache Assessment Process\nFAQs About Stress & Headaches\n\nBrain Health\nStress & Headaches Treatment in India\nAwareness of how stress, headaches and emotional wellbeing are connected.\nUnderstanding Stress & Headaches\t\nMost people get headaches at some time in their lives. They can come for a variety of reasons, but often are associated with tension-type headaches and with headaches that occur frequently during stressful times of daily living. [1][2]\nOne might experience headaches again after a heavy work week, after a few nights of insomnia or after a period of emotional stress. Stress doesn't cause all headaches. Head pain can also be caused by dehydration, eye strain, infection, sinus issues, high blood pressure, some medications and other health conditions. [1][3]\nPay attention to the onset of the headache, as well as what was happening before it and how the body felt at the time, can be helpful in identifying patterns. This knowledge can help make better decisions about your daily life and medical evaluation is still important if symptoms are common, serious or unusual. [3]\nWhen it comes to headache, at Manovaidya, we don't treat it like a sore problem. Emotional health, sleep habits, food habits, work habits and lifestyle, and overall mind/body well-being are viewed as a total package; otherwise, the larger picture is lost.\nThis is done under the guidance of Dr. Ankush Garg, Mental Health Expert and Founder of Manovaidya. His Neuro-Ayurveda Development System delves into the brain health, behaviour, gut health, lifestyle and emotional wellbeing through five interconnected pillars.\n\nWhat Are Stress-Related Headaches?\nStress-related headache typically refers to headaches that are becoming more noticeable during periods of stress (emotional or physical).\nThe most common one is a tension type headache. It has been said to be a constant pressure, a dull ache or a \"band of pressure\" around the head. [2][3]\nThese headaches can be quite distinct from migraines. A tension-type headache is less likely to cause severe nausea, or an aura (a change in what you see) or be very sensitive to light or sound. [2][3]\nHowever, there are a number of types of headache that can be similar. If the diagnosis is not clear or the symptoms persist, the pattern should be evaluated by a healthcare professional. [3]\n\nHow Are Stress and Headaches Connected?\nThe body enters its ‘stress response’ when someone is under pressure. This can impact on sleep, breathing, posture and relaxation.\nIncreased muscle tension\nTightness around neck\nMental fatigue\nPoor sleep\nDifficulty relaxing\nShoulder tightness\nThis mixture can cause a tension or aggravate an existing tension headache for some individuals. [2][8]\nIt can be caused by stress, among other things. The cause of a headache may vary from individual to individual. [1][3]\n\n\nCan Stress Cause Headaches?\nOne of the most common triggers known for tension type headache is stress. Muscles in scalp, neck and shoulders can remain tight for an extended period of time when they are stressed. That tension in some individuals is followed by pressure or ache in the head. [2][8]\nBut it is crucial to not call all headaches “stress” headaches. There are many other factors that can cause sleep issues, such as poor sleep, dehydration, extended screen time, eye strain, infections, sinus problems, high blood pressure, and neurological conditions. [1][3]\nThe best way is to observe the pattern – when the headache begins, how long it lasts, what it feels like and what else was going on around the time of the headache. This information can help make an informed and accurate assessment and better long-term decisions. [3]\n\nUnderstanding Tension-Type Headaches\nOne of the common types of headache is tension-type headache. [1][2]\nThey are commonly known as:\nA tight band around the head.\nForehead pressure.\nAching that's not bothersome, but rather just a little uncomfortable.\nTightness in the neck and shoulders\nThe discomfort that comes on slowly [2][3]\nCompared with migraine, tension-type headaches are less likely to involve severe nausea, a visual aura or strong sensitivity to light and sound. Because headache symptoms can overlap, especially in the early stages, professional evaluation is the safest way to confirm what type of headache a person is experiencing. [2][3]\n\nCommon Symptoms of Stress-Related Headaches\nNot all stress headaches are created equal.\nSymptoms include:\nDull aching head pain\n Pressure around forehead\n Tightness on both sides\n Neck stiffness\n Shoulder muscle tightness\n Mild sensitivity to light/sound\n Mental fatigue\n Difficulty concentrating [2][3]\nAny headache that persists and causes pain or is different than normal should be assessed by a physician, not just assumed to be stress related. [3][5]\n\n\nWho May Experience Stress-Related Headaches?\nMany people experience headaches due to stress, especially those who have:\nWorking professionals\nStudents during examinations\nPeople with demanding schedules\nCaregivers\nIndividuals experiencing emotional stress\nPeople with poor sleep habits\nThose working long hours on computers\nThe triggers for these groups can be similar, like screen strain, extended workdays, or insufficient sleep or ongoing mental stress. However, members of these groups do not necessarily have an explanation for their headache; each individual needs one.\n\n\nCommon Headache Triggers\nA list of triggers does not apply to all. One factor that causes headaches for one person may not for another. Some commonly reported triggers include:\nEmotional stress\n Poor sleep\n Mental fatigue\n Dehydration\n Skipping meals\n Excessive screen time.\n Poor posture\n Eye strain\n Excessive caffeine\n Physical exhaustion\nIt helps to keep an easy record of headaches, meals, sleep, screen time, and stressful events over time to help recognise personal patterns. [3]\n\nWarning Signs You Should Not Ignore\nMost headaches are not caused by a medical emergency. However, there are some symptoms which you should never overlook as it can be a sign of something more serious. [3][5]\nIf you have any of the following symptoms, get immediate medical attention:\nSudden severe headache\n Weakness of face, arm or leg.\n Difficulty speaking\n Loss of consciousness\n Confusion\n Seizures\n Fever and a very bad headache.\n Headaches following a head injury\n Sudden vision changes\n Persistent vomiting [3][5]\nThese are red flags that require an urgent evaluation of emergency. Don't see if they settle. [3][5]\n\nWhy Emotional Wellbeing Matters\nChronic headaches can impact more than just your pain. May alter daily routine including working, resting, socialising and planning. [1][8]\nSome individuals experience:\nReduced work productivity\n Difficulty concentrating\n Poor sleep\n Irritability\n Reduced physical activity\n Emotional frustration\n Decrease in quality of life\n Worry over frequent headaches\nAttending to emotional health and wellness, along with adhering to appropriate medical guidance and sensible lifestyle steps, can aid in attending to the daily stressors of persistent headaches.Meanwhile, focusing on emotional well-being and taking the necessary medical advice and practical steps can help manage the daily challenges of recurring headaches. When headaches are already starting to interfere with daily life, emotional support along with the right medical treatment can be an important factor in maintaining quality of life. [8]\n\nOur Stress & Headache Assessment Process\nRegular headaches may have an impact on concentration, work, sleep, family time and emotional balance. The initial step is to determine the medical cause and it's also beneficial to know if the issue is routine, stress, posture, screen time or sleep. [1][3]\nThe assessment at Manovaidya thus involves examining the link between emotional wellbeing, everyday behaviors and headache patterns, rather than just the pain. Personalised guidance is discussed after an understanding of the person's health history, current routine and the circumstances in which headaches tend to occur has been gained.\n1. Understanding Your Health Journey\nThe discussion starts with an in-depth exploration of your headache history and how the issue has impacted your life. Discuss: Your headache history, Frequency and duration of headaches, Pain pattern, Emotional wellbeing, Stress levels, Sleep quality, Work routine, Screen time, Hydration and eating habits, Medical history, and Previous investigations and treatments. These data combined provide a broad overview of the health situation.\n2. Comprehensive Mind-Body Assessment\nThe second section of the assessment examines some areas which can be related to chronic headaches. These include: Emotional wellbeing, Stress patterns, Sleep quality, Lifestyle habits, Screen exposure, Work-life balance, Hydration, Nutrition, Physical activity and Overall quality of life. When you see these areas together, you can see the practical patterns—such as noticing that headaches tend to occur after a long period of screen time, after not eating or drinking enough, or after an unusually stressful day.\n3. Understanding Your Wellbeing Profile\nThe observations are explained in clear everyday language once the assessment is completed. This encompasses: Emotional wellbeing profile, Lifestyle influences, Stress patterns, Sleep observations, Daily routine analysis, Personalised guidance and Practical next steps. The goal is to help the person understand the relationship between emotional health, lifestyle and headache patterns, and make subsequent health care decisions with a more comprehensive understanding of the problem.\n\n\nThe Neuro-Ayurveda Development System\nEvery headache at Manovaidya is seen from a 5 pillar Neuro-Ayurveda Development System, which includes a holistic evaluation of brain health, gut health, behaviour, lifestyle and emotional wellbeing.\nThe framework does not take for granted that all headaches are caused by a single factor. It instead opens up the landscape to consider the ways in which the various aspects of health and life could interact overtime.\n1. Brain Nourishment System\nHealthy brain function benefits include: Mental clarity, Emotional regulation, Stress resilience, Healthy sleep, Cognitive wellbeing, Overall quality of life. Taking care of the brain could help to deal better with daily stress and keep schedules more regular.\n\n\n2. Gut Response System\nAllow food habits and digestive wellness to affect energy, focus and health. This pillar is about understanding: HEALTHY EATING, GUT-BRAIN, NUTRITION PATTERNS, LIFESTYLE INFLUENCES, and DIGESTIVE WELLBEING.\n\n3. Neural Network System\nThe brain keeps changing in the process of learning, repeated actions and life habits. This pillar emphasises building up the following capacities: Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management, Cognitive flexibility.\n\n\n4. Sensory Integration System\nPhysical factors and sensory stress may apply to a headache pattern, for individuals spending extended time in front of a screen or in bright lights or loud environments. This pillar is related to: Screen exposure, Workplace environment, Light and noise exposure, Physical recovery, and Lifestyle balance.\n\n\n5. Behaviour Guidance System\nWhen positive behaviors are embraced as a way of life, rather than a temporary measure, there is a better chance for sustainable improvement. This pillar is dedicated to the following: Healthy routines, Behavioural awareness, Stress management, Sustainable lifestyle habits and Work-life balance.\n\nHow We Support Individuals with Stress-Related Headaches\nHeadaches are personal. This strategy will not work for everyone, as the symptoms, triggers, routines and health history can vary significantly.\n\n\nIn Manovaidya, support is designed in line with the individual's headache pattern, emotional well-being with daily life. We can do that by:\nStress & Headache Assessment\n Mind-Body Health Assessment\n Emotional Wellbeing Guidance\n Lifestyle Education\n Stress Management Guidance\n Healthy Routine Planning\n Brain Wellness Education\n Progress Monitoring & Follow-Up\nThis goal is to facilitate the identification of the possible relationships between stress, routine and recurrent headaches, and to establish habits that are feasible and sustainable.\n\nLiving Well With Frequent Headaches\nNot all headaches can be prevented. However, regular daily routines will help minimize exposure to some of the most common triggers and help to better understand symptoms. Positive lifestyle habits can include: [1,3]\nMaintaining regular sleep patterns\n Drinking enough water\n Eating balanced meals on time\n Taking regular breaks from screens\n Improving posture during work\n Staying physically active\n Managing everyday stress\n Following medical advice\nThese practices are supportive measures. They should be used in conjunction with and not instead of medical evaluation and treatment as recommended by a health care professional. [3]\n\n\nWhen Should You See a Healthcare Professional?\nIf you have any concerns, you should see a professional medical evaluation:\n• Headaches become frequent\n • Pain interferes with work or daily activities\n • Headaches are becoming more severe\n • New neurological symptoms appear\n • Over-the-counter medicines are no longer effective\n • You are unsure about the cause of your headaches [3][5]\nThe early assessment can help determine the nature of the headache, exclude other causes and offer guidance to treatment that can prevent an increasingly disruptive problem. [3][5]\n\nLooking Beyond the Headache\nA headache that occurs on a regular basis is not a passing headache. Factors that affect the occurrence of headache, and the strength of headache, can be sleep, posture, hydration, screen time, emotional stress, and work habits. [1][2][3]\nHence, Manovaidya considers the person's overall health state instead of individual headaches. Incorporating emotional, physical and lifestyle considerations together can help to make informed and realistic decisions regarding long-term wellbeing.\n\nWhy People Across India Choose Manovaidya\nIndividuals suffering from headache from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and other parts of India seek out Manovaidya to understand and treat headache patterns, emotional well-being and repeated headaches where the headache occurs, how often and what it feels like through structured assessments and personalized guidance.\nComprehensive Stress & Headache Assessments\nBrain Health & Mind-Body Understanding\nNeuro-Ayurveda Development System\nLifestyle & Stress Management Guidance\nHolistic Emotional Wellbeing Support\nOnline & In-Clinic Consultations\nPersonalised Long-Term Wellness Approach\nThe overall goal is to raise awareness of the relationship between stress, lifestyle and regular headaches and to promote general wellbeing.\n\nAbout Dr. Ankush Garg\nMental Health Specialist & Founder of Manovaidya\nDr. Ankush Garg founded Manovaidya and developed the Neuro-Ayurveda Development System used in its assessment approach.\nHis work examines how emotional wellbeing, brain health, lifestyle and mind-body functioning influence one another, particularly in people dealing with stress-related health concerns.\nThrough structured assessment, personalised guidance and regular follow-up, he helps individuals make sense of their health patterns and introduce lifestyle changes that can be followed in real life.\nBased in Delhi NCR, Dr. Ankush Garg offers Mind-Body and Brain Health Assessments that explore how emotional wellbeing, lifestyle and stress-related headaches may be connected within the Neuro-Ayurveda Development System across India, both online and at the clinic.\n\nFrequently Asked Questions (FAQs)\n1. Can stress cause headaches?\nYes. Stress is a very common cause of TTHs. It can cause a person to become more tense, affect sleep and alter their normal routine, which can all lead to headaches. Many things can cause a headache; if they occur regularly or are severe, they should continue to be medically evaluated. [1][2][8]\n\n2. What is a stress headache?\nA stress headache typically is a tension-type headache that occurs or develops under emotional or physical stress. It is often associated with a vague pressure or dull ache, in the head, neck and shoulders, or around the head, which is sometimes continuous. [2][3]\n\n3. What is the difference between a stress headache and a migraine?\nStress headache is a mild to moderate tension type headache that typically affects both sides of the head. Migraine is a neurological disorder, which can include a severe headache, as well as nausea, sensitivity to light and sound and in some individuals an aura. It's possible to differentiate between them with the help of a healthcare professional. [1][2][3]\n\n\n4. What are the common symptoms of stress-related headaches?\nCommon complaints are dull ache, pressure across the forehead, tightness on each side of the head, stiff neck, general tiredness and a lack of concentration. If the headache persists, is severe or different in a way, it should be medically assessed. [2][3]\n\n\n5. Can anxiety trigger headaches?\nIt can. When anxiety is high and emotional stress has been on going for several days, some people find that headaches happen more frequently. However, anxiety is just one factor, so it is very important that a further cause of the headache be assessed before attributing it to stress only. [8]\n\n6. Can poor sleep contribute to headaches?\nYes. Some individuals may get a headache if they sleep too short or if they have irregular sleep times or frequently interrupted sleep. A consistent bedtime schedule is beneficial to brain health and overall well-being. [1][3]\n\n7. Can long hours of screen time cause headaches?\nExtended screen usage can cause eye strain as well as poor posture and neck and shoulder muscle tension. Some people find that combination causes headaches. If screen-related strain is suspected, regular breaks, improving ergonomics and proper eye evaluation might help.\n\n8. When should I seek immediate medical attention for a headache?\nGet immediate medical attention for a sudden, severe headache or headache that is accompanied by weakness, confusion, speech problems, seizures, loss of consciousness, fever, or sudden changes in vision or a major head injury recently. The following signs are suspicious and need immediate medical attention. [3][5]\n\n\n9. Can dehydration contribute to headaches?\nYes. For some, not consuming sufficient fluids can trigger or aggravate headaches, especially in the summer, during exercise and work. Water is good for health and can help lower the risk of dehydration-induced headaches.\n\n\n10. What is a Stress & Headache assessment?\nA detailed assessment of headache history, pain pattern, emotional health, stress, sleep, work schedule, screen time, fluid intake, diet and overall health. The use of the assessment enables identification of relevant patterns and use for personalised support.\n\n\n\n11. How does Manovaidya support individuals experiencing stress-related headaches?\nManovaidya doesn't just focus on the most recent experience of suffering but also takes into account emotional wellness, day to day regimen, and the connection between the mind and body. Structured evaluation, individualized directions and the Neuro-Ayurveda Development System are utilized to improve the person's understanding of the wider pattern.\n\n12. What is the Neuro-Ayurveda Development System?\nIt is Manovaidya's five pillars of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. It is an integrated approach to emotional wellbeing, brain health and lifestyle, and personalised guidance.\n\n\n13. Can managing stress help reduce headache episodes?\nFor some, dealing with normal stress may also lessen their exposure to one of the key triggers of headaches. Prolonged, adequate, and good sleep, adequate fluid intake, balanced diet, physical activity and relaxation are helpful but not substitutions for correct diagnosis and treatment. [3][4]\n\n\n14. Is every headache caused by stress?\nNo. Headaches are caused by dehydration, infection, sinus problems, eye strain, high blood pressure, migraine, neurological disorders and a few other causes. Stress is just one of the many factors involved and recurring headaches should be evaluated based on their individual pattern and symptoms. [1][3]\n\n15. Why should I choose Manovaidya for Stress & Headache support?\nA Stress & Headache Assessment with tailored guidance and Neuro-Ayurveda Development System are combined at Manovaidya. This method takes into account emotional wellness, brain health, and lifestyle as one entity, and remains mindful of the value of proper medical treatment.\n\nConcerned About Frequent Stress-Related Headaches?\nBook a structured Stress & Headache Assessment at Manovaidya to explore the connection between emotional wellbeing, daily routine, tension patterns and recurring headaches, followed by guidance tailored to the assessment findings.\nBook Headache Assessment\nTalk to Our Team\nReferences\n[1] World Health Organization (WHO) – Migraine and Other Headache Disorders\n https://www.who.int/news-room/fact-sheets/detail/headache-disorders\n[2] Tension-Type Headache – Clinical Features, Mechanisms and Management\n https://pubmed.ncbi.nlm.nih.gov/26717946/\n[3] NICE Clinical Guideline – Headaches in Over 12s: Diagnosis and Management\n https://www.nice.org.uk/guidance/cg150\n[4] Yoga for Treating Headaches: A Systematic Review and Meta-Analysis\n https://pubmed.ncbi.nlm.nih.gov/31667736/\n[5] WHO – Aids for Management of Common Headache Disorders in Primary Care\n https://cdn.who.int/media/docs/default-source/mental-health/who_ehf_aids_headache.pdf\n[6] Effectiveness of Manual Therapy and Acupuncture in Tension-Type Headache: A Systematic Review\n https://pubmed.ncbi.nlm.nih.gov/34646653/\n[7] Acupuncture for Tension-Type Headache: A Systematic Review and Meta-Analysis of Randomized Controlled Trials\n https://pubmed.ncbi.nlm.nih.gov/37234488/\n[8] Association Between Psychological Factors and Headache Burden in Migraine and Tension-Type Headache: A Systematic Review and Meta-Analysis\n https://pubmed.ncbi.nlm.nih.gov/41693420/";
+
+const keyTakeawayEnd = rawSourceContent.search(/\n\s*Brain Health/);
+const keyTakeawayLabels = rawSourceContent
+  .slice(0, keyTakeawayEnd > 0 ? keyTakeawayEnd : 0)
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "Key Takeaways");
+
+const referencesStart = rawSourceContent.indexOf("\nReferences");
+const referencesRaw = referencesStart >= 0 ? rawSourceContent.slice(referencesStart).trim() : "";
+const referenceLines = referencesRaw
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "References");
+const references = [];
+for (let index = 0; index < referenceLines.length; index += 1) {
+  const line = referenceLines[index];
+  if (/^\[?https?:\/\//i.test(line)) continue;
+  const nextUrlLine = referenceLines.slice(index + 1).find((item) => /^\[?https?:\/\//i.test(item));
+  const nextUrl = nextUrlLine?.match(/https?:\/\/[^\]\s)]+/i)?.[0] || nextUrlLine;
+  const numberMatch = line.match(/^\[(\d+)\]\s*(.*)$/);
+  references.push({ n: numberMatch?.[1] || String(references.length + 1), title: numberMatch?.[2] || line, url: nextUrl, note: "" });
+}
+
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 72);
+
+const sectionHeadingLabels = [
+  "Understanding Stress & Headaches",
+  "What Are Stress-Related Headaches?",
+  "How Are Stress and Headaches Connected?",
+  "Can Stress Cause Headaches?",
+  "Understanding Tension-Type Headaches",
+  "Common Symptoms of Stress-Related Headaches",
+  "Who May Experience Stress-Related Headaches?",
+  "Common Headache Triggers",
+  "Warning Signs You Should Not Ignore",
+  "Why Emotional Wellbeing Matters",
+  "Our Stress & Headache Assessment Process",
+  "1. Understanding Your Health Journey",
+  "2. Comprehensive Mind-Body Assessment",
+  "3. Understanding Your Wellbeing Profile",
+  "The Neuro-Ayurveda Development System",
+  "1. Brain Nourishment System",
+  "2. Gut Response System",
+  "3. Neural Network System",
+  "4. Sensory Integration System",
+  "5. Behaviour Guidance System",
+  "How We Support Individuals with Stress-Related Headaches",
+  "Living Well With Frequent Headaches",
+  "When Should You See a Healthcare Professional?",
+  "Looking Beyond the Headache",
+  "Why People Across India Choose Manovaidya",
+  "About Dr. Ankush Garg",
+  "Dr. Ankush Garg",
+  "Mental Health Specialist & Founder of Manovaidya",
 ];
+const sectionHeadings = new Set(sectionHeadingLabels);
+const duplicateHeroLines = new Set([
+  "Key Takeaways",
+  "Brain Health",
+  "Stress & Headaches Treatment in India",
+  "Awareness of how stress, headaches and emotional wellbeing are connected.",
+  "Frequently Asked Questions (FAQs)",
+  ...keyTakeawayLabels,
+]);
+
+const faqStart = rawSourceContent.search(/\n\s*1\.\s*Can stress cause headaches\?/i);
+const faqEnd = rawSourceContent.indexOf("\nConcerned About Frequent Stress-Related Headaches?", faqStart);
+const faqContent = faqStart >= 0 ? rawSourceContent.slice(faqStart, faqEnd > faqStart ? faqEnd : referencesStart > faqStart ? referencesStart : undefined).trim() : "";
+const articleContent = (faqStart >= 0 ? rawSourceContent.slice(0, faqStart) : rawSourceContent)
+  .split("\nReferences")[0]
+  .trim();
+
+const articleSections = articleContent.split("\n").reduce(
+  (sections, line) => {
+    const trimmed = line.trim();
+    if (duplicateHeroLines.has(trimmed)) return sections;
+
+    if (sectionHeadings.has(line) || sectionHeadings.has(trimmed)) {
+      const heading = trimmed === "About" || trimmed === "Dr. Ankush Garg" ? "About Dr. Ankush Garg" : trimmed;
+      const id = heading === "About Dr. Ankush Garg" ? "about-dr-ankush-garg" : slugify(heading);
+      const existing = sections.find((section) => section.id === id);
+      if (existing) {
+        existing.lines.push(line);
+        return sections;
+      }
+      sections.push({ title: heading, id, lines: [] });
+      return sections;
+    }
+
+    sections[sections.length - 1].lines.push(line);
+    return sections;
+  },
+  [{ title: "Introduction", id: "introduction", lines: [] }]
+).filter((section) => section.lines.some((line) => line.trim()) || section.title !== "Introduction");
+
+const faqs = faqContent
+  .split(/\n(?=\s*\d+\.?\s*)/)
+  .filter((item) => /^\s*\d+\.?\s*/.test(item.trim()))
+  .map((item) => {
+    const [question, ...answer] = item.trim().split("\n");
+    return { question: question.replace(/^(\d+)\.(\S)/, "$1. $2").trim(), answer: answer.join(" ") };
+  });
+
+const articleLinkRules = [
+  { key: "mind-body-health", pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india" },
+  { key: "stress-headaches", pattern: /\bStress & Headaches\b/i, href: "/stress-and-headaches" },
+  { key: "stress-headache", pattern: /\bStress & Headache\b/i, href: "/stress-and-headaches" },
+  { key: "headache", pattern: /\bheadache\b/i, href: "/stress-and-headaches" },
+  { key: "tension-type", pattern: /\btension-type headache\b/i, href: "/stress-and-headaches" },
+  { key: "migraine", pattern: /\bmigraine\b/i, href: "/stress-and-migraine" },
+  { key: "anxiety", pattern: /\banxiety\b/i, href: "/stress-anxiety-treatment-india" },
+  { key: "sleep", pattern: /\bsleep\b/i, href: "/sleep-disorders-treatment-india" },
+  { key: "high-blood-pressure", pattern: /\bhigh blood pressure\b/i, href: "/stress-and-high-blood-pressure" },
+  { key: "neuro-ayurveda", pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { key: "dr-ankush", pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
+];
+
+const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const ruleKeys = new Set();
+  articleLinkRules.forEach((rule) => {
+    const ruleKey = getArticleLinkRuleKey(rule);
+    if (linkedRuleKeys.has(ruleKey) || !rule.pattern.test(text)) return;
+    linkedRuleKeys.add(ruleKey);
+    ruleKeys.add(ruleKey);
+  });
+  return ruleKeys;
+}
+
+const paragraphLinkKeys = (() => {
+  const linkedRuleKeys = new Set();
+  const ruleKeysByText = new Map();
+
+  articleSections.forEach((section, sectionIndex) => {
+    section.lines.forEach((line, lineIndex) => {
+      const trimmed = line.trim();
+      if (!trimmed || sectionHeadings.has(trimmed) || trimmed.length < 82) return;
+      const ruleKeys = getArticleLinkRuleKeysForText(trimmed, linkedRuleKeys);
+      if (ruleKeys.size) ruleKeysByText.set(sectionIndex + "-" + lineIndex, ruleKeys);
+    });
+  });
+
+  faqs.forEach((faq, faqIndex) => {
+    const ruleKeys = getArticleLinkRuleKeysForText(faq.answer, linkedRuleKeys);
+    if (ruleKeys.size) ruleKeysByText.set("faq-" + faqIndex, ruleKeys);
+  });
+
+  return ruleKeysByText;
+})();
 
 const categories = [
   { label: "Mind-Body Health", count: 15, Icon: Brain },
@@ -145,9 +245,195 @@ function RelatedPagesCard() {
   );
 }
 
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) candidates.push({ index: keywordMatch.index, text: keywordMatch[0], rule, ruleKey, type: "keyword" });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+
+    if (next.type === "citation") {
+      parts.push(
+        <button key={next.text + "-" + parts.length} type="button" onClick={() => onCitationClick?.(next.citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#8b43ba] underline decoration-[#d9bfe5] underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]" aria-label={"Open resource " + next.citationId}>
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={next.text + "-" + parts.length} href={next.rule.href} className="font-black text-[#8b43ba] underline decoration-[#8b43ba]/35 underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, partIndex) => (
+    typeof part === "string" ? <React.Fragment key={part + "-" + partIndex}>{part}</React.Fragment> : part
+  ));
+}
+
+function ContentLine({ line, index, sectionIndex, onCitationClick, allowedRuleKeys }) {
+  const trimmed = line.trim();
+
+  if (!trimmed) return <div key={index} className="h-3" />;
+  if (sectionHeadings.has(trimmed) || duplicateHeroLines.has(trimmed)) return null;
+
+  if (/^\d+\.\s/.test(trimmed)) {
+    return (
+      <h3 key={index} id={slugify(trimmed)} className="mt-6 scroll-mt-28 text-[16px] font-black leading-7 text-[#21142d]">
+        <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} />
+      </h3>
+    );
+  }
+
+  if (trimmed.length < 82 && !trimmed.endsWith(".") && !trimmed.endsWith(",") && !trimmed.includes("|")) {
+    return (
+      <li key={index} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]">
+        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8b43ba]" />
+        <span><ArticleLinkedText text={trimmed.replace(/^([???])\s*/, "")} onCitationClick={onCitationClick} /></span>
+      </li>
+    );
+  }
+
+  return (
+    <p key={index} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+      <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} allowedRuleKeys={allowedRuleKeys || paragraphLinkKeys.get(sectionIndex + "-" + index)} />
+    </p>
+  );
+}
+
+function ContentSection({ section, sectionIndex, onCitationClick }) {
+  const compactLines = section.lines.filter((line) => line.trim());
+  const listLikeLines = section.lines.filter((line) => {
+    const trimmed = line.trim();
+    return trimmed && trimmed.length < 82;
+  }).length;
+  const visualImage = section.id === "common-symptoms-of-headache" || section.id === "common-headache-triggers" || section.id === "who-may-notice-stress-related-headache-triggers" ? headacheSymptomsImage :
+    section.id === "how-are-stress-and-headaches-connected" || section.id === "can-stress-trigger-headache-attacks" || section.id === "the-brain-stress-response-and-headache" ? stressNeckTensionImage :
+    section.id === "the-neuro-ayurveda-development-system" ? neuroAyurvedaImage :
+    section.id === "living-well-with-headache" ? lifestyleImage : null;
+  const isGutBrainSection = section.id === "how-are-stress-and-headaches-connected" || section.id === "can-stress-cause-headaches";
+  const isDigestiveSymptomsSection = section.id === "what-are-stress-related-headaches" || section.id === "understanding-tension-type-headaches" || section.id === "common-symptoms-of-stress-related-headaches" || section.id === "common-headache-triggers" || section.id === "who-may-experience-stress-related-headaches";
+  const isNeuroAyurvedaSection = section.id === "the-neuro-ayurveda-development-system";
+  const isDigestiveWellbeingSection = section.id === "living-well-with-frequent-headaches";
+  const visualImageHeight = isGutBrainSection ? "h-[460px] sm:h-[560px]" : isDigestiveSymptomsSection || isDigestiveWellbeingSection ? "h-[320px] sm:h-[380px]" : isNeuroAyurvedaSection ? "h-[180px] sm:h-[230px]" : "h-[220px]";
+  const visualImageFit = isNeuroAyurvedaSection ? "object-contain" : "object-cover";
+  const visualImageContainerWidth = isNeuroAyurvedaSection ? "mx-auto max-w-[720px]" : "";
+
+  return (
+    <section id={section.id} className="mt-9 scroll-mt-28">
+      {section.title !== "Introduction" && <h2 className="text-[20px] font-black text-[#17111f]">{section.title}</h2>}
+      {visualImage && (
+        <div className={`mt-5 overflow-hidden rounded-lg border border-[#f4e6fa] bg-[#faf0fc] shadow-[0_10px_28px_rgba(139,67,186,0.06)] ${visualImageContainerWidth}`}>
+          <img src={visualImage} alt={section.title} className={`${visualImageHeight} w-full ${visualImageFit} object-center`} loading="lazy" decoding="async" />
+        </div>
+      )}
+      <div className={listLikeLines >= 4 ? "mt-4 rounded-lg border border-[#f4e6fa] bg-white p-5 shadow-[0_8px_22px_rgba(139,67,186,0.04)]" : "mt-2"}>
+        {listLikeLines >= 4 ? (
+          <div className="space-y-2.5">
+            {compactLines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)}
+          </div>
+        ) : (
+          section.lines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)
+        )}
+      </div>
+    </section>
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#8b43ba]">Brain Health</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeawayLabels.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our mind-body health newsletter for stress, headaches and brain health guidance.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#f4e6fa] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">References</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Medical, scientific and Ayurvedic resources used in the supplied content.</p>
+      <div className="mt-5 space-y-4">
+        {references.map((reference) => (
+          <article key={reference.n} id={"reference-" + reference.n} className="scroll-mt-32 rounded-lg border border-[#f4e6fa] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            {reference.note && <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">{reference.note}</p>}
+            {reference.url && <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#8b43ba] underline underline-offset-2">{reference.url}</a>}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function StressHeadachesIndiaPage() {
   const [activeSection, setActiveSection] = useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = useState(0);
+  const [showResources, setShowResources] = useState(false);
+
+  const handleCitationClick = React.useCallback((referenceNumber) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      const target = document.getElementById("reference-" + referenceNumber) || document.getElementById("medical-references");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -216,7 +502,7 @@ function StressHeadachesIndiaPage() {
                 Stress & Headaches Treatment in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Understanding the Relationship Between Stress, Headaches and Emotional Wellbeing
+                Awareness of how stress, headaches and emotional wellbeing are connected.
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -239,386 +525,11 @@ function StressHeadachesIndiaPage() {
               </div>
             </figure>
           </div>
+          <KeyTakeawaysBlock />
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">Understanding Stress & Headaches</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Headaches are so common that most people experience one at some point. They can arise for many reasons, but emotional stress is frequently linked with tension-type headaches and the kind of recurring head pain that appears during demanding periods of everyday life.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A person may notice headaches returning during a busy work week, after several nights of poor sleep, or when emotional pressure has been building for some time. That does not mean stress explains every headache. Dehydration, eye strain, infection, sinus problems, high blood pressure, certain medicines and other medical conditions can also cause head pain.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Looking at when a headache begins, what was happening beforehand and how the body was feeling at the time can reveal useful patterns. This understanding can guide healthier daily choices, while medical evaluation remains important whenever symptoms are frequent, severe or unusual.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, we do not look at the headache as an isolated complaint. Emotional health, sleep, food habits, work routine, lifestyle and overall mind-body wellbeing are considered together so that the wider picture is not missed.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              This approach is led by Dr. Ankush Garg, Mental Health Specialist and Founder of Manovaidya. His Neuro-Ayurveda Development System uses five connected pillars to explore brain health, behaviour, gut health, lifestyle and emotional wellbeing.
-            </p>
-          </section>
-
-          <section id="stress-related-headaches" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Are Stress-Related Headaches?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The term stress-related headache is generally used when head pain becomes more noticeable during emotionally or physically demanding periods.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The most familiar example is a tension-type headache. People often describe it as steady pressure, a dull ache or the feeling of a band tightening around the head.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              These headaches are usually different from migraine. Severe nausea, a visual aura and marked sensitivity to light or sound are less typical in a tension-type headache.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Even so, several headache conditions can feel similar. A healthcare professional should assess the pattern when the diagnosis is unclear or the symptoms keep returning.
-            </p>
-          </section>
-
-          <section id="stress-connection" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Are Stress and Headaches Connected?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              When a person feels under pressure, the body shifts into its normal stress response. This can affect muscles, sleep, breathing, posture and the ability to relax.
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                 {[
-                   "Increased muscle tension",
-                   "Tightness around neck",
-                   "Mental fatigue",
-                   "Poor sleep",
-                   "Difficulty relaxing",
-                   "Shoulder tightness"
-                 ].map((label) => (
-                   <div key={label} className="flex min-h-[66px] items-center gap-3 rounded-lg border border-[#f4e6fa] bg-[#faf0fc] p-3 text-[13px] font-bold leading-5 text-[#51465a]">
-                     <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] shrink-0" />
-                     <span>{label}</span>
-                   </div>
-                 ))}
-             </div>
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              For certain people, this combination can contribute to a tension-type headache or make an existing headache feel harder to manage.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Stress is only one possible trigger. The reason behind a headache can differ greatly from one person to another.
-            </p>
-            
-            <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Can Stress Cause Headaches?</h3>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Stress is one of the triggers most often associated with tension-type headaches. During a stressful situation, muscles around the scalp, neck and shoulders may stay tense for longer than usual. In some people, that tension is followed by pressure or aching in the head.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              However, it is important not to label every headache as a stress headache. Poor sleep, dehydration, prolonged screen use, eye strain, infections, sinus conditions, high blood pressure and neurological disorders are among the many other possible causes.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The most useful approach is to notice the pattern: when the headache starts, how long it lasts, what it feels like and what else was happening around that time. This information can support a more accurate assessment and better long-term decisions.
-            </p>
-            
-            <div className="mt-8 flex flex-col lg:flex-row gap-6 items-center">
-              <div className="lg:w-1/2">
-                 <img src={stressNeckTensionImage} alt="Neck and shoulder muscle tension associated with stress headaches" className="rounded-lg shadow-md w-full h-[250px] object-cover" />
-              </div>
-              <div className="lg:w-1/2">
-                 <h3 className="text-[18px] font-black text-[#17111f]">Understanding Tension-Type Headaches</h3>
-                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                   Tension-type headache is one of the most frequently experienced forms of head pain.
-                 </p>
-                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                   People often describe them as:
-                 </p>
-                 <ul className="mt-3 space-y-2">
-                   {["A tight band around the head", "Pressure across the forehead", "Mild to moderate aching pain", "Tightness in the neck and shoulders", "Discomfort that develops gradually"].map((step) => (
-                      <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                        {step}
-                      </li>
-                    ))}
-                 </ul>
-                 <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                   Compared with migraine, tension-type headaches are less likely to involve severe nausea, a visual aura or strong sensitivity to light and sound. Because headache symptoms can overlap, especially in the early stages, professional evaluation is the safest way to confirm what type of headache a person is experiencing.
-                 </p>
-              </div>
-            </div>
-          </section>
-
-          <section id="symptoms-triggers" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">Common Symptoms of Stress-Related Headaches</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                A stress-related headache does not feel exactly the same for everyone.
-             </p>
-             <div className="mt-4 flex flex-col lg:flex-row gap-6">
-                <div className="lg:w-[60%]">
-                   <p className="text-[14px] font-bold text-[#21142d] mb-3">Commonly reported symptoms include:</p>
-                   <div className="grid gap-2 sm:grid-cols-2">
-                     {[
-                       "Dull aching head pain",
-                       "Pressure around forehead",
-                       "Tightness on both sides",
-                       "Neck stiffness",
-                       "Shoulder muscle tightness",
-                       "Mild sensitivity to light/sound",
-                       "Mental fatigue",
-                       "Difficulty concentrating"
-                     ].map((label) => (
-                       <div key={label} className="flex items-center gap-2 p-2 bg-white border border-[#f4e6fa] rounded-md text-[13px] font-bold text-[#51465a]">
-                         <Activity className="h-4 w-4 text-[#8b43ba] shrink-0" />
-                         <span>{label}</span>
-                       </div>
-                     ))}
-                   </div>
-                   <p className="mt-4 text-[13px] font-semibold leading-6 text-[#51465a]">
-                      A headache that is persistent, severe or different from your usual pattern should be medically evaluated rather than assumed to be stress-related.
-                   </p>
-                </div>
-                <div className="lg:w-[40%]">
-                   <img src={tensionHeadacheImage} alt="Person experiencing a tension-type headache due to stress" className="rounded-lg h-[250px] object-cover shadow-sm w-full" />
-                </div>
-             </div>
-
-             <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Who May Experience Stress-Related Headaches?</h3>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Stress-related headaches are commonly reported by:
-             </p>
-             <ul className="mt-4 space-y-2 sm:columns-2">
-                 {["Working professionals", "Students during examinations", "People with demanding schedules", "Caregivers", "Individuals experiencing emotional stress", "People with poor sleep habits", "Those working long hours on computers"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                These groups may face common triggers such as screen strain, long working hours, reduced sleep or sustained mental pressure. Still, belonging to one of these groups does not automatically explain the headache; the underlying cause needs to be understood individually.
-             </p>
-             
-             <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Common Headache Triggers</h3>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                There is no single trigger list that applies to everyone. A factor that causes headaches for one person may have no effect on another. Some commonly reported triggers include:
-             </p>
-             <div className="mt-4 flex flex-wrap gap-2">
-                 {["Emotional stress", "Poor sleep", "Mental fatigue", "Dehydration", "Skipping meals", "Long hours of screen time", "Poor posture", "Eye strain", "Excessive caffeine", "Physical exhaustion"].map((label) => (
-                   <span key={label} className="bg-[#faf0fc] text-[#6a338e] text-[13px] font-bold px-3 py-1.5 rounded-full border border-[#f4e6fa]">
-                     {label}
-                   </span>
-                 ))}
-             </div>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Keeping a simple record of headaches, meals, sleep, screen time and stressful events can make personal patterns easier to recognise over time.
-             </p>
-          </section>
-          
-          <section id="warning-signs" className="mt-9">
-            <div className="rounded-lg border-l-4 border-[#8b43ba] bg-[#faf0fc] p-6 shadow-sm">
-               <h2 className="text-[18px] font-black text-[#21142d] mb-3">Warning Signs You Should Not Ignore</h2>
-               <p className="text-[14px] font-bold text-[#51465a] mb-4">Most headaches are not caused by a medical emergency. Still, certain symptoms should never be ignored because they can point to a more serious problem.</p>
-               <p className="text-[14px] font-bold text-[#e14f79] mb-3">Seek urgent medical care if you experience:</p>
-               <ul className="space-y-2 sm:columns-2">
-                 {["Sudden severe headache", "Weakness in face, arm or leg", "Difficulty speaking", "Loss of consciousness", "Confusion", "Seizures", "Fever with severe headache", "Headache after head injury", "Sudden vision changes", "Persistent vomiting"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#e14f79] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-               </ul>
-               <p className="text-[13px] font-bold mt-4 text-[#e14f79] italic">These warning signs need immediate emergency assessment. Do not wait to see whether they settle on their own.</p>
-            </div>
-            
-            <div className="mt-8 flex flex-col md:flex-row gap-5 items-center">
-                <div className="md:w-1/2">
-                   <h3 className="text-[18px] font-black text-[#17111f]">Why Emotional Wellbeing Matters</h3>
-                   <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                     Recurring head pain can gradually affect much more than physical comfort. It may change the way a person works, rests, socialises and plans the day.
-                   </p>
-                   <p className="text-[13px] font-bold mt-3 text-[#51465a]">Some individuals experience:</p>
-                   <ul className="space-y-1 mt-2">
-                     {["Reduced work productivity", "Difficulty concentrating", "Poor sleep", "Irritability", "Reduced physical activity", "Emotional frustration", "Lower quality of life", "Anxiety about recurring headaches"].map((step) => (
-                        <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                          {step}
-                        </li>
-                      ))}
-                   </ul>
-                   <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                     Giving attention to emotional wellbeing, while also following suitable medical advice and practical lifestyle measures, can make the everyday burden of recurring headaches easier to handle. Emotional support, alongside proper medical care, can help protect quality of life when headaches have begun to affect everyday functioning.
-                   </p>
-                </div>
-                <div className="md:w-1/2">
-                   <img src={lifestyleImage} alt="Healthy daily habits supporting stress-related headache management" className="rounded-lg h-[300px] object-cover w-full shadow-md" />
-                </div>
-            </div>
-          </section>
-          
-          <section id="assessment-process" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Our Stress & Headache Assessment Process</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Frequent headaches can affect concentration, work, sleep, family time and emotional balance. Finding the medical cause remains the first priority, but it is also useful to understand whether routine, stress, posture, screen use or sleep are adding to the problem.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, the assessment therefore explores the relationship between emotional wellbeing, daily habits and headache patterns instead of focusing only on the pain itself. Before personalised guidance is discussed, we first build a clear picture of the person's health history, present routine and the situations in which headaches tend to appear.
-            </p>
-            
-            <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">1</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Health Journey</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">The consultation begins with a detailed conversation about your headache history and the way the problem has affected everyday life. We discuss: Your headache history, Frequency and duration of headaches, Pain pattern, Emotional wellbeing, Stress levels, Sleep quality, Work routine, Screen time, Hydration and eating habits, Medical history, and Previous investigations and treatments. Taken together, these details help us understand the wider health picture.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">2</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Comprehensive Mind-Body Assessment</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">The next part of the assessment looks at several areas that may be connected with recurring headaches. These include: Emotional wellbeing, Stress patterns, Sleep quality, Lifestyle habits, Screen exposure, Work-life balance, Hydration, Nutrition, Physical activity, and Overall quality of life. Looking at these areas side by side can reveal practical patterns—for example, whether headaches tend to follow long screen sessions, missed meals, poor sleep or unusually stressful days.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">3</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Wellbeing Profile</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">Once the assessment is complete, the observations are explained in clear, everyday language. This includes: Emotional wellbeing profile, Lifestyle influences, Stress patterns, Sleep observations, Daily routine analysis, Personalised guidance, and Practical next steps. The purpose is to help the person see how emotional health, lifestyle and headache patterns may be linked, so that future healthcare decisions are based on a fuller understanding of the problem.</p>
-                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-system" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Development System</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, recurring headaches are viewed through the Neuro-Ayurveda Development System, a five-pillar framework that brings brain health, gut health, behaviour, lifestyle and emotional wellbeing into the same assessment.
-            </p>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The framework does not assume that every headache has one simple explanation. Instead, it helps explore how different parts of health and daily life may influence one another over time.
-            </p>
-            
-            <div className="mt-5 space-y-4">
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Brain className="h-5 w-5"/> 1. Brain Nourishment System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Healthy brain function supports: Mental clarity, Emotional regulation, Stress resilience, Healthy sleep, Cognitive wellbeing, and Overall quality of life. Supporting brain health can make it easier to cope with everyday pressure and maintain clearer, more consistent routines.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Salad className="h-5 w-5"/> 2. Gut Response System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Food habits and digestive wellbeing can influence energy, concentration and overall health. This pillar focuses on understanding: Healthy eating habits, Gut-brain communication, Nutrition patterns, Lifestyle influences, and Digestive wellbeing.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Activity className="h-5 w-5"/> 3. Neural Network System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">The brain continues to adapt in response to learning, repeated habits and life experiences. This pillar focuses on strengthening: Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management, and Cognitive flexibility.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Waves className="h-5 w-5"/> 4. Sensory Integration System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Physical surroundings and sensory strain can be relevant to a headache pattern, particularly for people who spend long hours around screens, bright lights or noisy workspaces. This pillar considers: Screen exposure, Workplace environment, Light and noise exposure, Physical recovery, and Lifestyle balance.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><CalendarCheck className="h-5 w-5"/> 5. Behaviour Guidance System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Sustainable improvement is more likely when supportive habits become part of ordinary life rather than a temporary effort. This pillar focuses on: Healthy routines, Behavioural awareness, Stress management, Sustainable lifestyle habits, and Work-life balance.</p>
-              </div>
-            </div>
-            
-            <div className="mt-6 flex h-[250px] w-full items-center justify-center rounded-lg shadow-md bg-[#faf0fc] border border-[#f4e6fa]">
-              <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for stress-related headaches and brain wellness" className="h-[85%] w-auto object-contain" />
-            </div>
-          </section>
-
-          <section id="support-approach" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">How We Support Individuals with Stress-Related Headaches</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-               Headaches are personal. The same approach will not suit every person, because symptoms, triggers, routines and health histories can be very different.
-             </p>
-             <p className="mt-3 text-[14px] font-bold text-[#51465a]">At Manovaidya, support is shaped around the individual's headache pattern, emotional wellbeing and daily lifestyle. Our approach may include:</p>
-             <ul className="mt-3 grid gap-3 sm:grid-cols-2">
-                 {["Stress & Headache Assessment", "Mind-Body Health Assessment", "Emotional Wellbeing Guidance", "Lifestyle Education", "Stress Management Guidance", "Healthy Routine Planning", "Brain Wellness Education", "Progress Monitoring & Follow-Up"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[13px] font-bold text-[#51465a] p-3 border border-[#f4e6fa] rounded-md">
-                     <CheckCircle2 className="h-4 w-4 shrink-0 text-[#8b43ba]" />
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[13px] font-semibold leading-6 text-[#51465a] italic">
-               The aim is to make the possible connections between stress, routine and recurring headaches easier to recognise, while helping the person build habits that are realistic enough to maintain.
-             </p>
-             
-             <div className="mt-8 bg-[#faf0fc] rounded-lg p-5">
-                <h3 className="text-[17px] font-black text-[#6a338e]">Living Well With Frequent Headaches</h3>
-                <p className="text-[13px] mt-2 text-[#51465a] font-semibold">Not every headache can be prevented. Even so, steady daily habits can reduce exposure to several common triggers and make symptoms easier to understand. Helpful lifestyle habits may include:</p>
-                <ul className="mt-3 space-y-1 font-bold text-[#51465a] text-[13px] sm:columns-2">
-                  <li>✔ Maintaining regular sleep patterns</li>
-                  <li>✔ Drinking enough water</li>
-                  <li>✔ Eating balanced meals on time</li>
-                  <li>✔ Taking regular breaks from screens</li>
-                  <li>✔ Improving posture during work</li>
-                  <li>✔ Staying physically active</li>
-                  <li>✔ Managing everyday stress</li>
-                  <li>✔ Following medical advice</li>
-                </ul>
-                <p className="text-[12px] mt-3 italic text-[#51465a]">These habits are supportive measures. They should work alongside, rather than replace, medical evaluation and any treatment recommended by a healthcare professional.</p>
-             </div>
-             
-             <div className="mt-6 border border-[#f4e6fa] rounded-lg p-5 shadow-sm">
-                <h3 className="text-[17px] font-black text-[#21142d]">When Should You See a Healthcare Professional?</h3>
-                <p className="text-[13px] mt-2 text-[#51465a] font-bold">Professional medical evaluation is recommended if:</p>
-                <ul className="mt-2 space-y-1 font-bold text-[#51465a] text-[13px]">
-                  <li>• Headaches become frequent</li>
-                  <li>• Pain interferes with work or daily activities</li>
-                  <li>• Headaches are becoming more severe</li>
-                  <li>• New neurological symptoms appear</li>
-                  <li>• Over-the-counter medicines are no longer effective</li>
-                  <li>• You are unsure about the cause of your headaches</li>
-                </ul>
-                <p className="text-[12px] mt-3 italic text-[#51465a]">An early assessment can help identify the type of headache, rule out other conditions and guide treatment before the problem becomes more disruptive.</p>
-             </div>
-             
-             <div className="mt-8">
-                <h3 className="text-[18px] font-black text-[#17111f]">Looking Beyond the Headache</h3>
-                <p className="text-[14px] font-semibold leading-7 text-[#51465a] mt-2">A recurring headache is rarely just a moment of pain. Sleep, posture, hydration, screen exposure, emotional pressure and work habits can all shape how often headaches occur and how strongly they are felt.</p>
-                <p className="text-[14px] font-semibold leading-7 text-[#51465a] mt-2">For this reason, Manovaidya looks at the person's broader health rather than treating every headache as an isolated event. Bringing emotional, physical and lifestyle factors into the same discussion can lead to more informed and realistic choices about long-term wellbeing.</p>
-             </div>
-          </section>
-          
-          <section id="why-choose-us" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why People Across India Choose Manovaidya</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              People from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and other parts of India consult Manovaidya to explore recurring headaches, emotional wellbeing and stress-related headache patterns through structured assessment and personalised guidance.
-            </p>
-            <ul className="mt-4 space-y-2">
-                 {["Comprehensive Stress & Headache Assessments", "Brain Health & Mind-Body Understanding", "Neuro-Ayurveda Development System", "Lifestyle & Stress Management Guidance", "Holistic Emotional Wellbeing Support", "Online & In-Clinic Consultations", "Personalised Long-Term Wellness Approach"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                The broader purpose is to help people understand how stress, daily routines and recurring headaches may be connected while supporting overall wellbeing.
-             </p>
-          </section>
-          
-          <section id="about-dr-ankush-garg" className="mt-9">
-            <div className="rounded-lg bg-[#faf0fc] p-6 lg:flex lg:items-center lg:gap-8">
-              <div className="mb-6 lg:mb-0 lg:w-[220px] lg:shrink-0">
-                <div className="overflow-hidden rounded-lg bg-white p-2 shadow-sm">
-                  <img src={doctorImage} alt="Dr. Ankush Garg" className="h-[200px] w-full object-cover rounded-md" />
-                </div>
-              </div>
-              <div className="lg:flex-1">
-                <h2 className="text-[20px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="text-[14px] font-bold text-[#8b43ba] mt-1">Mental Health Specialist & Founder of Manovaidya</p>
-                
-                <div className="mt-4 space-y-3 text-[13.5px] font-semibold leading-relaxed text-[#51465a]">
-                  <p>
-                    Dr. Ankush Garg founded Manovaidya and developed the Neuro-Ayurveda Development System used in its assessment approach.
-                  </p>
-                  <p>
-                    His work examines how emotional wellbeing, brain health, lifestyle and mind-body functioning influence one another, particularly in people dealing with stress-related health concerns.
-                  </p>
-                  <p>
-                    Through structured assessment, personalised guidance and regular follow-up, he helps individuals make sense of their health patterns and introduce lifestyle changes that can be followed in real life.
-                  </p>
-                  <p>
-                    Based in Delhi NCR, Dr. Ankush Garg offers Mind-Body and Brain Health Assessments that explore how emotional wellbeing, lifestyle and stress-related headaches may be connected within the Neuro-Ayurveda Development System across India, both online and at the clinic.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {articleSections.map((section, sectionIndex) => (
+            <ContentSection key={section.id + section.title} section={section} sectionIndex={sectionIndex} onCitationClick={handleCitationClick} />
+          ))}
 
           <section id="faqs" className="mt-10">
             <div className="mb-6 flex items-center justify-between">
@@ -626,17 +537,17 @@ function StressHeadachesIndiaPage() {
             </div>
             <div className="grid gap-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
+                <div key={faq.question} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
                   <button onClick={() => setOpenFaq(openFaq === index ? -1 : index)} className="flex w-full items-center justify-between p-4 text-left sm:px-5">
                     <span className="pr-4 text-[14px] font-bold leading-snug text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors ${openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]"}`}>
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`} strokeWidth={2.5} />
+                    <span className={"flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors " + (openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]")}>
+                      <ChevronDown className={"h-4 w-4 transition-transform duration-300 " + (openFaq === index ? "rotate-180" : "")} strokeWidth={2.5} />
                     </span>
                   </button>
-                  <div className={`grid transition-all duration-300 ease-in-out ${openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                  <div className={"grid transition-all duration-300 ease-in-out " + (openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}>
                     <div className="overflow-hidden">
                       <div className="border-t border-[#f4e6fa] px-4 pb-4 pt-3 text-[13px] font-medium leading-[1.6] text-[#51465a] sm:px-5">
-                        {faq.answer}
+                        <ArticleLinkedText text={faq.answer} onCitationClick={handleCitationClick} allowedRuleKeys={paragraphLinkKeys.get("faq-" + index)} />
                       </div>
                     </div>
                   </div>
@@ -644,6 +555,15 @@ function StressHeadachesIndiaPage() {
               ))}
             </div>
           </section>
+
+          <div className="mt-8">
+            <button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#8b43ba] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#8b43ba]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references">
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={"h-4 w-4 transition " + (showResources ? "rotate-180" : "")} />
+            </button>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
 
           <section id="book-assessment" className="mt-10 mb-8">
             <div className="overflow-hidden rounded-xl bg-gradient-to-br from-[#6a338e] to-[#8b43ba] text-white shadow-lg">
@@ -673,6 +593,22 @@ function StressHeadachesIndiaPage() {
         </article>
 
         <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya stress headaches brain health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Mind-Body Health, Headaches, Stress and Mental Health</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
             <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#f4e6fa] bg-[#faf0fc] px-3">

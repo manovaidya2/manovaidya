@@ -85,7 +85,7 @@ function WomenHealthCareHeroSection() {
                 <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
               </a>
               <a
-                href="#programs"
+                href="/women-mental-health-care-india"
                 className="inline-flex h-[58px] items-center justify-center gap-3 rounded-[8px] border-2 border-[#b8aadf] bg-white/80 px-9 text-[15px] font-extrabold text-[#8B43BA] shadow-[0_8px_18px_rgba(67,32,159,0.08)] transition hover:bg-white"
               >
                 Explore Programs

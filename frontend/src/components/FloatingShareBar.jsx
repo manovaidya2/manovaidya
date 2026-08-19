@@ -21,6 +21,7 @@ const shareEnabledPaths = new Set([
   "/senior-depression-support-india",
   "/sleep-disorders-seniors-support-india",
   "/women-stress-management-mind-body-balance-india",
+  "/women-mental-health-care-india",
   "/women-depression-low-mood-support-india",
   "/women-hormonal-pms-pmdd-support-india",
   "/women-self-esteem-body-image-support-india",

@@ -3,6 +3,7 @@ import Seo from "../components/Seo";
 import {
   Activity,
   ArrowRight,
+  BookOpen,
   Brain,
   CalendarCheck,
   CheckCircle2,
@@ -25,80 +26,180 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "What is Migraine?", id: "what-is-migraine" },
-  { label: "Stress & Migraine", id: "stress-connection" },
-  { label: "Symptoms & Triggers", id: "symptoms-triggers" },
-  { label: "Warning Signs", id: "warning-signs" },
-  { label: "Assessment Process", id: "assessment-process" },
-  { label: "Neuro-Ayurveda System", id: "neuro-ayurveda-system" },
-  { label: "Support Approach", id: "support-approach" },
-  { label: "Why Choose Us", id: "why-choose-us" },
+  { label: "Stress & Migraine", id: "how-are-stress-and-migraine-connected" },
+  { label: "Stress Response", id: "the-brain-stress-response-and-migraine" },
+  { label: "Symptoms & Triggers", id: "common-symptoms-of-migraine" },
+  { label: "Warning Signs", id: "warning-signs-you-should-not-ignore" },
+  { label: "Assessment Process", id: "our-stress-and-migraine-assessment-process" },
+  { label: "Neuro-Ayurveda System", id: "the-neuro-ayurveda-development-system" },
+  { label: "Support Approach", id: "how-we-support-individuals-living-with-migraine" },
+  { label: "Why Choose Us", id: "why-people-across-india-chose-manovaidya" },
   { label: "About Dr. Ankush Garg", id: "about-dr-ankush-garg" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Assessment", id: "book-assessment" },
 ];
 
-const faqs = [
-  {
-    question: "1. Can stress trigger migraine attacks?",
-    answer: "Stress is one of the triggers often reported by people with migraine. An attack may occur more often or feel more intense during a difficult period. That does not mean stress is the only cause; most people have a combination of triggers."
-  },
-  {
-    question: "2. What is the difference between a migraine and a headache?",
-    answer: "Migraine is a neurological condition, not simply another name for a severe headache. Along with moderate or intense head pain, it may cause nausea, sensitivity to light or sound and, for some people, an aura. Other headaches can arise for many reasons and may not include these features."
-  },
-  {
-    question: "3. What are the common symptoms of migraine?",
-    answer: "Common symptoms include throbbing or pulsating pain, pain on one or both sides of the head, nausea, vomiting, sensitivity to light, sound or smells, and difficulty concentrating. Some people notice an aura shortly before the headache begins."
-  },
-  {
-    question: "4. What are the common triggers for migraine?",
-    answer: "The trigger pattern is different for each person. Stress, inadequate sleep, missed meals, dehydration, hormonal changes, bright light, loud noise, strong smells, changing weather and physical exhaustion are all commonly mentioned."
-  },
-  {
-    question: "5. Can anxiety make migraine worse?",
-    answer: "It can. Some people find that anxiety increases the chance of an attack or makes the pain and sensitivity harder to tolerate. Keeping track of your own pattern is more useful than assuming the same trigger applies to everyone."
-  },
-  {
-    question: "6. Can poor sleep trigger migraine?",
-    answer: "Yes. Too little sleep, an irregular schedule or a sudden change in sleeping hours can trigger migraine in some people. A reasonably consistent sleep routine supports both brain health and general wellbeing."
-  },
-  {
-    question: "7. What is a migraine aura?",
-    answer: "Aura is the name given to temporary neurological changes that can appear before or during a migraine. A person may see flashing lights or blind spots, feel tingling, or briefly have difficulty speaking. Because similar symptoms can occur in other conditions, aura should be discussed with a healthcare professional."
-  },
-  {
-    question: "8. When should I seek immediate medical attention for a headache?",
-    answer: "Seek emergency care for a sudden, extremely severe headache or a headache accompanied by weakness, confusion, speech difficulty, seizures, loss of consciousness, fever, sudden vision loss or a recent serious head injury. These warning signs need urgent medical evaluation."
-  },
-  {
-    question: "9. Can lifestyle habits influence migraine?",
-    answer: "They can. Regular sleep, enough fluids, balanced meals, physical activity, stress management and awareness of personal triggers may all support wellbeing. These steps should be used alongside appropriate medical care, not instead of it."
-  },
-  {
-    question: "10. What is a Stress & Migraine assessment?",
-    answer: "It is a structured review of the person's migraine history, emotional wellbeing, stress, sleep, food habits, routine, possible triggers and general health. The purpose is to identify relevant patterns and use them to guide personalised support."
-  },
-  {
-    question: "11. How does Manovaidya support individuals experiencing migraine?",
-    answer: "Rather than looking only at the latest attack, Manovaidya considers brain health, emotional wellbeing and lifestyle together. Structured assessment, personalised guidance and the Neuro-Ayurveda Development System are used to help the person understand the wider mind-body picture."
-  },
-  {
-    question: "12. What is the Neuro-Ayurveda Development System?",
-    answer: "It is Manovaidya's five-pillar framework covering Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. The framework brings emotional wellbeing, brain health and lifestyle into the same assessment, alongside personalised guidance."
-  },
-  {
-    question: "13. Can managing stress help people living with migraine?",
-    answer: "For some people, reducing everyday stress can remove one possible trigger from the picture. Regular sleep, exercise, relaxation and emotional support may be useful, but they are additions to proper diagnosis and treatment—not substitutes for them."
-  },
-  {
-    question: "14. Is every headache a migraine?",
-    answer: "No. Tension-type headache, dehydration, infection, sinus problems and several other conditions can cause head pain. Migraine has its own pattern of neurological symptoms and should be diagnosed by a qualified healthcare professional."
-  },
-  {
-    question: "15. Why should I choose Manovaidya for Stress & Migraine support?",
-    answer: "Manovaidya combines a structured Stress & Migraine Assessment with personalised guidance and the Neuro-Ayurveda Development System. The approach considers emotional health, brain health and lifestyle together, while continuing to recognise the importance of appropriate medical care."
-  }
+const rawSourceContent = "Key Takeaways\nUnderstanding Stress, Migraine & Brain Health\nStress & Migraine Connection\nCommon Migraine Symptoms & Triggers\nBrain, Nervous System & Stress Response\nMigraine Aura & Sensory Sensitivity\nEmotional Wellbeing & Migraine\nWarning Signs That Need Medical Attention\nIdentifying Personal Migraine Triggers\nHealthy Lifestyle Habits for Migraine Support\nNeuro-Ayurveda Development System\nManovaidya Stress & Migraine Assessment Process\nFAQs About Stress & Migraine\n\nBrain Health\nStress & Migraine Treatment in India\nUnderstanding the Relationship Between Stress, Migraine and Emotional Wellbeing.\nUnderstanding Stress & Migraine\nMigraine is not just a bad headache. It is a neurological disorder and an attack may cause intense headaches, nausea, sensitivity to light and sound, and substantial enough pain to prevent anyone from completing normal activities. [1][3]\nIndividuals who suffer from migraine frequently feel that there is a connection between stressful periods and attacks of migraine. An episode can sometimes be triggered or aggravated by stress. Despite this, migraine is not usually diagnosed as a single cause and so the stress can be considered as a trigger rather than as the sole cause. [1]\nMore research is needed to explore the link between emotional health, nervous system and migraine. It can be easier for a person to identify their own patterns, to notice how these areas influence the others, and to make constructive changes to their life without stopping their medical treatment. [1][3]\nIt's not just about the headache at Manovaidya. We have time to consider the person's emotional health, sleep, eating patterns, routine and general mind/body health, so that the support provided is comprehensive.\nDr. Ankush Garg, Mental Health Specialist and Founder of Manovaidya leads this work. The clinic's approach is based on his Neuro-Ayurveda Development System which is a 5 pillar system of combining brain health, gut health, behaviour, lifestyle, and emotional wellbeing.\n\nWhat is Migraine?\nMigraine is a neurological disorder characterized by recurrent attacks of headache. The pain, length of an attack and accompanying symptoms can vary widely from one person to another. [1][3]\nAn attack occurs only occasionally for some people. For others, migraines are frequent enough to interfere with work, family obligations, travel and the day to day routine. [1]\nMigraine does not always appear in the same manner. Everyone's experience with a condition can be very different and the symptoms can also change from one year to another.\nThe diagnosis is typically made by a healthcare professional following a careful history of symptoms and determining that there is no other condition responsible for the headaches. [3][5]\n\nHow Are Stress and Migraine Connected?\nOne of the triggers that is commonly reported by migraine sufferers is emotional stress. One could have more frequent attacks when: [1]\nEmotional pressure\nWorkplace stress\nPoor sleep\nAnxiety\nMajor life changes\nMental fatigue\nStress impacts the nervous system, the body's expected stress-response mechanisms, and has been shown to be a factor in an attack. However, migraine is usually caused by a combination of factors, not just stress. [1]\n\n\nCan Stress Trigger Migraine Attacks?\nStress is what people often refer to as the first time the attack happens or when the symptoms start to get worse. The exact relationship is complex and scientists are still studying the interactions between the brain, nervous system and the stress response during migraine. [1]\n\nOnly one stressor is listed. Other common factors reported include hormonal changes, sleep deprivation, dehydration, fasting, certain foods, and bright lights and strong smells. [1][3]\nSince each trigger pattern is unique, long-term management of an attack often begins by observing how you tend to react before you are attacked. [3]\n\nThe Brain, Stress Response and Migraine\nMigraine can be classified as a neurological condition because there are changes in the activity of the brain and in the function of the nervous system. [1]\nProlonged stress, over a course of days or weeks, may affect multiple aspects of life, such as:\nSleep quality\nMuscle tension\nEmotional wellbeing\nDaily routines\nSensitivity to environmental triggers\nFor many, an attack may be more likely if any of these changes occurs, but stress is rarely a complete cause of an attack. Studies are ongoing to find out what happens in the brain and nervous system before, during and after a seizure. [1]\n\n\nCommon Symptoms of Migraine\nMigraine is not the same for everyone, and the combination of symptoms varies from attack to attack. [1][3]\nSome commonly reported symptoms include:\nModerate to severe headache\n Throbbing or pulsating pain\n Pain on one side of the head\n Nausea or vomiting\n Sensitivity to light\n Sensitivity to sound\n Sensitivity to smells\n Difficulty concentrating\n Increased discomfort during physical activity [1][3]\nThere is also an aura with some people before or during the onset of the headache. This can include temporary alterations in vision, sensation or other neurological aspects. [3][5]\n\nWho May Notice Stress-Related Migraine Triggers?\nMigraine attacks can be more prevalent at the following times:\nHigh workplace pressure\nExamination periods\nEmotional conflicts\nSleep deprivation\nBusy schedules\nLong working hours\nTravel-related stress\nHormonal changes (in some women)\nTriggers are personal. One thing that triggers an attack for one person may have no effect on another. Keeping a migraine diary to record attacks, routine and potential triggers may begin to show patterns that would not otherwise be obvious. [3]\n\nCommon Migraine Triggers\nNo list of triggers applies to all. Some commonly reported triggers include: [1][3]\nEmotional stress\n Poor sleep\n Skipping meals\n Dehydration\n Bright lights\n Loud sounds\n Strong smells\n Hormonal changes\n Weather changes\n Physical exhaustion\nKeeping a migraine diary can be useful to help link migraine headaches with sleep, meals, stress, weather and other factors and determine which ones are relevant. [3]\n\n\nWarning Signs You Should Not Ignore\nMigraine is a known neurological disorder, but severe headache does not necessarily mean that it is a migraine. Some symptoms may indicate a more serious issue, and require immediate evaluation. [3][5]\nIf you have any of the following symptoms, get medical help right away:\nSudden severe headache\n Weakness in face, arm or leg\n Difficulty speaking\n Loss of consciousness\n Confusion\n Seizures\n Fever with severe headache\n Headache after head injury\n Sudden vision loss\n Persistent vomiting with headache [3][5]\nThese symptoms do not go away on their own and should be treated in an emergency. [3][5]\n\n\nWhy Emotional Wellbeing Matters\nMigraine does not only impact on the body. The vagaries of the return of an attack can influence plans, confidence, work decisions and emotional health. [1]\nSome individuals experience:\nAnxiety about the next migraine attack\nChallenge to organize social events\nLoss of confidence when driving a car\nWork-related challenges\nEmotional frustration\nThe deterioration of the quality of life.\nTaking steps to promote emotional wellness, as well as medical and lifestyle measures, can help make life with migraine more manageable. Emotional exhaustion can set in as a result of repeated migraine attacks, especially if pain makes it difficult to move on with life, work or travel, or enjoy time with others. [1]\n\nOur Stress & Migraine Assessment Process\n\nThe migraine attack can disrupt so much more than comfort. If attacks happen regularly they can impact sleeping, working, family life, traveling and emotional well-being. Although it is very important to make a proper medical diagnosis and provide treatment, stress and lifestyle should not be overlooked as they may have an impact on how migraine is felt. [1][3]\nIn our assessment at Manovaidya, we're not just looking at the headache, we're looking at the relationship between brain health, emotional wellbeing and everyday life. To offer personalised guidance, we first get a clear picture of what factors could be impacting the person's overall wellbeing.\n\n\n1. Understanding Your Health Journey\nThe first consultation is a comprehensive discussion with you about your health history and how migraine has impacted your life. We discuss: Your migraine history, Frequency and duration of your attacks, Common triggers you have noticed, Emotional wellbeing, Stress levels, Daily routine, Eating habits, Medical history, and Previous investigations and treatments. All of these pieces of information contribute to a more comprehensive view of the health situation and may be overlooked if considered separately.\n\n2. Comprehensive Mind-Body Assessment\nThe next section examines some interrelated regions which may affect migraine and overall health. These are: Emotional wellbeing, Stress patterns, Sleep quality, Lifestyle habits, Nutrition, Daily routine, Work-life balance, Behavioural patterns, Energy levels and Overall quality of life. Comparing the areas side-by-side can sometimes be helpful to identify recurring links that may become more apparent, such as sleep disturbances, work stress or changes in routine occurring at similar times during the attack.\n\n3. Understanding Your Wellbeing Profile\nWe then discuss the observations in simple language, linking it to everyday life experiences. This covers: Emotional wellbeing profile, Lifestyle influences, Stress patterns, Sleep observations, Potential trigger patterns, Personalised guidance, Practical next steps. The aim is to help people understand that migraine and their emotional health and lifestyle might be linked and make decisions about healthcare in the future that take this into account.\n\n\nThe Neuro-Ayurveda Development System\n\nManovaidya's Neuro-Ayurveda Development System provides a five interconnected perspectives on migraine – brain health, gut health, behaviour, lifestyle and emotional wellbeing. The framework is not limited to cases of headache attacks. Used to examine the potential interactions between multiple components of health over time.\n\n1. Brain Nourishment System\nEnjoying a healthy brain means enjoying: Emotional regulation, Mental clarity, Stress resilience, Healthy sleep, Cognitive wellbeing, and Overall quality of life. Attention to brain health is therefore aligned to both neurological and emotional well-being.\n\n\n2. Gut Response System\nThe way a person eats and how well they digest their food may impact their overall well-being. The focus for this pillar is understanding: Healthy eating habits, Gut-brain communication, Digestive wellbeing, Lifestyle influences, and Nutrition patterns.\n\n3. Neural Network System\nThe Brain continues to change with learning, repeated habits and daily experiences. This pillar is to strengthen Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management and Cognitive flexibility.\n\n4. Sensory Integration System\nDuring migraine, the surroundings, such as light, sound and others, can become very difficult to tolerate. Many people know that this sensesiveness is a significant trigger for the attack. It takes into account: Light sensitivity, Sound sensitivity, Environmental stress, Recovery, and Lifestyle balance. [1][3]\n\n5. Behaviour Guidance System\nHabits that support lasting improvements are easier to continue in everyday life, than to just do for a short period. This pillar emphasizes: Healthy habits, Managing stress, Awareness of behaviour, Sustainable habits, and Lifestyle changes.\n\n\nHow We Support Individuals Living With Migraine\nA migraine treatment plan is unique to the individual and won't work for all people. Support at Manovaidya is tailored to the individual's symptoms, emotional health, daily or lifestyle habits and not identical in all cases.\nWe can do this by:\nStress & Migraine Assessment\n Mind-Body Health Assessment\n Emotional Wellbeing Guidance\n Lifestyle Education\n Stress Management Guidance\n Healthy Routine Planning\n Brain Wellness Education\n Progress Monitoring & Follow-Up\nThe aim is to raise awareness of the connections between brain health, emotional wellbeing and lifestyle; and to help the person develop habits that they can carry over into everyday life.\n\n\nLiving Well With Migraine\nNot all migraines can be avoided. Despite this, for many a well-established schedule and few unnecessary triggers can help make life easier. Some useful lifestyle tips can be: [1][3]\nMaintaining regular sleep patterns\n Eating meals on time\n Staying hydrated\n Regular physical activity\n Managing everyday stress\n Limiting excessive caffeine where advised\n Following prescribed treatment plans\n Keeping a migraine diary\nThese are measures designed to complement the treatment plan recommended by your health care provider. [3]\n\nWhen Should You See a Healthcare Professional?\n\n\nA professional medical assessment is recommended if:\n• Headaches become frequent\n • Migraine attacks interfere with work or daily life\n • Symptoms become more severe\n • New neurological symptoms develop\n • Over-the-counter medicines are no longer effective\n • You are unsure whether your headaches are migraines [3][5]\nA proper assessment early in the course of the disease will eliminate other possibilities and guide you toward a more appropriate management plan. [3][5]\n\n\nLooking Beyond Migraine Attacks\nMigraine is more than just a headache. Many factors can factor into the frequency and perceived impact of attacks such as sleep, food, stress, emotional state or everyday habits. [1][3]\nBecause of this, Manovaidya considers the individual's overall health and not treats each headache as an isolated incident. When emotional, lifestyle and physical factors are viewed together, this can help decisions to be made in a better informed and realistic way about long-term wellbeing.\n\nWhy People Across India chose Manovaidya.\nDelhi, Noida, Gurgaon, Faridabad, Ghaziabad and other parts of India, people that consult Manovaidya, seek to connect the dots between migraine, emotional wellbeing and stress related triggers, through the structured assessment and personalized guidance.\nStress & Migraine Assessments are comprehensive evaluations that thoroughly assess stress and migraine.\nComprehensive Stress & Migraine Assessments\nBrain Health & Mind-Body Understanding\nNeuro-Ayurveda Development System\nLifestyle & Stress Management Guidance\nHolistic Emotional Wellbeing Support\nOnline & In-Clinic Consultations\nPersonalised Long-Term Wellness Approach\nThe overall goal is to help the person understand the links between lifestyle, emotional wellbeing and brain health and improve overall quality of life.\n\nAbout Dr. Ankush Garg\nMental Health Specialist & Founder of Manovaidya\nDr. Ankush Garg is the founder of Manovaidya and is also responsible for building the Neuro-Ayurveda Development System that is applied in the assessment of Manovaidya.\nHe studies the complex interplay between emotional wellbeing, brain function, lifestyle and general health. In particular, he investigates the interactions between these factors in individuals who experience stress related neurological or mind-body concerns.\nHe helps people understand their symptoms and incorporate lifestyle practices that they can maintain using structured assessments, one to one guidance, and follow-up.\nDr. Ankush Garg practices Mind-Body and Brain Health Assessments in India, both online and in clinic, in Delhi NCR, examining the possible linkages between emotional wellbeing, lifestyle and migraine in the framework of the Neuro-Ayurveda Development System.\n\nFrequently Asked Questions (FAQs) \n\n\n1. Can stress trigger migraine attacks?\nOne of the many triggers reported by migraine sufferers is stress. Attack can happen more frequently and/or be more severe during a rough time. Stress isn't the only cause, most individuals have multiple causes. [1]\n\n2. What is the difference between a migraine and a headache?\nMigraine is not just a really bad headache; it's a neurological disorder. It can leave a person with moderate or severe headaches, sensitivity to light and sound and for some, an aura. Many other types of headaches can occur for various reasons, and may not have these characteristics. [1][3]\n\n3. What are the common symptoms of migraine?\nThe common symptoms experienced are throbbing or pulsating pain, on one side or both sides of the head, nausea, vomiting, sensitivity to light, sound or smells and difficulty concentrating. Some people feel the aura just prior to the onset of the headache. [1][3]\n\n4. What are the common triggers for migraine?\nThe trigger is unique to each and every individual. Commonly mentioned are stress, lack of sleep, missing meals, dehydration, hormonal changes, bright light, loud noise, strong smells, changing weather and physical exhaustion. [1][3]\n\n 5. Can anxiety make migraine worse?\nIt can. For some people, anxiety can make the pain and sensitivity more difficult to tolerate, or make an attack more likely. It's better to find out what works for you than to take the guesswork out of it and think it'll work for others. [1]\n\n6. Can poor sleep trigger migraine?\nYes. For some, a lack of sleep or irregular sleep patterns, and a sudden change in sleep hours, can trigger migraine. Maintaining a consistent sleep schedule is good for brain health and well-being. [1][3]\n\n7. What is a migraine aura?\nTemporary changes that may occur before or during the migraine are called aura. The person may experience flashing lights or blind spots, tingle or experience temporary difficulty with speaking. Aura may be a feature of other illnesses and should be discussed with a health care provider. [3][5]\n\n8. When should I seek immediate medical attention for a headache?\nPromptly visit an emergency room if a headache is suddenly extremely severe, or if it is accompanied by weakness, confusion, speech difficulty, seizures, loss of consciousness, fever, or sudden vision loss or a recent serious head injury. These warning signs need urgent medical evaluation. [3][5]\n\n 9. Can lifestyle habits influence migraine\nThey can. Wellbeing can be supported by regular sleep, adequate fluid intake, a balanced diet, exercise, and stress management and awareness of personal triggers. These are steps to take in conjunction with proper medical treatment and are not meant to replace it. [3]\n\n10. What is a Stress & Migraine assessment?\nA systematic analysis of the person's own migraine past, emotional status, stress, sleep habits, food patterns, lifestyle and overall health. It is designed to detect relevant patterns and to offer personalised support via them.\n\n11. How does Manovaidya support individuals experiencing migraine?\nAt Manovaidya, we look at the relationship between emotional wellbeing, lifestyle and digestive health instead of focusing only on the digestive symptom. Through structured assessments, personalised guidance and the Neuro-Ayurveda Development System, we help individuals understand their overall mind-body wellbeing more clearly.\n\n\n12. What is the Neuro-Ayurveda Development System?\nIt is the Manovaidya's 5 pillars of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. The framework integrates emotional wellbeing, brain health and lifestyle into one assessment and tailored guidance.\n\n13. Can managing stress help people living with migraine?\nOne possible trigger can be eliminated for some if they manage to lessen the amount of stress they experience on a daily basis. Proper diagnosis and treatment are essential and regular sleep, exercise, relaxation and emotional support is helpful, but it is not a substitute for proper diagnosis and treatment. [1][3][4][6]\n\n14. Is every headache a migraine?\nHead pain is caused by no. Tension-type headache, dehydration, infection, sinus problems and several other conditions. Migraine can manifest with its own set of neurological symptoms and should be diagnosed by a trained healthcare provider. [1][3]\n\n15. Why should I choose Manovaidya for Stress & Migraine support?\nManovaidya offers a formatted Stress & Migraine Assessment, personalised advice and the Neuro-Ayurveda Development System. The view is holistic, taking into account a person's emotional well-being in conjunction with their brain health and lifestyle, and that they must be receiving appropriate medical care.\n\nConcerned About Stress and Migraine?\nBook a structured Stress & Migraine Assessment at Manovaidya to explore migraine triggers, emotional wellbeing, lifestyle factors and brain health, followed by guidance tailored to the findings.\nBook Migraine Assessment\nTalk to Our Team\n\nReferences\n\n[1] World Health Organization (WHO) – Migraine and Other Headache Disorders\n https://www.who.int/news-room/fact-sheets/detail/headache-disorders\n[2] Ayurveda for Management of Migraine: A Narrative Review of Clinical Evidence\n https://pubmed.ncbi.nlm.nih.gov/36352975/\n[3] NICE Clinical Guideline – Headaches in Over 12s: Diagnosis and Management\n https://www.nice.org.uk/guidance/cg150\n[4] Yoga for Treating Headaches: A Systematic Review and Meta-Analysis\n https://pubmed.ncbi.nlm.nih.gov/31667736/\n[5] NICE – Migraine Diagnosis, Symptoms, Aura and Warning Signs\n https://www.nice.org.uk/guidance/cg150/chapter/recommendations\n[6] Effectiveness of Yoga Therapy for Migraine Treatment: A Meta-Analysis of Randomized Controlled Studies\n https://pubmed.ncbi.nlm.nih.gov/35660369/\n[7] Herbal Treatments for Migraine: A Systematic Review of Randomised-Controlled Studies\n https://pubmed.ncbi.nlm.nih.gov/32310327/";
+
+const keyTakeawayEnd = rawSourceContent.search(/\n\s*Brain Health/);
+const keyTakeawayLabels = rawSourceContent
+  .slice(0, keyTakeawayEnd > 0 ? keyTakeawayEnd : 0)
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "Key Takeaways");
+
+const referencesStart = rawSourceContent.indexOf("\nReferences");
+const referencesRaw = referencesStart >= 0 ? rawSourceContent.slice(referencesStart).trim() : "";
+const referenceLines = referencesRaw
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "References");
+const references = [];
+for (let index = 0; index < referenceLines.length; index += 1) {
+  const line = referenceLines[index];
+  if (/^\[?https?:\/\//i.test(line)) continue;
+  const nextUrlLine = referenceLines.slice(index + 1).find((item) => /^\[?https?:\/\//i.test(item));
+  const nextUrl = nextUrlLine?.match(/https?:\/\/[^\]\s)]+/i)?.[0] || nextUrlLine;
+  const numberMatch = line.match(/^\[(\d+)\]\s*(.*)$/);
+  references.push({ n: numberMatch?.[1] || String(references.length + 1), title: numberMatch?.[2] || line, url: nextUrl, note: "" });
+}
+
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 72);
+
+const sectionHeadingLabels = [
+  "Understanding Stress & Migraine",
+  "What is Migraine?",
+  "How Are Stress and Migraine Connected?",
+  "Can Stress Trigger Migraine Attacks?",
+  "The Brain, Stress Response and Migraine",
+  "Common Symptoms of Migraine",
+  "Who May Notice Stress-Related Migraine Triggers?",
+  "Common Migraine Triggers",
+  "Warning Signs You Should Not Ignore",
+  "Why Emotional Wellbeing Matters",
+  "Our Stress & Migraine Assessment Process",
+  "1. Understanding Your Health Journey",
+  "2. Comprehensive Mind-Body Assessment",
+  "3. Understanding Your Wellbeing Profile",
+  "The Neuro-Ayurveda Development System",
+  "1. Brain Nourishment System",
+  "2. Gut Response System",
+  "3. Neural Network System",
+  "4. Sensory Integration System",
+  "5. Behaviour Guidance System",
+  "How We Support Individuals Living With Migraine",
+  "Living Well With Migraine",
+  "When Should You See a Healthcare Professional?",
+  "Looking Beyond Migraine Attacks",
+  "Why People Across India chose Manovaidya.",
+  "About Dr. Ankush Garg",
+  "Dr. Ankush Garg",
+  "Mental Health Specialist & Founder of Manovaidya",
 ];
+const sectionHeadings = new Set(sectionHeadingLabels);
+const duplicateHeroLines = new Set([
+  "Key Takeaways",
+  "Brain Health",
+  "Stress & Migraine Treatment in India",
+  "Understanding the Relationship Between Stress, Migraine and Emotional Wellbeing.",
+  "Frequently Asked Questions (FAQs)",
+  ...keyTakeawayLabels,
+]);
+
+const faqStart = rawSourceContent.search(/\n\s*1\.\s*Can stress trigger migraine attacks\?/i);
+const faqEnd = rawSourceContent.indexOf("\nConcerned About Stress and Migraine?", faqStart);
+const faqContent = faqStart >= 0 ? rawSourceContent.slice(faqStart, faqEnd > faqStart ? faqEnd : referencesStart > faqStart ? referencesStart : undefined).trim() : "";
+const articleContent = (faqStart >= 0 ? rawSourceContent.slice(0, faqStart) : rawSourceContent)
+  .split("\nReferences")[0]
+  .trim();
+
+const articleSections = articleContent.split("\n").reduce(
+  (sections, line) => {
+    const trimmed = line.trim();
+    if (duplicateHeroLines.has(trimmed)) return sections;
+
+    if (sectionHeadings.has(line) || sectionHeadings.has(trimmed)) {
+      const heading = trimmed === "About" || trimmed === "Dr. Ankush Garg" ? "About Dr. Ankush Garg" : trimmed;
+      const id = heading === "About Dr. Ankush Garg" ? "about-dr-ankush-garg" : slugify(heading);
+      const existing = sections.find((section) => section.id === id);
+      if (existing) {
+        existing.lines.push(line);
+        return sections;
+      }
+      sections.push({ title: heading, id, lines: [] });
+      return sections;
+    }
+
+    sections[sections.length - 1].lines.push(line);
+    return sections;
+  },
+  [{ title: "Introduction", id: "introduction", lines: [] }]
+).filter((section) => section.lines.some((line) => line.trim()) || section.title !== "Introduction");
+
+const faqs = faqContent
+  .split(/\n(?=\s*\d+\.?\s*)/)
+  .filter((item) => /^\s*\d+\.?\s*/.test(item.trim()))
+  .map((item) => {
+    const [question, ...answer] = item.trim().split("\n");
+    return { question: question.replace(/^(\d+)\.(\S)/, "$1. $2").trim(), answer: answer.join(" ") };
+  });
+
+const articleLinkRules = [
+  { key: "mind-body-health", pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india" },
+  { key: "stress-migraine", pattern: /\bStress & Migraine\b/i, href: "/stress-and-migraine" },
+  { key: "migraine", pattern: /\bmigraine\b/i, href: "/stress-and-migraine" },
+  { key: "headache", pattern: /\bheadache\b/i, href: "/stress-and-headaches" },
+  { key: "stress-headaches", pattern: /\bStress & Headaches\b/i, href: "/stress-and-headaches" },
+  { key: "anxiety", pattern: /\banxiety\b/i, href: "/stress-anxiety-treatment-india" },
+  { key: "sleep", pattern: /\bsleep\b/i, href: "/sleep-disorders-treatment-india" },
+  { key: "fatigue", pattern: /\bfatigue\b/i, href: "/stress-and-fatigue" },
+  { key: "high-blood-pressure", pattern: /\bhigh blood pressure\b/i, href: "/stress-and-high-blood-pressure" },
+  { key: "thyroid", pattern: /\bthyroid\b/i, href: "/stress-and-thyroid" },
+  { key: "neuro-ayurveda", pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { key: "dr-ankush", pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
+];
+
+const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const ruleKeys = new Set();
+  articleLinkRules.forEach((rule) => {
+    const ruleKey = getArticleLinkRuleKey(rule);
+    if (linkedRuleKeys.has(ruleKey) || !rule.pattern.test(text)) return;
+    linkedRuleKeys.add(ruleKey);
+    ruleKeys.add(ruleKey);
+  });
+  return ruleKeys;
+}
+
+const paragraphLinkKeys = (() => {
+  const linkedRuleKeys = new Set();
+  const ruleKeysByText = new Map();
+
+  articleSections.forEach((section, sectionIndex) => {
+    section.lines.forEach((line, lineIndex) => {
+      const trimmed = line.trim();
+      if (!trimmed || sectionHeadings.has(trimmed) || trimmed.length < 82) return;
+      const ruleKeys = getArticleLinkRuleKeysForText(trimmed, linkedRuleKeys);
+      if (ruleKeys.size) ruleKeysByText.set(sectionIndex + "-" + lineIndex, ruleKeys);
+    });
+  });
+
+  faqs.forEach((faq, faqIndex) => {
+    const ruleKeys = getArticleLinkRuleKeysForText(faq.answer, linkedRuleKeys);
+    if (ruleKeys.size) ruleKeysByText.set("faq-" + faqIndex, ruleKeys);
+  });
+
+  return ruleKeysByText;
+})();
 
 const categories = [
   { label: "Mind-Body Health", count: 15, Icon: Brain },
@@ -145,9 +246,195 @@ function RelatedPagesCard() {
   );
 }
 
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) candidates.push({ index: keywordMatch.index, text: keywordMatch[0], rule, ruleKey, type: "keyword" });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+
+    if (next.type === "citation") {
+      parts.push(
+        <button key={next.text + "-" + parts.length} type="button" onClick={() => onCitationClick?.(next.citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#8b43ba] underline decoration-[#d9bfe5] underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]" aria-label={"Open resource " + next.citationId}>
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={next.text + "-" + parts.length} href={next.rule.href} className="font-black text-[#8b43ba] underline decoration-[#8b43ba]/35 underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, partIndex) => (
+    typeof part === "string" ? <React.Fragment key={part + "-" + partIndex}>{part}</React.Fragment> : part
+  ));
+}
+
+function ContentLine({ line, index, sectionIndex, onCitationClick, allowedRuleKeys }) {
+  const trimmed = line.trim();
+
+  if (!trimmed) return <div key={index} className="h-3" />;
+  if (sectionHeadings.has(trimmed) || duplicateHeroLines.has(trimmed)) return null;
+
+  if (/^\d+\.\s/.test(trimmed)) {
+    return (
+      <h3 key={index} id={slugify(trimmed)} className="mt-6 scroll-mt-28 text-[16px] font-black leading-7 text-[#21142d]">
+        <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} />
+      </h3>
+    );
+  }
+
+  if (trimmed.length < 82 && !trimmed.endsWith(".") && !trimmed.endsWith(",") && !trimmed.includes("|")) {
+    return (
+      <li key={index} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]">
+        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8b43ba]" />
+        <span><ArticleLinkedText text={trimmed.replace(/^([???])\s*/, "")} onCitationClick={onCitationClick} /></span>
+      </li>
+    );
+  }
+
+  return (
+    <p key={index} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+      <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} allowedRuleKeys={allowedRuleKeys || paragraphLinkKeys.get(sectionIndex + "-" + index)} />
+    </p>
+  );
+}
+
+function ContentSection({ section, sectionIndex, onCitationClick }) {
+  const compactLines = section.lines.filter((line) => line.trim());
+  const listLikeLines = section.lines.filter((line) => {
+    const trimmed = line.trim();
+    return trimmed && trimmed.length < 82;
+  }).length;
+  const visualImage = section.id === "common-symptoms-of-migraine" || section.id === "common-migraine-triggers" || section.id === "who-may-notice-stress-related-migraine-triggers" ? migraineSymptomsImage :
+    section.id === "how-are-stress-and-migraine-connected" || section.id === "can-stress-trigger-migraine-attacks" || section.id === "the-brain-stress-response-and-migraine" ? brainStressImage :
+    section.id === "the-neuro-ayurveda-development-system" ? neuroAyurvedaImage :
+    section.id === "living-well-with-migraine" ? lifestyleImage : null;
+  const isGutBrainSection = section.id === "the-brain-stress-response-and-migraine";
+  const isDigestiveSymptomsSection = section.id === "common-symptoms-of-migraine" || section.id === "common-migraine-triggers" || section.id === "who-may-notice-stress-related-migraine-triggers";
+  const isNeuroAyurvedaSection = section.id === "the-neuro-ayurveda-development-system";
+  const isDigestiveWellbeingSection = section.id === "living-well-with-migraine";
+  const visualImageHeight = isGutBrainSection ? "h-[460px] sm:h-[560px]" : isDigestiveSymptomsSection || isDigestiveWellbeingSection ? "h-[320px] sm:h-[380px]" : isNeuroAyurvedaSection ? "h-[180px] sm:h-[230px]" : "h-[220px]";
+  const visualImageFit = isNeuroAyurvedaSection ? "object-contain" : "object-cover";
+  const visualImageContainerWidth = isNeuroAyurvedaSection ? "mx-auto max-w-[720px]" : "";
+
+  return (
+    <section id={section.id} className="mt-9 scroll-mt-28">
+      {section.title !== "Introduction" && <h2 className="text-[20px] font-black text-[#17111f]">{section.title}</h2>}
+      {visualImage && (
+        <div className={`mt-5 overflow-hidden rounded-lg border border-[#f4e6fa] bg-[#faf0fc] shadow-[0_10px_28px_rgba(139,67,186,0.06)] ${visualImageContainerWidth}`}>
+          <img src={visualImage} alt={section.title} className={`${visualImageHeight} w-full ${visualImageFit} object-center`} loading="lazy" decoding="async" />
+        </div>
+      )}
+      <div className={listLikeLines >= 4 ? "mt-4 rounded-lg border border-[#f4e6fa] bg-white p-5 shadow-[0_8px_22px_rgba(139,67,186,0.04)]" : "mt-2"}>
+        {listLikeLines >= 4 ? (
+          <div className="space-y-2.5">
+            {compactLines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)}
+          </div>
+        ) : (
+          section.lines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)
+        )}
+      </div>
+    </section>
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#8b43ba]">Brain Health</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeawayLabels.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our mind-body health newsletter for stress, digestion and gut-brain wellbeing guidance.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#f4e6fa] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">References</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Medical, scientific and Ayurvedic resources used in the supplied content.</p>
+      <div className="mt-5 space-y-4">
+        {references.map((reference) => (
+          <article key={reference.n} id={"reference-" + reference.n} className="scroll-mt-32 rounded-lg border border-[#f4e6fa] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            {reference.note && <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">{reference.note}</p>}
+            {reference.url && <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#8b43ba] underline underline-offset-2">{reference.url}</a>}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function StressMigraineIndiaPage() {
   const [activeSection, setActiveSection] = useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = useState(0);
+  const [showResources, setShowResources] = useState(false);
+
+  const handleCitationClick = React.useCallback((referenceNumber) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      const target = document.getElementById("reference-" + referenceNumber) || document.getElementById("medical-references");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -239,381 +526,11 @@ function StressMigraineIndiaPage() {
               </div>
             </figure>
           </div>
+          <KeyTakeawaysBlock />
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">Understanding Stress & Migraine</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A migraine is not simply a bad headache. It is a neurological condition, and an episode can bring severe head pain, nausea, sensitivity to light or sound, and enough discomfort to make ordinary daily tasks difficult.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              People who live with migraine often notice a link between stressful periods and their attacks. Stress can sometimes set off an episode or make the symptoms harder to handle. Even so, migraine is rarely explained by one factor alone, so stress should be seen as a possible trigger rather than the single cause.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The connection between emotional health, the nervous system and migraine is still being studied. Learning how these areas affect one another can make it easier for a person to notice their own patterns, recognise possible triggers and make useful lifestyle changes while continuing with appropriate medical care.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Our work at Manovaidya does not begin and end with the headache itself. We take time to look at the person's emotional state, sleep, food habits, routine and wider mind-body health so that the support offered reflects the full picture.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              This work is led by Dr. Ankush Garg, Mental Health Specialist and Founder of Manovaidya. The clinic follows his Neuro-Ayurveda Development System, a five-pillar framework that brings together brain health, gut health, behaviour, lifestyle and emotional wellbeing.
-            </p>
-          </section>
-
-          <section id="what-is-migraine" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What is Migraine?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Migraine is a neurological condition in which headache attacks return from time to time. The pain, length of an attack and accompanying symptoms can vary widely from one person to another.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              For some people, an attack happens only occasionally. For others, migraines come often enough to disturb work, family responsibilities, travel and the basic rhythm of daily life.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              There is no single, fixed way in which migraine appears. Two people may describe very different experiences, and even the same person's symptoms can change over the years.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A healthcare professional usually makes the diagnosis after listening carefully to the symptom history and checking whether another condition could be causing the headaches.
-            </p>
-          </section>
-
-          <section id="stress-connection" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Are Stress and Migraine Connected?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Emotional stress is one of the triggers most frequently mentioned by people who experience migraine. A person may notice more frequent episodes during times such as:
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                 {[
-                   "Emotional pressure",
-                   "Workplace stress",
-                   "Poor sleep",
-                   "Anxiety",
-                   "Major life changes",
-                   "Mental fatigue"
-                 ].map((label) => (
-                   <div key={label} className="flex min-h-[66px] items-center gap-3 rounded-lg border border-[#f4e6fa] bg-[#faf0fc] p-3 text-[13px] font-bold leading-5 text-[#51465a]">
-                     <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] shrink-0" />
-                     <span>{label}</span>
-                   </div>
-                 ))}
-             </div>
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Stress can affect the nervous system and the body's normal stress-response mechanisms, which may play a part in an attack. Still, migraine generally results from several factors coming together, not from stress in isolation.
-            </p>
-            
-            <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Can Stress Trigger Migraine Attacks?</h3>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many people describe stress as the point at which an attack begins or existing symptoms become stronger. The exact relationship is complex, and researchers are still examining how the brain, nervous system and stress response interact during migraine.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Stress is only one possible trigger. Hormonal changes, lack of sleep, dehydration, missed meals, certain foods, bright lights and strong smells are among the other factors commonly reported.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Because no two trigger patterns are identical, long-term management often starts with noticing what tends to happen before an attack in your own case.
-            </p>
-            
-            <div className="mt-8 flex flex-col lg:flex-row gap-6 items-center">
-              <div className="lg:w-1/2">
-                 <img src={brainStressImage} alt="Relationship between stress response and migraine attacks" className="rounded-lg shadow-md w-full h-[250px] object-cover" />
-              </div>
-              <div className="lg:w-1/2">
-                 <h3 className="text-[18px] font-black text-[#17111f]">The Brain, Stress Response and Migraine</h3>
-                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                   Migraine involves changes in brain activity and nervous system function, which is why it is classified as a neurological condition.
-                 </p>
-                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                   When stress remains high for days or weeks, it can disrupt several areas of daily life, including:
-                 </p>
-                 <ul className="mt-3 space-y-2">
-                   {["Sleep quality", "Muscle tension", "Emotional wellbeing", "Daily routines", "Sensitivity to environmental triggers"].map((step) => (
-                      <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                        {step}
-                      </li>
-                    ))}
-                 </ul>
-                 <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                   Any of these changes may make an attack more likely for some people, although stress by itself is seldom the whole explanation. Research is continuing into what takes place in the brain and nervous system before an attack, while it is happening and after the symptoms settle.
-                 </p>
-              </div>
-            </div>
-          </section>
-
-          <section id="symptoms-triggers" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">Common Symptoms of Migraine</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Migraine does not feel exactly the same for everyone, and the set of symptoms can differ from one attack to the next.
-             </p>
-             <div className="mt-4 flex flex-col lg:flex-row gap-6">
-                <div className="lg:w-[60%]">
-                   <p className="text-[14px] font-bold text-[#21142d] mb-3">Some commonly reported symptoms include:</p>
-                   <div className="grid gap-2 sm:grid-cols-2">
-                     {[
-                       "Moderate to severe headache",
-                       "Throbbing or pulsating pain",
-                       "Pain on one side of the head",
-                       "Nausea or vomiting",
-                       "Sensitivity to light",
-                       "Sensitivity to sound",
-                       "Sensitivity to smells",
-                       "Difficulty concentrating",
-                       "Increased discomfort during physical activity"
-                     ].map((label) => (
-                       <div key={label} className="flex items-center gap-2 p-2 bg-white border border-[#f4e6fa] rounded-md text-[13px] font-bold text-[#51465a]">
-                         <Activity className="h-4 w-4 text-[#8b43ba] shrink-0" />
-                         <span>{label}</span>
-                       </div>
-                     ))}
-                   </div>
-                   <p className="mt-4 text-[13px] font-semibold leading-6 text-[#51465a]">
-                      Some people also have an aura before or during the headache. This may involve short-lived changes in vision, sensation or other neurological functions.
-                   </p>
-                </div>
-                <div className="lg:w-[40%]">
-                   <img src={migraineSymptomsImage} alt="Person experiencing migraine with light sensitivity and headache" className="rounded-lg h-full object-cover shadow-sm w-full min-h-[200px]" />
-                </div>
-             </div>
-
-             <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Who May Notice Stress-Related Migraine Triggers?</h3>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Migraine attacks may become more noticeable during:
-             </p>
-             <ul className="mt-4 space-y-2 sm:columns-2">
-                 {["High workplace pressure", "Examination periods", "Emotional conflicts", "Sleep deprivation", "Busy schedules", "Long working hours", "Travel-related stress", "Hormonal changes (in some women)"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Triggers are personal. Something that reliably brings on an attack for one person may not affect another at all. Writing down attacks, routines and possible triggers in a migraine diary can reveal patterns that are otherwise easy to miss.
-             </p>
-             
-             <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Common Migraine Triggers</h3>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                There is no trigger list that applies equally to everyone. Some commonly reported triggers include:
-             </p>
-             <div className="mt-4 flex flex-wrap gap-2">
-                 {["Emotional stress", "Poor sleep", "Skipping meals", "Dehydration", "Bright lights", "Loud sounds", "Strong smells", "Hormonal changes", "Weather changes", "Physical exhaustion"].map((label) => (
-                   <span key={label} className="bg-[#faf0fc] text-[#6a338e] text-[13px] font-bold px-3 py-1.5 rounded-full border border-[#f4e6fa]">
-                     {label}
-                   </span>
-                 ))}
-             </div>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                A migraine diary can help you connect attacks with sleep, meals, stress, weather or other events and work out which patterns are actually relevant to you.
-             </p>
-          </section>
-          
-          <section id="warning-signs" className="mt-9">
-            <div className="rounded-lg border-l-4 border-[#8b43ba] bg-[#faf0fc] p-6 shadow-sm">
-               <h2 className="text-[18px] font-black text-[#21142d] mb-3">Warning Signs You Should Not Ignore</h2>
-               <p className="text-[14px] font-bold text-[#51465a] mb-4">Migraine is a recognised neurological condition, but a severe headache should not automatically be labelled as migraine. Certain symptoms can signal a more serious problem and need urgent assessment.</p>
-               <p className="text-[14px] font-bold text-[#e14f79] mb-3">Seek urgent medical attention if you experience:</p>
-               <ul className="space-y-2 sm:columns-2">
-                 {["Sudden severe headache", "Weakness in face, arm or leg", "Difficulty speaking", "Loss of consciousness", "Confusion", "Seizures", "Fever with severe headache", "Headache after head injury", "Sudden vision loss", "Persistent vomiting with headache"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#e14f79] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-               </ul>
-               <p className="text-[13px] font-bold mt-4 text-[#e14f79] italic">Do not wait for these symptoms to pass on their own; they require immediate emergency care.</p>
-            </div>
-            
-            <div className="mt-8 flex flex-col md:flex-row gap-5 items-center">
-                <div className="md:w-1/2">
-                   <h3 className="text-[18px] font-black text-[#17111f]">Why Emotional Wellbeing Matters</h3>
-                   <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                     The effect of migraine is not limited to physical pain. The uncertainty of when an attack might return can shape plans, confidence, work choices and emotional health.
-                   </p>
-                   <p className="text-[13px] font-bold mt-3 text-[#51465a]">Some individuals experience:</p>
-                   <ul className="space-y-1 mt-2">
-                     {["Anxiety about the next migraine attack", "Difficulty planning social activities", "Reduced confidence while travelling", "Work-related challenges", "Emotional frustration", "Reduced quality of life"].map((step) => (
-                        <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                          {step}
-                        </li>
-                      ))}
-                   </ul>
-                   <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                     Looking after emotional wellbeing, along with following medical advice and maintaining practical daily habits, can make the day-to-day burden of migraine easier to manage. Repeated migraine attacks can wear a person down emotionally, particularly when pain begins to limit independence, work, travel or time with others.
-                   </p>
-                </div>
-                <div className="md:w-1/2">
-                   <img src={lifestyleImage} alt="Healthy lifestyle habits supporting migraine management" className="rounded-lg h-[300px] object-cover w-full shadow-md" />
-                </div>
-            </div>
-          </section>
-          
-          <section id="assessment-process" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Our Stress & Migraine Assessment Process</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              A migraine attack can interrupt far more than physical comfort. When attacks are frequent, they may affect sleep, work, family time, travel and emotional stability. Medical diagnosis and treatment remain essential, while stress and lifestyle still deserve attention because they can influence the way migraine is experienced.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Our assessment at Manovaidya therefore looks at the relationship between brain health, emotional wellbeing and daily life, rather than examining the headache alone. Before suggesting personalised guidance, we first build a clear picture of the factors that may be affecting the person's overall wellbeing.
-            </p>
-            
-            <div className="mt-6 space-y-4">
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">1</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Health Journey</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">The first part of the consultation is a detailed conversation about your health journey and the way migraine has affected your life. We discuss: Your migraine history, Frequency and duration of attacks, Common triggers you have noticed, Emotional wellbeing, Stress levels, Sleep quality, Daily routine, Eating habits, Medical history, and Previous investigations and treatments. Taken together, these details help us see the broader health picture and identify influences that may otherwise remain unnoticed.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">2</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Comprehensive Mind-Body Assessment</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">The next stage looks at several connected areas that can shape both migraine and general wellbeing. These include: Emotional wellbeing, Stress patterns, Sleep quality, Lifestyle habits, Nutrition, Daily routine, Work-life balance, Behavioural patterns, Energy levels, and Overall quality of life. Reviewing these areas side by side often makes recurring links clearer—for example, whether poor sleep, work pressure or changes in routine tend to appear around the same time as an attack.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">3</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Wellbeing Profile</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">Afterwards, we talk through the observations in straightforward language and relate them to everyday life. This includes: Emotional wellbeing profile, Lifestyle influences, Stress patterns, Sleep observations, Potential trigger patterns, Personalised guidance, and Practical next steps. The purpose is to give people a clearer understanding of how migraine, emotional health and lifestyle may be connected, so future healthcare decisions are based on a fuller picture.</p>
-                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-system" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Development System</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Manovaidya uses the Neuro-Ayurveda Development System to view migraine through five connected areas: brain health, gut health, behaviour, lifestyle and emotional wellbeing. The framework does not reduce the problem to headache attacks alone. It is used to explore how several parts of health may influence one another over time.
-            </p>
-            
-            <div className="mt-5 space-y-4">
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Brain className="h-5 w-5"/> 1. Brain Nourishment System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Healthy brain function supports: Emotional regulation, Mental clarity, Stress resilience, Healthy sleep, Cognitive wellbeing, and Overall quality of life. Giving attention to brain health is therefore relevant to both neurological and emotional wellbeing.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Salad className="h-5 w-5"/> 2. Gut Response System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Food habits and digestive wellbeing can affect how a person feels and functions overall. This pillar focuses on understanding: Healthy eating habits, Gut-brain communication, Digestive wellbeing, Lifestyle influences, and Nutrition patterns.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Activity className="h-5 w-5"/> 3. Neural Network System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">The brain keeps changing in response to learning, repeated habits and everyday experiences. This pillar focuses on strengthening: Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management, and Cognitive flexibility.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Waves className="h-5 w-5"/> 4. Sensory Integration System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Light, sound and other surroundings can become unusually difficult to tolerate during migraine. Many people recognise this sensory sensitivity as a major part of an attack. This pillar considers: Light sensitivity, Sound sensitivity, Environmental stress, Recovery, and Lifestyle balance.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><CalendarCheck className="h-5 w-5"/> 5. Behaviour Guidance System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Lasting improvement is easier to maintain when supportive habits become part of ordinary life rather than a short-term effort. This pillar focuses on: Healthy daily habits, Stress management, Behavioural awareness, Sustainable routines, and Lifestyle improvement.</p>
-              </div>
-            </div>
-            
-            <div className="mt-6 flex h-[250px] w-full items-center justify-center rounded-lg shadow-md bg-[#faf0fc] border border-[#f4e6fa]">
-              <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for migraine and brain wellness" className="h-[85%] w-auto object-contain" />
-            </div>
-          </section>
-
-          <section id="support-approach" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">How We Support Individuals Living With Migraine</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-               Migraine is personal, so a standard plan will not suit everyone. Support at Manovaidya is shaped around the person's symptoms, emotional wellbeing, routine and lifestyle instead of being applied in the same way to every case.
-             </p>
-             <p className="mt-3 text-[14px] font-bold text-[#51465a]">Our approach may include:</p>
-             <ul className="mt-3 grid gap-3 sm:grid-cols-2">
-                 {["Stress & Migraine Assessment", "Mind-Body Health Assessment", "Emotional Wellbeing Guidance", "Lifestyle Education", "Stress Management Guidance", "Healthy Routine Planning", "Brain Wellness Education", "Progress Monitoring & Follow-Up"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[13px] font-bold text-[#51465a] p-3 border border-[#f4e6fa] rounded-md">
-                     <CheckCircle2 className="h-4 w-4 shrink-0 text-[#8b43ba]" />
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[13px] font-semibold leading-6 text-[#51465a] italic">
-               The intention is to make the links between brain health, emotional wellbeing and lifestyle easier to recognise, while helping the person build habits that can be continued in real life.
-             </p>
-             
-             <div className="mt-8 bg-[#faf0fc] rounded-lg p-5">
-                <h3 className="text-[17px] font-black text-[#6a338e]">Living Well With Migraine</h3>
-                <p className="text-[13px] mt-2 text-[#51465a] font-semibold">It is not always possible to prevent every migraine. Even so, a steady routine and fewer avoidable triggers can make life more manageable for many people. Helpful lifestyle habits may include:</p>
-                <ul className="mt-3 space-y-1 font-bold text-[#51465a] text-[13px] sm:columns-2">
-                  <li>✔ Maintaining regular sleep patterns</li>
-                  <li>✔ Eating meals on time</li>
-                  <li>✔ Staying hydrated</li>
-                  <li>✔ Regular physical activity</li>
-                  <li>✔ Managing everyday stress</li>
-                  <li>✔ Limiting excessive caffeine where advised</li>
-                  <li>✔ Following prescribed treatment plans</li>
-                  <li>✔ Keeping a migraine diary</li>
-                </ul>
-                <p className="text-[12px] mt-3 italic text-[#51465a]">These measures are meant to support the treatment plan advised by your healthcare professional, not take its place.</p>
-             </div>
-             
-             <div className="mt-6 border border-[#f4e6fa] rounded-lg p-5 shadow-sm">
-                <h3 className="text-[17px] font-black text-[#21142d]">When Should You See a Healthcare Professional?</h3>
-                <p className="text-[13px] mt-2 text-[#51465a] font-bold">You should seek professional medical evaluation if:</p>
-                <ul className="mt-2 space-y-1 font-bold text-[#51465a] text-[13px]">
-                  <li>• Headaches become frequent</li>
-                  <li>• Migraine attacks interfere with work or daily life</li>
-                  <li>• Symptoms become more severe</li>
-                  <li>• New neurological symptoms develop</li>
-                  <li>• Over-the-counter medicines are no longer effective</li>
-                  <li>• You are unsure whether your headaches are migraines</li>
-                </ul>
-                <p className="text-[12px] mt-3 italic text-[#51465a]">Getting the right assessment early can rule out other causes and help you move towards a more suitable management plan.</p>
-             </div>
-             
-             <div className="mt-8">
-                <h3 className="text-[18px] font-black text-[#17111f]">Looking Beyond Migraine Attacks</h3>
-                <p className="text-[14px] font-semibold leading-7 text-[#51465a] mt-2">Migraine reaches beyond pain in the head. Sleep, food, stress, emotional health and everyday routines can all influence how often attacks occur and how disruptive they feel.</p>
-                <p className="text-[14px] font-semibold leading-7 text-[#51465a] mt-2">For that reason, Manovaidya looks at the person's wider health rather than treating each headache as an isolated event. Seeing emotional, lifestyle and physical factors together can support more informed, realistic decisions about long-term wellbeing.</p>
-             </div>
-          </section>
-          
-          <section id="why-choose-us" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why People Across India Choose Manovaidya</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              People from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and other parts of India consult Manovaidya to explore the connection between migraine, emotional wellbeing and stress-related triggers through structured assessment and personalised guidance.
-            </p>
-            <ul className="mt-4 space-y-2">
-                 {["Comprehensive Stress & Migraine Assessments", "Brain Health & Mind-Body Understanding", "Neuro-Ayurveda Development System", "Lifestyle & Stress Management Guidance", "Holistic Emotional Wellbeing Support", "Online & In-Clinic Consultations", "Personalised Long-Term Wellness Approach"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                The larger purpose is to bring clarity to the connection between lifestyle, emotional wellbeing and brain health while supporting the person's overall quality of life.
-             </p>
-          </section>
-          
-          <section id="about-dr-ankush-garg" className="mt-9">
-            <div className="rounded-lg bg-[#faf0fc] p-6 lg:flex lg:items-center lg:gap-8">
-              <div className="mb-6 lg:mb-0 lg:w-[220px] lg:shrink-0">
-                <div className="overflow-hidden rounded-lg bg-white p-2 shadow-sm">
-                  <img src={doctorImage} alt="Dr. Ankush Garg" className="h-[200px] w-full object-cover rounded-md" />
-                </div>
-              </div>
-              <div className="lg:flex-1">
-                <h2 className="text-[20px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="text-[14px] font-bold text-[#8b43ba] mt-1">Mental Health Specialist & Founder of Manovaidya</p>
-                
-                <div className="mt-4 space-y-3 text-[13.5px] font-semibold leading-relaxed text-[#51465a]">
-                  <p>
-                    Dr. Ankush Garg founded Manovaidya and developed the Neuro-Ayurveda Development System used in its assessment approach.
-                  </p>
-                  <p>
-                    His work explores how emotional wellbeing, brain function, lifestyle and general health influence one another, especially in people facing stress-related neurological or mind-body concerns.
-                  </p>
-                  <p>
-                    Using structured assessments, one-to-one guidance and ongoing follow-up, he helps people make sense of their symptoms and develop lifestyle practices that are practical enough to sustain.
-                  </p>
-                  <p>
-                    Based in Delhi NCR, Dr. Ankush Garg offers Mind-Body and Brain Health Assessments across India, both online and at the clinic, examining how emotional wellbeing, lifestyle and migraine may be connected within the Neuro-Ayurveda Development System.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {articleSections.map((section, sectionIndex) => (
+            <ContentSection key={section.id + section.title} section={section} sectionIndex={sectionIndex} onCitationClick={handleCitationClick} />
+          ))}
 
           <section id="faqs" className="mt-10">
             <div className="mb-6 flex items-center justify-between">
@@ -621,17 +538,17 @@ function StressMigraineIndiaPage() {
             </div>
             <div className="grid gap-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
+                <div key={faq.question} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
                   <button onClick={() => setOpenFaq(openFaq === index ? -1 : index)} className="flex w-full items-center justify-between p-4 text-left sm:px-5">
                     <span className="pr-4 text-[14px] font-bold leading-snug text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors ${openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]"}`}>
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`} strokeWidth={2.5} />
+                    <span className={"flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors " + (openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]")}>
+                      <ChevronDown className={"h-4 w-4 transition-transform duration-300 " + (openFaq === index ? "rotate-180" : "")} strokeWidth={2.5} />
                     </span>
                   </button>
-                  <div className={`grid transition-all duration-300 ease-in-out ${openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                  <div className={"grid transition-all duration-300 ease-in-out " + (openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}>
                     <div className="overflow-hidden">
                       <div className="border-t border-[#f4e6fa] px-4 pb-4 pt-3 text-[13px] font-medium leading-[1.6] text-[#51465a] sm:px-5">
-                        {faq.answer}
+                        <ArticleLinkedText text={faq.answer} onCitationClick={handleCitationClick} allowedRuleKeys={paragraphLinkKeys.get("faq-" + index)} />
                       </div>
                     </div>
                   </div>
@@ -639,6 +556,15 @@ function StressMigraineIndiaPage() {
               ))}
             </div>
           </section>
+
+          <div className="mt-8">
+            <button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#8b43ba] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#8b43ba]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references">
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={"h-4 w-4 transition " + (showResources ? "rotate-180" : "")} />
+            </button>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
 
           <section id="book-assessment" className="mt-10 mb-8">
             <div className="overflow-hidden rounded-xl bg-gradient-to-br from-[#6a338e] to-[#8b43ba] text-white shadow-lg">
@@ -668,6 +594,22 @@ function StressMigraineIndiaPage() {
         </article>
 
         <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya stress migraine brain health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Mind-Body Health, Migraine, Stress and Mental Health</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
             <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#f4e6fa] bg-[#faf0fc] px-3">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   Activity,
   ArrowRight,
+  BookOpen,
   Brain,
   CalendarCheck,
   CheckCircle2,
@@ -24,80 +25,178 @@ import Seo from "../components/Seo";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
-  { label: "Stress & Digestion", id: "stress-connection" },
-  { label: "Symptoms", id: "symptoms" },
-  { label: "Gut-Brain Connection", id: "gut-brain-connection" },
-  { label: "Assessment Process", id: "assessment-process" },
-  { label: "Neuro-Ayurveda System", id: "neuro-ayurveda-system" },
-  { label: "Support Approach", id: "support-approach" },
-  { label: "Why Choose Us", id: "why-choose-us" },
+  { label: "Stress & Digestion", id: "how-are-stress-and-digestion-connected" },
+  { label: "Gut-Brain Connection", id: "the-gut-brain-connection" },
+  { label: "Symptoms", id: "common-digestive-symptoms-that-may-be-associated-with-stress" },
+  { label: "Assessment Process", id: "our-mind-body-and-digestive-health-assessment-process" },
+  { label: "Neuro-Ayurveda System", id: "the-neuro-ayurveda-development-system" },
+  { label: "Support Approach", id: "how-we-support-digestive-health" },
+  { label: "Why Choose Us", id: "why-people-across-india-choose-manovaidya" },
   { label: "About Dr. Ankush Garg", id: "about-dr-ankush-garg" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Assessment", id: "book-assessment" },
 ];
 
-const faqs = [
-  {
-    question: "1. Can stress affect digestive health?",
-    answer: "Yes. Emotional stress may influence digestion in some individuals through the gut-brain connection. During periods of stress, some people notice symptoms such as bloating, indigestion, changes in appetite or changes in bowel habits. However, digestive symptoms can have many different medical causes and should be properly evaluated if they persist."
-  },
-  {
-    question: "2. What is the gut-brain connection?",
-    answer: "The gut-brain connection, also known as the gut-brain axis, is the two-way communication between the brain and the digestive system. This connection helps explain why emotional wellbeing and digestive health can influence each other."
-  },
-  {
-    question: "3. Can anxiety cause stomach problems?",
-    answer: "Some people notice stomach discomfort, nausea, bloating or changes in bowel habits during periods of anxiety or emotional stress. Since these symptoms may also be caused by medical conditions, persistent digestive problems should be assessed by a qualified healthcare professional."
-  },
-  {
-    question: "4. Why do I experience stomach discomfort during stressful situations?",
-    answer: "Stress activates the body's natural stress response, which may temporarily influence digestion in some individuals. If stomach discomfort becomes frequent or persistent, medical evaluation is important to identify the underlying cause."
-  },
-  {
-    question: "5. Can emotional wellbeing influence appetite?",
-    answer: "Yes. Emotional stress may affect appetite differently in different individuals. Some people notice reduced appetite during stressful periods, while others may eat more than usual. Persistent appetite changes should be discussed with a healthcare professional."
-  },
-  {
-    question: "6. What digestive symptoms may become worse during stress?",
-    answer: "Some individuals may notice bloating, indigestion, stomach discomfort, nausea, changes in appetite or changes in bowel habits during emotionally stressful periods. These symptoms are not specific to stress and require medical evaluation if they continue."
-  },
-  {
-    question: "7. Can poor sleep affect digestive health?",
-    answer: "Healthy sleep supports overall physical and emotional wellbeing. Poor sleep may influence digestion, appetite, energy levels and stress responses in some individuals. Improving sleep habits may contribute to overall wellness."
-  },
-  {
-    question: "8. When should I seek medical attention for digestive symptoms?",
-    answer: "You should seek medical evaluation if digestive symptoms are persistent, becoming worse or accompanied by severe abdominal pain, blood in stool, blood in vomit, unexplained weight loss, persistent vomiting, difficulty swallowing or high fever. These symptoms require professional medical assessment."
-  },
-  {
-    question: "9. Can lifestyle habits affect digestive wellbeing?",
-    answer: "Yes. Balanced nutrition, regular physical activity, adequate hydration, healthy sleep habits and stress management may support overall digestive health. Lifestyle measures should complement appropriate medical care whenever required."
-  },
-  {
-    question: "10. What is a Stress & Digestive Health assessment?",
-    answer: "A Stress & Digestive Health assessment is a structured evaluation that explores digestive concerns, emotional wellbeing, stress levels, sleep, lifestyle habits, nutrition and overall health. The assessment helps identify factors that may influence overall wellbeing and supports personalised guidance."
-  },
-  {
-    question: "11. How does Manovaidya support stress-related digestive concerns?",
-    answer: "At Manovaidya, we focus on understanding the relationship between emotional wellbeing, lifestyle and digestive health rather than looking only at digestive symptoms. Through structured assessments, personalised guidance and the Neuro-Ayurveda Development System, we help individuals better understand their overall mind-body wellbeing."
-  },
-  {
-    question: "12. What is the Neuro-Ayurveda Development System?",
-    answer: "The Neuro-Ayurveda Development System is Manovaidya's structured five-pillar framework that considers Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance together while understanding emotional wellbeing, gut health and lifestyle. It provides a holistic perspective alongside comprehensive assessment and personalised guidance."
-  },
-  {
-    question: "13. Can managing stress support digestive wellbeing?",
-    answer: "Managing stress through healthy lifestyle habits, regular physical activity, adequate sleep, relaxation techniques and emotional wellbeing practices may support overall digestive health in some individuals. These approaches complement but do not replace appropriate medical treatment."
-  },
-  {
-    question: "14. Is every digestive problem caused by stress?",
-    answer: "No. Digestive symptoms can result from many different medical conditions, dietary factors, infections or other health issues. Stress may influence digestive wellbeing in some individuals, but it should never be assumed to be the only cause. Persistent symptoms should always be medically evaluated."
-  },
-  {
-    question: "15. Why should I choose Manovaidya for Stress & Digestive Health support?",
-    answer: "At Manovaidya, we focus on understanding the relationship between emotional wellbeing, gut health and lifestyle through structured assessments, personalised guidance and the Neuro-Ayurveda Development System. Our holistic approach helps individuals better understand the gut-brain connection while supporting long-term mind-body wellbeing."
-  }
+const rawSourceContent = "Key Takeaways\nUnderstanding Stress & Digestive Health\nStress and the Gut-Brain Connection\nHow Stress May Affect Digestion\nCommon Stress-Related Digestive Symptoms\nEmotional Wellbeing & Digestive Health\nSigns That Need Medical Evaluation\nLifestyle Support for Digestive Wellbeing\nUnderstanding the Neuro-Ayurveda Approach\nMind-Body & Digestive Health Assessment\nStress Management & Healthy Daily Habits\nManovaidya’s Digestive Wellbeing Approach\nFAQs About Stress & Digestive Health\n\n\nDigestive Wellbeing\n\nStress & Digestive Health Treatment in India\n\n\nUnderstanding the Connection Between Stress, Emotional Wellbeing and Digestive Health.\n\nUnderstanding Stress & Digestive Health\n\nThere's a network of communication that connects the digestive system and the brain, known as the gut-brain axis. This means that how you feel emotionally and your digestive health are always affecting each other. Many people remarked that when they are stressed, worried or when they are under pressure, they feel their appetite changes, their stomach feels uncomfortable, bloated or indigested. [1][2]\n\nWhen you are stressed you may feel some discomfort or discomfort may occur regularly, either of these is not something you should ignore. Medical conditions that require diagnosis and treatment correctly can be a cause for digestive problems. Emotional stress may influence the way you feel symptoms and is not the only trigger. [2][3]\n\n\nWe believe that it is essential to know the person, not just their digestive symptoms at Manovaidya. We consider wellbeing, lifestyle, sleep, nutrition and the gut/brain link to enable people to understand their overall health.\n\nDr. Ankush Garg, Mental Health Specialist and the Founder of Manovaidya, is the head of our team. The Neuro-Ayurveda Development System is a system that takes a holistic approach to the brain, gut and behavior/lifestyle to support the mind-body connection.\n\n\nHow Are Stress and Digestion Connected?\n\nNerves, hormones and immune pathways constantly communicate between the brain and the digestive system. [1]\n\nThe stress reaction of your body, when you are emotionally stressed, will impact your function. You might notice changes in your appetite, digestion or bowel habits when you are going through a time. [1][2]\n\nAs with any type of physical pain, an individual's digestive pain can be a source of emotional pain also, and thus can create a vicious circle between physical and emotional well-being. [1][2]\n\nUnderstanding this connection helps explain why taking care of both wellbeing and digestive health is important for overall wellness.\n\nStress activates the bodys natural stress response, which prepares the body to deal with situations. If you are stressed for a period of time you may notice that your digestion changes for a short time, which is your body's way of reacting to the stress. When stressed for a period of time, you may experience persistent digestive upset. The connection between emotional wellbeing and gut health is still being explored and is known as the gut-brain axis, where the brain and the gut continuously communicate. [1][2]\n\nAn understanding that stress is not a cause for all conditions is necessary. Persistent and severe digestive symptoms may have medical causes, and should always be properly evaluated. [2][4]\n\n\n\nThe Gut-Brain Connection\n\nThe digestive system is connected to the brain by a system of nerves that constantly communicate with each other. [1]\n\n\nThis link can impact:\n\nAppetite\nDigestion\nBowel movements\nA sensitivity in the tract\nEmotional wellbeing\nStress responses\n\nLikewise, digestive health can also influence emotional well-being, emphasizing the connection between physical and emotional health. [1][2]\n\n\nCommon Digestive Symptoms That May Be Associated With Stress\n\n\nEach person reacts to stress in a unique manner. Changes may be noticed such as:\n\nBloating\nIndigestion\nStomach discomfort\nChanges in appetite\nFeeling full quickly\nAltered bowel movements.\nNausea during situations\nIncreased abdominal discomfort\n\nThey're not only triggered by stress and may occur with numerous medical illnesses. When you have symptoms of digestion disorders, make sure to always consult a qualified health professional. [2][3][4]\n\n\n\nWho May Experience Stress-Related Symptoms?\n\nChronic stress at work: working professionals who are stressed out on a long-term basis.\n\n Students during exams\n People who are anxious\n Those who are taking care of someone term\n Individuals going through life changes\n People who are under emotional pressure\nThose with existing conditions who notice their symptoms getting worse when they are stressed\n\nEach person's experience is unique.\n\n\n\nWhy Emotional Wellbeing Matters for Digestive Health\n\n\nMany of our daily routines can impact our wellbeing and contribute to digestive issues. Ongoing stress can impact on:\n\n\nEating patterns\nSleep quality\nActivity\nHydration\nDaily routine\nRelaxation\nOverall quality of life [1][5][6]\n\n\n\nSigns You Should Not Ignore\n\nYou may have some stomach troubles from time to time, but if it occurs regularly, contact a doctor. Avoid ignoring symptoms such as:\n\nBloating that happens often\nIndigestion that does not go away\nStomach acidity\nDiscomfort in the stomach\nAbdominal cramps\nChanges in how you go to the bathroom\nFeeling full quickly\nNausea that happens often\n\nAdditionally, people with a long-term digestive condition may experience:\n\nFeeling stressed all the time\nWorrying about eating\nGetting irritated easily\nNot sleeping well\nFinding it hard to relax\nLife not being enjoyable\n\nPhysical and emotional symptoms should be visited by a doctor. [3][4]\n\n\nWhen Should You See a Doctor?\n\nDo not think digestive symptoms are because of stress. If you have: see a doctor away:\n\nSevere stomach pain\nBlood in your stool\nBlood in what you vomit\nInability to keep food and fluids down\nLosing weight\nTrouble swallowing\nFever with symptoms\nSymptoms that last for weeks\nSymptoms that get worse\n\nEarly visits to a doctor can help to detect conditions and ensure treatment is received. [3][4]\n\n\n\nOur Mind-Body & Digestive Health Assessment Process\n\nThere are numerous possible causes of digestive symptoms. Some are medical related, and emotional wellbeing, lifestyle habits, sleep and chronic stress can all impact how some people may feel when experiencing digestive discomfort. We believe at Manovaidya that the whole picture is important and not just digestive symptoms of disease. We are assessing your digestive health to better understand how digestive health, emotional wellbeing and lifestyle are interconnected, so that we can provide you with personalised guidance. [1][2]\n\nUnderstanding Your Health Concerns\n\nAll consultation sessions start with a careful listening to your experiences. We talk about: Your digestive issues, Emotional wellbeing, Stress level, Eating habits, Sleep quality, Daily routine, Lifestyle habits, Medical history and Previous investigations and treatments. By seeing the full health story, we can look for things that could be contributing to your health and wellbeing.\n\n\n\n\nComprehensive Mind-Body Assessment\n\nOur assessment is structured to investigate a number of factors that can impact digestive well-being. They are: Emotional stress, Lifestyle habits, Sleep quality, Digestive health, Energy levels, Work-life balance, Nutrition, Behavioural patterns and Overall quality of life. This comprehensive evaluation can uncover patterns that can support emotional and digestive health.\n\n\nUnderstanding Your Wellbeing Profile\n\nFollowing the assessment we provide a simple and practical explanation of what we observe. This includes: Emotional wellbeing profile, Lifestyle factors, Stress patterns, Digestive health observations, Areas requiring attention, Personalised recommendations, and Practical next steps. We aim to educate people on the link between their emotional and digestive well-being and promote informed healthcare choices.\n\n\nThe Neuro-Ayurveda Development System\n\nAt Manovaidya, digestive wellness is seen as a holistic, five-pillar Neuro-Ayurveda Development System that takes all aspects of brain health, gut health, behaviour, lifestyle and emotional wellbeing into account. This perspective rather than emphasizing digestion symptoms gives insight into how emotional health affects a person's wellbeing in a wider sense.\n\n\n\n1. Brain Nourishment System\n\nGood brain health is associated with: Emotional regulation, Stress resilience, Mental clarity, Sleep quality, Decision-making, Overall wellbeing. Maintaining emotional wellness can help people develop more successful coping mechanisms to stress in their daily lives.\n\n\n2. Gut Response System\n\nThe digestive system is crucial to an individual's wellbeing. This pillar aims to educate on: Digestion health, Nutrition, Healthy eating habits, Gut-brain communication and Lifestyle factors that affect gut wellness. [1][5]\n\n\n3. Neural Network System\n\nThe brain is constantly changing as a result of experiences, learning and lifestyle habits. In this pillar, healthy ways of thinking, emotional adaptability, stress resilience and behavioural awareness will be strengthened.\n\n\n4. Sensory Integration System\n\nEmotional and physical well-being can be affected by factors in the environment every day. This pillar takes into account experiences with the senses, stress in the environment, relaxation, recovery and lifestyle balance.\n\n5. Behaviour Guidance System\n\nGood habits help the emotional and digestive health. This pillar is based on: Stress Management, Healthy Routines, sustainable lifestyle habits, behaviour awareness, and long-term wellbeing. [5][6][7]\n\n\nHow We Support Digestive Health\n\nIndividuals have unique digestive health experiences. At Manovaidya, support is tailored to the person's emotional state, digestive issues, as well as lifestyle needs. We want to help people to better understand the link between emotional wellbeing and digestive health, and encourage healthier habits for the long term.\n\nMind-Body Health Assessment\nDigestive Wellbeing Assessment\nEmotional Wellbeing Guidance\nLifestyle & Nutrition Education\nStress Management Guidance\nHealthy Routine Planning\nMind-Body Balance Support\nProgress Monitoring and Follow-Up\n\n\nSupporting Digestive Health and Emotional Wellbeing\n\nTaking care of your health means caring for your body and emotional wellbeing. Some habits that can lead to good health are: [5][6][7]\n\n• Eating meals that're balanced and drinking water every day\n • Being physically active regularly and getting sleep\n • Managing stress every day, not smoking and limiting alcohol\n • Taking medications as told and following advice for diagnosed digestive conditions\n\nSmall, but lasting changes can make you healthier in the long-term. [5][6][7]\n\n\n\nLooking Beyond Symptoms\n\nIt is not about your stomach, that's OK, then.It's not about your stomach, then, is it not? Your mood, sleep and lifestyle habits and existing medical conditions can all have an impact on your symptoms. At Manovaidya we believe in understanding the person, not symptoms. Taking the time to think about health and wellbeing together can help you establish healthier habits in the long term which will benefit you in all aspects of your life. [1][4][5]\n\n\nWhy People Across India Choose Manovaidya\n\nOften, people from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and other parts of India come to Manovaidya to understand how stress affects their digestive health and the gut-brain connection through detailed assessment and customised advice.\n\n Comprehensive Mind-Body Health Assessments\nGut-Brain Axis Understanding\nNeuro-Ayurveda Development System\nLifestyle & Stress Management Guidance\nHolistic Emotional Wellbeing Support\nOnline & In-Clinic Consultations\n Personalised Long-Term Wellness Approach \n\nWe aim to educate people on the interplay between emotional wellbeing, digestive health and lifestyle and the positive impact this has on overall wellbeing.\n\n\n\n\nAbout Dr. Ankush Garg\n\n\nMental Health Specialist & Founder of Manovaidya\n\n\nDr. Ankush Garg is the Founder of Manovaidya and the developer of the Neuro-Ayurveda Development System. His work focuses on understanding the relationship between emotional wellbeing, gut health, brain health and lifestyle while helping individuals experiencing stress-related digestive concerns and other mind-body health challenges.\n\n\nThrough structured assessments, personalised guidance and continuous follow-up, Dr. Ankush Garg helps individuals better understand the gut-brain connection and develop healthier long-term lifestyle habits.\n\nBased in Delhi NCR, he provides Mind-Body and Digestive Health Assessments for individuals across India through both online and in-clinic appointments, helping individuals understand the relationship between emotional wellbeing, gut health and overall wellness through the Neuro-Ayurveda Development System.\n\n\n\n\nFrequently Asked Questions (FAQs) \n\n\n1. Can stress affect digestive health?\n\n\nYes. In some, emotional stress can affect digestion via the gut-brain connection. Some people experience symptoms during stress like bloating, indigestion, appetite loss or bowel movements change. But there are numerous potential medical conditions which may cause digestive symptoms and these should be carefully assessed if they continue. [1][2]\n\n\n2. What is the gut-brain connection?\n\n\nThe gut-brain axis or gut-brain connection is the bidirectional communication between the gut and the brain. This link is a useful understanding of how emotional wellbeing and digestive health can relate. [1][2]\n\n\n\n3. Can anxiety cause stomach problems?\n\n\nDuring a period of anxiety or emotional stress, some people experience stomach discomfort or nausea, bloating or changes in bowel habits. Persistent digestive symptoms, however, may also result from medical issues, so it is advisable to seek medical advice from a healthcare provider. [2][3]\n\n4. Why do I experience stomach discomfort during stressful situations?\n\nWhen stressed the body releases its natural stress response and in some people, this affects the digestion process for a short period. Medical evaluation is recommended if stomach pain occurs often or for a long time because it is important to determine what causes it. [1][2]\n\n\n5. Can emotional wellbeing influence appetite?\n\nYes. Emotional stress can have varying effects on appetite. Others may lose appetite during stressful times and others may eat more than normal. If appetite changes persist, consult a health care provider. [1]\n\n\n6. What digestive symptoms may become worse during stress?\n\n\nDuring an emotionally stressful time, a few people might experience bloating, indigestion, stomach discomfort, nausea, altered appetite or changes in bowel habits. These do not necessarily indicate stress: If symptoms persist, it is important that they be evaluated by a medical professional. [2][3]\n\n\n7. Can poor sleep affect digestive health?\n\nSleep is essential to health and wellbeing, physical and mental. Some people may feel problems with digestion, appetite, energy level and stress responses due to poor sleep. Better sleeping routines can help to promote overall wellness. [1][7]\n\n\n8. When should I seek medical attention for digestive symptoms?\n\nYou should seek medical evaluation if digestive symptoms are persistent, becoming worse or accompanied by severe abdominal pain, blood in stool, blood in vomit, unexplained weight loss, persistent vomiting, difficulty swallowing or high fever. These symptoms need to be evaluated by a doctor. [3][4]\n\n\n9. Can lifestyle habits affect digestive wellbeing?\n\nYes. A healthy approach to nutrition, exercise, drinking plenty of water, getting good sleep and managing stress can help maintain digestive health. Where needed, lifestyle measures should be used in addition to the proper medical care. [5][6][7]\n\n10. What is a Stress & Digestive Health assessment?\n\n\nThe Stress & Digestive Health assessment is a structured assessment that identifies digestive issues, emotional well-being, stress, sleep, lifestyle habits, nutrition and overall health. The assessment can be used to help identify factors that may affect wellbeing and may be used to provide personalised guidance.\n\n\n11. How does Manovaidya support stress-related digestive concerns?\n\nAt Manovaidya we think about the relationship between emotional functioning, lifestyle and digestive wellness instead of just the digestive symptoms. We work with structured assessments, personalised guidance and the Neuro-Ayurveda Development System so that people can have a better understanding of their overall mind-body wellbeing.\n\n\n12. What is the Neuro-Ayurveda Development System?\n\nThe Neuro-Ayurveda Development System is Manovaidya's systematic 5 pillar model that covers the intersection of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance, understanding the relationship between emotional wellbeing and gut health and lifestyle. It offers a holistic view and in-depth evaluation and tailored advice.\n\n\n13. Can managing stress support digestive wellbeing?\n\nA healthy lifestyle, regular exercise, a good night's sleep, relaxation and emotional wellbeing techniques can help manage stress in some people and may also help improve digestive health in certain people. These methods may be used in conjunction with suitable medical care, but should not be used as a substitute for it. [1][6][7]\n\n\n\n14. Is every digestive problem caused by stress?\n\n\nNo. There are numerous medical conditions, diet, infections or other illnesses that can cause digestive symptoms. Some people may be sensitive to stress and this may contribute to their digestive wellbeing, but it is not always the only cause. Any symptom that lasts will always be evaluated medically. [2][3][4]\n\n15. Why should I choose Manovaidya for Stress & Digestive Health support?\n\nHere at Manovaidya we take a structured approach to understanding the interplay between emotional wellbeing, gut health and lifestyle through personalised guidance, and the Neuro-Ayurveda Development System. Taking a holistic perspective, we help people to understand the gut-brain connection, and to create long-term mind-body wellbeing.\n\nConcerned About Stress and Digestive Health?\nBook a structured Stress & Digestive Health Assessment with Manovaidya to understand the relationship between emotional wellbeing, gut health, digestion and lifestyle while receiving personalised guidance.\nBook Assessment\nTalk to Our Team\n\n\n\nReferences\nNational Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) – Gastrointestinal Neurobiology\nhttps://www.niddk.nih.gov/research-funding/research-programs/gastrointestinal-neurobiology\n\n\nNIDDK – Symptoms & Causes of Irritable Bowel Syndrome: Brain-Gut Interaction\n https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/symptoms-causes\n\n\nNIDDK – Indigestion (Dyspepsia): Symptoms, Causes & Disorders of Gut-Brain Interaction\n https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia/symptoms-causes\n\n\nNIDDK – Digestive Diseases & Digestive System Health\n https://www.niddk.nih.gov/health-information/digestive-diseases\n\n\nWorld Health Organization (WHO) – Healthy Diet\n https://www.who.int/news-room/fact-sheets/detail/healthy-diet\n\n\nWorld Health Organization (WHO) – Physical Activity and Overall Wellbeing\n https://www.who.int/news-room/fact-sheets/detail/physical-activity\n\n\nWorld Health Organization (WHO) – Self-Care for Health and Well-Being\n https://www.who.int/news-room/fact-sheets/detail/self-care-health-interventions\n\n\nNational Center for Complementary and Integrative Health (NCCIH) – Ayurvedic Medicine: In Depth\n https://www.nccih.nih.gov/health/ayurvedic-medicine-in-depth\n\n\nWorld Health Organization (WHO) & FAO – What Are Healthy Diets?\n https://www.who.int/publications/b/76012\n\n\n\n\n\n";
+
+const keyTakeawayEnd = rawSourceContent.search(/\n\s*Digestive Wellbeing/);
+const keyTakeawayLabels = rawSourceContent
+  .slice(0, keyTakeawayEnd > 0 ? keyTakeawayEnd : 0)
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "Key Takeaways");
+
+const referencesStart = rawSourceContent.indexOf("\nReferences");
+const referencesRaw = referencesStart >= 0 ? rawSourceContent.slice(referencesStart).trim() : "";
+const referenceLines = referencesRaw
+  .split("\n")
+  .map((line) => line.trim())
+  .filter(Boolean)
+  .filter((line) => line !== "References");
+const references = [];
+for (let index = 0; index < referenceLines.length; index += 1) {
+  const line = referenceLines[index];
+  if (/^https?:\/\//i.test(line)) continue;
+  const nextUrl = referenceLines.slice(index + 1).find((item) => /^https?:\/\//i.test(item));
+  const numberMatch = line.match(/^\[(\d+)\]\s*(.*)$/);
+  references.push({ n: numberMatch?.[1] || String(references.length + 1), title: numberMatch?.[2] || line, url: nextUrl, note: "" });
+}
+
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 72);
+
+const sectionHeadingLabels = [
+  "Understanding Stress & Digestive Health",
+  "How Are Stress and Digestion Connected?",
+  "The Gut-Brain Connection",
+  "Common Digestive Symptoms That May Be Associated With Stress",
+  "Who May Experience Stress-Related Symptoms?",
+  "Why Emotional Wellbeing Matters for Digestive Health",
+  "Signs You Should Not Ignore",
+  "When Should You See a Doctor?",
+  "Our Mind-Body & Digestive Health Assessment Process",
+  "Understanding Your Health Concerns",
+  "Comprehensive Mind-Body Assessment",
+  "Understanding Your Wellbeing Profile",
+  "The Neuro-Ayurveda Development System",
+  "1. Brain Nourishment System",
+  "2. Gut Response System",
+  "3. Neural Network System",
+  "4. Sensory Integration System",
+  "5. Behaviour Guidance System",
+  "How We Support Digestive Health",
+  "Supporting Digestive Health and Emotional Wellbeing",
+  "Looking Beyond Symptoms",
+  "Why People Across India Choose Manovaidya",
+  "About Dr. Ankush Garg",
+  "About Dr Ankush Garg",
+  "About ",
+  "About",
+  "Dr. Ankush Garg",
+  "Mental Health Specialist & Founder of Manovaidya",
 ];
+const sectionHeadings = new Set(sectionHeadingLabels);
+const duplicateHeroLines = new Set([
+  "Key Takeaways",
+  "Digestive Wellbeing",
+  "Stress & Digestive Health Treatment in India",
+  "Understanding the Connection Between Stress, Emotional Wellbeing and Digestive Health.",
+  "Frequently Asked Questions (FAQs)",
+  ...keyTakeawayLabels,
+]);
+
+const faqStart = rawSourceContent.search(/\n\s*1\.\s*Can stress affect digestive health\?/i);
+const faqEnd = rawSourceContent.indexOf("\nConcerned About Stress and Digestive Health?", faqStart);
+const faqContent = faqStart >= 0 ? rawSourceContent.slice(faqStart, faqEnd > faqStart ? faqEnd : referencesStart > faqStart ? referencesStart : undefined).trim() : "";
+const articleContent = (faqStart >= 0 ? rawSourceContent.slice(0, faqStart) : rawSourceContent)
+  .split("\nReferences")[0]
+  .trim();
+
+const articleSections = articleContent.split("\n").reduce(
+  (sections, line) => {
+    const trimmed = line.trim();
+    if (duplicateHeroLines.has(trimmed)) return sections;
+
+    if (sectionHeadings.has(line) || sectionHeadings.has(trimmed)) {
+      const heading = trimmed === "About" || trimmed === "Dr. Ankush Garg" ? "About Dr. Ankush Garg" : trimmed;
+      const id = heading === "About Dr. Ankush Garg" ? "about-dr-ankush-garg" : slugify(heading);
+      const existing = sections.find((section) => section.id === id);
+      if (existing) {
+        existing.lines.push(line);
+        return sections;
+      }
+      sections.push({ title: heading, id, lines: [] });
+      return sections;
+    }
+
+    sections[sections.length - 1].lines.push(line);
+    return sections;
+  },
+  [{ title: "Introduction", id: "introduction", lines: [] }]
+).filter((section) => section.lines.some((line) => line.trim()) || section.title !== "Introduction");
+
+const faqs = faqContent
+  .split(/\n(?=\s*\d+\.?\s*)/)
+  .filter((item) => /^\s*\d+\.?\s*/.test(item.trim()))
+  .map((item) => {
+    const [question, ...answer] = item.trim().split("\n");
+    return { question: question.replace(/^(\d+)\.(\S)/, "$1. $2").trim(), answer: answer.join(" ") };
+  });
+
+const articleLinkRules = [
+  { pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india" },
+  { pattern: /\bStress & Digestive Health\b/i, href: "/stress-and-digestive-health" },
+  { pattern: /\bdigestive health\b/i, href: "/stress-and-digestive-health" },
+  { pattern: /\bgut-brain axis\b/i, href: "/stress-and-digestive-health" },
+  { pattern: /\bgut-brain connection\b/i, href: "/stress-and-digestive-health" },
+  { pattern: /\bIBS\b/i, href: "/stress-ibs-support-india" },
+  { pattern: /\bacidity\b/i, href: "/stress-and-acidity" },
+  { pattern: /\banxiety\b/i, href: "/stress-anxiety-treatment-india" },
+  { pattern: /\bsleep\b/i, href: "/sleep-disorders-treatment-india" },
+  { pattern: /\bstress management\b/i, href: "/stress-management" },
+  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
+];
+
+const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
+
+function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
+  const ruleKeys = new Set();
+  articleLinkRules.forEach((rule) => {
+    const ruleKey = getArticleLinkRuleKey(rule);
+    if (linkedRuleKeys.has(ruleKey) || !rule.pattern.test(text)) return;
+    linkedRuleKeys.add(ruleKey);
+    ruleKeys.add(ruleKey);
+  });
+  return ruleKeys;
+}
+
+const paragraphLinkKeys = (() => {
+  const linkedRuleKeys = new Set();
+  const ruleKeysByText = new Map();
+
+  articleSections.forEach((section, sectionIndex) => {
+    section.lines.forEach((line, lineIndex) => {
+      const trimmed = line.trim();
+      if (!trimmed || sectionHeadings.has(trimmed) || trimmed.length < 82) return;
+      const ruleKeys = getArticleLinkRuleKeysForText(trimmed, linkedRuleKeys);
+      if (ruleKeys.size) ruleKeysByText.set(sectionIndex + "-" + lineIndex, ruleKeys);
+    });
+  });
+
+  faqs.forEach((faq, faqIndex) => {
+    const ruleKeys = getArticleLinkRuleKeysForText(faq.answer, linkedRuleKeys);
+    if (ruleKeys.size) ruleKeysByText.set("faq-" + faqIndex, ruleKeys);
+  });
+
+  return ruleKeysByText;
+})();
 
 const categories = [
   { label: "Mind-Body Health", count: 15, Icon: Brain },
@@ -145,9 +244,191 @@ function RelatedPagesCard() {
   );
 }
 
+function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
+  const source = String(text);
+  const citationPattern = /\[(\d+)\]/;
+  const linkedRuleKeysInText = new Set();
+  const parts = [];
+  let cursor = 0;
+  let safety = 0;
+
+  while (cursor < source.length && safety < 100) {
+    safety += 1;
+    const remaining = source.slice(cursor);
+    const candidates = [];
+    const citationMatch = remaining.match(citationPattern);
+
+    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+
+    articleLinkRules.forEach((rule) => {
+      const ruleKey = getArticleLinkRuleKey(rule);
+      if (!allowedRuleKeys?.has(ruleKey) || linkedRuleKeysInText.has(ruleKey)) return;
+      const keywordMatch = remaining.match(rule.pattern);
+      if (keywordMatch) candidates.push({ index: keywordMatch.index, text: keywordMatch[0], rule, ruleKey, type: "keyword" });
+    });
+
+    candidates.sort((a, b) => a.index - b.index || b.text.length - a.text.length);
+    if (!candidates.length) {
+      parts.push(remaining);
+      break;
+    }
+
+    const next = candidates[0];
+    const absoluteIndex = cursor + next.index;
+    if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
+
+    if (next.type === "citation") {
+      parts.push(
+        <button key={next.text + "-" + parts.length} type="button" onClick={() => onCitationClick?.(next.citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#8b43ba] underline decoration-[#d9bfe5] underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]" aria-label={"Open resource " + next.citationId}>
+          {next.text}
+        </button>
+      );
+    } else {
+      linkedRuleKeysInText.add(next.ruleKey);
+      parts.push(
+        <a key={next.text + "-" + parts.length} href={next.rule.href} className="font-black text-[#8b43ba] underline decoration-[#8b43ba]/35 underline-offset-2 transition hover:bg-[#faf0fc] hover:text-[#4c1d6b]">
+          {next.text}
+        </a>
+      );
+    }
+
+    cursor = absoluteIndex + next.text.length;
+  }
+
+  return parts.map((part, partIndex) => (
+    typeof part === "string" ? <React.Fragment key={part + "-" + partIndex}>{part}</React.Fragment> : part
+  ));
+}
+
+function ContentLine({ line, index, sectionIndex, onCitationClick, allowedRuleKeys }) {
+  const trimmed = line.trim();
+
+  if (!trimmed) return <div key={index} className="h-3" />;
+  if (sectionHeadings.has(trimmed) || duplicateHeroLines.has(trimmed)) return null;
+
+  if (/^\d+\.\s/.test(trimmed)) {
+    return (
+      <h3 key={index} id={slugify(trimmed)} className="mt-6 scroll-mt-28 text-[16px] font-black leading-7 text-[#21142d]">
+        <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} />
+      </h3>
+    );
+  }
+
+  if (trimmed.length < 82 && !trimmed.endsWith(".") && !trimmed.endsWith(",") && !trimmed.includes("|")) {
+    return (
+      <li key={index} className="flex gap-2 text-[13px] font-bold leading-6 text-[#51465a]">
+        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8b43ba]" />
+        <span><ArticleLinkedText text={trimmed.replace(/^([???])\s*/, "")} onCitationClick={onCitationClick} /></span>
+      </li>
+    );
+  }
+
+  return (
+    <p key={index} className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+      <ArticleLinkedText text={trimmed} onCitationClick={onCitationClick} allowedRuleKeys={allowedRuleKeys || paragraphLinkKeys.get(sectionIndex + "-" + index)} />
+    </p>
+  );
+}
+
+function ContentSection({ section, sectionIndex, onCitationClick }) {
+  const listLikeLines = section.lines.filter((line) => {
+    const trimmed = line.trim();
+    return trimmed && trimmed.length < 82;
+  }).length;
+  const visualImage = section.id === "the-gut-brain-connection" ? gutBrainImage : section.id === "common-digestive-symptoms-that-may-be-associated-with-stress" ? refluxImage : section.id === "the-neuro-ayurveda-development-system" ? neuroAyurvedaImage : section.id === "supporting-digestive-health-and-emotional-wellbeing" ? lifestyleImage : null;
+  const isGutBrainSection = section.id === "the-gut-brain-connection";
+  const isDigestiveSymptomsSection = section.id === "common-digestive-symptoms-that-may-be-associated-with-stress";
+  const isNeuroAyurvedaSection = section.id === "the-neuro-ayurveda-development-system";
+  const isDigestiveWellbeingSection = section.id === "supporting-digestive-health-and-emotional-wellbeing";
+  const visualImageHeight = isGutBrainSection ? "h-[460px] sm:h-[560px]" : isDigestiveSymptomsSection || isDigestiveWellbeingSection ? "h-[320px] sm:h-[380px]" : isNeuroAyurvedaSection ? "h-[180px] sm:h-[230px]" : "h-[220px]";
+  const visualImageFit = isNeuroAyurvedaSection ? "object-contain" : "object-cover";
+  const visualImageContainerWidth = isNeuroAyurvedaSection ? "mx-auto max-w-[720px]" : "";
+
+  return (
+    <section id={section.id} className="mt-9 scroll-mt-28">
+      {section.title !== "Introduction" && <h2 className="text-[20px] font-black text-[#17111f]">{section.title}</h2>}
+      {visualImage && (
+        <div className={`mt-5 overflow-hidden rounded-lg border border-[#f4e6fa] bg-[#faf0fc] shadow-[0_10px_28px_rgba(139,67,186,0.06)] ${visualImageContainerWidth}`}>
+          <img src={visualImage} alt={section.title} className={`${visualImageHeight} w-full ${visualImageFit} object-center`} loading="lazy" decoding="async" />
+        </div>
+      )}
+      <div className={listLikeLines >= 4 ? "mt-4 rounded-lg border border-[#f4e6fa] bg-white p-5 shadow-[0_8px_22px_rgba(139,67,186,0.04)]" : "mt-2"}>
+        {listLikeLines >= 4 ? (
+          <div className="space-y-2.5">
+            {section.lines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)}
+          </div>
+        ) : (
+          section.lines.map((line, index) => <ContentLine key={index} line={line} index={index} sectionIndex={sectionIndex} onCitationClick={onCitationClick} />)
+        )}
+      </div>
+    </section>
+  );
+}
+
+function KeyTakeawaysBlock() {
+  return (
+    <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
+      <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="p-6 sm:p-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#8b43ba]">Digestive Wellbeing</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
+          <ul className="mt-4 space-y-2.5">
+            {keyTakeawayLabels.map((item) => (
+              <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
+                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ec2b83]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-[#f3eadb] p-6 sm:p-8">
+          <h3 className="text-[16px] font-black leading-tight text-[#111827]">Want more content like this?</h3>
+          <p className="mt-3 text-[13px] font-semibold leading-6 text-[#111827]">
+            Join our mind-body health newsletter for stress, digestion and gut-brain wellbeing guidance.
+          </p>
+          <form className="mt-5 space-y-4">
+            <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
+            <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
+          </form>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">
+            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MedicalReferencesBlock() {
+  return (
+    <section id="medical-references" className="mt-5 scroll-mt-28 rounded-xl border border-[#f4e6fa] bg-white p-5 shadow-[0_12px_30px_rgba(58,31,90,0.06)]">
+      <h2 className="text-[20px] font-black text-[#17111f]">References</h2>
+      <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Medical, scientific and Ayurvedic resources used in the supplied content.</p>
+      <div className="mt-5 space-y-4">
+        {references.map((reference) => (
+          <article key={reference.n} id={"reference-" + reference.n} className="scroll-mt-32 rounded-lg border border-[#f4e6fa] bg-[#fcf9ff] p-4">
+            <p className="text-[13px] font-black leading-6 text-[#21142d]">[{reference.n}] {reference.title}</p>
+            {reference.note && <p className="mt-2 text-[12px] font-semibold leading-5 text-[#5f5367]">{reference.note}</p>}
+            {reference.url && <a href={reference.url} target="_blank" rel="noreferrer" className="mt-2 block break-words text-[12px] font-bold leading-5 text-[#8b43ba] underline underline-offset-2">{reference.url}</a>}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function StressDigestiveHealthIndiaPage() {
   const [activeSection, setActiveSection] = useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = useState(0);
+  const [showResources, setShowResources] = useState(false);
+
+  const handleCitationClick = React.useCallback((referenceNumber) => {
+    setShowResources(true);
+    window.setTimeout(() => {
+      const target = document.getElementById("reference-" + referenceNumber) || document.getElementById("medical-references");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, []);
 
   useEffect(() => {
     const fontId = "adhd-martel-font";
@@ -240,321 +521,11 @@ function StressDigestiveHealthIndiaPage() {
             </figure>
           </div>
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">Understanding Stress & Digestive Health</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The digestive system and the brain are connected through a network called the gut-brain axis. This means that how you feel emotionally and your digestive health are always affecting each other. A lot of people notice that when they are stressed, worried or feeling pressure they experience changes in their appetite, stomach discomfort, bloating or other digestive symptoms.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Sometimes you might feel discomfort when you are stressed but if it happens all the time you should not ignore it. Digestive problems can have causes, including medical conditions that need to be diagnosed and treated properly. Emotional stress can affect how you experience symptoms but it is not the only reason.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya we think it is important to understand the person, not just their digestive symptoms. We look at wellbeing, lifestyle, sleep, nutrition and the connection between the gut and the brain to help people understand their overall health.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Our team is led by Dr. Ankush Garg, a Mental Health Specialist and the Founder of Manovaidya. We use the Neuro-Ayurveda Development System, which's a framework that considers brain health, gut health, behavior and lifestyle together to support overall mind-body wellbeing.
-            </p>
-          </section>
+          <KeyTakeawaysBlock />
 
-          <section id="stress-connection" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Are Stress and Digestion Connected?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              The brain and digestive system are always talking to each other through nerves, hormones and immune pathways.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              When you are emotionally stressed your bodys stress response can affect your function. You might notice changes in your appetite, digestion or bowel habits when you are going through a time.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Similarly living with digestive discomfort can be a source of emotional stress creating a cycle where your physical and emotional wellbeing affect each other.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Understanding this connection helps explain why taking care of both wellbeing and digestive health is important for overall wellness.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Stress activates the bodys natural stress response, which prepares the body to deal with situations. When you are stressed for a time you might experience temporary changes in digestion as your body responds to the stress. If you are stressed for a time you might notice ongoing digestive discomfort. Researchers are still studying the relationship between emotional wellbeing and digestive health through the gut-brain axis, which describes the continuous communication between the brain and the digestive system.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              It is essential to understand that stress does not cause every condition. Digestive symptoms can have medical causes and should always be evaluated properly when they are persistent or severe.
-            </p>
-          </section>
-
-          <section id="gut-brain-connection" className="mt-9">
-             <div className="rounded-lg border border-[#f4e6fa] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(139,67,186,0.06)] sm:px-5 lg:flex lg:items-center lg:gap-7">
-               <div className="lg:max-w-[43%] lg:shrink-0">
-                  <h2 className="text-[17px] font-black leading-snug text-[#6a338e] sm:text-[18px]">
-                    The Gut-Brain Connection
-                  </h2>
-                  <p className="mt-3 text-[13px] font-semibold leading-6 text-[#3f3448] sm:text-[14px]">
-                    The digestive system has a network of nerves that talks to the brain all the time.
-                  </p>
-               </div>
-               <div className="mt-5 lg:mt-0 lg:flex-1">
-                 <img src={gutBrainImage} alt="Illustration of the gut-brain connection affecting digestive health" className="w-full rounded-lg h-[160px] object-cover" />
-               </div>
-             </div>
-             
-             <div className="mt-5 rounded-lg border border-[#f4e6fa] bg-[#faf0fc] p-5">
-               <h3 className="text-[15px] font-black text-[#21142d]">This connection can affect:</h3>
-               <ul className="mt-3 space-y-2.5 sm:columns-2">
-                 {["Appetite", "Digestion", "Bowel movements", "Sensitivity in the tract", "Emotional wellbeing", "Stress responses"].map((step) => (
-                   <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#8b43ba]" />
-                     {step}
-                   </li>
-                 ))}
-               </ul>
-             </div>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Similarly digestive health can also affect how you feel emotionally highlighting the relationship between physical and emotional wellbeing.
-             </p>
-          </section>
-
-          <section id="symptoms" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">Common Digestive Symptoms That May Be Associated With Stress</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Every individual experiences stress differently. Some people might notice changes like:
-             </p>
-             <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-2">
-                 {[
-                   "Bloating",
-                   "Indigestion",
-                   "Stomach discomfort",
-                   "Changes in appetite",
-                   "Feeling full quickly",
-                   "Changes in bowel habits",
-                   "Nausea during situations",
-                   "Increased abdominal discomfort"
-                 ].map((label) => (
-                   <div key={label} className="flex min-h-[76px] items-center gap-3 rounded-lg border border-[#f4e6fa] bg-white p-3 text-[13px] font-bold leading-5 text-[#51465a]">
-                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#faf0fc] text-[#8b43ba]">
-                       <Activity className="h-5 w-5" />
-                     </span>
-                     <span>{label}</span>
-                   </div>
-                 ))}
-             </div>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                These symptoms are not just caused by stress and can happen due to many medical conditions. If you have digestive symptoms you should always see a qualified healthcare professional.
-             </p>
-
-             <h3 className="mt-8 text-[18px] font-black text-[#17111f]">Who May Experience Stress-Related Symptoms?</h3>
-             <ul className="mt-4 space-y-2">
-                 {["Working professionals who are under chronic stress at work", "Students during exams", "People who are anxious", "Those who are taking care of someone term", "Individuals going through life changes", "People who are under emotional pressure", "Those with existing conditions who notice their symptoms getting worse when they are stressed"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Every individual's experience is different.
-             </p>
-          </section>
-          
-          <section className="mt-9">
-            <div className="flex flex-col lg:flex-row gap-6 items-center">
-              <div className="lg:w-1/2">
-                 <img src={refluxImage} alt="Digestive discomfort associated with stress and emotional wellbeing" className="rounded-lg shadow-md w-full h-[300px] object-cover" />
-              </div>
-              <div className="lg:w-1/2">
-                 <h2 className="text-[20px] font-black text-[#17111f]">Why Emotional Wellbeing Matters for Digestive Health</h2>
-                 <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-                   wellbeing can affect many everyday habits that support digestive health. For example ongoing stress can affect:
-                 </p>
-                 <ul className="mt-3 space-y-2">
-                   {["Eating patterns", "Sleep quality", "activity", "Hydration", "Daily routine", "Relaxation", "Overall quality of life"].map((step) => (
-                      <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                        <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                        {step}
-                      </li>
-                    ))}
-                 </ul>
-              </div>
-            </div>
-            
-            <div className="mt-5 bg-[#faf0fc] rounded-lg p-5">
-              <h3 className="text-[16px] font-black text-[#6a338e] mb-3">Signs You Should Not Ignore</h3>
-              <p className="text-[13px] font-bold text-[#51465a] mb-2">Sometimes you might experience digestive discomfort but if it happens all the time you should see a doctor. Do not ignore symptoms like:</p>
-              <ul className="space-y-1 sm:columns-2">
-                 {["Bloating that happens often", "Indigestion that does not go away", "Stomach acidity", "Discomfort in the stomach", "Abdominal cramps", "Changes in how you go to the bathroom", "Feeling full quickly", "Nausea that happens often"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-              </ul>
-              <p className="mt-3 text-[13px] font-bold text-[#51465a] mb-2">Some people with ongoing digestive issues may also notice:</p>
-              <ul className="space-y-1 sm:columns-2">
-                 {["Feeling stressed all the time", "Worrying about eating", "Getting irritated easily", "Not sleeping well", "Finding it hard to relax", "Life not being enjoyable"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#8b43ba] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-              </ul>
-              <p className="text-[12px] font-bold mt-3 text-[#51465a] italic">Both physical and emotional symptoms need to be checked by a doctor.</p>
-            </div>
-
-            <div className="mt-5 rounded-lg border border-[#f4e6fa] p-5 shadow-[0_8px_22px_rgba(139,67,186,0.04)]">
-               <h3 className="text-[16px] font-black text-[#21142d] mb-3">When Should You See a Doctor?</h3>
-               <p className="text-[13px] font-bold text-[#51465a] mb-3">Do not think digestive symptoms are because of stress. You should see a doctor away if you have:</p>
-               <ul className="space-y-2 sm:columns-2">
-                 {["Severe stomach pain", "Blood in your stool", "Blood in what you vomit", "Vomiting that does not stop", "Losing weight", "Trouble swallowing", "Fever with symptoms", "Symptoms that last for weeks", "Symptoms that get worse"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="text-[#8b43ba]">✔</span>
-                      {step}
-                    </li>
-                  ))}
-               </ul>
-               <p className="text-[12px] font-bold mt-3 text-[#51465a] italic">Seeing a doctor early can help find conditions and make sure you get the treatment.</p>
-            </div>
-          </section>
-          
-          <section id="assessment-process" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Our Mind-Body & Digestive Health Assessment Process</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Digestive symptoms can have many possible causes. Some are related to medical conditions, while emotional wellbeing, lifestyle habits, sleep and chronic stress may also influence how some individuals experience digestive discomfort. At Manovaidya, we believe in understanding the complete picture rather than focusing only on digestive symptoms. Our assessment process is designed to understand the relationship between digestive health, emotional wellbeing and lifestyle before recommending personalised guidance.
-            </p>
-            
-            <div className="mt-5 space-y-4">
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">1</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Health Concerns</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">Every consultation begins with listening carefully to your experiences. We discuss: Your digestive concerns, Emotional wellbeing, Stress levels, Eating habits, Sleep quality, Daily routine, Lifestyle habits, Medical history, and Previous investigations and treatments. Understanding your complete health journey helps us identify factors that may be influencing your overall wellbeing.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">2</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Comprehensive Mind-Body Assessment</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">Our structured assessment explores multiple areas that may influence digestive wellbeing. These include: Emotional stress, Lifestyle habits, Sleep quality, Digestive health, Energy levels, Work-life balance, Nutrition, Behavioural patterns, and Overall quality of life. This holistic assessment helps identify patterns that may contribute to both emotional and digestive wellbeing.</p>
-                 </div>
-              </div>
-              <div className="rounded-lg border border-[#f4e6fa] p-4 flex gap-4">
-                 <div className="flex-shrink-0 h-10 w-10 bg-[#8b43ba] rounded-full text-white flex items-center justify-center font-bold">3</div>
-                 <div>
-                    <h3 className="font-bold text-[#21142d]">Understanding Your Wellbeing Profile</h3>
-                    <p className="text-[13px] mt-1 text-[#51465a]">After the assessment, we explain our observations in a simple and practical manner. This includes: Emotional wellbeing profile, Lifestyle factors, Stress patterns, Digestive health observations, Areas requiring attention, Personalised recommendations, and Practical next steps. Our goal is to help individuals better understand the relationship between their emotional wellbeing and digestive health while encouraging informed healthcare decisions.</p>
-                 </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-system" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">The Neuro-Ayurveda Development System</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              At Manovaidya, digestive wellbeing is understood through the Neuro-Ayurveda Development System, a structured five-pillar framework that considers brain health, gut health, behaviour, lifestyle and emotional wellbeing together. Rather than focusing only on digestive symptoms, this approach helps us understand the broader relationship between emotional health and overall wellbeing.
-            </p>
-            
-            <div className="mt-5 space-y-4">
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Brain className="h-5 w-5"/> 1. Brain Nourishment System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Healthy brain function supports: Emotional regulation, Stress resilience, Mental clarity, Sleep quality, Decision-making, and Overall wellbeing. Supporting emotional health may help individuals build healthier responses to everyday stress.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Salad className="h-5 w-5"/> 2. Gut Response System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">The digestive system plays an important role in overall wellbeing. This pillar focuses on understanding: Digestive health, Nutrition, Healthy eating habits, Gut-brain communication, and Lifestyle factors influencing gut wellness.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Activity className="h-5 w-5"/> 3. Neural Network System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">The brain continuously adapts to experiences, learning and lifestyle habits. This pillar focuses on strengthening: Healthy thinking patterns, Emotional adaptability, Stress resilience, and Behavioural awareness.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><Waves className="h-5 w-5"/> 4. Sensory Integration System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Daily environmental factors may influence both emotional and physical wellbeing. This pillar considers: Sensory experiences, Environmental stress, Relaxation, Recovery, and Lifestyle balance.</p>
-              </div>
-              <div className="rounded-lg bg-[#faf0fc] p-5">
-                 <h3 className="font-bold text-[#6a338e] flex items-center gap-2"><CalendarCheck className="h-5 w-5"/> 5. Behaviour Guidance System</h3>
-                 <p className="mt-2 text-[13px] text-[#51465a]">Healthy daily habits support both emotional wellbeing and digestive wellness. This pillar focuses on: Stress management, Healthy routines, Sustainable lifestyle habits, Behavioural awareness, and Long-term wellbeing.</p>
-              </div>
-            </div>
-            
-            <div className="mt-6 flex h-[250px] w-full items-center justify-center rounded-lg shadow-md bg-[#faf0fc] border border-[#f4e6fa]">
-              <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for gut-brain and digestive health" className="h-[85%] w-auto object-contain" />
-            </div>
-          </section>
-
-          <section id="support-approach" className="mt-9">
-             <h2 className="text-[20px] font-black text-[#17111f]">How We Support Digestive Health</h2>
-             <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-               Every person's digestive health journey is different. At Manovaidya, our support is personalised according to the individual's emotional wellbeing, digestive concerns and lifestyle. Our goal is to help individuals better understand the connection between emotional wellbeing and digestive health while supporting healthier long-term habits.
-             </p>
-             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                 {["Mind-Body Health Assessment", "Digestive Wellbeing Assessment", "Emotional Wellbeing Guidance", "Lifestyle & Nutrition Education", "Stress Management Guidance", "Healthy Routine Planning", "Mind-Body Balance Support", "Progress Monitoring and Follow-Up"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[13px] font-bold text-[#51465a] p-3 border border-[#f4e6fa] rounded-md">
-                     <CheckCircle2 className="h-4 w-4 shrink-0 text-[#8b43ba]" />
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             
-             <div className="mt-6 flex flex-col md:flex-row gap-5 items-center bg-[#faf0fc] rounded-lg p-5">
-                <div className="md:w-1/3">
-                  <img src={lifestyleImage} alt="Healthy lifestyle habits supporting digestive health" className="rounded-md w-full" />
-                </div>
-                <div className="md:w-2/3">
-                  <h3 className="text-[16px] font-black text-[#6a338e]">Supporting Digestive Health and Emotional Wellbeing</h3>
-                  <p className="text-[13px] mt-2 text-[#51465a]">Taking care of your health means caring for your body and emotional wellbeing. Healthy habits that can help include:</p>
-                  <ul className="text-[13px] mt-2 space-y-1 font-semibold text-[#51465a]">
-                    <li>• Eating meals that're balanced and drinking water every day</li>
-                    <li>• Being physically active regularly and getting sleep</li>
-                    <li>• Managing stress every day, not smoking and limiting alcohol</li>
-                    <li>• Taking medications as told and following advice for diagnosed digestive conditions</li>
-                  </ul>
-                  <p className="text-[12px] mt-2 italic text-[#51465a]">Making changes that you can stick to can help you be healthier in the long run.</p>
-                </div>
-             </div>
-             
-             <div className="mt-6">
-                <h3 className="text-[18px] font-black text-[#17111f]">Looking Beyond Symptoms</h3>
-                <p className="text-[14px] font-semibold leading-7 text-[#51465a] mt-2">Discomfort is not, about your stomach. How you feel emotionally sleep, food, lifestyle habits and medical conditions you already have can all affect your symptoms. At Manovaidya we believe in understanding the person, not symptoms. By considering both physical wellbeing together you can develop healthier long-term habits that support your overall quality of life.</p>
-             </div>
-          </section>
-          
-          <section id="why-choose-us" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why People Across India Choose Manovaidya</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Individuals and families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and across India consult Manovaidya to better understand the relationship between stress, digestive health and the gut-brain connection through structured assessments and personalised guidance.
-            </p>
-            <ul className="mt-4 space-y-2">
-                 {["Comprehensive Mind-Body Health Assessments", "Gut-Brain Axis Understanding", "Neuro-Ayurveda Development System", "Lifestyle & Stress Management Guidance", "Holistic Emotional Wellbeing Support", "Online & In-Clinic Consultations", "Personalised Long-Term Wellness Approach"].map((label) => (
-                   <li key={label} className="flex gap-2 text-[14px] font-bold text-[#51465a]">
-                     <span className="text-[#8b43ba]">✔</span>
-                     {label}
-                   </li>
-                 ))}
-             </ul>
-             <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                Our goal is to help individuals better understand how emotional wellbeing, digestive health and lifestyle work together to support overall wellness.
-             </p>
-          </section>
-          
-          <section id="about-dr-ankush-garg" className="mt-9">
-            <div className="rounded-lg bg-[#faf0fc] p-6 lg:flex lg:items-center lg:gap-8">
-              <div className="mb-6 lg:mb-0 lg:w-[220px] lg:shrink-0">
-                <div className="overflow-hidden rounded-lg bg-white p-2 shadow-sm">
-                  <img src={doctorImage} alt="Dr. Ankush Garg" className="h-[200px] w-full object-cover rounded-md" />
-                </div>
-              </div>
-              <div className="lg:flex-1">
-                <h2 className="text-[20px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="text-[14px] font-bold text-[#8b43ba] mt-1">Mental Health Specialist & Founder of Manovaidya</p>
-                
-                <div className="mt-4 space-y-3 text-[13.5px] font-semibold leading-relaxed text-[#51465a]">
-                  <p>
-                    Dr. Ankush Garg is the Founder of Manovaidya and the developer of the Neuro-Ayurveda Development System. His work focuses on understanding the relationship between emotional wellbeing, gut health, brain health and lifestyle while helping individuals experiencing stress-related digestive concerns and other mind-body health challenges.
-                  </p>
-                  <p>
-                    Through structured assessments, personalised guidance and continuous follow-up, Dr. Ankush Garg helps individuals better understand the gut-brain connection and develop healthier long-term lifestyle habits.
-                  </p>
-                  <p>
-                    Based in Delhi NCR, he provides Mind-Body and Digestive Health Assessments for individuals across India through both online and in-clinic appointments, helping individuals understand the relationship between emotional wellbeing, gut health and overall wellness through the Neuro-Ayurveda Development System.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          {articleSections.map((section, sectionIndex) => (
+            <ContentSection key={section.id + section.title} section={section} sectionIndex={sectionIndex} onCitationClick={handleCitationClick} />
+          ))}
 
           <section id="faqs" className="mt-10">
             <div className="mb-6 flex items-center justify-between">
@@ -562,17 +533,17 @@ function StressDigestiveHealthIndiaPage() {
             </div>
             <div className="grid gap-3">
               {faqs.map((faq, index) => (
-                <div key={index} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
+                <div key={faq.question} className="overflow-hidden rounded-lg border border-[#f4e6fa] bg-white transition hover:border-[#8b43ba]">
                   <button onClick={() => setOpenFaq(openFaq === index ? -1 : index)} className="flex w-full items-center justify-between p-4 text-left sm:px-5">
                     <span className="pr-4 text-[14px] font-bold leading-snug text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors ${openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]"}`}>
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${openFaq === index ? "rotate-180" : ""}`} strokeWidth={2.5} />
+                    <span className={"flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-colors " + (openFaq === index ? "bg-[#8b43ba] text-white" : "bg-[#faf0fc] text-[#8b43ba]")}>
+                      <ChevronDown className={"h-4 w-4 transition-transform duration-300 " + (openFaq === index ? "rotate-180" : "")} strokeWidth={2.5} />
                     </span>
                   </button>
-                  <div className={`grid transition-all duration-300 ease-in-out ${openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                  <div className={"grid transition-all duration-300 ease-in-out " + (openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}>
                     <div className="overflow-hidden">
                       <div className="border-t border-[#f4e6fa] px-4 pb-4 pt-3 text-[13px] font-medium leading-[1.6] text-[#51465a] sm:px-5">
-                        {faq.answer}
+                        <ArticleLinkedText text={faq.answer} onCitationClick={handleCitationClick} allowedRuleKeys={paragraphLinkKeys.get("faq-" + index)} />
                       </div>
                     </div>
                   </div>
@@ -580,6 +551,15 @@ function StressDigestiveHealthIndiaPage() {
               ))}
             </div>
           </section>
+
+          <div className="mt-8">
+            <button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#8b43ba] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#8b43ba]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references">
+              <BookOpen className="h-4 w-4" />
+              Resources
+              <ChevronDown className={"h-4 w-4 transition " + (showResources ? "rotate-180" : "")} />
+            </button>
+            {showResources && <MedicalReferencesBlock />}
+          </div>
 
           <section id="book-assessment" className="mt-10 mb-8">
             <div className="overflow-hidden rounded-xl bg-gradient-to-br from-[#6a338e] to-[#8b43ba] text-white shadow-lg">
@@ -609,6 +589,22 @@ function StressDigestiveHealthIndiaPage() {
         </article>
 
         <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
+            <a href="/about/doctor" className="flex items-start gap-3">
+              <img src={doctorImage} alt="Dr Ankush Garg Manovaidya mind-body digestive health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
+              <div>
+                <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Mind-Body Health, Digestive Wellbeing, Stress and Mental Health</p>
+                <p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p>
+              </div>
+            </a>
+            <div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Salad className="h-5 w-5" /></span>
+              <p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p>
+            </div>
+          </SidebarCard>
+
           <SidebarCard>
             <h2 className="text-[15px] font-black text-[#21142d]">Search</h2>
             <label className="mt-4 flex h-11 items-center rounded-lg border border-[#f4e6fa] bg-[#faf0fc] px-3">
@@ -687,4 +683,3 @@ function StressDigestiveHealthIndiaPage() {
 }
 
 export default StressDigestiveHealthIndiaPage;
-
