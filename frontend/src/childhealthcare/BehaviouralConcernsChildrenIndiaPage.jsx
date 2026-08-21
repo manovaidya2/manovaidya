@@ -19,305 +19,450 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
-const rawArticleContent = String.raw`https://manovaidya.org/behavioural-concerns-children-india
+const rawArticleContent = String.raw`Key Takeaways
+Understanding Behavioural Concerns in Children
+Common Signs of Behavioural Challenges
+Tantrums, Anger & Emotional Outbursts
+Aggression, Stubbornness & Defiance
+Understanding Behaviour Beyond Visible Actions
+Causes and Triggers of Behavioural Concerns
+Behavioural Assessment & Developmental Understanding
+Connection with Communication, ADHD & Autism
+Emotional Regulation & Behaviour Support
+Neuro-Ayurveda Development System
+Parent Guidance & Home Support Strategies
+Manovaidya Assessment & Support Process
+Personalized Development & Progress Planning
+FAQs About Behavioural Concerns in Children
 
-Child Behaviour Assessment, Parent Guidance & Developmental Support
-Behavioural Concerns in Children Support in India
-Highlights
-Understanding Child Behavioural Development
-Common Behavioural Concerns in Children
-Understanding What Behaviour Really Reveals
-Our Behavioural Assessment Process at Manovaidya
-The Neuro-Ayurveda Development Approach Explained
-Supporting Children with Behavioural Challenges
-Parent Guidance and Family Support
-Our Holistic Approach at Manovaidya
-Why Families Trust Manovaidya
-Meet Dr. Ankush Garg
-Frequently Asked Questions About Care
-Book Your Childâ€™s Consultation Today
- Introduction
-All children will have a variety of emotions and frustrations and behaviour difficulties which will occur as they develop and grow. But, once these behaviours are happening on a regular basis, they become stronger and more problematic and parents begin seeking answers, direction, and assistance. Changes and developments that happen in a child's life are normal but if they continue to have problems, information and help from professionals can be helpful. [1][2]
-When families observe a pattern of tantrums, anger, aggression, emotional outbursts, stubborn behaviour, inability to follow instructions, and/or emotional regulation difficulties, they seek help.
-Manovaidya's approach to understanding behavioural issues is not a narrow lens on a difficulty, but rather a broad developmental assessment lens. Communication skills, emotional control, development readiness, attention, learning style, sensory experiences, and wellbeing can all affect behaviour. [2][3]
-With Dr. Ankush Garg as the Neuro-Ayurveda Autism, ADHD, Child Development support & Mental Health Specialist from India, Manovaidya adopts a systematic approach to guide families to grasp the behavioral challenges and develop a comprehensive strategy for growth and development over the long term.
-Parents seeking Child Behaviour Support in India, Behavioural Assessment, Behavioural Concerns in Children or Child Development support often seek more than just quick fixes. They seek clarity, understanding and a structured approach that will enable them to support their child more effectively.
-What are Behavioural Concerns in Children?
-Behavioural difficulties are behaviour patterns which can pose a difficulty to a child's learning, their relationships, emotional wellbeing and/or their daily life. These behaviors can range in intensity and sometimes they can be a sign of developmental, emotional, communication problems. [1][4]
-All children can get angry, frustrated or sad at times. If these behaviour patterns become regular, more difficult to control, or interfere with daily activities, however, parents might seek outside assistance from professionals.
-Behaviour must not just be a problem to fix. Children can express their needs, feelings, frustrations or difficulties by their behaviour sometimes. If there is an understanding of what brings about the behaviour, then families can select the strategies that support healthy emotional and developmental growth. [3][12]
-Knowing the factors that contribute to behaviour can assist families to respond appropriately and to foster long-term development.
-What are the Common Behavioural Concerns in Children?
-Parents might come in for support regarding a range of issues, including:
+
+Content area: Behavioural Concerns in Children Support in India.
+
+
+Assessing, guiding and supporting children's behaviour.
+
+
+All children get excited, frustrated, and have behaviour issues as they are growing and learning. When behaviours become regular, strong and interfere with life, however, parents begin to look for answers, direction and help. [1][7]
+
+When families notice that their child is displaying frequent tantrums, anger, aggression, emotional outbursts, stubborn behaviour, is having difficulty following instructions and/or struggling with emotional regulation, they seek help. Both children and parents can suffer stress from these behaviours and they can impact on a child's learning, social interaction and family relationships. [1][5]
+
+At Manovaidya the concerns of behavior are seen from a wider developmental perspective and not as discrete behaviours. Communication skills, emotional control, developmental readiness, attention, learning style, sensory experiences and overall wellbeing can all have an impact on behaviour. [3][7]
+
+Under the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya has designed a structured Neuro-Ayurveda Development System to help families understand their behavioural challenges, and develop a clear roadmap for long term growth and development.
+
+When it comes to Child Behaviour Support, Behavioural Assessment, Behavioural Concerns in Children or Child Development Guidance, families are looking for more than just a quick-fix solution. They require clarity, understanding and a clear direction to help them to support their child more effectively.
+
+
+________________________________________
+What are the Behavioural Concerns in Children?
+
+Behavioural concerns are related to patterns of behaviour that could impact a child's learning, relationships, emotional wellbeing, and/or daily functioning. [5][7]
+
+All children may get angry, frustrated or emotional at times. But, with persistent behaviours that are hard to manage and are interfering with life, parents start to look for professional advice. [1][7]
+
+Behaviour is not a problem to be fixed. Sometimes, behaviour serves as a means for children to express their needs, frustrations, feelings or developmental difficulties. [3]
+
+
+Knowing more about the reasons for a behaviour can often enable families to respond more appropriately and support long term development.
+
+
+________________________________________
+Routine Behavioural Concerns in Children
+
+
+Parents can ask for help with any of a range of behaviours, such as:
+
+
 Frequent Tantrums
-Child may experience more frequent and/or more intense than expected emotional outbursts for their age. These tantrums may occur when they feel frustrated, overwhelmed, or have difficulty expressing their needs.
+
+Over time, a child has more frequent and more severe outbursts of feelings than are normal. [1]
+
 Anger & Irritability
-A child might have trouble calming down, might get angry or irritated easily. This is sometimes the case when there is a change in routine or a small situation.
+
+
+Troubles with frustration, easily angered or has strong emotional reactions. [7]
+
+
 Aggressive Behaviour
-Child may act out due to frustration by hitting, pushing, biting, kicking or throwing things. These behaviours may sometimes be a way of communicating feelings, a form of communication or when overwhelmed.
+
+Using aggression or force in difficult situations such as hitting, pushing, throwing objects etc. [1][5]
+
 Stubbornness & Defiance
-The child might often refuse to listen to instructions, object to routines, argue with parents or get upset when asked to do something. In some cases such behaviour may be related to frustration, emotional management or developmental difficulties and not to deliberate disobedience.
+
+A lack of compliance with instructions or oppositional behaviour. [5]
+
 Emotional Outbursts
-The child might suddenly cry, shout, become upset or strongly react to what other people consider minor situations. May have trouble controlling or communicating feelings appropriately and calmly.
+
+
+Sudden, seemingly out-of-control emotional outbursts. [7]
+
 Social Behaviour Challenges
-The child might struggle to communicate with peers, brothers and sisters, teachers or family. They may not know how to take turns, share, understand social situations and/or communicate effectively in interactions.
+
+Inability to relate appropriately with peers, siblings or family members.
+
+
 Behavioural Difficulties in School
-The child may struggle to participate in class, to be interested in class activities, to control emotions, or to interact positively with teachers and other students in class. These challenges can impact learning as well as participation in learning activities in school.
-What does behaviour reveal beyond what people do?
-One simple error people make is to only consider what they can see when assessing behaviour. Actually, behaviour is a form of communication, and when a child is not able to communicate verbally, he or she may be communicating through behaviour. When the family grasps the underlying reasons behind the behavior, it is easier for them to act with clarity, patience and confidence instead of just looking at the actions. [1][3]
-Communication Challenges
-Language may be one of the ways which some children struggle to give expression to needs, thoughts, feelings or frustrations. This can lead to some behaviours being exhibited to express what they are thinking or feeling, like crying, tantrum behaviour, withdrawal or aggression. [7]
-Emotional Self-Regulation Difficulties
-Children have yet to develop the ability to identify, understand and regulate their emotions. Issues with emotional control can result in explosive temper, outbursts or frustration, or inability to calm down after stressful incidents. [3][12]
 
-Focus Challenges
-It can be difficult for some children to pay attention, finish tasks, or participate in daily activities. Sometimes poor attention can impact on behaviours at home, school and socially. [5]
-Sensory Processing Issues
-Some children may react differently to sounds, lights, touch, movement, smells or tight spaces. Occasionally, the sensory experiences that are overwhelming or uncomfortable lead to emotional distress and/or behavioural reactions. [8]
-Learning Challenges
-If children have learning difficulties, they can get frustrated when tasks are difficult or confusing. This frustration can impact their confidence, motivation, involvement in class, and conduct in class. [2][11]
-Developmental Progress
-All children develop at their own rate and the differences in their development may impact the way that they think, communicate, learn and behave. Through knowledge of a child's developmental stage, families can have realistic expectations and offer the support that is necessary for this child. [2][3]
-Environmental Factors
-The environment, daily routines, family dynamics, school environment and life changes can also affect the behaviour of a child. Children may feel more secure in a predictable and supportive environment, and be better equipped to regulate their behaviour. [3][12]
-Social Communication Difficulties
-Some children may struggle to recognise social situations, social cues, or may not have a good sense of comfort interacting with others. The problems may relate to friendship, to involvement in the classroom and to the normal interactions with family members and peers. [6][9]
-There is seldom any single cause of behaviour. But it is more often the product of multiple communication, emotional, developmental, learning, sensory, environmental, and social factors. Knowing about these underlying factors enables families to support children better. [1][3]
-Behaviour is considered a facet of the child's development, and not a problem by itself at Manovaidya. The Neuro-Ayurveda Development System and Child Development Assessment ensures the child's individual strengths, developmental needs and behavioural patterns are understood, which is used to guide towards long term growth and wellbeing. [13][14][15][16]
-How is a Behavioural Assessment conducted at Manovaidya?
-All children have their own thoughts, feelings, learnings and behaviours.
-It is our focus at Manovaidya to understand the child and not a behaviour. An effort is made to identify the child's strengths, challenges and individual needs. A detailed developmental evaluation enables identification of factors that can affect behaviour, learning, communication and emotional well-being. [1][2]
-The child development assessment process can be comprised of the following:
-Growth and Development History
-We know the child's developmental pathway, their early achievements, behaviours, learning issues and what parents notice. This enables the Manavaidya team to see what may have an impact on the child's current behaviour and guide them in their developmental planning.
-Early growth achievements
-Behavioural characteristics
-Parental observations
-Academic concerns
-Behavioural Awareness
-We observe how the child reacts to various situations, routines, transitions and daily activities. By grasping these behavioral patterns, Manovaidya can determine potential causes and offer families practical behaviour management techniques.
-Emotional Management
-We evaluate the child's understanding, expression and regulation of feelings in various situations. These observations are used to guide Manovaidya towards providing personalised guidance to helping families support healthy emotional regulation and emotional wellbeing. [3][12]
-Social Skills Development
-Knowledge of child's relationship with parents, siblings, peers, teachers and others in everyday life. This assists in determining whether there are any further skills that can be developed through social interaction, confidence and relationship building which may benefit.
-Communication Skills
-We evaluate the way the child expresses their needs, thoughts, feelings and ideas, verbally and/or non verbally. Manovaidya is able to recommend appropriate communication support that will assist you with your developmental needs when communicating in your daily life by understanding your communication strengths and challenges. [7]
-Focus and Attention Patterns
-We see how well the child can focus and finish tasks, listen to instructions and participate in activities. These observations are used to plan for learning, behaviour and everyday functioning, and to help identify attention related challenges. [5]
-Learning Behaviours
-We know how the child learns, how the child manages problems, how the child adapts to new situations and how the child responds to different learning settings. This helps families to understand the child's learning style and developmental needs.
-Family Viewpoint
-Parents are everyone's best source of information about their child. The experiences, concerns, expectations and observations of the family are carefully understood to make sure that the guidance plan is meaningful, practical and is appropriate to the child's daily life.
-Parent Observations
-Parents tend to observe changes in behavior in various settings like at school, at home, or socially. The observations contribute to Manovaidya developing a comprehensive picture of the child's behaviour and developmental requirements.
-Behaviour Pattern Difficulties
-We recognise contexts, contexts or triggers in which behavioural issues are likely to arise more frequently. These patterns can help families to identify potential explanations for behaviours and to be more responsive.
-Family Priorities
-Every family expresses concerns and has goals for their kid. We have a close working relationship with parents to listen to what is important to them and put together individual guidance that reflects this.
-Long-Term Goals
-Behavioral support is not just about â€˜managing behaviour today' but is also about â€˜promoting development over time'. Manovaidya develops systematic developmental guidance for the family to support the child's communication, learning, emotional well being, behavior and growth in the long term.
-The aim is to support families to gain insight into their child's behaviour, strengths and needs. From the assessment results, Manovaidya offers individual guidance using the Neuro-Ayurveda Development System and helps the family to make decisions and to confidently support the long-term growth and development of their child. [1][3][13][14]
-Child Behaviour Support in India
-There is a need for many families in India for Child Behaviour Support techniques because they need practical tips to gain understanding and control over their child's behaviour. An understanding of factors that shape behaviour enables families to provide more than just focus on the behaviour.meaningful and long-term support.
-In most cases a number of factors contribute to behavioural concerns. Many factors can affect a child's behaviour, including developmental, emotional, communication, learning, sensory, social and environmental. Recognising these factors assists in developing personalised support strategies which are suitable to the needs of the child. [1][3]
-At Manovaidya, child behaviour support is about recognising and understanding:
-Behavioural Cues
-We look for behaviour patterns, potential triggers and times when problem behaviour is more likely to happen. This assists families to comprehend the reason behind behaviours and how to respond more effectively.
-Communication Habits
-Evaluate the ability of the child to express needs, feelings and ideas verbally and non-verbally. Communication patterns can help inform strategies to enhance every day interactions. [7]
-Emotional Reactions and Feelings.
-We know how the child feels, expresses and regulates feelings in various contexts. From these observations families receive guidance to support emotional regulation and emotional wellbeing. [3][12]
-Developmental Factors
-We assess developmental abilities and areas that could affect behaviour, learning, communication and social participation. It assists in the development of individual plans for learning support. [2]
-Learning Barriers
-Identify learning patterns and difficulties that could impact behaviour, confidence, participation in daily activities. A knowledge of these barriers can assist families to support learning.
-Family Support for Child Development
-Parents are key to children's progress. Manovaidya gives parents practical information about their children and how they manage their behaviour â€“ and how families can support their child's development â€“ which can be applied at home with confidence. [11][12]
-This holistic grasp enables families to develop a more structured, supportive, and positive environment that fosters healthy behaviour, emotional well-being, and long-term development.
- What is the Neuro-Ayurveda Development System?
-At Manovaidya, the behavioural support is based on the Neuro-Ayurveda Development System, which has been crafted by Dr. Ankush Garg. This does not just involve behaviour management and aims to gain an understanding of the child's development as a whole and what might affect behaviour, communication, learning and emotional wellbeing.
-The five pillars in this system support a child's more holistic understanding of development needs.
+
+Difficulties doing things the way the teacher wants them to be done, in school settings, doing things in an activity they do not want to do, or reacting to emotions in a way they do not want to. [5]
+
+
+
+How to understand behaviour that isn't an action.
+
+
+Common fallacy is that the behaviour should only be judged according to what it can be seen.
+
+
+But, in actuality, behaviour is typically shaped by a variety of developmental factors.
+
+The behaviour of a child may be related to:
+
+
+•	Communication difficulties
+•	Emotional regulation challenges
+Attention and concentration issues
+•	Sensory processing differences
+•	Learning difficulties
+•	Developmental readiness
+•	Environmental influences
+•	Social interaction challenges
+
+At Manovaidya, behaviour is seen as a component of the child's developmental profile and not an isolated problem. [3][7]
+
+
+This wider awareness can assist families to discover significant methods to foster behavioural growth and emotional well being.
+
+________________________________________
+Behavioural Assessment at Manovaidya
+
+Each child is different and has his/her own behaviour profile.
+
+At Manovaidya assessment is not just about behaviour, it's about the child.
+
+The assessment procedure may be:
+
+
+Developmental History
+
+
+•	Early developmental milestones
+•	Behaviour patterns
+•	Family observations
+•	School-related concerns
+
+Behavioural Understanding
+
+
+•	Emotional regulation
+•	Social interaction
+•	Communication abilities
+•	Attention profile
+•	Learning patterns
+
+Family Perspective
+
+
+•	Parent concerns
+•	Daily behavioural challenges
+•	Family goals
+•	Long-term developmental priorities
+
+
+To support families to understand behavioural trends, strengths and supports. [3][5]
+
+
+________________________________________
+Child Behaviour Support in India | Sona College of Management, Arunachal Pradesh, India
+
+
+When it comes to Child Behaviour Support in India, there are many families seeking advice that is practical and beneficial in understanding and handling behavioral issues.
+
+
+Very few times are behavioural concerns solely due to one factor. Rather, behaviour is more likely to be a mixture of developmental, emotional, social and environmental factors. [5][7]
+
+Support is all about understanding:
+
+
+•	Behaviour triggers
+•	Communication patterns
+•	Emotional responses
+•	Developmental influences
+•	Learning challenges
+•	Family interactions
+
+Such information enables families to better promote behaviour development within their structured and supportive environment. [3][10]
+
+
+________________________________________
+The Neuro-Ayurveda Development System
+
+Behavioural support is done according to the Neuro-Ayurveda Development System by Dr. Ankush Garg at Manovaidya.
+
+The system is based on five interlinked pillars:
+
 Brain Nourishment System
-This pillar aims to support healthy brain development, appreciating developmental, emotional, behavioural and cognitive aspects. It aids in the identification of factors which may have an impact on attention, learning, behaviour and emotional wellbeing.
-Gut Response System
-Overall health and development are intricately linked to internal health. The theme of this pillar is to encourage healthy growth and developmental wellbeing based on Ayurvedic principles. [13][14]
-Neural Network System
-This pillar is designed to increase understanding of how the child learns, processes information, communicates and responds to daily experiences. It can help to identify development strengths and those areas that might need some guidance.
-Sensory Integration System
-Certain children are sensitive to sensory input, including sound, touch, movement, light or texture. This pillar is useful for identifying sensory factors that might affect behaviour, learning, emotional regulation and daily activities. [8]
-Behaviour Guidance System
-Behaviours are seen in the context of the child's development rather than as a standalone issue. This pillar aims to enable families to notice patterns of behaviour, understand the potential triggers, and apply practical strategies to promote positive behaviours.
-These five pillars make a complete picture of how children develop and how to offer them personalised guidance for their future growth and wellbeing. The Neuro-Ayurveda Development System combines the knowledge of child development with classical Ayurvedic principles to help treat children in a holistic and family-centred way. [13][14][15][16]
-How We Help Children with Behavioural Challenges
-At Manovaidya, we feel that before tackling the behaviour it is essential to have an understanding of the child. Support is individualised rather than being one size fits all because each child has individual strengths, needs and challenges.
-Our support is on helping you with:
-Behaviour Analysis
-Identifying behaviour patterns, potential triggers and contexts that affect the child's responses will lead to practical strategies to support behaviour.
-Emotional Management Support
-Supporting children's emotional regulation to build healthy coping and learning how parents can respond to emotional challenges. [3][12]
-Parental Guidance
-Giving families individual advice, strategies and assurance in real-life situations to help their child's behaviour.
-Effective Communication
-Encourage children to develop their communication skills to better express their needs, thoughts and emotions. [7]
-Growth Planning
-Developing structured developmental objectives in line with abilities and future developmental needs of the child.
-Progress Monitoring
-To carefully monitor the child's development and adjust guidance when necessary due to their development and feedback from families. [1][3]
-Family Support for Child Development
-Collaborating closely with families to ensure the family is active collaborators in the child's developmental process and future progression.
-Long-Term Developmental Growth Plan
-Creating individual guidance to help reinforce behaviour, communication, learning, emotional wellbeing and development over time.
-Each child is provided with individual guidance according to their behaviour, developmental needs, concerns within the family and long term goals. Manovaidya's holistic assessment and family-centred support empowers families to grasp their child's needs and take confident steps toward positive development and growth. [2][11][12]
-How do we provide Parent Guidance & Family Support?
-Parents, siblings and the entire family can be affected by behavioural difficulties. In terms of behavioural support, parent guidance is a fundamental component at Manovaidya, as the primary influence in a child's day to day development.
-Families are guided on:
-Understanding Behaviour
-Aiding parents to understand the motivation behind behaviour rather than just the actions.
-Managing Behaviour Effectively
-Offering hands-on skills that families can implement at home on a regular basis to support positive actions.
-Improving Communication
-Supporting parents to foster increased parental communication and emotional expression. [7]
-Supporting Emotional Control
-Support families to remain calm and consistent during emotional situations and to teach children skills to regulate their emotions. [3][12]
-Taking part in their child's progress
-Inviting parents to be active partners in their child's developmental journey by regular observations and continued support.
-Planning for the Future
-Assisting families to establish realistic developmental goals and strategies that will continue to foster the child's development over time.
-The aim is to support families to feel informed, confident and actively involved in supporting their child's development. There is evidence that parent engagement and regular family support are important factors in achieving positive outcomes in behaviour and development. [3][11][12]
-How We Work at Manovaidya
-Step 1: Assessment
-Getting to know your child by taking a detailed Child Development Assessment, covering behaviour, developmental history, communication, emotions, learning styles and family issues.
-Step 2: Understanding
-Recognising the developmental, behaviour, communication, sensory, emotional and learning issues that could be impacting the child's behaviour.
-Step 3: Personalised Guidance Plan
-Creating a personalized plan that takes into account the child's strengths, problems, developmental needs and family priorities
-Step 4: Parent Guidanc
-Educating and empowering parents to implement strategies and confidently use them in their daily lives.
-Step 5: Progress Tracking
-On-going evaluation of child development and adjustment of guidance as child's needs change.
-A good understanding of each child's developmental history, behaviour patterns, communication, emotional well-being and family issues forms the basis of support for each child. A detailed evaluation can highlight the factors that are affecting a child's behaviour and development, which then enables personalised guidance to be given based on their individual needs. [1][2]
-These findings inform families a developmental roadmap which provides structure for behaviour, communication, emotional wellbeing, learning and overall development.
-To understand the child from a variety of developmental perspectives, Manovaidya does not adopt a one-size-fits-all approach, but makes use of the Neuro-Ayurveda Development System. This comprehensive strategy integrates developmental knowledge and Ayurvedic principles, offering comprehensive and tailored assistance for sustainable development and wellbeing. [13][14][15]
-The whole process is on child development assessment, individual guidance, regular progress monitoring and support for families for children to achieve their developmental potential. [3][11][12]
-Why Families Choose Manovaidya
-Manovaidya is preferred by families from Delhi, Noida, Greater Noida, Ghaziabad, NCR as well as other parts of India, due to its holistic and personalized perspective on comprehending behavioral issues and kid growth.
-Parents have faith in Manovaidya because:
-Complete Child Development Evaluation
-Personalised Behavioural Assessment
-Neuro-Ayurveda Development System by Dr. Ankush Garg
-Individually Designed Behaviour Support Plans
-Parent Guidance and Family Support.
-Long-Term Development Planning
-The holistic approach to behaviour, communication, learning, emotions and overall development
-Personalised developmental guidance and Continuous Progress Monitoring
-The aim at Manovaidya is not just to control behaviour but to help each family to understand the child better, gain confidence and ensure their child's future development through individual and family prioritised care.
-About Dr. Ankush Garg
-Autism, ADHD, Child Development Expert & Mental Health Specialist in India.
-Dr. Ankush Garg is the Founder of Manovaidya and the Creator of Neuro-Ayurveda Development System.
-He is able to work with children, young people, adults and families who are experiencing problems with Autism Spectrum Disorder (ASD), ADHD, child development, speech and communication, behaviour, learning and mental health issues and with women's emotional health and mental health in older people.
-He is able to help families understand their child's or loved one's needs through detailed assessments of the child's development, and the right next steps to take and do with confidence through family-focused support. There is a general consensus that components of developmental and behavioural support should include: individual assessment, family involvement and ongoing guidance. [1][3][11]
-Frequently Asked Questions (FAQs)
-What are behavioural concerns in children?
-Behavioural concerns in a child are behaviours that impact the child's daily life, learning, relationships or emotional wellbeing. This can be characterised by frequent tantrums, anger, aggression, defiant behavior, emotional outbursts, not being able to follow instructions or having trouble controlling their emotions. At Manovaidya, we see beyond the behaviour to understand how the child develops and give appropriate help to families. [1][4]
-What are the common signs of behavioural problems in children?
-Behavioural problems can manifest in many ways, such as being prone to anger, experiencing emotional outbursts, being aggressive, being stubborn, failing to follow instructions, being impulsive, and having problems with emotional control and conflict with others. Each child is unique and the factors contributing to these behaviours can be understood and assist families to provide the appropriate support. [1][2]
-Why does my child get angry so easily?
-There are numerous reasons that may cause children to become easily angered, such as: poor expression of emotions, poor communications, frustration, attention difficulty, developmental differences, etc. Anger may often be a symptom that a child is having difficulty expressing their needs. Knowing the cause can help families provide the proper support and encourage healthy emotional development. [3][7]
-Why does my child throw tantrums frequently?
-When children experience large emotions such as frustration, sadness or feeling overwhelmed, they are likely to express them in a tantrum. Young children are still in the process of development to communicate and regulate their emotions. Tiredness, hunger or changes in routine or sensory processing can also cause tantrums. It helps more to understand what is causing the behavior and act calmly than just to try to stop it. [3][8][12]
-Is aggressive behaviour normal in children?
-A certain amount of aggression is normal, as kids grow to deal with feelings and with people. Persistent and/or frequent aggression is related to communication, emotional control, frustration, or developmental problems. A child development assessment can help to determine the cause and inform the appropriate support. [1][4]
-What causes behavioural concerns in children?
-Emotions, communication, learning, sensory needs, routines, family stress or developmental differences may impact children's behaviour. So knowing the cause is important to give the right support and to encourage healthy development. [2][3]
-Can behaviour problems be linked to communication difficulties?
-Yes. Sometimes difficulties in communication may cause difficulties in behaviour. If children are unable to communicate their needs and feelings, they may express their frustration in these ways: through tantrums, anger, or withdrawal. A child development evaluation may be useful to determine the source of the problem and provide the necessary support. [7]
-Can ADHD cause behavioural challenges?
-Yes. Children with ADHD may exhibit some of the following behaviours: impulsivity, frustration, outbursts, inattention to instructions or adapting to routines. But all children are individual. Knowing about these behaviours will enable families to offer the resources that are needed by the child. [5][10]
-Can autism affect a child's behaviour?
-Yes. Children with Autism Spectrum Disorder (ASD) may exhibit behaviors such as repetitive movements, temper tantrums, frustration or problems with change. These behaviours are frequently associated with communication, sensory processing differences, or social differences. Families will be better able to support the child's growth and development when they understand them. [6][9]
-How can parents manage behavioural concerns at home?
-Parents can promote behavioural development by establishing regular routines, providing opportunities for communication, providing clear expectations and through positive reinforcement. Knowing what to do and what to avoid doing and being patient will help children to learn positive behaviours and to support their overall development. [3][12]
-What should parents avoid when handling tantrums and anger?
-If children are having tantrums and becoming angry, parents should stay calm and avoid shouting, harsh punishments and getting angry. Rather than attributing the child with being "bad", it would be beneficial to know the cause of the behavior and to be consistent in responding to it and helping the child to manage his or her emotions. By responding calmly and patiently to children, they can help them learn to behave better with time. [4][12]
-Can behavioural concerns improve with the right support?
-With guidance, support and understanding many children will improve with their behaviour. All children grow at their own rate. The underlying causes of a child's behaviour, combined with consistent and supportive strategies, can support children to develop positive behaviours and emotional regulation over time. [3][11][12]
-When should parents seek help for behavioural concerns?
-A parent may wish to seek professional advice if a difficulty in behaviour becomes frequent, severe or is beginning to impact on daily living, learning or relationships. Support does not imply that the child is "broken. It can assist families to gain a better insight into the child's needs and how to support them positively as well as developmentally. [1][2]
-What is Neuro-Ayurveda Development System?
-Dr. Ankush Garg's Neuro-Ayurveda Development System is a systematic method to understand developmental, behavioural and mental wellness issues in the family. It addresses five main areas including brain health, gut health, neural development, sensory integration therapy and behaviour guidance, which is essential for a child's overall development, learning, communication and emotional wellbeing. [13][14][15][16]
-How does Manovaidya assess and support children with behavioural concerns?
-Behavioural Assessment at Manovaidya is not about the child's behaviour alone, it is about the child's overall development. It involves developmental history, communication, learning, emotions, and developmental issues of parents. Families are offered personalised guidance and a structured plan according to the child's assessment of their child development to assist the child in their long-term development and wellbeing. [1][2][11]
-Book a Consultation
-If you are looking for help with your child's behavioural issues, behavioural assessment or personalised developmental guidance, please arrange a consultation with Dr. Ankush Garg and Manovaidya team.
-Having a child development assessment that is structured and coupled with personalised guidance can support families to better understand their child's developmental needs, behavioural patterns, and the next steps for long-term growth and wellbeing. [1][2][11]
-Get in Touch Today
-Final Suggested References
-Modern Science
-[1] American Academy of Pediatrics (AAP). Developmental Surveillance and Screening.
- https://www.aap.org/en/patient-care/developmental-surveillance-and-screening/
-[2] Centers for Disease Control and Prevention (CDC). Learn the Signs. Act Early. Developmental Milestones.
- https://www.cdc.gov/ncbddd/actearly/index.html
-[3] World Health Organization (WHO). Nurturing Care for Early Childhood Development.
- https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/child-health/nurturing-care
-[4] American Academy of Pediatrics (HealthyChildren.org). Behavior Problems in Children.
- https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Signs-of-Behavior-Problems.aspx	
-[5] National Institute of Mental Health (NIMH). Attention-Deficit/Hyperactivity Disorder (ADHD).
- https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd
-[6] National Institute of Mental Health (NIMH). Autism Spectrum Disorder.
- https://www.nimh.nih.gov/health/topics/autism-spectrum-disorder
-[7] American Speech-Language-Hearing Association (ASHA). Practice Portal â€“ Spoken Language Disorders.
- https://www.asha.org/practice-portal/clinical-topics/spoken-language-disorders/
-[8] American Occupational Therapy Association (AOTA). Children & Youth.
- https://www.aota.org/practice/practice-settings/children-and-youth
-[9] National Institute for Health and Care Excellence (NICE). Autism Spectrum Disorder in Under 19s: Support and Management (CG170).
- https://www.nice.org.uk/guidance/cg170
-[10] National Institute for Health and Care Excellence (NICE). Attention Deficit Hyperactivity Disorder: Diagnosis and Management (NG87).
- https://www.nice.org.uk/guidance/ng87
-[11] UNICEF. Early Childhood Development.
- https://www.unicef.org/early-childhood-development
-[12] Centers for Disease Control and Prevention (CDC). Positive Parenting Tips.
- https://www.cdc.gov/parents/
 
-Ayurvedic References
-[13] Agnivesha. Charaka Samhita (English Translation by R.K. Sharma & Bhagwan Dash). Chowkhamba Sanskrit Series Office, Varanasi.
- Sharira Sthana, Sutra Sthana & Nidana Sthana.
- https://archive.org/details/CharakaSamhitaEnglishRKSharmaBhagwanDash	
-[14] Vagbhata. Ashtanga Hridaya (English Translation by K.R. Srikantha Murthy). Chaukhambha Orientalia.
- (Balachikitsa and principles of child care, growth and development.)
- https://archive.org/search?query=Ashtanga+Hridaya+English+K.R.+Srikantha+Murthy	
-[15] Kashyapa. Kashyapa Samhita (Vriddha Jivakiya Tantra).
- (Classical Ayurvedic text dedicated to Kaumarbhrityaâ€”child health and development.)
- https://archive.org/search?query=Kashyapa+Samhita	
-[16] Sushruta. Sushruta Samhita (English Translation by K.R. Srikantha Murthy). Chaukhambha	Orientalia.
- https://archive.org/search?query=Sushruta+Samhita+English+K.R.+Srikantha+Murthy	
-[17] Ministry of AYUSH, Government of India.
- https://ayush.gov.in/
-[18] Central Council for Research in Ayurvedic Sciences (CCRAS).
- https://ccras.nic.in/
-	
+Promotes an awareness of developmental, emotional and behavioural factors.
+
+Gut Response System
+
+Aims to attend to general welfare and developmental functioning.
+
+Neural Network System
+
+
+Enables to comprehend learning, communication and behavioural readiness.
+
+Sensory Integration System
+
+
+Understands that sensory influences can impact behaviour and participation.
+
+
+Behaviour Guidance System
+
+
+Supports families to learn about behavioural patterns and develop structured support strategies.
+
+These pillars together offer a holistic concept to understand behaviour and development. [2][4][6]
+
+How we support children with behavioural concerns.
+
+The first step to support at Manovaidya is to understand the child instead of just focusing on behaviour.
+
+Our strategy is centered around:
+
+
+•	Behavioural Assessment
+•	Emotional Regulation Support
+•	Parent Guidance
+•	Communication Understanding
+•	Developmental Planning
+•	Progress Monitoring
+•	Family Support
+•	Long-Term Development Guidance
+
+Each child is provided with personalised support and guidance to meet their behavioural needs and their developmental objectives.
+
+________________________________________
+Parent Guidance & Family Support
+
+The whole family can be impacted by behavioural issues. [3]
+
+Parents often experience:
+
+
+•	Frustration
+•	Stress
+•	Confusion
+•	Self-doubt
+Problems with handling difficult circumstances
+
+
+Parental guidance is seen as key component of behaviour support at Manovaidya. [3][10]
+
+
+Families are provided with advice on:
+
+
+•	Understanding behaviour
+•	Behaviour support strategies
+•	Communication approaches
+•	Emotional regulation support
+•	Family participation
+•	Long-term planning
+
+
+The aim is to enable families to have confidence and give assistance to the growth and development of their child.
+
+
+How We Work at Manovaidya
+
+Each child's support starts with a detailed history of their development, behaviour, communication, emotional wellbeing and family concerns because every child is different.
+
+From this understanding families are provided with individual guidance and a developmentally sequenced path.
+
+Manovaidya does not adopt a one size fits all strategy but prefers to implement the Neuro-Ayurveda Development System to support families in understanding the factors that can affect behaviour, communication, learning and overall development.
+
+Assessment, guidance, progress tracking and long-term family support are the focus of support. [3][10]
+
+
+________________________________________
+Why Families Choose Manovaidya
+
+
+Rudra is a structured Neuro-Ayurveda Development System.Rudra is a structured development system of Neuro-Ayurveda.
+•	Personalized Behavioural Assessment
+•	Child-Centred & Family-Centred Approach
+Behaviour, Communication & Development are the key areas of focus.
+Accompanied by long-term guidance & progress tracking.
+•	Individualized Development Planning
+Compassionate and Structured Support
+
+
+Delhi, Noida, Greater Noida, Ghaziabad, NCR and various other parts of India families approach Manovaidya for Behavioural Concerns Support, Behavioural Assessment and Family Guidance.
+
+
+About Dr. Ankush Garg
+
+
+Autism, ADHD, Child Development & Mental Health Specialist in India
+
+
+Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+
+
+His work focuses on Autism Spectrum Disorder (ASD), ADHD, Child Development, Speech & Communication Challenges, Behavioural Concerns, Learning Difficulties, Teen Mental Health, Adult Mental Health, Women’s Emotional Wellbeing and Senior Mental Health Support.
+
+
+Through detailed assessment, individualized guidance and family-centred support, he helps families better understand developmental concerns and move forward with greater clarity, confidence and direction.
+
+
+Book a Consultation
+
+If you are looking for support for behavioural concerns in children, behavioural assessment or personalized developmental guidance, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+
+
+Through a structured assessment and personalized guidance process, families can gain a clearer understanding of behavioural patterns, developmental needs and appropriate next steps for long-term growth and wellbeing. [3][5]
+
+
+
+FAQs
+What are some of the concerns regarding behaviour in children?
+
+Behaviour concerns in children are behaviours that could be affecting their everyday life, learning, social interactions or family relationships. These may involve frequent tantrums, anger, aggression, defiance, emotional outbursts or challenges in following instructions or emotions. Difficult behaviours can be seen at times from all children, but if these become frequent or severe it may be necessary to gain a deeper understanding of the child's development. At Manovaidya, behavioural concerns are seen in a wider developmental context; in terms of communication, emotional regulation, attention and learning and overall child development. [1][5][7]
+
+2. What are the common signs of behavioural problems in children?
+
+Some typical indicators of behaviour problems can be: inability to follow instructions, impulsiveness, aggression, frequent fights or problems dealing with frustration, stubbornness, and frequent emotional outbursts. Some children may also have difficulties regulating their emotions, relating to others or adapting to routines. Behaviour patterns may be very different in different children. Often context and possible developmental influences into these behaviours can aid families to respond and support growth over the long term. [1][5][7]
+
+3. How do you think your child gets angry so easily?
+
+
+There are a number of reasons why children can become angry easily. Frequent anger can be due to difficulty expressing emotions, communication issues, frustration, attention problems, sensory sensitivities, developmental differences or emotional regulation issues. Anger can often be more than a behaviour issue—it may indicate that a child is having difficulty expressing himself or herself. The knowledge of factors that contribute to emotional responses can facilitate the support for children's emotional development and self-regulation within the family. [3][7]
+
+
+What causes my child to have lots of temper tantrums?
+
+
+When children have a tantrum, it may be a signal that they are frustrated, disappointed, feeling overwhelmed or that they have some needs that are not being met. Young children might not have the communication or emotional regulation skills to effectively handle strong emotions. Developmental readiness, communication issues, sensory sensitivities, fatigue or changes in routine or the inability to tolerate frustration can also play a role in frequent tantrums. It is important not to just try to prevent tantrums but to also learn about what factors contribute to them, and help the child's emotional growth. [1][7]
+
+5. Is aggressive behaviour normal in children?
+
+
+It is common for children to have occasional aggressive behaviour, especially when growing up, learning to manage emotions and to interact with other people. If aggression is often, and/or there are strong reactions, or if the behaviour has a significant impact on daily functioning, then further understanding is needed. Frustration, developmental issues, emotional regulation problems, communication difficulties and environmental factors are some of the factors that may influence aggressive behaviour at times. A developmental assessment, based on a structured framework, can help families understand a child's behaviour and why they engage in it, and to determine the support they need. [1][5]
+
+
+6. What are the reasons for a child's behaviour issues?
+
+
+There are several developmental, emotional and environmental factors that could affect child behaviour. Communication problems, emotional regulation issues, attention problems, learning difficulties, sensory sensitivities, familial stress, changes in routine and developmental variations are all factors that can impact behaviour. Many times, behaviour is not the result of one factor. Rather, it is usually a sign of what is happening for a child when they are faced with situations at home or school that are difficult, or in their developmental process. By exploring the causes that impact on behaviour, families can begin to move past symptom management and towards long-term developmental support. [3][5][7]
+
+7. Is there any connection between behaviour problems and communication difficulties?
+
+
+Yes. Sometimes, communication problems can give rise to behaviour problems. If children do not feel able to articulate their needs, thoughts or feelings effectively, they may become frustrated and exhibit signs of anger, tantrums, withdrawal or aggression. Sometimes behaviour can be a way of communicating, when children are not able to talk. That is why it is important to consider behavioural concerns in relation to communication development, social interaction and developmental functioning. A thorough developmental assessment can be useful in clarifying these links. [3]
+
+9. Do ADHD symptoms lead to behavioural problems?
+
+Yes. Children with ADHD can have behavioural problems due to problems with attention, emotions and impulsiveness. These behaviours may include frustration, impatience, emotional outbursts, difficulty following instructions or challenges adapting to routines. However, each child is unique and behavior patterns can be quite different. Parents will gain insight into attention, emotional regulation and behaviour and learn to develop strategies to support the child's development, not just their behaviour. [8]
+
+9. Is there any behaviour that could be linked to autism?
+
+Yes. Behaviours that are associated with communication difficulties, sensory sensitivities, social interaction or a lack of resilience to change may occur in some children with Autism Spectrum Disorder (ASD). Sometimes behaviours like repetitive actions, emotional outbursts, frustration or withdrawal, can be linked to developmental factors. This knowledge allows families to better understand the behaviour in the context of autism and to determine what type of support(s) may be needed to encourage communication, participation and development. [9]
+
+
+10. What is a parent's role in dealing with behavioural issues at home?
+
+
+Routine, verbal interaction, and consistent responses to challenging situations, are all aspects of parent involvement which can foster behavioural development. Positive reinforcement, emotional support and patience can be important factors in assisting children to learn appropriate behaviours. Possible triggers can also be useful to know, observing behaviours and providing opportunities for expression may also help. Families can gain from an understanding of the developmental, emotional and communication factors that might be contributing to the child's responses, rather than just trying to correct his or her behaviour. [3][10]
+
+
+When parents respond to tantrums and anger, what do they not want to do?
+
+
+Generally, parents should try to avoid reacting to their child's tantrums or anger with over-angry responses, yelling, or severe punishment or escalation of emotions. These may sometimes escalate into frustration and make it harder for children to manage their feelings. It is equally important to not label a child as “bad” or a “problematic” child based on their behaviour. Instead, parents can pay attention to what may trigger these behaviors and pay close attention to emotional regulation and help the child maintain consistency. A quiet and organized response can foster a more nurturing atmosphere for the development of behaviour. [1][3]
+
+
+13. Is there room for progress in behaviour with the appropriate support?
+
+
+Appropriate guidance, support and understanding are the key factors that can help many children to grow positively in their behaviours. Each child's progress will depend on their personal strengths and challenges, and developmental needs. Communication skills, emotional regulation, attention, learning and environmental factors are often factors that influence behaviour. Once these influences are understood, families can use more effective strategies which will benefit their child's long-term development. A developmental approach that is structured does not just focus on behaviour control, but also allows the child to develop skills that lead to better emotional and behavioural outcomes over time. [3][5][10]
+
+When are parents' concerns about behaviour legitimate and do they need support?
+
+
+If the behaviours are becoming more frequent, more intense, and/or interfering with daily functioning, learning, social relationships, family functioning, parents might want to seek support around these concerns. If aggression persists, if they have serious emotional fits, if they are not able to regulate their emotions, if there are problems at school, or if their behaviour isn't getting better over time, there may be a need to go deeper to understand their development. Asking for advice does not imply that there is something wrong with the child. Rather, it can assist families to gain insight into behavior patterns, developmental factors and how these factors can be promoted with practical strategies to assist their child's growth and wellbeing. [1][5][7]
+
+
+14. What is Neuro-Ayurveda Development System?
+
+The Neuro-Ayurveda Development System is a structured system create by Dr. Ankush Garg to help families better understand developmental, behavioural and mental wellness concerns. The five pillars of the system are as follows: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. These pillars offer a wider developmental view to assist families in understanding communication, behaviour, learning, emotional wellbeing and development in general. The aim is to develop a well-defined pathway that will facilitate the long-term understanding of development and guidance for families. [2][4][6]
+
+How does Manovaidya evaluate and aid children with behaviour issues?
+
+At Manovaidya, the focus in behavioural assessment is not on the analysis of behaviour but on the child as a whole. Developmental history, communication skills, emotional control, learning style, behaviour observation, social interaction and parent concerns will all be part of the assessment process. This knowledge enables families to receive individual guidance and a developmental plan for their child's needs. Support is concerned with developmental understanding, guidance from parents, progress monitoring and long term family support in the form of Neuro-Ayurveda Development System. The aim is to provide families with more clarity about behavioural patterns and the confidence and direction to proceed. [3][5][10]
+
+
+
+References
+[1] American Academy of Child and Adolescent Psychiatry (AACAP) – Temper Tantrums and Emotional Outbursts
+ https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/Temper_Tantrums.aspx
+[2] Central Council for Research in Ayurvedic Sciences (CCRAS) – Child Behaviour and Ayurveda Clinical Research
+ https://ccras.nic.in/services/clinical-research/
+[3] World Health Organization (WHO) – Caregiver Skills Training for Families of Children with Developmental Delays or Disabilities
+ https://www.who.int/publications/i/item/9789240048836
+[4] AYUSH Research Portal – Evidence-Based Research in Ayurveda
+ https://ayushportal.nic.in/
+[5] National Institute for Health and Care Excellence (NICE) – Antisocial Behaviour and Conduct Disorders in Children
+ https://www.nice.org.uk/guidance/cg158
+[6] Systematic Review of the Ayurvedic Herb Bacopa monnieri in Children and Adolescents
+ https://pubmed.ncbi.nlm.nih.gov/27912958/
+[7] American Academy of Child and Adolescent Psychiatry (AACAP) – Emotional Dysregulation in Children
+ https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/Emotional_Dysregulation/Home.aspx
+[8] Centers for Disease Control and Prevention (CDC) – ADHD in Children
+ https://www.cdc.gov/adhd/about/index.html
+[9] World Health Organization (WHO) – Autism Spectrum Disorder
+ https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders
+[10] National Institute for Health and Care Excellence (NICE) – Parent or Carer Training for Behavioural Concerns
+ https://www.nice.org.uk/guidance/qs59/chapter/quality-statement-4-parent-or-carer-training
+
+
+
+
 `;
 
-const behaviourTitle = "Child Behaviour Assessment, Parent Guidance & Developmental Support";
-const behaviourSubtitle = "Behavioural Concerns in Children Support in India";
+const behaviourTitle = "Behavioural Concerns in Children Support in India";
+const behaviourSubtitle = "Assessing, guiding and supporting children's behaviour.";
 const pageUrl = "https://manovaidya.org/behavioural-concerns-children-india";
 
 const sectionHeadingMap = new Map([
+  ["Content area: Behavioural Concerns in Children Support in India.", "introduction"],
   ["Introduction", "introduction"],
   ["Understanding Child Behavioural Development", "understanding-child-behavioural-development"],
   ["What are Behavioural Concerns in Children?", "what-are-behavioural-concerns-in-children"],
+  ["What are the Behavioural Concerns in Children?", "what-are-behavioural-concerns-in-children"],
   ["Common Behavioural Concerns in Children", "common-behavioural-concerns-in-children"],
   ["What are the Common Behavioural Concerns in Children?", "common-behavioural-concerns-in-children"],
+  ["Routine Behavioural Concerns in Children", "common-behavioural-concerns-in-children"],
   ["Understanding What Behaviour Really Reveals", "understanding-what-behaviour-really-reveals"],
   ["What does behaviour reveal beyond what people do?", "understanding-what-behaviour-really-reveals"],
+  ["How to understand behaviour that isn't an action.", "understanding-what-behaviour-really-reveals"],
   ["Our Behavioural Assessment Process at Manovaidya", "behavioural-assessment-process"],
   ["How is a Behavioural Assessment conducted at Manovaidya?", "behavioural-assessment-process"],
+  ["Behavioural Assessment at Manovaidya", "behavioural-assessment-process"],
   ["Child Behaviour Support in India", "child-behaviour-support-in-india"],
+  ["Child Behaviour Support in India | Sona College of Management, Arunachal Pradesh, India", "child-behaviour-support-in-india"],
   ["The Neuro-Ayurveda Development Approach Explained", "neuro-ayurveda-development-approach"],
   ["What is the Neuro-Ayurveda Development System?", "neuro-ayurveda-development-approach"],
+  ["The Neuro-Ayurveda Development System", "neuro-ayurveda-development-approach"],
   ["Supporting Children with Behavioural Challenges", "supporting-children-with-behavioural-challenges"],
   ["How We Help Children with Behavioural Challenges", "supporting-children-with-behavioural-challenges"],
+  ["How we support children with behavioural concerns.", "supporting-children-with-behavioural-challenges"],
   ["Parent Guidance and Family Support", "parent-guidance-and-family-support"],
   ["How do we provide Parent Guidance & Family Support?", "parent-guidance-and-family-support"],
+  ["Parent Guidance & Family Support", "parent-guidance-and-family-support"],
   ["Our Holistic Approach at Manovaidya", "our-holistic-approach-at-manovaidya"],
   ["How We Work at Manovaidya", "our-holistic-approach-at-manovaidya"],
   ["Why Families Trust Manovaidya", "why-families-trust-manovaidya"],
@@ -326,7 +471,8 @@ const sectionHeadingMap = new Map([
   ["About Dr. Ankush Garg", "meet-dr-ankush-garg"],
   ["Frequently Asked Questions About Care", "frequently-asked-questions"],
   ["Frequently Asked Questions (FAQs)", "frequently-asked-questions"],
-  ["Book Your Childâ€™s Consultation Today", "book-consultation"],
+  ["FAQs", "frequently-asked-questions"],
+  ["Book Your Child's Consultation Today", "book-consultation"],
   ["Book a Consultation", "book-consultation"],
 ]);
 
@@ -399,19 +545,19 @@ const articleLinkRules = [
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
 
 const contentLines = rawArticleContent.split(/\r?\n/).map((line) => line.trimEnd());
-const bodyStartIndex = contentLines.findIndex((line) => line.trim() === "Introduction");
-const referencesStartIndex = contentLines.findIndex((line) => line.trim() === "Final Suggested References");
-const faqStartIndex = contentLines.findIndex((line) => line.trim() === "Frequently Asked Questions (FAQs)");
+const bodyStartIndex = contentLines.findIndex((line) => line.trim().startsWith("Content area:"));
+const referencesStartIndex = contentLines.findIndex((line) => line.trim() === "References");
+const faqStartIndex = contentLines.findIndex((line) => line.trim() === "FAQs");
 const consultationStartIndex = contentLines.findIndex((line) => line.trim() === "Book a Consultation");
-const highlightsStartIndex = contentLines.findIndex((line) => line.trim() === "Highlights");
+const highlightsStartIndex = contentLines.findIndex((line) => line.trim() === "Key Takeaways");
 const bodyLines = contentLines.slice(bodyStartIndex === -1 ? 0 : bodyStartIndex);
 const highlights = contentLines
   .slice(highlightsStartIndex + 1, bodyStartIndex === -1 ? 0 : bodyStartIndex)
   .filter((line) => line.trim());
 
 function getFaqs() {
-  if (faqStartIndex === -1 || consultationStartIndex === -1) return [];
-  const lines = contentLines.slice(faqStartIndex + 1, consultationStartIndex).map((line) => line.trim()).filter(Boolean);
+  if (faqStartIndex === -1 || referencesStartIndex === -1) return [];
+  const lines = contentLines.slice(faqStartIndex + 1, referencesStartIndex).map((line) => line.trim()).filter(Boolean);
   const faqs = [];
   let currentQuestion = null;
   let answerLines = [];
@@ -582,8 +728,8 @@ function KeyTakeawaysBlock() {
     <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
       <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="p-6 sm:p-8">
-          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Highlights</p>
-          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Highlights</h2>
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Key Takeaways</p>
+          <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
           <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
             {highlights.map((item) => (
               <li key={item} className="flex gap-3 text-[13px] font-bold leading-6 text-[#21142d]">
@@ -612,14 +758,15 @@ function ArticleLine({ line, index, onCitationClick, allowedRuleKeys, faqAnswerR
   const text = line.trimEnd();
   const trimmed = text.trim();
 
-  if (faqStartIndex !== -1 && absoluteIndex > faqStartIndex && absoluteIndex < consultationStartIndex) return null;
+  if (faqStartIndex !== -1 && absoluteIndex > faqStartIndex && absoluteIndex < referencesStartIndex) return null;
   if (referencesStartIndex !== -1 && absoluteIndex >= referencesStartIndex) return null;
+  if (/^_+$/.test(trimmed)) return null;
   if (!trimmed) return <div key={`empty-${index}`} className="h-2" aria-hidden="true" />;
 
-  if (trimmed === "Frequently Asked Questions (FAQs)") {
+  if (trimmed === "FAQs") {
     return (
       <section key={trimmed} id="frequently-asked-questions" className="scroll-mt-28 pt-5">
-        <h2 className="text-[22px] font-black leading-tight text-[#17111f]">Frequently Asked Questions (FAQs)</h2>
+        <h2 className="text-[22px] font-black leading-tight text-[#17111f]">FAQs</h2>
         <div className="mt-4 overflow-hidden rounded-lg border border-[#eadff1] bg-white">
           {faqs.map((faq, faqIndex) => (
             <details key={faq.question} open={faqIndex === 0} className="border-b border-[#eadff1] last:border-b-0">
@@ -678,8 +825,9 @@ function RawArticleContent({ onCitationClick }) {
 
     if (
       !trimmed ||
-      (faqStartIndex !== -1 && absoluteIndex > faqStartIndex && absoluteIndex < consultationStartIndex) ||
+      (faqStartIndex !== -1 && absoluteIndex > faqStartIndex && absoluteIndex < referencesStartIndex) ||
       (referencesStartIndex !== -1 && absoluteIndex >= referencesStartIndex) ||
+      /^_+$/.test(trimmed) ||
       sectionHeadingMap.has(trimmed) ||
       trimmed.endsWith("?") ||
       trimmed.startsWith("[") ||
@@ -723,7 +871,7 @@ function MedicalReferencesBlock() {
   const lines = referencesStartIndex === -1 ? [] : contentLines.slice(referencesStartIndex);
   return (
     <section className="mt-5 rounded-xl border border-[#eadff1] bg-[#fbf9fd] p-6 sm:p-8" id="medical-references">
-      <h2 className="mb-4 text-[22px] font-black leading-tight text-[#2d1b45]">Final Suggested References</h2>
+      <h2 className="mb-4 text-[22px] font-black leading-tight text-[#2d1b45]">References</h2>
       <div className="max-w-full whitespace-pre-wrap break-words text-[14px] font-semibold leading-7 text-[#51465a]">
         {lines.map((line, index) => {
           const referenceMatch = line.match(/^\[(\d+)\]/);
@@ -838,7 +986,7 @@ function BehaviouralConcernsChildrenIndiaPage() {
           <KeyTakeawaysBlock />
           <RawArticleContent onCitationClick={handleCitationClick} />
 
-          <section id="book-consultation" className="mt-12 overflow-hidden rounded-xl border-none bg-gradient-to-br from-[#7835A4] to-[#4c1d6b] text-white shadow-xl"><div className="grid gap-0 lg:grid-cols-[1fr_320px]"><div className="z-10 p-8 lg:p-10"><p className="mb-2 text-[13px] font-black uppercase tracking-[0.1em] text-[#d8b4e2]">Book a Consultation</p><h2 className="mb-4 text-[26px] font-black leading-tight sm:text-[32px]">Take the First Step Today</h2><div className="mb-6 space-y-4 text-[14px] font-semibold leading-7 text-[#f0e7f6]">{contentLines.slice(consultationStartIndex + 1, referencesStartIndex).filter((line) => line.trim()).map((line, index) => (<p key={`${line}-${index}`}><ArticleLinkedText text={line} onCitationClick={handleCitationClick} /></p>))}</div><div className="mb-8"><ul className="grid gap-3 sm:grid-cols-2">{["Behavioural Assessment", "Parent Guidance", "Family Support", "Neuro-Ayurveda Development System", "Long-Term Development Planning"].map((step) => (<li key={step} className="flex gap-2 text-[14px] font-bold text-white"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />{step}</li>))}</ul></div><div className="flex flex-wrap items-center gap-4 border-t border-white/20 pt-6"><a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-lg bg-white px-8 text-[15px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff] hover:shadow-lg">Contact Us Now</a><div><p className="text-[13px] font-bold">Manovaidya Clinic</p><p className="text-[12px] text-[#e5d5f2]">Noida, Uttar Pradesh, India</p></div></div></div><div className="relative h-64 w-full lg:h-full"><img src={ctaImage} alt="Family receiving child behaviour and developmental support guidance at Manovaidya" className="absolute inset-0 h-full w-full object-cover" loading="lazy" decoding="async" /><div className="absolute inset-0 bg-gradient-to-t from-[#4c1d6b] to-transparent opacity-80 mix-blend-multiply lg:bg-gradient-to-l lg:opacity-90" /></div></div></section>
+          <section id="book-consultation" className="mt-12 overflow-hidden rounded-xl border-none bg-gradient-to-br from-[#7835A4] to-[#4c1d6b] text-white shadow-xl"><div className="grid gap-0 lg:grid-cols-[1fr_320px]"><div className="z-10 p-8 lg:p-10"><p className="mb-2 text-[13px] font-black uppercase tracking-[0.1em] text-[#d8b4e2]">Book a Consultation</p><h2 className="mb-4 text-[26px] font-black leading-tight sm:text-[32px]">Take the First Step Today</h2><div className="mb-6 space-y-4 text-[14px] font-semibold leading-7 text-[#f0e7f6]">{contentLines.slice(consultationStartIndex + 1, faqStartIndex === -1 ? referencesStartIndex : faqStartIndex).filter((line) => line.trim()).map((line, index) => (<p key={`${line}-${index}`}><ArticleLinkedText text={line} onCitationClick={handleCitationClick} /></p>))}</div><div className="mb-8"><ul className="grid gap-3 sm:grid-cols-2">{["Behavioural Assessment", "Parent Guidance", "Family Support", "Neuro-Ayurveda Development System", "Long-Term Development Planning"].map((step) => (<li key={step} className="flex gap-2 text-[14px] font-bold text-white"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />{step}</li>))}</ul></div><div className="flex flex-wrap items-center gap-4 border-t border-white/20 pt-6"><a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-lg bg-white px-8 text-[15px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff] hover:shadow-lg">Contact Us Now</a><div><p className="text-[13px] font-bold">Manovaidya Clinic</p><p className="text-[12px] text-[#e5d5f2]">Noida, Uttar Pradesh, India</p></div></div></div><div className="relative h-64 w-full lg:h-full"><img src={ctaImage} alt="Family receiving child behaviour and developmental support guidance at Manovaidya" className="absolute inset-0 h-full w-full object-cover" loading="lazy" decoding="async" /><div className="absolute inset-0 bg-gradient-to-t from-[#4c1d6b] to-transparent opacity-80 mix-blend-multiply lg:bg-gradient-to-l lg:opacity-90" /></div></div></section>
 
           <div className="mt-8"><button type="button" onClick={() => setShowResources((current) => !current)} className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#d8c6e5] bg-[#7835A4] px-6 text-[13px] font-black uppercase tracking-[0.04em] text-white shadow-lg shadow-[#7835A4]/20 transition hover:bg-[#64258e]" aria-expanded={showResources} aria-controls="medical-references"><BookOpen className="h-4 w-4" /> Resources <ChevronDown className={`h-4 w-4 transition ${showResources ? "rotate-180" : ""}`} /></button>{showResources && <MedicalReferencesBlock />}</div>
         </article>
