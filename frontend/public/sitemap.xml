@@ -4,6 +4,9 @@
     <loc>https://manovaidya.org/sitemap-static.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://api.manovaidya.org/sitemap.xml</loc>
+    <loc>https://api.manovaidya.org/sitemap-blog.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://api.manovaidya.org/sitemap-case-studies.xml</loc>
   </sitemap>
 </sitemapindex>
