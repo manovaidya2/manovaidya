@@ -23,6 +23,165 @@ import consultationImage from "../images/ibs-consultation.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import Seo from "../components/Seo";
 
+const seoTitle = "Stress & Digestive Health in India | Gut-Brain Connection | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-digestive-health/";
+
+const stressDigestiveHealthFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress affect digestive health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In some, emotional stress can affect digestion via the gut-brain connection. Some people experience symptoms during stress like bloating, indigestion, appetite loss or bowel movements change. But there are numerous potential medical conditions which may cause digestive symptoms and these should be carefully assessed if they continue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is the gut-brain connection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The gut-brain axis or gut-brain connection is the bidirectional communication between the gut and the brain. This link is a useful understanding of how emotional wellbeing and digestive health can relate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. Can anxiety cause stomach problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During a period of anxiety or emotional stress, some people experience stomach discomfort or nausea, bloating or changes in bowel habits. Persistent digestive symptoms, however, may also result from medical issues, so it is advisable to seek medical advice from a healthcare provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. Why do I experience stomach discomfort during stressful situations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When stressed the body releases its natural stress response and in some people, this affects the digestion process for a short period. Medical evaluation is recommended if stomach pain occurs often or for a long time because it is important to determine what causes it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can emotional wellbeing influence appetite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Emotional stress can have varying effects on appetite. Others may lose appetite during stressful times and others may eat more than normal. If appetite changes persist, consult a health care provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. What digestive symptoms may become worse during stress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During an emotionally stressful time, a few people might experience bloating, indigestion, stomach discomfort, nausea, altered appetite or changes in bowel habits. These do not necessarily indicate stress: If symptoms persist, it is important that they be evaluated by a medical professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can poor sleep affect digestive health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep is essential to health and wellbeing, physical and mental. Some people may feel problems with digestion, appetite, energy level and stress responses due to poor sleep. Better sleeping routines can help to promote overall wellness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I seek medical attention for digestive symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should seek medical evaluation if digestive symptoms are persistent, becoming worse or accompanied by severe abdominal pain, blood in stool, blood in vomit, unexplained weight loss, persistent vomiting, difficulty swallowing or high fever. These symptoms need to be evaluated by a doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Can lifestyle habits affect digestive wellbeing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A healthy approach to nutrition, exercise, drinking plenty of water, getting good sleep and managing stress can help maintain digestive health. Where needed, lifestyle measures should be used in addition to the proper medical care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Digestive Health assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Stress & Digestive Health assessment is a structured assessment that identifies digestive issues, emotional well-being, stress, sleep, lifestyle habits, nutrition and overall health. The assessment can be used to help identify factors that may affect wellbeing and may be used to provide personalised guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support stress-related digestive concerns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Manovaidya we think about the relationship between emotional functioning, lifestyle and digestive wellness instead of just the digestive symptoms. We work with structured assessments, personalised guidance and the Neuro-Ayurveda Development System so that people can have a better understanding of their overall mind-body wellbeing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Neuro-Ayurveda Development System is Manovaidya's systematic 5 pillar model that covers the intersection of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance, understanding the relationship between emotional wellbeing and gut health and lifestyle. It offers a holistic view and in-depth evaluation and tailored advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress support digestive wellbeing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A healthy lifestyle, regular exercise, a good night's sleep, relaxation and emotional wellbeing techniques can help manage stress in some people and may also help improve digestive health in certain people. These methods may be used in conjunction with suitable medical care, but should not be used as a substitute for it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Is every digestive problem caused by stress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There are numerous medical conditions, diet, infections or other illnesses that can cause digestive symptoms. Some people may be sensitive to stress and this may contribute to their digestive wellbeing, but it is not always the only cause. Any symptom that lasts will always be evaluated medically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Digestive Health support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Here at Manovaidya we take a structured approach to understanding the interplay between emotional wellbeing, gut health and lifestyle through personalised guidance, and the Neuro-Ayurveda Development System. Taking a holistic perspective, we help people to understand the gut-brain connection, and to create long-term mind-body wellbeing."
+      }
+    }
+  ]
+};
+
+const stressDigestiveHealthBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Digestive Health",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressDigestiveHealthMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Digestive Health in India",
+  "description": "Looking for Stress & Digestive Health support in India? Learn how stress affects digestion, bloating, appetite and gut-brain wellbeing at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressDigestiveHealthSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressDigestiveHealthMedicalWebPageSchema,
+    stressDigestiveHealthFaqSchema,
+    stressDigestiveHealthBreadcrumbSchema
+  ]
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Stress & Digestion", id: "how-are-stress-and-digestion-connected" },
@@ -469,16 +628,11 @@ function StressDigestiveHealthIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Digestive Health in India | Gut-Brain Connection | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Digestive Health support in India? Learn how stress affects digestion, bloating, appetite and gut-brain wellbeing at Manovaidya."
         keywords="Stress & Digestive Health, Gut-Brain Connection, Gut-Brain Axis, Stress and Digestion, Digestive Wellbeing, Bloating and Stress, Indigestion, Emotional Wellbeing and Gut Health, Mind-Body Health, Digestive Health Assessment, Neuro-Ayurveda Development System, Stress-Related Digestive Symptoms"
         path="/stress-and-digestive-health"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Digestive Health in India",
-          "description": "Looking for Stress & Digestive Health support in India? Learn how stress affects digestion, bloating, appetite and gut-brain wellbeing at Manovaidya."
-        }}
+        schema={stressDigestiveHealthSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
 

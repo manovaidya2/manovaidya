@@ -27,6 +27,11 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedAdultPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
+const adultAnxietySeoTitle = "Adult Anxiety Treatment in India | Manovaidya";
+const adultAnxietySeoDescription =
+  "Looking for Adult Anxiety Support in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya.";
+const adultAnxietySeoPageUrl = "https://manovaidya.org/anxiety-support-india";
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Anxiety", id: "understanding-anxiety-in-adults" },
@@ -121,7 +126,7 @@ const referenceResources = [
 ];
 
 const articleLinkRules = [
-  { label: "Adult Anxiety Treatment in India", href: "#introduction", pattern: /Adult Anxiety Treatment in India/i },
+  { label: "Adult Anxiety Support in India", href: "#introduction", pattern: /Adult Anxiety Support in India/i },
   { label: "Adult Anxiety Support", href: "#understanding-anxiety-in-adults", pattern: /Adult Anxiety Support/i },
   { label: "Anxiety Treatment in India", href: "#understanding-anxiety-in-adults", pattern: /Anxiety Treatment in India/i },
   { label: "Anxiety Symptoms in Adults", href: "#common-signs-symptoms-of-anxiety", pattern: /Anxiety Symptoms in Adults/i },
@@ -186,23 +191,18 @@ function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
 }
 
 const keyTakeaways = [
-  "Understanding Adult Anxiety and Emotional Wellbeing",
-  "Common Emotional, Physical and Cognitive Signs",
-  "Main Causes of Anxiety in Adults",
-  "Impact on Work, Sleep and Relationships",
-  "Constant Worry, Panic and Overthinking Patterns",
-  "Difference Between Stress and Anxiety Disorders",
-  "Neuro-Ayurveda Approach to Anxiety Support",
-  "Brain, Gut, Sensory and Behavioural Factors",
-  "Healthy Sleep, Exercise and Daily Routines",
-  "How to Reduce Anxiety and Overthinking",
-  "Manovaidya’s Assessment and Support Process",
-  "When to Consider a Professional Assessment",
-  "Online and In-Clinic Anxiety Support",
-  "Why Adults Across India Choose Manovaidya",
-  "About Dr. Ankush Garg",
-  "Helpful Adult Mental Health Resources",
-  "FAQs About Adult Anxiety Treatment"
+  "Understanding Anxiety in Adults",
+  "Common Signs & Symptoms of Anxiety",
+  "Emotional, Physical & Cognitive Symptoms",
+  "Common Causes and Contributing Factors",
+  "Impact of Anxiety on Daily Life",
+  "Anxiety, Sleep & Physical Wellbeing",
+  "Panic Episodes & Constant Overthinking",
+  "Healthy Lifestyle and Coping Strategies",
+  "Neuro-Ayurveda Approach to Anxiety",
+  "Personalized Anxiety Support & Guidance",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Adult Anxiety Support"
 ];
 
 const sections = [
@@ -211,7 +211,7 @@ const sections = [
     "id": "introduction",
     "lines": [
       "Supporting Adults to better understand anxiety, constant worry, panic & emotional wellbeing.",
-      "People looking for Adult Anxiety Treatment in India often require structured support for ongoing worry, overthinking, panic-like symptoms, nervousness and emotional distress that impact the daily functioning.",
+      "People looking for Adult Anxiety Support in India often require structured support for ongoing worry, overthinking, panic-like symptoms, nervousness and emotional distress that impact the daily functioning.",
       "The objective is not just to alleviate visible signs. They should help them to identify emotional triggers, thought patterns, sleeping habits, lifestyle and behaviour and other factors that affect long term mental health.",
       "Worrying prior to or during a stressful time is a normal aspect of life. If worry becomes a pattern, overwhelming, and/or interferes with functioning, relationships, work or emotional health, however, then it may require more attention and assistance. [1] [3]",
       "Numerous adults suffer from a persistent overthinking, over worrying, restlessness or lack of ability to relax without knowing exactly what is going on. Others experience physical symptoms like a fast heart rate, muscle tension, sleep or digestion problems. Others are unable to stop worrying, nervousness or feeling someone may be harmed.",
@@ -220,7 +220,7 @@ const sections = [
       "Emotional symptoms, physical experiences, stress and sleep patterns and personal circumstances are therefore taken into consideration together in Structured Adult Anxiety Support.",
       "Under the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya implements the Neuro-Ayurveda Development System and helps people understand the factors that can affect emotional wellbeing in the long-term and develop an awareness of anxiety.",
       "Individuals seeking an Anxiety Specialist in India, Anxiety Doctor in India, or Online Mental Health Consultation could reach out to Manovaidya for a systematic evaluation and tailored recommendations.",
-      "At Manovaidya, Adult Anxiety Treatment focuses on:",
+      "At Manovaidya, Adult Anxiety Support focuses on:",
       "Persistent Anxiety",
       "Excessive Worry & Overthinking",
       "Panic Episodes",
@@ -228,7 +228,7 @@ const sections = [
       "Emotional Wellbeing",
       "Healthy Mind-Body Balance",
       "These areas include those who are looking for Anxiety Counselling for Adults, Stress and Anxiety Treatment, Overthinking Treatment or Excessive Worry Treatment.",
-      "Adult Anxiety Treatment in India is more than just about controlling symptoms. It also emphasizes insight into thought patterns, emotional reactions, lifestyle and everyday habits that can impact anxiety."
+      "Adult Anxiety Support in India is more than just about controlling symptoms. It also emphasizes insight into thought patterns, emotional reactions, lifestyle and everyday habits that can impact anxiety."
     ]
   },
   {
@@ -258,7 +258,7 @@ const sections = [
     "id": "common-signs-symptoms-of-anxiety",
     "lines": [
       "Anxiety can impact the mind, feelings, behavior and physical health. This experience is subject to change from individual to individual.",
-      "In Adult Anxiety Treatment in India, the structured assessment includes the frequency, severity and impact of the symptoms on work, relationships, sleep and daily functioning.",
+      "In Adult Anxiety Support in India, the structured assessment includes the frequency, severity and impact of the symptoms on work, relationships, sleep and daily functioning.",
       "Emotional Symptoms",
       "Persistent worry",
       "Feeling nervous",
@@ -336,7 +336,7 @@ const sections = [
     "id": "how-anxiety-can-affect-daily-life",
     "lines": [
       "Anxiety can manifest itself in other ways, besides thoughts or feelings. Can impact on work, relationships, physical health, sleep and confidence.",
-      "As anxiety starts to become chronic, everyday tasks can begin to seem more challenging and/or more overwhelming. Adult Anxiety Treatment in India can require some support when anxiety begins to impact productivity, relationships or daily activities.",
+      "As anxiety starts to become chronic, everyday tasks can begin to seem more challenging and/or more overwhelming. Adult Anxiety Support in India can require some support when anxiety begins to impact productivity, relationships or daily activities.",
       "Emotional Wellbeing",
       "Long-term anxiety can cause:",
       "Constant worrying",
@@ -477,7 +477,7 @@ const sections = [
     "id": "how-manovaidya-supports-adults",
     "lines": [
       "At Manovaidya, support starts with getting to know the person, not just their symptoms.",
-      "One can start the search for Adult Anxiety Treatment in India, Anxiety Counselling in India or Online Anxiety Treatment in India with a structured assessment.",
+      "One can start the search for Adult Anxiety Support in India, Anxiety Counselling in India or Online Anxiety Treatment in India with a structured assessment.",
       "Step 1: Comprehensive Assessment",
       "The assessment can consider:",
       "Anxiety Symptoms in Adults",
@@ -532,7 +532,7 @@ const sections = [
     "title": "Why Adults Across India Choose Manovaidya",
     "id": "why-adults-across-india-choose-manovaidya",
     "lines": [
-      "Adult Anxiety Treatment in India may require a treatment that takes into account emotional symptoms, physical wellbeing and sleep and lifestyle into account.",
+      "Adult Anxiety Support in India may require a treatment that takes into account emotional symptoms, physical wellbeing and sleep and lifestyle into account.",
       "This is support in Manovaidya, it starts with knowing the individual and not with a one-size-fits-all solution.",
       "Comprehensive Anxiety Assessment",
       "Assessment will take into account worry, overthinking, episodes of worry, physical symptoms, avoidance and sleep and functioning.",
@@ -603,92 +603,207 @@ const sections = [
 const faqs = [
   {
     "question": "1. What are the first signs of anxiety?",
-    "answer": "First symptoms of anxiety can be worrying too much, restlessness, having trouble relaxing, overthinking, irritability, and not being able to pay attention. Many people also experience physical reactions like those of a racing heart, muscle tension, sweating or an inability to sleep. It is natural to experience anxiety on an occasional basis when facing stressful events, but if you are experiencing anxiety on a consistent basis that is having a negative impact on your life, work or relationships, it may warrant further understanding and professional guidance. [1] [3]"
+    "answer": "Some people experience physical signs of anxiety, like a fast heartbeat, muscle tension, sweating or problems sleeping; others experience emotional anxiety, like excessive worrying, restlessness, trouble relaxing, overthinking, irritability, and trouble concentrating. Persistent feelings of anxiety that start to interfere with life, work or relationships could benefit from more understanding and guidance from a professional."
   },
   {
     "question": "2. What are the main causes of anxiety?",
-    "answer": "Anxiety typically occurs because of multiple factors and not just one. This can be due to work stress, money, relationships, big life changes, sleep, constant stress and personal health issues. Anxiety is unique for each individual, and it is important to be aware of what is influencing the anxiety before choosing the best support. [1] [3]"
+    "answer": "Anxiety usually develops due to a combination of factors rather than a single cause.[1][2] Work pressure, financial concerns, relationship challenges, major life changes, poor sleep, ongoing stress and individual biological factors may all contribute.[1][5] Every person experiences anxiety differently, which is why understanding the underlying influences is important before deciding on the most appropriate support."
   },
   {
     "question": "3. How much anxiety is normal?",
-    "answer": "Anxiety that accompanies an exam, interview, presentation or significant life event is a normal experience. When the anxiety becomes persistent, hard to control and interferes with work, relationships, sleep or daily functioning it is a concern. It is important to differentiate between a natural stress and a chronic anxiety so that people know when they may need extra support. [1] [3]"
+    "answer": "It is normal to feel anxious before an exam, an interview or before giving a presentation or an important life event. It is important to differentiate between normal stress and chronic anxiety, so the individual will be able to determine when there is a need for further support."
   },
   {
     "question": "4. What are the physical symptoms of anxiety?",
-    "answer": "Anxiety can impact both the mind and body. Typical physical symptoms are rapid heart rate, muscle tension, sweating, trembling, dizziness, stomach pain, headache, tiredness and poor sleep. Symptoms may be different for different people and may be more noticeable when they are stressed. [1] [3]"
+    "answer": "Many people may experience a variety of physical symptoms that can manifest differently for each individual, and may become more apparent when experiencing stress or when anxious thoughts are present. Common physical symptoms may include: Rapid heartbeat, muscle tension, sweating, shaking, dizziness, stomach discomfort, headaches, fatigue and trouble sleeping."
   },
   {
     "question": "5. How do doctors diagnose anxiety?",
-    "answer": "Anxiety is diagnosed by knowing a person's symptoms and medical history, emotional health and how anxiety impacts on daily living. May ask about thinking, feelings, physical symptoms, sleep, work and relationships. Further evaluation may be warranted to rule out medical conditions that can cause similar symptoms. [1] [2] [3]"
+    "answer": "Your doctor will be interested in what your symptoms are, your medical history, emotional health and how anxiety is affecting your daily life. Your doctor may ask about your thoughts, feelings, physical symptoms, sleep, work and relationships. In certain cases, further clinical assessment may be suggested to exclude other disorders which can share some of the same symptoms."
   },
   {
     "question": "6. How can I check my anxiety level?",
-    "answer": "The first one is to see how frequently the anxiety is present and if it's interfering with work, relationships, sleep, or daily functioning. Structured questionnaires and clinical assessments can be used by mental health professionals to gain insight into symptom severity. The use of online screening tools is not a substitute for clinical diagnosis. [1] [2]"
+    "answer": "The first step is to see how frequent anxiety is and if it interferes with your work, relationships, sleep or daily activities. Structured questionnaires and clinical assessments can also be used to better understand the severity of symptoms, which will inform a comprehensive evaluation of potential factors contributing to anxiety as well as the appropriate support offered for symptoms."
   },
   {
     "question": "7. What is the best treatment for anxiety?",
-    "answer": "Treatment will vary based on the person's symptoms, severity and life circumstances. Numerous people find psychological help, healthy way of living changes, stress management or medical treatment (should it be needed) helpful. [2] [4] Best Anxiety Treatment in India must be based on expertise and not on one promise."
+    "answer": "The most appropriate approach depends on the individual's symptoms, severity and personal circumstances.[1][2] Many people benefit from psychological support, healthy lifestyle changes, stress management techniques or medical care when appropriate.[1][5]  At Manovaidya, support begins with understanding emotional wellbeing through a structured assessment and the Neuro-Ayurveda Development System before creating personalized guidance."
   },
   {
     "question": "8. Can anxiety be managed without medication?",
-    "answer": "A healthy sleep pattern, physical exercise, relaxation techniques, counselling and organised lifestyle changes are helpful for many people with mild or moderate anxiety. [4] [5] [6] It is best to consult with a competent health care provider. Self-management should not be used as a substitute for professional care in cases of severe or persistent symptoms."
+    "answer": "Many individuals with mild or moderate anxiety benefit from approaches such as healthy sleep, regular physical activity, relaxation techniques, counselling, stress management and structured lifestyle changes.[1][5] The most appropriate approach depends on each person's needs and should be discussed with a qualified healthcare professional.[1][2] Self-management should not replace professional care when symptoms are severe or persistent."
   },
   {
     "question": "9. What is the 3-3-3 rule for anxiety?",
-    "answer": "The 3-3-3 rule is a method of grounding with three things you see, three sounds you hear and three parts of your body you move. It can be useful to redirect focus to the here and now, but shouldn't be used to replace any professional evaluation if anxiety levels are high and impacting on life."
+    "answer": "There is a simple grounding technique that can be useful to some people during times of anxiety, it is called the 3-3-3. It involves noticing three things you can see, three sounds you can hear and moving three parts of your body. This approach is useful for concentrating on the present moment, and can decrease a sense of overwhelm. It can be useful, but it shouldn't replace a professional assessment or treatment for anxiety when it is interfering with life."
   },
   {
     "question": "10. Can I live a normal life with anxiety?",
-    "answer": "Yes. People with anxiety can remain in the workforce, with relationships and have a meaningful life if they receive the support that they require. Persons may be able to cope better with anxiety through healthy coping mechanisms and through lifestyle changes and professional advices."
+    "answer": "Yes. Many people with anxiety continue to work, maintain relationships and lead fulfilling lives with appropriate understanding and support.[1][2] Learning healthy coping strategies, improving lifestyle habits and seeking guidance when needed can help individuals manage anxiety more effectively and improve their overall emotional wellbeing.[1][5]"
   },
   {
     "question": "11. How long do anxiety attacks last?",
-    "answer": "Panic events usually peak in a few minutes and decline after. While the exact length is variable among different people, the aftermath can include fatigue and worry lingering for a while. [2] [3] Panic Attack Treatment and Panic Disorder Treatment might be warranted after proper assessment for those with recurring events."
+    "answer": "Some people may feel worried, emotionally sensitive, tired or anxious after the episode and the feeling may be ongoing from person to person, but it will gradually fade after the episode. If they start to become a regular occurrence or interfere with daily activities, medical advice may be needed."
   },
   {
     "question": "12. Can anxiety affect the body?",
-    "answer": "The answer is yes. Anxiety can present with tension in the muscles, headaches, stomach discomfort, fatigue, rapid heart and breathing rates, perspiration, dizziness and sleep problems. [1] [3] The presence of these symptoms in a patient should not be considered evidence of the diagnosis of anxiety."
+    "answer": "Yes. Many report feeling physically uncomfortable or experiencing muscle tension, headache, stomach discomfort, fatigue, rapid heartbeat, sweating, dizziness or difficulty sleeping - these are all common symptoms of anxiety and a clear reminder of the mind and body connection. Having a clear grasp of this link can support people's emotional wellbeing."
   },
   {
     "question": "13. Can anxiety improve with lifestyle changes?",
-    "answer": "Rest, exercise, a healthy diet, stress and time management techniques, relaxation and social activities have positive effects on emotional wellness. [5] [6] Rest and a healthy diet with exercise provide the foundation for effective lifestyle changes."
+    "answer": "Establishing healthful lifestyle habits can also support emotional wellbeing and help most people manage their anxiety more effectively.[1][5] Healthy sleep, activity, nutrition, stress management, relaxation and meaningful social connections all contribute to overall mental health; lifestyle changes are likely to be most effective when used in conjunction with personalized professional guidance based on individual needs."
   },
   {
     "question": "14. How does Manovaidya support adults with anxiety?",
-    "answer": "Manovaidya begins support with the individual and not with the symptoms. Through structured assessment, personalized guidance and the Neuro-Ayurveda Development System, support is available through the modeling of emotional wellness, lifestyle and behavioral patterns."
+    "answer": "Manovaidya starts with understanding the person and not just the symptoms. An organised evaluation, tailored guidance and the Neuro-Ayurveda Development System help people gain insight into emotional wellbeing, lifestyle factors and behavioural patterns. We aim to help achieve long term emotional balance, confidence and improve daily functioning in a holistic and individualized way."
   },
   {
     "question": "15. When should I seek professional guidance for anxiety?",
-    "answer": "Professional help should be considered when the control of anxiety is lost and it begins to impact negatively on work, relationships, sleep and other daily activities. The persistent physical symptoms that interfere with normal functioning are a cause for seeking help. Severe chest pain with episodes of fainting and major problems with the ease of breathing are examples of medical emergencies that require immediate care. [1] [2] [3]"
+    "answer": "If anxiety is not decreasing, not manageable and/or if it is impacting functioning in the workplace, relationships, sleep or daily life, it's best to seek professional advice to understand contributing factors and develop a person-centred plan to enhance emotional wellbeing."
   }
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/^\d+\.\s*/, ""),
-    acceptedAnswer: { "@type": "Answer", text: faq.answer },
-  })),
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What are the first signs of anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "First symptoms of anxiety can be worrying too much, restlessness, having trouble relaxing, overthinking, irritability, and not being able to pay attention. Many people also experience physical reactions like those of a racing heart, muscle tension, sweating or an inability to sleep. It is natural to experience anxiety on an occasional basis when facing stressful events, but if you are experiencing anxiety on a consistent basis that is having a negative impact on your life, work or relationships, it may warrant further understanding and professional guidance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What are the main causes of anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Anxiety typically occurs because of multiple factors and not just one. This can be due to work stress, money, relationships, big life changes, sleep, constant stress and personal health issues. Anxiety is unique for each individual, and it is important to be aware of what is influencing the anxiety before choosing the best support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. How much anxiety is normal?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Anxiety that accompanies an exam, interview, presentation or significant life event is a normal experience. When the anxiety becomes persistent, hard to control and interferes with work, relationships, sleep or daily functioning it is a concern. It is important to differentiate between a natural stress and a chronic anxiety so that people know when they may need extra support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What are the physical symptoms of anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Anxiety can impact both the mind and body. Typical physical symptoms are rapid heart rate, muscle tension, sweating, trembling, dizziness, stomach pain, headache, tiredness and poor sleep. Symptoms may be different for different people and may be more noticeable when they are stressed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. How do doctors diagnose anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Anxiety is diagnosed by knowing a person's symptoms and medical history, emotional health and how anxiety impacts on daily living. May ask about thinking, feelings, physical symptoms, sleep, work and relationships. Further evaluation may be warranted to rule out medical conditions that can cause similar symptoms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. How can I check my anxiety level?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The first one is to see how frequently the anxiety is present and if it's interfering with work, relationships, sleep, or daily functioning. Structured questionnaires and clinical assessments can be used by mental health professionals to gain insight into symptom severity. The use of online screening tools is not a substitute for clinical diagnosis.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What is the best treatment for anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatment will vary based on the person's symptoms, severity and life circumstances. Numerous people find psychological help, healthy way of living changes, stress management or medical treatment (should it be needed) helpful. [2] [4] Best Anxiety Treatment in India must be based on expertise and not on one promise.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can anxiety be managed without medication?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A healthy sleep pattern, physical exercise, relaxation techniques, counselling and organised lifestyle changes are helpful for many people with mild or moderate anxiety. [4] [5] [6] It is best to consult with a competent health care provider. Self-management should not be used as a substitute for professional care in cases of severe or persistent symptoms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. What is the 3-3-3 rule for anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The 3-3-3 rule is a method of grounding with three things you see, three sounds you hear and three parts of your body you move. It can be useful to redirect focus to the here and now, but shouldn't be used to replace any professional evaluation if anxiety levels are high and impacting on life.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can I live a normal life with anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. People with anxiety can remain in the workforce, with relationships and have a meaningful life if they receive the support that they require. Persons may be able to cope better with anxiety through healthy coping mechanisms and through lifestyle changes and professional advices.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. How long do anxiety attacks last?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Panic events usually peak in a few minutes and decline after. While the exact length is variable among different people, the aftermath can include fatigue and worry lingering for a while. [2] [3] Panic Attack Treatment and Panic Disorder Treatment might be warranted after proper assessment for those with recurring events.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. Can anxiety affect the body?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The answer is yes. Anxiety can present with tension in the muscles, headaches, stomach discomfort, fatigue, rapid heart and breathing rates, perspiration, dizziness and sleep problems. [1] [3] The presence of these symptoms in a patient should not be considered evidence of the diagnosis of anxiety.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. Can anxiety improve with lifestyle changes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rest, exercise, a healthy diet, stress and time management techniques, relaxation and social activities have positive effects on emotional wellness. [5] [6] Rest and a healthy diet with exercise provide the foundation for effective lifestyle changes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. How does Manovaidya support adults with anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Manovaidya begins support with the individual and not with the symptoms. Through structured assessment, personalized guidance and the Neuro-Ayurveda Development System, support is available through the modeling of emotional wellness, lifestyle and behavioral patterns.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should I seek professional guidance for anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Professional help should be considered when the control of anxiety is lost and it begins to impact negatively on work, relationships, sleep and other daily activities. The persistent physical symptoms that interfere with normal functioning are a cause for seeking help. Severe chest pain with episodes of fainting and major problems with the ease of breathing are examples of medical emergencies that require immediate care.",
+      },
+    },
+  ],
 };
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Adult Mental Health Care", item: "/adult-mental-health-care/" },
-    { "@type": "ListItem", position: 3, name: "Adult Anxiety Support", item: "/anxiety-support-india/" },
+    { "@type": "ListItem", position: 1, name: "Adult Anxiety Treatment", item: adultAnxietySeoPageUrl },
   ],
 };
 
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Adult Anxiety Treatment in India",
-  description: "Looking for Adult Anxiety Treatment in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya.",
-  url: "/anxiety-support-india/",
+  name: adultAnxietySeoTitle,
+  description: adultAnxietySeoDescription,
+  url: adultAnxietySeoPageUrl,
   about: ["Adult Anxiety Support", "Anxiety Symptoms", "Overthinking", "Panic Episodes", "Emotional Wellbeing"],
 };
 
@@ -722,7 +837,7 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
   const linkContext = React.useContext(CitationClickContext);
   const citationHandler = onCitationClick || linkContext?.onCitationClick;
   const source = String(text);
-  const citationPattern = /\[(\d+)\]/;
+  const citationPattern = /\[(\d+(?:\s*,\s*\d+)*)\]/;
   const linkedRuleKeysInText = new Set();
   const parts = [];
   let cursor = 0;
@@ -738,7 +853,7 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
       candidates.push({
         index: citationMatch.index,
         text: citationMatch[0],
-        citationId: citationMatch[1],
+        citationIds: citationMatch[1].split(/\s*,\s*/),
         type: "citation",
       });
     }
@@ -770,11 +885,17 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
     if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
 
     if (next.type === "citation") {
-      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+      parts.push(
+        <React.Fragment key={`${next.text}-${parts.length}`}>
+          {next.citationIds.map((citationId) => (
+            <Citation key={citationId} id={citationId} onClick={citationHandler} />
+          ))}
+        </React.Fragment>
+      );
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadcf3] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -829,6 +950,7 @@ const subheadingLines = new Set([
   "? Holistic Mind-Body Perspective",
   "? Long-Term Emotional Wellbeing",
   "? Ongoing Support & Progress Tracking",
+  "Continuous support and monitoring of progress",
   "Autism, ADHD, Child Development & Mental Health Specialist in India",
   "Concerned About Persistent Anxiety, Overthinking or Emotional Stress?",
   "Take the First Step Towards Better Emotional Balance, Confidence & Mental Wellbeing",
@@ -938,7 +1060,7 @@ function KeyTakeawaysBlock() {
     <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
       <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="p-6 sm:p-8">
-          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Anxiety Treatment in India</p>
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Anxiety Support in India</p>
           <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
           <ul className="mt-4 space-y-2.5">
             {keyTakeaways.map((item) => (
@@ -1078,7 +1200,7 @@ function SectionContent({ lines }) {
     if (line.includes("Focuses On:")) {
       const items = [];
       let nextIndex = index + 1;
-      while (nextIndex < lines.length && (lines[nextIndex].startsWith("✔") || lines[nextIndex].startsWith("?"))) {
+      while (nextIndex < lines.length && isShortListLine(lines[nextIndex])) {
         items.push(lines[nextIndex]);
         nextIndex += 1;
       }
@@ -1239,7 +1361,7 @@ function AdultAnxietySupportIndiaPage() {
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const pageUrl = "https://manovaidya.org/anxiety-support-india/";
-  const pageTitle = "Adult Anxiety Treatment in India | Manovaidya";
+  const pageTitle = "Adult Anxiety Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
   const articleShareLinks = [
@@ -1326,9 +1448,11 @@ function AdultAnxietySupportIndiaPage() {
     <CitationClickContext.Provider value={linkRenderContext}>
       <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Adult Anxiety Treatment in India | Anxiety Symptoms, Overthinking & Emotional Wellbeing | Manovaidya"
-        description="Looking for Adult Anxiety Treatment in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya."
-        keywords="Adult Anxiety Support, Adult Anxiety Treatment in India, Anxiety Support India, Anxiety Symptoms, Generalized Anxiety, Overthinking, Panic Episodes, Emotional Wellbeing, Persistent Anxiety, Constant Worry, Physical Symptoms of Anxiety, Anxiety Attack, Anxiety Disorder, Excessive Worry, Restlessness, Sleep Problems Due to Anxiety"
+        title={adultAnxietySeoTitle}
+        description={adultAnxietySeoDescription}
+        keywords="Adult Anxiety Support, Adult Anxiety Support in India, Anxiety Support India, Anxiety Symptoms, Generalized Anxiety, Overthinking, Panic Episodes, Emotional Wellbeing, Persistent Anxiety, Constant Worry, Physical Symptoms of Anxiety, Anxiety Attack, Anxiety Disorder, Excessive Worry, Restlessness, Sleep Problems Due to Anxiety"
+        path="/anxiety-support-india"
+        schema={medicalWebPageSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
@@ -1340,7 +1464,7 @@ function AdultAnxietySupportIndiaPage() {
                 <span className="text-[#4b345d]">Adult Anxiety Support</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p>
-              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Anxiety Treatment in India</h1>
+              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Anxiety Support in India</h1>
               <p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Anxiety, Constant Worry, Panic & Emotional Wellbeing</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a>
@@ -1353,7 +1477,7 @@ function AdultAnxietySupportIndiaPage() {
             </div>
             <figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none">
               <div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex"><Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System</div>
-              <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Anxiety Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div>
+              <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Anxiety Support in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div>
             </figure>
           </div>
 

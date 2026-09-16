@@ -19,6 +19,162 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
+const behaviouralSeoTitle = "Behavioural Concerns Support for Children in India | Manovaidya";
+const behaviouralSeoDescription =
+  "Get expert support for behavioural concerns in children in India, with guidance for emotional, social, and developmental challenges at Manovaidya.";
+const behaviouralSeoPageUrl = "https://manovaidya.org/behavioural-concerns-children-india";
+
+const behaviouralFaqSchema = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are some of the concerns regarding behaviour in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Behaviour concerns in children are behaviours that could be affecting their everyday life, learning, social interactions or family relationships. These may involve frequent tantrums, anger, aggression, defiance, emotional outbursts or challenges in following instructions or emotions. Difficult behaviours can be seen at times from all children, but if these become frequent or severe it may be necessary to gain a deeper understanding of the child's development. At Manovaidya, behavioural concerns are seen in a wider developmental context; in terms of communication, emotional regulation, attention and learning and overall child development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "2. What are the common signs of behavioural problems in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some typical indicators of behaviour problems can be: inability to follow instructions, impulsiveness, aggression, frequent fights or problems dealing with frustration, stubbornness, and frequent emotional outbursts. Some children may also have difficulties regulating their emotions, relating to others or adapting to routines. Behaviour patterns may be very different in different children. Often context and possible developmental influences into these behaviours can aid families to respond and support growth over the long term."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "3. How do you think your child gets angry so easily?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are a number of reasons why children can become angry easily. Frequent anger can be due to difficulty expressing emotions, communication issues, frustration, attention problems, sensory sensitivities, developmental differences or emotional regulation issues. Anger can often be more than a behaviour issueâ€”it may indicate that a child is having difficulty expressing himself or herself. The knowledge of factors that contribute to emotional responses can facilitate the support for children's emotional development and self-regulation within the family."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "4. What causes my child to have lots of temper tantrums?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "When children have a tantrum, it may be a signal that they are frustrated, disappointed, feeling overwhelmed or that they have some needs that are not being met. Young children might not have the communication or emotional regulation skills to effectively handle strong emotions. Developmental readiness, communication issues, sensory sensitivities, fatigue or changes in routine or the inability to tolerate frustration can also play a role in frequent tantrums. It is important not to just try to prevent tantrums but to also learn about what factors contribute to them, and help the child's emotional growth."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "5. Is aggressive behaviour normal in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It is common for children to have occasional aggressive behaviour, especially when growing up, learning to manage emotions and to interact with other people. If aggression is often, and/or there are strong reactions, or if the behaviour has a significant impact on daily functioning, then further understanding is needed. Frustration, developmental issues, emotional regulation problems, communication difficulties and environmental factors are some of the factors that may influence aggressive behaviour at times. A developmental assessment, based on a structured framework, can help families understand a child's behaviour and why they engage in it, and to determine the support they need."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "6. What are the reasons for a child's behaviour issues?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are several developmental, emotional and environmental factors that could affect child behaviour. Communication problems, emotional regulation issues, attention problems, learning difficulties, sensory sensitivities, familial stress, changes in routine and developmental variations are all factors that can impact behaviour. Many times, behaviour is not the result of one factor. Rather, it is usually a sign of what is happening for a child when they are faced with situations at home or school that are difficult, or in their developmental process. By exploring the causes that impact on behaviour, families can begin to move past symptom management and towards long-term developmental support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "7. Is there any connection between behaviour problems and communication difficulties?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Sometimes, communication problems can give rise to behaviour problems. If children do not feel able to articulate their needs, thoughts or feelings effectively, they may become frustrated and exhibit signs of anger, tantrums, withdrawal or aggression. Sometimes behaviour can be a way of communicating, when children are not able to talk. That is why it is important to consider behavioural concerns in relation to communication development, social interaction and developmental functioning. A thorough developmental assessment can be useful in clarifying these links."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "9. Do ADHD symptoms lead to behavioural problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Children with ADHD can have behavioural problems due to problems with attention, emotions and impulsiveness. These behaviours may include frustration, impatience, emotional outbursts, difficulty following instructions or challenges adapting to routines. However, each child is unique and behavior patterns can be quite different. Parents will gain insight into attention, emotional regulation and behaviour and learn to develop strategies to support the child's development, not just their behaviour."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "9. Is there any behaviour that could be linked to autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Behaviours that are associated with communication difficulties, sensory sensitivities, social interaction or a lack of resilience to change may occur in some children with Autism Spectrum Disorder (ASD). Sometimes behaviours like repetitive actions, emotional outbursts, frustration or withdrawal, can be linked to developmental factors. This knowledge allows families to better understand the behaviour in the context of autism and to determine what type of support(s) may be needed to encourage communication, participation and development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "10. What is a parent's role in dealing with behavioural issues at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Routine, verbal interaction, and consistent responses to challenging situations, are all aspects of parent involvement which can foster behavioural development. Positive reinforcement, emotional support and patience can be important factors in assisting children to learn appropriate behaviours. Possible triggers can also be useful to know, observing behaviours and providing opportunities for expression may also help. Families can gain from an understanding of the developmental, emotional and communication factors that might be contributing to the child's responses, rather than just trying to correct his or her behaviour."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "11. When parents respond to tantrums and anger, what do they not want to do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Generally, parents should try to avoid reacting to their child's tantrums or anger with over-angry responses, yelling, or severe punishment or escalation of emotions. These may sometimes escalate into frustration and make it harder for children to manage their feelings. It is equally important to not label a child as â€œbadâ€ or a â€œproblematicâ€ child based on their behaviour. Instead, parents can pay attention to what may trigger these behaviors and pay close attention to emotional regulation and help the child maintain consistency. A quiet and organized response can foster a more nurturing atmosphere for the development of behaviour."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "12. Is there room for progress in behaviour with the appropriate support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Appropriate guidance, support and understanding are the key factors that can help many children to grow positively in their behaviours. Each child's progress will depend on their personal strengths and challenges, and developmental needs. Communication skills, emotional regulation, attention, learning and environmental factors are often factors that influence behaviour. Once these influences are understood, families can use more effective strategies which will benefit their child's long-term development. A developmental approach that is structured does not just focus on behaviour control, but also allows the child to develop skills that lead to better emotional and behavioural outcomes over time."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "13. When are parents' concerns about behaviour legitimate and do they need support?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If the behaviours are becoming more frequent, more intense, and/or interfering with daily functioning, learning, social relationships, family functioning, parents might want to seek support around these concerns. If aggression persists, if they have serious emotional fits, if they are not able to regulate their emotions, if there are problems at school, or if their behaviour isn't getting better over time, there may be a need to go deeper to understand their development. Asking for advice does not imply that there is something wrong with the child. Rather, it can assist families to gain insight into behavior patterns, developmental factors and how these factors can be promoted with practical strategies to assist their child's growth and wellbeing."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "14. What is Neuro-Ayurveda Development System?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Neuro-Ayurveda Development System is a structured system create by Dr. Ankush Garg to help families better understand developmental, behavioural and mental wellness concerns. The five pillars of the system are as follows: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. These pillars offer a wider developmental view to assist families in understanding communication, behaviour, learning, emotional wellbeing and development in general. The aim is to develop a well-defined pathway that will facilitate the long-term understanding of development and guidance for families."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How does Manovaidya evaluate and aid children with behaviour issues?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, the focus in behavioural assessment is not on the analysis of behaviour but on the child as a whole. Developmental history, communication skills, emotional control, learning style, behaviour observation, social interaction and parent concerns will all be part of the assessment process. This knowledge enables families to receive individual guidance and a developmental plan for their child's needs. Support is concerned with developmental understanding, guidance from parents, progress monitoring and long term family support in the form of Neuro-Ayurveda Development System. The aim is to provide families with more clarity about behavioural patterns and the confidence and direction to proceed."
+      }
+    }
+  ]
+};
+
+const behaviouralSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: behaviouralSeoTitle,
+      description: behaviouralSeoDescription,
+      url: behaviouralSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Behavioural Concerns Support for Children",
+          item: behaviouralSeoPageUrl,
+        },
+      ],
+    },
+    behaviouralFaqSchema,
+  ],
+};
+
 const rawArticleContent = String.raw`Key Takeaways
 Understanding Behavioural Concerns in Children
 Common Signs of Behavioural Challenges
@@ -967,7 +1123,14 @@ function BehaviouralConcernsChildrenIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <FloatingShareBar />
-      <Seo title={`${behaviourTitle} | Manovaidya`} description={behaviourSubtitle} keywords="Child Behaviour Assessment, Parent Guidance, Developmental Support, Behavioural Concerns in Children Support in India" path="/behavioural-concerns-children-india" image={childHeroImage} />
+      <Seo
+        title={behaviouralSeoTitle}
+        description={behaviouralSeoDescription}
+        keywords="Child Behaviour Assessment, Parent Guidance, Developmental Support, Behavioural Concerns in Children Support in India"
+        path="/behavioural-concerns-children-india"
+        image={childHeroImage}
+        schema={behaviouralSeoSchema}
+      />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

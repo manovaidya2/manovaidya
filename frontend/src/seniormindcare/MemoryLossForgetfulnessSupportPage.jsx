@@ -21,7 +21,162 @@ import RelatedSeniorMindCarePages from "./RelatedSeniorMindCarePages";
 import Seo from "../components/Seo";
 
 const pageTitle = "Memory Loss & Forgetfulness Treatment for Seniors in India";
+const seoTitle = "Memory Loss & Forgetfulness Support for Seniors in India";
 const pageUrl = "https://www.manovaidya.com/memory-loss-forgetfulness-support-seniors-india";
+const seoPageUrl = "https://manovaidya.org/memory-loss-forgetfulness-support-seniors-india/";
+
+const memoryLossFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What causes memory loss in old age?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A host of factors can cause memory loss in older people. Although some forgetfulness can be a normal part of the ageing process, a variety of other conditions can be linked to memory loss, including poor sleep, stress, depression, vitamin deficiencies, thyroid disorders, side effects from medications, Mild Cognitive Impairment (MCI), dementia and Alzheimer's disease. Symptoms can be the same for various types of conditions, so it is important to get a proper medical exam to determine the cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. Is memory loss a normal part of ageing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some forgetfulness, like not remembering names and having to look for keys, may happen with normal ageing. Memory loss that is interfering with the person's daily activities, causes confusion and gradually gets worse, however, should not be a part of normal aging. Any memory change that is not going away should be professionally examined in order to identify its source.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What is the difference between forgetfulness and dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The forgetfulness typically means that it is easy to forget sometimes and recall later, and that this forgetfulness doesn't markedly interfere with independence in everyday activities. Dementia is a collection of conditions which progressively impair memory, thinking, reasoning and day to day functioning. However, not all people who forget have dementia, and careful evaluation is necessary before making a diagnosis.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What are the early signs of dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Initial symptoms of dementia can involve asking the same questions over and over; forgetting what just happened; losing orientation to familiar surroundings; not being able to do familiar tasks; misplacing items; problems with planning or decision making, and changes in behaviour or personality. The symptoms may also be seen in other medical conditions, and should be assessed by a trained health professional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. What is Mild Cognitive Impairment (MCI)?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Memory loss and/or cognitive changes that are more noticeable than normal aging that are not sufficiently severe to impair the ability to function in everyday life are known as mild cognitive impairment (MCI). Some may be stable for many years, some may get better with care of their underlying condition, and others may develop dementia in the future. Medical follow up is important for monitoring cognitive health.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Can stress cause memory loss in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Constant stress can have a negative impact on concentration, attention and recall of new information. Even in the absence of a progressive neurological disease, chronic stress can make memory issues appear more problematic. Maintaining stress management, healthy habits and seeking help from professionals as necessary can contribute to cognitive wellness.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. Can poor sleep affect memory?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Sleep is a crucial component in learning, memory and brain function. Lack of sleep, waking up too often or not sleeping well can affect concentration and memory. Healthy sleep can contribute to optimal cognitive function and emotional health.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can memory loss be reversed?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Memory loss may or may not become better based on the cause of memory loss. Vitamin deficiencies, side effects of medication, poor sleep, thyroid issues or depression may lead to memory issues that can improve with the proper medical treatment. As memory loss occurs with the progression of disease in the nervous system, the process may not be reversible and may need to be managed. It is important to have a proper medical evaluation to assess the best course of action.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. What foods support healthy brain function in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Eating a healthy balanced diet with fruits, vegetables, whole grains, legumes, nuts, seeds and sufficient protein is good for general health and brain activity. Omega 3 fatty acids, antioxidants and essential vitamins in food might be associated with healthy ageing. Advice on nutrition should be individualised if needed as there are individual nutritional requirements.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. How can seniors improve memory naturally?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Good lifestyle practices can help maintain healthy brain function. Keeping the mind active, doing regular exercise, sleeping well, having a balanced diet, keeping in touch with others, managing stress and having a routine can all play a part in healthy cognitive ageing. People with ongoing memory problems, particularly those who are elderly, should also get proper medical checkup to determine the underlying cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. What is the difference between Alzheimer's disease and dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dementia is an umbrella term for a collection of conditions which all involve problems with memory, thinking and everyday functioning. Although Alzheimer's disease is the most common cause, it is not the only cause of dementia. Dementia symptoms can also be caused by other medical conditions. With the proper assessment, a skilled health care provider can identify the root cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. Can depression cause memory problems in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Depression in older adults can sometimes affect concentration, attention and memory, making individuals feel more forgetful. Because depression and certain cognitive conditions may share similar symptoms, professional assessment is important to identify the underlying cause and guide appropriate care.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. When should memory loss be evaluated by a doctor?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Any memory changes that interfere with daily functioning, get worse over time, or lead to confusion, make people feel unsafe or cause behaviour and personality changes should be assessed. Early assessment may be a useful tool to identify treatable causes and provide informed planning and management.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. How does Manovaidya support seniors with memory concerns?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The first step is to know the person, not just what they are having trouble with â€“ memory loss. Structured assessment, personalised guidance, and the Neuro-Ayurveda Development System, we enable seniors and families to comprehend cognitive wellbeing, lifestyle practices, emotional health and behavioural changes that can impact memory. We aim to actively promote wellbeing, daily functioning and healthy ageing of the brain in a personalised and holistic way.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should families seek professional guidance for memory changes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Families should consider seeking professional guidance if an older adult begins forgetting recent conversations, repeatedly asks the same questions, becomes confused in familiar places, struggles with daily activities, misses medications, shows personality changes or experiences worsening memory over time. Early assessment can help identify the possible causes of memory changes and support appropriate care for both the senior and their family.",
+      },
+    },
+  ],
+};
+
+const memoryLossBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Memory Loss",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const memoryLossMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Memory loss and forgetfulness support for seniors in India.",
+  url: seoPageUrl,
+};
+
+const memoryLossSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [memoryLossMedicalWebPageSchema, memoryLossBreadcrumbSchema, memoryLossFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Memory Loss and Forgetfulness
@@ -928,11 +1083,9 @@ function MemoryLossForgetfulnessSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Brain Health & Cognitive Wellbeing | Manovaidya`} description="Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Memory Loss Treatment India, Forgetfulness Support, Senior Brain Health, Dementia Awareness, Age-related Memory Changes, Cognitive Wellbeing, Neuro-Ayurveda Memory Care, Memory Assessment, Dr. Ankush Garg, Senior Mental Health" path="/memory-loss-forgetfulness-support-seniors-india" />
+      <Seo title={seoTitle} description="Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Memory Loss Treatment India, Forgetfulness Support, Senior Brain Health, Dementia Awareness, Age-related Memory Changes, Cognitive Wellbeing, Neuro-Ayurveda Memory Care, Memory Assessment, Dr. Ankush Garg, Senior Mental Health" path="/memory-loss-forgetfulness-support-seniors-india" schema={memoryLossSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -991,8 +1144,6 @@ function MemoryLossForgetfulnessSupportPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Memory loss and forgetfulness treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

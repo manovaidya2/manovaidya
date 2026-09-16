@@ -30,6 +30,510 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
 import Seo from "../components/Seo";
 
+const examPerformanceSeoTitle = "Exam & Performance Pressure Treatment in India | Manovaidya";
+const examPerformanceSeoDescription =
+  "Looking for Exam Stress Treatment in India? Learn about exam anxiety, academic pressure, fear of failure, concentration challenges and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
+const examPerformanceSeoPageUrl = "https://manovaidya.org/exam-performance-pressure";
+
+const articleRaw = `Key Takeaways
+Understanding Exam & Performance Pressure
+Common Signs of Exam Anxiety
+Causes of Academic Stress in Teenagers
+Fear of Failure & High Expectations
+Effects on Confidence & Emotional Wellbeing
+Impact on Concentration, Memory & Performance
+Importance of Healthy Sleep & Study Habits
+Managing Academic Burnout & Procrastination
+Neuro-Ayurveda Approach to Academic Wellbeing
+Parent Support During Examination Periods
+Manovaidya Assessment & Guidance Process
+FAQs About Exam Stress & Performance Anxiety
+
+Exam & Performance Pressure Support in India
+
+Supporting the confidence, emotional resilience and healthy academic wellbeing of teenagers.
+
+Academic expectations have become a large part of our modern teenager's life. Many teenagers experience significant emotional stress in school exams, competitive settings, and when planning and making decisions about their future careers. [1][5]
+
+It is important that some pressure is applied to promote learning and development, but too much stress can lead to poor emotional health, low self-confidence, sleep deprivation, poor concentration and mental well-being. [3][5][7]
+
+There are many signs that parents can spot which can indicate that a teenager is experiencing anxiety before exams, excessive worry about results and low confidence or difficulty with academic expectations. Familiarizing self and family with these challenges helps them to support each other more effectively.
+
+At Manovaidya, we know that exam stress goes beyond just studying. Factors such as emotional wellbeing, confidence, lifestyle habits, sleep patterns, family expectations and stress management skills can interact with each other to affect academic achievement and wellbeing.
+
+Under the guidance of Autism, ADHD, Child Development & Mental Health Specialist in India Dr. Ankush Garg, Manovaidya adopts a systematic Neuro-Ayurveda perspective to shed light on the causes of stress during exams and provides a plan for emotional strength, resilience, and overall development for the teen and his or her family.
+
+At Manovaidya, Exam & Performance Pressure Support Focuses On:
+
+Exam Stress & Anxiety
+Academic Pressure Management
+Confidence & Self-Belief
+Fear of Failure
+Emotional Resilience
+Parent-Teen Academic Support
+
+Understanding Exam & Performance Pressure
+
+Many people consider exams to be a crucial component of learning. For many teens, however, grades are intricately linked to their sense of self-worth, confidence and future expectations.
+
+For many families seeking Exam Stress Support in India, Academic Pressure Support in India or Teen Mental Health Support in India, they are in need of an organized solution to help better understand their teenager's emotional state and academic difficulties.
+
+Youth can be under pressure from:
+School expectations
+Competitive environments
+Family expectations
+Peer comparison
+Career concerns
+Fear of disappointing others
+Too much is too much, but stress can be beneficial in some cases, it may have an impact on confidence, concentration and emotional wellbeing. [3][5]
+
+The pressure of school work is unique to each teenager. Some get extremely nervous in front of examinations, some lose motivation, avoid studying or get too emotional.
+
+It is helpful for you to know about these differences if you want to provide a valuable support.
+
+
+Common Signs of Exam & Performance Pressure
+
+Stress can manifest itself emotionally, behaviourally, academically and physically for exam-related stress. [3][5]
+
+Emotional Signs
+
+Excessive worrying
+Fear of failure
+Irritability
+Overthinking
+Emotional overwhelm
+Low confidence
+
+Behavioural Signs
+
+Procrastination
+Avoiding studies
+Reduced motivation
+Emotional outbursts
+Excessive screen use
+
+Academic Signs
+
+Difficulty concentrating
+Poor time management
+Exam anxiety
+Memory difficulties
+Reduced performance despite effort
+
+Physical Signs
+
+Sleep difficulties
+Headaches
+Fatigue
+Restlessness
+Stomach discomfort
+
+Parents should try to look for patterns, not individual events. If you are experiencing ongoing problems with your everyday life, this could warrant further attention and support. [3][9]
+
+
+Why Teenagers Experience Exam & Performance Pressure
+
+Many parents think that exam stress is a result of insufficient preparation of the students.
+Academic pressure is actually affected by several factors in reality.
+Fear of Failure
+
+Teenagers are afraid to let themselves down, let their parents or teachers down. [5]
+
+High Expectations
+
+High expectations for academic learning can sometimes be overwhelming.
+
+Competitive Environments
+
+Peers and academic competition can impact confidence and self-esteem.
+
+Future Uncertainty
+
+Career, admissions and future questions may lead to stress.
+
+Low Confidence
+
+A lack of confidence in one's self can lead to a higher level of anxiety for teens taking exams.
+
+Lifestyle & Sleep Habits
+
+Irregular sleep and too much screen time can have a negative impact on concentration and emotional health. [3][7]
+
+
+How Exam Pressure Can Affect Teenagers
+
+Too much school stress can have a negative impact on several aspects of life. [1][3]
+
+Emotional Wellbeing
+
+Anxiety
+Overthinking
+Emotional exhaustion
+Mood changes
+
+Confidence
+
+Many teenagers start to equate their self worth with their grade and outcomes.
+
+Academic Performance
+
+
+Paradoxically, the downside to too much pressure is a decrease in concentration, memory and performance on exams. [3][5]
+
+Relationships
+
+Stress can affect the communication between parents, teachers and friends.
+
+
+Physical Wellbeing
+Sleep problems
+Fatigue
+Headaches
+Reduced energy
+Familiarizing yourself with these effects can help you to be mindful of how to support the family as a whole rather than focusing on academic outcomes.
+
+
+The Neuro-Ayurveda Approach to Exam & Performance Pressure
+
+Exam stress at Manovaidya is viewed from a wider perspective.
+
+Manovaidya does not just look at marks, performance, academic achievement; they look at the wider picture that could affect emotional wellbeing, confidence, concentration, motivation, attention and overall development.
+
+The Neuro-Ayurveda Development System can benefit families by increasing their understanding of the various factors that can impact a teenager's academic success and emotional strength.
+
+Brain Nourishment System
+
+Healthy learning starts with healthy cognitive functioning.
+
+The Brain Nourishment System is centered on the knowledge that there are certain factors that could affect:
+
+•	Attention
+•	Concentration
+•	Memory
+•	Learning readiness
+•	Confidence
+•	Decision making
+
+
+There are many teens out there who are not unskilled but they are plagued by school difficulties. They might be experiencing emotional stress, less confidence, and/or poor routines.
+
+Understanding brain information processing, learning and challenges is an important first step to supporting academic wellbeing.
+
+Gut Response System
+
+There is increasing evidence about the connection between digestive well-being and emotional well-being.
+
+When teens experience academic stress, they may also express themselves in the following ways:
+
+•	Appetite changes
+•	Digestive discomfort
+•	Irregular eating habits
+•	Energy fluctuations
+•	Lifestyle-related concerns
+
+The Gut Response System is all about recognising the possible impact the entire wellbeing system might have on emotional balance, concentration and functioning throughout the day.
+
+
+Neural Network System
+
+All experiences shape patterns of thinking, learning and responding in the brain.
+
+The Neural Network System is oriented towards knowledge:
+
+•	Learning habits
+•	Study patterns
+•	Emotional responses
+•	Confidence levels
+•	Adaptability
+
+This pillar assists families to recognise the impact that thinking attitudes and learning behaviours can have on learning outcomes in the longer term.
+
+
+Sensory Integration System
+
+There are varying reactions to school that many teenagers have.
+
+Factors such as:
+
+•	Examination settings
+•	Noise
+•	Social pressure
+•	Classroom environments
+•	Digital stimulation
+
+May affect concentration, mood and ability to work.
+
+Knowing about these influences can often help develop an environment that is more conducive to learning.
+
+
+Behaviour Guidance System
+
+Actions may be a reflection of experiences.
+
+When teens are feeling academic pressure, they might exhibit:
+
+•	Procrastination
+•	Avoidance of studies
+•	Irritability
+•	Emotional withdrawal
+•	Reduced motivation
+
+This pillar will not only look at the behaviour, but also it will examine what factors may be contributing to the behaviour, and how families can respond more effectively.
+
+
+How Parents Can Support Teenagers During Exams
+
+Parents can have a significant impact on the experience of academic stress for teens.
+
+With gentle guidance, teens can learn to develop confidence and better coping mechanisms.
+
+
+Focus on Effort, Not Just Results
+
+A lot of teens consider themselves to be important solely on the basis of their grades and achievements.
+
+
+When it comes to self-confidence and resilience, it's important to acknowledge efforts, consistency and improvement.
+
+
+Avoid Excessive Comparison
+
+Comparing youth to their siblings, friends or classmates can add stress and diminish self-confidence.
+
+All teens are unique in their strengths, abilities and learning styles.
+
+Encourage Healthy Study Habits
+
+Consistent routines, realistic schedules and balanced study habits often support better academic performance than last-minute pressure. [3]
+
+
+Promote Healthy Sleep
+
+Sleep is very important in concentration, memory and emotional wellbeing.
+
+A healthy sleep routine can help teenagers do their best. [3][7]
+
+
+Create a Supportive Environment
+
+When teens feel emotionally validated but not continually assessed.
+
+If there's no need to put the pressure on, a calm atmosphere is likely to help.
+
+
+Help Manage Expectations
+
+It is possible to set yourself goals that are motivating, but not realistic, which can lead to anxiety and fear of failure.
+
+Parents can assist teens to focus on developing and learning instead of being perfect.
+
+
+Encourage Balance
+
+
+While academic achievement is significant, emotional health, physical health, recreation and relationships are also crucial components of healthy development. [1][3]
+How Manovaidya Supports Students & Families
+
+At Manovaidya support starts by experiencing the learner as a whole person and not just in terms of academic performance.
+
+We normally provide:
+
+Step 1: Detailed Assessment
+
+Knowledge of emotional wellbeing, confidence levels, study habits, lifestyle routines, sleep patterns, concentration difficulties and family concerns.
+
+Step 2: Personalized Guidance
+
+Making differential recommendations according to the emotional, behavioural and developmental needs of each teen.
+
+Step 3: Parent Guidance & Family Support
+
+To provide parents with greater understanding of academic stress, emotional health and how parents can support teens during difficult times.
+
+Step 4: Neuro-Ayurveda Development System
+
+Applying the five-pillar framework to better understand emotional wellbeing, confidence, concentration, motivation and overall growth.
+
+Step 5: Progress Tracking & Follow-Up
+
+Creating a structured roadmap that helps families monitor progress and make informed decisions over time.
+
+When Should Parents Consider an Assessment?
+
+Parents may consider seeking guidance if they notice:
+Persistent exam anxiety
+Fear of failure
+Excessive worrying about studies
+Declining confidence
+Difficulty concentrating
+Sleep problems before exams
+Emotional breakdowns related to academics
+Reduced motivation despite effort
+Academic pressure affecting overall wellbeing
+A formal assessment can assist families to understand what is contributing to emotional wellbeing, confidence and academic performance. [3][5][9]
+
+We want to help teens and families transition from stress, confusion and academic overload toward clarity, confidence, resilience and balanced growth.
+
+
+Why Families Choose Manovaidya
+
+
+For many families, it can be difficult to find the best resources for academic stressors and emotional wellness. Often, parents want to know what to do, what to tell their teens, and how to help them stay confident, emotionally balanced, and manage their academic loads.
+
+We aim for much more than just marks, exams or performance at Manovaidya. We support families to understand the wider issues affecting concentration, confidence, motivation, emotional wellbeing and development.
+
+Families Choose Manovaidya Because Of:
+
+Structured Academic Wellbeing Assessment
+
+Academic stress is different for every teen. Knowing about the emotional, behavioural and lifestyle factors is useful for developing a more individualised plan for support and development.
+
+Neuro-Ayurveda Development System
+
+We have a structured framework which supports families to explore the five interconnected pillars of emotional wellbeing and academic functioning:
+
+•	Brain Nourishment System
+•	Gut Response System
+•	Neural Network System
+•	Sensory Integration System
+•	Behaviour Guidance System
+
+
+Parent-Centred Guidance
+
+Both teens and parents are subjected to academic stress. Including family in the support of children can help to establish a more healthy and balanced classroom.
+
+Personalized Support
+
+All teens are different; they have their own strengths, weaknesses and learning styles. Guidance is personalized to suit the needs and circumstances of each person.
+
+Long-Term Growth Focus
+
+We are not only about getting the grades, but more about confidence, emotional resilience and healthy study habits and balanced development.
+
+Family-Oriented Approach
+
+Follow-up and shared efforts of parents and teens with clarity and guidance can often lead to meaningful progress.
+
+Why Families Across India Connect With Manovaidya
+
+Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Exam & Performance Pressure Support, Teen Mental Health Support and Academic Wellbeing guidance through online and in-clinic consultations.
+
+
+
+About Dr. Ankush Garg
+
+Autism, ADHD, Child Development & Mental Health Specialist in India
+
+Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+
+His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach.
+
+Many families searching for support for exam stress, academic pressure, emotional wellbeing and confidence challenges connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support.
+
+
+Through detailed assessment, personalized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing emotional wellbeing, confidence, concentration and long-term growth.
+
+
+Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
+
+
+
+Frequently Asked Questions (FAQs)
+
+
+1. Why does my teenager get stressed before exams?
+
+Stress is a common occurrence among many teens before exams, as they fret about performance, results, opportunities and expectations. Examination-related stress can be caused by academic pressure, fear of failure, comparison with peers and uncertainty of result. Too much stress can have a negative impact on confidence, focus and emotional health, whereas some stress can be used to get people to prepare. Familiarity with the sources of exam stress can facilitate family support. [3][5]
+
+
+2. What are the signs of exam anxiety?
+
+Some common symptoms of exam anxiety can include excessive worry, over thinking, sleeping problems, fear of failure, problems paying attention, irritability, over emotional, headaches, stomach discomfort or restlessness. Some teens might not want to study, procrastinate doing their homework or get unusually emotional right before exams. By identifying these symptoms early, families can better understand their teen's emotional state and offer timely support. [3][5]
+
+
+3. How can parents help teenagers during exams?
+
+Parents, you can help support teens by creating a relaxing, supportive atmosphere during exams. Teens often lower stress when they listen to others without judging, decrease unnecessary pressure, have healthy habits and only focus on effort, not results. Support and reassurance can be a valuable tool in helping teenagers to increase their confidence and resilience during difficult learning times. [1][3]
+
+
+4. Can exam stress affect academic performance?
+
+Yes. Too much test anxiety can impact focus, the recall, confidence and judgment. When students are over anxious they don't perform well. Emotional wellbeing is closely linked with academic performance and supporting the emotional wellbeing of a teenager can often provide a solid basis for learning and achievement. [3][5]
+
+
+5. Why is my child afraid of failure?
+
+
+Teens can start to feel a sense of failure when they start to equate their self-worth with their grades or when they are under too much pressure to get good grades. This fear can come from high expectations, perfectionism, comparing oneself to others, and fearing that one will not measure up to their family members. Encouraging teens to concentrate on developing themselves, learning and trying hard, rather than striving for perfection, can foster positive self-confidence and emotional strength. [5]
+
+
+6. How can I improve my teenager's concentration?
+
+
+Sleep, emotional well-being, study habits, lifestyles, screen utilization and stress can impact concentration. Creating structure, healthy sleep and consistent exercise and study routines can enhance focus. Rather than telling teenagers to study harder, it's better to understand what goes on in their minds that causes them to concentrate or not. [3][7]
+
+
+7. What causes performance anxiety in teenagers?
+
+Factors that could affect performance anxiety include fear of judgment, academic pressure, lack of confidence, perfectionism, social pressure and worries about future. Some teens put pressure on themselves to get a certain outcome. Familiarity with the emotional triggers can assist families in promoting confidence and wellbeing through academic difficulty. [5][9]
+
+
+8. Why does my teenager procrastinate before exams?
+
+Laziness is not always manifested in procrastination. It can often be associated with fear of failure, anxiety, overwhelm, low confidence or struggling with academic pressure. A stress response to the task itself can cause teen to postpone study. Familiarity with the causes of procrastination can help families give more effective direction and encouragement.
+
+9. Can lack of sleep increase exam stress?
+
+Yes. Sleep is vital for emotional health, remembering, focus and learning. Poor sleep hygiene can lead to being more irritable and anxious, more stressed and less concentrated. Good sleep habits can help emotional health and school success during exam times. [3][7]
+
+
+10. What is the best way to manage exam stress?
+
+There are various healthy study techniques, getting plenty of rest, getting a healthy balance of your daily routine, emotional support, and realistic expectations and time management that can help you handle exam stress. Academic stress affects teens in divergent ways, so it is crucial to know their specific needs and challenges. Improving performance is not the only aim, but also confidence and emotional wellbeing. [3][5][10]
+
+11. How do I help my child deal with academic pressure?
+
+Parents can support this by fostering positive communication, and by limiting expectations and emphasizing learning instead of just results. When teens feel supported and understood, they will fare better. A balanced environment – valuing effort, growth and wellbeing can help to lessen the unnecessary pressure and boost confidence. [1][3]
+
+
+12. What are the first signs of academic burnout?
+
+Some early warning signs of academic burnout may involve emotional exhaustion, decreased motivation to attend school, problems focusing, increased irritability, trouble sleeping, fatigue and loss of interest in schoolwork. Some teenagers may also be withdrawn or feel overwhelmed by tasks that they used to be able to handle easily. Recognizing their symptoms in the early stages can sometimes help avoid additional emotional stress. [1][3]
+
+
+13. How does Manovaidya support students and families?
+
+The student is seen not just as a learner, but as a person at Manovaidya. The Neuro-Ayurveda Development System, structured assessment, personalized guidance and family support helps the families understand emotional wellbeing, confidence, concentration, motivation and lifestyle related influences. The objective is to assist students and families with a progressive path toward clarity, resilience and future development.
+
+
+14. Can exam stress be managed without medication?
+
+Non-medication strategies to address emotional wellbeing, healthy routines, effective study habits, stress management, physical activity and family support, are important for many teens. The best method will depend on the person's situation and requirements. Families can sometimes be helped to recognise factors which create stress, and help them recognise strategies which promote confidence, resilience and academic wellbeing. [3][9][10]
+
+
+15. When should parents seek professional guidance for exam stress?
+
+Parents should seek advice when stress related to exams is impacting sleep, confidence, concentration, motivation, emotional wellbeing or functioning. If a child or young person experiences persistent anxiety, fears of failure, emotional breakdowns, or avoidance of studies/significant behavioural changes there may be a need for further support. A structured assessment can assist families to better understand the factors that affect their teen's academic and emotional health. [3][5][9]
+
+
+Book a Consultation
+
+Concerned About Academic Pressure, Exam Stress or Performance Anxiety?
+
+If your teenager is experiencing exam stress, fear of failure, declining confidence, concentration difficulties or emotional overwhelm, seeking clarity is often the first step.
+
+At Manovaidya, our team helps families better understand academic wellbeing through structured assessment, personalized guidance and family-centred support.
+
+Book a Consultation
+
+Take the First Step Towards Better Confidence, Emotional Resilience & Academic Wellbeing
+
+📞 Book Assessment Session
+📞 Speak With Our Team
+📞 Get Personalized Guidance`;
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Exam Pressure", id: "understanding-exam-pressure" },
@@ -55,18 +559,18 @@ const categories = [
 ];
 
 const keyTakeaways = [
-  "Understanding Exam Stress & Academic Performance Pressure",
-  "Common Signs of Exam Anxiety in Teenagers",
-  "Main Causes of Academic Stress and Fear of Failure",
-  "Impact of Exam Pressure on Confidence, Sleep & Concentration",
-  "Role of Family Expectations, Comparison and Competition",
-  "Emotional Resilience and Healthy Academic Wellbeing",
-  "Neuro-Ayurveda Approach to Exam Stress Management",
-  "How Parents Can Support Teenagers During Exams",
-  "Manovaidya's Assessment and Personalized Support Process",
-  "When Parents Should Seek Professional Guidance",
-  "Why Families Choose Manovaidya for Exam Stress Support",
-  "Frequently Asked Questions About Exam Stress & Anxiety",
+  "Understanding Exam & Performance Pressure",
+  "Common Signs of Exam Anxiety",
+  "Causes of Academic Stress in Teenagers",
+  "Fear of Failure & High Expectations",
+  "Effects on Confidence & Emotional Wellbeing",
+  "Impact on Concentration, Memory & Performance",
+  "Importance of Healthy Sleep & Study Habits",
+  "Managing Academic Burnout & Procrastination",
+  "Neuro-Ayurveda Approach to Academic Wellbeing",
+  "Parent Support During Examination Periods",
+  "Manovaidya Assessment & Guidance Process",
+  "FAQs About Exam Stress & Performance Anxiety",
 ];
 
 const fullMedicalReferenceContent = `References
@@ -137,77 +641,216 @@ const articleLinkRules = [
 const faqs = [
   {
     question: "1. Why does my teenager get stressed before exams?",
-    answer: "Many teenagers experience stress before exams because they worry about performance, results, future opportunities and meeting expectations. Academic pressure, fear of failure, comparison with peers and uncertainty about outcomes can all contribute to exam-related stress. While some level of stress may motivate preparation, excessive stress can affect confidence, concentration and emotional wellbeing. Understanding the reasons behind exam stress often helps families provide more effective support. [3] [4]"
+    answer: "Stress is a common occurrence among many teens before exams, as they fret about performance, results, opportunities and expectations. Examination-related stress can be caused by academic pressure, fear of failure, comparison with peers and uncertainty of result. Too much stress can have a negative impact on confidence, focus and emotional health, whereas some stress can be used to get people to prepare. Familiarity with the sources of exam stress can facilitate family support. [3][5]"
   },
   {
     question: "2. What are the signs of exam anxiety?",
-    answer: "Common signs of exam anxiety may include excessive worrying, overthinking, sleep difficulties, fear of failure, difficulty concentrating, irritability, emotional overwhelm and physical symptoms such as headaches, stomach discomfort or restlessness. Some teenagers may avoid studying, procrastinate or become unusually emotional before examinations. Recognizing these signs early can help families better understand their teenager's emotional wellbeing and provide timely support. [4] [10]"
+    answer: "Some common symptoms of exam anxiety can include excessive worry, over thinking, sleeping problems, fear of failure, problems paying attention, irritability, over emotional, headaches, stomach discomfort or restlessness. Some teens might not want to study, procrastinate doing their homework or get unusually emotional right before exams. By identifying these symptoms early, families can better understand their teen's emotional state and offer timely support. [3][5]"
   },
   {
     question: "3. How can parents help teenagers during exams?",
-    answer: "Parents can support teenagers by creating a calm and encouraging environment during exam periods. Listening without judgement, reducing unnecessary pressure, maintaining healthy routines and focusing on effort rather than only results often helps teenagers manage stress more effectively. Emotional support and reassurance can play an important role in helping teenagers build confidence and resilience during challenging academic periods. [7] [11]"
+    answer: "Parents, you can help support teens by creating a relaxing, supportive atmosphere during exams. Teens often lower stress when they listen to others without judging, decrease unnecessary pressure, have healthy habits and only focus on effort, not results. Support and reassurance can be a valuable tool in helping teenagers to increase their confidence and resilience during difficult learning times. [1][3]"
   },
   {
     question: "4. Can exam stress affect academic performance?",
-    answer: "Yes. Excessive exam stress may affect concentration, memory, confidence and decision-making abilities. Many students find it difficult to perform at their best when anxiety becomes overwhelming. Emotional wellbeing and academic performance are closely connected, which is why supporting a teenager's mental wellbeing often helps create a stronger foundation for learning and achievement. [3] [4]"
+    answer: "Yes. Too much test anxiety can impact focus, the recall, confidence and judgment. When students are over anxious they don't perform well. Emotional wellbeing is closely linked with academic performance and supporting the emotional wellbeing of a teenager can often provide a solid basis for learning and achievement. [3][5]"
   },
   {
     question: "5. Why is my child afraid of failure?",
-    answer: "Fear of failure may develop when teenagers associate their self-worth with academic results or feel excessive pressure to succeed. High expectations, perfectionist tendencies, comparison with others and concerns about disappointing family members can all contribute to this fear. Helping teenagers focus on growth, learning and effort rather than perfection often supports healthier confidence and emotional resilience. [3] [7]"
+    answer: "Teens can start to feel a sense of failure when they start to equate their self-worth with their grades or when they are under too much pressure to get good grades. This fear can come from high expectations, perfectionism, comparing oneself to others, and fearing that one will not measure up to their family members. Encouraging teens to concentrate on developing themselves, learning and trying hard, rather than striving for perfection, can foster positive self-confidence and emotional strength. [5]"
   },
   {
     question: "6. How can I improve my teenager's concentration?",
-    answer: "Concentration may be influenced by sleep quality, emotional wellbeing, study habits, lifestyle routines, screen use and stress levels. Encouraging consistent schedules, healthy sleep, regular physical activity and balanced study routines often helps improve focus. Understanding the factors affecting concentration is usually more effective than simply asking teenagers to study harder. [3] [9] [10]"
+    answer: "Sleep, emotional well-being, study habits, lifestyles, screen utilization and stress can impact concentration. Creating structure, healthy sleep and consistent exercise and study routines can enhance focus. Rather than telling teenagers to study harder, it's better to understand what goes on in their minds that causes them to concentrate or not. [3][7]"
   },
   {
     question: "7. What causes performance anxiety in teenagers?",
-    answer: "Performance anxiety may be influenced by fear of judgement, academic expectations, low confidence, perfectionism, social pressure and concerns about future outcomes. Some teenagers place significant pressure on themselves to achieve specific results. Understanding these emotional influences often helps families better support confidence and wellbeing during academic challenges. [3] [4]"
+    answer: "Factors that could affect performance anxiety include fear of judgment, academic pressure, lack of confidence, perfectionism, social pressure and worries about future. Some teens put pressure on themselves to get a certain outcome. Familiarity with the emotional triggers can assist families in promoting confidence and wellbeing through academic difficulty. [5][9]"
   },
   {
     question: "8. Why does my teenager procrastinate before exams?",
-    answer: "Procrastination is not always a sign of laziness. In many cases, it may be linked to fear of failure, anxiety, overwhelm, low confidence or difficulty managing academic pressure. Teenagers may delay studying because they feel stressed about the task itself. Understanding the reasons behind procrastination often helps families provide more meaningful guidance and support. [3] [6]"
+    answer: "Laziness is not always manifested in procrastination. It can often be associated with fear of failure, anxiety, overwhelm, low confidence or struggling with academic pressure. A stress response to the task itself can cause teen to postpone study. Familiarity with the causes of procrastination can help families give more effective direction and encouragement."
   },
   {
     question: "9. Can lack of sleep increase exam stress?",
-    answer: "Yes. Sleep plays an important role in emotional wellbeing, memory, concentration and learning. Poor sleep habits may increase irritability, anxiety, stress levels and difficulty focusing. Maintaining healthy sleep routines during exam periods often supports both emotional wellbeing and academic performance. [9] [10]"
+    answer: "Yes. Sleep is vital for emotional health, remembering, focus and learning. Poor sleep hygiene can lead to being more irritable and anxious, more stressed and less concentrated. Good sleep habits can help emotional health and school success during exam times. [3][7]"
   },
   {
     question: "10. What is the best way to manage exam stress?",
-    answer: "Managing exam stress often involves a combination of healthy study habits, adequate sleep, balanced daily routines, emotional support, realistic expectations and effective time management. Every teenager responds differently to academic pressure, so understanding individual needs and challenges is important. The goal is not only to improve performance but also to support confidence and emotional wellbeing. [3] [6] [10]"
+    answer: "There are various healthy study techniques, getting plenty of rest, getting a healthy balance of your daily routine, emotional support, and realistic expectations and time management that can help you handle exam stress. Academic stress affects teens in divergent ways, so it is crucial to know their specific needs and challenges. Improving performance is not the only aim, but also confidence and emotional wellbeing. [3][5][10]"
   },
   {
     question: "11. How do I help my child deal with academic pressure?",
-    answer: "Parents can help by encouraging open communication, reducing excessive expectations and focusing on learning rather than only outcomes. Teenagers often cope better when they feel supported and understood. Creating a balanced environment that values effort, growth and wellbeing can help reduce unnecessary pressure and improve confidence. [3] [7]"
+    answer: "Parents can support this by fostering positive communication, and by limiting expectations and emphasizing learning instead of just results. When teens feel supported and understood, they will fare better. A balanced environment – valuing effort, growth and wellbeing can help to lessen the unnecessary pressure and boost confidence. [1][3]"
   },
   {
     question: "12. What are the first signs of academic burnout?",
-    answer: "Early signs of academic burnout may include emotional exhaustion, reduced motivation, difficulty concentrating, increased irritability, sleep disturbances, fatigue and loss of interest in studies. Some teenagers may also become withdrawn or feel overwhelmed by tasks they previously managed comfortably. Identifying these signs early often helps prevent further emotional strain. [1] [3]"
+    answer: "Some early warning signs of academic burnout may involve emotional exhaustion, decreased motivation to attend school, problems focusing, increased irritability, trouble sleeping, fatigue and loss of interest in schoolwork. Some teenagers may also be withdrawn or feel overwhelmed by tasks that they used to be able to handle easily. Recognizing their symptoms in the early stages can sometimes help avoid additional emotional stress. [1][3]"
   },
   {
     question: "13. How does Manovaidya support students and families?",
-    answer: "At Manovaidya, support begins with understanding the student as a whole rather than focusing only on academic performance. Through structured assessment, personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of emotional wellbeing, confidence, concentration, motivation and lifestyle-related influences. The goal is to help students and families move toward greater clarity, resilience and long-term growth."
+    answer: "The student is seen not just as a learner, but as a person at Manovaidya. The Neuro-Ayurveda Development System, structured assessment, personalized guidance and family support helps the families understand emotional wellbeing, confidence, concentration, motivation and lifestyle related influences. The objective is to assist students and families with a progressive path toward clarity, resilience and future development."
   },
   {
     question: "14. Can exam stress be managed without medication?",
-    answer: "Many teenagers benefit from non-medication approaches that focus on emotional wellbeing, healthy routines, effective study habits, stress management, physical activity and family support. The most appropriate approach depends on the individual's needs and circumstances. Understanding the factors contributing to stress often helps families identify strategies that support confidence, resilience and academic wellbeing. [4] [6] [7]"
+    answer: "Non-medication strategies to address emotional wellbeing, healthy routines, effective study habits, stress management, physical activity and family support, are important for many teens. The best method will depend on the person's situation and requirements. Families can sometimes be helped to recognise factors which create stress, and help them recognise strategies which promote confidence, resilience and academic wellbeing. [3][9][10]"
   },
   {
     question: "15. When should parents seek professional guidance for exam stress?",
-    answer: "Parents may consider seeking guidance when exam-related stress begins affecting sleep, confidence, concentration, motivation, emotional wellbeing or daily functioning. Persistent anxiety, fear of failure, emotional breakdowns, avoidance of studies or significant behavioural changes may indicate the need for additional support. A structured assessment can help families better understand the factors influencing their teenager's academic and emotional wellbeing. [1] [3] [4]"
-  }
+    answer: "Parents should seek advice when stress related to exams is impacting sleep, confidence, concentration, motivation, emotional wellbeing or functioning. If a child or young person experiences persistent anxiety, fears of failure, emotional breakdowns, or avoidance of studies/significant behavioural changes there may be a need for further support. A structured assessment can assist families to better understand the factors that affect their teen's academic and emotional health. [3][5][9]"
+  },
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(faq => ({
-    "@type": "Question",
-    "name": faq.question.replace(/^\d+\.\s*/, ''),
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer
-    }
-  }))
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. Why does my teenager get stressed before exams?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many teenagers experience stress before exams because they worry about performance, results, future opportunities and meeting expectations. Academic pressure, fear of failure, comparison with peers and uncertainty about outcomes can all contribute to exam-related stress. While some level of stress may motivate preparation, excessive stress can affect confidence, concentration and emotional wellbeing. Understanding the reasons behind exam stress often helps families provide more effective support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What are the signs of exam anxiety?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common signs of exam anxiety may include excessive worrying, overthinking, sleep difficulties, fear of failure, difficulty concentrating, irritability, emotional overwhelm and physical symptoms such as headaches, stomach discomfort or restlessness. Some teenagers may avoid studying, procrastinate or become unusually emotional before examinations. Recognizing these signs early can help families better understand their teenager's emotional wellbeing and provide timely support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. How can parents help teenagers during exams?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can support teenagers by creating a calm and encouraging environment during exam periods. Listening without judgement, reducing unnecessary pressure, maintaining healthy routines and focusing on effort rather than only results often helps teenagers manage stress more effectively. Emotional support and reassurance can play an important role in helping teenagers build confidence and resilience during challenging academic periods.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Can exam stress affect academic performance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Excessive exam stress may affect concentration, memory, confidence and decision-making abilities. Many students find it difficult to perform at their best when anxiety becomes overwhelming. Emotional wellbeing and academic performance are closely connected, which is why supporting a teenager's mental wellbeing often helps create a stronger foundation for learning and achievement.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Why is my child afraid of failure?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Fear of failure may develop when teenagers associate their self-worth with academic results or feel excessive pressure to succeed. High expectations, perfectionist tendencies, comparison with others and concerns about disappointing family members can all contribute to this fear. Helping teenagers focus on growth, learning and effort rather than perfection often supports healthier confidence and emotional resilience.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. How can I improve my teenager's concentration?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Concentration may be influenced by sleep quality, emotional wellbeing, study habits, lifestyle routines, screen use and stress levels. Encouraging consistent schedules, healthy sleep, regular physical activity and balanced study routines often helps improve focus. Understanding the factors affecting concentration is usually more effective than simply asking teenagers to study harder.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What causes performance anxiety in teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Performance anxiety may be influenced by fear of judgement, academic expectations, low confidence, perfectionism, social pressure and concerns about future outcomes. Some teenagers place significant pressure on themselves to achieve specific results. Understanding these emotional influences often helps families better support confidence and wellbeing during academic challenges.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Why does my teenager procrastinate before exams?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Procrastination is not always a sign of laziness. In many cases, it may be linked to fear of failure, anxiety, overwhelm, low confidence or difficulty managing academic pressure. Teenagers may delay studying because they feel stressed about the task itself. Understanding the reasons behind procrastination often helps families provide more meaningful guidance and support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. Can lack of sleep increase exam stress?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Sleep plays an important role in emotional wellbeing, memory, concentration and learning. Poor sleep habits may increase irritability, anxiety, stress levels and difficulty focusing. Maintaining healthy sleep routines during exam periods often supports both emotional wellbeing and academic performance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. What is the best way to manage exam stress?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Managing exam stress often involves a combination of healthy study habits, adequate sleep, balanced daily routines, emotional support, realistic expectations and effective time management. Every teenager responds differently to academic pressure, so understanding individual needs and challenges is important. The goal is not only to improve performance but also to support confidence and emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. How do I help my child deal with academic pressure?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can help by encouraging open communication, reducing excessive expectations and focusing on learning rather than only outcomes. Teenagers often cope better when they feel supported and understood. Creating a balanced environment that values effort, growth and wellbeing can help reduce unnecessary pressure and improve confidence.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. What are the first signs of academic burnout?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Early signs of academic burnout may include emotional exhaustion, reduced motivation, difficulty concentrating, increased irritability, sleep disturbances, fatigue and loss of interest in studies. Some teenagers may also become withdrawn or feel overwhelmed by tasks they previously managed comfortably. Identifying these signs early often helps prevent further emotional strain.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support students and families?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, support begins with understanding the student as a whole rather than focusing only on academic performance. Through structured assessment, personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of emotional wellbeing, confidence, concentration, motivation and lifestyle-related influences. The goal is to help students and families move toward greater clarity, resilience and long-term growth.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Can exam stress be managed without medication?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many teenagers benefit from non-medication approaches that focus on emotional wellbeing, healthy routines, effective study habits, stress management, physical activity and family support. The most appropriate approach depends on the individual's needs and circumstances. Understanding the factors contributing to stress often helps families identify strategies that support confidence, resilience and academic wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should parents seek professional guidance for exam stress?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents may consider seeking guidance when exam-related stress begins affecting sleep, confidence, concentration, motivation, emotional wellbeing or daily functioning. Persistent anxiety, fear of failure, emotional breakdowns, avoidance of studies or significant behavioural changes may indicate the need for additional support. A structured assessment can help families better understand the factors influencing their teenager's academic and emotional wellbeing.",
+      },
+    },
+  ],
+};
+
+const examPerformanceSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: examPerformanceSeoTitle,
+      description: examPerformanceSeoDescription,
+      url: examPerformanceSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Exam & Performance Pressure Treatment",
+          item: examPerformanceSeoPageUrl,
+        },
+      ],
+    },
+    faqSchema,
+  ],
 };
 
 function SidebarCard({ children, className = "" }) {
@@ -419,12 +1062,187 @@ function RelatedPagesCard() {
   );
 }
 
+
+const sectionIdByRawTitle = {
+  "Exam & Performance Pressure Support in India": "introduction",
+  "Understanding Exam & Performance Pressure": "understanding-exam-pressure",
+  "Common Signs of Exam & Performance Pressure": "common-signs",
+  "Why Teenagers Experience Exam & Performance Pressure": "why-experience-stress",
+  "How Exam Pressure Can Affect Teenagers": "how-it-affects",
+  "The Neuro-Ayurveda Approach to Exam & Performance Pressure": "neuro-ayurveda-approach",
+  "How Parents Can Support Teenagers During Exams": "how-parents-can-support",
+  "How Manovaidya Supports Students & Families": "how-we-support",
+  "When Should Parents Consider an Assessment?": "how-we-support",
+  "Why Families Choose Manovaidya": "why-families-choose",
+  "Why Families Across India Connect With Manovaidya": "why-families-choose-india",
+  "About Dr. Ankush Garg": "about-dr-ankush-garg",
+  "Frequently Asked Questions (FAQs)": "faqs",
+  "Book a Consultation": "book-consultation",
+};
+
+const rawHeadings = new Set(Object.keys(sectionIdByRawTitle));
+const hiddenRawLines = new Set(["Key Takeaways", ...keyTakeaways]);
+const rawListLeadLines = new Set([
+  "At Manovaidya, Exam & Performance Pressure Support Focuses On:",
+  "Youth can be under pressure from:",
+  "The Brain Nourishment System highlights understanding factors that may affect:",
+  "When teens experience academic stress, they may also express themselves in the following ways:",
+  "The Neural Network System is oriented towards knowledge:",
+  "Factors such as:",
+  "When teens are feeling academic pressure, they might exhibit:",
+  "We normally provide:",
+  "Parents might consider taking advice if they observe:",
+  "Families Choose Manovaidya Because Of:",
+]);
+
+function ArticleVisualBlock({ heading }) {
+  if (heading === "Exam & Performance Pressure Support in India") {
+    return (
+      <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { label: "Exam Stress & Anxiety", Icon: Activity },
+            { label: "Academic Pressure Management", Icon: BookOpen },
+            { label: "Confidence & Self-Belief", Icon: Sparkles },
+            { label: "Fear of Failure", Icon: ShieldCheck },
+            { label: "Emotional Resilience", Icon: HeartHandshake },
+            { label: "Parent-Teen Academic Support", Icon: Users },
+          ].map(({ label, Icon }) => (
+            <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
+                <Icon className="h-6 w-6" strokeWidth={1.8} />
+              </span>
+              <span>{label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  if (heading === "The Neuro-Ayurveda Approach to Exam & Performance Pressure") {
+    return (
+      <div className="mt-6 w-full h-[380px] rounded-lg shadow-[0_12px_30px_rgba(58,31,90,0.08)] bg-[#fbf9fd] flex items-center justify-center p-8">
+        <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for exam stress support" className="max-h-full max-w-full rounded-lg object-contain object-center" />
+      </div>
+    );
+  }
+
+  if (heading === "How Parents Can Support Teenagers During Exams") {
+    return <img src={parentGuidanceImage} alt="Parent guidance for exam stress and academic pressure" className="mt-6 w-full max-h-[380px] rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />;
+  }
+
+  if (heading === "About Dr. Ankush Garg") {
+    return (
+      <div className="mt-4 flex flex-col gap-5 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm sm:flex-row sm:items-start">
+        <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
+        <div>
+          <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
+          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+            Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+function isRawShortTitle(line, next) {
+  return (
+    line.length < 88 &&
+    next &&
+    !/[.]/.test(line) &&
+    !rawHeadings.has(line) &&
+    !rawListLeadLines.has(line) &&
+    !/^\d+\./.test(line) &&
+    !line.startsWith("[") &&
+    !line.startsWith("http") &&
+    !line.startsWith("📞") &&
+    !line.startsWith("•") &&
+    !line.startsWith("✔")
+  );
+}
+
+function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
+  const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
+  const introStartIndex = allLines.findIndex((line) => line === "Exam & Performance Pressure Support in India");
+  const lines = allLines.slice(Math.max(0, introStartIndex)).filter((line) => !hiddenRawLines.has(line));
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions (FAQs)");
+  const faqEndIndex = lines.indexOf("Book a Consultation");
+
+  return (
+    <div className="mt-8 space-y-4">
+      {lines.map((line, index) => {
+        const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+        const id = sectionIdByRawTitle[line];
+        const next = lines[index + 1] || "";
+
+        if (line === "Frequently Asked Questions (FAQs)") {
+          return (
+            <section key={"faq-" + index} id="faqs" className="mt-9">
+              <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions (FAQs)</h2>
+              <div className="mt-5 space-y-3">
+                {faqs.map((faq, faqIndex) => (
+                  <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
+                    <button onClick={() => setOpenFaq(openFaq === faqIndex ? null : faqIndex)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === faqIndex}>
+                      <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
+                      <span className={("flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform " + (openFaq === faqIndex ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"))}>
+                        <ChevronDown className="h-4 w-4" />
+                      </span>
+                    </button>
+                    {openFaq === faqIndex && (
+                      <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
+                        <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]"><CitationText text={faq.answer} onCitationClick={onCitationClick} /></p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        }
+
+        if (faqMode) return null;
+
+        if (rawHeadings.has(line) && (line !== "Book a Consultation" || index === faqEndIndex)) {
+          return (
+            <section key={"section-" + index} id={id} className="mt-9 scroll-mt-28">
+              <h2 className="text-[20px] font-black text-[#17111f]">{line}</h2>
+              <ArticleVisualBlock heading={line} />
+            </section>
+          );
+        }
+
+        if (rawListLeadLines.has(line)) {
+          return <p key={"lead-" + index} className="pt-2 text-[14px] font-black leading-7 text-[#3b2e45]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+        }
+
+        if (isRawShortTitle(line, next)) {
+          return <h3 key={"h3-" + index} className="pt-3 text-[16px] font-black leading-6 text-[#21142d]"><CitationText text={line} onCitationClick={onCitationClick} /></h3>;
+        }
+
+        if (line === "Book Consultation") {
+          return <a key={"book-" + index} href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-[#7835A4] px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Book Consultation</a>;
+        }
+
+        return <p key={"p-" + index} className="text-[14px] font-semibold leading-7 text-[#51465a]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+      })}
+
+      <div className="mt-6 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
+        <img src={ctaImage} alt="Academic wellbeing and exam stress support in India" className="w-full h-40 sm:h-52 object-cover object-center" />
+      </div>
+    </div>
+  );
+}
+
 function ExamPerformancePressureIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const pageUrl = "https://manovaidya.org/exam-performance-pressure";
-  const pageTitle = "Exam & Performance Pressure Treatment in India | Manovaidya";
+  const pageTitle = "Exam & Performance Pressure Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
   const articleShareLinks = [
@@ -495,16 +1313,11 @@ function ExamPerformancePressureIndiaPage() {
       style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
     >
       <Seo
-        title="Exam & Performance Pressure Treatment in India | Exam Stress & Anxiety Support | Manovaidya"
-        description="Looking for Exam Stress Treatment in India? Learn about exam anxiety, academic pressure, fear of failure, concentration challenges and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        title={examPerformanceSeoTitle}
+        description={examPerformanceSeoDescription}
         keywords="Exam Stress Treatment India, Exam Anxiety Support, Performance Pressure in Teens, Academic Stress, Student Stress Relief, Exam Pressure, Neuro-Ayurveda Student Support, Concentration Issues, Dr. Ankush Garg"
         path="/exam-performance-pressure"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Exam & Performance Pressure Treatment in India",
-          "description": "Looking for Exam Stress Treatment in India? Learn about exam anxiety, academic pressure, fear of failure, concentration challenges and family guidance through the Neuro-Ayurveda approach at Manovaidya."
-        }}
+        schema={examPerformanceSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
@@ -519,7 +1332,7 @@ function ExamPerformancePressureIndiaPage() {
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Mental Health Support</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Exam & Performance Pressure Treatment in India
+                Exam & Performance Pressure Support in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Teenagers Build Confidence, Emotional Resilience & Healthy Academic Wellbeing. Learn about exam anxiety, academic pressure, fear of failure, and family guidance at Manovaidya.
@@ -583,456 +1396,7 @@ function ExamPerformancePressureIndiaPage() {
 
           <KeyTakeawaysBlock />
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Is Exam & Performance Pressure Treatment in India?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Supporting the confidence, emotional resilience and healthy academic wellbeing of teenagers.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="For families seeking Exam Stress Treatment in India or Exam Anxiety Treatment in India, structured support can help address emotional stress as well as academic performance stress. Effective Exam Stress Management is not just about reducing stress; it is also about developing confidence, healthy habits, emotional skills and resilience in teens." onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Teenagers can face significant emotional stress due to academic expectations, exams, competition, career planning and performance worries. It can appear as Exam Stress, Academic Stress, Student Stress, Exam Anxiety, Test Anxiety or Performance Anxiety. [1] [3]" onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Too much academic stress can impact confidence, sleep patterns, concentration, motivation and mental health. At Manovaidya, the emphasis is on learning how a teenager's emotional wellbeing, lifestyle habits, family expectations and stress-management skills interact with academic performance. [1] [3] [4]" onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Many parents notice that their teenager becomes anxious before exams, worries excessively about results, loses confidence or struggles to manage academic expectations. Understanding these challenges early often helps families provide more effective support.
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Under Dr. Ankush Garg's guidance, Manovaidya adopts a structured Neuro-Ayurveda approach to help teenagers and families understand exam stress and develop an individualized plan for emotional strength and future development." onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="font-bold text-[#3b2e45] mb-2 text-[14px]">At Manovaidya, Exam & Performance Pressure Treatment Focuses On:</h3>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {[
-                  { label: "Exam Stress & Anxiety", Icon: Activity },
-                  { label: "Academic Pressure Management", Icon: BookOpen },
-                  { label: "Confidence & Self-Belief", Icon: Sparkles },
-                  { label: "Fear of Failure", Icon: ShieldCheck },
-                  { label: "Emotional Resilience", Icon: HeartHandshake },
-                  { label: "Parent-Teen Academic Support", Icon: Users },
-                ].map(({ label, Icon }) => (
-                  <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                      <Icon className="h-6 w-6" strokeWidth={1.8} />
-                    </span>
-                    <span>{label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          <section id="understanding-exam-pressure" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Is Exam & Performance Pressure in Teenagers?</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Examinations are an important part of education. For many teenagers, academic achievement can become intertwined with self-worth, confidence and future prospects. [3]" onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Exam Performance Pressure may rise when teenagers believe grades determine intelligence, future opportunity or value to the family. Over time this can lead to Academic Performance Anxiety, fear of results and repeated self-comparison. [3]" onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Many families searching for Exam Stress Treatment in India, Academic Pressure Support in India or Teen Mental Health Treatment in India are often looking for a structured approach that helps them better understand their teenager's emotional wellbeing and academic challenges." onCitationClick={handleCitationClick} />
-            </p>
-            <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
-              <h3 className="text-[15px] font-black text-[#21142d]">Teenagers may experience pressure from:</h3>
-              <ul className="mt-3 space-y-2.5 sm:columns-2">
-                {[
-                  "School expectations",
-                  "Competitive environments",
-                  "Family expectations",
-                  "Peer comparison",
-                  "Career concerns",
-                  "Fear of disappointing others"
-                ].map((step) => (
-                  <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                    {step}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="While some stress can support preparation, high levels can negatively affect confidence, concentration and emotional health. Some teenagers become nervous and test-anxious, while others lose motivation, avoid studying or become overwhelmed. [3] [4]" onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Every teenager experiences academic pressure differently. Some become highly anxious before exams, while others lose motivation, avoid studying or become emotionally overwhelmed. Understanding these differences is often an important step toward providing meaningful support.
-            </p>
-          </section>
-
-          <section id="common-signs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs and Symptoms of Exam Stress in Teenagers</h2>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Exam-related stress can appear emotionally, behaviourally, academically and physically. Parents looking for symptoms of Exam Anxiety may notice changes in feelings, study habits, behaviour and physical health. [3] [4]" onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 grid sm:grid-cols-2 gap-5">
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <HeartHandshake className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Emotional Signs</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["Excessive worrying", "Fear of failure", "Irritability", "Overthinking", "Emotional overwhelm", "Low confidence"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <Users className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Behavioural Signs</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["Procrastination", "Avoiding studies", "Reduced motivation", "Emotional outbursts", "Excessive screen use"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <BookOpen className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Academic Signs</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["Difficulty concentrating", "Poor time management", "Exam anxiety", "Memory difficulties", "Reduced performance despite effort"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <Activity className="h-5 w-5 text-[#7835A4]" />
-                  <h3 className="text-[16px] font-black text-[#21142d]">Physical Signs</h3>
-                </div>
-                <ul className="space-y-2">
-                  {["Sleep difficulties", "Headaches", "Fatigue", "Restlessness", "Stomach discomfort"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Parents should focus on patterns rather than isolated incidents. When symptoms persist and interfere with functioning, more attention and professional guidance may be needed. [4] [9] [10]" onCitationClick={handleCitationClick} />
-            </p>
-          </section>
-
-          <section id="why-experience-stress" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Teenagers Experience Exam & Performance Pressure</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Many parents assume exam stress occurs only because teenagers are not prepared enough. In reality, academic pressure can be affected by emotional, educational, lifestyle and family factors. [3] [4]" onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Fear of Failure", desc: "Many teenagers fear their grades are not high enough and worry about disappointing themselves, parents or teachers. When each test feels like an assessment of ability or future, fear of exams can grow." },
-                { title: "High Expectations", desc: "High expectations from family, school or the teenager can create pressure when teens feel that only perfect marks will be accepted." },
-                { title: "Competitive Environments", desc: "Comparison with classmates or high-performing peers can gradually affect confidence, self-esteem and stress." },
-                { title: "Future Uncertainty", desc: "Careers, college applications and future prospects can create ongoing worry. Some adolescents begin to believe one exam will shape their entire life." },
-                { title: "Low Confidence", desc: "Teenagers who doubt themselves may experience greater exam anxiety even when they prepare well. Confidence building is an important part of exam anxiety and performance anxiety support." },
-                { title: "Lifestyle & Sleep Habits", desc: "Sleep difficulty, irregular routines and excessive screen time can affect focus, recall, energy and emotional regulation." }
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold text-[#5a5063] leading-6">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="how-it-affects" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Exam Pressure Can Affect Teenagers</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Exam Stress and Academic Stress do not affect only marks or study routines. They can also affect emotional wellbeing, confidence, relationships, physical health and overall Student Mental Health. [1] [3]" onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 space-y-4">
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                <h3 className="text-[16px] font-black text-[#21142d]">Emotional Wellbeing</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Excessive academic pressure may increase anxiety, overthinking, emotional exhaustion and mood swings. Teenagers may feel overwhelmed and struggle to calm down or regulate emotions." onCitationClick={handleCitationClick} />
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                <h3 className="text-[16px] font-black text-[#21142d]">Confidence</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Many teenagers begin linking self-worth directly to grades, rank and results. If performance is not as expected, confidence and self-belief can suffer." onCitationClick={handleCitationClick} />
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                <h3 className="text-[16px] font-black text-[#21142d]">Academic Performance</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Too much pressure can reduce concentration, memory and decision-making. Even well-prepared students may struggle to show their true capacity when anxiety becomes overwhelming." onCitationClick={handleCitationClick} />
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                <h3 className="text-[16px] font-black text-[#21142d]">Relationships</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Academic stress can affect communication with parents, teachers and friends. Teenagers may become withdrawn, angry or highly sensitive." onCitationClick={handleCitationClick} />
-                </p>
-              </div>
-
-              <div className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                <h3 className="text-[16px] font-black text-[#21142d]">Physical Wellbeing</h3>
-                <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Persistent stress can contribute to sleep difficulties, tiredness, headaches and reduced energy, which can further affect concentration and motivation." onCitationClick={handleCitationClick} />
-                </p>
-              </div>
-            </div>
-            <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-              Understanding these effects helps families focus on supporting overall wellbeing rather than only academic results.
-            </p>
-          </section>
-
-          <section id="neuro-ayurveda-approach" className="mt-9">
-            <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)]">
-              <h2 className="text-[18px] font-black leading-snug text-[#5d268d]">
-                The Neuro-Ayurveda Approach to Exam & Performance Pressure
-              </h2>
-            <p className="mt-2 text-[14px] font-semibold leading-6 text-[#51465a]">
-                <CitationText text="At Manovaidya, exam stress is understood through a broader perspective. Rather than focusing only on marks, performance or academic outcomes, Manovaidya considers emotional wellbeing, confidence, concentration, motivation, attention and overall development. This approach can help families exploring Exam Stress Treatment in India, Exam Anxiety Treatment in India or Academic Stress Treatment by considering emotional, cognitive, behavioural, lifestyle and family needs together. [2] [5] [8] [11]" onCitationClick={handleCitationClick} />
-              </p>
-            </div>
-
-            <div className="mt-6 space-y-4">
-              {[
-                { title: "Brain Nourishment System", text: "Healthy learning begins with healthy cognitive functioning. This pillar focuses on attention, concentration, memory, learning readiness, self-confidence and decision-making. Students in distress are often not incapable; they may be experiencing emotional stress, poor routines or diminished self-confidence.", Icon: Brain },
-                { title: "Gut Response System", text: "Teenagers under academic stress may experience appetite changes, digestive discomfort, irregular eating or energy changes. This pillar explores how digestion, general health, emotional balance, concentration and daily functioning may be connected.", Icon: Utensils },
-                { title: "Neural Network System", text: "Experiences shape patterns of thinking, learning and responding. This pillar focuses on learning styles, study habits, emotional reactions, self-confidence and adaptability, especially when repeated thoughts of failure become automatic.", Icon: Sparkles },
-                { title: "Sensory Integration System", text: "Examination settings, noise, social pressure, classroom environments and digital stimulation can influence concentration and emotional wellbeing. For some students, these factors can intensify Test Anxiety.", Icon: Waves },
-                { title: "Behaviour Guidance System", text: "Academic pressure may appear as procrastination, avoidance, irritability, emotional withdrawal or reduced motivation. These behaviours can be symptoms of Student Stress, not laziness.", Icon: ShieldCheck }
-              ].map((pillar) => (
-                <div key={pillar.title} className="flex gap-4 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-[#7835A4] shadow-sm">
-                    <pillar.Icon className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h3 className="text-[15px] font-black text-[#21142d]">{pillar.title}</h3>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#51465a]">
-                      <CitationText text={pillar.text} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 w-full h-[380px] rounded-lg shadow-[0_12px_30px_rgba(58,31,90,0.08)] bg-[#fbf9fd] flex items-center justify-center p-8">
-              <img
-                src={neuroAyurvedaImage}
-                alt="Neuro Ayurveda approach for exam stress support"
-                className="max-h-full max-w-full rounded-lg object-contain object-center"
-              />
-            </div>
-          </section>
-
-          <section id="how-parents-can-support" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Parents Can Support Teenagers During Exams</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Parents play a major role in shaping how teenagers experience academic pressure. Supportive guidance can help teenagers develop confidence and healthier coping skills. [7]" onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 grid sm:grid-cols-2 gap-4">
-              {[
-                { title: "Focus on Effort, Not Just Results", desc: "Recognizing effort, consistency and progress fosters confidence and resilience. An exam grade cannot determine a teenager's intelligence, ability or future." },
-                { title: "Avoid Excessive Comparison", desc: "Comparing teenagers with siblings, friends or classmates may increase stress and reduce confidence. Every teenager is unique and learns differently." },
-                { title: "Encourage Healthy Study Habits", desc: "Realistic schedules and balanced study routines usually work better than last-minute pressure or cramming." },
-                { title: "Promote Healthy Sleep", desc: "Sleep supports concentration, memory and emotional health. Better sleep can reduce fatigue, irritability and exam anxiety symptoms." },
-                { title: "Create a Supportive Environment", desc: "Teenagers benefit when they feel emotionally supported rather than constantly evaluated. Calm, non-judgemental conversations help." },
-                { title: "Help Manage Expectations", desc: "Goals can motivate, but unrealistic expectations can increase anxiety and fear of failure. Parents can support growth and learning rather than perfection." },
-                { title: "Encourage Balance", desc: "Academic achievement matters, but emotional wellbeing, recreation, physical health and relationships are also part of healthy development." }
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold text-[#5a5063] leading-6">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <img
-              src={parentGuidanceImage}
-              alt="Parent guidance for exam stress and academic pressure"
-              className="mt-6 w-full max-h-[380px] rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]"
-            />
-          </section>
-
-          <section id="how-we-support" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Manovaidya Supports Students & Families</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="At Manovaidya, support begins with understanding the student as a whole rather than focusing only on academic performance. The process supports teenagers beyond learning alone." onCitationClick={handleCitationClick} />
-            </p>
-
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Step 1: Detailed Assessment", desc: "Understanding emotional wellbeing, confidence, study habits, lifestyle routines, sleep, concentration difficulties and family concerns. The assessment may help identify Exam Anxiety Symptoms, Causes of Exam Stress, Test Anxiety and Academic Stress patterns." },
-                { title: "Step 2: Personalized Guidance", desc: "Providing individualized recommendations based on the teenager's emotional, behavioural and developmental needs, including exam stress management, emotional support, healthier routines and practical strategies." },
-                { title: "Step 3: Parent Guidance & Family Support", desc: "Helping parents better understand academic pressure and practical ways to support teenagers during challenging periods. Parent guidance can improve communication, expectations and academic routines." },
-                { title: "Step 4: Neuro-Ayurveda Development System", desc: "Applying the five-pillar framework to better understand emotional wellbeing, confidence, concentration, motivation and overall growth." },
-                { title: "Step 5: Progress Tracking & Follow-Up", desc: "Creating a structured roadmap to monitor exam anxiety symptoms, confidence, concentration, sleep and motivation over time." }
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold text-[#5a5063] leading-6">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 rounded-lg border border-[#eadff1] bg-white p-5">
-              <h3 className="text-[16px] font-black text-[#21142d] mb-3">When Should Parents Consider an Assessment?</h3>
-              <p className="text-[14px] font-semibold leading-7 text-[#51465a] mb-3">
-                <CitationText text="Parents may consider seeking guidance if they notice:" onCitationClick={handleCitationClick} />
-              </p>
-              <ul className="space-y-2 sm:columns-2">
-                {[
-                  "Persistent exam anxiety",
-                  "Fear of failure",
-                  "Excessive worrying about studies",
-                  "Declining confidence",
-                  "Difficulty concentrating",
-                  "Sleep problems before exams",
-                  "Emotional breakdowns related to academics",
-                  "Reduced motivation despite effort",
-                  "Academic pressure affecting overall wellbeing"
-                ].map((step) => (
-                  <li key={step} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#7835A4] mt-1.5 shrink-0" />
-                    {step}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-                <CitationText text="These concerns could be related to Exam Anxiety, Test Anxiety, Academic Stress or Performance Anxiety. If symptoms persist, worsen over time or interfere with daily living, professional help may be useful. [3] [4]" onCitationClick={handleCitationClick} />
-              </p>
-            </div>
-
-            <p className="mt-5 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Our goal is to help teenagers and families move from stress, confusion and academic overwhelm toward greater clarity, confidence, resilience and balanced growth." onCitationClick={handleCitationClick} />
-            </p>
-          </section>
-
-          <section id="why-families-choose" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Families Choose Manovaidya</h2>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Choosing the right support system for academic stress and emotional wellbeing can feel overwhelming for many families. Parents are often looking for clarity, practical guidance and a structured approach that helps teenagers manage academic pressure while maintaining confidence and emotional balance." onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="At Manovaidya, our goal is not simply to focus on marks, exams or performance. We help families understand the broader factors that may influence concentration, confidence, motivation, emotional wellbeing and overall development." onCitationClick={handleCitationClick} />
-            </p>
-            
-            <h3 className="mt-6 mb-4 text-[16px] font-black text-[#17111f]">Families Choose Manovaidya Because Of:</h3>
-            <div className="space-y-4">
-              {[
-                { title: "Structured Academic Wellbeing Assessment", desc: "Every teenager experiences academic pressure differently. Understanding emotional, behavioural and lifestyle-related influences helps create a more personalized roadmap for support and growth." },
-                { title: "Neuro-Ayurveda Development System", desc: "The framework includes Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System." },
-                { title: "Parent-Centred Guidance", desc: "Parent guidance can help reduce unnecessary Exam Performance Pressure and improve communication about marks, expectations and future planning." },
-                { title: "Personalized Support", desc: "Exam Anxiety Treatment, Student Stress Treatment and Performance Anxiety Treatment may vary depending on the teenager's specific concerns." },
-                { title: "Long-Term Growth Focus", desc: "Our approach focuses on confidence, emotional resilience, healthy study habits and balanced development rather than short-term academic pressure alone." },
-                { title: "Family-Oriented Approach", desc: "Meaningful progress often happens when parents and teenagers work together with proper understanding and structured support." }
-              ].map(({ title, desc }) => (
-                <div key={title} className="flex gap-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#7835A4]" />
-                  <div>
-                    <h4 className="text-[14px] font-black text-[#21142d]">{title}</h4>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                      <CitationText text={desc} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-8 text-[15px] font-black leading-7 text-[#17111f]">
-              Why Families Across India Connect With Manovaidya
-            </p>
-            <p className="mt-2 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Families from Delhi, Noida, Gurgaon, Faridabad and other parts of India reach out to Manovaidya for Exam Stress Support, Academic Pressure Support and Teen Mental Wellness guidance through in-clinic and online consultation." onCitationClick={handleCitationClick} />
-            </p>
-            <p className="mt-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-              <CitationText text="Exam Stress Treatment in India, Exam Anxiety Treatment in India and Online Exam Anxiety Consultation provide families with structured guidance based on their location and needs." onCitationClick={handleCitationClick} />
-            </p>
-          </section>
-
-          <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm">
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <img
-                src={doctorImage}
-                alt="Dr. Ankush Garg"
-                className="h-24 w-24 rounded-full object-cover shadow-sm"
-              />
-              <div>
-                <h2 className="text-[18px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="text-[13px] font-black text-[#7835A4] mt-1">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System. His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Many families searching for support for exam stress, academic pressure, emotional wellbeing and confidence challenges connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Through detailed assessment, personalized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing emotional wellbeing, confidence, concentration and long-term growth." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System." onCitationClick={handleCitationClick} />
-                </p>
-                <a href="/dr-ankush-garg/" className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
-                  Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section id="faqs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions (FAQs)</h2>
-            <div className="mt-5 space-y-3">
-              {faqs.map((faq, index) => (
-                <div key={index} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="flex w-full items-center justify-between gap-4 p-4 text-left"
-                    aria-expanded={openFaq === index}
-                  >
-                    <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform ${openFaq === index ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"}`}>
-                      <ChevronDown className="h-4 w-4" />
-                    </span>
-                  </button>
-                  {openFaq === index && (
-                    <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
-                      <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">
-                        <CitationText text={faq.answer} onCitationClick={handleCitationClick} />
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
+          <RawArticleContent onCitationClick={handleCitationClick} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
           <div className="mt-8">
             <button
@@ -1049,55 +1413,6 @@ function ExamPerformancePressureIndiaPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
-            <div className="p-6 sm:p-8">
-              <h2 className="text-[22px] font-black leading-tight">
-                Concerned About Exam Stress or Academic Pressure?
-              </h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                If your teenager is experiencing exam stress, fear of failure, declining confidence, concentration difficulties or emotional overwhelm, seeking clarity is often the first step.
-              </p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                At Manovaidya, our team helps families better understand academic wellbeing through structured assessment, personalized guidance and family-centred support. Book a structured assessment and personalized guidance session with the Manovaidya team.
-              </p>
-
-              <div className="mt-6">
-                <h3 className="text-[16px] font-black mb-3">Take the First Step Towards Better Confidence, Emotional Resilience & Academic Wellbeing</h3>
-                <ul className="grid sm:grid-cols-2 gap-3">
-                  {[
-                    "Book Assessment Session",
-                    "Speak With Our Team",
-                    "Get Personalized Guidance"
-                  ].map((step) => (
-                    <li key={step} className="flex gap-2 text-[14px] font-bold">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-[#8e45bb] flex flex-wrap gap-4">
-                <a
-                  href="tel:+917823838638"
-                  className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]"
-                >
-                  Book Consultation
-                </a>
-                <a
-                  href="tel:+917823838638"
-                  className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]"
-                >
-                  Take Teen Wellness Assessment
-                </a>
-              </div>
-            </div>
-            <img
-              src={ctaImage}
-              alt="Academic wellbeing and exam stress support in India"
-              className="w-full h-40 sm:h-52 object-cover object-center"
-            />
-          </section>
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">

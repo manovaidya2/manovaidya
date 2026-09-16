@@ -22,6 +22,161 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Sleep Disorders in Seniors Treatment in India";
 const pageUrl = "https://www.manovaidya.com/senior-sleep-disorders-support-india";
+const seoTitle = "Sleep Disorders Treatment for Seniors in India | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/sleep-disorders-seniors-support-india/";
+
+const seniorSleepFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. Why do older adults have trouble sleeping?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sleeping patterns shift as we get older, but persistent sleep difficulties do not necessarily mean it is part of the normal ageing process. Medical conditions, chronic pain, medication, anxiety and depression, lifestyle and neurological conditions (such as dementia) may be associated with difficulty sleeping. For many reasons, there are multiple factors that can impact sleep, so if you have sleep issues that don't go away, you should consult a qualified health care professional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. Is insomnia common in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. One of the most prevalent sleep disorders in the elderly is insomnia. This can include trouble getting to sleep, waking up several times at night, waking too early or feeling unrested when awake. If insomnia is ongoing, it can have an impact on memory, mood, energy and general quality of life and is important to seek professional assessment if symptoms persist.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. Are sleep problems a normal part of ageing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There may be some age-related changes in sleep, including waking up earlier or a decrease in deep sleep. Persistent insomnia, hypersomnia or sleep problems that affect daytime functioning should not be considered normal and should be evaluated by a physician.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What causes sleep disorders in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sleep disturbances among older people may occur due to a variety of factors such as chronic pain, anxiety, depression, side-effects of medication, sleep apnoea, restless legs syndrome, neurological disorders, medical illnesses, poor sleep hygiene and lifestyle. Proper assessment allows the root cause to be identified and will lead to proper management.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can poor sleep affect memory?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Quality sleep is crucial for memory, attention and learning. Poor sleep over a long period of time could lead to forgetfulness, lack of concentration and a slow response. All concerns regarding persistent memory need to be addressed as there are other medical conditions that can also cause changes in memory.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Can dementia affect sleep?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Changes in the sleep-wake cycle are common in people with dementia. They might get out of bed several times at night, get more active after dark or sleep more during the day. There are several reasons for sleep disturbance and professional evaluation is needed to determine the best approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. How can seniors improve sleep naturally?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Good sleep routines can contribute to better sleep. Regular sleep routine, exercise, shorter naps during the day, creating a comfortable sleep space, decreasing caffeine intake in the evening and following a consistent bedtime routine can all help sleep. If sleep difficulties continue, talk to a health care provider.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. What are the signs of a sleep disorder in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Symptoms include insomnia, waking a lot at night, waking too early, daytime sleepiness, heavy snoring, pauses between breaths while sleeping, poor concentration, irritability, low energy levels. Current symptoms that interfere with functioning should be assessed by a physician.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. Can medications cause sleep problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Prescription drugs and OTC drugs can impact sleep quality or lead to daytime drowsiness. Medications may be more potent in older people. It is important to discuss sleep difficulties with the healthcare professional who prescribes the medicine if sleep difficulties start after beginning or changing a medication. Never stop taking a medicine without being told to do so.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can anxiety or depression affect sleep?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Frequent sleep problems include anxiety and depression. Others may not fall asleep due to too much worry or wake up several times through the night or wake up too soon. Combating emotional health issues can play a role in improving quality of life in addition to sleep problems.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. When should sleep problems be medically evaluated?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If sleep disturbances persist for a few weeks, affect daily functioning, lead to excessive daytime sleepiness, are associated with loud , sleep apnoea or memory loss/confusion or changes in behaviour, medical evaluation is recommended. Early assessment can help determine potential underlying causes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. How does Manovaidya support seniors with sleep disorders?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The approach to support starts with the person and not with sleep issues at Manovaidya. Our structured assessment process, personalised guidance and the Neuro-Ayurveda Development System aid in educating seniors and families about the quality of sleep, brain health, emotional wellbeing, lifestyle habits and behavioural factors that impact healthy sleep. We are working towards supporting healthy ageing, cognitive wellbeing and quality of life in an integrated and individualized manner.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. Can daytime naps affect night-time sleep?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. For some elderly people, daytime naps can be beneficial, while others may find that they have trouble sleeping at night if they take naps that are too long or too late in the day. If seniors have continued sleep issues, they should talk with a healthcare provider about their sleep habits and what adjustments can be made to help them sleep better.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. What is the best treatment for sleep disorders in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatment will vary according to the cause. This could involve sleep routines, working through medical issues, reviewing medications, sleep disorder treatment (e.g., sleep apnoea) or addressing emotional health issues. Treatment always needs to be tailored after appropriate medical assessment and should not be a one-size-fits-all.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should families seek professional guidance for sleep problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If an older person has long-term insomnia, is chronically sleepy during the day, is confused in the evening after sleeping, has trouble remembering things, has loud snoring with pauses in breathing or sleep disturbances that make it harder for them to be safe, independent or enjoy the quality of their life, families should get professional advice. Severe breathing difficulty, chest pain, loss of consciousness or other emergency symptoms should be considered as a medical emergency and medical treatment should be sought as soon as possible.",
+      },
+    },
+  ],
+};
+
+const seniorSleepBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Sleep Disorders",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const seniorSleepMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Sleep disorders treatment for seniors in India.",
+  url: seoPageUrl,
+};
+
+const seniorSleepSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [seniorSleepMedicalWebPageSchema, seniorSleepBreadcrumbSchema, seniorSleepFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Sleep patterns naturally change with age
@@ -1311,11 +1466,9 @@ function SeniorSleepDisordersSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Insomnia, Better Sleep & Healthy Ageing | Manovaidya`} description="Looking for Sleep Disorders in Seniors Treatment in India? Learn about insomnia, poor sleep, sleep changes with ageing, brain health, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya." keywords="Sleep Disorders Seniors India, Insomnia in Elderly, Sleep Changes with Age, Senior Sleep Support, Better Sleep, Healthy Ageing, Neuro-Ayurveda Sleep Care, Brain Health, Dr. Ankush Garg" path="/senior-sleep-disorders-support-india" />
+      <Seo title={seoTitle} description="Looking for Sleep Disorders in Seniors Treatment in India? Learn about insomnia, poor sleep, sleep changes with ageing, brain health, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya." keywords="Sleep Disorders Seniors India, Insomnia in Elderly, Sleep Changes with Age, Senior Sleep Support, Better Sleep, Healthy Ageing, Neuro-Ayurveda Sleep Care, Brain Health, Dr. Ankush Garg" path="/senior-sleep-disorders-support-india" schema={seniorSleepSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1373,9 +1526,6 @@ function SeniorSleepDisordersSupportPage() {
             </button>
             {showResources && <MedicalReferencesBlock />}
           </div>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Sleep disorders treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

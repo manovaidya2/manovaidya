@@ -30,6 +30,338 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
 import Seo from "../components/Seo";
 
+const teenScreenSeoTitle = "Teen Screen Addiction Treatment in India | Manovaidya";
+const teenScreenSeoDescription =
+  "Looking for Teen Screen Addiction Support in India? Learn about mobile addiction, gaming addiction, social media dependency, screen time concerns and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
+const teenScreenSeoPageUrl = "https://manovaidya.org/teen-screen-addiction-support";
+
+const articleRaw = `Key Takeaways
+- Understanding Screen Addiction in Teenagers
+- Common Signs of Screen Dependency
+- Reasons Behind Excessive Screen Use
+- Impact on Emotional Wellbeing
+- Screen Time, Attention & Academic Performance
+- Effects of Screen Use on Sleep
+- Social Media & Gaming Dependency
+- Healthy Digital Habits for Teenagers
+- Neuro-Ayurveda Development System
+- Parent-Centred Support & Guidance
+- Manovaidya Assessment & Support Process
+- FAQs About Teen Screen Addiction
+
+
+Teen Screen Addiction Support in India
+
+Helping Teenagers Develop Healthier Digital Habits, Better Focus & Emotional Wellbeing
+
+Technology is a significant component of today's society. The benefits of smartphones, social media, online gaming, video content and digital learning platforms are numerous. But too much screen time can have an impact on someone's emotional health, ability to focus, sleep quality, behavior, and everyday functioning, at times.[1][3]
+
+Parents often observe excessive hours on mobile devices, social media, games, or digital entertainment in their teens' lives. May have difficulty shutting off screens, get frustrated when screens are taken away, lose interest in doing things away from screens. [1]
+
+We know at Manovaidya, the dependency on the screen isn't a problem of technology. Teenagers' interaction with digital devices may be affected by emotional wellbeing, lifestyle habits, social experiences, confidence and daily routines.
+
+Under the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya adopts a systematic Neuro-Ayurveda perspective that empowers the family to gain insight into the issues arising from use of screens and promotes healthy practices, emotional health and balanced development.
+
+At Manovaidya, the Teen Screen Addiction Support focuses on:
+
+
+- Excessive Mobile Phone Use
+- Social Media Dependency
+- Gaming Addiction Concerns
+- Reduced Attention & Focus
+- Sleep & Lifestyle Challenges
+- Healthy Digital Habits
+
+
+Understanding Screen Addiction in Teenagers
+
+Technology is now ubiquitous in the field of education, communication and entertainment.
+
+Screen use does not necessarily cause anxiety or other issues, but screen experiences can become problematic when they impact emotional health, sleep, relationships, learning or daily functioning. [1][5]
+
+Many families looking for Screen Addiction Support in India, Mobile Addiction in Teenagers or Teen Digital Wellbeing Support may be seeking a systematic approach that they can use to better understand the relationship between their teens and technology.
+
+Teens can use screens for:
+
+- Social interaction
+- Gaming
+- Entertainment
+- Studying
+- Content creation
+- Communication
+
+The difficulty of regulating screen use and the replacement of healthy daily activities begin the challenge. Making it harder to manage screen use and having screen use replace healthy daily activities starts the challenge.
+
+
+Common Signs of Screen Addiction in Teenagers
+
+Emotional Signs
+
+
+- Irritability when devices are removed
+- Mood changes
+- Increased frustration
+- Emotional dependence on digital activities
+
+
+Behavioural Signs
+
+
+- Excessive screen time
+- Constant checking of devices
+- Difficulty reducing usage
+- Avoiding offline activities
+- Reduced family interaction
+
+
+Academic Signs
+- Difficulty concentrating
+- Reduced academic performance
+- Procrastination
+- Reduced productivity
+
+
+Physical Signs
+- Sleep disturbances
+- Fatigue
+- Eye strain
+- Reduced physical activity
+
+
+It is important to remember that screen overuse doesn't necessarily mean addiction. But if screen time starts to impact other aspects of life, further information and assistance can help. [1][6]
+
+Why Teenagers Develop Screen Dependency
+
+Many parents think that teens are being overindulgent with the screens just because they are not disciplined.
+However, digital dependency can be a multi-faceted issue in reality. [6]
+
+Social Connection
+
+Digital platforms are a way for teenagers to connect with friends and peers. [1]
+
+Entertainment & Instant Rewards
+
+Gaming, videos and social media offer instant gratification and rewards that can lead to addiction or increased use.
+
+Academic Demands
+
+There are many activities that are now frequented with regular screens.
+
+Emotional Escape
+
+Some adolescents might use screens to distract themselves from boredom, stress, loneliness or emotional suffering. [4][6]
+
+Social Media Influence
+
+Online interactions and social comparison can be a driver to wanting to stay in touch.[1]
+
+Lifestyle Imbalance
+
+Unstructured schedules, lack of physical activity or off screen hobbies may play a role in the excessive amount of screen time spent. [5]
+
+
+How Excessive Screen Use Can Affect Teenagers
+
+Emotional Wellbeing
+
+•	Increased irritability
+•	Emotional dependence
+•	Mood fluctuations
+•	Reduced emotional balance
+
+Concentration & Attention
+
+Too much digital stimulation can impact concentration, attention and learning processes. [6]
+
+Sleep Quality
+
+Television viewing or the use of electronic devices near bedtime can negatively affect sleep and nighttime habits.[1][5]
+
+Academic Performance
+
+Concentration and procrastination might be a problem in studies. [1,3]
+
+Relationships
+
+Face-to-face interaction and family engagement may be decreased due to screen dependence.
+
+Physical Wellbeing
+
+Minimized physical activity and extended screen time can impact wellbeing.[5]
+
+
+
+Why Families Choose Manovaidya
+
+For many families, navigating screen addiction, mobile dependency and digital wellbeing can seem difficult. Parents look for tips to improve their teen's health, understanding and organization to help teens adopt healthier behaviors without a constant struggle.
+
+Reducing screen time isn't our goal at Manovaidya. We support families to understand the wider context of what different factors could be affecting digital behaviours, attention, emotional wellbeing, behaviours and development.
+
+Families Choose Manovaidya Because Of:
+
+Structured Screen Addiction Assessment
+
+All teens are different when it comes to technology. Emotional, behavioural and lifestyle-related influences can be understood to develop a more personalized roadmap for healthy digital habits and balanced development.[1][5]
+
+Neuro-Ayurveda Development System
+
+We have a system that supports families in knowing about screen-related issues and challenges by engaging the five pillars of:
+
+•	Brain Nourishment System
+•	Gut Response System
+•	Neural Network System
+•	Sensory Integration System
+•	Behaviour Guidance System
+
+Parent-Centred Guidance
+
+Helping students to be aware of how to be well when using digital technology is not just a matter for the teenager.
+
+Parents are often a big influence in developing healthy technology habits and establishing a healthy routine.[5]
+
+Personalized Support
+
+Screen-related challenges are unique for each teenager.
+
+Support/advisory tailored based on individual needs, habits and developmental issues.
+
+Long-Term Growth Focus
+
+We don't just restrict children, rather we look at healthy digital habits, emotional wellbeing, attention, focus and balanced development.
+
+Family-Oriented Approach
+
+When teens and families cooperate and are properly understood and supported, meaningful progress can occur. [5]
+
+Why Families Across India Connect With Manovaidya
+
+Delhi, Noida, Gurgaon, Faridabad and various cities in India reach out to Manovaidya for Teen Screen Addiction Support, Mobile Addiction Support and guidance for Teen Digital Wellbeing via online and in-clinic consultations.
+
+
+
+About Dr. Ankush Garg
+
+Autism, ADHD, Child Development & Mental Health Specialist in India
+
+Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+
+His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach.
+
+Many families searching for support regarding excessive screen use, mobile addiction, gaming dependency and digital wellbeing connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support.
+
+Through detailed assessment, individualized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing attention, behaviour, emotional wellbeing and healthy development.
+
+Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
+
+
+
+Frequently Asked Questions
+
+1. How to help kids with screen addiction?
+
+While parents can help with setting up healthy digital boundaries, it's often beneficial to think about why the child is spending too much screen time, and to encourage them to engage in other activities outside of screen time and establish consistency and routine. For many children, screens serve a purpose of having fun, making connections, coping with stress, and/or developing habits. An effective balance and support system would create a more effective long-term outcome than sustained conflict or punishment.[1][5]
+
+
+2. What are the signs of screen addiction in teenagers?
+
+Common signs may include excessive screen use, irritability when devices are removed, reduced interest in offline activities, difficulty controlling screen time, sleep disturbances, declining academic performance and reduced family interaction.[1][3] Some teenagers may constantly think about gaming, social media or mobile phone use even when engaged in other activities.
+
+
+
+3. How can I reduce my teenager's screen time?
+
+Reducing screen time often works best through gradual changes rather than sudden restrictions. Parents can create structured schedules, encourage hobbies, promote outdoor activities and establish screen-free periods during meals and before bedtime.[5] Consistency and family involvement are often more effective than strict rules alone.
+
+
+
+4. Is screen addiction a problem?
+
+There is no problem with the use of technology as such, but it can become a concern when it starts to cause issues with emotional well-being, sleep, concentration, relationships, academic achievement, or everyday functioning. [1, 6] The issue is when it is hard to limit screen time and it starts to replace healthy habits and life experiences. [3][5]
+
+5. Can excessive screen time affect mental health?
+Teenagers may feel emotionally dependent on screen time, feel more irritated, less socially engaged or have poor emotional regulation due to excessive screen time. A healthy balance with technology can also promote healthy emotional growth.[1]
+
+
+
+6. Does screen addiction affect concentration and studies?
+
+Yes. Too much screen time can impact attention, concentration, study skills, and schoolwork. [1][6] For some teens, spending too much time on screens can be a challenge for focusing on activities that demand extended concentration. A healthy lifestyle and screen time balance can generally help in the learning and productivity process. [5]
+
+
+7. Why is my teenager always on their phone?
+
+It's important for parents to understand why adolescents use their phones, as this knowledge may help them react better to their behaviour.
+
+
+8. Can social media addiction affect emotional wellbeing?
+
+Teens may develop unhealthy digital habits that could negatively impact their self-esteem, confidence and emotional health, so healthy digital habits can help support a more balanced perspective.
+
+
+9. How does gaming addiction affect teenagers?
+
+Teenagers can develop an excessive response to gaming which can affect sleep patterns, school performance, fitness, social interaction and emotional well-being. Families can better support healthy gaming habits and balance by understanding the reasons for excessive gaming.
+
+10. Can excessive screen time affect sleep?
+
+Yes. Prolonged device usage, particularly before going to bed, and social media interaction can impact sleep cycles and make it hard for teens to fall and stay asleep. Good sleep patterns can foster emotional wellness, focus and functioning.
+
+11. Is it ADHD or too much screen time?
+
+Excessive screen time can cause a range of symptoms that could be mistaken for ADHD, including decreased attention, distractibility, and trouble focusing. But, ADHD and screen-related problems are NOT the same. A structured evaluation process will assist families in understanding factors that affect attention, behaviour and concentration beyond symptoms.
+
+12. How long does it take to detox from screen addiction?
+
+There's no set schedule as teenagers are all unique. Habits, routines, family support and emotional wellbeing, as well as the level of screen dependency, are often a factor to take into account when making improvements. The aim is not just to ban screen time, but to encourage more healthful and balanced use of screens over time.
+
+13. How does Manovaidya support teenagers with screen addiction?
+
+The teen is seen as a whole person, not just someone who has screen time problems, at Manovaidya. The family gets a better understanding of the factors that affect the behaviour, attention, emotional well being and digital habits through structured assessment, personalised guidance, family support and Neuro-Ayurveda Development System. The objective is to encourage healthful habits, concentration and development of balance.
+
+
+14. Should I limit my 15 year old's screen time?
+
+Teenagers can be helped by setting healthy limits, but limits alone are not enough. Rather, healthy limits are better when paired with alternative activities that are meaningful and not technology related, such as sports, hobbies, family activities and social engagement.
+
+
+
+15. When should parents seek professional guidance?
+
+If screen use is having an impact on sleep, concentration, schoolwork, emotional health, relationships or daily functioning, parents should seek help when it is persistent, or when the child becomes irritated when devices are taken away, or when the child starts to be socially withdrawn or to show a significant behaviour change. A formal evaluation may be helpful to the family to better understand the factors that affect screen-related issues and wellbeing.
+
+
+
+Book a Consultation
+
+Concerned About Your Teenager's Screen Habits?
+
+If your teenager is struggling with excessive mobile phone use, gaming dependency, social media overuse, sleep disturbances or reduced concentration, seeking clarity is often the first step.
+
+At Manovaidya, our team helps families better understand screen-related challenges through structured assessment, personalized guidance and family-centred support.
+
+Book a Consultation
+
+Take the First Step Towards Healthier Digital Habits, Better Focus & Emotional Wellbeing
+
+📞 Book Assessment Session
+ 📞 Speak With Our Team
+ 📞 Get Personalized Guidance
+
+
+
+[1] World Health Organization (WHO) – Teens, Screens and Mental Health
+[ https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health](https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health?utm_source=chatgpt.com)
+[2] Journal of Ayurveda and Integrative Medicine – Comparative Efficacy of Medhya Rasayana in Gadget Addiction
+[ https://pmc.ncbi.nlm.nih.gov/articles/PMC11589502/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11589502/?utm_source=chatgpt.com)
+[3] World Health Organization (WHO) – Adolescent Social Media Use and Gaming
+[ https://iris.who.int/bitstreams/f787fae6-e564-477c-a0e6-d54f24b38f0b/download](https://iris.who.int/bitstreams/f787fae6-e564-477c-a0e6-d54f24b38f0b/download?utm_source=chatgpt.com)
+[4] Journal of Ayurveda and Integrative Medicine – Understanding Social Media Addiction Through Ayurveda, Yoga and Indian Knowledge Systems
+[ https://pmc.ncbi.nlm.nih.gov/articles/PMC12924122/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12924122/?utm_source=chatgpt.com)
+[5] American Academy of Pediatrics (AAP) – Digital Ecosystems, Children and Adolescents
+[ https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy](https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy?utm_source=chatgpt.com)
+[6] National Library of Medicine – Internet Addiction in Adolescents: A Systematic Review
+[ https://pubmed.ncbi.nlm.nih.gov/31971599/](https://pubmed.ncbi.nlm.nih.gov/31971599/?utm_source=chatgpt.com)`;
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Screen Addiction", id: "understanding-screen-addiction" },
@@ -55,51 +387,41 @@ const categories = [
 ];
 
 const keyTakeaways = [
-  "Understanding Teen Screen Addiction & Digital Wellbeing",
-  "Common Signs of Screen Addiction in Teenagers",
-  "Main Causes of Excessive Screen Time and Digital Dependency",
-  "Impact on Sleep, Focus, Studies and Emotional Wellbeing",
-  "Mobile, Smartphone, Social Media and Gaming Addiction Concerns",
-  "Difference Between Screen Overuse, Gaming Disorder and ADHD-Like Symptoms",
-  "Neuro-Ayurveda Approach to Teen Screen Addiction Support",
-  "How Parents Can Reduce Screen Time Without Constant Conflict",
-  "Healthy Digital Habits, Offline Activities and Balanced Routines",
-  "Manovaidya's Assessment and Personalized Support Process",
-  "When Parents Should Seek Professional Guidance",
-  "Frequently Asked Questions About Teen Screen Addiction & Digital Wellbeing",
+  "Understanding Screen Addiction in Teenagers",
+  "Common Signs of Screen Dependency",
+  "Reasons Behind Excessive Screen Use",
+  "Impact on Emotional Wellbeing",
+  "Screen Time, Attention & Academic Performance",
+  "Effects of Screen Use on Sleep",
+  "Social Media & Gaming Dependency",
+  "Healthy Digital Habits for Teenagers",
+  "Neuro-Ayurveda Development System",
+  "Parent-Centred Support & Guidance",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Teen Screen Addiction",
 ];
 
 const fullMedicalReferenceContent = `References
-[1] World Health Organization - Inclusion of "gaming disorder" in ICD-11
-https://www.who.int/news/item/14-09-2018-inclusion-of-gaming-disorder-in-icd-11
-[2] World Health Organization - Adolescent Health
-https://www.who.int/health-topics/adolescent-health
-[3] American Academy of Pediatrics - Screen Time Guidelines
-https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/screen-time-guidelines/
-[4] HealthyChildren.org / American Academy of Pediatrics - How to Make a Family Media Use Plan
-https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx
-[5] Baumgartner SE, et al. - Media use, attention, mental health and academic performance among adolescents
-https://pmc.ncbi.nlm.nih.gov/articles/PMC8598050/
-[6] American Academy of Pediatrics - The Family Media Plan, Pediatrics
-https://publications.aap.org/pediatrics/article/154/6/e2024067417/199968/The-Family-Media-Plan
-[7] Charaka Samhita, Sutra Sthana 11 - Tistraishaniya Adhyaya
-https://www.carakasamhitaonline.com/index.php?title=Tistraishaniya_Adhyaya
-[8] Charaka Samhita - Manas: Mind and Mental Health
-https://www.carakasamhitaonline.com/index.php?title=Manas
-[9] Charaka Samhita - Indriya
-https://www.carakasamhitaonline.com/index.php?title=Indriya
+[1] World Health Organization (WHO) - Teens, Screens and Mental Health
+https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health
 
-Reference Note
-This article uses recognised public health resources, paediatric media guidance, peer-reviewed research and classical Ayurvedic texts for gaming disorder, adolescent health, screen-time guidance, sleep and family media planning, attention, and Ayurvedic concepts related to Manas, Sattvavajaya, regulated lifestyle and balanced sensory engagement.
+[2] Journal of Ayurveda and Integrative Medicine - Comparative Efficacy of Medhya Rasayana in Gadget Addiction
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11589502/
 
-Classical Ayurvedic references are included for conceptual understanding of mind regulation, sensory balance and whole-person wellbeing. They are not modern diagnostic criteria and should not be interpreted as a guaranteed cure for screen addiction, gaming disorder, ADHD-like symptoms or teen mental health conditions.
+[3] World Health Organization (WHO) - Adolescent Social Media Use and Gaming
+https://iris.who.int/bitstreams/f787fae6-e564-477c-a0e6-d54f24b38f0b/download
 
-Authorised & Clinically Reviewed by Dr Ankush Garg
-Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
-Clinical Focus: Autism, ADHD, Child Development, Teen Mental Wellness and Mental Health`;
+[4] Journal of Ayurveda and Integrative Medicine - Understanding Social Media Addiction Through Ayurveda, Yoga and Indian Knowledge Systems
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12924122/
+
+[5] American Academy of Pediatrics (AAP) - Digital Ecosystems, Children and Adolescents
+https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy
+
+[6] National Library of Medicine - Internet Addiction in Adolescents: A Systematic Review
+https://pubmed.ncbi.nlm.nih.gov/31971599/`;
 
 const articleLinkRules = [
-  { label: "Teen Screen Addiction Treatment in India", href: "#introduction", pattern: /Teen Screen Addiction Treatment in India/i },
+  { label: "Teen Screen Addiction Support in India", href: "#introduction", pattern: /Teen Screen Addiction Support in India/i },
   { label: "Teen Screen Addiction Treatment", href: "#why-families-choose", pattern: /Teen Screen Addiction Treatment/i },
   { label: "Teen Screen Addiction Counselling", href: "#common-signs", pattern: /Teen Screen Addiction Counselling/i },
   { label: "Screen Addiction Treatment in India", href: "#understanding-screen-addiction", pattern: /Screen Addiction Treatment in India/i },
@@ -146,77 +468,216 @@ const articleLinkRules = [
 const faqs = [
   {
     question: "1. How to help kids with screen addiction?",
-    answer: "Parents can help by creating healthy digital boundaries, encouraging offline activities and maintaining consistent routines. Rather than focusing only on restricting devices, it is often helpful to understand why the child is spending excessive time on screens. Many children use screens for entertainment, social connection, stress relief or habit. A balanced and supportive approach often leads to better long-term results than constant conflict or punishment.",
+    answer: "While parents can help with setting up healthy digital boundaries, it's often beneficial to think about why the child is spending too much screen time, and to encourage them to engage in other activities outside of screen time and establish consistency and routine. For many children, screens serve a purpose of having fun, making connections, coping with stress, and/or developing habits. An effective balance and support system would create a more effective long-term outcome than sustained conflict or punishment.[1][5]"
   },
   {
     question: "2. What are the signs of screen addiction in teenagers?",
-    answer: "Common signs may include excessive screen use, irritability when devices are removed, reduced interest in offline activities, difficulty controlling screen time, sleep disturbances, declining academic performance and reduced family interaction. Some teenagers may constantly think about gaming, social media or mobile phone use even when engaged in other activities.",
+    answer: "Common signs may include excessive screen use, irritability when devices are removed, reduced interest in offline activities, difficulty controlling screen time, sleep disturbances, declining academic performance and reduced family interaction.[1][3] Some teenagers may constantly think about gaming, social media or mobile phone use even when engaged in other activities."
   },
   {
     question: "3. How can I reduce my teenager's screen time?",
-    answer: "Reducing screen time often works best through gradual changes rather than sudden restrictions. Parents can create structured schedules, encourage hobbies, promote outdoor activities and establish screen-free periods during meals and before bedtime. Consistency and family involvement are often more effective than strict rules alone.",
+    answer: "Reducing screen time often works best through gradual changes rather than sudden restrictions. Parents can create structured schedules, encourage hobbies, promote outdoor activities and establish screen-free periods during meals and before bedtime.[5] Consistency and family involvement are often more effective than strict rules alone."
   },
   {
     question: "4. Is screen addiction a problem?",
-    answer: "Excessive screen use can become a concern when it starts affecting emotional wellbeing, sleep, concentration, relationships, academic performance or daily functioning. Technology itself is not the problem. The concern arises when screen use becomes difficult to control and begins replacing healthy routines and real-world experiences. [1] [2]",
+    answer: "There is no problem with the use of technology as such, but it can become a concern when it starts to cause issues with emotional well-being, sleep, concentration, relationships, academic achievement, or everyday functioning. [1, 6] The issue is when it is hard to limit screen time and it starts to replace healthy habits and life experiences. [3][5]"
   },
   {
     question: "5. Can excessive screen time affect mental health?",
-    answer: "Excessive screen use may influence emotional wellbeing, mood regulation, stress levels and social interactions. Some teenagers may experience increased irritability, emotional dependence on digital activities, reduced social engagement or difficulty managing emotions. Maintaining a balanced relationship with technology often supports healthier emotional development. [2] [3]",
+    answer: "Teenagers may feel emotionally dependent on screen time, feel more irritated, less socially engaged or have poor emotional regulation due to excessive screen time. A healthy balance with technology can also promote healthy emotional growth.[1]"
   },
   {
     question: "6. Does screen addiction affect concentration and studies?",
-    answer: "Yes. Excessive screen use may affect attention, concentration, study habits and academic performance. Constant digital stimulation can make it difficult for some teenagers to maintain focus on tasks that require sustained attention. Healthy routines and balanced screen habits often support better learning and productivity. [5]",
+    answer: "Yes. Too much screen time can impact attention, concentration, study skills, and schoolwork. [1][6] For some teens, spending too much time on screens can be a challenge for focusing on activities that demand extended concentration. A healthy lifestyle and screen time balance can generally help in the learning and productivity process. [5]"
   },
   {
     question: "7. Why is my teenager always on their phone?",
-    answer: "Teenagers often use phones for communication, entertainment, social media, gaming, studying and staying connected with friends. However, excessive use may sometimes be linked to boredom, stress, loneliness, habit formation or emotional challenges. Understanding the reason behind the behaviour often helps parents respond more effectively.",
+    answer: "It's important for parents to understand why adolescents use their phones, as this knowledge may help them react better to their behaviour."
   },
   {
     question: "8. Can social media addiction affect emotional wellbeing?",
-    answer: "Social media can sometimes contribute to comparison, fear of missing out, unrealistic expectations and emotional dependence on online validation. Excessive use may influence self-esteem, confidence and overall emotional wellbeing. Healthy digital habits often help teenagers maintain a more balanced perspective. [3]",
+    answer: "Teens may develop unhealthy digital habits that could negatively impact their self-esteem, confidence and emotional health, so healthy digital habits can help support a more balanced perspective."
   },
   {
     question: "9. How does gaming addiction affect teenagers?",
-    answer: "Excessive gaming may influence sleep patterns, academic performance, physical activity, social interaction and emotional wellbeing. Some teenagers may become highly dependent on gaming for entertainment or emotional escape. Understanding the underlying reasons for excessive gaming often helps families support healthier habits and balance. [1]",
+    answer: "Teenagers can develop an excessive response to gaming which can affect sleep patterns, school performance, fitness, social interaction and emotional well-being. Families can better support healthy gaming habits and balance by understanding the reasons for excessive gaming."
   },
   {
     question: "10. Can excessive screen time affect sleep?",
-    answer: "Yes. Screen exposure, especially before bedtime, may interfere with healthy sleep patterns. Late-night gaming, social media use or continuous device engagement can make it difficult for teenagers to fall asleep and maintain quality rest. Healthy sleep habits often support emotional wellbeing, concentration and daily functioning. [3] [4]",
+    answer: "Yes. Prolonged device usage, particularly before going to bed, and social media interaction can impact sleep cycles and make it hard for teens to fall and stay asleep. Good sleep patterns can foster emotional wellness, focus and functioning."
   },
   {
     question: "11. Is it ADHD or too much screen time?",
-    answer: "Some signs of excessive screen use, such as reduced attention, distractibility or difficulty focusing, may appear similar to ADHD. However, ADHD and screen-related difficulties are not the same. A structured assessment can help families better understand the factors influencing attention, behaviour and concentration rather than making assumptions based on symptoms alone. [5]",
+    answer: "Excessive screen time can cause a range of symptoms that could be mistaken for ADHD, including decreased attention, distractibility, and trouble focusing. But, ADHD and screen-related problems are NOT the same. A structured evaluation process will assist families in understanding factors that affect attention, behaviour and concentration beyond symptoms."
   },
   {
     question: "12. How long does it take to detox from screen addiction?",
-    answer: "There is no fixed timeline because every teenager is different. Improvements often depend on habits, routines, family support, emotional wellbeing and the level of screen dependency. The goal is not simply to stop screen use but to help teenagers develop healthier and more balanced digital habits over time.",
+    answer: "There's no set schedule as teenagers are all unique. Habits, routines, family support and emotional wellbeing, as well as the level of screen dependency, are often a factor to take into account when making improvements. The aim is not just to ban screen time, but to encourage more healthful and balanced use of screens over time."
   },
   {
     question: "13. How does Manovaidya support teenagers with screen addiction?",
-    answer: "At Manovaidya, support begins with understanding the teenager as a whole rather than focusing only on screen time. Through structured assessment, personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of the factors influencing behaviour, attention, emotional wellbeing and digital habits. The goal is to support healthier routines, improved focus and balanced development.",
+    answer: "The teen is seen as a whole person, not just someone who has screen time problems, at Manovaidya. The family gets a better understanding of the factors that affect the behaviour, attention, emotional well being and digital habits through structured assessment, personalised guidance, family support and Neuro-Ayurveda Development System. The objective is to encourage healthful habits, concentration and development of balance."
   },
   {
     question: "14. Should I limit my 15 year old's screen time?",
-    answer: "Healthy limits can be beneficial, but limits alone are not always enough. Teenagers often respond better when digital boundaries are combined with meaningful alternatives such as sports, hobbies, family activities and social engagement. The focus should be on creating balance rather than completely eliminating technology. [6]",
+    answer: "Teenagers can be helped by setting healthy limits, but limits alone are not enough. Rather, healthy limits are better when paired with alternative activities that are meaningful and not technology related, such as sports, hobbies, family activities and social engagement."
   },
   {
     question: "15. When should parents seek professional guidance?",
-    answer: "Parents may consider seeking guidance when screen use begins affecting sleep, concentration, academic performance, emotional wellbeing, relationships or daily functioning. Persistent dependency, irritability when devices are removed, social withdrawal or significant behavioural changes may indicate the need for additional support. A structured assessment can help families better understand the factors influencing screen-related challenges and overall wellbeing. [1] [2]",
+    answer: "If screen use is having an impact on sleep, concentration, schoolwork, emotional health, relationships or daily functioning, parents should seek help when it is persistent, or when the child becomes irritated when devices are taken away, or when the child starts to be socially withdrawn or to show a significant behaviour change. A formal evaluation may be helpful to the family to better understand the factors that affect screen-related issues and wellbeing."
   },
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/^\d+\.\s*/, ""),
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. How to help kids with screen addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can help by creating healthy digital boundaries, encouraging offline activities and maintaining consistent routines. Rather than focusing only on restricting devices, it is often helpful to understand why the child is spending excessive time on screens. Many children use screens for entertainment, social connection, stress relief or habit. A balanced and supportive approach often leads to better long-term results than constant conflict or punishment.",
+      },
     },
-  })),
+    {
+      "@type": "Question",
+      name: "2. What are the signs of screen addiction in teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common signs may include excessive screen use, irritability when devices are removed, reduced interest in offline activities, difficulty controlling screen time, sleep disturbances, declining academic performance and reduced family interaction. Some teenagers may constantly think about gaming, social media or mobile phone use even when engaged in other activities.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. How can I reduce my teenager's screen time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Reducing screen time often works best through gradual changes rather than sudden restrictions. Parents can create structured schedules, encourage hobbies, promote outdoor activities and establish screen-free periods during meals and before bedtime. Consistency and family involvement are often more effective than strict rules alone.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Is screen addiction a problem?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Excessive screen use can become a concern when it starts affecting emotional wellbeing, sleep, concentration, relationships, academic performance or daily functioning. Technology itself is not the problem. The concern arises when screen use becomes difficult to control and begins replacing healthy routines and real-world experiences.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can excessive screen time affect mental health?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Excessive screen use may influence emotional wellbeing, mood regulation, stress levels and social interactions. Some teenagers may experience increased irritability, emotional dependence on digital activities, reduced social engagement or difficulty managing emotions. Maintaining a balanced relationship with technology often supports healthier emotional development.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Does screen addiction affect concentration and studies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Excessive screen use may affect attention, concentration, study habits and academic performance. Constant digital stimulation can make it difficult for some teenagers to maintain focus on tasks that require sustained attention. Healthy routines and balanced screen habits often support better learning and productivity.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. Why is my teenager always on their phone?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Teenagers often use phones for communication, entertainment, social media, gaming, studying and staying connected with friends. However, excessive use may sometimes be linked to boredom, stress, loneliness, habit formation or emotional challenges. Understanding the reason behind the behaviour often helps parents respond more effectively.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can social media addiction affect emotional wellbeing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Social media can sometimes contribute to comparison, fear of missing out, unrealistic expectations and emotional dependence on online validation. Excessive use may influence self-esteem, confidence and overall emotional wellbeing. Healthy digital habits often help teenagers maintain a more balanced perspective.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. How does gaming addiction affect teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Excessive gaming may influence sleep patterns, academic performance, physical activity, social interaction and emotional wellbeing. Some teenagers may become highly dependent on gaming for entertainment or emotional escape. Understanding the underlying reasons for excessive gaming often helps families support healthier habits and balance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can excessive screen time affect sleep?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Screen exposure, especially before bedtime, may interfere with healthy sleep patterns. Late-night gaming, social media use or continuous device engagement can make it difficult for teenagers to fall asleep and maintain quality rest. Healthy sleep habits often support emotional wellbeing, concentration and daily functioning.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Is it ADHD or too much screen time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some signs of excessive screen use, such as reduced attention, distractibility or difficulty focusing, may appear similar to ADHD. However, ADHD and screen-related difficulties are not the same. A structured assessment can help families better understand the factors influencing attention, behaviour and concentration rather than making assumptions based on symptoms alone.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. How long does it take to detox from screen addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is no fixed timeline because every teenager is different. Improvements often depend on habits, routines, family support, emotional wellbeing and the level of screen dependency. The goal is not simply to stop screen use but to help teenagers develop healthier and more balanced digital habits over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support teenagers with screen addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, support begins with understanding the teenager as a whole rather than focusing only on screen time. Through structured assessment, personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of the factors influencing behaviour, attention, emotional wellbeing and digital habits. The goal is to support healthier routines, improved focus and balanced development.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Should I limit my 15 year old's screen time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Healthy limits can be beneficial, but limits alone are not always enough. Teenagers often respond better when digital boundaries are combined with meaningful alternatives such as sports, hobbies, family activities and social engagement. The focus should be on creating balance rather than completely eliminating technology.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should parents seek professional guidance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents may consider seeking guidance when screen use begins affecting sleep, concentration, academic performance, emotional wellbeing, relationships or daily functioning. Persistent dependency, irritability when devices are removed, social withdrawal or significant behavioural changes may indicate the need for additional support. A structured assessment can help families better understand the factors influencing screen-related challenges and overall wellbeing.",
+      },
+    },
+  ],
+};
+
+const teenScreenSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: teenScreenSeoTitle,
+      description: teenScreenSeoDescription,
+      url: teenScreenSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Teen Screen Addiction Treatment",
+          item: teenScreenSeoPageUrl,
+        },
+      ],
+    },
+    faqSchema,
+  ],
 };
 
 function SidebarCard({ children, className = "" }) {
@@ -262,7 +723,7 @@ function CitationText({ text, onCitationClick }) {
   const citationHandler = onCitationClick || linkContext?.onCitationClick;
   const linkedRuleKeysInPage = linkContext?.linkedRuleKeys;
   const source = String(text);
-  const citationPattern = /\[(\d+)\]/;
+  const citationPattern = /\[(\d+(?:\s*,\s*\d+)*)\]/;
   const linkedRuleKeysInText = linkedRuleKeysInPage || new Set();
   const parts = [];
   let cursor = 0;
@@ -278,7 +739,7 @@ function CitationText({ text, onCitationClick }) {
       candidates.push({
         index: citationMatch.index,
         text: citationMatch[0],
-        citationId: citationMatch[1],
+        citationIds: citationMatch[1].split(/\s*,\s*/),
         type: "citation",
       });
     }
@@ -313,11 +774,17 @@ function CitationText({ text, onCitationClick }) {
     }
 
     if (next.type === "citation") {
-      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+      parts.push(
+        <React.Fragment key={`${next.text}-${parts.length}`}>
+          {next.citationIds.map((citationId) => (
+            <Citation key={citationId} id={citationId} onClick={citationHandler} />
+          ))}
+        </React.Fragment>
+      );
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadcf3] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -449,12 +916,161 @@ function RelatedPagesCard() {
   );
 }
 
+
+const sectionIdByRawTitle = {
+  "Teen Screen Addiction Support in India": "introduction",
+  "Understanding Screen Addiction in Teenagers": "understanding-screen-addiction",
+  "Common Signs of Screen Addiction in Teenagers": "common-signs",
+  "Why Teenagers Develop Screen Dependency": "why-screen-dependency",
+  "How Excessive Screen Use Can Affect Teenagers": "how-it-affects",
+  "Why Families Choose Manovaidya": "why-families-choose",
+  "Why Families Across India Connect With Manovaidya": "why-families-choose-india",
+  "About Dr. Ankush Garg": "about-dr-ankush-garg",
+  "Frequently Asked Questions": "faqs",
+  "Frequently Asked Questions (FAQs)": "faqs",
+  "Book a Consultation": "book-consultation",
+};
+
+const rawHeadings = new Set(Object.keys(sectionIdByRawTitle));
+const hiddenRawLines = new Set(["Key Takeaways", ...keyTakeaways.map((item) => "- " + item), ...keyTakeaways]);
+const rawListLeadLines = new Set([
+  "At Manovaidya, the Teen Screen Addiction Support focuses on:",
+  "Teens can use screens for:",
+  "Families Choose Manovaidya Because Of:",
+]);
+
+function ArticleVisualBlock({ heading }) {
+  if (heading === "Teen Screen Addiction Support in India") {
+    return (
+      <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { label: "Excessive Mobile Phone Use", Icon: MonitorSmartphone },
+            { label: "Social Media Dependency", Icon: Users },
+            { label: "Gaming Addiction Concerns", Icon: Gamepad2 },
+            { label: "Reduced Attention & Focus", Icon: Brain },
+            { label: "Sleep & Lifestyle Challenges", Icon: Moon },
+            { label: "Healthy Digital Habits", Icon: ShieldCheck },
+          ].map(({ label, Icon }) => (
+            <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]"><Icon className="h-6 w-6" strokeWidth={1.8} /></span>
+              <span>{label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  if (heading === "How Excessive Screen Use Can Affect Teenagers") {
+    return (
+      <div className="mt-6 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] p-8 shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
+        <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for screen addiction support" className="max-h-full max-w-full rounded-lg object-contain object-center" />
+      </div>
+    );
+  }
+
+  if (heading === "Why Families Choose Manovaidya") {
+    return <img src={parentGuidanceImage} alt="Parent guidance for teen screen addiction support" className="mt-6 max-h-[380px] w-full rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />;
+  }
+
+  if (heading === "About Dr. Ankush Garg") {
+    return (
+      <div className="mt-4 flex flex-col gap-5 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm sm:flex-row sm:items-start">
+        <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
+        <div>
+          <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
+          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" /></a>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+function isRawShortTitle(line, next) {
+  return (
+    line.length < 92 &&
+    next &&
+    !/[.]/.test(line) &&
+    !rawHeadings.has(line) &&
+    !rawListLeadLines.has(line) &&
+    !/^\d+\./.test(line) &&
+    !line.startsWith("[") &&
+    !line.startsWith("http") &&
+    !line.startsWith("-") &&
+    !line.startsWith("•") &&
+    !line.startsWith("📞")
+  );
+}
+
+function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
+  const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
+  const introStartIndex = allLines.findIndex((line) => line === "Teen Screen Addiction Support in India");
+  const referenceStartIndex = allLines.findIndex((line) => /^\[1\]/.test(line));
+  const articleLines = referenceStartIndex > introStartIndex ? allLines.slice(0, referenceStartIndex) : allLines;
+  const lines = articleLines.slice(Math.max(0, introStartIndex)).filter((line) => !hiddenRawLines.has(line));
+  const faqStartIndex = lines.findIndex((line) => line === "Frequently Asked Questions" || line === "Frequently Asked Questions (FAQs)");
+  const faqEndIndex = lines.indexOf("Book a Consultation");
+
+  return (
+    <div className="mt-8 space-y-4">
+      {lines.map((line, index) => {
+        const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+        const id = sectionIdByRawTitle[line];
+        const next = lines[index + 1] || "";
+
+        if (line === "Frequently Asked Questions" || line === "Frequently Asked Questions (FAQs)") {
+          return (
+            <section key={"faq-" + index} id="faqs" className="mt-9">
+              <h2 className="text-[20px] font-black text-[#17111f]">{line}</h2>
+              <div className="mt-5 space-y-3">
+                {faqs.map((faq, faqIndex) => (
+                  <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
+                    <button onClick={() => setOpenFaq(openFaq === faqIndex ? null : faqIndex)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === faqIndex}>
+                      <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
+                      <span className={("flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform " + (openFaq === faqIndex ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"))}><ChevronDown className="h-4 w-4" /></span>
+                    </button>
+                    {openFaq === faqIndex && (
+                      <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
+                        <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]"><CitationText text={faq.answer} onCitationClick={onCitationClick} /></p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        }
+
+        if (faqMode) return null;
+
+        if (rawHeadings.has(line) && (line !== "Book a Consultation" || index === faqEndIndex)) {
+          return (
+            <section key={"section-" + index} id={id} className="mt-9 scroll-mt-28">
+              <h2 className="text-[20px] font-black text-[#17111f]">{line}</h2>
+              <ArticleVisualBlock heading={line} />
+            </section>
+          );
+        }
+
+        if (rawListLeadLines.has(line)) return <p key={"lead-" + index} className="pt-2 text-[14px] font-black leading-7 text-[#3b2e45]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+        if (isRawShortTitle(line, next)) return <h3 key={"h3-" + index} className="pt-3 text-[16px] font-black leading-6 text-[#21142d]"><CitationText text={line} onCitationClick={onCitationClick} /></h3>;
+        if (line === "Book Consultation") return <a key={"book-" + index} href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-[#7835A4] px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Book Consultation</a>;
+        return <p key={"p-" + index} className="text-[14px] font-semibold leading-7 text-[#51465a]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+      })}
+      <div className="mt-6 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white"><img src={ctaImage} alt="Teen digital wellbeing and screen addiction support" className="h-64 w-full object-cover object-center sm:h-80" /></div>
+    </div>
+  );
+}
+
 function TeenScreenAddictionSupportIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const pageUrl = "https://manovaidya.org/teen-screen-addiction-support";
-  const pageTitle = "Teen Screen Addiction Treatment in India | Manovaidya";
+  const pageTitle = "Teen Screen Addiction Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
   const articleShareLinks = [
@@ -528,16 +1144,11 @@ function TeenScreenAddictionSupportIndiaPage() {
     <CitationClickContext.Provider value={linkRenderContext}>
       <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Teen Screen Addiction Treatment in India | Mobile & Gaming Addiction Support | Manovaidya"
-        description="Looking for Teen Screen Addiction Treatment in India? Learn about mobile addiction, gaming addiction, social media dependency, screen time concerns and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        title={teenScreenSeoTitle}
+        description={teenScreenSeoDescription}
         keywords="Teen Screen Addiction India, Mobile Addiction Treatment, Gaming Addiction in Teens, Social Media Addiction Support, Excessive Screen Time, Teenage Digital Detox, Parent Guidance for Screen Addiction, Neuro-Ayurveda Addiction Care, Dr. Ankush Garg"
         path="/teen-screen-addiction-support"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Teen Screen Addiction Treatment in India",
-          "description": "Looking for Teen Screen Addiction Treatment in India? Learn about mobile addiction, gaming addiction, social media dependency, screen time concerns and family guidance through the Neuro-Ayurveda approach at Manovaidya."
-        }}
+        schema={teenScreenSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
@@ -553,7 +1164,7 @@ function TeenScreenAddictionSupportIndiaPage() {
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Mental Wellness</p>
               <p className="mt-1 text-[12px] font-black text-[#4b345d]">Screen Addiction & Digital Wellbeing</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-                Teen Screen Addiction Treatment in India
+                Teen Screen Addiction Support in India
               </h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
                 Helping Teenagers Develop Healthier Digital Habits, Better Focus & Emotional Wellbeing.
@@ -593,300 +1204,14 @@ function TeenScreenAddictionSupportIndiaPage() {
                 Healthy Digital Habits
               </div>
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
-                <img src={heroImage} alt="Teen Screen Addiction Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
+                <img src={heroImage} alt="Teen Screen Addiction Support in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
               </div>
             </figure>
           </div>
 
           <KeyTakeawaysBlock />
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Is Teen Screen Addiction Treatment in India?</h2>
-            <Paragraph>Supporting teenagers with healthier digital habits, better focus and emotional wellbeing.</Paragraph>
-            <Paragraph>When families look for Teen Screen Addiction Treatment in India, they often want guidance that helps teenagers control screen time without constant conflict. The goal is not simply to remove phones, games and social media, but to understand what drives screen dependence, behaviour patterns, lifestyle habits and family routines.</Paragraph>
-            <Paragraph>Technology plays a significant role in today's life. Smartphones, social media, online games, video content and digital learning platforms have many advantages. But heavy screen time can impact emotional health, focus, sleep, behaviour and daily functioning. <Citation id="2" onClick={handleCitationClick} /> <Citation id="3" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /> <Citation id="5" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>When screen time begins to replace sleep, physical activity, studies, in-person interaction, family time or meaningful offline experiences, it is important to pay attention to Excessive Screen Time in Teenagers.</Paragraph>
-            <Paragraph>Many parents notice that their teenager spends long hours on mobile phones, social media, gaming platforms or digital entertainment. The teenager may struggle to disconnect, become irritable when devices are removed or slowly lose interest in offline activities.</Paragraph>
-            <Paragraph>At Manovaidya, we understand that screen dependency is not simply about technology use. Emotional wellbeing, social experiences, confidence, boredom, stress, sleep patterns, lifestyle habits and daily routines often influence how teenagers interact with digital devices.</Paragraph>
-            <Paragraph>Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps families understand screen-related challenges while supporting healthier habits, attention, emotional wellbeing and balanced development.</Paragraph>
-
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Teen Screen Addiction Treatment Focuses On:</h3>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {[
-                  { label: "Excessive Mobile Phone Use", Icon: MonitorSmartphone },
-                  { label: "Social Media Dependency", Icon: Users },
-                  { label: "Gaming Addiction Concerns", Icon: Gamepad2 },
-                  { label: "Reduced Attention & Focus", Icon: Brain },
-                  { label: "Sleep & Lifestyle Challenges", Icon: Moon },
-                  { label: "Healthy Digital Habits", Icon: ShieldCheck },
-                ].map(({ label, Icon }) => (
-                  <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                      <Icon className="h-6 w-6" strokeWidth={1.8} />
-                    </span>
-                    <span>{label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          <section id="understanding-screen-addiction" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Is Screen Addiction in Teenagers?</h2>
-            <Paragraph>Technology is now deeply integrated into education, communication and entertainment.</Paragraph>
-            <Paragraph>Screen use does not always have negative consequences. Problems may arise when digital activities become difficult to manage and begin affecting emotional wellbeing, sleep, relationships, school or home life. <Citation id="2" onClick={handleCitationClick} /> <Citation id="3" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Screen Addiction in Teenagers can appear as frequent use, struggles with putting devices down, emotional reactions when screen access is reduced, or a feeling of compulsion even when screen use harms other parts of life.</Paragraph>
-            <Paragraph>Formal diagnostic recognition is specific in areas such as gaming disorder. Not every teenager who uses a device for many hours is addicted. Gaming disorder includes impaired control, increased priority given to gaming and continued gaming despite negative outcomes. <Citation id="1" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Families searching for Screen Addiction Treatment in India, Mobile Addiction in Teenagers or Teen Digital Wellbeing Support are often looking for clarity on whether the concern is occasional overuse, lifestyle imbalance or a pattern affecting daily functioning.</Paragraph>
-            <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
-              <h3 className="text-[15px] font-black text-[#21142d]">Teenagers may use screens for:</h3>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-                {["Social interaction", "Gaming", "Entertainment", "Studying", "Content creation", "Communication"].map((item) => (
-                  <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Paragraph>Teen Digital Wellness means helping teenagers become aware of their technology use while promoting healthy sleep, learning, physical activity, family time and meaningful offline activities.</Paragraph>
-          </section>
-
-          <section id="common-signs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs of Screen Addiction in Teenagers</h2>
-            <Paragraph>Signs of Screen Addiction in Teenagers should be noticed across emotions, behaviour, studies, physical wellbeing and daily functioning.</Paragraph>
-            <div className="mt-5 space-y-5">
-              {[
-                { title: "Emotional Signs", Icon: HeartHandshake, items: ["Irritability when devices are removed", "Frequent mood changes", "Increased frustration", "Emotional dependence on digital activities", "Difficulty managing boredom without a screen"] },
-                { title: "Behavioural Signs", Icon: MonitorSmartphone, items: ["Excessive screen time", "Constantly checking devices", "Difficulty reducing usage", "Avoiding offline activities", "Reduced family interaction", "Ignoring responsibilities to continue screen use"] },
-                { title: "Academic Signs", Icon: BookOpen, items: ["Difficulty concentrating", "Reduced academic performance", "Procrastination", "Reduced productivity", "Trouble managing without the mobile phone"] },
-                { title: "Physical Signs", Icon: Eye, items: ["Sleep disturbances", "Fatigue", "Eye strain", "Reduced physical activity", "Headaches or body discomfort after extended use"] },
-              ].map(({ title, Icon, items }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                  <div className="mb-3 flex items-center gap-3">
-                    <Icon className="h-5 w-5 text-[#7835A4]" />
-                    <h3 className="text-[16px] font-black text-[#21142d]">{title}</h3>
-                  </div>
-                  <ul className="space-y-2 sm:columns-2">
-                    {items.map((item) => (
-                      <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-            <Paragraph>Overstimulation from digital devices may be linked to attention and concentration problems, but it should not be assumed to be ADHD or another developmental concern without assessment. <Citation id="5" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Mobile device use late at night and screen access near bedtime may relate to shorter sleep duration, poorer sleep quality and daytime sleepiness. <Citation id="3" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Occasional overuse is not always addiction. When multiple signs persist and screen use interferes with several areas of life, Teen Screen Addiction Counselling, Screen Addiction Therapy for Teenagers or Online Screen Addiction Support for Teenagers may be useful.</Paragraph>
-          </section>
-
-          <section id="why-screen-dependency" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Teenagers Develop Screen Dependency</h2>
-            <Paragraph>Many parents assume teenagers use screens excessively because they lack discipline. In reality, multiple emotional, social, behavioural and lifestyle factors can influence digital dependency.</Paragraph>
-            <Paragraph>Learning about these influences is an important part of How to Overcome Screen Addiction in Teenagers without relying only on punishment or abrupt restrictions.</Paragraph>
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Social Connection", desc: "Digital platforms are a common way for teenagers to connect with friends and peers. Reducing phone use can feel difficult when they worry about missing conversations, updates, group activities or social acceptance." },
-                { title: "Entertainment & Instant Rewards", desc: "Gaming, videos and social media provide immediate stimulation and rewards. Notifications, game achievements, likes and short-form content can reinforce automatic checking and recurring use." },
-                { title: "Academic Demands", desc: "Screens are essential for online learning, research, communication and assignments. This makes screen-time management complicated because learning and entertainment often happen on the same device." },
-                { title: "Emotional Escape", desc: "Some teenagers use screens to relieve boredom, loneliness, stress, academic pressure or uncomfortable emotions. Support should explore emotional avoidance rather than only removing devices." },
-                { title: "Social Media Influence", desc: "Comparison, fear of missing out and online validation may increase the need to stay connected. Social media dependency can affect sleep and emotional health." },
-                { title: "Lifestyle Imbalance", desc: "Lack of structured routines, physical activity, hobbies and meaningful offline time can contribute to excessive screen time. Predictable routines and offline engagement support healthier digital habits." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="how-it-affects" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Excessive Screen Use Can Affect Teenagers</h2>
-            <Paragraph>The impact of excessive screen time depends on what teenagers are doing online, when they use screens, how it makes them feel and whether screens are replacing meaningful daily activities. <Citation id="2" onClick={handleCitationClick} /></Paragraph>
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Emotional Wellbeing", text: "Teenagers may experience irritability, mood fluctuations, emotional dependence, reduced emotional balance and difficulty coping with boredom or frustration." },
-                { title: "Concentration & Attention", text: "Excessive digital stimulation can affect attention, focus and learning styles. Frequent switching between short videos, games, notifications and messages may make studying feel less engaging." },
-                { title: "Sleep Quality", text: "Using devices late in the day may disrupt sleep. Poor sleep can affect mood, attention, energy, learning and emotional control." },
-                { title: "Academic Performance", text: "Reduced concentration and increased procrastination may affect studies." },
-                { title: "Relationships", text: "Excessive screen use can reduce face-to-face interaction and family involvement. Family routines, parent modelling and communication can all influence teen screen use." },
-                { title: "Physical Wellbeing", text: "Limited physical activity and extended screen time can affect wellbeing, which is why support should also promote movement, outdoor activity, healthy sleep and offline engagement." },
-              ].map(({ title, text }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <h3 className="text-[16px] font-black text-[#21142d]">{title}</h3>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                    <CitationText text={text} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-approach" className="mt-9">
-            <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)]">
-              <h2 className="text-[18px] font-black leading-snug text-[#5d268d]">The Neuro-Ayurveda Approach to Teen Screen Addiction</h2>
-              <p className="mt-2 text-[14px] font-semibold leading-6 text-[#51465a]">
-                <CitationText text="At Manovaidya, screen-related challenges are understood through a broader perspective. The focus is not simply on reducing screen time, but on understanding emotional wellbeing, attention, behaviour, lifestyle habits, routines and family patterns that may contribute to digital dependency. Traditional Ayurvedic ideas about Manas, Sattvavajaya, regulated lifestyle and balanced sensory engagement provide conceptual support. [7] [8] [9]" onCitationClick={handleCitationClick} />
-              </p>
-            </div>
-            <div className="mt-6 space-y-4">
-              {[
-                { title: "Brain Nourishment System", text: "This pillar focuses on attention, concentration, learning readiness, emotional regulation and healthy cognitive functioning. It helps families explore whether digital habits, sleep issues, emotional stress or inconsistent routines are connected with reduced focus.", Icon: Brain },
-                { title: "Gut Response System", text: "Lifestyle balance, eating patterns, energy levels, sleep routines and daily functioning may influence how teenagers engage with screens. The focus is on nutrition, sleep, routines and overall wellbeing.", Icon: Utensils },
-                { title: "Neural Network System", text: "Repeated reward patterns, thought patterns, attention habits and emotional responses shape digital habits over time. Support focuses on triggers, healthier replacements and reducing automatic device use.", Icon: Sparkles },
-                { title: "Sensory Integration System", text: "Fast-moving content, gaming stimulation, social media scrolling and digital overload may influence sensory and emotional balance. Offline activities may feel less interesting when teens become used to constant stimulation.", Icon: Waves },
-                { title: "Behaviour Guidance System", text: "This pillar helps families understand avoidance, irritability, dependency and resistance as possible signs of habit, emotional dependence, boredom, fear of missing out or lack of meaningful alternatives.", Icon: ShieldCheck },
-              ].map((pillar) => (
-                <div key={pillar.title} className="flex gap-4 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-[#7835A4] shadow-sm">
-                    <pillar.Icon className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h3 className="text-[15px] font-black text-[#21142d]">{pillar.title}</h3>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#51465a]">
-                      <CitationText text={pillar.text} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] p-8 shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
-              <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for screen addiction support" className="max-h-full max-w-full rounded-lg object-contain object-center" />
-            </div>
-          </section>
-
-          <section id="how-parents-can-help" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Parents Can Help Reduce Screen Dependency</h2>
-            <Paragraph>Parents can support healthier digital habits by creating structure, encouraging offline engagement, maintaining consistent routines and understanding the emotional reasons behind excessive digital use. Reducing screen time for teenagers usually works best through gradual and realistic change.</Paragraph>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {[
-                { title: "Create Screen-Free Routines", desc: "Screen-free meals, evening routines and predictable bedtimes can support self-regulation. Families can set realistic limits around mealtimes, rest, study, recreation and exercise." },
-                { title: "Encourage Offline Activities", desc: "Sports, hobbies, family time and peer interaction provide meaningful alternatives to digital stimulation. Activities should be based on interests, not framed only as punishment." },
-                { title: "Avoid Constant Conflict", desc: "Calm communication often works better than repeated arguments, sudden restrictions or punishment. Parents can explain boundaries, listen to concerns and involve teenagers in realistic schedules." },
-                { title: "Support Sleep Habits", desc: "Reducing evening device use can improve sleep, emotional health and concentration. Keeping devices out of the bedroom and reducing notifications can help." },
-                { title: "Model Balanced Technology Use", desc: "Teenagers often respond better when the whole family follows healthy digital boundaries. Family-wide limits help digital wellbeing feel like a shared routine." },
-                { title: "Understand Emotional Triggers", desc: "Stress, loneliness, boredom and social pressure can all influence excessive screen time. Understanding triggers helps parents offer emotional support and suitable alternatives." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-            <img src={parentGuidanceImage} alt="Parent guidance for teen screen addiction support" className="mt-6 max-h-[380px] w-full rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />
-          </section>
-
-          <section id="how-we-support" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Manovaidya Supports Teenagers & Families</h2>
-            <Paragraph>At Manovaidya, support begins with understanding the teenager as a whole rather than focusing only on screen time.</Paragraph>
-            <Paragraph>A structured assessment can be the first step for families looking for Teen Screen Addiction Treatment in India, Online Screen Addiction Support for Teenagers or Digital Wellbeing Support in India.</Paragraph>
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Step 1: Detailed Assessment", desc: "Understanding screen habits, mobile phone use, gaming patterns, social media dependency, sleep, attention, emotional wellbeing and family concerns. This helps clarify whether the concern is occasional overuse, lifestyle imbalance or a persistent screen-related challenge." },
-                { title: "Step 2: Personalized Guidance", desc: "Providing recommendations based on the teenager's habits, lifestyle, emotional needs and developmental concerns, including screen-time management, sleep support, healthier routines and strategies to reduce automatic device use." },
-                { title: "Step 3: Parent Guidance & Family Support", desc: "Helping parents create practical digital boundaries, supportive routines, healthier communication and meaningful offline alternatives at home." },
-                { title: "Step 4: Neuro-Ayurveda Development System", desc: "Applying the five-pillar framework to better understand attention, behaviour, emotional wellbeing and healthy digital habits." },
-                { title: "Step 5: Progress Tracking & Follow-Up", desc: "Tracking changes in screen duration, late-night use, sleep quality, attention, family interaction, academic routines, offline engagement and emotional responses to restrictions." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="why-families-choose" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Families Choose Manovaidya</h2>
-            <Paragraph>Choosing the right support system for screen addiction, mobile dependency and digital wellbeing can feel challenging for many families. Parents are often looking for practical guidance, better understanding and a structured approach that helps teenagers develop healthier habits without creating constant conflict.</Paragraph>
-            <Paragraph>At Manovaidya, our goal is not simply to reduce screen time. We help families understand the broader factors that may influence digital habits, attention, emotional wellbeing, behaviour and overall development.</Paragraph>
-            <h3 className="mb-4 mt-6 text-[16px] font-black text-[#17111f]">Families Choose Manovaidya Because Of:</h3>
-            <div className="space-y-4">
-              {[
-                { title: "Structured Screen Addiction Assessment", desc: "Every teenager uses technology differently. Understanding emotional, behavioural and lifestyle-related influences helps create a more personalized roadmap for healthy digital habits and balanced development." },
-                { title: "Neuro-Ayurveda Development System", desc: "Our structured framework helps families understand screen-related challenges through five interconnected pillars: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System, Behaviour Guidance System." },
-                { title: "Parent-Centred Guidance", desc: "Digital wellbeing is not only about the teenager. Parents often play a major role in shaping healthy technology habits and creating balanced routines." },
-                { title: "Personalized Support", desc: "Every teenager experiences screen-related challenges differently. Guidance is tailored according to individual needs, habits and developmental concerns." },
-                { title: "Long-Term Growth Focus", desc: "Our approach focuses on healthy digital habits, emotional wellbeing, attention, focus and balanced development rather than temporary restrictions alone." },
-                { title: "Family-Oriented Approach", desc: "Meaningful progress often happens when teenagers and families work together with proper understanding and structured support." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="flex gap-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#7835A4]" />
-                  <div>
-                    <h4 className="text-[14px] font-black text-[#21142d]">{title}</h4>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                      <CitationText text={desc} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-8 text-[15px] font-black leading-7 text-[#17111f]">Why Families Across India Connect With Manovaidya</p>
-            <Paragraph>Through online and in-clinic consultation, families from Delhi, Noida, Gurgaon, Faridabad and across India reach out to Manovaidya for Teen Screen Addiction Treatment, Teen Digital Wellbeing guidance and Mobile Addiction Support.</Paragraph>
-            <Paragraph>Families looking for Teen Screen Addiction Treatment in India, Digital Wellbeing Support in India or an Online Teen Digital Wellbeing Program can find structured support based on their location and concerns.</Paragraph>
-          </section>
-
-          <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm">
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
-              <div>
-                <h2 className="text-[18px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="mt-1 text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Many families searching for support regarding excessive screen use, mobile addiction, gaming dependency and digital wellbeing connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Through detailed assessment, individualized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing attention, behaviour, emotional wellbeing and healthy development." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System." onCitationClick={handleCitationClick} />
-                </p>
-                <a href="/dr-ankush-garg/" className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
-                  Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section id="faqs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions</h2>
-            <div className="mt-5 space-y-3">
-              {faqs.map((faq, index) => (
-                <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
-                  <button onClick={() => setOpenFaq(openFaq === index ? null : index)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === index}>
-                    <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform ${openFaq === index ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"}`}>
-                      <ChevronDown className="h-4 w-4" />
-                    </span>
-                  </button>
-                  {openFaq === index && (
-                    <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
-                      <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">
-                        <CitationText text={faq.answer} onCitationClick={handleCitationClick} />
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
+          <RawArticleContent onCitationClick={handleCitationClick} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
           <div className="mt-8">
             <button
@@ -903,33 +1228,6 @@ function TeenScreenAddictionSupportIndiaPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
-            <div className="p-6 sm:p-8">
-              <h2 className="text-[22px] font-black leading-tight">Concerned About Your Teenager's Screen Habits?</h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                <CitationText text="If your teenager is struggling with excessive mobile phone use, gaming dependency, social media overuse, sleep disturbances or reduced concentration, seeking clarity is often the first step." onCitationClick={handleCitationClick} />
-              </p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                <CitationText text="At Manovaidya, our team helps families better understand screen-related challenges through structured assessment, personalized guidance and family-centred support. Book a structured assessment and personalized guidance session with the Manovaidya team." onCitationClick={handleCitationClick} />
-              </p>
-              <div className="mt-6">
-                <h3 className="mb-3 text-[16px] font-black">Take the First Step Towards Healthier Digital Habits, Better Focus & Emotional Wellbeing</h3>
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {["Book Assessment Session", "Speak With Our Team", "Get Personalized Guidance"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[14px] font-bold">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
-                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">Book Consultation</a>
-                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Take Teen Wellness Assessment</a>
-              </div>
-            </div>
-            <img src={ctaImage} alt="Teen digital wellbeing and screen addiction support" className="h-64 w-full object-cover object-center sm:h-80" />
-          </section>
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

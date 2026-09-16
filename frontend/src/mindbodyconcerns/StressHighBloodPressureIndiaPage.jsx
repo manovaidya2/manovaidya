@@ -28,6 +28,166 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.web
 import consultationImage from "../images/blood-pressure-consultation.webp";
 import doctorImage from "../images/doctorimg-2.jpeg";
 
+const seoTitle = "Stress & High Blood Pressure Treatment in India | Mind-Body Health";
+
+const seoPageUrl = "https://manovaidya.org/stress-and-high-blood-pressure/";
+
+const stressBloodPressureFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress increase blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For a brief period of time, blood pressure can increase in response to emotional stress as part of the body's stress response. Most people will return to their normal reading level after the stressful situation is over. If blood pressure stays high, it should be medically evaluated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. Can stress cause long-term high blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Long-term high blood pressure (hypertension) is not specifically a stress-related issue. However, chronic stress can impact not only sleep patterns, but also dietary choices, physical activity and other lifestyle factors which are important for cardiovascular health."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between temporary high blood pressure and hypertension?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Blood pressure might rise temporarily, during stress, exercise or emotional situations. Typically returns to normal after it. If blood pressure remains elevated over time, it is diagnosed and requires treatment with repeated readings by a healthcare worker, this is called Hypertension."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common risk factors for high blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Factors that increase risk are excess salt, smoking, excess alcohol, diabetes, kidney disease and unhealthy lifestyle habits, increasing age and family history, and physical inactivity. The majority of people get hypertension due to a mix of factors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can anxiety temporarily increase blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A short increase in blood pressure may occur when the body reacts to stress and anxiety as if going into a fight or flight situation. These are transient changes as opposed to chronic hypertension."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can poor sleep affect blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep is an integral part of good cardiovascular health. Some individuals may experience changes in their blood pressure and well-being when they don't sleep well or have a chronic sleep issue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can lifestyle habits help support healthy blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Practicing healthy eating, physical activity, weight management, reducing excess salt intake, avoiding tobacco, limiting alcohol consumption, stress reduction and sleep are factors that maintain cardiovascular health. These habits go hand-in-hand with good medical care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I seek emergency medical care for high blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If chest pain is extreme, weakness is severe, difficulty speaking, sudden change in vision, severe shortness of breath, confusion, seizures, loss of consciousness or extremely high blood pressure and troubling symptoms, seek immediate medical help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Does high blood pressure always cause symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most people with high blood pressure don't have any symptoms. That's why hypertension is referred to as a ‘silent condition.’ It is important to monitor blood pressure regularly, particularly for adults and individuals who have risk factors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & High Blood Pressure assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Stress & High Blood Pressure assessment is a formal assessment that examines emotional wellbeing, stress levels, sleep, lifestyle habits, nutrition, physical activity, blood pressure history and overall health. It assists in identifying factors which could affect wellbeing and provide focussed advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals concerned about stress and high blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We at Manovaidya see the relationship between emotional wellbeing and lifestyle and cardiovascular health, rather than just blood pressure readings. We work with structured assessments, personalised guidance and the Neuro-Ayurveda Development System to give insight into people's mind-body wellbeing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Neuro-Ayurveda Development System is Manovaidya's 5-pillar approach. Considers Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance together and with awareness of emotional wellbeing, lifestyle and overall health. Provides a comprehensive overview, evaluation and individualized suggestions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress support heart health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress management techniques, such as healthy habits, regular exercise, diet and relaxation/reduction of stress, may help to promote cardiovascular health. These practices are in addition to, not a substitute for, medical diagnosis, treatment and blood pressure monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. How often should I check my blood pressure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The frequency of measuring blood pressure varies according to age, health and doctor's recommendations. Individuals who have been diagnosed with hypertension or cardiovascular risk factors should adhere to their healthcare professional's recommended monitoring plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & High Blood Pressure support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We believe that emotional wellbeing is essential to a healthy lifestyle and cardiovascular health at Manovaidya, we concentrate on the link between emotional wellbeing, lifestyle and overall cardiovascular health by conducting structured evaluations, providing individual guidance and implementing the Neuro-Ayurveda Development System. We treat the whole person and educate about stress related health issues while providing long-term mind-body wellness along with the right medical treatment."
+      }
+    }
+  ]
+};
+
+const stressBloodPressureBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & High Blood Pressure Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressBloodPressureMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & High Blood Pressure Treatment in India",
+  "description": "Looking for Stress & High Blood Pressure treatment in India? Learn how chronic stress causes hypertension, cardiovascular risks and how Neuro-Ayurveda helps.",
+  "url": seoPageUrl
+};
+
+const stressBloodPressureSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressBloodPressureMedicalWebPageSchema,
+    stressBloodPressureFaqSchema,
+    stressBloodPressureBreadcrumbSchema,
+  ],
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding High Blood Pressure & Cardiovascular Wellbeing\nStress & Blood Pressure Connection\nTemporary Blood Pressure Rise vs Hypertension\nCommon Risk Factors for High Blood Pressure\nImpact of Stress on Heart & Mind-Body Health\nWarning Signs That Need Medical Attention\nEmotional Wellbeing & Cardiovascular Health\nHealthy Lifestyle Habits for Blood Pressure Support\nStress Management & Relaxation Strategies\nNeuro-Ayurveda Development System\nComprehensive Mind-Body Health Assessment\nPersonalised Lifestyle & Emotional Wellbeing Guidance\nOngoing Blood Pressure Monitoring & Medical Care\nManovaidya’s Holistic Support Approach\nFAQs About Stress & High Blood Pressure\n\nCardiovascular Wellbeing\nStress & High Blood Pressure Treatment in India.\nKnowing the connection between stress, hypertension and emotional health.\nHypertension also known as high blood pressure is a very common issue in our long-term health. It tends to accumulate gradually. Early, there are no obvious signs and symptoms; many people may not realize that they have high blood pressure. Hence, it is known as a \"silent condition. [1]\nOne question that is often asked is can stress raise blood pressure? The body produces stress hormones naturally during times of stress. This in turn may cause a brief rise in blood pressure and heart rate. In most people, these readings come down again once the stressful situation is over. [2][3]\nThat isn't the case for long-term high blood pressure. It is generally caused by a combination of factors, including age, family history, diet, activity level, body weight, medical conditions and lifestyle habits. While this is not always the case, emotional stress can disrupt sleep, eating patterns, physical activity and other activities important to heart health. [1][2][4]\nWe don't just focus on these blood pressure readings at Manovaidya. We make an attempt to have a holistic view of the person. We take a holistic view of emotional wellbeing, lifestyle, sleep patterns and mind/body health to establish better, long-term habits.\nWe use the Neuro-Ayurveda Development System under the guidance of Mental Health Specialist and Founder of Manovaidya, Dr. Ankush Garg. It is a five-pillar approach to brain health, gut health, behaviour, lifestyle and emotional wellbeing, that is structured.\n\nWhat is High Blood Pressure?\nBlood pressure is the pressure the blood exerts against the artery walls. If this pressure continues to be higher than the recommended limits, it is known as high blood pressure or hypertension. [1]\nA lot of high blood pressure patients will feel fine.\nMay not experience symptoms for many years.\nPeriodic health checkups and monitoring is critical.\nHigh blood pressure is only diagnosed after multiple blood pressure measurements. [1]\n\n\nWhat is the relationship between Stress and Blood Pressure?\nThe body activates its fight or flight mechanism when a person is emotionally stressed. [2][3][9]\nThis is a short-term solution, which can result in:\n Increased heart rate\n A temporary increase in blood pressure.\n Faster breathing\n Increased muscle tension\n Heightened alertness [2][3][9]\n\nAfter the stressful event has passed, blood pressure usually comes back to normal. However, chronic emotional stress could affect lifestyle factors like: [2][3]\nPoor sleep\n Reduced physical activity\n Unhealthy eating habits\n Increased alcohol or tobacco use\n Weight gain [2][4]\nThese can be risk factors for long-term cardiovascular health. [1][2][4]\n\n\nCommon Risk Factors for High Blood Pressure\nHigh blood pressure is influenced by many factors. Most people develop high blood pressure because several of these factors work together. [1][4]\nIncreasing age\n Family history\n Obesity\n Physical inactivity\n High salt intake\n Smoking\n Excess alcohol\n Diabetes\n Kidney disease\n Chronic stress [1][4]\n\n\nTemporary vs Long-Term High Blood Pressure\nIt's important to distinguish between a short-term increase in blood pressure and chronic high blood pressure. [1][2]\n\nTemporary Rise in Blood Pressure\nA temporary rise can be observed during:\nEmotional stress\n Anxiety\n Pain\n Public speaking\n Physical exertion\n Medical appointments\n Sudden frightening situations [2][3]\nIn most cases, blood pressure returns to normal after the triggering event is over. [2][3]\n\nLong-Term High Blood Pressure\nPersistent hypertension is a gradual development that typically requires continuous evaluation and management. It can be affected by: [1][4]\nFamily history & Age\n Diabetes & Kidney disease\n Obesity & High salt intake\n Smoking & Lack of physical activity\n Chronic lifestyle factors [1][4]\nLong term blood pressure patterns are better identified by regular monitoring. [1]\n\nCan Stress Affect Blood Pressure Readings?\nYes. Blood pressure often rises for a short period of time during emotional stress, when working too hard, when being public speaker, when seeing a doctor or nurse, when having disagreements in the family, or when dealing with money problems. [2][3]\nWhile these temporary changes will not result in an ongoing high blood pressure, they can be similar in some respects. Chronic hypertension requires periodic medical assessment and treatment. [1][2]\n\nWhy Emotional Wellbeing Matters\nHaving high blood pressure can impact emotional health. Some individuals experience:\nAnxiety about blood pressure readings\n Fear of future health problems\n Difficulty sleeping\n Emotional stress after diagnosis\n Reduced confidence in physical activities\n Lower overall quality of life\nCan Stress Cause High Blood Pressure?\nStress can temporarily raise your blood pressure. This is due to the normal stress response of the body. Stress hormones, such as adrenaline, can increase your heart rate, and can cause blood vessels to narrow for a short time during stressful moments. This may lead to a temporary increase in blood pressure. [2][3][9]\nIt is not so with long-term high blood pressure. It typically is associated with numerous causes. Long-term high blood pressure is usually not the only result of stress. Nevertheless, it may impact lifestyle habits, and lifestyle habits may have an impact on heart health. [1][2][4]\n\n\nCommon Signs You Should Not Ignore\nMost people with high blood pressure do not experience any obvious symptoms. If blood pressure gets dangerously high, you might have: [1]\nSevere headache\n Blurred vision\n Chest discomfort\n Shortness of breath\n Dizziness\n Nosebleeds (occasionally)\n Confusion [1]\nThey should always be taken seriously and should be examined sooner rather than later.\nIf you have any of the following symptoms that suddenly develop, get urgent emergency medical help: having severe chest pain, suddenly not being able to breathe, suddenly not being able to move or feel any sensation in one arm, leg or one side of the body, becoming unable to speak, suddenly losing the sight of one eye or one side of vision, have severe confusion, lose consciousness or have a seizure, or have very high blood pressure and other concerning symptoms. [1]\n\nOur Stress & High Blood Pressure Assessment Process\n\nAt Manovaidya, our assessment process explores how emotional wellbeing, lifestyle, sleep and overall health may be connected. We also encourage proper medical evaluation and ongoing care wherever needed.\n\n1. Understanding Your Health Journey\n\n\nEvery consultations start with a thorough listening to your health concerns. We talk about your past blood pressure readings, recent readings, medications, family history, emotional well-being, stress, sleep, diet, activity, routine and previous investigations.\n\n\n2. Comprehensive Mind-Body Assessment\n\nWe have a structured assessment that will examine factors that might impact overall cardiovascular wellbeing, such as emotional wellbeing, stress patterns, quality of sleep, lifestyle habits, nutrition, physical activity, work-life balance, behavioural patterns, daily routine, and overall quality of life. [1][2][5]\n\n\n3. Understanding Your Wellbeing Profile\nFollowing the assessment, we simplify and explain our observations in a practical and easy-to-understand manner. We will aim to enable people to make informed healthcare decisions by providing information on the relationship between emotional wellbeing, lifestyle and cardiovascular health.\n\nThe Neuro-Ayurveda Development System\nAt Manovaidya, we know about mind-body health in terms of Neuro-Ayurveda Development System. A comprehensive five-pillar approach that encompasses brain health, gut health, behaviour, lifestyle and emotional wellbeing. This approach is not solely about blood pressure readings, but it's about the bigger picture that impacts overall health and wellbeing over the long term.\n\n1. Brain Nourishment System\nSupporting healthy brain function benefits in: Emotional balance, Stress resilience, Mental clarity, Healthy sleep, Cognitive wellbeing, Overall quality of life. Supporting emotional wellbeing can help individuals react to their stress in a healthier manner in the face of everyday stressors. [3][9]\n\n2. Gut Response System\nGastrointestinal health and nutrition are significant to general health. This pillar is about: Healthy eating habits, Gut-brain communication, Digestive wellbeing, Nutrition patterns, Lifestyle influences. [1][5]\n\n\n3. Neural Network System\nThe brain is constantly molding and changing because of its learning and life experiences. This pillar is about strengthening the following: Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management, Cognitive flexibility.\n\n4. Sensory Integration System\nEmotional wellbeing can be affected by the environment and lifestyle. This pillar takes into account Recovery, Relaxation, Environmental stress, Daily balance, Healthy routines. [6][9]\n\n5. Behaviour Guidance System\nGood habits are beneficial to heart health and emotional health in the long term. The emphasis of this pillar is on: Healthy daily habits, Awareness of behaviour, Lifestyle change, Stress management, Sustainable habit formation. [1][5][6]\n\nHow we support individuals concerned about stress & High Blood Pressure\nEach person's health story is different. Manovaidya is a place of support tailored to the emotional wellness, way of life and health concerns of each person.\n\n\nStress & Blood Pressure Assessment\n Mind-Body Health Assessment\n Emotional Wellbeing Guidance\n Lifestyle Education\n Healthy Habit Planning\n Stress Management Guidance\n Brain Wellness Education\n Progress Monitoring & Follow-Up\nSupporting Healthy Blood Pressure\nEveryday healthy behaviors are important to the wellbeing of the cardiovascular system. These may include: [1][4][5]\nEating a balanced diet and limiting excess salt intake\nStaying physically active and maintaining healthy body weight\nGetting adequate sleep and managing everyday stress\nTaking prescribed medications as advised by your doctor [1][4][5]\nAny lifestyle changes should be added to, rather than taken in place of, suitable medical treatment. [1][5]\n\nWhy People Across India Choose Manovaidya\nPeople and families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and from all over the country select Manovaidya due to our holistic approach of mind-body health.\nPeople from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and all over India approach Manovaidya to understand the link between stress, emotional well-being and blood pressure and get a detailed structured assessment and customized lifestyle advice.\n Complete mind-body health assessments\n Neuro-Ayurveda Development System\n Lifestyle & Stress Management Guidance\n Holistic Emotional Wellbeing Support\n A customized long term well being program.\nOnline & In-Clinic Consultations\nGuidance by Dr. Ankush Garg\n\nAbout Dr. Ankush Garg\nMental Health Specialist & Founder of Manovaidya\nDr Ankush Garg is the Founder of Manovaidya and developer of Neuro-Ayurveda Development System.\nHis research is on the connection between emotional health and wellness, lifestyle, brain and mind-body wellness. Using structured assessment, individual guidance and follow-up, he will help people to appreciate how stress and everyday practices could affect their health. [2][3][9]\nDr. Ankush Garg is located in Delhi NCR and offers Mind – Body Health Assessments to educate a person about how emotional well being is connected to lifestyle and cardiovascular well being via Neuro-Ayurveda Development System. He sees patients online and in his clinic throughout India.\n\n\nFrequently Asked Questions (FAQs)\n1. Can stress increase blood pressure?\nYes. For a brief period of time, blood pressure can increase in response to emotional stress as part of the body's stress response. Most people will return to their normal reading level after the stressful situation is over. If blood pressure stays high, it should be medically evaluated. [2][3][9]\n\n\n2. Can stress cause long-term high blood pressure?\nLong-term high blood pressure (hypertension) is not specifically a stress-related issue. However, chronic stress can impact not only sleep patterns, but also dietary choices, physical activity and other lifestyle factors which are important for cardiovascular health. [1][2][4]\n\n3. What is the difference between temporary high blood pressure and hypertension?\nBlood pressure might rise temporarily, during stress, exercise or emotional situations. Typically returns to normal after it. If blood pressure remains elevated over time, it is diagnosed and requires treatment with repeated readings by a healthcare worker, this is called Hypertension. [1][2]\n\n4. What are the common risk factors for high blood pressure?\nFactors that increase risk are excess salt, smoking, excess alcohol, diabetes, kidney disease and unhealthy lifestyle habits, increasing age and family history, and physical inactivity. The majority of people get hypertension due to a mix of factors. [1][4]\n\n\n5. Can anxiety temporarily increase blood pressure?\nYes. A short increase in blood pressure may occur when the body reacts to stress and anxiety as if going into a fight or flight situation. These are transient changes as opposed to chronic hypertension. [2][3][9]\n\n\n6. Can poor sleep affect blood pressure?\nSleep is an integral part of good cardiovascular health. Some individuals may experience changes in their blood pressure and well-being when they don't sleep well or have a chronic sleep issue. [1][5]\n\n7. Can lifestyle habits help support healthy blood pressure?\nYes. Practicing healthy eating, physical activity, weight management, reducing excess salt intake, avoiding tobacco, limiting alcohol consumption, stress reduction and sleep are factors that maintain cardiovascular health. These habits go hand-in-hand with good medical care. [1][4][5]\n\n8. When should I seek emergency medical care for high blood pressure?\nIf chest pain is extreme, weakness is severe, difficulty speaking, sudden change in vision, severe shortness of breath, confusion, seizures, loss of consciousness or extremely high blood pressure and troubling symptoms, seek immediate medical help. [1]\n\n\n9. Does high blood pressure always cause symptoms?\nNo. Most people with high blood pressure don't have any symptoms. That's why hypertension is referred to as a ‘silent condition.’ It is important to monitor blood pressure regularly, particularly for adults and individuals who have risk factors. [1]\n\n10. What is a Stress & High Blood Pressure assessment?\nA Stress & High Blood Pressure assessment is a formal assessment that examines emotional wellbeing, stress levels, sleep, lifestyle habits, nutrition, physical activity, blood pressure history and overall health. It assists in identifying factors which could affect wellbeing and provide focussed advice. [1][2][5]\n\n11. How does Manovaidya support individuals concerned about stress and high blood pressure?\nWe at Manovaidya see the relationship between emotional wellbeing and lifestyle and cardiovascular health, rather than just blood pressure readings. We work with structured assessments, personalised guidance and the Neuro-Ayurveda Development System to give insight into people's mind-body wellbeing.\n\n\n12. What is the Neuro-Ayurveda Development System?\nThe Neuro-Ayurveda Development System is Manovaidya's 5-pillar approach. Considers Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance together and with awareness of emotional wellbeing, lifestyle and overall health. Provides a comprehensive overview, evaluation and individualized suggestions.\n\n\n13. Can managing stress support heart health?\nStress management techniques, such as healthy habits, regular exercise, diet and relaxation/reduction of stress, may help to promote cardiovascular health. These practices are in addition to, not a substitute for, medical diagnosis, treatment and blood pressure monitoring. [2][5][6][9]\n\n14. How often should I check my blood pressure?\nThe frequency of measuring blood pressure varies according to age, health and doctor's recommendations. Individuals who have been diagnosed with hypertension or cardiovascular risk factors should adhere to their healthcare professional's recommended monitoring plan. [1]\n\n15. Why should I choose Manovaidya for Stress & High Blood Pressure support?\nWe believe that emotional wellbeing is essential to a healthy lifestyle and cardiovascular health at Manovaidya, we concentrate on the link between emotional wellbeing, lifestyle and overall cardiovascular health by conducting structured evaluations, providing individual guidance and implementing the Neuro-Ayurveda Development System. We treat the whole person and educate about stress related health issues while providing long-term mind-body wellness along with the right medical treatment.\n\nConcerned About Stress and High Blood Pressure?\n\n\nBook a structured Stress & High Blood Pressure Assessment with Manovaidya to better understand the relationship between emotional wellbeing, lifestyle, cardiovascular health and blood pressure while receiving personalised guidance.\n\n\nBook Blood Pressure Assessment\nTalk to Our Team\n\nReferences\n[1] World Health Organization (WHO) – Hypertension\n https://www.who.int/news-room/fact-sheets/detail/hypertension\n[2] American Heart Association – Managing Stress to Control High Blood Pressure\n https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/managing-stress-to-control-high-blood-pressure\n[3] National Center for Complementary and Integrative Health (NCCIH) – Stress and the Fight-or-Flight Response\n https://www.nccih.nih.gov/health/stress\n[4] American Heart Association – How to Manage High Blood Pressure\n https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\n[5] World Health Organization – Cardiovascular Diseases: Prevention and Lifestyle Risk Factors\n https://www.who.int/health-topics/cardiovascular-diseases\n[6] Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH – Clinical Research in Ayurveda\n https://ccras.nic.in/services/clinical-research/\n[7] Deshmukh S, et al. – Effectiveness and Safety of Ayurvedic Interventions in Essential Hypertension: Systematic Review\n https://pubmed.ncbi.nlm.nih.gov/41487502/\n[8] Central Council for Research in Ayurvedic Sciences (CCRAS) – Ayurveda Research on Pre-Hypertension and Essential Hypertension\n https://ccras.nic.in/cari-new-delhi/\n[9] Upadhyay J, et al. – Effects of Nadishodhana and Bhramari Pranayama on Blood Pressure in Hypertensive Patients: A Randomized Clinical Trial\n https://pubmed.ncbi.nlm.nih.gov/37499590/\n\n\n\n\n\n\n";
 
 const pageLinks = [
@@ -450,16 +610,11 @@ function StressHighBloodPressureIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & High Blood Pressure Treatment in India | Mind-Body Health"
+        title={seoTitle}
         description="Looking for Stress & High Blood Pressure treatment in India? Learn how chronic stress causes hypertension, cardiovascular risks and how Neuro-Ayurveda helps."
         keywords="Stress & High Blood Pressure, Hypertension India, Stress Induced Hypertension, Cardiovascular Health, Stress Management for Blood Pressure, Emotional Wellbeing, Mind-Body Health, Blood Pressure Assessment, Neuro-Ayurveda Development System, Cardiovascular Wellbeing"
         path="/stress-and-high-blood-pressure"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & High Blood Pressure Treatment in India",
-          "description": "Looking for Stress & High Blood Pressure treatment in India? Learn how chronic stress causes hypertension, cardiovascular risks and how Neuro-Ayurveda helps."
-        }}
+        schema={stressBloodPressureSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         

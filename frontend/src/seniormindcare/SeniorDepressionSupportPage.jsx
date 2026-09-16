@@ -22,6 +22,161 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Depression Treatment for Seniors in India";
 const pageUrl = "https://www.manovaidya.com/senior-depression-support-india";
+const seoTitle = "Depression Treatment for Seniors in India | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/senior-depression-support-india/";
+
+const seniorDepressionFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is depression in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depression in older people is a mental problem in which mood, thinking, feelings and functioning are affected. It's not just a few days of sadness. Depression in seniors can manifest as a sad or depressed mood, loss of interest, lack of motivation, changes in eating and sleeping habits and a decrease in enjoyment in daily living. Depression is a recognised medical condition and not a part of ageing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. Is depression a normal part of ageing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Retirement, loss and grief, physical illness or major life changes can bring about sadness for older adults, but depression is not a natural part of aging. If sadness, hopelessness or loss of interest is not temporary and occurs for a few weeks, a qualified healthcare professional should evaluate it because it might be a sign of depression or another health condition that needs attention.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What are the signs of depression in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "These include tearfulness, lack of enjoyment of activities, apathy, social isolation, low energy, inability to concentrate, irritability and hopelessness. In addition to saying that they feel sad, some seniors may also experience physical symptoms, like back pain, headaches, or fatigue, without mentioning emotional pain.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What causes depression in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depression can be caused by a combination of biological, psychological and social factors. They include chronic medical conditions, chronic pain, retirement, loneliness, loss of a spouse/loved one, decreased independence, medication side effects, anxiety and major life changes. By assessing a comprehensive assessment, the factors that impact each person can be identified.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can loneliness cause depression in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some older adults may be at risk for depression as a result of loneliness and social isolation. Less social interaction, loss of meaningful relationships or involvement in the community can impact on emotional health. Regular contact with family, friends and community activities can help support emotional health in addition to appropriate professional care (if necessary).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Can depression affect memory?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Concentration and attention, decision making and memory may be affected, leading some people to appear forgetful. Depression and dementia may have similar symptoms and the importance of identifying the root cause and making a recommendation for care.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What is the difference between depression and dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The main symptoms of depression are related to changes in mood, motivation and emotional wellbeing, though they can also impact memory and concentration. Dementia is a group of conditions that progressively affect memory, thinking, reasoning and the ability to perform everyday activities. Because the symptoms may be similar, it is important to get a medical checkup to determine if this is a case of either disorder.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can depression be treated?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Depression is a medical illness and it's treatable. Treatment will vary depending on the person's needs, and may involve psychological therapies, lifestyle changes, social support and medications (when prescribed by a qualified health care professional). It is important to get a proper assessment as early as possible and treatment as soon as possible to enhance the quality of life and emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. How is depression diagnosed in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The diagnosis typically includes a conversation about symptoms, a review of medical history, assessment of emotional function and behavior, and physical health assessment and medication review to determine if any physical health issues or medications may be causing mood changes. A health care provider may also evaluate to determine if symptoms are associated with depression or other medical conditions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can exercise help with depression in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Exercising regularly can be beneficial for emotional wellness and well-being. For many older adults, walking, stretching, yoga or other age appropriate exercise can boost energy levels, mobility and mood. The exercise selection should always be based on the individual's health status and doctor's recommendations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Can poor sleep worsen depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Sleep and emotional well-being go hand in hand. For those with depression, insomnia or sleep disturbances can exacerbate the symptoms, and depression can also lead to insomnia. Caring for sleep and emotional health simultaneously can be a crucial aspect of care.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. How can families support a senior with depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Families can support children by listening without judgment, supporting regular health care, keeping children socially connected, supporting healthy routines, encouraging physical activity as appropriate and providing opportunities for meaningful interaction. It is important to be patient, caring and open to communication to help seniors feel supported.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support seniors with depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Understanding the person is an integral part of the support that is given at Manovaidya and not just symptoms. We give seniors and families a chance to better understand how their emotional wellbeing, brain health, sleep, lifestyle habits and behaviour can impact mental health through structured assessment, personalised guidance and the Neuro-Ayurveda Development System. We aim to promote healthy ageing, emotional resilience and quality of life, using a holistic and personalized approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. When should families seek professional guidance for depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If any of the above symptoms persist, a senior should seek professional advice if they are feeling sad, hopeless, not interested in their daily activities, changes in their sleep or appetite, withdrawal from their family or friends, or have memory issues or other emotional issues that impact their daily function. If someone says they are thinking about hurting themselves or others, or if they seem to be in imminent danger of hurting themselves or others, seek immediate medical help.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. Can grief lead to depression in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Griefing is a natural response to bereavement and can be extreme when a loved one such as a spouse, family member or close friend passes away. But when sadness persists or when it is so deep and intense that it starts to affect your daily life significantly for a longer period of time, then it could be a sign of depression and not just grief. A professional evaluation might be able to differentiate between the two and support the provision of the appropriate support.",
+      },
+    },
+  ],
+};
+
+const seniorDepressionBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Depression Treatment",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const seniorDepressionMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Depression treatment for seniors in India.",
+  url: seoPageUrl,
+};
+
+const seniorDepressionSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [seniorDepressionMedicalWebPageSchema, seniorDepressionBreadcrumbSchema, seniorDepressionFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Depression is not normal ageing
@@ -1375,11 +1530,9 @@ function SeniorDepressionSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Emotional Wellbeing & Healthy Ageing | Manovaidya`} description="Looking for Depression Treatment for Seniors in India? Learn about symptoms, causes, emotional wellbeing, healthy ageing and the Neuro-Ayurveda approach at Manovaidya." keywords="Senior Depression Treatment India, Depression in Elderly People, Old Age Depression, Senior Mental Health, Emotional Wellbeing, Loneliness, Sleep and Depression, Neuro-Ayurveda Depression Care, Dr. Ankush Garg" path="/senior-depression-support-india" />
+      <Seo title={seoTitle} description="Looking for Depression Treatment for Seniors in India? Learn about symptoms, causes, emotional wellbeing, healthy ageing and the Neuro-Ayurveda approach at Manovaidya." keywords="Senior Depression Treatment India, Depression in Elderly People, Old Age Depression, Senior Mental Health, Emotional Wellbeing, Loneliness, Sleep and Depression, Neuro-Ayurveda Depression Care, Dr. Ankush Garg" path="/senior-depression-support-india" schema={seniorDepressionSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1437,9 +1590,6 @@ function SeniorDepressionSupportPage() {
             </button>
             {showResources && <MedicalReferencesBlock />}
           </div>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Depression treatment treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

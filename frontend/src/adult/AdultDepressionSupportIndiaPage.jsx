@@ -32,6 +32,7 @@ const pageLinks = [
   { label: "Understanding Depression", id: "understanding-depression-in-adults" },
   { label: "Signs & Symptoms", id: "common-signs-and-symptoms-of-depression" },
   { label: "Why Depression Develops", id: "why-depression-develops" },
+  { label: "Early Understanding", id: "why-early-understanding-matters" },
   { label: "How It Affects Life", id: "how-depression-can-affect-daily-life" },
   { label: "Neuro-Ayurveda Approach", id: "neuro-ayurveda-approach" },
   { label: "Emotional Wellbeing", id: "how-adults-can-support-their-emotional-wellbeing" },
@@ -52,97 +53,68 @@ const categories = [
 ];
 
 const keyTakeaways = [
-  "Understanding Adult Depression and Emotional Wellbeing",
-  "Common Emotional, Physical and Cognitive Signs",
-  "Persistent Low Mood and Loss of Interest",
-  "How Depression Affects Work, Sleep and Relationships",
-  "Main Causes of Depression in Adults",
-  "Difference Between Sadness and Depression",
-  "Why Early Understanding Matters",
-  "Neuro-Ayurveda Approach to Depression Support",
-  "Brain, Gut, Sensory and Behavioural Factors",
-  "Healthy Sleep, Movement and Daily Routines",
-  "Manovaidya's Assessment and Support Process",
-  "When to Consider a Professional Assessment",
-  "Online and In-Clinic Depression Support",
-  "Why Adults Across India Choose Manovaidya",
-  "About Dr. Ankush Garg",
-  "Helpful Adult Mental Health Resources",
-  "FAQs About Adult Depression Treatment",
+  "Understanding Depression in Adults",
+  "Common Signs & Symptoms of Depression",
+  "Emotional, Physical & Cognitive Symptoms",
+  "Common Causes and Contributing Factors",
+  "Impact of Depression on Daily Life",
+  "Depression, Sleep & Physical Wellbeing",
+  "Effects on Work, Relationships & Confidence",
+  "Healthy Lifestyle and Emotional Support",
+  "Neuro-Ayurveda Approach to Depression",
+  "Personalized Depression Support & Guidance",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Adult Depression Support"
 ];
 
 const referenceResources = [
   {
-    n: 1,
-    title: "World Health Organization - Depressive Disorder",
-    url: "https://www.who.int/news-room/fact-sheets/detail/depression",
-    supports: "Depression symptoms, duration, impact on daily functioning and treatment context.",
+    "n": 1,
+    "title": "World Health Organization (WHO) - Depressive Disorder (Depression)",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/depression",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 2,
-    title: "National Institute of Mental Health - Depression",
-    url: "https://www.nimh.nih.gov/health/topics/depression",
-    supports: "Signs, symptoms, types and treatment resources for depression.",
+    "n": 2,
+    "title": "National Institute of Mental Health (NIMH) - Depression: Signs, Symptoms, Diagnosis and Treatment",
+    "url": "https://www.nimh.nih.gov/health/publications/depression",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 3,
-    title: "NIMH - Depression: What You Need to Know",
-    url: "https://www.nimh.nih.gov/health/publications/depression",
-    supports: "Adult depression symptoms including irritability, withdrawal, sleep and responsibility changes.",
+    "n": 3,
+    "title": "Journal of Ayurveda and Integrative Medicine - Efficacy of a Whole-System Ayurveda Management Protocol in Major Depressive Disorder",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11016906/",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 4,
-    title: "NICE Guideline NG222 - Depression in Adults",
-    url: "https://www.nice.org.uk/guidance/ng222",
-    supports: "Adult depression identification, treatment and management guidance.",
+    "n": 4,
+    "title": "National Library of Medicine - Effect of Physical Exercise on Sleep Quality and Depressive Symptoms",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12440605/",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 5,
-    title: "Mayo Clinic - Depression Symptoms and Causes",
-    url: "https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007",
-    supports: "Depression symptoms, sleep, appetite, fatigue and lifestyle context.",
+    "n": 5,
+    "title": "International Journal of Ayurveda and Medical Sciences - Ayurvedic Management of Vishada and the Psychotherapeutic Relevance of Satvavajaya Chikitsa",
+    "url": "https://jaims.in/jaims/article/view/4807/8528",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 6,
-    title: "Mayo Clinic - Depression and Exercise",
-    url: "https://www.mayoclinic.org/diseases-conditions/depression/in-depth/depression-and-exercise/art-20046495",
-    supports: "Physical activity and emotional wellbeing support.",
+    "n": 6,
+    "title": "National Library of Medicine - The Microbiota-Gut-Brain Axis in Depression",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9144102/",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
   },
   {
-    n: 7,
-    title: "Review - Gut Microbiota, Anxiety and Depression",
-    url: "https://pubmed.ncbi.nlm.nih.gov/30060277/",
-    supports: "Research context for gut-brain axis and depression associations.",
-  },
-  {
-    n: 8,
-    title: "Charaka Samhita - Manas",
-    url: "https://www.carakasamhitaonline.com/index.php?title=Manas",
-    supports: "Ayurvedic conceptual understanding of mind and mental wellbeing.",
-  },
-  {
-    n: 9,
-    title: "Charaka Samhita - Sattvavajaya",
-    url: "https://www.carakasamhitaonline.com/index.php/Sattvavajaya",
-    supports: "Ayurvedic conceptual support for mind regulation and emotional balance.",
-  },
-  {
-    n: 10,
-    title: "Charaka Samhita - Indriyopakramaniya Adhyaya",
-    url: "https://www.carakasamhitaonline.com/index.php/Indriyopakramaniya_Adhyaya",
-    supports: "Ayurvedic conceptual support for regulated sensory engagement.",
-  },
-  {
-    n: 11,
-    title: "Charaka Samhita - Sadvritta",
-    url: "https://www.carakasamhitaonline.com/index.php/Sadvritta",
-    supports: "Ayurvedic conceptual support for healthy conduct, routines and lifestyle balance.",
-  },
+    "n": 7,
+    "title": "Journal of Ayurveda and Integrative Medicine - Ayurveda Management of Major Depressive Disorder",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8186000/",
+    "supports": "Reference source for adult depression support, emotional wellbeing, lifestyle and Neuro-Ayurveda context."
+  }
 ];
 
 const articleLinkRules = [
-  { label: "Adult Depression Treatment in India", href: "#introduction", pattern: /Adult Depression Treatment in India/i },
-  { label: "Adult Depression Treatment", href: "#understanding-depression-in-adults", pattern: /Adult Depression Treatment/i },
+  { label: "Adult Depression Support in India", href: "#introduction", pattern: /Adult Depression Support in India/i },
+  { label: "Adult Depression Support", href: "#understanding-depression-in-adults", pattern: /Adult Depression Support/i },
   { label: "Depression Treatment in India", href: "#understanding-depression-in-adults", pattern: /Depression Treatment in India/i },
   { label: "Depression Symptoms", href: "#common-signs-and-symptoms-of-depression", pattern: /Depression Symptoms/i },
   { label: "Persistent Low Mood", href: "#understanding-depression-in-adults", pattern: /Persistent Low Mood/i },
@@ -206,7 +178,7 @@ const sections = [
       "Many adults experiencing depression describe feeling emotionally drained, disconnected or unable to enjoy activities they once found meaningful. Some struggle with low motivation, disturbed sleep, fatigue or difficulty concentrating, while others may appear physically healthy but silently carry emotional distress every day.",
       "At Manovaidya, we understand that depression is not simply about feeling sad. Emotional wellbeing is influenced by multiple interconnected factors, including lifestyle, sleep, emotional health, daily routines and overall mind-body balance.",
       "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows the Neuro-Ayurveda Development System to help individuals better understand depression, emotional wellbeing and the factors influencing long-term mental health.",
-      "At Manovaidya, Adult Depression Treatment Focuses On:",
+      "At Manovaidya, Adult Depression Support Focuses On:",
       "✔ Persistent Low Mood",
       "✔ Loss of Interest in Daily Activities",
       "✔ Emotional Exhaustion",
@@ -375,7 +347,7 @@ const sections = [
     ]
   },
   {
-    "title": "The Neuro-Ayurveda Approach to Adult Depression Treatment",
+    "title": "The Neuro-Ayurveda Approach to Adult Depression Support",
     "id": "neuro-ayurveda-approach",
     "lines": [
       "At Manovaidya, depression is understood through a broader and more holistic perspective.",
@@ -517,7 +489,7 @@ const sections = [
     "title": "Why People Across India Connect With Manovaidya",
     "id": "why-people-across-india-connect-with-manovaidya",
     "lines": [
-      "Individuals from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and different parts of India connect with Manovaidya for Adult Depression Treatment, Emotional Wellbeing Guidance and personalized consultations through both online and in-clinic appointments."
+      "Individuals from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and different parts of India connect with Manovaidya for Adult Depression Support, Emotional Wellbeing Guidance and personalized consultations through both online and in-clinic appointments."
     ]
   },
   {
@@ -551,55 +523,55 @@ const sections = [
 const faqs = [
   {
     "question": "1. What are the first signs of depression?",
-    "answer": "The first signs of depression may include persistent sadness, loss of interest in activities, low energy, changes in sleep or appetite, difficulty concentrating and feeling emotionally exhausted. Some people become more irritable or socially withdrawn instead of appearing sad. While everyone experiences occasional low mood, symptoms that continue for several weeks and begin affecting daily life may deserve professional evaluation and support."
+    "answer": "Some people may become less happy, less interested, less active, lose appetite or interest in eating or sleeping, or feel tired or depressed, rather than sad. Everyone has a bad day at times but when the low mood persists for several weeks, and interferes with daily life, it might warrant a professional assessment and support. [1,2]"
   },
   {
     "question": "2. What causes depression?",
-    "answer": "Depression usually develops because of multiple factors rather than one single cause. Ongoing stress, anxiety, difficult life experiences, relationship challenges, financial pressure, poor sleep, chronic health conditions and individual biological factors may all contribute. Since every person's situation is different, understanding the underlying influences is an important step towards choosing the most appropriate support."
+    "answer": "Depression usually develops because of multiple factors rather than one single cause.[1][2] Ongoing stress, anxiety, difficult life experiences, relationship challenges, financial pressure, poor sleep, chronic health conditions and individual biological factors may all contribute.[1][2] Since every person's situation is different, understanding the underlying influences is an important step towards choosing the most appropriate support."
   },
   {
     "question": "3. What are the symptoms of depression?",
-    "answer": "Depression may affect emotions, thoughts, behaviour and physical wellbeing. Common symptoms include persistent sadness, loss of interest in enjoyable activities, low motivation, fatigue, sleep disturbances, appetite changes, poor concentration, feelings of hopelessness and social withdrawal. The symptoms and their severity vary from person to person, and not everyone experiences depression in the same way."
+    "answer": "Depression may affect emotions, thoughts, behaviour and physical wellbeing.[1][2] Common symptoms include persistent sadness, loss of interest in enjoyable activities, low motivation, fatigue, sleep disturbances, appetite changes, poor concentration, feelings of hopelessness and social withdrawal.[1][2] The symptoms and their severity vary from person to person, and not everyone experiences depression in the same way."
   },
   {
     "question": "4. Can depression affect physical health?",
-    "answer": "Yes. Depression can affect both emotional and physical wellbeing. Some people experience constant fatigue, headaches, body aches, digestive discomfort, reduced energy, sleep disturbances or appetite changes. These physical symptoms can make daily activities more difficult and highlight the close connection between mental and physical health."
+    "answer": "Yes. Some people may suffer from constant fatigue, headaches, body aches, digestive discomfort, reduced energy, sleep disturbances or appetite disturbances; all of these physical symptoms may make it more difficult for them to perform daily activities and serve to emphasize the close relationship between mental health and physical health. [2]"
   },
   {
     "question": "5. How do doctors diagnose depression?",
-    "answer": "Doctors diagnose depression by understanding a person's symptoms, medical history, emotional wellbeing and how these symptoms affect everyday life. They may ask about mood, sleep, energy levels, appetite, work, relationships and daily functioning. In some cases, additional medical evaluation may be recommended to rule out other health conditions that may cause similar symptoms."
+    "answer": "Doctors diagnose depression by understanding a person's symptoms, medical history, emotional wellbeing and how these symptoms affect everyday life.[1][2] They may ask about mood, sleep, energy levels, appetite, work, relationships and daily functioning. In some cases, additional medical evaluation may be recommended to rule out other health conditions that may cause similar symptoms.[2]"
   },
   {
     "question": "6. How can I check if I have depression?",
-    "answer": "If you have been experiencing persistent sadness, loss of interest, low motivation or emotional exhaustion for several weeks, it may be helpful to seek a professional assessment. Mental health professionals often use structured questionnaires, detailed discussions and clinical evaluation to better understand your symptoms and determine the most appropriate guidance."
+    "answer": "If you have been experiencing persistent sadness, loss of interest, low motivation or emotional exhaustion for several weeks, it may be helpful to seek a professional assessment.[1][2] Mental health professionals often use structured questionnaires, detailed discussions and clinical evaluation to better understand your symptoms and determine the most appropriate guidance."
   },
   {
     "question": "7. What is the best treatment for depression?",
-    "answer": "The most appropriate approach depends on the individual's symptoms, severity and personal circumstances. Many people benefit from psychological support, healthy lifestyle changes, counselling and medical care when appropriate. At Manovaidya, support begins with a structured assessment and the Neuro-Ayurveda Development System to better understand emotional wellbeing before providing personalized guidance."
+    "answer": "The most appropriate approach depends on the individual's symptoms, severity and personal circumstances.[1][2] Many people benefit from psychological support, healthy lifestyle changes, counselling and medical care when appropriate.[1][4] At Manovaidya, support begins with a structured assessment and the Neuro-Ayurveda Development System to better understand emotional wellbeing before providing personalized guidance."
   },
   {
     "question": "8. Can depression be managed without medication?",
-    "answer": "Some individuals with mild or moderate depression may benefit from healthy lifestyle changes, counselling, regular physical activity, good sleep, stress management and emotional support. However, the most appropriate approach depends on the individual's condition. It is important to consult a qualified healthcare professional rather than deciding treatment independently."
+    "answer": "Some individuals with mild or moderate depression may benefit from healthy lifestyle changes, counselling, regular physical activity, good sleep, stress management and emotional support.[1][4] However, the most appropriate approach depends on the individual's condition. It is important to consult a qualified healthcare professional rather than deciding treatment independently.[1][2]"
   },
   {
     "question": "9. How long can depression last?",
-    "answer": "The duration of depression varies from person to person. Some individuals experience symptoms for weeks, while others may struggle for months or longer without appropriate support. Early recognition and timely professional guidance often improve the chances of better long-term emotional wellbeing and recovery."
+    "answer": "The duration of depression varies from person to person. Some individuals experience symptoms for weeks, while others may struggle for months or longer without appropriate support.[1][2] Early recognition and timely professional guidance often improve the chances of better long-term emotional wellbeing and recovery."
   },
   {
     "question": "10. Can depression affect sleep?",
-    "answer": "Yes. Depression commonly affects sleep patterns. Some people find it difficult to fall asleep or stay asleep, while others may sleep much longer than usual but still feel tired. Poor sleep can further affect mood, concentration, energy levels and overall emotional wellbeing."
+    "answer": "Yes. People often experience changes in their sleep patterns when they are depressed; they may have difficulty falling asleep or staying asleep or they may sleep longer but feel unrefreshed. The poor sleep can also have an impact on mood, concentration, energy levels and general emotional health.[4]"
   },
   {
     "question": "11. Can depression affect relationships and work?",
-    "answer": "Yes. Depression may influence communication, motivation, concentration and emotional connection with others. It can affect work performance, family relationships, friendships and daily responsibilities. Some individuals may withdraw socially or find it difficult to manage routine tasks. Recognising these changes early can help individuals seek appropriate support before they begin affecting multiple areas of life."
+    "answer": "Yes. Depression may influence communication, motivation, concentration and emotional connection with others.[1][2] It can affect work performance, family relationships, friendships and daily responsibilities. Some individuals may withdraw socially or find it difficult to manage routine tasks. Recognising these changes early can help individuals seek appropriate support before they begin affecting multiple areas of life."
   },
   {
     "question": "12. Can lifestyle changes help depression?",
-    "answer": "Healthy lifestyle habits may support emotional wellbeing and complement professional care. Regular sleep, balanced nutrition, physical activity, meaningful social connections, stress management and structured daily routines often contribute to better mental health. Lifestyle changes are usually most effective when combined with personalized professional guidance."
+    "answer": "Healthy lifestyle habits may support emotional wellbeing and complement professional care.[1][4] Regular sleep, balanced nutrition, physical activity, meaningful social connections, stress management and structured daily routines often contribute to better mental health.[1][4][6] Lifestyle changes are usually most effective when combined with personalized professional guidance."
   },
   {
     "question": "13. Can people recover from depression?",
-    "answer": "Many people recover from depression with appropriate support and ongoing care. Recovery looks different for everyone and may involve psychological support, lifestyle improvements, counselling, medical treatment when needed and healthy coping strategies. Seeking help early often leads to better outcomes and improved long-term emotional wellbeing."
+    "answer": "Many people recover from depression with appropriate support and ongoing care.[1][2] Recovery looks different for everyone and may involve psychological support, lifestyle improvements, counselling, medical treatment when needed and healthy coping strategies.[1][2] Seeking help early often leads to better outcomes and improved long-term emotional wellbeing."
   },
   {
     "question": "14. How does Manovaidya support adults with depression?",
@@ -607,7 +579,7 @@ const faqs = [
   },
   {
     "question": "15. When should I seek professional guidance for depression?",
-    "answer": "You should consider seeking professional guidance if sadness, loss of interest, emotional exhaustion or low motivation continues for several weeks or begins affecting your work, relationships, sleep or daily life. Early assessment helps identify contributing factors and allows timely support. At Manovaidya, we provide structured assessments and personalized guidance to help individuals better understand and improve their emotional wellbeing."
+    "answer": "You should consider seeking professional guidance if sadness, loss of interest, emotional exhaustion or low motivation continues for several weeks or begins affecting your work, relationships, sleep or daily life.[1][2] Early assessment helps identify contributing factors and allows timely support. At Manovaidya, we provide structured assessments and personalized guidance to help individuals better understand and improve their emotional wellbeing."
   }
 ];
 
@@ -627,17 +599,17 @@ const breadcrumbSchema = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "/" },
     { "@type": "ListItem", position: 2, name: "Adult Mental Health Care", item: "/adult-mental-health-care/" },
-    { "@type": "ListItem", position: 3, name: "Adult Depression Treatment", item: "/adult-depression-support/" },
+    { "@type": "ListItem", position: 3, name: "Adult Depression Support", item: "/adult-depression-support/" },
   ],
 };
 
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Adult Depression Treatment in India",
-  description: "Looking for Adult Depression Treatment in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
+  name: "Adult Depression Support in India",
+  description: "Looking for Adult Depression Support in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
   url: "/adult-depression-support/",
-  about: ["Adult Depression Treatment", "Depression Symptoms", "Persistent Low Mood", "Emotional Wellbeing"],
+  about: ["Adult Depression Support", "Depression Symptoms", "Persistent Low Mood", "Emotional Wellbeing"],
 };
 
 const physicianSchema = {
@@ -670,7 +642,7 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
   const linkContext = React.useContext(CitationClickContext);
   const citationHandler = onCitationClick || linkContext?.onCitationClick;
   const source = String(text);
-  const citationPattern = /\[(\d+)\]/;
+  const citationPattern = /\[(\d+(?:\s*,\s*\d+)*)\]/;
   const linkedRuleKeysInText = new Set();
   const parts = [];
   let cursor = 0;
@@ -686,7 +658,7 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
       candidates.push({
         index: citationMatch.index,
         text: citationMatch[0],
-        citationId: citationMatch[1],
+        citationIds: citationMatch[1].split(/\s*,\s*/),
         type: "citation",
       });
     }
@@ -718,11 +690,17 @@ function CitationText({ text, allowedRuleKeys, onCitationClick }) {
     if (absoluteIndex > cursor) parts.push(source.slice(cursor, absoluteIndex));
 
     if (next.type === "citation") {
-      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+      parts.push(
+        <React.Fragment key={`${next.text}-${parts.length}`}>
+          {next.citationIds.map((citationId) => (
+            <Citation key={citationId} id={citationId} onClick={citationHandler} />
+          ))}
+        </React.Fragment>
+      );
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadcf3] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -782,6 +760,7 @@ const subheadingLines = new Set([
   "? Long-Term Emotional Wellbeing",
   "??? Long-Term Emotional Wellbeing",
   "? Ongoing Support & Progress Tracking",
+  "Continuous support and monitoring of progress",
   "??? Ongoing Support & Progress Tracking",
   "Autism, ADHD, Child Development & Mental Health Specialist in India",
   "Concerned About Persistent Sadness, Low Mood or Emotional Exhaustion?",
@@ -869,7 +848,7 @@ function KeyTakeawaysBlock() {
     <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
       <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="p-6 sm:p-8">
-          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Depression Treatment in India</p>
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Depression Support in India</p>
           <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
           <ul className="mt-4 space-y-2.5">
             {keyTakeaways.map((item) => (
@@ -967,7 +946,7 @@ function SectionContent({ lines }) {
     if (line.includes("Focuses On:")) {
       const items = [];
       let nextIndex = index + 1;
-      while (nextIndex < lines.length && isCheckLine(lines[nextIndex])) {
+      while (nextIndex < lines.length && isShortListLine(lines[nextIndex])) {
         items.push(lines[nextIndex]);
         nextIndex += 1;
       }
@@ -1034,7 +1013,7 @@ function SectionContent({ lines }) {
 
 function SectionImage({ title }) {
   if (title === "Common Signs & Symptoms of Depression") return <img src={symptomsImage} alt="Common depression symptoms in adults" className="mt-6 max-h-[380px] w-full rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />;
-  if (title === "The Neuro-Ayurveda Approach to Adult Depression Treatment") return <div className="mt-5 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] shadow-[0_12px_30px_rgba(58,31,90,0.08)]"><img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for adult depression support" className="max-h-[300px] w-full max-w-[720px] object-contain object-center" /></div>;
+  if (title === "The Neuro-Ayurveda Approach to Adult Depression Support") return <div className="mt-5 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] shadow-[0_12px_30px_rgba(58,31,90,0.08)]"><img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for adult depression support" className="max-h-[300px] w-full max-w-[720px] object-contain object-center" /></div>;
   return null;
 }
 
@@ -1054,7 +1033,7 @@ function AdultDepressionSupportIndiaPage() {
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const pageUrl = "https://manovaidya.org/adult-depression-support/";
-  const pageTitle = "Adult Depression Treatment in India | Manovaidya";
+  const pageTitle = "Adult Depression Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
   const articleShareLinks = [
@@ -1137,13 +1116,13 @@ function AdultDepressionSupportIndiaPage() {
     <CitationClickContext.Provider value={linkRenderContext}>
       <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Adult Depression Treatment in India | Depression Symptoms, Low Mood & Emotional Wellbeing | Manovaidya"
-        description="Looking for Adult Depression Treatment in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya."
-        keywords="Adult Depression Treatment, Adult Depression Treatment in India, Depression Support India, Depression Symptoms, Persistent Low Mood, Emotional Wellbeing, Loss of Interest, Low Motivation, Emotional Exhaustion, Depression Help, Signs of Depression, Physical Symptoms of Depression, Depression and Sleep, Persistent Sadness, Depression Assessment, Adult Mental Health"
+        title="Adult Depression Support in India | Depression Symptoms, Low Mood & Emotional Wellbeing | Manovaidya"
+        description="Looking for Adult Depression Support in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya."
+        keywords="Adult Depression Support, Adult Depression Support in India, Depression Support India, Depression Symptoms, Persistent Low Mood, Emotional Wellbeing, Loss of Interest, Low Motivation, Emotional Exhaustion, Depression Help, Signs of Depression, Physical Symptoms of Depression, Depression and Sleep, Persistent Sadness, Depression Assessment, Adult Mental Health"
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
-          <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3"><div className="relative z-10"><nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>&gt;</span><a href="/adult-mental-health-care/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span><span className="text-[#4b345d]">Adult Depression Treatment</span></nav><p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p><h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Depression Treatment in India</h1><p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Depression, Persistent Low Mood & Emotional Wellbeing</p><div className="mt-6 flex flex-wrap items-center gap-3"><a href="#book-a-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a><a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a></div><div className="mt-6 flex flex-wrap items-center gap-5"><div className="flex items-center gap-3"><img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" /><div><p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p><p className="text-[12px] font-bold text-[#75677d]">Mental Health Specialist</p></div></div><div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]"><span>Share:</span>{articleShareLinks.map(({ label, href, title }) => <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>{label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}</a>)}</div></div></div><figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none"><div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex"><Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System</div><div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Depression Treatment in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div></figure></div>
+          <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3"><div className="relative z-10"><nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>&gt;</span><a href="/adult-mental-health-care/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span><span className="text-[#4b345d]">Adult Depression Support</span></nav><p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p><h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Adult Depression Support in India</h1><p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Adults Better Understand Depression, Persistent Low Mood & Emotional Wellbeing</p><div className="mt-6 flex flex-wrap items-center gap-3"><a href="#book-a-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a><a href="tel:+917823838638" className="inline-flex min-h-11 items-center justify-center rounded-md border border-[#7835A4] bg-white px-5 text-[12px] font-black text-[#7835A4] transition hover:bg-[#f5ebfb]">Talk to Our Team</a></div><div className="mt-6 flex flex-wrap items-center gap-5"><div className="flex items-center gap-3"><img src={doctorImage} alt="Dr. Ankush Garg" className="h-12 w-12 rounded-full object-cover" /><div><p className="text-[13px] font-black text-[#21142d]">By Dr. Ankush Garg</p><p className="text-[12px] font-bold text-[#75677d]">Mental Health Specialist</p></div></div><div className="flex items-center gap-3 text-[12px] font-black text-[#75677d]"><span>Share:</span>{articleShareLinks.map(({ label, href, title }) => <a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#f2eaf7] text-[#7835A4] transition hover:bg-[#7835A4] hover:text-white" aria-label={title}>{label === "wa" ? <Share2 className="h-4 w-4" /> : <span className="text-[11px] font-black">{label}</span>}</a>)}</div></div></div><figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none"><div className="absolute -left-8 top-2 z-20 hidden h-24 w-24 flex-col items-center justify-center rounded-full bg-[#5d3b90] p-3 text-center text-[9px] font-black leading-tight text-white shadow-[0_12px_24px_rgba(93,59,144,0.22)] lg:flex"><Brain className="mb-1 h-5 w-5" /> Neuro-Ayurveda Development System</div><div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]"><img src={heroImage} alt="Adult Depression Support in India at Manovaidya" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" /></div></figure></div>
 
           <KeyTakeawaysBlock />
 

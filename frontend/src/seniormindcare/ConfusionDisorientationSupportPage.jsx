@@ -22,6 +22,161 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Confusion & Disorientation Treatment for Seniors in India";
 const pageUrl = "https://www.manovaidya.com/confusion-disorientation-support-seniors-india";
+const seoTitle = "Confusion & Disorientation in Seniors: Causes & Support in India";
+const seoPageUrl = "https://manovaidya.org/confusion-disorientation-support-seniors-india/";
+
+const confusionFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What causes confusion in elderly people?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are numerous reasons for confusion in the elderly. Dehydration, urinary tract infections (UTIs), side effects of medications, inadequate sleep, vitamin deficiencies, thyroid issues, depression, anxiety and neurological diseases like dementia are common causes. Sudden confusion in some cases can be a medical emergency and a very serious condition. As a result of the various causes, it is essential to have a good medical evaluation to find out what the cause is.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What is the difference between confusion and dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Confusion is one symptom and can occur suddenly or gradually and may be caused by many different factors, including temporary medical conditions. Dementia is a collection of progressive disorders that impact on memory, thinking, reasoning and daily functioning over time. Not all those who are confused have dementia. A thorough evaluation by a health care professional will determine the cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What is disorientation in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Disorientation is a lack of orientation regarding time, place, people or surroundings. May not know the date, be confused about the location, or not be able to recognise familiar environments and places. Disorientation can result from medical problems that are temporary or longer-term neurological issues. If disorientation gets worse or appears new, it should be evaluated with the help of a trained health care provider.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Is confusion a normal part of ageing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. While people might take a bit longer to think, remember or process information as they get older, there is no universal rule that great confusion is a normal aspect of aging. If there is any confusion, disorientation or sudden changes in thinking, this should always be evaluated to see if there is an underlying cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can dehydration cause confusion in seniors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Older adults often become confused because of dehydration. Dehydration is a risk to seniors because they may not feel thirsty as they get older. It is essential for people to keep drinking fluids properly even when they are confused, but sudden confusion should still be medically assessed to see if there are other causes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Can infections cause sudden confusion?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Sometimes, older people experience confusion or altered state of awareness due to infections such as urinary tract infections (UTIs), pneumonia and other serious conditions. Confusion, unusual drowsiness or disorientation in an older person can be a sign of a sudden illness and should be treated as a medical emergency.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What is delirium?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Delirium is an abrupt alteration of attention, awareness and thinking that typically occurs within hours or days. It may be due to an underlying medical condition like an infection, dehydration, or side effects of medications and/or a metabolic imbalance. Delirium differs from dementia in that it can happen quickly and may need immediate medical assessment and therapy.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can poor sleep cause confusion?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Bad sleep may impact concentration, focus and mental sharpness. Older adults with long-term sleep issues may experience more daytime forgetfulness and/or confusion. Better sleep hygiene can help improve cognitive function, but if there is persistent confusion, always check with a health care provider.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. Can medications cause confusion in older adults?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Alertness, thinking and orientation can be affected by some medicines that can be bought without a prescription or by mixing different medicines. The elderly may be more vulnerable to the side effects of medications. If confusion begins once a medication has been started or a medication has been changed, this should be discussed with the doctor or other healthcare professional who prescribes the medication. Never stop taking medication without medical advice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. When is confusion a medical emergency?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sudden confusion is always a serious matter. If confusion occurs suddenly or with fever, weakness, trouble speaking, severe headache, chest pain, seizure, loss of consciousness or changes in vision, immediate medical treatment is recommended. These signs and symptoms can be a sign of a serious medical problem that needs immediate attention.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Can confusion be treated?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatment is based on the underlying cause. Dehydration, infection, side effects of medication, sleep difficulties or medical conditions can cause confusion, which can improve if these conditions are managed. When confusion is associated with progressive neurological disorders, the treatment is centered on managing the symptoms, maintaining quality of life and supporting the person in need and the family. A thorough medical evaluation is required to help decide on a course of action.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. How can families help a confused elderly person?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Families can help by talking to seniors in a relaxed tone, keeping their usual schedule, reminding them to drink plenty of fluids and eat well, reminding them to take their medications, avoiding lots of things that would cause them to stress and accompanying them to get medical checks up if necessary. Anxiety can be reduced and the senior's level of security enhanced by patience, reassuring and respectful communication.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support seniors with confusion?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Understanding the person is not only essential, but the first step in providing help, at Manovaidya. We support families and seniors to understand what can affect their cognitive wellbeing, emotional health, lifestyle habits and behaviours, through structured assessment and personalised guidance using the Neuro-Ayurveda Development System. We aim to promote health and wellbeing, and functional ability for people to age well through a holistic and personalised approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Can confusion improve with treatment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The degree of improvement will depend on the cause of the problem. If the confusion is a temporary symptom of a condition like dehydration, infection or side effects from a medication, your confusion may get better once you get medical treatment. If there is confusion that is linked to long term neurological conditions, focus can be on symptom management, achieving independence if possible and enhancing quality of life. The best plan can be suggested by a health professional after assessing the situation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should families seek professional guidance for confusion?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The following are signs of trouble and should be taken as a warning sign that it is time to seek professional advice, if an older person experiences confusion or disorientation regularly, difficulty following conversations, behaviour or personality changes, problem with everyday tasks or confusion that causes problems with safety or independence. If confusion occurs quickly or rapidly gets worse, you should seek immediate medical attention, because it could indicate an underlying serious condition.",
+      },
+    },
+  ],
+};
+
+const confusionBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Confusion & Disorientation",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const confusionMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Confusion and disorientation support for seniors in India.",
+  url: seoPageUrl,
+};
+
+const confusionSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [confusionMedicalWebPageSchema, confusionBreadcrumbSchema, confusionFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Confusion and Disorientation
@@ -1022,11 +1177,9 @@ function ConfusionDisorientationSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Cognitive Wellbeing | Manovaidya`} description="Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about sudden confusion, disorientation, delirium, dementia awareness, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya." keywords="Confusion Treatment India, Disorientation in Seniors, Senior Cognitive Health, Delirium Awareness, Dementia Awareness, Cognitive Wellbeing, Neuro-Ayurveda Cognitive Care, Cognitive Assessment, Dr. Ankush Garg, Senior Mental Health" path="/confusion-disorientation-support-seniors-india" />
+      <Seo title={seoTitle} description="Looking for Confusion & Disorientation Treatment for Seniors in India? Learn about sudden confusion, disorientation, delirium, dementia awareness, cognitive wellbeing and the Neuro-Ayurveda approach at Manovaidya." keywords="Confusion Treatment India, Disorientation in Seniors, Senior Cognitive Health, Delirium Awareness, Dementia Awareness, Cognitive Wellbeing, Neuro-Ayurveda Cognitive Care, Cognitive Assessment, Dr. Ankush Garg, Senior Mental Health" path="/confusion-disorientation-support-seniors-india" schema={confusionSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1084,9 +1237,6 @@ function ConfusionDisorientationSupportPage() {
             </button>
             {showResources && <MedicalReferencesBlock />}
           </div>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Confusion and disorientation treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

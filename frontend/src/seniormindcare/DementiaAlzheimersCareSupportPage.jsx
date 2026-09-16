@@ -22,6 +22,161 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Dementia & Alzheimer's Care Treatment for Seniors in India";
 const pageUrl = "https://www.manovaidya.com/dementia-alzheimers-care-support-seniors-india";
+const seoTitle = "Dementia & Alzheimer�s in Seniors: Care & Support in India";
+const seoPageUrl = "https://manovaidya.org/dementia-alzheimers-care-support-seniors-india/";
+
+const dementiaFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dementia is not a single condition, but a collection of them that slowly impact a person's memory, thinking, reasoning, communication and ability to carry out daily activities. Dementia is not a natural part of ageing and there are a number of medical conditions that can lead to dementia. It is crucial to get a proper medical evaluation so you can find out what is causing the condition and know how to treat it appropriately.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What is Alzheimer's disease?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Alzheimer's disease is the most common cause of dementia. It gradually affects areas of the brain involved in memory, learning, language and thinking. The symptoms start out as simple memory loss and can worsen over time, causing trouble with communication, reasoning and functioning in everyday situations. Not all dementia patients suffer from Alzheimer's disease. [1][2]",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What's the difference between dementia and Alzheimer's?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dementia is a general term for a range of conditions which have an impact on people's thinking. Alzheimer's disease is one particular disease and the most prevalent cause of dementia. Everyone who has Alzheimer's disease has dementia but not everyone who has dementia has Alzheimer's disease.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What are the early symptoms of dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common symptoms include forgetting what just happened, asking the same questions over and over, losing familiar items, getting lost in time or place, misusing words, and poor judgment and inability to perform familiar tasks. The symptoms should be seen by a medical professional who has experience in evaluating these symptoms as other medical conditions can develop symptoms similar to these.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. What causes dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are a number of different medical conditions that can cause dementia, such as Alzheimer's disease, vascular dementia, Lewy body dementia and frontotemporal dementia. Sometimes other medical diseases can cause dementia-like symptoms. A thorough medical assessment can be used to determine the underlying cause and the best medical plan.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Can dementia be cured?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Currently, there's no cure for the majority of dementias. Treatment and supportive care, however, can help control symptoms, keep the person functioning and enhance the quality of life for the person and their family. Early evaluation is important because some medical illnesses can also have cognitive symptoms that are reversible.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What are the stages of dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is a tendency to talk of the early, middle and late stages of dementia. The early stage is characterized by a person being able to function normally despite having some mild memory or thinking problems. The middle stage typically requires more support in activities of daily living and the late stage more extensive personal care. How it goes, depends on each person.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. How is dementia diagnosed?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The usual steps to diagnosis are to review the medical history, discuss the symptoms, assess memory and thinking skills, examine how well the person is functioning in daily life and look for any medical conditions that might be contributing to cognitive decline. Further tests may be suggested depending on the person's clinical presentation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. How can families care for someone with dementia at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Support for family carers of a person with dementia can be provided by keeping a daily routine, speaking in a calm tone, ensuring the person eats and drinks well, arranging medication properly, making the home safe and providing emotional support. Additionally, caregivers should seek professional advice if they develop new symptoms or symptoms get worse.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. What treatments are available for dementia and Alzheimer's disease?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatment will depend on the underlying cause as well as the person's needs. This could involve medications prescribed by a healthcare professional, management of other medical conditions, cognitive support, rehabilitation, education for caregivers and lifestyle factors to support overall wellbeing. All treatment programmes should be tailored to the individual after suitable medical assessment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Why do people with dementia have good days and bad days?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Individuals with dementia may have ups and downs in memory, attention and behaviour. Poor sleep, infections, pain, stress, medication changes, fatigue and environmental factors can all have an impact on how well someone functions from day to day. If there is a sudden or significant change in a family, it should be reported to a health care provider, as this may be due to a treatable medical condition.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. What are the signs that dementia is getting worse?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Symptoms can be an increasing memory loss, more confusion, inability to recognize familiar people or places, declining communication skills, changes in behavior, loss of independence and more need for help with daily activities. Regular medical follow-up and care planning are needed to monitor progressive changes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support seniors with dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The approach to support at Manovaidya starts with knowing and understanding the needs of each person and their family. We use a structured assessment, personalised guidance and the Neuro-Ayurveda Development System to make families aware of cognitive wellbeing, daily routines, emotional health and lifestyle factors that can impact quality of life. We aim to promote healthy ageing, dignity and wellbeing in a holistic and individualised way.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. When should families seek professional guidance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If the older person has progressive memory loss, confusion, behavioural changes, difficulty with daily activities, communication issues or symptoms that affect his or her safety or independence, families should seek professional advice. Sudden confusion, weakness, difficulty speaking, loss of consciousness or other acute symptoms should be treated as a medical emergency; seek immediate emergency medical assistance if this happens.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should a person with dementia receive full-time care?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some individuals will require full-time care irrespective of their stage of dementia based on their capabilities, safety and support requirements. Families may need to take extra care if the person is no longer able to do activities of daily living safely, often wanders, needs constant monitoring or has complex medical and/or personal needs. Care should be taken with decisions in consultation with health professionals and family.",
+      },
+    },
+  ],
+};
+
+const dementiaBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Dementia & Alzheimer",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const dementiaMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Dementia and Alzheimer's care support for seniors in India.",
+  url: seoPageUrl,
+};
+
+const dementiaSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [dementiaMedicalWebPageSchema, dementiaBreadcrumbSchema, dementiaFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Dementia & Alzheimer's Disease
@@ -1128,11 +1283,9 @@ function DementiaAlzheimersCareSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Brain Health & Family Guidance | Manovaidya`} description="Looking for Dementia & Alzheimer's Care Treatment for Seniors in India? Learn about symptoms, stages, causes, family caregiving, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Dementia Care India, Alzheimer's Disease Support, Senior Dementia Support, Memory Loss Care, Cognitive Decline, Family Caregiver Support, Neuro-Ayurveda Dementia Care, Dr. Ankush Garg, Senior Mental Health" path="/dementia-alzheimers-care-support-seniors-india" />
+      <Seo title={seoTitle} description="Looking for Dementia & Alzheimer's Care Treatment for Seniors in India? Learn about symptoms, stages, causes, family caregiving, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Dementia Care India, Alzheimer's Disease Support, Senior Dementia Support, Memory Loss Care, Cognitive Decline, Family Caregiver Support, Neuro-Ayurveda Dementia Care, Dr. Ankush Garg, Senior Mental Health" path="/dementia-alzheimers-care-support-seniors-india" schema={dementiaSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1190,9 +1343,6 @@ function DementiaAlzheimersCareSupportPage() {
             </button>
             {showResources && <MedicalReferencesBlock />}
           </div>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Dementia and Alzheimer's care treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

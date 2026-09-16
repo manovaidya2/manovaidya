@@ -22,6 +22,161 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Mild Cognitive Impairment (MCI) Treatment for Seniors in India";
 const pageUrl = "https://www.manovaidya.com/mild-cognitive-impairment-mci-support-seniors-india";
+const seoTitle = "Mild Cognitive Impairment (MCI) in Seniors: Signs & Support in India";
+const seoPageUrl = "https://manovaidya.org/mild-cognitive-impairment-mci-support-seniors-india/";
+
+const mciFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is Mild Cognitive Impairment (MCI)?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Mild Cognitive Impairment (MCI) is a state of memory or thinking that is not as usual as it was when the person was in their twenties and thirties, but it is evident above and beyond what would be considered normal aging. Individuals with MCI typically can provide for their own personal needs and daily activities, but might require additional reminders or struggle with tasks more so than before.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. Is Mild Cognitive Impairment the same as dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No, MCI (mild cognitive impairment) and dementia are not the same. Cognitively individuals with MCI have some memory or thinking changes and continue to be mostly independent in daily activities. Dementia is more extensive and causes more cognitive change including a loss of memory, thought processes, communication and the ability to function normally. Not all people who have MCI end up with dementia.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. Can Mild Cognitive Impairment improve?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, in some cases. There may be reversible causes for cognitive changes that would improve with proper medical treatment if it is due to inadequate sleep, depression, vitamin deficiencies, thyroid disease, or medication side effects. For some people, symptoms can stay the same for many years or can gradually worsen. It is important to have regular medical follow-up to track changes over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What are the symptoms of Mild Cognitive Impairment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common symptoms of MCI are forgetting things in recent conversations, losing important items, forgetting to make appointments, decreased concentration, slower decision making, difficulties in learning new information or having mild difficulty organizing complex tasks. These symptoms are typically evident and have little impact on the person's ability to function independently.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. What causes Mild Cognitive Impairment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is no single cause of Mild Cognitive Impairment. Some causes may be ageing, high blood pressure, diabetes, poor sleeping habits, depression, anxiety, vitamin B12 deficiency, thyroid diseases, use of some medicines and other health conditions that can impact brain function. An appropriate medical assessment is used to determine potential causes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Is Mild Cognitive Impairment a normal part of ageing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. In some people, memory and thinking can slow down during normal ageing, but MCI means that memory and thinking changes are more severe than they would expect given their age. These changes could be from a multitude of causes and should not be ignored as a normal part of getting older.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. Can Mild Cognitive Impairment progress to dementia?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, some people with MCI may progress to dementia, but not all people who have MCI will end up with dementia. Some have a stable course for many years; those who improve may do so if reversible causes are diagnosed and treated. Regular medical monitoring is recommended due to individual variation of progression.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. How is Mild Cognitive Impairment diagnosed?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is no single test that can be used to diagnose MCI. The diagnosis typically includes a review of the individual's medical history, a discussion of any changes in memory and thinking functions, the assessment of functional abilities, and cognitive evaluations, as well as looking for medical issues which could contribute to cognitive symptoms. Depending on the individual's situation, more investigation might be recommended.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. Can poor sleep affect Mild Cognitive Impairment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Bad sleep may impact memory, attention, concentration and mental clarity. Cognitive impairments can be more apparent if there is sleep disorder or chronic sleep loss. Getting better sleep is a key component of brain health, but ongoing cognitive problems need a medical evaluation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can exercise help brain health?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Exercise is important for general fitness and can contribute to good brain health. Walking, stretching, yoga and other appropriate exercises for age support cardiovascular health and wellbeing, which is very important for cognitive wellbeing. Type of exercise should be selected based on personal health evaluation and doctor's recommendations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. What foods support cognitive health?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Eating a balanced diet with fruits and vegetables, whole grains, legumes, healthy fats, nuts and seeds and sufficient protein helps to keep you healthy and supports brain function. The antioxidants, polyunsaturated fats and essential vitamins found in food may help to promote healthy ageing. It is important to remember that each person's nutritional requirements are unique and therefore diet plans should be tailored to suit individual needs as appropriate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. What is Manovaidya doing to help seniors with Mild Cognitive Impairment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In Manovaidya we start by understanding the person, not just the symptoms. The Neuro-Ayurveda Development System, along with structured assessment, personalised guidance, and support, helps seniors and their families understand what they can do to support cognitive wellbeing and emotional health, which may affect brain health, and how lifestyle or behaviours can change. We work towards healthy ageing, independence and overall quality of life in an holistic and personalised approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. When should families seek medical evaluation for Mild Cognitive Impairment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If an older adult starts to experience memory or thinking problems, a family should consider medical evaluation if they notice that there is a problem, it gets harder to do tasks, concentrate, forget to do things, or their symptoms slowly get worse over time. Early assessment can aid in identifying potentially reversible causes, differentiate MCI from other conditions and inform appropriate planning and management.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Can depression cause Mild Cognitive Impairment-like symptoms?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Older people may have depression that can involve memory loss, difficulty paying attention, concentrating and thinking, which can make symptoms look like Mild Cognitive Impairment. A few medical and mental health issues can lead to similar symptoms, so it is essential to have a professional evaluation to establish the cause.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. How can seniors reduce the risk of cognitive decline?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "While not all cognitive changes can be avoided, a healthy lifestyle can help to maintain brain health. Healthy ageing and cognitive wellbeing is achieved through regular physical activity, stimulating activities, quality sleep, healthy eating, and a sense of social connection and care for chronic medical conditions and regular check-ups. Early medical evaluation is recommended if memory and/or thinking changes occur.",
+      },
+    },
+  ],
+};
+
+const mciBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Mild Cognitive Impairment",
+      item: seoPageUrl,
+    },
+  ],
+};
+
+const mciMedicalWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: seoTitle,
+  description: "Mild cognitive impairment support for seniors in India.",
+  url: seoPageUrl,
+};
+
+const mciSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [mciMedicalWebPageSchema, mciBreadcrumbSchema, mciFaqSchema],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Mild Cognitive Impairment (MCI)
@@ -1293,11 +1448,9 @@ function MildCognitiveImpairmentSupportPage() {
     };
   }, []);
 
-  const parsedFaqs = buildFaqsFromLines(articleRaw.split("\n").map((line) => line.trim()).filter(Boolean));
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Brain Health & Cognitive Wellbeing | Manovaidya`} description="Looking for Mild Cognitive Impairment (MCI) Treatment for Seniors in India? Learn about MCI symptoms, normal ageing, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Mild Cognitive Impairment Treatment India, MCI Symptoms, Early Cognitive Decline, Senior Brain Health, Dementia Awareness, Alzheimer's Disease Awareness, Cognitive Wellbeing, Neuro-Ayurveda MCI Care, Dr. Ankush Garg, Senior Mental Health" path="/mild-cognitive-impairment-mci-support-seniors-india" />
+      <Seo title={seoTitle} description="Looking for Mild Cognitive Impairment (MCI) Treatment for Seniors in India? Learn about MCI symptoms, normal ageing, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Mild Cognitive Impairment Treatment India, MCI Symptoms, Early Cognitive Decline, Senior Brain Health, Dementia Awareness, Alzheimer's Disease Awareness, Cognitive Wellbeing, Neuro-Ayurveda MCI Care, Dr. Ankush Garg, Senior Mental Health" path="/mild-cognitive-impairment-mci-support-seniors-india" schema={mciSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1355,9 +1508,6 @@ function MildCognitiveImpairmentSupportPage() {
             </button>
             {showResources && <MedicalReferencesBlock />}
           </div>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Mild cognitive impairment treatment support for seniors in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

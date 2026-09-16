@@ -23,6 +23,179 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedWomenHealthCarePages from "./RelatedWomenHealthCarePages";
 import Seo from "../components/Seo";
 
+const seoTitle = "Depression & Low Mood Treatment for Women in India | Manovaidya";
+
+const seoPageUrl = "https://manovaidya.org/women-depression-low-mood-support-india/";
+
+const womenDepressionFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. What is depression in women?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depression is one of the most frequently occurring mental health problems that can impact the mood, thinking or functioning of women. It can be more than sadness – and can include low mood, loss of interest, tiredness, sleep problems, problems with concentration and a sense of hopelessness. Women can experience depression at any stage of life and there is a need for professional evaluation if symptoms last."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What are the common symptoms of depression in women?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can also experience sadness and cry often, feel emotionally numb, have a lack of interest in pleasurable activities, reduced motivation, fatigue, sleep disturbances, appetite changes, poor concentration, irritability, guilt and hopelessness, social withdrawal. Symptoms may differ from individual to individual and should be evaluated if they are interfering with daily functioning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between low mood and depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Low mood is typically temporary and may resolve after a stressful situation is over or after receiving emotional support. Depression is more persistent and impacts on emotional state, relationships, work, sleep and activities. If symptoms persist for two weeks or more, or are hard to cope with, a professional assessment is recommended."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. Why are women more likely to experience depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depression can be caused by various biological, psychological and social factors in women. It could be hormonal changes, pregnancy or the postpartum period, menopause, relationship difficulties, caring for others, and chronic stress and life events. But each woman's situation is different, and a complete evaluation can uncover what is impacting her mental health."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can hormonal changes affect depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In some women hormonal fluctuations during menstruation, pregnancy, postpartum, perimenopause and menopause can impact emotional and mood health. But chronic depression cannot just be viewed as a problem of hormones just because. It's essential to conduct a thorough mental health evaluation to gain a complete picture of all factors involved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can depression affect physical health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Fatigue, headaches, muscle tension, changes in appetite and weight, decreased energy and sleep disturbances may occur as a result of depression. Since these symptoms can be associated with physical health issues, ongoing symptoms should be assessed by a healthcare provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can depression affect relationships?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Depression can affect communication, emotional bonds and socializing. For some women, they might become withdrawn, lose interest in socializing, get more irritated or struggle to express their emotions. Good emotional wellbeing and relationships can be supported appropriately, if recognised early in the process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. Can depression affect work or daily life?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Depression can cause poor concentration, motivation, confidence, and decision-making skills. Some women have trouble with basic activities, keeping up their productivity or managing their personal and professional lives. If symptoms interfere with daily life, professional advice is suggested."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Can poor sleep make depression worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There is a relationship between sleep and depression. Sleep problems such as not sleeping through or woken up a lot during the night or sleeping too long can impair emotional health. Adopting better sleep routines and addressing mental health issues can go hand in hand and make a significant contribution to treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. How can women support their emotional wellbeing naturally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Taking care of one's health – getting proper sleep, engaging in regular physical activity, having a healthy diet, relaxation exercises, spending time with supportive persons and engaging in enjoyable activities – may contribute to emotional health. Such methods can be used in addition to, rather than in place of, professional treatment for severe and/or chronic depression. [3][5]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. When should I seek professional help for depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If sadness, low mood, loss of interest, emotional exhaustion or hopelessness persists for two weeks or more, and is getting harder to deal with, or it now interferes with work, relationships, sleep or daily activities, professional help should be sought. Early assessment enables identification of contributing factors and provide support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the difference between depression and emotional burnout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emotional burnout is a result of long-term stress and typically leads to fatigue, lack of motivation, and feelings of being overwhelmed. These symptoms can be part of depression, but it is also defined by sadness, loss of interest, hopelessness and emotional changes that persist beyond the end of the stress. Symptoms can be similar, so a professional assessment is important to determine the correct diagnosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. How does Manovaidya support women with depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The attitude of giving support at Manovaidya is to understand a person and not the symptoms. Structured assessment, personalised guidance and Neuro-Ayurveda Development System enables women to learn about emotional wellbeing, brain health, sleep, lifestyle habits and behavioural factors that could potentially affect depression. We want to promote wellbeing in the long-term by working in a whole child and individualised way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Can depression be treated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Depression is a mental health issue that is treatable. Treatment can involve psychological treatments, lifestyle changes, and (where appropriate) medication prescribed by a competent health care professional, as well as social support. Treatment must always be individualized and not a uniform approach. [1][3][5]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. When should I seek urgent medical help for depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have thoughts of hurting yourself or others, want to harm yourself or others, or think you are in immediate danger, please seek medical attention. Also, if it becomes too difficult to stay safe due to the severity of the symptoms, emergency medical care should be sought."
+      }
+    }
+  ]
+};
+
+const womenDepressionBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Depression & Low Mood",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const womenDepressionMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Depression & Low Mood Treatment for Women in India",
+  "description": "Depression, low mood and women's emotional wellbeing support at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const womenDepressionPhysicianSchema = {
+  "@type": "Physician",
+  "name": "Dr. Ankush Garg",
+  "medicalSpecialty": "Mental Health",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "IN"
+  }
+};
+
+const womenDepressionSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    womenDepressionMedicalWebPageSchema,
+    womenDepressionFaqSchema,
+    womenDepressionBreadcrumbSchema,
+    womenDepressionPhysicianSchema,
+  ],
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding Depression and Persistent Low Mood\nTemporary Low Mood vs Depression\nCommon Signs of Depression in Women\nHormonal Changes Can Influence Mood\nDepression Can Affect Physical Health\nSleep and Depression Are Closely Connected\nImpact on Relationships and Daily Life\nDepression vs Stress and Emotional Burnout\nSupporting Women’s Emotional Wellbeing\nNeuro-Ayurveda Holistic Wellbeing Approach\nManovaidya Assessment and Support Process\nFAQs About Depression and Low Mood\n\t\nDepression & Low Mood\nDepression & Low Mood Treatment for Women in India\nThe promotion of Emotional Wellbeing, Hope and Mental Health of women at every stage of life.\nAll women have their lows and highs at various times of their lives. Sometimes, a woman may feel low on emotions because of the stressful events, relationship problems, work stress, family burden, hormonal changes or major life transitions. Low mood is a normal response to life but if the low mood persists, without interest or hopelessness, it cannot be ignored. [1][2]\nDepression is a very prevalent mental health condition in women. It is more than just a sad day or feeling sad. Depression can impact feelings, thoughts, physical well-being, relationships and enjoying normal activities. There are many women still dealing with work, family and responsibilities and experiencing emotional distress, which can be hard to see by others. [1][2]\nOthers report emotional numbness, extreme fatigue or becoming disconnected from hobbies or activities. Others may observe sleep disturbances, changes in eating habits, concentration or motivation. These symptoms can impact self-assurance, productivity, relationships and quality of life over time. [1][3]\nDepression can happen when women are in various phases of their lives. Emotional wellbeing can be affected by some individuals during menstruation, pregnancy, the postpartum period, perimenopause and menopause. Relationship problems, infertility, caring for others, financial difficulties or the death of a loved one can also give rise to emotional issues. [2][4]\n\nThe good news is that depression is a known medical disorder and a large number of women can get better when the disorder is detected early, treated properly and maintained with continuous care. You're not weak to ask for help, you are strengthening yourself to know what's going on in your emotional state and step towards improving it for betterment. [1][3][5]\nEmotional wellbeing is intertwined with brain health, sleep, physical wellbeing and healthy emotional balance and we believe this is the connection at Manovaidya. We want to know more than just her symptoms, we want to know her story.\nUnder the mentorship of Dr. Ankush Garg, Neuro-Ayurveda Development System, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya is taking an active approach to educating women about depression, low mood and emotional wellbeing using a structured assessment and personalised holistic approach.\nAt Manovaidya, Depression & Low Mood Treatment Focuses On:\nPersistent Low Mood\n Depression\n Loss of Interest\n Emotional Exhaustion\n Hopelessness\n Low Motivation\n Emotional Wellbeing\n Healthy Mental Wellness\nBook a Structured Depression & Low Mood Assessment\nIf there has been a change to a persistent low mood, emotional exhaustion, hopelessness and loss of interest have begun to impact daily living, it is important to understand the cause of this.\n\nUnderstanding Depression & Low Mood in Women\n\n\nUnderstanding Depression Beyond Low Mood\nDepression may impact feelings, ideas, body, relationships, drive, and enjoyment of life. [1][3]\nPersistent Low Mood\nDepression\nLoss of Interest\n Emotional Exhaustion\n Hopelessness\nIt is normal to feel down after a stressful event. But if sadness persists for weeks, if it interferes with daily functioning or if it is accompanied by a loss of interest, hopelessness or difficulty in functioning, it may be a sign of depression. [1][3]\nDepression is a medical illness which impacts how a person thinks, feels and acts. It's not a weakness, laziness or lack of willpower. [1][3]\nWomen looking for Depression Treatment in India, Low Mood in Women, Women's Mental Health, Feeling Empty, or Persistent Sadness, are trying to gauge if it's a passing emotional imbalance or something that requires professional intervention.\nEarly recognition of depression enables women to access the appropriate support before symptoms start to impact on relationships, work, physical health and overall quality of life. [1][5]\n\nDepression is not Just \"Feeling Sad”\nNot a sign of weakness\n May remain unseen\n May have some impact on everyday activities\n Needs timely support\n Can grow with care\n Deserves professional attention\nMany people think that depression is being sad.\nDepression can often impact many areas of life. [1][3]\nWomen may still be smiling, making an effort to work and to care for others, but they feel emotionally exhausted within themselves.\nDepression can go undetected for months or years, as symptoms are not always apparent.\nGetting help early makes a difference in emotional wellbeing. [1][5]\n\nTemporary Low Mood vs Depression\nTemporary Low Mood\nA woman may:\nFeel upset after a stressful event\n Continue enjoying some activities\n Recover gradually with time and support\n Experience temporary emotional changes\nDepression\nDepression may involve:\nPersistent sadness\n Feeling emotionally empty\n Loss of interest in pleasurable activities.\n Constant fatigue\n Difficulty concentrating\n Feelings of hopelessness\n Sleep disturbances\n Changes in appetite\n Low motivation\n\nThese symptoms are continued for two weeks or more and become a disruption to daily life, it is recommended to be assessed by a professional. [1][2][3]\n\nCommon Signs & Symptoms of Depression in Women\n\nEmotional Symptoms\nSadness, crying often, feelings of emptiness, hopelessness, guilt, irritability and overwhelm. [2][3]\n\nPhysical Symptoms\nConstant tiredness, low energy, appetite changes, weight changes, sleep problems and body aches. [2][3]\n\nCognitive Symptoms\nLow concentration, forgetfulness, focused on negative thinking, poor decision making and loss of confidence. [1][3]\n\nBehavioural Changes\nSocial isolation, lack of motivation, loss of interest, no desire to interact with the family, struggles with everyday activities. [1][3]\nEach woman struggles with depression in her own unique way.\n\nEmotional Symptoms\nFor some women, the symptoms are:\nPersistent sadness\n Frequent crying\n Feeling emotionally empty\n Hopelessness\n Guilt\n Irritability\n Feeling overwhelmed\n\nPhysical Symptoms\nDepression can also cause:\nConstant tiredness\n Low energy\n Changes in appetite\n Weight changes\n Sleep problems\n Reduced physical activity\n Unexplained body aches\nIf physical symptoms are ongoing, it is always important to have a medical evaluation to determine if a medical condition exists.\n\nCognitive Symptoms\nSome women notice:\nPoor concentration\n Forgetfulness\n Negative thinking\n Difficulty making decisions\n Reduced confidence\n Mental exhaustion\n\nBehavioural Changes\nIf you suffer from depression, you can experience:\nSocial withdrawal\n Reduced motivation\n A decline in hobbies' interest\n Keeping away from family and friends\n Struggling to carry out activities of daily living (ADLs)\n Reduced productivity\n\n\nWhat Causes Depression in Women?\n\nBiological & Hormonal Factors\nEmotional wellbeing can be affected by hormonal fluctuations at menstruation, pregnancy, postpartum, perimenopause and menopause. [2][4]\n\nRelationships & Responsibilities\nEmotional stress can be caused by relationship conflicts, caring, parenting, domestic chores and bereavement. [2]\n\nStress, Sleep & Life Changes\nMood and emotional resilience can be influenced by chronic stress, poor sleep, work stress and significant life changes. [1][2]\n\nTypically depression will occur when there are biological, psychological, and social causes. [1]\n\nCommon causes are:\n\nHormonal Changes\n\nEmotional well-being can be affected by hormonal changes in menstruation, pregnancy, postpartum, perimenopause and menopause. [2][4]\n\nRelationship Challenges\n\nEmotional distress can be caused by relationship conflict, separation, divorce or unhealthy relationships.\n\nWork & Career Stress\n\nEmotional stress can be exacerbated by professional demands, stress in the workplace and the demands of multiple roles.\n\nFamily Responsibilities\n\nOver time, parenting and caring for children or adults with disability, or managing responsibilities in the home, can become challenging and emotionally taxing.\n\nLoss & Grief\n\nWhen a loved one or major life change occurs you may be more emotionally vulnerable.\n\nChronic Stress\n\nHigh stress levels over a prolonged period without sufficient rest can cause depression in some women. [1][2]\n\nSleep Problems\n\nDepression and poor sleep go hand-in-hand. These sleep problems can also negatively affect emotional functioning, and depression can disrupt sleep. [1][3]\n\nWhy Early Recognition Matters\nEarly recognition of depression opens the door for women to foster emotional resilience, enhance coping skills and minimize the negative effects of depression on emotional and physical health.\nWomen often continue to suffer from trauma in silence, attending to others' needs.\nWhen depression occurs early in its presentation, women can learn more about their symptoms, the possible factors that might contribute, and get the help they need before emotional suffering starts to impact their physical health, relationships, work performance and wellbeing. [1][5]\nEarly intervention is linked to positive results and can be used to stop the symptoms getting worse with time. [5]\n\nHow Depression Can Affect Daily Life\nDepression is more than just feelings. It can impact a woman's thinking, feelings, work, care of family, and life. [1][3]\nNumerous women are still doing what they have to do even though within they are feeling emotionally spent. With time, depression can start to impact physical health, self-confidence, relationships, and quality of life. [1][2]\n\nA knowledge of these changes can make depression a serious medical disorder that should not be taken lightly or \"lived with.\nEmotional Wellbeing\nDepression can impact the emotional balance in a variety of ways.\nSome women experience:\nPersistent sadness\n Feeling emotionally empty\n Frequent crying\n Loss of hope\n Increased irritability\n Feeling disconnected\n Reduced emotional resilience\nFeeling overwhelmed by small situations\nThese emotional changes can slowly lead to loss of confidence and loss of interest in everyday activities.\n\nPhysical Health\nDepression can also have an impact on physical health. [1][3]\nFor some women, there may be:\nConstant tiredness\n Low energy\n Muscle aches\n Headaches\n Changes in appetite\n Weight changes\n Reduced physical activity\n Feeling physically drained\nThese symptoms can also be present in medical conditions and therefore, if symptoms are ongoing, physical symptoms needs to be evaluated by a health care professional.\n\nSleep\nThere is a strong bi-directional relationship between sleep and depression. [1][3]\n\nWomen may have:\n Difficulty falling asleep\n Waking frequently during the night\n Sleeping much more than usual\n Early morning awakening\n Feeling tired despite adequate sleep\nImproving sleep habits often forms an important part of overall mental wellbeing.\n\nRelationships\n\nDepression can impact personal relationships.\nSome women may:\nWithdraw from loved ones\n Avoid social activities\n Feel emotionally distant\n Lose interest in intimacy\n Become easily irritated\n Find communication more difficult\nProfessional care is complemented by supportive relationships and open communication. [5]\n\nWork & Daily Responsibilities\nDepression can impact productivity and daily activities. [1][3]\nSome women notice:\nDifficulty concentrating\n Reduced motivation\n Trouble making decisions\n Lower confidence\n Mental fatigue\n Feeling overwhelmed by routine responsibilities\n\nThese problems can slowly impact on working ability and quality of life.\n\nDepression vs Stress\n\nStress\nAssociated with an external force that is typically known\nGenerally gets better when stress is decreased or support is enhanced\nCan be more temporary and circumstantial\n\nDepression\n\nExperiences ongoing feelings of sadness, emptiness or hopelessness\n Can persist when there is no apparent stressful situation occurring\n Should be seen by a professional if symptoms persist\n\nStress and depression are different conditions.\n\nStress\n\nStress typically occurs when there are difficult or stressful situations.\nMany women do well despite stress and sometimes relieve when the stressful situation alterations.\n\nDepression\n\nIn the case of depression, the emotional changes persist despite the absence of an obvious stressful situation. [1][3]\nDepression in women may manifest itself in the following ways:\n\nPersistent low mood\n Loss of interest\n Emotional emptiness\n Hopelessness\n Reduced motivation\n Sleep or eating disturbances.\n\nProfessional evaluation can be useful to differentiate between chronic stress and clinical depression.\n\n\nDepression vs Emotional Burnout\nPhysical and/or emotional stress often leads to emotional burn-out.\nBurnout often causes:\nMental exhaustion\n Feeling emotionally drained\n Reduced productivity\n Loss of motivation\n Having a hard time managing tasks\nDepression can have some of these symptoms, but typically includes more widespread emotional changes like sadness, hopelessness, loss of interest in life. [1][3]\n Because symptoms may overlap, proper assessment is important.\n\nHormonal Changes & Depression\nThere are a number of hormonal changes that occur during a woman's life. [2][4]\nEmotional shifts can happen at any of the following times:\nMenstrual cycles\n Pregnancy\n Postpartum period\n Perimenopause\n Menopause\nIn some women hormonal changes can affect mood. But never should it be taken for granted that it is \"just hormonal\" when it comes to enduring depression. Professional assessment aids in determining the cause(s) and intervention(s). [2][4]\n\nThe Neuro-Ayurveda Development System\nBrain Nourishment System\n Gut Response System\n Neural Network System\n Sensory Integration System\n Behaviour Guidance System\nEmotional wellbeing is seen from a whole child perspective at Manovaidya.\nThe Neuro-Ayurveda Development System is not just about depression; it's about comprehending the connection between brain health, lifestyle, sleep, physical well being and emotional strength.\n\nBrain Nourishment System\nHowever, the following aspects of healthy brain function are supported by:\nEmotional balance\n Memory\n Attention\n Decision-making\n Mental clarity\n Emotional resilience\nSupporting the brain nourishment is one of the factors that could impact mental well-being.\n\nGut Response System\nAs more studies continue to be done on the relationship between gut health and emotional wellbeing, it is clear that this relationship is being studied more than ever before. [6]\nMood, energy and emotional resilience may be affected by nutrition, digestion and general physical health. [6]\n\nNeural Network System\nFrequent mental activity promotes mental health.\nReading, journaling, mindfulness, and learning new skills and meaningful conversations can enhance cognitive and emotional health.\n\n\nSensory Integration System\nEmotional balance can be facilitated through positive sensory experiences.\nHelpful activities include:\nListening to relaxing music.\n Spending time outdoors\n Yoga\n Deep breathing\n Creative hobbies\n Relaxation exercises\n\nBehaviour Guidance System\nBehaviour is frequently altered in depression.\nSome females might turn into:\nSocially withdrawn\n Less motivated\n Easily frustrated\n Emotionally sensitive\n Less confident\nLess interested in activities that they used to enjoy\nIt's a crucial component of recovery to acknowledge these shifts without self-blame, but with self-compassion.\n\n\nSupporting Emotional Wellbeing\nPrioritise Emotional Safety\n Maintain Healthy Sleep\n Build Supportive Relationships\n Support Physical Wellbeing\n Strengthen Healthy Routine\n Seek Professional Guidance\nEmotional wellbeing can be complemented with healthy habits every day, plus professional help when needed. [3][5]\nPrioritise Good Sleep\nA healthy sleep pattern can help regulate emotions while keeping a person mentally healthy.\nStay Physically Active\nTaking part in regular exercise like walking, yoga or stretching could help reduce mood and wellbeing. [3][5]\nEat a Balanced Diet\nEating well promotes optimal brain, body and emotional health.\nStay Connected\nHaving positive family and friend relationships can help decrease loneliness and emotional isolation.\nMake Time for Yourself\nThe emotional energy can be replenished and wellbeing enhanced through self-care, hobbies and fun activities.\nPractice Healthy Stress Management\nEveryday stress can be managed by mindfulness, relaxation techniques, breathing exercises and healthy coping strategies.\nSeek Professional Guidance\nIf you feel depressed, have a problem with emotional exhaustion or low mood that affects your working, relationships or day to day life, you need professional evaluation. If you have thoughts of self-harm, suicide or if you think you are at immediate risk of harming yourself or others, get emergency medical help ASAP. [1][3]\n\nHow Manovaidya Supports Women\nStep 1: Comprehensive Assessment\nStep 2: Personalized Guidance\nStep 3: Emotional Wellbeing Guidance\nStep 4: Neuro-Ayurveda System\nStep 5: Ongoing Support\nAt Manovaidya, the treatment starts with the individual and not just the symptoms.\nOur structured process includes:\nStep 1: Comprehensive Assessment\nKnowledge of emotional well being, lifestyle habits, sleep pattern, physical health, hormonal stage and personal circumstances.\nStep 2: Personalized Guidance\nMaking personalized suggestions according to every woman's emotional and physical and lifestyle requirements.\nStep 3: Emotional Wellbeing Guidance\nTo educate women on depression and how emotional well-being and practical lifestyle habits can promote good long-term mental health. [3][5]\nStage 4: Neuro-Ayurveda Development System\nApplying the five pillar approach to emotional wellbeing, brain health, behaviour and overall wellness.\nStep 5: Progress Tracking & Ongoing Support\nDelivering organised aftercare to assist women track their progress and bolster healthy behaviors over time and make informed choices about their emotional health.\n\nWhen Should You Consider Professional Guidance\nProfessional guidance should be considered if you:\nExperiencing a mood of sadness or emptiness for two weeks or more. [1][3]\nDiminish or drop out in hobbies or pastimes.\nHave trouble sleeping or eating.\nAre emotionally drained on most days.\nFind it hard to work, or live, at home.\nAvoid or withdraw relationships and social contacts.\nFeel helpless or overly guilty.\nEarly assessment can help determine contributing factors, an understanding of symptoms and the appropriate treatment and support based on your individual needs. [1][3]\nWe aim to raise awareness about depression, boost emotional health and develop healthier coping mechanisms, all in a compassionate and personalized manner.\nWhy Women Across India choose Manovaidya\nA thorough women's mental health evaluation is conducted.Women's mental health is assessed comprehensively.\n Neuro-Ayurveda Development System\n Personalized Guidance\n Holistic Women's Mental Health Care\n Consider Long-Term Mental Wellness\n Ongoing Support & Progress Tracking\nDepression and lasting sadness can impact each woman in various ways. Some women may start with sadness or feeling unfeeling and drained of emotions, or losing interest in activities they used to enjoy. Other people might find it as not being motivated, crying often, not sleeping well, feeling disconnected emotionally or not being able to handle routine tasks. [1][2]\nAt Manovaidya we know that depression is a complex condition that is not necessarily the result of just a single thing. Brain health, sleep, hormonal changes, lifestyle choices, relationship, physical health, and life experiences all affect emotional wellbeing. We don't just treat symptoms, we strive to find the whole situation with each woman's emotional health. [2][4]\nAssessment, personalised guidance, and a holistic view of women's mental health enable us to help women build emotional wellness, bolster resilience and advance to long-term mental wellness.\n\nComprehensive Mental Health Assessment\nEvery woman's experience with depression is unique.\nSome women may experience:\nPersistent low mood\n Emotional exhaustion\n Frequent crying\n Loss of interest\n Low motivation\n Sleep disturbances\n Difficulty concentrating\n Relationship challenges\n\n Our structured assessment helps us understand:\n \nEmotional wellbeing\n Depression symptoms\n Sleep quality\n Lifestyle habits\n Physical health\n Hormonal life stage\n Relationship concerns\n Family responsibilities\n Personal goals\n\nPrior to developing individualized instructions.\n\nNeuro-Ayurveda Development System\n\nManovaidya is trained in the Neuro-Ayurveda Development System, a structured system that sees emotional well-being as being interdependent and integrated in five facets.\n\nBrain Nourishment System\n Gut Response System\n Neural Network System\n Sensory Integration System\n Behaviour Guidance System\n\nThis system gives women awareness of the impact of biological, emotional and lifestyle issues on their mood, mental strength and general mental health.\n\nPersonalized Guidance\nNo two women experience depression in exactly the same way.\nRecommendations are personalised according to:\nEmotional concerns\n Lifestyle habits\n Sleep quality\n Physical health\n Hormonal stage\n Nutrition\n Family responsibilities\n Work-related challenges\n Personal goals\nThis individualised strategy means that each woman is given advice according to her own situation, rather than a blanket advice.\n\nHolistic Women's Mental Health Perspective\nEmotional wellbeing is strongly linked to general well-being.\nOur method takes into account the following relationship:\nBrain health\n Emotional wellbeing\n Sleep quality\n Nutrition\n Physical activity\n Hormonal wellbeing\n Lifestyle habits\n Healthy relationships\nThis comprehensive grasp allows women to develop emotional health and happiness over the long term, instead of just short-term relief.\n\n\nFocus on Emotional Balance, Confidence & Quality of Life\nWe aim to assist women in getting the emotional balance they may have lost, regaining their confidence and learning how to make better relationships and relationships altogether a healthier experience, and how to enhance their quality of life.\n\nWe are mainly working with women to learn to be emotionally resilient, to establish healthy routines, and long-term mental wellness, that span every stage of life.\nOngoing Support & Progress Tracking\nThe signs and symptoms of mental wellbeing can vary across time and recovery can be a gradual process.\nProgressive monitoring and systematic monitoring of progress provide women with an awareness of their emotional shifts and support them to build healthy coping skills and make informed choices as their needs change over time.\nWhy Women Across India Trust Manovaidya\nWomen from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and all over India reach out to Manovaidya for Depression & Low Mood Support, Women's Mental Health Guidance and Emotional Wellbeing Support through online & in-clinic sessions.\nAs a student, working professional, homemaker, entrepreneur, newly married woman, mother or as you experience perimenopause and menopause, our personalised approach is focused on the understanding of your unique emotional health journey. [2][4]\n\nAbout\nDr. Ankush Garg\nAutism, ADHD, Child Development & Mental Health Specialist in India\nDr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System.\nHis work extends across Child Development, Adult Mental Health, Women's Mental Health and Senior Mental Health, with a focus on understanding the relationship between brain health, emotional wellbeing and overall quality of life.\nMany women seek guidance when persistent low mood, emotional exhaustion or emotional imbalance begin affecting sleep, work, relationships or daily functioning. Through structured assessment, personalised guidance, lifestyle recommendations and continuous follow-up, Dr. Ankush Garg helps women better understand these challenges while supporting long-term emotional wellbeing through the Neuro-Ayurveda Development System.\nBased in Delhi NCR, Dr. Ankush Garg supports women across India through structured assessment, personalised guidance and holistic mental health care.\n\nFrequently Asked Questions About Depression & Low Mood\n\n1. What is depression in women?\n\nDepression is one of the most frequently occurring mental health problems that can impact the mood, thinking or functioning of women. It can be more than sadness – and can include low mood, loss of interest, tiredness, sleep problems, problems with concentration and a sense of hopelessness. Women can experience depression at any stage of life and there is a need for professional evaluation if symptoms last. [1][2]\n\n2. What are the common symptoms of depression in women?\n\nThey can also experience sadness and cry often, feel emotionally numb, have a lack of interest in pleasurable activities, reduced motivation, fatigue, sleep disturbances, appetite changes, poor concentration, irritability, guilt and hopelessness, social withdrawal. Symptoms may differ from individual to individual and should be evaluated if they are interfering with daily functioning. [1][3]\n\n3. What is the difference between low mood and depression?\n\nLow mood is typically temporary and may resolve after a stressful situation is over or after receiving emotional support. Depression is more persistent and impacts on emotional state, relationships, work, sleep and activities. If symptoms persist for two weeks or more, or are hard to cope with, a professional assessment is recommended. [1][3]\n\n4. Why are women more likely to experience depression?\n\nDepression can be caused by various biological, psychological and social factors in women. It could be hormonal changes, pregnancy or the postpartum period, menopause, relationship difficulties, caring for others, and chronic stress and life events. But each woman's situation is different, and a complete evaluation can uncover what is impacting her mental health. [2][4]\n\n5. Can hormonal changes affect depression?\n\nYes. In some women hormonal fluctuations during menstruation, pregnancy, postpartum, perimenopause and menopause can impact emotional and mood health. But chronic depression cannot just be viewed as a problem of hormones just because. It's essential to conduct a thorough mental health evaluation to gain a complete picture of all factors involved. [2][4]\n\n6. Can depression affect physical health?\n\nYes. Fatigue, headaches, muscle tension, changes in appetite and weight, decreased energy and sleep disturbances may occur as a result of depression. Since these symptoms can be associated with physical health issues, ongoing symptoms should be assessed by a healthcare provider. [1][3]\n\n7. Can depression affect relationships?\nYes. Depression can affect communication, emotional bonds and socializing. For some women, they might become withdrawn, lose interest in socializing, get more irritated or struggle to express their emotions. Good emotional wellbeing and relationships can be supported appropriately, if recognised early in the process.\n\n8. Can depression affect work or daily life?\n\nYes. Depression can cause poor concentration, motivation, confidence, and decision-making skills. Some women have trouble with basic activities, keeping up their productivity or managing their personal and professional lives. If symptoms interfere with daily life, professional advice is suggested. [1][3]\n\n9. Can poor sleep make depression worse?\n\nYes. There is a relationship between sleep and depression. Sleep problems such as not sleeping through or woken up a lot during the night or sleeping too long can impair emotional health. Adopting better sleep routines and addressing mental health issues can go hand in hand and make a significant contribution to treatment. [1][3]\n\n10. How can women support their emotional wellbeing naturally?\n\nTaking care of one's health – getting proper sleep, engaging in regular physical activity, having a healthy diet, relaxation exercises, spending time with supportive persons and engaging in enjoyable activities – may contribute to emotional health. Such methods can be used in addition to, rather than in place of, professional treatment for severe and/or chronic depression. [3][5]\n\n11. When should I seek professional help for depression?\n\nIf sadness, low mood, loss of interest, emotional exhaustion or hopelessness persists for two weeks or more, and is getting harder to deal with, or it now interferes with work, relationships, sleep or daily activities, professional help should be sought. Early assessment enables identification of contributing factors and provide support. [1][3]\n\n12. What is the difference between depression and emotional burnout?\nEmotional burnout is a result of long-term stress and typically leads to fatigue, lack of motivation, and feelings of being overwhelmed. These symptoms can be part of depression, but it is also defined by sadness, loss of interest, hopelessness and emotional changes that persist beyond the end of the stress. Symptoms can be similar, so a professional assessment is important to determine the correct diagnosis.\n13. How does Manovaidya support women with depression?\nThe attitude of giving support at Manovaidya is to understand a person and not the symptoms. Structured assessment, personalised guidance and Neuro-Ayurveda Development System enables women to learn about emotional wellbeing, brain health, sleep, lifestyle habits and behavioural factors that could potentially affect depression. We want to promote wellbeing in the long-term by working in a whole child and individualised way.\n14. Can depression be treated?\nYes. Depression is a mental health issue that is treatable. Treatment can involve psychological treatments, lifestyle changes, and (where appropriate) medication prescribed by a competent health care professional, as well as social support. Treatment must always be individualized and not a uniform approach. [1][3][5]\n\n15. When should I seek urgent medical help for depression?\n\nIf you have thoughts of hurting yourself or others, want to harm yourself or others, or think you are in immediate danger, please seek medical attention. Also, if it becomes too difficult to stay safe due to the severity of the symptoms, emergency medical care should be sought. [1][3]\n\nBook a Consultation\nBook a structured assessment and personalized guidance session with the Manovaidya team to better understand depression, low mood, emotional wellbeing and women's mental health.\nWhether your concerns relate to persistent sadness, emotional numbness, loss of interest, hopelessness or low motivation, our team is here to help you explore personalised support.\nBook Your Assessment Today\nBook Consultation\n Speak With Our Team\n Get Personalized Guidance\n Depression & Low Mood Assessment\n Emotional Wellbeing Support\n Book Your Consultation with Manovaidya Today\nManovaidya Clinic\nNoida, Uttar Pradesh, India\n\nReferences\n[1] World Health Organization (WHO) – Depressive Disorder (Depression)\n https://www.who.int/news-room/fact-sheets/detail/depression\n[2] National Institute of Mental Health (NIMH) – Depression in Women\n https://www.nimh.nih.gov/health/publications/depression-in-women\n[3] National Institute of Mental Health (NIMH) – Depression\n https://www.nimh.nih.gov/health/topics/depression\n[4] Office on Women’s Health – Depression\n https://womenshealth.gov/mental-health/mental-health-conditions/depression\n[5] NICE Guideline NG222 – Depression in Adults: Treatment and Management\n https://www.nice.org.uk/guidance/ng222\n[6] Ministry of AYUSH – Ayurveda\n https://ayush.gov.in/\n\n\n\n\n\n";
 
 const pageLinks = [
@@ -697,49 +870,15 @@ function WomenDepressionLowMoodSupportPage() {
     return () => window.removeEventListener("scroll", updateActiveSection);
   }, []);
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        name: "Depression & Low Mood Treatment for Women in India",
-        description: "Depression, low mood and women's emotional wellbeing support at Manovaidya.",
-        url: "https://www.manovaidya.com/women-depression-low-mood-support-india/",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
-          { "@type": "ListItem", position: 2, name: "Women's Mental Health", item: "https://www.manovaidya.com/women-health-care/" },
-          { "@type": "ListItem", position: 3, name: "Depression & Low Mood Support", item: "https://www.manovaidya.com/women-depression-low-mood-support-india/" },
-        ],
-      },
-      {
-        "@type": "Physician",
-        name: "Dr. Ankush Garg",
-        medicalSpecialty: "Mental Health",
-        address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
-      },
-    ],
-  };
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo 
-        title="Depression & Low Mood Treatment for Women in India | Manovaidya" 
+        title={seoTitle} 
         description="Looking for Depression & Low Mood Treatment for Women in India? Learn about persistent sadness, loss of interest, emotional wellbeing, women's mental health and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="Depression in Women, Women's Depression, Low Mood in Women, Women's Mental Health, Depression Treatment for Women, Persistent Sadness, Emotional Wellbeing, Mental Health for Women, Depression Support India, Loss of Interest, Low Motivation, Emotional Exhaustion, Feeling Empty, Hormonal Depression, Sleep & Depression, Depression & Relationships, Emotional Burnout" 
         path="/women-depression-low-mood-support-india"
+        schema={womenDepressionSeoSchema}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

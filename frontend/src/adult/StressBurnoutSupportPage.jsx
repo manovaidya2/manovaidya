@@ -29,389 +29,8 @@ import RelatedPagesCard from "./RelatedPagesCard";
 import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
-const pageTitle = "Stress & Burnout Treatment in India";
-const articleRaw = `Key Takeaways
-Understanding Stress, Chronic Stress and Burnout
-Common Emotional and Physical Warning Signs
-Main Causes of Workplace and Personal Burnout
-Impact on Sleep, Health and Work Performance
-Emotional Exhaustion and Reduced Motivation
-Work-Life Balance and Healthy Boundaries
-Neuro-Ayurveda Approach to Stress Support
-Lifestyle Changes for Better Stress Management
-Manovaidya's Assessment and Support Process
-When to Seek Professional Guidance
-Online and In-Clinic Support Across India
-FAQs About Stress and Burnout Treatment
-
-Stress & Burnout Treatment
-Stress & Burnout Treatment in India
-
-Helping adults to understand chronic stress, work related burnout, emotional exhaustion and mental wellbeing. [1][2]
-
-It is normal to experience stress at times during life. Stress can come from an unexpected situation, deadlines, family obligations, finances, etc. that cause a momentary stress. In many circumstances, this stress can get better when the situation changes or when the challenge is met. [2][3]
-
-When stress persists for weeks or months and is not relieved, however, emotional wellbeing, physical health, relationships, work output and quality of life can all be impacted. Others start to feel mentally tired and emotionally depleted or always overwhelmed despite resting. This long-lasting state is known as a burnout. [1][4]
-
-Chronic stress or burnout doesn't prevent many adults from carrying on with their life's responsibilities. As they tend to occur over time, they can easily go unnoticed until they start impacting several life areas. [1][2]
-
-Burnout and stress at Manovaidya aren't just the result of hard work. Several interrelated factors can affect emotional wellbeing, such as lifestyle, sleep, emotional health, daily routines, work load and mind/body balance. [2][5]
-
-Under the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya has been following the Neuro-Ayurveda Development System, which he believes will help people understand the importance of chronic stress, emotional burnout and what influences long term mental health. [8][9][10]
-
-At Manovaidya, our Stress & Burnout Treatment is focused on the following:
-
-Chronic Stress
-Workplace Burnout
-Mental Exhaustion
-Emotional Fatigue
-Work-Life Balance
-Emotional Wellbeing & Mind-Body Balance
-
-Book a Structured Assessment
-Begin your journey to understanding chronic stress, burnout and emotional health through a systematic assessment and personalized guidance process.
-
-Understanding Stress & Burnout
-Stress and burnout are frequently confused but are different. [1][2]
-
-What is Stress?
-Stress is the body's natural response to challenges or demands. Stress, in some cases, can be beneficial in the short term for concentration, motivation and performance. When the stress is over, stress levels generally decrease and the body returns to normal. [2][3]
-
-Examples include:
-
-Working on an important project
-Meeting work deadlines
-Managing family responsibilities
-Under the pressure of the immediate financial need
-
-What is Chronic Stress?
-Stress can be chronic if it lasts for a prolonged time with insufficient rest. The mind and body never have a chance to balance, but are continually under pressure. In the long term, chronic stress can have an impact on emotional health, sleep, focus, physical health, and relationships. [2][3]
-
-What is Burnout?
-Burnout is a persistent state of physical, emotional and mental fatigue, which can result from extended periods of chronic stress. [1][4]
-
-Burnout sufferers often report being feeling:
-
-"Emotionally drained"
-"Mentally exhausted"
-"Unmotivated"
-"Unattached to the workplace or duties"
-"Can't recover even with rest"
-
-Burnout does not manifest itself in a single day. It typically starts to emerge over time, if stress does not stop and healthy routines and emotional support are not provided. [1][4]
-
-Most people who are interested in Stress Treatment in India, Burnout Support, Workplace Burnout, or Chronic Stress are looking for solutions, as they have been feeling tired all the time and it is impacting their day-to-day life. It is key to making the right decision about the kind of support needed, to distinguish between short term stress and long term burnout. [1][2]
-
-Common Signs & Symptoms of Stress & Burnout
-Stress and burnout may impact feelings, thought, conduct and physical healthy. The symptoms may vary from person to person depending on individual circumstances. [1][2]
-
-Emotional Symptoms
-Feeling overwhelmed
-Irritability
-Constant worry
-Emotional exhaustion
-Reduced enthusiasm
-Feeling emotionally disconnected
-Low patience
-
-Physical Symptoms
-Constant fatigue
-Low energy
-Frequent headaches
-Muscle tension
-Poor sleep
-Digestive discomfort
-Body aches
-
-Cognitive Symptoms
-Difficulty concentrating
-Brain fog
-Forgetfulness
-Poor decision-making
-Racing thoughts
-Reduced creativity
-
-Behavioural Symptoms
-Reduced productivity
-Procrastination
-Social withdrawal
-Loss of motivation
-Difficulty maintaining routines
-Less work/family engagement
-
-Just because a person suffers from some stress occasionally, it doesn't necessarily mean that they suffer from burnout. If the symptoms last for a few weeks or start to interfere with daily living, relationships or work, however, it may be helpful to seek professional advice. [1][4]
-
-What Causes Stress & Burnout?
-It is likely that the cause of stress and burnout is a combination of several factors. A better grasp of these influences enables people to develop a wider awareness of their emotional state. [2][5]
-
-Emotional Wellbeing
-Workplace Stress
-Physical Exhaustion
-Mental Clarity
-Mind-Body Balance
-
-Workplace Pressure
-Stress can be experienced as a result of heavy workloads, unrealistic deadlines, long working hours and lack of recovery time. [1][5]
-
-Business Responsibilities
-Varying business requirements can be a constant source of stress for business owners, including financial planning, managing employees, decision making, and long-term growth.
-
-Financial Concerns
-Over time, debt, uncertainty of employment, increasing expenses and future uncertainty can lead to an increase in emotional stress.
-
-Parenting & Caregiving
-As a parent, an older family member, or caregiver, you may have a difficult time finding time to care for your children, elderly parents or family members while keeping your job. It can be an emotional challenge to care for your children, elderly parents or relatives while working. [5]
-
-Relationship Challenges
-Current family disputes, or difficulties with communication or personal relationships, can be a factor in emotional well being. [2][5]
-
-Digital Overload
-Mental recovery may be hampered by continuous notifications, social media, emails and work communication. [6]
-
-Lifestyle Imbalance
-Lack of sleep, inconsistent eating, insufficient exercise and limited downtime can impact emotional hardiness and heighten the effects of stress. [3][7]
-
-Major Life Changes
-Long-term emotional stress can result from relocating, changing jobs, engaging in a relationship, going through a divorce, illness, or other major life changes.
-
-A lot of adults think that being tired all of the time is a normal part of life. But chronic stress and burnout are not to be ignored, particularly when it starts to impact someone's physical health, emotional state or daily activities. [1][4]
-
-Why Early Understanding Matters
-Stress can start slowly and little by little and become chronic stress or burnout if recovery is often postponed. Early detection and awareness of emotional, physical and behavioural changes can help people make healthy choices and access help before stress starts to impact more aspects of life. [1][2]
-
-How Chronic Stress & Burnout Can Affect Your Health
-Stress is emotional, as well as physical. It can slowly affect emotional states, physical health, relationships, work capacity and quality of life if it persists for a long duration without recovery. [2][3]
-
-Some people are able to work when they are very tired, thinking that it is normal to be under pressure all the time. But chronic stress and burnout can have a impact on a number of other points of everyday functioning, and shouldn't be overlooked. [1][4]
-
-Emotional Wellbeing
-Over time, prolonged stress can decrease emotional resilience and increase the sense of the world being too hard. The following are some of the common symptoms that adults say they have when they are stressed out for a long period of time: Feeling emotionally exhausted, constant irritability, increased frustration, feeling overwhelmed, difficulty relaxing and decreased ability to enjoy daily life. [1][2]
-
-Physical Wellbeing
-However, chronic stress may have an impact on physical wellbeing as well. Many individuals experience frequent headaches, muscle tension, neck or shoulder pain, fatigue, digestive discomfort, reduced energy and increased body aches. [2][3]
-
-Sleep & Recovery
-When normal sleep is disturbed it is difficult to recover. When adults are experiencing burnout they may notice difficulty falling asleep, waking during the night, feeling fatigued after sleeping, struggling to turn off racing thoughts and substandard recovery after a hectic day. [3][7]
-
-Work Performance
-Stress and burnout can slowly impact working life by decreasing concentration, productivity, motivation, decision-making, creativity and job satisfaction. [1][5]
-
-Relationships
-Going on like this can also affect how you relate with family members, friends and colleagues. Some individuals become easily irritated, emotionally distant, less patient, less engaged in conversations and socially withdrawn. [2][5]
-
-Confidence & Decision Making
-Excessive long-term stress could decrease self-confidence and self-doubt. Individuals may experience difficulty making decisions, fear of making mistakes, reduced confidence, overthinking, procrastination and mental fatigue.
-
-The Neuro-Ayurveda Approach to Stress & Burnout Treatment
-Chronic stress and burnout at Manovaidya is seen in a wider context. We want to look beyond symptoms to understand the inter-connections and factors that have an impact on emotional wellbeing, behaviour, lifestyle and health.
-
-The Neuro-Ayurveda Development System is a system that seeks to understand the nature of stress and its burnout from five interrelated pillars. [8][9][10]
-
-Brain Nourishment System
-Healthy emotional resilience depends upon healthy brain functioning. The Brain Nourishment System focuses on understanding factors that may influence mental clarity, emotional regulation, concentration, decision making, stress response and motivation. [8][10]
-
-Gut Response System
-The relationship between gut health and emotional wellbeing is increasingly recognised. Many adults experiencing prolonged stress may also notice digestive discomfort, appetite changes, low energy, lifestyle imbalance and poor recovery. [3][8]
-
-Neural Network System
-Repeated experiences gradually shape thinking and behavioural patterns. The Neural Network System focuses on understanding stress responses, habit formation, thought patterns, emotional reactions and behavioural responses. [2][8]
-
-Sensory Integration System
-Modern lifestyles expose adults to continuous stimulation from work demands, mobile phones, social media, emails, notifications and constant multitasking. Excessive stimulation may reduce opportunities for mental recovery and contribute to emotional fatigue. [6]
-
-Behaviour Guidance System
-Behaviour often reflects underlying emotional experiences. Adults experiencing burnout may notice reduced motivation, procrastination, social withdrawal, avoiding responsibilities, irritability and difficulty maintaining routines.
-
-How Adults Can Better Manage Stress & Prevent Burnout
-It's a healthy lifestyle change, often starting with small changes, that can help manage stress. [2][3]
-
-Prioritise Quality Sleep: Good Sleep helps with Emotional Recovery, Focus and Resilience. [7]
-
-Create Healthy Daily Routines: Daily routines structure helps to keep emotions in balance.
-
-Maintain Physical Activity: Physical activity is important for physical and emotional health and aids in recovery from daily stress. [3]
-
-Set Healthy Work Boundaries: Regular breaks, working hours, balanced work-life may help minimize the risk of burnout. [1][5]
-
-Stay Connected With Supportive People: Emotional resilience can be enhanced and support can be received during stressful times through healthy relationships. [2][5]
-
-Practice Regular Self-Care: Relaxation, hobbies, mindfulness and fun activities provide the opportunity for the mind and body to catch up with the times when the pressure is continuously high.
-
-Reduce Digital Overload: Allocating screen-free time throughout the day can alleviate mental fatigue and enhance wellbeing. [6]
-
-How Manovaidya Supports Adults
-At Manovaidya, the way to support the individual is to begin by understanding the person as a whole, and not with a narrow focus on the symptoms of stress. A formal, sequential process in a way that is for long-lasting change and growth.
-
-Step 1: Comprehensive Assessment: Understanding emotional wellbeing, work demands, lifestyle habits, sleep patterns, daily routines and personal concerns.
-
-Step 2: Personalized Guidance: Individualized recommendations based on each person's emotional, behavioural and lifestyle needs.
-
-Step 3: Emotional Wellbeing Support: Helping people to improve their awareness of chronic stress, burnout and healthy coping by facilitating a structured process.
-
-Step 4: Neuro-Ayurveda Development System - Understanding emotional wellbeing, behaviour, lifestyle and mind-body balance using the 5 pillar approach. [8][9][10]
-
-Step 5: Progress Tracking & Follow-Up: Providing a plan to support structured tracking of progress and development of healthier habits for sustained emotional health.
-
-We aren't here for relief, we're here for clarity. We help you to really understand your emotional wellbeing.
-
-The assessment process will support people to become clear about:
-
-Emotional Wellbeing
-Work Demands
-Lifestyle Habits
-Sleep Patterns
-Daily Routines
-Personal Concerns
-
-Who should consider an Assessment?
-If you have any of the following symptoms, you might want to get advice:
-
-Stress that has been present over a prolonged period (several weeks or months)
-Persistent stress lasting several weeks or months
-Emotional exhaustion
-Constant fatigue despite rest
-Difficulty concentrating
-Reduced motivation
-Sleep disturbances
-Work stress affecting personal life
-Burnout symptoms interfering with daily functioning
-
-A structured assessment can be used to identify factors impacting on stress, emotional wellbeing and lifestyle, and to develop an individual pathway to healthier recovery and long-term wellbeing. [1][2]
-
-We aim to assist people in overcoming their emotional exhaustion, chronic stress and move towards emotional balance, mental clarity, resilience and overall wellbeing.
-
-Why Adults Across India Choose Manovaidya
-Stress & Burnout Treatment, Workplace Stress Guidance and Emotional Wellbeing Support by Adults from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and all over India via Online & In- Clinic consultation with Manovaidya.
-
-Our support focuses on:
-
-Personalized Assessment
-Structured Neuro-Ayurveda System
-Online & In-Clinic Support
-Holistic Mind-Body Approach
-Expert Guidance
-Long-Term Emotional Wellbeing
-
-Deciding which support system to use for stress and burnout may be daunting. A lot of people end up seeking a deeper and more organized comprehension of their emotional requirements.
-
-About
-Dr. Ankush Garg
-
-Mental Health & Wellness Specialist
-
-Based in Delhi NCR, Dr. Ankush Garg supports adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
-
-His work focuses on Adult Mental Health, Women's Emotional Wellbeing, Stress-Related Concerns and Mental Wellness Support. Through Manovaidya, Dr. Ankush Garg combines traditional Ayurvedic understanding with modern insights into emotional wellbeing and cognitive health.
-
-His approach emphasizes root-cause understanding, personalized guidance, and long-term wellness planning to help adults better understand their concerns and move forward with greater clarity, confidence and direction.
-
-Frequently Asked Questions
-What are the first signs of burnout?
-Early indicators of burnout may be you feel consistently tired, emotionally drained, lacking in enthusiasm, unable to focus, feeling irritated and overwhelmed by normal tasks. Some also experience a lower level of interest in work, diminished productivity or feeling fatigued even when they are sleeping. It is important to recognise these early signs as early interventions and lifestyle changes can help prevent the condition from getting worse and worsening stress levels from becoming overwhelming. [1][4]
-
-What are the physical symptoms of burnout?
-Burnout can manifest in emotional and/or physical ways. Physical symptoms can be persistent fatigue, headaches, muscle tension, poor sleep, gastrointestinal discomfort, low energy and body aches. Other people get sick a lot or can't seem to bounce back from a hectic day. These symptoms can have multiple causes, so a correct evaluation will allow the identification of the causes of a sustained stress and exhaustion. [2][3]
-
-What are the 7 warning signs of stress?
-Symptoms of stress include feeling overwhelmed, getting irritated, unable to calm down, unable to focus, difficulty sleeping, fatigue and loss of motivation. Some may also experience headaches, muscle tension or digestion issues. While stress is a normal part of life, ongoing symptoms that are impacting work, relationships or wellbeing should not be overlooked. [2][4]
-
-What is the biggest cause of burnout?
-Typically, burnout occurs as the result of chronic stress, not a single incident. These include overwork, prolonged working hours, poor work-life balance, continuous emotional stress, money problems, caring for others and not getting enough sleep. If stress is not alleviated with sufficient rest, it can gradually cause emotional, mental and physical fatigue. [1][4]
-
-How do you overcome stress and burnout?
-It's important to make healthy lifestyle changes and seek professional guidance when recovering from stress and burnout. Getting more sleep, keeping up an active lifestyle, setting healthy limits at work, taking breaks and establishing positive work relationships can all factor into recovery. Since each person's situation varies, knowing the reasons behind their stress is an essential component in achieving emotional health and wellness in the long-term. [2][3]
-
-How can I recover from burnout without quitting my job?
-A significant number of people can actually start to heal from a burnout without quitting their job, by learning to strike a better balance between work and life, setting up boundaries, taking breaks, and caring for their sleep and seeking the proper support. Often, though, it's the small changes that add up and make a difference in your lifestyle. If these efforts don't help, and this is a continuing situation, a professional evaluation can be used to help determine what else is causing the emotional burnout. [1][5]
-
-How do doctors diagnose burnout?
-There is no one medical exam that can diagnose burnout. Typically, doctors and mental health workers assess symptoms, emotional state, work stress, lifestyle factors and how these factors impact on daily functioning. They may also check to see if other medical or mental health issues are causing similar symptoms. A structured evaluation provides a better understanding of the person's situation. [1][4]
-
-How can I check if I have burnout?
-If you are feeling emotionally exhausted, mentally drained, extremely tired or lacking in motivation for several weeks, getting a professional diagnosis is advisable. Burnout is discussed with a healthcare professional using structured conversations and evidence-based evaluation instruments to determine the level of symptoms and factors that may be causing the burnout. The sooner a person is assessed, the more effective their recovery will be in the long term. [1][4]
-
-Can burnout be serious?
-Yes. When burnout is left untreated, it can slowly manifest in emotional health, physical health, job performance, relationships and life overall. Burnout can cause poor concentration, loss of motivation, confidence and emotional abilities. Getting help early could help avoid these difficulties from worsening or help to ensure positive long-term outcomes for wellbeing. [1][2]
-
-Is burnout a medical problem?
-Burnout is a well-known occupational stressor in the workplace that is not well managed. While NOT a disease itself, long-term burnout can have a considerable impact on emotional health, physical health and functioning. If symptoms continue, it should be assessed by a trained health care professional to identify the most suitable support. [1][4]
-
-Can burnout lead to anxiety or depression?
-Emotional vulnerability and/or anxiety or depression can be associated with long-term burnout, as can chronic stress. Constant fatigue, irregular sleeping patterns, loss of motivation and chronic stress can have a profound impact on mental health. A thorough evaluation helps to clarify the person's symptoms and determine the best kind of help. [1][2]
-
-What happens if burnout is ignored?
-Burnout can be allowed to happen over time if it is ignored. Can impact work productivity, focus, relationships, sleep quality, motivation and wellbeing. There can also be a higher level of stress, emotional distress or decreased resilience for some people. Burnout can be identified early and proper advice may be offered to avert further problems. [1][4]
-
-Can people recover from burnout?
-Yes. With proper lifestyle modifications, healthy recovery techniques and professional help provided where necessary, many people are able to recover from burnout. Recovery typically includes the improvement of sleep, the reduction of chronic stressors, the re-establishment of healthy habits, the development of emotional strength and the efforts of addressing the root causes of burnout. Recovery takes time and can be individual. [2][3]
-
-How does Manovaidya support adults with stress and burnout?
-Support at Manovaidya starts with understanding the individual and not just on the stress symptoms. We facilitate the understanding of emotional wellbeing, lifestyle influences, work related stress and behavioral pattern through structured assessment, personalised guidance and Neuro-Ayurveda Development System. A comprehensive treatment approach is our aim to maintain long-term emotional stability, resilience and better functioning of daily life. [8][9][10]
-
-When should I seek professional guidance for stress and burnout?
-If the stress, emotional exhaustion or burnout persists for weeks and starts to interfere with your work, relationships, sleep habits, or everyday life, you should think about asking yourself for professional advice. If there is a persistent lack of energy, loss of drive, poor focus and/or feeling overwhelmed in spite of getting enough rest, this should not be dismissed. Structured assessment at Manovaidya can help identify factors that contribute to poor emotional health and help guide individuals towards strategies to enhance their emotional health and long-term resilience. [1][4]
-
-Book a Consultation
-Feeling Constantly Stressed or Emotionally Exhausted?
-
-Book a structured assessment and personalized guidance session with the Manovaidya team to better understand chronic stress, burnout and your emotional wellbeing.
-
-Why Trust Manovaidya?
-
-Structured Neuro-Ayurveda Development System
-Personalized Assessment Before Recommendations
-Online & In-Clinic Consultations Across India
-Holistic Mind-Body Approach
-Focus on Long-Term Emotional Wellbeing
-Book Your Consultation with Manovaidya Today
-Manovaidya Clinic
-Noida, Uttar Pradesh, India`;
-
-const refsRaw = `Final Suggested References
-Modern Science
-[1] World Health Organization (WHO). Burn-out an occupational phenomenon: International Classification of Diseases.
-https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon
-Supports: Burnout definition, occupational stress, workplace exhaustion.
-
-[2] American Psychological Association. Stress effects on the body.
-https://www.apa.org/topics/stress/body
-Supports: Stress symptoms, emotional wellbeing, physical impact.
-
-[3] National Institute of Mental Health (NIMH). I am so stressed out! Fact Sheet.
-https://www.nimh.nih.gov/health/publications/so-stressed-out-fact-sheet
-Supports: Stress response, coping, sleep, recovery and when to seek help.
-
-[4] Mayo Clinic. Job burnout: How to spot it and take action.
-https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642
-Supports: Burnout signs, causes, work impact and recovery guidance.
-
-[5] CDC NIOSH. Stress at Work.
-https://www.cdc.gov/niosh/topics/stress/
-Supports: Workplace stress, job demands, support and prevention.
-
-[6] American Psychological Association. Social media and the internet.
-https://www.apa.org/topics/social-media-internet
-Supports: Digital overload, continuous stimulation and emotional wellbeing.
-
-[7] Sleep Foundation. Stress and Sleep.
-https://www.sleepfoundation.org/mental-health/stress-and-sleep
-Supports: Sleep disturbance, stress recovery, fatigue and daily functioning.
-
-Ayurvedic References
-[8] Sharma PV (Trans.). Charaka Samhita. Chaukhambha Orientalia, Varanasi.
-Digital Copy:
-https://archive.org/details/CharakaSamhitaEnglish
-Supports: Mental wellbeing (Manas), nourishment, digestion, lifestyle and holistic care.
-
-[9] Sharma H (Ed.). Kashyapa Samhita (Vriddha Jivakiya Tantra). Chaukhambha Sanskrit Series Office, Varanasi.
-Digital Copy:
-https://archive.org/details/KashyapaSamhita
-Supports: Family care, wellbeing, routine and holistic support.
-
-[10] Murthy KR Srikantha (Trans.). Ashtanga Hridaya. Chaukhambha Krishnadas Academy, Varanasi.
-Digital Copy:
-https://archive.org/details/AshtangaHridayamEnglish
-Supports: Lifestyle, routine, sleep, digestion, mental balance and holistic care.`;
+const pageTitle = "Stress & Burnout Support in India";
+const articleRaw = "Key Takeaways\nUnderstanding Stress & Burnout\nTemporary Stress vs Chronic Stress\nCommon Signs & Symptoms of Burnout\nCauses and Contributing Factors\nImpact on Emotional & Physical Wellbeing\nSleep, Recovery & Work Performance\nEffects on Relationships and Confidence\nManaging Stress & Preventing Burnout\nNeuro-Ayurveda Approach to Stress\nPersonalized Burnout Support & Guidance\nManovaidya Assessment & Support Process\nFAQs About Stress & Burnout\n\nStress & Burnout Support in India\nHelping Adults Better Understand Chronic Stress, Workplace Burnout, Emotional Exhaustion & Mental Wellbeing\nIt's ok to experience stress at times. Temporary stresses are caused by deadlines, family duties, financial obligations, or unforeseen problems. In many cases, this stress is eased as soon as things change or the challenge is overcome.\nFor others, however, prolonged stress for weeks or months without sufficient recuperation can start to impact emotional wellbeing, physical health, relationships, work productivity and quality of life. [3][4] Though, for some, it may begin to affect emotional wellbeing, physical health, relationships, work productivity and overall quality of life even after resting. This extended condition can be called burnout[1].\nChronic stress or burnout don't stop many adults from doing what they need to do on a day-to-day basis. These shifts typically come in steps and are not noticed until they start to impact more than one aspect of people's lives.\nStress and burnout aren't just a matter of working too hard at Manovaidya. There are many interconnected factors that affect emotional wellbeing such as lifestyle, sleep, emotional health, daily routines, work demands and mind-body balance in general.\nAutism, ADHD, Mental Health, Child Development Specialist in India, Dr. Ankush Garg follows the Neuro-Ayurveda Development System where he helps people understand the factors that impact long-term mental health and chronic stress and emotional burn out.\n\n\nAt Manovaidya, Stress & Burnout Support Focuses On:\nChronic Stress\nWorkplace Burnout\nMental Exhaustion\nEmotional Fatigue\nWork-Life Balance\nEmotional Wellbeing & Mind-Body Balance\n\n\nUnderstanding Stress & Burnout\nStress and burnout are often used interchangeably, but they are not the same.[1][7]\nWhat is Stress?\nStress is your body's normal reaction to challenges or demands. Short-term stress has a positive effect on focus, motivation and performance in certain situations. After the circumstance is over, stress will generally decrease and the body will start to heal itself.[7]\nExamples include:\nPreparing for an important presentation\nMeeting work deadlines\nManaging family responsibilities\nFacing temporary financial pressure\n\nWhat is Chronic Stress?\nIf stress cannot be managed and occurs over long periods of time without recovery, stress can become chronic.[4]\nThe mind and body are continually challenged rather than restored to balance.\nRepeated exposure to stress can lead to emotional health, disruption of sleep, difficulty focusing, physical health problems and relationship issues.[4] \n\n\nWhat is Burnout?\nBurnout is a condition of physical, emotional and mental fatigue that can occur from the effects of chronic stress over extended periods of time[1].\nPeople experiencing burnout often describe feeling:\nEmotionally drained\nMentally exhausted\nUnmotivated\nDisconnected from work or responsibilities\nUnable to recover even after rest\nBurnout does not happen overnight. It usually develops gradually when stress continues without sufficient recovery, healthy routines or emotional support.[1][3]\nMany adults searching for Stress Support in India, Burnout Support, Workplace Burnout or Chronic Stress are looking for answers because they have noticed persistent exhaustion that is affecting their daily lives.\nUnderstanding the difference between temporary stress and long-term burnout is an important step towards choosing appropriate support.[1][7]\n\n\n\nCommon Signs & Symptoms of Stress & Burnout\nEmotions, thoughts, behaviour and physical wellbeing can be impacted by stress and burnout.[1][4]\nThe symptoms may vary from person to person depending on individual circumstances.\n\nEmotional Symptoms\nFeeling overwhelmed\nIrritability\nConstant worry\nEmotional exhaustion\nReduced enthusiasm\nFeeling emotionally disconnected\nLow patience\n\nPhysical Symptoms\nConstant fatigue\nLow energy\nFrequent headaches\nMuscle tension\nPoor sleep\nDigestive discomfort\nBody aches\n\n\nCognitive Symptoms\nDifficulty concentrating\nBrain fog\nForgetfulness\nPoor decision-making\nRacing thoughts\nReduced creativity \nBehavioural Symptoms\nReduced productivity\nProcrastination\nSocial withdrawal\nLoss of motivation\nDifficulty maintaining routines\nReduced engagement with work or family \nExperiencing occasional stress does not necessarily indicate burnout. If these symptoms continue for a few weeks or start to interfere with living normal lives, relationships or work, however, it is worth considering professional advice, though. [1][3]\n\n\nWhat Causes Stress & Burnout?\nBurnout and stress often occur due to a combination of factors, not just one single cause.\nKnowing about these influences enables people to have a wider understanding about their emotional wellbeing.\n\nWorkplace Pressure\nStress can be ongoing due to the heavy workload, unrealistic deadlines, long hours of work and lack of recovery time.\n\n\nBusiness Responsibilities\nFinancial planning, team management, decision making, and long term growth are all things that business owners must balance, and can be constantly stressful.\n\nFinancial Concerns\nOver time, emotional stress can grow due to debt, uncertainty of employment, rising costs, etc.\n\nParenting & Caregiving\nHaving to care for children, elderly parents or family members can be emotionally challenging when coupled with work obligations.\n\nRelationship Challenges\nCurrent family issues, communication problems or personal relationship issues could have an impact on emotional wellbeing.\n\n\nDigital Overload\nPersistent notifications, social media, emails and communication for work may limit opportunities for mental recovery.\n\n\nLifestyle Imbalance\t\nPoor sleep, irregular meals, lack of physical activity and limited relaxation time may diminish emotional resilience and intensify the stress.\n\n\nMajor Life Changes\nLong-lasting emotional stress can be caused by relocation, career changes, marriage, divorce, or serious life changes like illness.\nMany adults think that it's a normal part of life to feel tired all the time. But stress and burnout that continues need to be addressed, particularly if it is disrupting your physical health, emotional well-being or functioning in daily life.[3][4]\n\nWhy Early Understanding Matters\nStress can start as a short-term reaction, but can become chronic or burnout if the body continues to not recover. [1][7]\nIdentifying, early on, the emotional, physical and behavioural shifts enables people to make better choices and find help before the stress catches them out in several aspects of life.\n\nHow Chronic Stress & Burnout Can Affect Your Health\nStress is more than an emotional moment. If it persists over a long period of time without recovery, it can slowly affect emotional health, physical health, relationships, job function, and quality of life.\nEven though many grow weary, many adult workers make the assumption that constant stress is an inevitable part of our modern existence. But chronic stress and burnout can impact many facets of life and shouldn't be disregarded.[1][4]\n\nEmotional Wellbeing\nLong-term stress may gradually reduce emotional resilience and make everyday situations feel more overwhelming.[4]\nChronic stress can manifest in adults in many ways, and many say they experience:\nFeeling emotionally exhausted\nConstant irritability\nIncreased frustration\nFeeling overwhelmed\nDifficulty relaxing\nReduced enjoyment in everyday life\nIf you feel more and more drained, light tasks like going to work may also become challenging.\n\nPhysical Wellbeing\nLong-term stress can also have an impact on physical health.[4]\nMany individuals experience:\nFrequent headaches\nMuscle tension\nNeck or shoulder pain\nFatigue\nDigestive discomfort\nReduced energy\nIncreased body aches\nThese symptoms can happen for a number of reasons, but in some cases, a lack of stress can lead to the symptoms persisting.\n\nSleep & Recovery\nRecovery becomes difficult when healthy sleep is affected.\nAdults experiencing burnout often notice:\nDifficulty falling asleep\nWaking during the night\nFeeling tired after sleeping\nDifficulty switching off racing thoughts\nPoor recovery after busy days\nWithout proper recovery, stress may continue building over time.[3][4]\n\n\n\nWork Performance\nBurnout and stress can slowly impact the professional life by diminishing:\nConcentration\nProductivity\nMotivation\nDecision-making\nCreativity\nJob satisfaction\nEmotional burnout is often hard to identify until it manifests in diminished performance and is being used to power through work.\n\n\nRelationships\nStress can also affect your communication with family members, friends and colleagues.\nSome individuals become:\nEasily irritated\nEmotionally distant\nLess patient\nLess inclined to participate in discussions\nSocially withdrawn\nWellbeing in the emotional domain may contribute to better relationship and communication.\n\n\nConfidence & Decision Making\nLong term stress can make people more uncertain and less confident. [4]\nIndividuals may experience:\nDifficulty making decisions\nFear of making mistakes\nReduced confidence\nOverthinking\nProcrastination\nMental fatigue\nEarly detection of these signs and symptoms can help people obtain the necessary assistance before they become more serious.\n\n\nThe Neuro-Ayurveda Approach to Stress & Burnout Support\nChronic stress and burnout are perceived at Manovaidya from a broader perspective.\nWe are not only concerned with symptoms but also with the interrelated factors that impact emotional wellbeing, behaviour, lifestyle and health.\nThe Neuro-Ayurveda Development System enables people to gain a deeper insight of stress and burnout by leveraging the five interconnected pillars.\n\n\nBrain Nourishment System\nEmotional resilience is essential to health and requires healthy brain functioning.\nThe Brain Nourishment System teaches about the possible influences on the brain:\nMental clarity\nEmotional regulation\nConcentration\nDecision making\nStress response\nMotivation\nBy providing nourishment to the brain, people can better understand what emotional wellbeing and mental performance are.\n\nGut Response System\nThe relationship between gut health and emotional wellbeing is increasingly recognised.[6]\nMany adults who are stressed for long periods of time may also experience:\nDigestive discomfort\nAppetite changes\nLow energy\nLifestyle imbalance\nPoor recovery\nThe Gut Response System is about understanding the relationship between physical wellbeing and emotional resiliency and stress management.\n\nNeural Network System\nExperiences become repeated, and over time, their thought and behavior patterns take shape.\nThe Neural Network System is based on comprehension:\nStress responses\nHabit formation\nThought patterns\nEmotional reactions\nBehavioural responses\nPeople can learn to accept and gradually find healthier ways of coping with these patterns.\n\nSensory Integration System\nFor adults, there are continuous sources of stimulation such as:\nWork demands\nMobile phones\nSocial media\nEmails\nNotifications\nConstant multitasking\nToo much stimulation can decrease opportunities for mental recovery and can lead to emotional fatigue.\nA healthier balance in the environment promotes emotional health.\n\nBehaviour Guidance System\nEmotional experiences are manifest in behaviours.\nWhen adults are burned out they may see:\nReduced motivation\nProcrastination\nSocial withdrawal\nAvoiding responsibilities\nIrritability\nDifficulty maintaining routines\nThis pillar is not just about behavior, it is about understanding what factors contribute to these changes, and fostering better behavior patterns.\n\nHow Adults Can Better Manage Stress & Prevent Burnout\nSmall, regular changes to the way a person lives can be an initial step to healthy stress management. [2][3][7]\n\n\nPrioritise Quality Sleep\nWell-sleep helps emotions recover, focus and strength. [4]\n\n\nCreate Healthy Daily Routines\nPredictable schedules eliminate anxiety and stabilize emotions.Clear schedules help balance emotions and eliminate anxiety.\n\n\nMaintain Physical Activity\nFrequent exercise contributes to physical and emotional health and recovery from the stresses of the day.\n\nSet Healthy Work Boundaries\nRegular breaks, avoiding excessive working hours and maintaining a healthy work-life balance may help to lower the risk of burnout.\n\nStay Connected With Supportive People\nHealthy relationships may help increase emotional resilience and help provide support during stressful times. [7]\n\n\nPractice Regular Self-Care\nRelaxation, hobbies, mindfulness and enjoyable activities allow both the mind and body to recover from continuous pressure.[2][3][5]\n\n\nReduce Digital Overload\nCreating screen-free time during the day may reduce mental fatigue and improve overall wellbeing.\n\n\nHow Manovaidya Supports Adults\nThe approach to support starts with the person not merely on the symptoms of stress at Manovaidya.\nOur structured process includes: \nStep 1: Comprehensive Assessment\nAwareness of emotional wellbeing, work stress, lifestyle habits, sleeping habits, daily routine and personal worries.\nStep 2: Personalized Guidance\nOffering personalized suggestions to a person's emotional, behavioural and lifestyle requirements.\nStep 3: Emotional Wellbeing Support\nTo inform on chronic stress and its effects, burnout and coping mechanisms in a structured manner [2,3]\nStep 4: Neuro-Ayurveda Development System\nUsing the five pillar understanding of emotional wellbeing, behaviour, lifestyle and mind-body balance. [2][6]\nStep 5: Progress Tracking & Follow-Up\nEstablishing a clear action plan to keep people on track and developing a more healthy lifestyle for lasting emotional health.\n\nWhen Should You Consider an Assessment?\nYou may consider seeking guidance if you experience:\nPersistent stress lasting several weeks or months\nEmotional exhaustion\nConstant fatigue despite rest\nDifficulty concentrating\nReduced motivation\nSleep disturbances\nWork stress affecting personal life\nBurnout symptoms interfering with daily functioning\nA structured assessment can assist in identifying factors that may be contributing to stress, emotional wellbeing and lifestyle, and can create a personalised plan for health and wellbeing in recovery and over the longer term.[1][3][4]\nThe aim of our work is to guide people from emotional exhaustion and chronic stress to emotional balance, clarity of mind, resilience and wellbeing.\n\n\nAbout Dr. Ankush Garg\nMental Health & Wellness Specialist\nBased in Delhi NCR, Dr. Ankush Garg supports adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.\nHis work focuses on Adult Mental Health, Women's Emotional Wellbeing, Stress-Related Concerns and Mental Wellness Support. Through Manovaidya, Dr. Ankush Garg combines traditional Ayurvedic understanding with modern insights into emotional wellbeing and cognitive health.\nHis approach emphasizes root-cause understanding, personalized guidance, and long-term wellness planning to help adults better understand their concerns and move forward with greater clarity, confidence and direction.\nBook a Consultation\nBook Your Consultation with Manovaidya Today\nStructured Assessment\nPersonalized Guidance\nOnline & In-Clinic Support\nLong-Term Emotional Wellbeing\nFeeling Constantly Stressed or Emotionally Exhausted?\nBook a structured assessment and personalized guidance session with the Manovaidya team to better understand chronic stress, burnout and your emotional wellbeing.\nWhy Trust Manovaidya?\nStructured Neuro-Ayurveda Development System\nPersonalized Assessment Before Recommendations\nOnline & In-Clinic Consultations Across India\nHolistic Mind-Body Approach\nFocus on Long-Term Emotional Wellbeing\nBook Your Consultation with Manovaidya Today\nManovaidya Clinic\nNoida, Uttar Pradesh, India\n\nFAQs\n1. What are the first signs of burnout?\nEarly signs of burnout can involve constant tiredness, emotional exhaustion, loss of motivation, difficulty concentrating, irritability and feeling overwhelmed by everyday responsibilities. It is important to note that these symptoms might be the first sign of burnout, and that early intervention in a person's lifestyle and professional advice can help prevent the burn out from getting worse.\n\n2. What are the physical symptoms of burnout? \nBurnout may also occur at a physical level, with symptoms such as constant tiredness, headaches, muscle tension, trouble sleeping, digestive problems, body aches and low energy levels, as well as frequent colds or inability to recover after a long day. These symptoms can be caused by a variety of factors, so a proper assessment can help determine what is causing the stress and exhaustion that is continuing.\n\n3. What are the 7 warning signs of stress?\nWhile some stress is normal, a constant state of stress that impacts work, relationships or well-being should not be overlooked, as the symptoms may involve headaches, muscle tension, digestive discomfort, irritability, difficulty in relaxing, poor concentration, or disrupted sleep; and a sense of being overwhelmed by life.\n\n4. What is the biggest cause of burnout?\nWhen stress does not get adequate breaks, it can slowly cause emotional, mental and physical fatigue.[1][4] Burnout typically occurs over a period of time rather than from one specific incident. Common causes of burnout include having had too much to do, working too long, not having a healthy work-life balance, facing continuous emotional stress, financial concerns, caregiving responsibilities and insufficient rest.\n\n5. How do you overcome stress and burnout?\nRecovering from stress and burnout often requires a combination of healthy lifestyle changes and appropriate professional guidance.[2][3][7] Prioritising sleep, maintaining regular physical activity, creating healthy work boundaries, taking regular breaks and building supportive relationships may all contribute to recovery.[3][7] Because every individual's situation is different, understanding the underlying causes of stress is an important step towards long-term emotional wellbeing.\n\n6. How can I recover from burnout without quitting my job?\nSmall but regular lifestyle changes can make a big difference in many people's recovery from burnout without quitting their job-such as work/life balance; establishing healthy boundaries; taking regular breaks; prioritising sleep; and seeking appropriate support. If these attempts at combating burnout are unsuccessful, a professional evaluation may be useful in determining other factors that may be causing emotional exhaustion.\n\n\n7. How do doctors diagnose burnout?\nNo one test is used to diagnose burnout. Mental health professionals and doctors typically take a symptom-by-symptom look at emotional well-being, stressors at work, lifestyle factors, and how these factors may be affecting a person's functioning, and may also check for other medical or mental illnesses that could be causing the same symptoms. Structured Assessment can help to gain a better understanding of the individual's situation.\n\n8. How can I check if I have burnout?\nStructured discussions with healthcare professionals and validated assessment tools can help to better understand the severity of symptoms and the factors that are contributing to burnout, which can be helpful if you have been feeling emotionally exhausted, mentally drained, constantly tired or unmotivated for several weeks. Early evaluations can help with the long term recovery.\n\n9. Can burnout be serious?\nYes. Untreated burnout can slowly lead to feelings of emotional distress, physical illness, diminished productivity, poor performance and decreased emotional strength. Early interventions can help to avoid these issues becoming more complex and can contribute to better overall health and wellbeing.\n\n10. Is burnout a medical problem?\nWhile not a medical condition itself, extended burnout can have a profound impact on emotional health, physical health and functioning and therefore warrants a thorough assessment by a trained health care provider to identify the most suitable support.\n\n11. Can burnout lead to anxiety or depression?\nBurnout and chronic stress can lead to a greater emotional vulnerability and may be experienced concurrently with anxiety or depression in some people, all of which can have a major impact on mental health. A comprehensive assessment can help to understand the individual's symptoms and allow for the most appropriate support to be identified.\n\n 12. What happens if burnout is ignored?\nOthers may see a rise in stress, emotional distress or diminished resilience over time.Others may also experience decreased job performance, concentration, relationships, quality of sleep, motivation, or wellbeing. Early detection and appropriate guidance of burnout could help avoid additional issues.\n\n13. Can people recover from burnout?\nYes. The journey to recovery can be slow and the path to recovery can vary from person to person. Many people experience a full recovery with proper lifestyle modifications, healthy recovery measures and support when necessary. [3][7]\n\n14. How does Manovaidya support adults with stress and burnout?\nWith Manovaidya, the first step is to listen to the person, rather than just to the symptoms. We support individuals to gain a better understanding of emotional wellbeing, the influence of lifestyle, work stress and behaviour patterns through structured assessment, personalised guidance and the Neuro-Ayurveda Development System. We want to help to maintain a healthy level of emotional balance, resilience, and healthy functioning throughout the day, in a comprehensive manner.\n\n\n15. When should I seek professional guidance for stress and burnout?\nIf stress, emotional exhaustion or burnout persists over several weeks, and it is starting to impact your work, relationships, sleep or life, professional help should be sought. Structured evaluations conducted at Manovaidya can help uncover factors that may be affecting emotional wellbeing and long-term resilience, and offer guidance to improve emotional wellbeing.";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -430,18 +49,18 @@ const pageLinks = [
 ];
 
 const keyTakeawayLabels = [
-  "Understanding Stress, Chronic Stress and Burnout",
-  "Common Emotional and Physical Warning Signs",
-  "Main Causes of Workplace and Personal Burnout",
-  "Impact on Sleep, Health and Work Performance",
-  "Emotional Exhaustion and Reduced Motivation",
-  "Work-Life Balance and Healthy Boundaries",
-  "Neuro-Ayurveda Approach to Stress Support",
-  "Lifestyle Changes for Better Stress Management",
-  "Manovaidya's Assessment and Support Process",
-  "When to Seek Professional Guidance",
-  "Online and In-Clinic Support Across India",
-  "FAQs About Stress and Burnout Treatment",
+  "Understanding Stress & Burnout",
+  "Temporary Stress vs Chronic Stress",
+  "Common Signs & Symptoms of Burnout",
+  "Causes and Contributing Factors",
+  "Impact on Emotional & Physical Wellbeing",
+  "Sleep, Recovery & Work Performance",
+  "Effects on Relationships and Confidence",
+  "Managing Stress & Preventing Burnout",
+  "Neuro-Ayurveda Approach to Stress",
+  "Personalized Burnout Support & Guidance",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Stress & Burnout"
 ];
 
 const references = [
@@ -468,9 +87,9 @@ const categories = [
 
 const articleShareLinks = [
   { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://www.manovaidya.com/stress-burnout-support-india" },
-  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/stress-burnout-support-india&text=Stress%20and%20Burnout%20Treatment%20in%20India" },
+  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/stress-burnout-support-india&text=Stress%20and%20Burnout%20Support%20in%20India" },
   { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.manovaidya.com/stress-burnout-support-india" },
-  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Stress%20and%20Burnout%20Treatment%20in%20India%20https://www.manovaidya.com/stress-burnout-support-india" },
+  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Stress%20and%20Burnout%20Support%20in%20India%20https://www.manovaidya.com/stress-burnout-support-india" },
 ];
 
 const articleLinkRules = [
@@ -538,30 +157,32 @@ const manovaidyaSocialLinks = [
 ];
 
 const sectionIdByTitle = {
-  "Stress & Burnout Treatment": "introduction",
+  "Stress & Burnout Support": "introduction",
+  "Stress & Burnout Support in India": "introduction",
   "Understanding Stress & Burnout": "understanding-stress",
   "Common Signs & Symptoms of Stress & Burnout": "signs-and-symptoms",
   "What Causes Stress & Burnout?": "causes",
   "Why Early Understanding Matters": "early-understanding",
   "How Chronic Stress & Burnout Can Affect Your Health": "health-impact",
-  "The Neuro-Ayurveda Approach to Stress & Burnout Treatment": "neuro-ayurveda",
+  "The Neuro-Ayurveda Approach to Stress & Burnout Support": "neuro-ayurveda",
   "How Adults Can Better Manage Stress & Prevent Burnout": "manage-stress",
   "How Manovaidya Supports Adults": "how-we-support",
   "Why Adults Across India Choose Manovaidya": "why-manovaidya",
   "About": "about-dr-ankush-garg",
+  "About Dr. Ankush Garg": "about-dr-ankush-garg",
   "Frequently Asked Questions": "faqs",
   "Book a Consultation": "book-consultation",
 };
 
 const headings = new Set([...Object.keys(sectionIdByTitle), pageTitle]);
-const hiddenIntroLines = new Set(["Key Takeaways", ...keyTakeawayLabels, pageTitle]);
+const hiddenIntroLines = new Set(["Key Takeaways", ...keyTakeawayLabels]);
 const listLeadLines = new Set([
-  "At Manovaidya, our Stress & Burnout Treatment is focused on the following:",
+  "At Manovaidya, Stress & Burnout Support Focuses On:",
   "Examples include:",
-  "Burnout sufferers often report being feeling:",
-  "The assessment process will support people to become clear about:",
-  "If you have any of the following symptoms, you might want to get advice:",
-  "Our support focuses on:",
+  "People experiencing burnout often describe feeling:",
+  "The assessment process helps individuals gain clarity about:",
+  "If you notice any of the following, you may benefit from seeking guidance:",
+  "Our support usually includes:",
   "Why Trust Manovaidya?",
 ]);
 
@@ -652,7 +273,7 @@ function KeyTakeawaysBlock() {
     <section className="mt-8 overflow-hidden rounded-[28px] bg-[#fbf5ef] shadow-[0_14px_30px_rgba(58,31,90,0.06)]">
       <div className="grid lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="p-6 sm:p-8">
-          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Treatment</p>
+          <p className="text-[11px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Support</p>
           <h2 className="mt-2 text-[21px] font-black leading-tight text-[#111827]">Key Takeaways</h2>
           <ul className="mt-4 space-y-2.5">
             {keyTakeawayLabels.map((item) => (
@@ -685,7 +306,7 @@ function KeyTakeawaysBlock() {
 
 function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
   const source = String(text);
-  const citationPattern = /\[(\d+)\]/;
+  const citationPattern = /\[(\d+(?:\s*,\s*\d+)*)\]/;
   const linkedRuleKeysInText = new Set();
   const parts = [];
   let cursor = 0;
@@ -697,7 +318,7 @@ function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
     const candidates = [];
     const citationMatch = remaining.match(citationPattern);
 
-    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationId: citationMatch[1], type: "citation" });
+    if (citationMatch) candidates.push({ index: citationMatch.index, text: citationMatch[0], citationIds: citationMatch[1].split(/\s*,\s*/), type: "citation" });
 
     articleLinkRules.forEach((rule) => {
       const ruleKey = getArticleLinkRuleKey(rule);
@@ -718,14 +339,18 @@ function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
 
     if (next.type === "citation") {
       parts.push(
-        <button key={`${next.text}-${parts.length}`} type="button" onClick={() => onCitationClick(next.citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#7835A4] underline decoration-[#c9addb] underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]" aria-label={`Open resource ${next.citationId}`}>
-          {next.text}
-        </button>
+        <React.Fragment key={`${next.text}-${parts.length}`}>
+          {next.citationIds.map((citationId) => (
+            <button key={citationId} type="button" onClick={() => onCitationClick(citationId)} className="mx-0.5 cursor-pointer rounded px-0.5 align-baseline text-[12px] font-black text-[#7835A4] underline decoration-[#c9addb] underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]" aria-label={`Open resource ${citationId}`}>
+              [{citationId}]
+            </button>
+          ))}
+        </React.Fragment>
       );
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadcf3] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -776,7 +401,7 @@ function FlowSteps({ items }) {
 }
 
 function VisualBlock({ heading }) {
-  if (heading === "Stress & Burnout Treatment") {
+  if (heading === "Stress & Burnout Support" || heading === "Stress & Burnout Support in India") {
     return (
       <div className="mt-4 grid gap-5 rounded-xl border border-[#eadff1] bg-[#fbf8fd] p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)] lg:grid-cols-[1fr_270px] lg:items-center">
         <IconGrid items={stressFocusItems.slice(0, 3)} columns="sm:grid-cols-3" />
@@ -797,7 +422,7 @@ function VisualBlock({ heading }) {
   if (heading === "What Causes Stress & Burnout?") return <IconGrid items={causeItems} />;
   if (heading === "How Chronic Stress & Burnout Can Affect Your Health") return <IconGrid items={impactItems} columns="sm:grid-cols-2 lg:grid-cols-3" />;
 
-  if (heading === "The Neuro-Ayurveda Approach to Stress & Burnout Treatment") {
+  if (heading === "The Neuro-Ayurveda Approach to Stress & Burnout Support") {
     return (
       <div className="mt-4 space-y-4">
         <a href="/about/approach">
@@ -843,7 +468,7 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (heading === "About") {
+  if (heading === "About" || heading === "About Dr. Ankush Garg") {
     return (
       <div className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_10px_28px_rgba(58,31,90,0.05)]">
         <div className="flex flex-col gap-4 sm:flex-row">
@@ -893,8 +518,8 @@ function VisualBlock({ heading }) {
 }
 
 function buildFaqsFromLines(lines) {
-  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
-  const faqEndIndex = lines.indexOf("Book a Consultation");
+  const faqStartIndex = lines.findIndex((line) => line === "Frequently Asked Questions" || line === "FAQs");
+  const faqEndIndex = lines.findIndex((line, index) => index > faqStartIndex && line === "Book a Consultation");
   if (faqStartIndex < 0) return [];
 
   const faqLines = lines.slice(faqStartIndex + 1, faqEndIndex < 0 ? lines.length : faqEndIndex);
@@ -956,10 +581,10 @@ function isShortTitleLine(line, next) {
 
 function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
   const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
-  const introIndex = Math.max(0, allLines.indexOf("Stress & Burnout Treatment"));
+  const introIndex = Math.max(0, allLines.indexOf("Stress & Burnout Support in India"));
   const lines = allLines.slice(introIndex).filter((line) => !hiddenIntroLines.has(line));
-  const faqStartIndex = lines.indexOf("Frequently Asked Questions");
-  const faqEndIndex = lines.indexOf("Book a Consultation");
+  const faqStartIndex = lines.findIndex((line) => line === "Frequently Asked Questions" || line === "FAQs");
+  const faqEndIndex = lines.findIndex((line, index) => index > faqStartIndex && line === "Book a Consultation");
   const parsedFaqs = buildFaqsFromLines(lines);
   const ruleKeysByLine = new Map();
   const linkedRuleKeys = new Set();
@@ -989,7 +614,7 @@ function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
         const id = sectionIdByTitle[line];
         const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
 
-        if (line === "Frequently Asked Questions") {
+        if (line === "Frequently Asked Questions" || line === "FAQs") {
           return <FaqAccordion key={`faq-accordion-${index}`} faqs={parsedFaqs} openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={onCitationClick} ruleKeysByLine={ruleKeysByLine} />;
         }
 
@@ -1097,9 +722,9 @@ function StressBurnoutSupportPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Burnout Treatment in India | Chronic Stress, Burnout & Emotional Wellbeing | Manovaidya"
+        title="Stress & Burnout Support in India | Chronic Stress, Burnout & Emotional Wellbeing | Manovaidya"
         description="Stress and burnout support in India with chronic stress signs, workplace burnout, emotional exhaustion, structured assessment and Neuro-Ayurveda guidance."
-        keywords="Stress and Burnout Treatment, Stress and Burnout Treatment in India, Chronic Stress, Workplace Burnout, Emotional Exhaustion, Burnout Symptoms, Stress Management, Work-Life Balance, Burnout Recovery, Emotional Wellbeing, Mind-Body Balance"
+        keywords="Stress and Burnout Support, Stress and Burnout Support in India, Chronic Stress, Workplace Burnout, Emotional Exhaustion, Burnout Symptoms, Stress Management, Work-Life Balance, Burnout Recovery, Emotional Wellbeing, Mind-Body Balance"
         path="/stress-burnout-support-india"
         image={heroImage}
         schema={{
@@ -1121,10 +746,10 @@ function StressBurnoutSupportPage() {
                 <span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
-              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Treatment</p>
+              <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Stress & Burnout Support</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">{pageTitle}</h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-                Helping adults to understand chronic stress, work related burnout, emotional exhaustion and mental wellbeing.
+                Helping Adults Better Understand Chronic Stress, Workplace Burnout, Emotional Exhaustion & Mental Wellbeing
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Assessment</a>
@@ -1149,7 +774,7 @@ function StressBurnoutSupportPage() {
                 Neuro-Ayurveda Development System
               </div>
               <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
-                <img src={heroImage} alt="Stress and burnout treatment in India at Manovaidya" loading="eager" fetchPriority="high" decoding="async" sizes="(min-width: 1024px) 42vw, 100vw" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
+                <img src={heroImage} alt="Stress and burnout support in India at Manovaidya" loading="eager" fetchPriority="high" decoding="async" sizes="(min-width: 1024px) 42vw, 100vw" className="h-[248px] w-full object-cover object-center sm:h-[315px] lg:h-[355px]" />
               </div>
             </figure>
           </div>

@@ -23,6 +23,165 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.web
 import consultationImage from "../images/headache-consultation.webp"; 
 import doctorImage from "../images/doctorimg-2.jpeg";
 
+const seoTitle = "Stress & Headaches Treatment in India | Mind-Body Health | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-headaches/";
+
+const stressHeadachesFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress cause headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Stress is a very common cause of TTHs. It can cause a person to become more tense, affect sleep and alter their normal routine, which can all lead to headaches. Many things can cause a headache; if they occur regularly or are severe, they should continue to be medically evaluated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is a stress headache?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A stress headache typically is a tension-type headache that occurs or develops under emotional or physical stress. It is often associated with a vague pressure or dull ache, in the head, neck and shoulders, or around the head, which is sometimes continuous."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between a stress headache and a migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress headache is a mild to moderate tension type headache that typically affects both sides of the head. Migraine is a neurological disorder, which can include a severe headache, as well as nausea, sensitivity to light and sound and in some individuals an aura. It's possible to differentiate between them with the help of a healthcare professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common symptoms of stress-related headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common complaints are dull ache, pressure across the forehead, tightness on each side of the head, stiff neck, general tiredness and a lack of concentration. If the headache persists, is severe or different in a way, it should be medically assessed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can anxiety trigger headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can. When anxiety is high and emotional stress has been on going for several days, some people find that headaches happen more frequently. However, anxiety is just one factor, so it is very important that a further cause of the headache be assessed before attributing it to stress only."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can poor sleep contribute to headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Some individuals may get a headache if they sleep too short or if they have irregular sleep times or frequently interrupted sleep. A consistent bedtime schedule is beneficial to brain health and overall well-being."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can long hours of screen time cause headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extended screen usage can cause eye strain as well as poor posture and neck and shoulder muscle tension. Some people find that combination causes headaches. If screen-related strain is suspected, regular breaks, improving ergonomics and proper eye evaluation might help."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I seek immediate medical attention for a headache?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Get immediate medical attention for a sudden, severe headache or headache that is accompanied by weakness, confusion, speech problems, seizures, loss of consciousness, fever, or sudden changes in vision or a major head injury recently. The following signs are suspicious and need immediate medical attention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Can dehydration contribute to headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For some, not consuming sufficient fluids can trigger or aggravate headaches, especially in the summer, during exercise and work. Water is good for health and can help lower the risk of dehydration-induced headaches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Headache assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A detailed assessment of headache history, pain pattern, emotional health, stress, sleep, work schedule, screen time, fluid intake, diet and overall health. The use of the assessment enables identification of relevant patterns and use for personalised support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals experiencing stress-related headaches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manovaidya doesn't just focus on the most recent experience of suffering but also takes into account emotional wellness, day to day regimen, and the connection between the mind and body. Structured evaluation, individualized directions and the Neuro-Ayurveda Development System are utilized to improve the person's understanding of the wider pattern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is Manovaidya's five pillars of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. It is an integrated approach to emotional wellbeing, brain health and lifestyle, and personalised guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress help reduce headache episodes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For some, dealing with normal stress may also lessen their exposure to one of the key triggers of headaches. Prolonged, adequate, and good sleep, adequate fluid intake, balanced diet, physical activity and relaxation are helpful but not substitutions for correct diagnosis and treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Is every headache caused by stress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Headaches are caused by dehydration, infection, sinus problems, eye strain, high blood pressure, migraine, neurological disorders and a few other causes. Stress is just one of the many factors involved and recurring headaches should be evaluated based on their individual pattern and symptoms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Headache support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Stress & Headache Assessment with tailored guidance and Neuro-Ayurveda Development System are combined at Manovaidya. This method takes into account emotional wellness, brain health, and lifestyle as one entity, and remains mindful of the value of proper medical treatment."
+      }
+    }
+  ]
+};
+
+const stressHeadachesBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Headaches Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressHeadachesMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Headaches Treatment in India",
+  "description": "Looking for Stress & Headaches treatment in India? Learn about tension headaches, stress triggers, and holistic Neuro-Ayurveda relief at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressHeadachesSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressHeadachesMedicalWebPageSchema,
+    stressHeadachesFaqSchema,
+    stressHeadachesBreadcrumbSchema
+  ]
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Stress-Related Headaches", id: "what-are-stress-related-headaches" },
@@ -474,16 +633,11 @@ function StressHeadachesIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Headaches Treatment in India | Mind-Body Health | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Headaches treatment in India? Learn about tension headaches, stress triggers, and holistic Neuro-Ayurveda relief at Manovaidya."
         keywords="Stress & Headaches, Tension Headaches India, Stress Headaches Treatment, Headache Relief, Chronic Headaches, Emotional Wellbeing, Mind-Body Health, Headache Assessment, Neuro-Ayurveda Development System, Migraine vs Tension Headache"
         path="/stress-and-headaches"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Headaches Treatment in India",
-          "description": "Looking for Stress & Headaches treatment in India? Learn about tension headaches, stress triggers, and holistic Neuro-Ayurveda relief at Manovaidya."
-        }}
+        schema={stressHeadachesSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         

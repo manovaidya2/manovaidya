@@ -29,6 +29,172 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
+const speechDelaySeoTitle = "Speech Development Assessment & Communication Support in India | Manovaidya";
+const speechDelaySeoPageUrl = "https://manovaidya.org/speech-delay-support-india";
+const speechDelaySeoDescription =
+  "Speech Development Assessment & Communication Support in India through Manovaidya's Neuro-Ayurveda Development System.";
+
+const speechDelayFaqSchema = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is speech delay in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Speech Delay in Kids is when a kid learns to speak and understand words at a later stage than he or she should. Some children may find it hard to talk words, to put words together to form a sentence or to make their needs understood. Progress varies between children but if some children are behind in their communication skills, there may be a need for deeper understanding of their development. Speech is not just words, it's also knowing what words mean, saying what you mean, and being able to communicate with others. At Manovaidya, speech delay is understood using a wider developmental perspective, taking into account communication, learning, behaviour, attention and overall child development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "2. At what age should a child start talking?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The first meaningful words are used by children around the end of their 1st year of life; this varies but is considered to be the end of the 1st year of life. Children's vocabulary and communication skills continue to develop throughout toddlerhood and early childhood. For some children, language will emerge earlier or later than others. The focus of parents should be on communication development in general, not in comparison with other children. If you are concerned about your child's speech, language understanding or communication skills, you can have a structured developmental assessment to help you understand your child's communication profile and support needs."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "3. What are the early signs of speech delay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Speech delay can start to manifest as babbling is limited, the first words are delayed, it takes longer to put words together in simple phrases, they don't respond as well when you talk to them and struggle to say what they want. Some children may also struggle with understanding oral directions or engaging in developmentally appropriate communication. Individual children will progress at different rates and sometimes lag behind; this does not necessarily signify that there is a serious concern. If communication milestones are continually missed over time, however, a developmental assessment may be beneficial for the family to gain insight into communication strengths and challenges and into future communication support needs."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "4. How can I tell if my child has a speech delay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Signs that parents might notice include: limited vocabulary, speech milestones are delayed, has difficulty stating needs, does not participate in conversation, or has trouble understanding and using language. Children may have a good grasp of language but may have difficulties in expressing their views, or they may have difficulties understanding and expressing their ideas. A structured developmental assessment of communication, language understanding, social interaction and overall development is the best way to obtain clarity. Families are often able to make informed choices about support and guidance if they know the full developmental picture."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "5. What causes speech delay in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are many factors that can lead to speech delay and these may be different for each child. Development of communication is related to development of learning, attention, hearing, social interaction, developmental readiness and overall child development. Delay in speech development might be a stand-alone problem or be linked to other developmental issues. A developmental perspective is needed to understand the factors that impact on communication development. A systematic evaluation can guide families to gain insights into their child's communication profile and support systems."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "6. Is speech delay always a sign of autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Not all speech delay children are autistic. It is important to keep in mind that many children might have a speech delay, but not Autism Spectrum Disorder (ASD). Many factors can affect communication development such as developmental readiness, hearing ability, language exposure, and differences or variations in individuals themselves. Not all children with speech delay have autism, although some children with autism may have speech and communication delays. This is the reason that looking at speech alone is not enough and it is so important to consider the child's developmental profile. A developmental assessment that is structured can assist the families to become clearer in their understanding of their needs and communication patterns."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "7. Can a child have speech delay without autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. There is a possibility for a child to have speech delay without being autistic. A few children might have speech and language delays, and some children may have communication difficulties attributed to hearing impairment, developmental readiness or language development. All children's development is unique. When considering speech delay, it is important to understand the child's other communication skills, social interactions, learning styles and developmental progress. A developmental evaluation is a detailed assessment of a child's development to determine if speech delay is present or if there are other developmental issues."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "8. What is the difference between speech delay and language delay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Speech delay is related, but not synonymous, to language delay. Speech delay is when someone has difficulty producing sounds, words or spoken communication and language delay is when someone has difficulty understanding language, expressing thoughts or using language meaningfully. A child who has speech delay can be able to listen and comprehend very well, but might not be able to speak properly. Children with language delay may struggle to understand and express meaning of communication. It is crucial to realize the distinction because communication development goes beyond talking. An assessment that is structured can assist in determining the child's particular communication strengths and struggles."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "9. Can a child with speech delay catch up?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "When a child has a speech delay, many will continue to progress in their communication skills as they grow. Progress can be different from one child to another and influenced by a variety of factors, including developmental readiness, communication skills, and family support and individual guidance. Children may catch up within a short time or over the long term may need sustained developmental support. A child's developmental needs and overall communication profile often are more useful than age expectations. By understanding this well in advance and providing a structured support, families can help establish a clearer path for communication growth and participation."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "10. Will my child ever speak normally?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "One of the major concerns parents have when their child suffers speech delay is that of the toddler's behavior. The path of communication for each child is different and developmental progress is diverse across children. Speech, language and communication skills develop throughout childhood for many children. There are many developmental factors that affect the growth of communication, such as language understanding, learning readiness, social interaction, communication opportunities. Rather than concentrating on future projections, it is better to have an understanding of the child's current communication profile and discovery of practical steps that will help him or her grow and communicate effectively."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "11. How can parents help a child with speech delay at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Home support for communication development is important and parents contribute. Talk to the child, read books with the child, share activities and ask questions about what they are doing as they play. Sometimes it is beneficial to wait for children's feedback instead of giving them answers right away. Confidence and participation can be supported with positive encouragement, patience and consistent communication opportunities. Each child is unique and families should concentrate on providing a nurturing environment and not compare progress with other kids. A developmental understanding will aid in parents identifying strategies that will meet their child's communication needs."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "12. What activities help speech development?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There are many things around us that we do on a regular basis that can help develop our communication and language skills. The use of storybooks, singing, pretend play, naming, action descriptions and engaging in interactive conversations can support children's communication skills. Eye contact, turn-taking and social interaction can support communication development through activities that promote these. The aim is to make it more about communication and participation, not just more words. Activities must be modified to meet all child's individual strengths and needs; specific developmental profile, interests and communication level of each child."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "13. Does screen time affect speech development?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A lot of screen time can affect communication experiences, social interactions and language learning. Communication is a skill that young children may acquire from the actions, words and experiences they have in the real world, with their caregivers and family members. These opportunities are important to communication development and if they are taken away by screen time, the development of communication may be affected. But, too much screen time is not always the only cause of speech delay. Several developmental factors affect aspects of communication development. By keeping the routine balanced, including conversation, play, social interaction and age-appropriate learning experiences, healthy communication growth and overall development can be supported."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "14. How does Manovaidya assess speech and communication development?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Communication assessment is not limited to speech at Manovaidya, but encompasses the child as a whole. Assessment includes developmental history, communication milestones, receptive language skills, expressive language skills, social interaction skills, and parents' observations and learning readiness. Assessment is not just about isolated symptoms but is intimately linked to communication, behaviour, learning and development. The objective is to give families more clarity about their child's communication profile, developmental strengths and supports needed, and to establish a system of direction for the future."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "15. How does Manovaidya support children with speech and communication challenges?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Manovaidya has an organized Neuro-Ayurveda Development System which is based on the understanding of Communication development in relation to a wider developmental framework. Support can encompass developmental assessment, understanding of communication, support for parents, developmental planning, monitoring progress and family support services over the long term. The approach does not just look at what is said but takes a holistic view of communication, learning, social interaction, behaviour, emotional wellbeing and overall child development. Each child is provided with specific support in accordance with his/her developmental profile and communication needs. To support families to progress with improved confidence, clarity and programme of development. Sometimes, a general understanding of the child's communication profile and developmental needs is more beneficial. Structured support and understanding from early stages can help families to develop a clearer plan for communication development and participation."
+      }
+    }
+  ]
+};
+
+const speechDelaySeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: "Speech Development Assessment & Communication Support in India",
+      description: speechDelaySeoDescription,
+      url: speechDelaySeoPageUrl,
+      medicalAudience: "Parent",
+    },
+    {
+      "@type": "Person",
+      name: "Dr. Ankush Garg",
+      jobTitle: "Autism, ADHD, Child Development & Mental Health Specialist",
+      worksFor: {
+        "@type": "MedicalOrganization",
+        name: "Manovaidya",
+      },
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Speech Development Assessment & Communication Support",
+          item: speechDelaySeoPageUrl,
+        },
+      ],
+    },
+    speechDelayFaqSchema,
+  ],
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "What is Speech Delay?", id: "what-is-speech-delay" },
@@ -1420,48 +1586,6 @@ function SpeechDelaySupportIndiaPage() {
       document.head.appendChild(link);
     }
 
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalWebPage",
-          name: "Speech Development Assessment & Communication Support in India",
-          description:
-            "Speech development assessment, communication guidance and child development support through the Neuro-Ayurveda Development System.",
-          url: `${window.location.origin}/speech-delay-support-india`,
-          medicalAudience: "Parent",
-        },
-        {
-          "@type": "Person",
-          name: "Dr. Ankush Garg",
-          jobTitle: "Autism, ADHD, Child Development & Mental Health Specialist",
-          worksFor: {
-            "@type": "MedicalOrganization",
-            name: "Manovaidya",
-          },
-        },
-        {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
-            { "@type": "ListItem", position: 2, name: "Child Health Care", item: `${window.location.origin}/child-health-care` },
-            { "@type": "ListItem", position: 3, name: "Speech Development Assessment & Communication Support in India", item: `${window.location.origin}/speech-delay-support-india` },
-          ],
-        },
-        {
-          "@type": "FAQPage",
-          mainEntity: faqs.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: faq.answer,
-            },
-          })),
-        },
-      ],
-    };
-
     const scriptId = "speech-delay-support-schema";
     let schemaScript = document.getElementById(scriptId);
     if (!schemaScript) {
@@ -1470,7 +1594,7 @@ function SpeechDelaySupportIndiaPage() {
       schemaScript.type = "application/ld+json";
       document.head.appendChild(schemaScript);
     }
-    schemaScript.textContent = JSON.stringify(schema);
+    schemaScript.textContent = JSON.stringify(speechDelaySeoSchema);
   }, []);
 
   React.useEffect(() => {
@@ -1505,16 +1629,11 @@ function SpeechDelaySupportIndiaPage() {
     >
       <FloatingShareBar />
       <Seo
-        title="Speech Development Assessment & Communication Support in India | Manovaidya"
-        description="Speech Development Assessment & Communication Support in India through Manovaidya's Neuro-Ayurveda Development System."
+        title={speechDelaySeoTitle}
+        description={speechDelaySeoDescription}
         keywords="Speech Delay Treatment in India, Communication Development Support, Child Speech Assessment, Language Delay in Children, Early Signs of Speech Delay, Speech Delay vs Language Delay, Social Communication Challenges, Non-verbal Communication in Children, Neuro-Ayurveda Development System, Speech Development Guidance India, Parent Guidance for Speech Delay, Autism and Speech Delay, Dr. Ankush Garg, Child Development Clinic Delhi NCR, Communication Confidence in Children"
         path="/speech-delay-support-india"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Speech Development Assessment & Communication Support in India",
-          "description": "Speech Development Assessment & Communication Support in India through Manovaidya's Neuro-Ayurveda Development System."
-        }}
+        schema={speechDelaySeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

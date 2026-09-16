@@ -23,6 +23,165 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.web
 import consultationImage from "../images/migraine-consultation.webp"; 
 import doctorImage from "../images/doctorimg-2.jpeg";
 
+const seoTitle = "Stress & Migraine Treatment in India | Mind-Body Health | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-migraine/";
+
+const stressMigraineFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress trigger migraine attacks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One of the many triggers reported by migraine sufferers is stress. Attack can happen more frequently and/or be more severe during a rough time. Stress isn't the only cause, most individuals have multiple causes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is the difference between a migraine and a headache?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Migraine is not just a really bad headache; it's a neurological disorder. It can leave a person with moderate or severe headaches, sensitivity to light and sound and for some, an aura. Many other types of headaches can occur for various reasons, and may not have these characteristics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What are the common symptoms of migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The common symptoms experienced are throbbing or pulsating pain, on one side or both sides of the head, nausea, vomiting, sensitivity to light, sound or smells and difficulty concentrating. Some people feel the aura just prior to the onset of the headache."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common triggers for migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The trigger is unique to each and every individual. Commonly mentioned are stress, lack of sleep, missing meals, dehydration, hormonal changes, bright light, loud noise, strong smells, changing weather and physical exhaustion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can anxiety make migraine worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can. For some people, anxiety can make the pain and sensitivity more difficult to tolerate, or make an attack more likely. It's better to find out what works for you than to take the guesswork out of it and think it'll work for others."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can poor sleep trigger migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For some, a lack of sleep or irregular sleep patterns, and a sudden change in sleep hours, can trigger migraine. Maintaining a consistent sleep schedule is good for brain health and well-being."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. What is a migraine aura?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Temporary changes that may occur before or during the migraine are called aura. The person may experience flashing lights or blind spots, tingle or experience temporary difficulty with speaking. Aura may be a feature of other illnesses and should be discussed with a health care provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I seek immediate medical attention for a headache?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Promptly visit an emergency room if a headache is suddenly extremely severe, or if it is accompanied by weakness, confusion, speech difficulty, seizures, loss of consciousness, fever, or sudden vision loss or a recent serious head injury. These warning signs need urgent medical evaluation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Can lifestyle habits influence migraine",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They can. Wellbeing can be supported by regular sleep, adequate fluid intake, a balanced diet, exercise, and stress management and awareness of personal triggers. These are steps to take in conjunction with proper medical treatment and are not meant to replace it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Migraine assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A systematic analysis of the person's own migraine past, emotional status, stress, sleep habits, food patterns, lifestyle and overall health. It is designed to detect relevant patterns and to offer personalised support via them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals experiencing migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Manovaidya, we look at the relationship between emotional wellbeing, lifestyle and digestive health instead of focusing only on the digestive symptom. Through structured assessments, personalised guidance and the Neuro-Ayurveda Development System, we help individuals understand their overall mind-body wellbeing more clearly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the Manovaidya's 5 pillars of Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance. The framework integrates emotional wellbeing, brain health and lifestyle into one assessment and tailored guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress help people living with migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One possible trigger can be eliminated for some if they manage to lessen the amount of stress they experience on a daily basis. Proper diagnosis and treatment are essential and regular sleep, exercise, relaxation and emotional support is helpful, but it is not a substitute for proper diagnosis and treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Is every headache a migraine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Head pain is caused by no. Tension-type headache, dehydration, infection, sinus problems and several other conditions. Migraine can manifest with its own set of neurological symptoms and should be diagnosed by a trained healthcare provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Migraine support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manovaidya offers a formatted Stress & Migraine Assessment, personalised advice and the Neuro-Ayurveda Development System. The view is holistic, taking into account a person's emotional well-being in conjunction with their brain health and lifestyle, and that they must be receiving appropriate medical care."
+      }
+    }
+  ]
+};
+
+const stressMigraineBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Migraine Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressMigraineMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Migraine Treatment in India",
+  "description": "Looking for Stress & Migraine treatment in India? Discover how stress triggers migraines, aura symptoms, and explore Neuro-Ayurveda relief at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressMigraineSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressMigraineMedicalWebPageSchema,
+    stressMigraineFaqSchema,
+    stressMigraineBreadcrumbSchema
+  ]
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "What is Migraine?", id: "what-is-migraine" },
@@ -475,16 +634,11 @@ function StressMigraineIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Migraine Treatment in India | Mind-Body Health | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Migraine treatment in India? Discover how stress triggers migraines, aura symptoms, and explore Neuro-Ayurveda relief at Manovaidya."
         keywords="Stress & Migraine, Migraine Treatment India, Stress Triggered Migraine, Migraine with Aura, Chronic Migraine Support, Emotional Wellbeing, Mind-Body Health, Migraine Assessment, Neuro-Ayurveda Development System, Headaches and Stress, Migraine Relief"
         path="/stress-and-migraine"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Migraine Treatment in India",
-          "description": "Looking for Stress & Migraine treatment in India? Discover how stress triggers migraines, aura symptoms, and explore Neuro-Ayurveda relief at Manovaidya."
-        }}
+        schema={stressMigraineSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         

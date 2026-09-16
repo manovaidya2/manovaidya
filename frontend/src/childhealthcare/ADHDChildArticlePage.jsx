@@ -1278,6 +1278,68 @@ const adhdFaqSchemaItems = [
     answer: "ADHD assessment at Manovaidya will provide insight on your child's unique needs, strengths, and challenges. We explore attention, learning, behaviour, emotions, school issues and parent inputs. With this information, we design a tailor-made path for your child's development to build their confidence, grow their self-assurance and enhance their overall development using the Neuro-Ayurveda Development System.",
   },
 ];
+const adhdSeoFaqSchemaItems = [
+  {
+    question: "1. What is ADHD?",
+    answer: "Attention Deficit Hyperactivity Disorder (ADHD) is a condition of neurodevelopment that has the potential to impact attention, focus, behaviour, emotional control and functioning. For children with ADHD, paying attention to tasks, listening to instructions, controlling impulses, and organizing daily activities can be challenging. Not all children with ADHD have the same symptoms, and symptoms may be different for each child. Children often have only attention problems, or they might be hyperactive, impulsive, or both. ADHD is viewed at Manovaidya in a broader developmental context beyond just paying attention to the symptoms. Attention, learning, behaviour, emotional wellbeing, and overall children's development are seen as a whole.",
+  },
+  {
+    question: "2. What are the first signs of ADHD?",
+    answer: "Some of the initial symptoms of ADHD can include a lack of attention, distractibility, forgetfulness, excessive activity, impulsive behavior and difficulty following through with instructions. Parents can see their child having difficulty getting tasks done, often misplacing items, talking over others, or having trouble taking turns. These signs may start to become more apparent when children enter school and are required to sit, concentrate and follow routines. High energy or inattention occasionally seen in childhood can be normal, but if these behaviors interfere with learning, behavior or day-to-day functioning, it may be helpful to get a structured developmental assessment.",
+  },
+  {
+    question: "3. What are the six symptoms of ADHD?",
+    answer: "Although ADHD can manifest in a variety of ways in each child, six of the most prevalent symptoms are inattention, distractibility, forgetfulness, impulsiveness, hyperactivity and poor compliance with instructions. Some kids may find it hard to finish assignments, organize and/or regulate their feelings. Others might be restive, interrupt or do things as if they were planning to without giving it much thought. During the severity of symptoms and their combination, it depends on the age of child, his/her developmental profile and needs. When children show these signs as part of their total development, families have a better understanding of their children's strengths and struggles.",
+  },
+  {
+    question: "4. At what age can ADHD symptoms become noticeable?",
+    answer: "The symptoms of ADHD may be evident in the preschool years, but may be more noticeable when children start attending a structured learning setting like school. Children need to be seated for longer durations, listen and obey, and perform tasks and routines with increasing independence at this stage. Parents and teachers may start to see problems with concentration, impulsivity, hyperactivity or emotional control. Each child is unique and occasional difficulties don't necessarily mean ADHD. A systematic evaluation can assist families to more fully understand if they are seeing behaviours that are normal or if extra support is needed.",
+  },
+  {
+    question: "5. What causes someone to develop ADHD?",
+    answer: "ADHD is known to be a neuro developmental disorder and recent studies indicate that several factors could be responsible for its occurrence. This can be due to genetic factors, brain development differences and environmental factors affecting development. Poor parenting, a lack of discipline, and low intelligence have nothing to do with ADHD. This impacts the function of the brain in managing attention, behaviour and executive functioning skills. Development is influenced by different factors in different children, as each child is different. It is important for families to be aware of these factors so they can turn away from the blame game and instead offer their child supportive and helpful input for their growth and development.",
+  },
+  {
+    question: "6. Can ADHD improve with age?",
+    answer: "As children grow older, they are still learning attention, emotional regulation, organizational and self-management skills and these skills may be affected by ADHD. Although ADHD is a chronic neurodevelopmental disorder, there is developmental progress that may occur during childhood, adolescence and adulthood. Results are different for each child and young person depending on the family, learning opportunities, routines and individual guidance. Instead of just diagnosis, it is better to use the time to build strengths, confidence, independence and life skills in children. Over time, the support and understanding of developmental issues can guide children better through the difficulties.",
+  },
+  {
+    question: "7. Is ADHD linked to high IQ?",
+    answer: "ADHD and intelligence are two different things. Like any child, a child with ADHD may have average, above-average or below-average intellectual functioning. Numerous kids with ADHD are energetic, imaginative, curious and can think outside the box. At times, however, attention difficulties, impulsivity or organizational difficulties may impact academic performance so others may not appreciate their strengths. ADHD is not an indicator of intelligence. Knowing a child's learning profile, strengths and developmental needs can enable families to help their child grow and learn in a better environment.",
+  },
+  {
+    question: "8. Does screen time cause ADHD?",
+    answer: "There is no established research to claim direct effects of screen time on ADHD. But heavy screen time can have an impact on attention span, sleep patterns, emotional control and daily activities, sometimes making attention issues more prominent. For children already having challenges with attention, self-control, or impulsivity, excessive or unstructured screen use can exacerbate these challenges. Supporting overall development and wellbeing through healthy screen habits, balanced routines, outdoor play, social interaction and adequate sleep. It is important for parents to consider screen time in the context of other factors, not as the only reason for attention issues.",
+  },
+  {
+    question: "9. How can I help my ADHD naturally?",
+    answer: "The following are strategies that parents can use to help children with ADHD: Establish a daily routine, encourage physical activity, ensure a healthy sleep pattern, and provide a soothing and nurturing setting. Daily functioning may also be enhanced by breaking tasks into smaller steps, visual schedules and providing positive reinforcement. Routine can be more powerful than discipline. All children develop in their own ways and so the support required should be tailored to their particular strengths and needs. Parent guidance at Manovaidya is a structured and personalized approach that aims to enhance families' understanding of attention, behaviour, learning and developmental needs.",
+  },
+  {
+    question: "10. How can I treat ADHD at home?",
+    answer: "Parents' support is an important part of helping children with ADHD to cope better in everyday life. Parents can concentrate on establishing routines, setting clear expectations, minimizing unnecessary distractions and promoting healthy lifestyle habits. Children feel more confident and supported through positive communication, patience and structured guidance. Movement, organization, attention and emotional regulation activities might also be supportive. Home based strategies may be helpful, but each child is an individual with developmental needs. A structured evaluation can be helpful for families to learn about what might work best for their child.",
+  },
+  {
+    question: "11. What habits help ADHD?",
+    answer: "Good habits are an important part in working with children with ADHD. Regular sleep patterns, physical exercise, structured activity and learning environments may help with focus and functioning. It can also be useful to break tasks down into smaller steps, put up visual reminders and engage in positive communication. Children benefit from well established routines as this minimises confusion and increases the chances of success. The emphasis must be on progress, not perfection. Habits should be tailored to each child's strengths and needs and to the family situation.",
+  },
+  {
+    question: "12. What are the 7 triggers that make ADHD worse?",
+    answer: "Children with ADHD can have more problems with attention, behaviour or emotional regulation due to several factors. Common causes include poor sleep habits, a lot of screen time, distracting surroundings, irregular schedules, emotional stress, insufficient activity, excessive workload, etc. These factors are not responsible for developing ADHD, but may be responsible for exacerbating symptoms and making them more noticeable. Knowing the specific triggers can assist parents in setting up a more supportive environment for their child. As each child is unique, personal patterns and challenges may be an important aspect of long-term developmental support and planning.",
+  },
+  {
+    question: "13. How to focus with ADHD without medication?",
+    answer: "Good focus requires strategies that help focus attention, not just a good will. Structured routines, dividing tasks into smaller steps, minimizing distractions and providing visual reminders or schedules can be helpful for children and adults with ADHD. Good sleep habits, organized environment and regular physical activity can also be supportive of attention and productivity. Remember that attention problems are not a measure of laziness or stupidity. A developmental approach may be used to determine practical strategies which are appropriate for the individual's learning style and attention needs.",
+  },
+  {
+    question: "14. Can children with ADHD attend regular schools?",
+    answer: "Yes. The majority of children with ADHD are successfully attending regular schools and are continuing to make good academic and social progress. The right educational setting will depend on the child's attention profile, learning needs, emotional regulation skills and support needed. Classroom modifications, extra academic instruction or structured instructional methods can be helpful for some children. Others may thrive in a conventional school environment. Each child is different and school decisions must be made on their strengths and developmental needs and not just their diagnosis. A developmental evaluation can assist parents in making decisions about their child's education.",
+  },
+  {
+    question: "15. How does Manovaidya assess and support children with ADHD?",
+    answer: "The objective of the assessment in ADHD at Manovaidya is not to assess a single symptom but to understand the child as a whole person. Assessment might involve developmental history, attention abilities, learning patterns, behaviour observations, emotional regulation, school related concerns and parent inputs. As a result of this, families are guided and given a developmental pathway. Support is based on developing attention, learning readiness, behaviour guidance, emotional wellbeing and parent support in the context of Neuro-Ayurveda Development System. It is designed to offer a clearer understanding, purposeful guidance and life-long developmental assistance that reflects the child's unique needs.",
+  },
+];
 const adhdPageSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -1304,15 +1366,13 @@ const adhdPageSchema = {
       "@type": "BreadcrumbList",
       "@id": `${adhdPageUrl}#breadcrumb`,
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://manovaidya.org" },
-        { "@type": "ListItem", position: 2, name: "Child Health Care", item: "https://manovaidya.org/child-health-care" },
-        { "@type": "ListItem", position: 3, name: "ADHD Treatment in India", item: adhdPageUrl },
+        { "@type": "ListItem", position: 1, name: "ADHD Treatment", item: adhdPageUrl },
       ],
     },
     {
       "@type": "FAQPage",
       "@id": `${adhdPageUrl}#faq`,
-      mainEntity: adhdFaqSchemaItems.map((faq) => ({
+      mainEntity: adhdSeoFaqSchemaItems.map((faq) => ({
         "@type": "Question",
         name: faq.question,
         acceptedAnswer: {

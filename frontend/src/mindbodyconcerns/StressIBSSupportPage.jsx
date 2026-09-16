@@ -28,6 +28,125 @@ import consultationImage from "../images/ibs-consultation.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import Seo from "../components/Seo";
 
+const seoTitle = "Stress & IBS Treatment in India | Gut-Brain Connection | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-ibs-support-india/";
+
+const stressIbsFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress cause IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress is not always a cause for IBS, but emotional stress can affect symptoms of IBS. IBS is a complex syndrome resulting from changes in the functioning of the gut, stress and other factors of health and lifestyle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. How are stress and IBS related?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For those with IBS, stress and the digestive symptoms are linked by the gut-brain axis, a constant two-way communication between brain and digestive system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. Does IBS mean I have a psychological problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, when it comes to IBS, it doesn't indicate that the individual has a mental health issue. But the gut-brain axis is so tight, that emotional health has a profound effect on digestive health."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common symptoms of IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The common symptoms are abdominal discomfort, bloating, change in bowel movements (diarrhea, constipation or both), and a feeling of incomplete bowel movements. A proper diagnosis is only possible after an evaluation by a medical professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can anxiety make IBS worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, higher levels of emotional stress and anxiety can go hand-in-hand with more digestive symptoms. But the randomness of symptoms can lead to increased anxiety as well, which perpetuates a cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. What is the gut-brain axis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The gut-brain axis is a system that allows for communication between the gut and the brain, either via nerves or via hormones or through the immune system. It controls stress response, gut sensitivity and movements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. When should I seek medical help for IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medical assistance should be sought if symptoms persist for weeks, interfere with one's daily activities, worsen steadily and steadily, or if warning symptoms are noted such as blood in stools, or trouble in swallowing and unexplained weight loss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. How does Manovaidya support individuals with IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Manovaidya we are not just concerned with the digestive symptoms, but with the whole relationship of emotional wellbeing, gut health and lifestyle, through the Neuro-Ayurveda Development System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Neuro-Ayurveda Development System is a five pillar system. It takes a holistic approach to a healthy brain, gut, behaviour and lifestyle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. Does improving emotional wellbeing help manage IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Emotional wellbeing plays an important role in helping patients feel more in control and have the capacity to cope when dealing with ongoing IBS issues alongside their medical management and lifestyle changes."
+      }
+    }
+  ]
+};
+
+const stressIbsBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & IBS Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressIbsMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & IBS Treatment in India",
+  "description": "Looking for Stress & IBS treatment in India? Learn about the gut-brain connection, IBS symptoms, triggers and personalised stress management at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressIbsSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressIbsMedicalWebPageSchema,
+    stressIbsFaqSchema,
+    stressIbsBreadcrumbSchema
+  ]
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding Irritable Bowel Syndrome (IBS)\nStress & IBS Connection\nUnderstanding the Gut-Brain Axis\nCommon Symptoms & IBS Patterns\nStress-Related Digestive Changes\nEmotional Wellbeing & Digestive Health\nWarning Signs That Need Medical Evaluation\nLifestyle & Nutritional Support for IBS\nStress Management & Healthy Daily Habits\nNeuro-Ayurveda Gut-Brain Approach\nManovaidya Stress & IBS Assessment Process\nPersonalized Mind-Body Wellbeing Support\nFAQs About Stress & IBS\n\nDigestive Wellbeing\nStress & IBS Treatment in India\nThe Connection Between Stress, Irritable Bowel Syndrome (IBS) and the Gut-Brain Connection\nUnderstanding Stress & IBS\nIrritable Bowel Syndrome (IBS) is a digestive disorder which causes problems with one's digestive system. Symptoms of IBS can include bloating, a change in bowel movements and cramps or pain in the abdomen that can occur in any frequency or length. [1][2]\nThe gut and the brain are continuously communicating and this is referred to as the gut-brain axis. There is a close link between the gut and the brain making it possible that emotional stress can also aggravate IBS symptoms, and that as digestive symptoms continue, quality of life can deteriorate. [3][6]\nHowever, not everyone with IBS has a psychological illness and not everyone who is stressed becomes an IBS sufferer. IBS is a complicated syndrome that may vary in presentation and severity, and is caused by alterations in gut function, stress and other health and lifestyle related issues. [1][2][3]\n\nUnlike most digestive health products, at Manovaidya we take the time to recognize the full picture behind emotional wellbeing, gut health and lifestyle, not just digestive symptoms. We are using the Neuro-Ayurveda Development System led by Dr. Ankush Garg (Mental Health Specialist & Founder of Manovaidya). This is a five pillar structured approach to the brain, gut and health related behaviour/lifestyle and supports mind-body wellbeing.\n\nWhat is Irritable Bowel Syndrome (IBS)?\nIBS is a disorder of the gastrointestinal system that alters the function of the digestive system. Individuals with IBS may not have any damage to the digestive system but have a lot of digestive symptoms. [1][2]\n\nKey Facts about IBS:\nIt is a chronic disorder which affects people in various ways [2]\nAlthough some people can have tolerable symptoms, others have symptoms that interfere with their daily life [1][2]\nThe diagnosis is made following the evaluation of symptoms by a medical practitioner [1][3]\nIt is related to alterations of gut function and stress [1][3]\nIt does not mean someone has a psychological problem\n\nHow Are Stress and IBS Related?\nThe gut-brain axis is a pathway that shows the constant communication that takes place between the brain and the digestive system, and is linked to stress and digestive symptoms in some individuals with IBS. [3][6]\nIn stressful situations, people pay attention to:\nIncreased digestive symptoms\nIncreased emotional stress\nDiminished overall wellbeing\nEmotional frustration from unpredictability\nChanges in gut sensitivity\nIncreased emotional stress some people with IBS experience often corresponds with increased digestive symptoms. The erratic nature of some people's symptoms can lead to increased stress levels and emotional frustration, which can lead to a vicious cycle of overall poor wellbeing. [3]\n\nThe Gut-Brain Connection and IBS\nThe gut-brain axis is a two-way system that involves the brain and the gut, which are connected by the nervous system, hormones, and the immune system. [3][6]\nThis communication system is responsible for the regulation of many functions of the digestive system, such as: Gut motility, Sensitivity of the digestive system, Appetite, Stress and emotional responses. [3]\n\nAdvancements in gut-brain research have given us the opportunity to gain a deeper understanding of the importance of emotional wellness as a valid and essential piece of digestive health. Stress can often exacerbate IBS symptoms, as this communication can be constant for patients with IBS. [3]\nCommon Symptoms of IBS\nIBS symptoms are subjective and can be reported in numerous ways. Some of the more common symptoms that are reported are: [1][2]\nAbdominal cramps and pain\nGirth, bloating.\nIncreased flatulence\nAltered bowel habits (diarrhea/constipation)\nIncomplete bowel movements\nPostprandial symptoms\nOther gastrointestinal diseases may give similar symptoms to IBS. A medical practitioner's evaluation and assessment of symptoms is vital to an accurate diagnosis. [1][3]\n\n\nWho Experiences IBS Symptoms with Increased Stress?\nIBS Symptoms often worsen for some people during increased workplace or family stress, during/after major life changes, due to anxiety and emotional distress, and from other busy lifestyles and activities. [3]\n\n\nWhy Emotional Wellbeing Matters in IBS\nIBS affects numerous aspects of a person's life. It can cause:\nAnxiety when traveling\nWorry about IBS flare-ups when eating in public\nLess self-assured on social interaction skills\nUnpredictable symptoms causing emotional frustration.\nLack of sleep or waking up feeling restless, cranky or disheveled.\nLow self-esteem\nDeclining social involvement\n\n\nCommon Signs To Get Checked\nMost of the time, IBS is a chronic digestive disease, but be checked for the following to rule out other conditions: [1][3]\nBlood in the stool\nNon-stop vomiting\nIntense abdominal pain\nSudden and unnoticed loss of weight\nDifficulty swallowing\nA fever that persists for more than 20 days.\nWorsening symptoms\nSymptoms disturbing sleep\nDo not assume that these symptoms are from IBS. [1][3]\n\n\nOur Stress & IBS Assessment Process\nOur assessment process should help to raise awareness on the factors that impact on wellbeing and enable further medical evaluations and tailored recommendations.\n\n1. Investigating Your Health History\nFirst, we hear your health story in each session. Questions include: What are your health concerns, have you been diagnosed with IBS, do symptoms occur in certain patterns, what is your emotional health, how is your stress level, how much sleep do you get and how is it?\n2. Mind-Body Assessment\nThe formal assessment is on multiple areas of life impacted by IBS such as emotional stress, lifestyle habits, sleep quality, digestive health, nutrition and work-life balance.\n3. Appraisal of Your Wellbeing\nWe offer an informal report on our observations about your emotional wellbeing, lifestyle factors and gaps. Next, we provide custom recommendations for assistance in making decisions.\n\nThe Neuro-Ayurveda Development System\nWe have a thorough understanding of Irritable Bowel Syndrome (IBS) at Manovaidya based on the five pillar Neuro-Ayurveda Development System which integrates brain and gut health, behavior, lifestyle and emotional health.\n\n\n1. Brain Nourishment System\nA healthy brain and functioning help to control emotions, make you more resilient to stress, improve your mental clarity, sleep better, and make better decisions.\n\n\n2. Gut Response System\nThere are a lot of factors involved in healthy digestion. This pillar emphasizes the interplay between the gut and brain, digestive health, healthy eating, eating patterns and lifestyle. [3][4]\n\n\n3. Neural Network System\nThe brain is constantly developing and evolving due to experiences and learning. This pillar is about healthy thinking patterns, emotional and behavioral stress and cognitive flexibility.\n\n\n4. Sensory Integration System\nStress and experiences in the environment may impact emotional health and digestive comfort. This pillar involves the environment, recovery, relaxation and lifestyle balance.\n\n\n5. Behaviour Guidance System\nGood health is built on good habits. This pillar is centered on healthy habits, behavioral stress, lifelong habits, and daily habits. [4][5]\n\nHow We Support Individuals with Stress & IBS\nWe know that each person with IBS experiences it differently. Through looking at the emotional aspect of the person, we provide a personalised service that focuses on particular digestive and life issues.\nMind-Body Health Assessments\nEmotional Health Support\nLifestyle & Nutritional Education\nStress Management\nGut-Brain Wellness Education\nMind-Body Balance Support\nRoutine Planning\nMonitoring and Follow-Up\n\n\nManaging IBS Symptoms\nWhile symptoms of IBS are unpredictable, there are healthy lifestyle habits that can be used to effectively manage IBS: [3][4][5]\nRegular meal schedules and daily activity\nDaily intake of water and consistent sleep\nFollowing health care provider's instructions and keeping a symptoms journal\nChanges to lifestyle need to be tailored to the individual and discussed with your health care provider. [3][4]\n\nWhy People Trust Manovaidya\n\n\nDelhi, Noida, Gurgaon, Faridabad, Ghaziabad and even the entire of India rely upon Manovaidya due to our holistic approach towards emotional and digestive system.\n Detailed Assessments of IBS & Mind-Body\n Understanding of the Gut-Brain Axis\n Neuro-Ayurveda Development System\n Techniques for Managing Lifestyle & Stress\n Support for Holistic Emotional Wellbeing\n Consultations Available Online & In-Clinic\n Personalized Long-Term Wellness Plan\n\nAbout\nDr. Ankush Garg\nMental Health Specialist & Founder of Manovaidya\nDr. Ankush Garg is the Founder of Manovaidya and the creator of the Neuro-Ayurveda Development System. He focuses on emotional and lifestyle health and the gut-brain axis for people with IBS and related stress health concerns.\nHe conducts structured assessments of the brain and gut for healthier long-term wellbeing and offers personalized support and follow-up to support mind-body balance.\nBased in the Delhi NCR, he offers consultations on Mind-Body Health across India through in-clinic and online sessions.\n\nFrequently Asked Questions (FAQs)\n\n1. Can stress cause IBS?\nStress is not always a cause for IBS, but emotional stress can affect symptoms of IBS. IBS is a complex syndrome resulting from changes in the functioning of the gut, stress and other factors of health and lifestyle. [1][2][3]\n\n2. How are stress and IBS related?\nFor those with IBS, stress and the digestive symptoms are linked by the gut-brain axis, a constant two-way communication between brain and digestive system. [3][6]\n\n3. Does IBS mean I have a psychological problem?\nNo, when it comes to IBS, it doesn't indicate that the individual has a mental health issue. But the gut-brain axis is so tight, that emotional health has a profound effect on digestive health. [2][3]\n\n4. What are the common symptoms of IBS?\nThe common symptoms are abdominal discomfort, bloating, change in bowel movements (diarrhea, constipation or both), and a feeling of incomplete bowel movements. A proper diagnosis is only possible after an evaluation by a medical professional. [1][2][3]\n\n5. Can anxiety make IBS worse?\nYes, higher levels of emotional stress and anxiety can go hand-in-hand with more digestive symptoms. But the randomness of symptoms can lead to increased anxiety as well, which perpetuates a cycle. [3]\n\n 6. What is the gut-brain axis?\nThe gut-brain axis is a system that allows for communication between the gut and the brain, either via nerves or via hormones or through the immune system. It controls stress response, gut sensitivity and movements. [3][6]\n\n7. When should I seek medical help for IBS?\nMedical assistance should be sought if symptoms persist for weeks, interfere with one's daily activities, worsen steadily and steadily, or if warning symptoms are noted such as blood in stools, or trouble in swallowing and unexplained weight loss. [1][3]\n\n8. How does Manovaidya support individuals with IBS?\nAt Manovaidya we are not just concerned with the digestive symptoms, but with the whole relationship of emotional wellbeing, gut health and lifestyle, through the Neuro-Ayurveda Development System.\n\n9. What is the Neuro-Ayurveda Development System?\nThe Neuro-Ayurveda Development System is a five pillar system. It takes a holistic approach to a healthy brain, gut, behaviour and lifestyle.\n\n10. Does improving emotional wellbeing help manage IBS?\nYes. Emotional wellbeing plays an important role in helping patients feel more in control and have the capacity to cope when dealing with ongoing IBS issues alongside their medical management and lifestyle changes. [3][4]\n\n\nDevelop a Greater Understanding of IBS?\nFor people with IBS or stress-related digestive issues, an evaluation of emotional health and gut health may offer greater management of overall wellness through simultaneous gut and mind support.\nReserve Assessment\nConnect with our Staff\n\nReferences\nNational Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) – Symptoms & Causes of Irritable Bowel Syndrome\n https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/symptoms-causes\nNational Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) – Definition & Facts for Irritable Bowel Syndrome\n https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/definition-facts\nNICE – Irritable Bowel Syndrome in Adults: Diagnosis and Management\n https://www.nice.org.uk/guidance/cg61/chapter/recommendations\nNICE – Managing Irritable Bowel Syndrome: Lifestyle, Physical Activity and Diet\n https://www.nice.org.uk/guidance/cg61/ifp/chapter/Managing-irritable-bowel-syndrome\nNICE – Dietary Management for Irritable Bowel Syndrome in Adults\n https://www.nice.org.uk/guidance/QS114/chapter/Quality-statement-3-Dietary-management\nNaik TD, Tubaki BR, Patankar DS – Efficacy of Whole System Ayurveda Protocol in Irritable Bowel Syndrome: A Randomized Controlled Clinical Trial\n https://pubmed.ncbi.nlm.nih.gov/36371363/\nWorld Health Organization (WHO) – WHO Benchmarks for the Practice of Ayurveda\n https://www.who.int/publications/i/item/9789240042674\nWorld Health Organization (WHO) – Traditional, Complementary and Integrative Medicine\n https://www.who.int/health-topics/traditional-complementary-and-integrative-medicine\nWorld Health Organization (WHO) – Integration of Traditional, Complementary and Integrative Medicine into Health Systems\n https://www.who.int/publications/i/item/9789240110397\nWorld Health Organization (WHO) – Evidence and Research in Traditional, Complementary and Integrative Medicine\n https://www.who.int/teams/who-global-traditional-medicine-centre/research-and-evidence/evidence-gap-map\n\n\n\n";
 
 const pageLinks = [
@@ -459,16 +578,11 @@ function StressIBSSupportPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & IBS Treatment in India | Gut-Brain Connection | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & IBS treatment in India? Learn about the gut-brain connection, IBS symptoms, triggers and personalised stress management at Manovaidya."
         keywords="Stress & IBS, IBS Treatment India, Gut-Brain Axis, Irritable Bowel Syndrome, Gut-Brain Connection, Stress and Digestive Health, IBS Symptoms, Stress Management for IBS, Mind-Body Health, Digestive Wellbeing, Neuro-Ayurveda Development System, IBS Assessment, Chronic Stress and IBS, Emotional Wellbeing and Gut Health"
         path="/stress-ibs-support-india"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & IBS Treatment in India",
-          "description": "Looking for Stress & IBS treatment in India? Learn about the gut-brain connection, IBS symptoms, triggers and personalised stress management at Manovaidya."
-        }}
+        schema={stressIbsSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
 

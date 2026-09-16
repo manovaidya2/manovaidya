@@ -23,6 +23,179 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedWomenHealthCarePages from "./RelatedWomenHealthCarePages";
 import Seo from "../components/Seo";
 
+const seoTitle = "Self-Esteem & Body Image Support for Women in India | Manovaidya";
+
+const seoPageUrl = "https://manovaidya.org/women-self-esteem-body-image-support-india/";
+
+const womenSelfEsteemFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. What is self-esteem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Self esteem is the way you feel and think about yourself. It is a sign of feeling valued, confident and having a sense of self worth. Self-esteem enables them to deal with difficulties, form positive relationships and make decisions with greater confidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is body image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Body image is the way a person sees, thinks and feels about his/her body. It contains ideas, feelings and beliefs about the body which could be true or false. Having a healthy body image means to accept your body as it is and not try to be a \"perfect\" body."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between self-esteem and self-confidence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Self-esteem is a general feeling of self-worth and self-confidence is the confidence in specific skills or situations. A woman can have self-confidence in her workplace, but still have low self-esteem or concerns about her body image. Although related, these are different aspects of emotional wellbeing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What causes low self-esteem in women?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A lack of self-esteem can result from a variety of life experiences, social factors and emotional issues. These can come from childhood criticism, bullying, bad relationship, comparison with social media, workplace stress, body image concerns, anxiety, depression and/or traumatic experiences. Individuals' experiences vary by woman."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. What causes negative body image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unrealistic expectations of beauty, social media, frequent comparisons, remarks about appearance, cultural norms, before-and-after photos, pregnancy, ageing, and past emotional situations, including weight loss and gain, are potential contributors to negative body image. It can be more about the way someone feels and thinks about their body than how their body looks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can social media affect self-esteem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For others, the exposure to edited images, unrealistic beauty expectations and comparing oneself to others could lead to a negative impact on their self-esteem and body image. Regularly unplugging from social media and paying attention to personal health and wellness may lessen the amount of unhealthy comparison."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can low self-esteem affect mental health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Low self-esteem can add to emotional stress and can be experienced along with anxiety or depression, chronic stress or other mental health issues. If negative self-beliefs start to impact on daily life, it may be helpful to seek professional assessment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. Can body image concerns affect relationships?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Body image issues can affect self-confidence, relationships, social interactions and communication. For some women, the fear of appearing unattractive or lacking in self-worth can make social interactions uncomfortable or make it difficult to accept compliments, or make it necessary to receive constant reassurance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. How can I improve my self-esteem naturally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One strategy to developing healthy self-esteem is practicing self-compassion, avoiding negative comparisons, cultivating healthy relationships, identifying personal strengths, setting realistic goals, engaging in regular physical activity and seeking professional help if such negative self-beliefs become persistent or overwhelming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. How can I develop a healthier body image?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Improving body image is about how your body functions, rather than how it appears; about not comparing your body with an unrealistic standard of beauty; about practicing self-acceptance; and about finding enjoyable ways to be physically active and positive influences. Change is typically slow and takes time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. When should I seek professional help for self-esteem or body image concerns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the low self-esteem or body image issue lasts for a few weeks, impacts work, relationships or daily life or causes emotional distress, it is advisable to seek professional guidance. Early support can be used to help discover causes and to build healthy coping strategies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. Can low self-esteem be improved?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Self-esteem is malleable and can be enhanced over time. Self-awareness, supportive relationships, healthy lifestyle habits, psychological therapies and personalised professional guidance (when appropriate) are all ways in which many women build their confidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. How does Manovaidya support women with self-esteem and body image concerns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process of support at Manovaidya does not just start with appearance or confidence, it begins with understanding the person. The Neuro-Ayurveda Development System is an organized assessment process for women to understand emotional wellbeing, self-worth, body image, lifestyle habits and behavioural patterns that could affect their confidence. We aim to promote emotional wellbeing, long term, in a whole person and individual approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Can self-esteem problems affect work and career?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Low self esteem can affect your ability to communicate your ideas, stand out for leadership positions, apply for new jobs or make decisions. Raising self-esteem can have a positive impact on individual and career development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. When should I seek urgent mental health support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If one is experiencing emotional distress accompanied by thoughts of self-harm or suicide, if one thinks that he or she may hurt themselves or others, or if he or she thinks he or she or another person is in danger, seek immediate medical attention. In such cases, medical attention should not be postponed."
+      }
+    }
+  ]
+};
+
+const womenSelfEsteemBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Self-Esteem & Body Image Support",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const womenSelfEsteemMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Self-Esteem & Body Image Support for Women in India",
+  "description": "Self-esteem, body image and women's emotional wellbeing support at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const womenSelfEsteemPhysicianSchema = {
+  "@type": "Physician",
+  "name": "Dr. Ankush Garg",
+  "medicalSpecialty": "Mental Health",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "IN"
+  }
+};
+
+const womenSelfEsteemSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    womenSelfEsteemMedicalWebPageSchema,
+    womenSelfEsteemFaqSchema,
+    womenSelfEsteemBreadcrumbSchema,
+    womenSelfEsteemPhysicianSchema,
+  ],
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding Self-Esteem & Body Image\nHealthy Self-Esteem vs Low Self-Esteem\nCommon Signs of Low Self-Worth\nCauses of Body Image Concerns\nSocial Media & Self-Esteem Impact\nSelf-Esteem vs Self-Confidence\nSupporting Healthy Emotional Wellbeing\nBuilding Positive Body Image\nNeuro-Ayurveda Emotional Wellbeing Approach\nPersonalized Self-Worth & Confidence Guidance\nManovaidya Assessment & Support Process\nFAQs About Self-Esteem & Body Image\n\n\nSelf-Esteem & Body Image\nSelf-Esteem & Body Image Support for Women in India\nBuilding Self-Worth, Body Confidence & Emotional Wellbeing at Every Stage of Life\nEvery women need to love themselves and know that they are their own person. But many women face with their insecurities like low self-esteem, and dissatisfaction with their appearance without their realization. It is a gradual process that starts with constant comparisons, unrealistic beauty ideals, social media, and relationship experiences and personal life challenges that can all have a gradual impact on how a woman thinks and feels about herself. [2][3]\nIt's normal to get embarrassed from time to time. But if negative thoughts towards appearance or self-worth are persistent and start to impact confidence, relationships, work or daily life, they can have a profound effect on emotional wellbeing. [1][8]\nBody image refers more than just to looks. It offers a reflection of a woman's attitude towards her body, how she thinks about it, how she feels about it. Some women might not feel happy with their weight, their skin, hair or other physical traits, or feel “not good enough” although others try to assure them of their worth. [3][8]\n\nLow self-esteem doesn't just affect one's looks. May cause lack of confidence, decision making skills, communication, career advancement, relationships and a lack of ability to enjoy daily life. Low self-esteem women could be always seeking approval, denying themselves chances or criticizing themselves excessively. [1]\nWomen's self-esteem can change throughout their lives, such as in adolescence, pregnancy, postpartum, when a woman is undergoing a transition in her career, a transition in her relationships, and when she is experiencing perimenopause and menopause. Such experiences can affect their sense of self, but if the emotional distress persists it should not be ignored.\nFortunately, self-esteem and body image can be enhanced through increased self-awareness, healthy coping mechanisms and/or appropriate professional support as necessary. [5][6]\nWe at Manovaidya know that a sense of confidence starts with emotional well-being. We're not just looking at looks, we're looking at what makes women feel good about themselves and what emotional, psychological and lifestyle factors play a part in that.\nUnder the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya adopts the Neuro-Ayurveda Development System to empower women by providing them with a clear understanding of their self-esteem, body-image and emotional well-being through systematic assessment and customized holistic care.\nAt Manovaidya, Self-Esteem & Body Image Support Focuses On:\nLow Self-Esteem\n Poor Self-Confidence\n Negative Body Image\n Body Dissatisfaction\n Self-Doubt\n Social Comparison\n Emotional Wellbeing\n Healthy Self-Worth\nBook a Structured Self-Esteem & Body Image Assessment\nConstant self-criticism, low confidence or body image issues have begun to impact relationships, work or emotional wellbeing; identifying the underlying emotional patterns is a crucial first step.\nUnderstanding Self-Esteem & Body Image\nSelf-esteem and body image issues can affect self-confidence, relationships, employment, choices, emotional health and everyday functioning. [1][4]\n\nLow Self-Esteem\n Poor Self-Confidence\n Negative Body Image\n Body Dissatisfaction\n Self-Doubt\nSelf-esteem is a person's self-confidence and self-worth. [1]\nBody image is the sensation and self-perception of one's physical body. [3]\nAlthough these concepts are connected, they are not the same.\nA woman can be happy with how she looks, but not with her confidence, or she could be confident at work but not with her image.\nSome of the women who are looking for Self-Esteem Support for Women in India, Body Image Issues, Poor Self-Confidence, Negative Body Image or Low Self-Worth want to know if their emotional issues are impacting their mental health.\nIdentifying these patterns is the initial step towards developing more positive self-esteem and emotional strength.\n\nLow Self-Esteem Is Not a Personality Trait\nA lot of women say that they are \"not confident.\n Self-esteem, in fact, is affected by life experiences, relationships, emotional wellbeing and personal beliefs. [1]\nLow self-esteem is not an attribute that women are born with and will have for a lifetime. It is possible to alter with time, particularly if the emotional and psychological issues that are at their heart are recognised and resolved. [5][6]\nHealthy Confidence vs Low Self-Esteem\nEmbrace strengths and weaknesses\n Don't take criticism seriously and think of yourself as worthless\n Set healthy boundaries\n Look, look, look but don't look down on yourself.\n Reduce unhealthy comparison\n Seek personalised support\n\nHealthy Self-Esteem\n\nGenerally, women who have good self-esteem would:\n\nBe ready to take criticism and praise.\nTake criticism with a pinch of salt and don't feel bad about it.\nSet healthy boundaries.\nBe able to express their views with confidence.\nDescribe the value of something beyond its appearance.\n\nLow Self-Esteem\nWomen with low self-esteem may:\nConstantly compare themselves with others.\nSeek frequent reassurance.\nFeel \"not good enough.\"\n Fear rejection or criticism.\nAvoid new opportunities.\nDepend heavily on external validation.\nIf these patterns start to impact emotional wellbeing or daily functioning, then professional support can be useful.\n\nCommon Signs & Symptoms\nEmotional Symptoms\nSelf-doubt, feeling inadequate, shame, embarrassment, fear of judgment, low confidence and feeling inferior to others.\n\nBehavioural Changes\nStay out of social situations, be a people pleaser, seek approval, avoid photos/mirrors, turn down opportunities. [8]\n\nCognitive Symptoms\nConstant self-criticism, negative self-talk, perfectionism, fear of failure, overthinking and difficulty making decisions.\n\nBody Image Concerns\nAppearance, comparing to others, attention to perceived flaws and discomfort with body image. [3][8]\nEach woman is unique.\nEmotional Symptoms\nSome women may experience the following:\nSelf-doubt\n Feeling inadequate\n Shame\n Embarrassment\n Fear of judgment\n Low confidence\n When this happens, he or she tends to feel inferior to others.\n\nBehavioural Changes\nLow self-esteem can result in:\nAvoiding social situations\n Difficulty saying \"no\"\n People-pleasing behaviour\n Seeking constant approval\n To steer clear of photographs or mirrors.\n Withdrawing from opportunities\n\nCognitive Symptoms\nSome women notice:\nConstant self-criticism\n Negative self-talk\n Perfectionism\n Fear of failure\n Overthinking\n Difficulty making decisions\n\nBody Image Concerns\nNegative body image may involve: [3][8]\nDissatisfaction with appearance\n Often make comparisons to others\n Preoccupation with self-perceived flaws\n Feeling uncomfortable in one's body\nAvoiding certain clothes or social events because of appearance \n\nWhat Causes Low Self-Esteem & Body Image Concerns?\n\nSocial & Relationship Influences\nSelf-worth can be impacted by social media comparison, unrealistic beauty standards, childhood criticism, bullying and relationship experiences. [2][3]\n\nLife Changes & Body Changes\nBody image can be affected by changes in the body such as pregnancy, postpartum recovery, weight gain or loss, medical conditions, age, hormonal, and work stress.\n\nEmotional Health Factors\nLow self-esteem can be caused by anxiety, depression, trauma, chronic stress and negative self-perception. [4]\nSelf-esteem is an outcome of personal experience, emotional health and social influences.\nThe following are common causes for:\nSocial Media Comparison\n\nExposure to unrealistic beauty standards and altered images could have an impact on body confidence. [2][3]\nChildhood Experiences\nPoor self-esteem in adulthood may stem from criticism, bullying or unrealistic expectations or a lack of emotional support in childhood.\nRelationship Experiences\nConfidence and self-worth can be impacted by unhealthy relationships, emotional abuse, rejection or repeated criticism.\nWorkplace Pressure\nConfidence can be affected by career challenges or discrimination or repeated setbacks.\nBody Changes\nBody image can change during pregnancy, after birth, when weight fluctuations occur, for medical reasons, when the body is recovering, as a person ages or due to hormonal changes.\nMental Health Conditions\nLow self-esteem and negative self-perception can be caused by anxiety, depression, trauma and chronic stress. [4]\n\nWhy Early Recognition Matters\n\nBy identifying early on the issues of self-esteem and body image, women can learn to think more healthily, build emotional resilience and enhance their wellbeing.\nLow self-esteem can take time to build up.\nFor many years, women suffer from this self-doubt, thinking that it is a part of them.\nEarly identification of these patterns can help women change their thinking behavior to allow for increased emotional strength and enhanced mental health before self-doubt begins to impact relationships, career development and quality of life.\n\nHow Low Self-Esteem & Body Image Concerns Can Affect Daily Life\nThere's more to self-esteem than confidence. It impacts a woman's attitude towards herself, decisions she makes, relationships that form, and how she is challenged. [1]\nNegative self beliefs can start to impact emotional wellbeing, professional development and a person's general quality of life over time.\nMany women are outwardly bold, yet at the same time silently doubt and talk to themselves in a negative way.\nBy identifying these patterns early, women can be aware that their self-esteem can be enhanced by becoming aware of the patterns, adopting healthy coping mechanisms and applying the right support. [5][6]\n\nEmotional Wellbeing\nLow self-esteem can have a number of impacts on emotional wellbeing.\nSome women might have:\nPersistent self-doubt\n Experiencing the sense of \"not good enough\"\n Fear of rejection\n Increased emotional sensitivity\n Shame or guilt\n Difficulty accepting compliments\n Feeling emotionally overwhelmed\nSuch emotional patterns may slowly diminish confidence and pleasure of daily living.\n\nRelationships\nSelf-esteem can affect the way women relate with others.\nSome women may:\nHave difficulty establishing boundaries for themselves\n Constantly seek reassurance\n Worry about leaving or being rejected by others\n Don't voice their thoughts\n Stay in unhealthy relationships\n Place others' needs above their own\n\nA healthy sense of self-worth will help to foster healthier communication patterns and relationships.\n\nCareer & Personal Growth\nLow confidence can also impact on work and life development.\nSome women may:\nAvoid applying for new opportunities\n Underestimate their abilities\n Fear making mistakes\n Are reluctant to share ideas\n Struggle with decision-making\n Experience imposter syndrome\nThese patterns can, over time, restrict personal development when one has the skills and abilities to excel.\n\nBody Image\nBody image problems can impact a wide range of every day life activities. [3][8]\nSome women may:\nFrequently make comparisons with others\n Does not like being photographed\n Refrain from social activities due to appearance\n Worry about things that aren't really a problem\n Do not feel good about yourself despite positive feedback from others\nA healthy body image is not about having a \"perfect\" appearance. It's all about finding a relationship of balance and acceptance with your body.\n\n\nSocial Media & Self-Esteem\nSocial media can be a good way of connecting people but can also impact body image and self-worth. [2][7]\n\nSome women might experience feelings of inadequacy due to consistently seeing edited photos, unrealistic beauty ideals, and comparing themselves to others. [2][3]\nKeep in mind that social media is a curated content rather than real life.\nIt's important to learn to stop making negative comparisons and instead to look after yourself and develop a positive self-esteem. [7]\n\nSelf-Esteem vs Self-Confidence\nSelf-Confidence\nDescribes confidence in your own capabilities with respect to particular situations or tasks\n May be different based on job, relationships, abilities or situation\n Can be developed with practice, preparation and experience\nSelf-Esteem\nShows a general feeling of self-esteem and self-worth\n Affects relationships, decisions, boundaries and emotional wellbeing;\n Can improve if emotional patterns are known and supported\nThese are sometimes used interchangeably but these are distinct terms. [1]\n\nSelf-Confidence\nSelf-confidence is the degree of confidence in one's ability to perform a particular task or deal with a particular situation.\nFor example:\nSpeaking in public\n Having a good performance at work\n Familiarizing oneself with a new technique\nSelf-assurance can be different in different circumstances.\n\nSelf-Esteem\nSelf esteem is a general feeling of self worth. [1]\n\nIt's believing that you're worth something without success, looks, or others' opinions.\nA strong sense of self esteem is a base for emotional health.\n\nThe Neuro-Ayurveda Development System\n\nBrain Nourishment System\n Gut Response System\n Neural Network System\n Sensory Integration System\n Behaviour Guidance System\n\nIn Manovaidya, confidence is a component of the overall emotional health.\n\nThe Neuro-Ayurveda Development System is not just for looks; it takes into account the link between brain health, emotional resilience, lifestyle habits, behaviour and healthy self-perception. [9]\n\nBrain Nourishment System\n\nWorking well in the brain supports:\n\nEmotional regulation\n Positive thinking\n Decision-making\n Memory\n Mental clarity\n Emotional resilience\n\nHealthy brain function leads to a balanced emotional wellbeing. [9]\n\nGut Response System\n\nThere are still ongoing studies investigating the link between gut health and emotional well-being. [9]\nGood nutrition and physical health can have an impact on mood, energy and emotional strength. [9]\n\nNeural Network System\n\nEmotional resilience is bolstered by learning, worthwhile experiences and healthy thinking. [5][6]\nJournaling, reading, mindfulness and learning new skills could help build confidence over time. [5][6]\n\nSensory Integration System\nPositive sensory experiences might help to promote relaxation and emotional wellbeing.\nSupportive tasks can be considered such as:\nYoga\n Meditation\n Spending time in nature \n Creative hobbies\n Listening to relaxing songs\n Deep breathing exercises\n\nBehaviour Guidance System\nSelf-esteem influences behaviour.\nSome women may experience:\n\nMore withdrawn\n Less confident\n Highly perfectionistic\n Overly self-critical\n Relying on others to verify their work\n No longer willing to take a chance for the sake of being healthy\nA key aspect of emotional health is learning to identify these self behaviors in a non-judgmental way to foster self-compassion rather than self-judgement. [5][6]\n\nSupporting Healthy Self-Esteem\nPractice Self-Compassion\n Reduce Unhealthy Comparisons\n Celebrate Small Achievements\n Maintain Healthy Relationships\n Focus on Physical & Emotional Health.\nEstablishing healthy self-esteem takes time and requires ongoing practices and relationships. [5][6]\n\nPractice Self-Compassion\nTalk to yourself as you would to someone you love. [5]\n\nReduce Unhealthy Comparisons\nPay attention to your own development, instead of thinking of what you think you should be doing or what you see on social media. [2][7]\n\nCelebrate Small Achievements\nIt is important to acknowledge the steps taken each day so that it builds confidence over time.\n\nMaintain Healthy Relationships\nTake time with others who encourage, respect and support your emotional wellbeing.\n\nFocus on Physical & Emotional Health\nGood sleep, healthy eating, and exercise and stress management are vital to overall wellbeing. [6][9]\n\nSeek Professional Guidance\nWhen low self-esteem, body image issues or negative self-beliefs start to impact relationships, work, emotional wellbeing or functioning in everyday life, professional advice may be required to better understand negative patterns and learn to adopt healthier coping strategies. If the emotional distress is accompanied with thoughts of harming oneself or of suicide, seek emergency medical assistance immediately. [4][8]\n\nHow Manovaidya supports women\n\nStep 1: Comprehensive Assessment\nStep 2: Personalized Guidance\nStep 3: Self-Worth Guidance\nStep 4: Neuro-Ayurveda System\nStep 5: Ongoing Support\nConfidence or looks are not the only things that are of interest at Manovaidya; there is a focus on the individual as the foundation for support.\nWe have an organized procedure with:\n\nStep 1: Comprehensive Assessment\n\nKnowledge of emotional wellbeing, self esteem issues, body image issues, lifestyle habits, sleep and experiences of relationships.\n\nStep 2: Personalized Guidance\n\nAssessing each woman's emotional, psychological and lifestyle requirements and making personal recommendations.\n\nStep 3: Emotional Wellbeing & Self-Worth Guidance\n\nEducating women on concepts of self-esteem, body image and strategies for healthy lifestyle that will enhance emotional health over time.\n\n  Step 4: Neuro-Ayurveda Development System\n\nTeaching the 5 pillars to understand emotional wellbeing, brain health, behaviour and healthy self-worth. [9]\n\n\nStep 5: Progress Tracking & Ongoing Support\n\nGetting women into structured follow-up, so that they can develop healthier habits, enhance self-awareness and emotional resilience over time.\n\n\nWhen Should You Consider Professional Guidance?\nProfessional guidance should be considered if you:\nAlways think \"I can't do this I am not good enough.\n Frequently compare yourself with others.\nStay away from people because of looks.\nHave difficulty with negative self-talk.\nIdentify areas of low confidence relating to work and/or relationships.\nBecome emotionally upset due to body image issues.\nExperience ongoing self-criticism that interferes with everyday life.\nEarly assessment will enable you to be assessed for support that is relevant to you, and will help to identify factors that may be contributing to your difficulties. [4][8]\nWe aim to empower women to increase their awareness around self-esteem, deepen emotional strength and develop a more compassionate relationship with themselves by providing individualised support.\n\nWhy Women Across India Choose Manovaidya\nThe assessment will be comprehensive and focus on women's mental health.\nComprehensive Women's Mental Health Assessment\n Neuro-Ayurveda Development System\n Personalized Guidance\n Holistic Women's Emotional Wellbeing\n Focus on Healthy Self-Worth & Emotional Confidence\n Ongoing Support & Progress Tracking\nNo two women are alike in their relationship with their own. Some women have a lack of self-confidence; others may not be able to accept their looks despite all the family and friends' affirmations. Negative self-beliefs over time can impact relationships, work, confidence and emotional health. [1][3]\nWe believe at Manovaidya that self-esteem goes beyond confidence, or look, it's about who you are. Brain health, life experiences, relationships, stress, lifestyle habits and a woman's perception of her self are all factors that affect emotional wellbeing.\nInstead of having women believe in their ideal weight and height, we want them to learn how their emotions play a role in their self-worth and body image.\nWe can help women develop emotional resilience and long term wellbeing through structured assessment, tailored guidance and a holistic approach to women's mental health.\n\nComprehensive Women's Mental Health Assessment\nEach woman's experience of a woman's journey is unique.\nSome women might have:\nPersistent self-doubt\n Poor self-confidence\n Negative body image\n Fear of judgment\n Constant comparison\n Low self-worth\n Emotional exhaustion\n Social withdrawal\n\nOur structured assessment helps us understand:\n\nEmotional wellbeing\n\n Self-esteem patterns\n Body image concerns\n Lifestyle habits\n Sleep quality\n Stress levels\n Relationship experiences\n Personal goals\n Everyday emotional challenges\n\nbefore creating personalised guidance.\n\nNeuro-Ayurveda Development System\nManovaidya utilises the Neuro-Ayurveda Development System, a structured approach to emotional wellness that recognises emotional health in 5 interconnected ways.\nBrain Nourishment System\nGut Response System\n Neural Network System\n Sensory Integration System\n Behaviour Guidance System\n\nThis framework aids women to understand the factors affecting the development of their confidence, self-worth and mental wellbeing which includes emotional, biological and lifestyle factors. [9]\n\nPersonalized Guidance\nWomen's concerns about self-esteem are not the same for two women.\nRecommendations are personalised according to:\nEmotional concerns\n Lifestyle habits\n Sleep quality\n Physical health\n Stress levels\n Relationship experiences\n Body image concerns\n Personal goals\n Daily challenges\nBecause it is personalised, every woman will get advice that will fit her emotional needs and not a one-size-fits-all approach.\n\n\nHolistic Women's Emotional Wellbeing\nSelf-esteem is more than just appearance.\nOur approach takes into account the connection to:\nBrain health\n Emotional wellbeing\n Sleep quality\n Nutrition\n Lifestyle habits\n Healthy relationships\n Physical wellbeing\n Personal growth\nThis all-round knowledge contributes to lasting emotional strength and a positive self-perception. [6][9]\nFocus on Healthy Self-Worth & Emotional Confidence\nWe are not trying to bring about false confidence or perfection.\nWe are committed to supporting women:\n\nDevelop healthier self-worth\n Build emotional resilience\n Improve confidence\n Reduce unhealthy self-criticism\n Strengthen healthy relationships\n Enhance the overall standard of living\nWhen women become aware of themselves – and start to feel compassion for what they discover – confidence increases. [5]\n\nOn going Support & Progress Tracking\nSelf esteem builds over time.\nFollow-up and structured progress monitoring can enable women to identify positive change, reinforce healthy behaviors and sustain their emotional coping as life changes.\n\nWhy Women Across India Trust Manovaidya?\nManovaidya offers you a way to connect with women from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and beyond India for consultations on Self-Esteem & Body Image Support, Women's Mental Health Guidance and Emotional Wellbeing Support via online and in-clinic sessions.\nWhether you're feeling concerns about body image, confidence, self-worth, social comparison or emotional wellbeing, our individual approach aims to understand what is unique about you and support healthy emotional development.\n\n\nAbout\nDr. Ankush Garg\nAutism, ADHD, Child Development & Mental Health Specialist in India\nDr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System.\nHis work extends across Child Development, Adult Mental Health, Women's Mental Health and Senior Mental Health, with a focus on understanding the relationship between brain health, emotional wellbeing and overall quality of life.\nMany women seek guidance when low self-esteem, body image concerns or persistent self-doubt begin affecting sleep, work, relationships or daily functioning. Through structured assessment, personalised guidance, lifestyle recommendations and continuous follow-up, Dr. Ankush Garg helps women better understand these challenges while supporting long-term emotional wellbeing through the Neuro-Ayurveda Development System.\nBased in Delhi NCR, Dr. Ankush Garg supports women across India through structured assessment, personalised guidance and holistic mental health care.\n\n\nFrequently Asked Questions About Self-Esteem & Body Image\n\n1. What is self-esteem?\nSelf esteem is the way you feel and think about yourself. It is a sign of feeling valued, confident and having a sense of self worth. Self-esteem enables them to deal with difficulties, form positive relationships and make decisions with greater confidence. [1]\n\n2. What is body image?\nBody image is the way a person sees, thinks and feels about his/her body. It contains ideas, feelings and beliefs about the body which could be true or false. Having a healthy body image means to accept your body as it is and not try to be a \"perfect\" body. [2][3]\n\n3. What is the difference between self-esteem and self-confidence?\nSelf-esteem is a general feeling of self-worth and self-confidence is the confidence in specific skills or situations. A woman can have self-confidence in her workplace, but still have low self-esteem or concerns about her body image. Although related, these are different aspects of emotional wellbeing. [1]\n\n4. What causes low self-esteem in women?\nA lack of self-esteem can result from a variety of life experiences, social factors and emotional issues. These can come from childhood criticism, bullying, bad relationship, comparison with social media, workplace stress, body image concerns, anxiety, depression and/or traumatic experiences. Individuals' experiences vary by woman. [1][2][4]\n\n5. What causes negative body image?\nUnrealistic expectations of beauty, social media, frequent comparisons, remarks about appearance, cultural norms, before-and-after photos, pregnancy, ageing, and past emotional situations, including weight loss and gain, are potential contributors to negative body image. It can be more about the way someone feels and thinks about their body than how their body looks. [2][3][7]\n\n6. Can social media affect self-esteem?\nYes. For others, the exposure to edited images, unrealistic beauty expectations and comparing oneself to others could lead to a negative impact on their self-esteem and body image. Regularly unplugging from social media and paying attention to personal health and wellness may lessen the amount of unhealthy comparison. [2][7]\n\n7. Can low self-esteem affect mental health?\nYes. Low self-esteem can add to emotional stress and can be experienced along with anxiety or depression, chronic stress or other mental health issues. If negative self-beliefs start to impact on daily life, it may be helpful to seek professional assessment. [1][4]\n\n8. Can body image concerns affect relationships?\nYes. Body image issues can affect self-confidence, relationships, social interactions and communication. For some women, the fear of appearing unattractive or lacking in self-worth can make social interactions uncomfortable or make it difficult to accept compliments, or make it necessary to receive constant reassurance. [2][3]\n\n9. How can I improve my self-esteem naturally?\nOne strategy to developing healthy self-esteem is practicing self-compassion, avoiding negative comparisons, cultivating healthy relationships, identifying personal strengths, setting realistic goals, engaging in regular physical activity and seeking professional help if such negative self-beliefs become persistent or overwhelming. [5][6]\n\n10. How can I develop a healthier body image?\nImproving body image is about how your body functions, rather than how it appears; about not comparing your body with an unrealistic standard of beauty; about practicing self-acceptance; and about finding enjoyable ways to be physically active and positive influences. Change is typically slow and takes time. [2][5][6]\n\n11. When should I seek professional help for self-esteem or body image concerns?\nIf the low self-esteem or body image issue lasts for a few weeks, impacts work, relationships or daily life or causes emotional distress, it is advisable to seek professional guidance. Early support can be used to help discover causes and to build healthy coping strategies. [4][8]\n\n12. Can low self-esteem be improved?\nYes. Self-esteem is malleable and can be enhanced over time. Self-awareness, supportive relationships, healthy lifestyle habits, psychological therapies and personalised professional guidance (when appropriate) are all ways in which many women build their confidence. [5][6]\n\n13. How does Manovaidya support women with self-esteem and body image concerns?\nThe process of support at Manovaidya does not just start with appearance or confidence, it begins with understanding the person. The Neuro-Ayurveda Development System is an organized assessment process for women to understand emotional wellbeing, self-worth, body image, lifestyle habits and behavioural patterns that could affect their confidence. We aim to promote emotional wellbeing, long term, in a whole person and individual approach. [9]\n\n14. Can self-esteem problems affect work and career?\nYes. Low self esteem can affect your ability to communicate your ideas, stand out for leadership positions, apply for new jobs or make decisions. Raising self-esteem can have a positive impact on individual and career development. [1]\n\n15. When should I seek urgent mental health support?\nIf one is experiencing emotional distress accompanied by thoughts of self-harm or suicide, if one thinks that he or she may hurt themselves or others, or if he or she thinks he or she or another person is in danger, seek immediate medical attention. In such cases, medical attention should not be postponed. [8]\n\n\nBook a Consultation\nBook a structured assessment and personalized guidance session with the Manovaidya team to better understand self-esteem, body image concerns, confidence, emotional wellbeing and women's mental health.\nWhether your concerns relate to low self-esteem, body image, confidence, social comparison or emotional wellbeing, our team is here to help you explore personalised support.\nBook Your Assessment Today\nBook Consultation\n  Speak With Our Team\n  Get Personalized Guidance\n  Self-Esteem & Body Image Assessment\n  Healthy Self-Worth Support\n  Book Your Consultation with Manovaidya Today\nManovaidya Clinic\nNoida, Uttar Pradesh, India\n \nReferences\n[1] American Psychological Association (APA) – Self-Esteem & Psychological Wellbeing\n  https://www.apa.org/topics/self-esteem\n[2] National Eating Disorders Association (NEDA) – Body Image\n  https://www.nationaleatingdisorders.org/body-image/\n[3] Office on Women’s Health, U.S. Department of Health & Human Services – Body Image\n  https://womenshealth.gov/mental-health/body-image-and-mental-health/body-image\n[4] World Health Organization (WHO) – Mental Health\n  https://www.who.int/health-topics/mental-health\n[5] Neff KD – Self-Compassion: An Alternative Conceptualization of a Healthy Attitude Toward Oneself\n  https://doi.org/10.1080/15298860309032\n[6] National Institute of Mental Health (NIMH) – Caring for Your Mental Health\n  https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health\n[7] Fardouly J, Vartanian LR – Social Media and Body Image Concerns: Current Research and Future Directions\n  https://doi.org/10.1016/j.copsyc.2015.09.005\n[8] National Institute of Mental Health (NIMH) – Help for Mental Illnesses\n  https://www.nimh.nih.gov/health/find-help\n[9] Ministry of AYUSH, Government of India – Ayurveda & Holistic Health Resources\n  https://ayush.gov.in/\n \n\n\n";
 
 const pageLinks = [
@@ -703,49 +876,15 @@ function WomenSelfEsteemBodyImageSupportPage() {
     return () => window.removeEventListener("scroll", updateActiveSection);
   }, []);
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        name: "Self-Esteem & Body Image Support for Women in India",
-        description: "Self-esteem, body image, confidence and women's emotional wellbeing support at Manovaidya.",
-        url: "https://www.manovaidya.com/women-self-esteem-body-image-support-india/",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
-          { "@type": "ListItem", position: 2, name: "Women's Mental Health", item: "https://www.manovaidya.com/women-health-care/" },
-          { "@type": "ListItem", position: 3, name: "Self-Esteem & Body Image Support", item: "https://www.manovaidya.com/women-self-esteem-body-image-support-india/" },
-        ],
-      },
-      {
-        "@type": "Physician",
-        name: "Dr. Ankush Garg",
-        medicalSpecialty: "Mental Health",
-        address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
-      },
-    ],
-  };
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo 
-        title="Self-Esteem & Body Image Support for Women in India | Manovaidya" 
+        title={seoTitle} 
         description="Looking for Self-Esteem & Body Image Support for Women in India? Learn about low self-esteem, body image concerns, self-confidence, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="Low Self-Esteem, Poor Self-Confidence, Negative Body Image, Body Dissatisfaction, Self-Doubt, Social Comparison, Emotional Wellbeing, Healthy Self-Worth, Self-Esteem Support Women, Body Image Support India, Women's Mental Health, Self-Confidence Building, Social Media & Self-Esteem" 
         path="/women-self-esteem-body-image-support-india"
+        schema={womenSelfEsteemSeoSchema}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

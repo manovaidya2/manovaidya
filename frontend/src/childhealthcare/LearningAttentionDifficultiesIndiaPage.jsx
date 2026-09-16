@@ -21,6 +21,162 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
+const learningAttentionSeoTitle = "Learning Assessment & Child Development Support in India";
+const learningAttentionSeoDescription =
+  "Get expert learning assessment for children, attention support for kids, and child development guidance in India at Manovaidya.";
+const learningAttentionSeoPageUrl = "https://manovaidya.org/learning-attention-difficulties-india";
+
+const learningAttentionFaqSchema = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What are learning and attention difficulties?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Learning and attention difficulties are difficulties in focusing, understanding, remembering and completing daily learning activities that may be present in a child. These difficulties may affect children's school achievement, confidence and development, but with appropriate understanding and support, children can still make progress."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What are the early signs of learning difficulties in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Early indicators can involve problems with understanding abstract concepts, requiring instructions to be repeated, poor memory, slow rate of learning, problems with reading or writing, and refusal of more difficult school work. It is important to be aware of the signs at an early age so that families can find the appropriate guidance and support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What are the common signs of attention difficulties in children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Children who have an attention problem may have trouble concentrating, paying attention, remembering directions, or difficulty finishing tasks. These problems can impact on learning, class participation, and life in general."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between a learning disability and ADHD?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A learning disability is primarily when a child has difficulties understanding, processing and using information while ADHD is primarily when a child has trouble paying attention, focusing, impulse behaviour and self-control. Both conditions may coexist but are distinct and need to be assessed correctly to meet the needs of the child."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Do learning disabilities affect intelligence?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "NO â€“ A child with learning disabilities is not necessarily less intelligent than another child. Children with learning difficulties do not necessarily have below-average intelligence; many learn like average or above-average children and require the proper support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Why does my child struggle to focus on studies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Attention problems, learning challenges, emotions, communication problems, developmental delays, and environmental distractions are all potential causes of difficulty focusing. If you know the cause of the problem, you can better select the right support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Why does my child forget things so quickly?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Attention problems, Challenges with learning, Stress, and Processing new information can cause children to forget information. Memory and attention go hand in hand â€“ a knowledge of both can help determine the appropriate type of assistance."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Can learning difficulties affect school performance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Children might find it more difficult to comprehend lessons, complete tasks, understand things and engage in classroom activities because of learning difficulties. Early understanding and appropriate support has the potential to enhance learning outcomes and confidence."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Can communication difficulties affect learning?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Children use communication to understand instructions, to communicate their ideas, to ask questions, and to interact with teachers and other children. Communication skills are important in enhancing learning, confidence and social participation."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Can learning abilities improve over time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "All children grow at their own rate. Many children will over time develop and improve in their learning skills, confidence and development with the right guidance, structured support and practice."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How can parents support learning and attention development at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Here are some tips for parents to help their child: Establish a routine, provide clear directions, facilitate learning experiences, and celebrate progress. The home environment is important to a child's learning and development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What activities can help improve attention and learning skills?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Reading, storytelling, puzzles, memory games, creative play and problem-solving tasks can help support attention, thinking, communication and learning. These activities should always be age appropriate, of interest and developmental level to the child."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "When should parents seek help for learning and attention difficulties?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It is important for parents to seek help if learning or attention problems are causing difficulty in school, in communicating with people, in confidence, in behaviour, or in everyday activities. Early assessment supports families to know their child's needs and plan the appropriate support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "What is the Neuro-Ayurveda Development System?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dr. Ankush Garg's Neuro-Ayurveda Development System is a structured method to gain insight into a child's learning, behaviour, communication and entire development. This is a synthesis of the modern developmental approach with the classical ayurvedic approach which gives a holistic perspective to the child development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "How does Manovaidya assess and support children with learning and attention difficulties??",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The purpose of assessment at Manovaidya is to gain an understanding about the child's learning capabilities, attention, communication, behaviour, developmental history and family concerns. With this insight, parents are offered individual counseling and a developmental plan in the Neuro-Ayurveda Development System to guide their families into long-term growth and development."
+      }
+    }
+  ]
+};
+
+const learningAttentionSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: learningAttentionSeoTitle,
+      description: learningAttentionSeoDescription,
+      url: learningAttentionSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Learning Assessment & Child Development Support",
+          item: learningAttentionSeoPageUrl,
+        },
+      ],
+    },
+    learningAttentionFaqSchema,
+  ],
+};
+
 const rawArticleContent = String.raw`
 https://manovaidya.org/learning-attention-difficulties-india
 
@@ -1224,26 +1380,6 @@ function LearningAttentionDifficultiesIndiaPage() {
       document.head.appendChild(link);
     }
 
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalWebPage",
-          name: learningTitle,
-          description: learningSubtitle,
-          url: `${window.location.origin}/learning-attention-difficulties-india`,
-        },
-        {
-          "@type": "FAQPage",
-          mainEntity: faqs.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: { "@type": "Answer", text: faq.answer },
-          })),
-        },
-      ],
-    };
-
     const scriptId = "learning-attention-schema";
     let schemaScript = document.getElementById(scriptId);
     if (!schemaScript) {
@@ -1252,7 +1388,7 @@ function LearningAttentionDifficultiesIndiaPage() {
       schemaScript.type = "application/ld+json";
       document.head.appendChild(schemaScript);
     }
-    schemaScript.textContent = JSON.stringify(schema);
+    schemaScript.textContent = JSON.stringify(learningAttentionSeoSchema);
   }, []);
 
   React.useEffect(() => {
@@ -1284,11 +1420,12 @@ function LearningAttentionDifficultiesIndiaPage() {
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <FloatingShareBar />
       <Seo
-        title={`${learningTitle} | Manovaidya`}
-        description={learningSubtitle}
+        title={learningAttentionSeoTitle}
+        description={learningAttentionSeoDescription}
         keywords="Learning Assessment, Attention Support, Child Development Guidance, Learning and Attention Support Services in India"
         path="/learning-attention-difficulties-india"
         image={childHeroImage}
+        schema={learningAttentionSeoSchema}
       />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">

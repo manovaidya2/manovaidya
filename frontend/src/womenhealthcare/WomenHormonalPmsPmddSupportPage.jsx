@@ -23,6 +23,179 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedWomenHealthCarePages from "./RelatedWomenHealthCarePages";
 import Seo from "../components/Seo";
 
+const seoTitle = "PMS & PMDD Treatment for Women in India | Manovaidya";
+
+const seoPageUrl = "https://manovaidya.org/women-hormonal-pms-pmdd-support-india/";
+
+const womenHormonalFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. What is Premenstrual Syndrome (PMS)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premenstrual Syndrome (PMS) is a collection of physical, emotional and behavioural changes that typically happen in the days leading up to the onset of menstruation. Symptoms range from mood swings and irritability to fatigue, bloating and headaches, anxiety and changes in appetite or sleep. Symptoms are usually relieved within a few days of the onset of the menstrual period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is Premenstrual Dysphoric Disorder (PMDD)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premenstrual Dysphoric Disorder (PMDD) is a more severe version of premenstrual symptoms, that can have a significant impact on emotional wellbeing and daily functioning. Women suffering from PMDD may feel extremely sad, anxious, irritable, angry, or unable to deal with work and relationships and maintaining usual activities. PMDD is an accepted medical disorder and is best diagnosed by a competent medical doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between PMS and PMDD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emotional and physical symptoms of PMS tend to be mild to moderate, and physical symptoms tend to begin before a woman's period; with PMDD, the emotional symptoms are more severe and do interfere with daily living. While both conditions happen before periods, PMDD has a more profound effect on life, work and relationships, and may need professional diagnosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common symptoms of PMS and PMDD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Symptoms can range from the mood swings and irritability, to anxiety, sadness, fatigue, bloating, headaches, breast tenderness, appetite changes, sleep disturbances, poor concentration, emotional sensitivity and reduced motivation. Symptoms are different for each individual and can be different for each cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Why do hormonal changes affect mood?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During the menstrual cycle, hormones like estrogen and progesterone change naturally and can affect brain chemicals that affect mood. Hormonal changes may be more pronounced in some women than others and this can be a factor in emotional side effects preceding menstruation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can hormonal changes cause anxiety or depression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emotional well-being may be affected by hormonal changes and some women may find they experience anxiety, low mood or mood swings as a result of these. But chronic anxiety or depression doesn't necessarily indicate a hormonal cause. A thorough mental health evaluation can help uncover all factors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can PMS affect sleep?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. For some women, it is hard to fall asleep, sleeping not very peacefully, waking up at night or feeling very tired prior to periods. Lack of sleep can also have a negative impact on mood, concentration and emotional health, so it is important that emotional health and sleep are treated simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. Can PMS or PMDD affect relationships?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Communication and relationships with partners, family, friends or colleagues may be impacted by mood swings, irritability, emotional sensitivity and anxiety related to PMS or PMDD. These patterns can help to improve communication and promote suitable support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. How can I manage PMS symptoms naturally?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Regular sleep patterns, regular physical activity, a balanced diet, stress management, relaxation exercises, menstruation charting and avoiding excess caffeine and alcohol are all things that many women find beneficial. These strategies might help with emotional wellbeing, but are not a substitute for professional support in cases of significant or long-term emotional distress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. How do I know if I have PMS or PMDD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is important to document you’re emotional and physical symptoms for a minimum of 2 menstrual cycles to establish patterns. If you are experiencing symptoms regularly before your period, and impacting your life, relationships and/or work, a trained health care provider can determine if the symptoms are consistent with PMS, PMDD or another disorder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. When should I seek professional help for PMS or PMDD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seek professional advice if symptoms are severe, occur monthly, are having a negative effect on work, studies, or relationships, or are causing a lot of emotional distress. It is important to assess early and determine the underlying condition and the appropriate management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. Can stress make PMS symptoms worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Constant stress can intensify emotional symptoms and for some women PMS symptoms may appear more intensely. Good stress management, sleep, exercise, and emotional support can be important factors in achieving overall wellbeing as well as the appropriate medical care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. How does Manovaidya support women with hormonal mood changes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The treatment at Manovaidya starts with the understanding of a person and not just with the symptoms. We organize the assessment, provide individual feedback and guidance and utilize the Neuro-Ayurveda Development System to educate women about hormonal mood changes, brain health, sleep, lifestyle habits, and emotional wellbeing. By looking at the whole person we aim to promote ongoing mental wellbeing, using a personalised approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Can PMS and PMDD be treated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. PMS and PMDD are conditions that can be managed and for many women, can get better with treatment. Management may involve dietary changes, psychological therapies, stress management techniques and as appropriate, medications prescribed by a trained healthcare professional. All treatment should be individualized."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. When should I seek urgent medical help for PMDD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you or someone you know is at risk of hurting themselves or someone else, or if emotional symptoms are accompanied by ideation or thoughts of suicide and/or self-harm, seek immediate medical attention. In these circumstances, there should never be a delay in providing emergency medical care."
+      }
+    }
+  ]
+};
+
+const womenHormonalBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "PMS & PMDD Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const womenHormonalMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Hormonal Mood Changes, PMS & PMDD Treatment for Women in India",
+  "description": "Hormonal mood changes, PMS and PMDD support for women's emotional wellbeing at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const womenHormonalPhysicianSchema = {
+  "@type": "Physician",
+  "name": "Dr. Ankush Garg",
+  "medicalSpecialty": "Mental Health",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Noida",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "IN"
+  }
+};
+
+const womenHormonalSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    womenHormonalMedicalWebPageSchema,
+    womenHormonalFaqSchema,
+    womenHormonalBreadcrumbSchema,
+    womenHormonalPhysicianSchema,
+  ],
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding Hormonal Mood Changes\nPMS vs PMDD Explained\nCommon Signs of PMS & PMDD\nCauses of Hormonal Mood Changes\nImpact on Emotional & Physical Wellbeing\nHormonal Changes Throughout Women’s Life\nSupporting Healthy Hormonal Wellbeing\nNeuro-Ayurveda Emotional Wellbeing Approach\nManaging PMS & PMDD Symptoms\nManovaidya Assessment & Support Process\nWhen Professional Guidance Is Needed\nFAQs About Hormonal & PMS/PMDD Care\n\nHormonal & PMS/PMDD\nHormonal Mood Changes, PMS & PMDD Treatment for Women in India\nUnderstanding Hormonal Changes, Emotional Wellbeing & Mental Health Throughout Every Stage of a Woman's Life\nA woman's life goes through hormonal changes. Hormones play a role in physical and emotional health throughout our lives from puberty and menstrual cycles, pregnancy, postpartum, perimenopause and menopause. [1][2]\nPMS is a condition that can affect many women, causing brief changes in their moods before the onset of their periods. Slightly more emotional, tired or irritable in some for a few days. But in some people, these feelings of change are stronger and start to impact relationships, work, activities and quality of life. [1][2]\nSome conditions can cause emotional and physical symptoms in the lead up to menstruation, like Premenstrual Syndrome (PMS) and Premenstrual Dysphoric Disorder (PMDD). Women might feel moody, get irritated, anxious, sad, angry, cry, tired, unsteady or not concentrate well, or have changes in eating or sleeping habits. Typically, these symptoms clear up once menstruation starts, but they may recur during each period. [1][2][3]\n\nMany women may not seek professional advice as they're told these experiences are \"just hormones. Hormonal shifts can impact emotional well-being; if they are more severe and last longer, it is important not to ignore it. It is important to understand what is going on in order to find the right help. [1][3]\nWe believe that the interplay between brain health, hormonal changes, sleep, lifestyle, nutrition and overall physical health all have an impact on women's emotional wellbeing at Manovaidya. We're not just interested in the monthly symptoms; we want to find out what's really happening with each woman.\t\nUnder the guidance of Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya adopts the Neuro-Ayurveda Development System to enable women to gain a more nuanced understanding of hormonal changes in mood, PMS, PMDD and emotional well-being through a systematic assessment and tailored holistic treatment.\nAt Manovaidya, Hormonal & PMS/PMDD Treatment Focuses On:\n Hormonal Mood Changes\n Premenstrual Syndrome (PMS)\n Premenstrual Dysphoric Disorder (PMDD)\n Mood Swings Before Periods\n Irritability\n Anxiety Before Periods\n Low Mood Before Menstruation\n Hormonal Wellbeing\nBook a Structured Hormonal & PMS/PMDD Assessment\nUnderstanding the pattern that triggers a return of mood swings, anxiety, irritability or emotional changes before every period and that this interferes with daily life is a first step towards support.\nUnderstanding Hormonal Mood Changes\nHormones can affect mood, sleep, energy, emotional balance, relationships and daily functioning. [1][4][5]\nHormonal Mood Changes\nPremenstrual Syndrome (PMS)\nPremenstrual Dysphoric Disorder (PMDD)\nMood Swings Before Periods\nIrritability\n\n\nHormones affect numerous body processes such as energy, sleep, emotional balance and mood. [4][5]\nHormones like estrogen and progesterone can impact emotional health in some women at various times of the menstrual cycle. [4][5]\nModerate emotional changes are normal, but when emotional changes are a recurring problem that is impacting work, relationships or daily functioning, it is time to seek professional help. [1][2]\nMany women who are looking for Hormonal Mood Changes Treatment in India, PMS Treatment, PMDD Symptoms, Mood Swings Before Period or Hormonal Mental Health are trying to understand whether or not their symptoms are a normal part of their hormonal changes or they are a symptom of a condition that needs to be assessed.\nEarly identification of these patterns can help women identify that they need specific support and enhance their well-being. [1]\n\nWhat is Premenstrual Syndrome (PMS)\nHormonal fluctuations\n Mood and emotional balance\nSleep and energy changes\n Monthly symptom patterns\n Professional assessment\n Personalised support\nPremenstrual Syndrome (PMS) is a range of physical, emotional and behavioural changes which happen during the days leading up to menstruation. [1][2]\nSymptoms tend to get better right after the start of their periods. [2]\nA small number of women will suffer from some degree of PMS at some time during their life. If symptoms are more severe or start to interfere with everyday activities, however, there may be a need for further assessment. [1][2]\nWhat is Premenstrual Dysphoric Disorder (PMDD)?\nPremenstrual Dysphoric Disorder (PMDD) is a more severe form of PMS. [1][3][6]\nEmotional symptoms of PMDD can be severe and impact on work, relationships and day to day activities before menstruation. [1][3]\n\nPMDD is known as a medical condition and should be assessed by a competent health care provider. [1][3][6]\nCommon Signs & Symptoms of PMS & PMDD\nEmotional Symptoms\nMood swings, irritability, anxiety, persistent sadness, crying, anger and increased sensitivity. [1][2][3]\nPhysical Symptoms\nFatigue, tenderness of the breasts, bloating, headaches, body aches, changes in appetite and sleep disorders. [1][2]\nCognitive Symptoms\nConcentration, attention, decision making, mental clarity and memory difficulties. [1][5]\nBehavioural Changes\nWithdrawal, loss of motivation, diminished productivity, difficulty interacting with others, and problems with tasks or work. [1][3]\nEach woman has her own unique set of symptoms.\nEmotional Symptoms\nOther women might have:\nMood swings\n Irritability\n Anxiety\n Persistent sadness\n Frequent crying\n Feeling emotionally overwhelmed\n Anger\n Increased sensitivity\n\nPhysical Symptoms\nSome women notice:\n\nFatigue\n Breast tenderness\n Bloating\n Headaches\n Body aches\n Changes in appetite\n Sleep disturbances\nAny physical symptoms that are persistent or severe should always be medically examined.\nCognitive Symptoms\nThe following may also be impacted by hormonal changes:\nConcentration\n Attention\n Decision-making\n Mental clarity\n Memory\n\nBehavioural Changes\nCertain women might experience:\nSocial withdrawal\n Loss of motivation\n Reduced productivity\n Increased conflict in relationships\n Difficulty managing daily responsibilities\n\nWhat Causes PMS & PMDD?\nFactors under the influence of hormones and brain chemistry.\nSymptoms may be affected by hormonal changes, brain chemistry and a person's sensitivity to hormonal changes. [4][5]\nHistory & Emotional Health\nFamily history, history of depression and/or anxiety and the recurrent patterns of emotions can impact the severity of symptoms. [1][5]\n\nSleep, Stress & Lifestyle\nPoor sleep, chronic stress, lifestyle factors, physical health and nutrition factors can impact upon PMS and PMDD symptoms. [1][2]\nThe exact cause is not completely understood. [4][5]\nThere is currently evidence that symptoms can occur as a result of a combination of hormonal fluctuation, brain chemistry, genetics and personal sensitivity to hormonal fluctuations. [4][5]\nThe severity of the symptoms may be affected by a number of factors, such as:\nHormonal fluctuations\n Family history\n Depression or anxiety, past or present\n Poor sleep\n Chronic stress\n Lifestyle habits\n Physical health\n Nutritional factors\nFactors affecting each person's symptoms are important to understand to provide individualised care.\nWhy Early Recognition Matters\nEarly recognition of mood changes due to hormones empower women to build emotional resilience, enhance coping mechanisms and minimize the impact of such changes on emotional and physical health.\nMost women experience some form of emotional symptom each month, but they're not aware of the fact that this could be a clue to PMS or PMDD.\nEarly awareness of these changes helps women to know what to look for, seek for professional assessment and discuss individual strategies for managing the symptoms with the doctor before symptoms become severe and impact relationships, employment, emotional health or quality of life. [1][3]\n\nHow PMS & PMDD Can Affect Daily Life\nA woman's menstrual cycle is not the only thing that can be affected by hormonal mood swings. In some women emotional and physical symptoms become so severe that it affects their work, family life, relationships and daily activities. [1][3]\n\nA lot of women still go about their business, but silently endure monthly mood swings. With repeated symptoms, there may be loss of confidence, productivity and quality of life over time.\nBy identifying these changes it supports women to realise that if they continue to experience emotional symptoms they should seek some attention and support, rather than ignore them as \"normal\".\nEmotional Wellbeing\nEmotional balance can be affected in various ways by hormonal changes. [4][5]\nWomen might experience:\nMood swings\n Irritability\n Persistent sadness\n Anxiety\n Feeling emotionally overwhelmed\n Frequent crying\n Anger or frustration\n Increased emotional sensitivity\nThese symptoms tend to happen on the days leading up to the period and typically get better once the period starts. [1][2]\nPhysical Health\nPhysical symptoms can also be caused by hormonal changes.\nSome women notice:\nFatigue\n Headaches\n Breast tenderness\n Bloating\n Muscle/Joint discomfort\n Changes in appetite\n Low energy\n Difficulty sleeping\nIf symptoms of the body continue or are severe, always seek the advice of a trained health care professional to exclude any other health condition.\nSleep\n\nHormonal wellbeing and healthy sleep go hand in hand. [5]\nFor some women, it may cause:\nDifficulty falling asleep\n Restless sleep\n Sleeping at night\n Excessive sleepiness or drowsiness following sleep.\n Excessive daytime sleepiness\nSleep problems can worsen emotional distress and hormones can affect sleep. [5]\n\nRelationships\nPMS or PMDD can have an impact on mood changes, which can affect communication and relationships. [1][3]\nSome women may:\nGet easily irritated\n Feel emotionally distant\n Be more responsive to situations that are stressful\n Find it difficult to communicate calmly\n Have more trouble with family members\nBeing able to appreciate the changes can make it easier for families and partners to react with empathy and support.\nWork & Daily Responsibilities\nFluctuations in hormones can affect concentration and productivity. [1][3]\nSome women notice:\nDifficulty focusing\n Reduced motivation\n Poor concentration\n Mental fatigue\n Lower confidence\n Being unable to cope with daily activities\n\nIdentifying patterns can assist women to find the right kind of support and make health decisions.\n\nPMS vs PMDD\n\nPMS\nOccasionally more severe and frequent before periods\nTypically gets better soon after periods start\nMay impact comfort, but generally is not a barrier to day-to-day living\n\nPMDD\nInvolves more severe emotional symptoms\n Can significantly interfere with work, relationships and daily life\n Should be evaluated by a qualified healthcare professional\nWhile the symptoms are similar, PMS and PMDD vary in how severe they are and how they affect people. [1][3]\n\nPremenstrual Syndrome (PMS)\nPMS commonly causes:\nMild to moderate mood changes\n Irritability\n Bloating\n Fatigue\n Breast tenderness\n Temporary emotional changes\nWhen periods resume, symptoms typically get better. [1][2]\n\nPremenstrual Dysphoric Disorder (PMDD)\nPMDD has more extreme emotional symptoms that can affect daily functioning. [1][3][6]\nWomen who have PMDD can have symptoms such as:\n\nIntense sadness\n Severe anxiety\n Marked irritability\n Emotional outbursts\n Problems working or living at school or at home\n Significant relationship difficulties\nAssessment by a healthcare professional is critical as PMDD is a recognised medical condition and may need full management. [3][6]\nHormonal Changes Throughout a Woman's Life\nThere are a number of life times during which hormonal changes take place.\nWomen can feel emotional changes during:\nPuberty\n Menstrual cycles\n Pregnancy\n Postpartum period\n Perimenopause\n Menopause\nWhile not every woman will have profound emotional symptoms during these phases, an understanding of the effects of these hormones can help identify patterns that may warrant attention by a professional. [4][5]\n\nThe Neuro-Ayurveda Development System\nBrain Nourishment System\nGut Response System\nNeural Network System\nSensory Integration System\nBehaviour Guidance System\nThe emotional wellness of women is seen here at Manovaidya in a holistic manner.\nThe Neuro-Ayurveda Development System does not just target monthly symptoms but takes the brain health–hormonal wellbeing–lifestyle–sleep–physical health–emotional resilience lens.\n\nBrain Nourishment System\n\nHealthy brain function is related to:\nEmotional regulation\n Memory\n Attention\n Mental clarity\n Stress resilience\n Decision-making\nPracticing healthy brain care is a way to improve emotional wellness.\n\nGut Response System\nOngoing research into the gut and emotional wellbeing continues. [7]\nEnergy levels, mood, emotional resilience may be affected by nutrition, digestion and overall physical wellbeing. [7]\n\nNeural Network System\nMental activity is important for mental health and mental function.\nEmotional resilience can be nurtured through activities like journaling, reading, mindfulness, creative hobbies and meaningful conversations.\n\nSensory Integration System\nPositive sensory experiences can help you to relax and balance your emotions.\nActivities that can be useful are:\nDeep breathing\n Yoga\n Meditation\n Listening to soothing music for relaxed listening\n Spending time outdoors\n Creative activities\n\nBehaviour Guidance System\n\nThe impact of hormonal changes on behaviour is possible.\nSome females might develop:\nMore emotionally reactive\n Easily frustrated\n Less patient\n Socially withdrawn\n Less motivated\n More sensitive to criticism\nAvoiding self-blame and shame in the recognition process allows women to engage with emotional health with a sense of understanding and self-compassion.\n\n\nSupporting Emotional Wellbeing During Hormonal Changes\n\nEmotional well-being may be assisted by healthy lifestyle practices, in addition to medical treatment. [1][2]\n\nTrack Your Menstrual Cycle\nIt's important to record any physical and/or emotional symptoms to identify patterns and communicate with your health care provider. [1][3]\nPrioritise Quality Sleep\nRegular sleeping patterns help maintain emotional balance, concentration and good health.\nStay Physically Active\nWalking, stretching, yoga and other fun physical exercise can help promote emotional wellness. [1][2]\nEat a Balanced Diet\nHealthy meals contribute to good brain health, physical wellbeing and emotional resilience.\n\nPractice Stress Management\nMindfulness, breathing, relaxation techniques and healthy coping strategies can aid with emotional stress.\nSeek Professional Guidance\nWhen emotional symptoms are severe, present monthly, disrupt work or relationships or are a significant problem on quality of life, a professional evaluation is recommended. If you are thinking of harming yourself, self-destructing or think you are at immediate risk of hurting yourself or others, you need emergency medical help right away.\n\nHow Manovaidya Supports Women\n\nStep 1: Comprehensive Assessment\nStep 2: Personalized Guidance\nStep 3: Hormonal Wellbeing Guidance\nStep 4: Neuro-Ayurveda System\nStep 5: Ongoing Support\n\nAt Manovaidya, we start by understanding the person and not just the symptoms.\n\nWe have a structured process which involves:\n\nStep 1: Comprehensive Assessment\nAwareness of emotional health, menstrual cycles, symptom cycles, sleep patterns, lifestyle and individual factors.\nStep 2: Personalized Guidance\nIndividually tailoring recommendations to the emotional, physical and lifestyle needs of each woman.\n\nStep 3: Hormonal Mental Health Guidance\nSupport women to understand PMS, PMDD, hormonal mood swings and practical lifestyle tips to support emotional well being.\nStep 4: Neuro-Ayurveda Development System\nThe five pillars approach to understanding hormonal wellbeing, brain health, behaviour and overall wellness.\nStep 5: Progress Tracking & Ongoing Support\nOffering structured follow up to support women to track patterns of symptoms, reinforce positive behaviors, and provide education about emotional health across time.\n\nWhen Should You Consider Professional Guidance?\nIf you:If you do not know how to fix the issue, you should seek professional advice:\nHave extreme mood swings or get irritated with people just before periods each month.\nRecognize signs that are disrupting work, school or relationships.\nHave chronic sadness or anxiety in the lead up to their period.\nBecome very irritated or moody.\nExperience pattern of sleep difficulties related to your period.\nIt's hard to function in everyday activities due to emotional symptoms.\nEarly assessment allows to see if the symptoms are associated with PMS, PMDD or another health problem and provide appropriate, personalised care. [1][3]\nWe want to empower women to identify hormonal mood shifts and to have a healthier response by providing personal and compassionate guidance.\n\n\nWhy Women Across India is choosing Manovaidya?\nAssessment of comprehensive hormonal & emotional wellbeing\n Neuro-Ayurveda Development System\n Personalized Guidance\n Holistic Women's Mental Health Care\n Take action for long-term women's mental wellness\n Ongoing Support & Progress Tracking\nEvery woman experiences changes in her hormones in different ways. For some women, emotional changes may be mild, but for others, there can be a feeling of anxiety, irritability, sadness or emotional exhaustion occurring before the cycle, or it can be a more persistent state of mental state that impacts daily functioning. [1][3]\nWe understand that hormones are not the only factor to consider when it comes to emotional wellbeing at Manovaidya. Brain health, sleep, nutrition, stress, lifestyle habits, physical health and personal experiences all are important factors in women's feelings at various life stages.\nWe don't just look at the woman's monthly symptoms, we want to get to the root of each woman's emotional health.\nStructured assessment, personalised guidance and an integrated approach will enhance women's understanding of the nature of changes that occur to their mood from a hormonal perspective and support their long-term emotional wellbeing and mental wellness.\n\nComprehensive Women's Mental Health Assessment\nThe journey of every woman's hormonal and emotional health is different.\nThese are some of the symptoms that some women may experience:\nChanging moods prior to periods\n Anxiety before menstruation\n Irritability\n Persistent sadness\n Emotional exhaustion\n Sleep disturbances\n Fatigue\n Difficulty concentrating\nWe are able to assess using a scheme of work, and thus understand:\n\nEmotional wellbeing\n Menstrual cycle patterns\n Hormonal symptom history\n Sleep quality\n Lifestyle habits\n Physical health\n Stress levels\n Relationship concerns\n Personal goals\n\nBefore developing customized instructions.\n\nNeuro-Ayurveda Development System\nManovaidya is based on Neuro-Ayurveda Development System, a coherent system that sees the emotional health of women in terms of 5 pillars.\nBrain Nourishment System\nGut Response System\nNeural Network System\nSensory Integration System\nBehaviour Guidance System\nThis framework assists women in recognizing the possible impact of biological, hormonal, emotional and lifestyle factors on their mood, resilience and mental health.\n\nPersonalized Guidance\n No two women experience PMS or PMDD in exactly the same way. [1][3]\nRecommendations are personalised according to:\nEmotional symptoms\n Menstrual cycle patterns\n Sleep quality\n Lifestyle habits\n Nutrition\n Stress levels\n Physical health\n Family responsibilities\n Personal goals\nThis is a personalised approach, meaning that guidance is tailored to the individual woman and not a one size fits all scenario.\n\n\nHolistic Women's Hormonal Mental Health Perspective\n\nThe hormones and well-being are closely associated with health.\nOur approach takes into account the relationship between:\nBrain health\n Hormonal wellbeing\n Emotional wellbeing\n Sleep quality\n Nutrition\n Physical activity\n Lifestyle habits\n Healthy relationships\nTo offer a more comprehensive knowledge of emotional well being of women across various stages of life.\n\nFocus on Emotional Balance, Confidence & Quality of Life\nWe aim to provide women with improved emotional awareness, to build resilience and to keep emotional balance at various hormonal phases of life.\nWe work to maintain mental health and wellbeing over the longer term, and not just on a monthly basis.\n\nOngoing Support & Progress Tracking\nMental health hormonal patterns can evolve with time.\nThe ongoing follow-up and systematic monitoring of progress enable women to identify symptom patterns, reinforce healthy habits and make informed choices based on their changing emotional and physical needs.\n\nWhy Women Across India Trust Manovaidya\nThe women of Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and all over India reach out to Manovaidya for Hormonal Mood Changes Support, PMS Support, PMDD Support and Women Mental Health Guidance and Emotional Wellbeing Support both online and in-clinic.\n\nAs a student, working adult, homemaker, entrepreneur or at any stage of reproductive health, we tailor our approach to suit your personal needs to understand your unique emotional wellbeing.\n\nAbout\nDr. Ankush Garg\nAutism, ADHD, Child Development & Mental Health Specialist in India\nDr. Ankush Garg is the Founder of Manovaidya and the Developer of the Neuro-Ayurveda Development System.\nHis work extends across Child Development, Adult Mental Health, Women's Mental Health and Senior Mental Health, with a focus on understanding the relationship between brain health, emotional wellbeing and overall quality of life.\nMany women seek guidance when persistent low mood, emotional exhaustion or emotional imbalance begin affecting sleep, work, relationships or daily functioning. Through structured assessment, personalised guidance, lifestyle recommendations and continuous follow-up, Dr. Ankush Garg helps women better understand these challenges while supporting long-term emotional wellbeing through the Neuro-Ayurveda Development System.\nBased in Delhi NCR, Dr. Ankush Garg supports women across India through structured assessment, personalised guidance and holistic mental health care.\n\n\nFrequently Asked Questions About Hormonal & PMS/PMDD\n\n1. What is Premenstrual Syndrome (PMS)?\nPremenstrual Syndrome (PMS) is a collection of physical, emotional and behavioural changes that typically happen in the days leading up to the onset of menstruation. Symptoms range from mood swings and irritability to fatigue, bloating and headaches, anxiety and changes in appetite or sleep. Symptoms are usually relieved within a few days of the onset of the menstrual period. [1][2]\n\n2. What is Premenstrual Dysphoric Disorder (PMDD)?\nPremenstrual Dysphoric Disorder (PMDD) is a more severe version of premenstrual symptoms, that can have a significant impact on emotional wellbeing and daily functioning. Women suffering from PMDD may feel extremely sad, anxious, irritable, angry, or unable to deal with work and relationships and maintaining usual activities. PMDD is an accepted medical disorder and is best diagnosed by a competent medical doctor. [1][3][6]\n\n3. What is the difference between PMS and PMDD?\nEmotional and physical symptoms of PMS tend to be mild to moderate, and physical symptoms tend to begin before a woman's period; with PMDD, the emotional symptoms are more severe and do interfere with daily living. While both conditions happen before periods, PMDD has a more profound effect on life, work and relationships, and may need professional diagnosis. [1][3]\n\n4. What are the common symptoms of PMS and PMDD?\nSymptoms can range from the mood swings and irritability, to anxiety, sadness, fatigue, bloating, headaches, breast tenderness, appetite changes, sleep disturbances, poor concentration, emotional sensitivity and reduced motivation. Symptoms are different for each individual and can be different for each cycle. [1][2][3]\n\n5. Why do hormonal changes affect mood?\nDuring the menstrual cycle, hormones like estrogen and progesterone change naturally and can affect brain chemicals that affect mood. Hormonal changes may be more pronounced in some women than others and this can be a factor in emotional side effects preceding menstruation. [4][5]\n\n6. Can hormonal changes cause anxiety or depression?\nEmotional well-being may be affected by hormonal changes and some women may find they experience anxiety, low mood or mood swings as a result of these. But chronic anxiety or depression doesn't necessarily indicate a hormonal cause. A thorough mental health evaluation can help uncover all factors. [4][5]\n\n7. Can PMS affect sleep?\nYes. For some women, it is hard to fall asleep, sleeping not very peacefully, waking up at night or feeling very tired prior to periods. Lack of sleep can also have a negative impact on mood, concentration and emotional health, so it is important that emotional health and sleep are treated simultaneously. [5]\n\n8. Can PMS or PMDD affect relationships?\nYes. Communication and relationships with partners, family, friends or colleagues may be impacted by mood swings, irritability, emotional sensitivity and anxiety related to PMS or PMDD. These patterns can help to improve communication and promote suitable support. [1][3]\n\n9. How can I manage PMS symptoms naturally?\nRegular sleep patterns, regular physical activity, a balanced diet, stress management, relaxation exercises, menstruation charting and avoiding excess caffeine and alcohol are all things that many women find beneficial. These strategies might help with emotional wellbeing, but are not a substitute for professional support in cases of significant or long-term emotional distress. [1][2]\n\n10. How do I know if I have PMS or PMDD?\nIt is important to document you’re emotional and physical symptoms for a minimum of 2 menstrual cycles to establish patterns. If you are experiencing symptoms regularly before your period, and impacting your life, relationships and/or work, a trained health care provider can determine if the symptoms are consistent with PMS, PMDD or another disorder. [1][3]\n\n11. When should I seek professional help for PMS or PMDD?\nSeek professional advice if symptoms are severe, occur monthly, are having a negative effect on work, studies, or relationships, or are causing a lot of emotional distress. It is important to assess early and determine the underlying condition and the appropriate management. [1][3]\n\n\n12. Can stress make PMS symptoms worse?\nYes. Constant stress can intensify emotional symptoms and for some women PMS symptoms may appear more intensely. Good stress management, sleep, exercise, and emotional support can be important factors in achieving overall wellbeing as well as the appropriate medical care. [2][5]\n\n13. How does Manovaidya support women with hormonal mood changes?\n\nThe treatment at Manovaidya starts with the understanding of a person and not just with the symptoms. We organize the assessment, provide individual feedback and guidance and utilize the Neuro-Ayurveda Development System to educate women about hormonal mood changes, brain health, sleep, lifestyle habits, and emotional wellbeing. By looking at the whole person we aim to promote ongoing mental wellbeing, using a personalised approach.\n\n14. Can PMS and PMDD be treated?\nYes. PMS and PMDD are conditions that can be managed and for many women, can get better with treatment. Management may involve dietary changes, psychological therapies, stress management techniques and as appropriate, medications prescribed by a trained healthcare professional. All treatment should be individualized. [1][2][3]\n\n15. When should I seek urgent medical help for PMDD?\nIf you or someone you know is at risk of hurting themselves or someone else, or if emotional symptoms are accompanied by ideation or thoughts of suicide and/or self-harm, seek immediate medical attention. In these circumstances, there should never be a delay in providing emergency medical care. [3][6]\n\nBook Your Assessment Today\nBook Consultation\nSpeak With Our Team\nGet Personalized Guidance\nHormonal & PMS/PMDD Assessment\nHormonal Wellbeing Support\nBook Your Consultation with Manovaidya Today\nManovaidya Clinic\nNoida, Uttar Pradesh, India\n\nReferences\n[1] American College of Obstetricians and Gynecologists (ACOG).\n  Management of Premenstrual Disorders – Clinical Practice Guideline No. 7.\n  https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/12/management-of-premenstrual-disorders\n[2] American College of Obstetricians and Gynecologists (ACOG).\n  Premenstrual Syndrome (PMS).\n  https://www.acog.org/womens-health/faqs/premenstrual-syndrome-pms\n[3] American College of Obstetricians and Gynecologists (ACOG).\n  Premenstrual Dysphoric Disorder (PMDD) / Premenstrual Disorders – Clinical Guidance.\n  https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/12/management-of-premenstrual-disorders\n[4] Hantsoo L, Epperson CN.\n  Premenstrual Dysphoric Disorder: Epidemiology and Treatment.\n  Current Psychiatry Reports.\n  https://doi.org/10.1007/s11920-015-0628-3\n[5] Takeda T.\n  Premenstrual Disorders: Premenstrual Syndrome and Premenstrual Dysphoric Disorder.\n  Journal of Obstetrics and Gynaecology Research.\n  https://doi.org/10.1111/jog.14284\n[6] Naik SS, et al.\n  Premenstrual Dysphoric Disorder: Review and Clinical/Diagnostic Perspective.\n  PubMed – National Library of Medicine.\n  https://pubmed.ncbi.nlm.nih.gov/?term=Premenstrual+Dysphoric+Disorder+Naik\n[7] Ministry of AYUSH, Government of India.\n  AYUSH Research Portal – Evidence-Based Research Data of AYUSH Systems.\n  https://arp.ayush.gov.in/\n[8] Central Council for Research in Ayurvedic Sciences (CCRAS), Ministry of AYUSH.\n  Ayurveda Research & Scientific Resources.\n  https://ccras.nic.in/\n \n\n\n";
 
 const pageLinks = [
@@ -696,49 +869,15 @@ function WomenHormonalPmsPmddSupportPage() {
     return () => window.removeEventListener("scroll", updateActiveSection);
   }, []);
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MedicalWebPage",
-        name: "Hormonal Mood Changes, PMS & PMDD Treatment for Women in India",
-        description: "Hormonal mood changes, PMS, PMDD and women's emotional wellbeing support at Manovaidya.",
-        url: "https://www.manovaidya.com/women-hormonal-pms-pmdd-support-india/",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer },
-        })),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
-          { "@type": "ListItem", position: 2, name: "Women's Mental Health", item: "https://www.manovaidya.com/women-health-care/" },
-          { "@type": "ListItem", position: 3, name: "Hormonal & PMS/PMDD Support", item: "https://www.manovaidya.com/women-hormonal-pms-pmdd-support-india/" },
-        ],
-      },
-      {
-        "@type": "Physician",
-        name: "Dr. Ankush Garg",
-        medicalSpecialty: "Mental Health",
-        address: { "@type": "PostalAddress", addressLocality: "Noida", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
-      },
-    ],
-  };
-
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo 
-        title="Hormonal Mood Changes, PMS & PMDD Treatment for Women in India | Manovaidya" 
+        title={seoTitle} 
         description="Looking for Hormonal Mood Changes, PMS & PMDD Treatment for Women in India? Learn about PMS, PMDD, mood swings before periods, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="PMS, PMDD, Premenstrual Syndrome, Premenstrual Dysphoric Disorder, Hormonal Mood Changes, Mood Swings Before Periods, Women's Mental Health, Hormonal Mental Health, PMS Support, PMDD Support, Hormonal Anxiety, Hormonal Depression, Emotional Wellbeing, Periods Mood Swings, Anxiety Before Periods, Premenstrual Mood Changes, Women's Emotional Health" 
         path="/women-hormonal-pms-pmdd-support-india"
+        schema={womenHormonalSeoSchema}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

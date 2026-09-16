@@ -23,6 +23,165 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.web
 import consultationImage from "../images/fatigue-consultation-new.png"; 
 import doctorImage from "../images/doctorimg-2.jpeg";
 
+const seoTitle = "Stress & Fatigue Treatment in India | Mind-Body Health | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-fatigue/";
+
+const stressFatigueFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress cause fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Emotional stress can cause physical, mental and emotional exhaustion in some individuals. Chronic stress has an impact on sleep, attention, motivation, and energy levels. However, there are many causes of fatigue and stress is not the only cause."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What is the difference between normal tiredness and fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If tiredness is normal, it is likely that it will get better with rest or sleep. Fatigue is more lasting. Can persist after rest and impact functioning, work, motivation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What are the common symptoms of fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common symptoms include feeling tired all the time, lack of energy, mental fatigue, trouble focusing, lack of motivation, lack of physical endurance, insomnia, emotional fatigue, and tiredness upon waking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. Can emotional stress make you feel physically tired?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Some may experience physical fatigue during prolonged periods of emotional stress. Stress can disrupt sleep, recovery, energy levels and wellbeing which can contribute to exhaustion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can poor sleep contribute to fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Low quality sleep or not sleeping well enough is a common cause of tiredness. A good night's sleep helps you feel physically energised, mentally sharp and emotionally balanced."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can fatigue be caused by medical conditions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. There are numerous medical conditions associated with fatigue such as thyroid disorders, anaemia, diabetes, nutritional deficiencies, infections, heart disease and health issues. If you are still tired after the following tests, see your health care provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can lifestyle habits improve energy levels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Energy and wellbeing may be supported by healthy lifestyle practices, including regular physical activity, eating a healthy diet, getting a good night's sleep, staying hydrated, managing stress and establishing a routine. These habits are in addition to medical treatment, if required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I see a healthcare professional for fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A person who is tired for several weeks, and not relieved by rest, and has symptoms such as unexplained weight loss, fever, severe weakness, chest pain, shortness of breath, and persistent dizziness should seek medical evaluation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Is mental fatigue different from physical fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mental fatigue impacts on concentration, memory, decision making and motivation. Physical fatigue impacts body energy, stamina and executing daily activities. Many people suffer from both at the same time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Fatigue assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Stress & Fatigue assessment is a systematic assessment. It takes into account: emotional wellbeing, stress, sleep quality, lifestyle habits, nutrition, daily routine, medical history and overall health. It can help to understand issues that could impact wellbeing and to provide individual guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals experiencing stress-related fatigue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We take a holistic approach to emotional wellbeing, lifestyle and health rather than just low energy at Manovaidya. We bridge the gap between people and their mind/body wellbeing through structured assessment, personalised guidance and the Neuro-Ayurveda Development System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Neuro-Ayurveda Development System is Manovaidya's five pillars system. It features Brain Nourishment, Gut Response, Neural Network Development and Sensory Integration and Behaviour Guidance. It assists us to see emotional wellbeing, lifestyle and overall health in a holistic way, as well as assessment and individualised guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress help improve overall wellbeing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress management by establishing healthy routines, regular activity, balanced nutrition and good sleep and relaxation habits may help to maintain emotional well-being and healthy energy. These practices are not a substitute for the proper medical diagnosis or treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. Why do I feel tired even after sleeping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are many reasons that you may be feeling tired even after sleeping. This could be caused by poor sleep, stress, thyroid disorders, nutritional deficiency, medical issues, medication or lifestyle changes. If it persists, it should be assessed by a professional health care worker."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Fatigue support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our emphasis at Manovaidya is on the Emotional Wellbeing, Lifestyle and Long Term Health relationship, where structured assessments, personalised guidance and the Neuro-Ayurveda Development System are used. Through our comprehensive approach, individuals can gain insight into how they can become fatigued by stress and learn how to promote sustainable mind-body health and good medical management."
+      }
+    }
+  ]
+};
+
+const stressFatigueBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Fatigue Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressFatigueMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Fatigue Treatment in India",
+  "description": "Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy.",
+  "url": seoPageUrl
+};
+
+const stressFatigueSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressFatigueMedicalWebPageSchema,
+    stressFatigueFaqSchema,
+    stressFatigueBreadcrumbSchema
+  ]
+};
+
 const rawSourceContent = "Key Takeaways\nUnderstanding Stress & Persistent Fatigue\nNormal Tiredness vs Long-Term Fatigue\nPhysical Fatigue vs Mental Fatigue\nCommon Symptoms & Causes of Fatigue\nStress, Sleep & Energy Connection\nWarning Signs That Need Medical Evaluation\nSupporting Healthy Energy Levels\nNeuro-Ayurveda Mind-Body Approach\nLifestyle & Stress Management Support\nManovaidya Stress & Fatigue Assessment\nPersonalised Guidance & Follow-Up\nFAQs About Stress & Fatigue\n\nBrain Health\nStress & Fatigue Treatment in India\nUnderstanding the Relationship Between Stress, Fatigue and Emotional Wellbeing\nIt's perfectly normal to feel tired at the end of a busy day. However, if tiredness persists for weeks, has started to become a problem with your work or is not improving after getting adequate rest, it shouldn't be taken lightly. It could mean something is amiss in your body. [1][3]\nFatigue is more than 'sleepiness'. Can manifest as physical weakness, mental heaviness or emotional exhaustion. Some may feel exhausted at all times, lack motivation for the task at hand, or struggle to come up with the energy to concentrate even if they are able to sleep well. [1]\nFatigue may have a lot of causes. Bad sleep, diet, thyroid function, infections, chronic health issues, drugs, and emotional issues can all contribute. This is why it is important to establish the true cause first, before determining the types of necessary supports. [1][5]\n\nWe do not consider low energy to be a small and isolated issue at Manovaidya. An attempt is made to grasp the whole person. Sleep, lifestyle, nutrition, emotional wellbeing/mind-body health are all linked together to develop healthier long-term habits.\nWe practice Neuro-Ayurveda Development System under the guidance of Mental Health Specialist, Dr. Ankush Garg, Founder of Manovaidya. A five-pillar approach that considers all aspects of brain, gut, behaviour, lifestyle and emotional health.\n\nWhat is Fatigue?\nFatigue is a state of weariness, typically physical, mental or emotional and that lasts for an extended period of time. Rest does not always help it to pass. [1]\nAfter exercise, or when tired, normal tiredness will usually improve following sleep. Fatigue is different. Can cause disruption to work, relationships, concentration and daily life. [1][3]\nFatigue is not a disease in its own right. A symptom which can occur due to numerous medical and psychological causes. [1]\nWith a proper medical assessment, it is possible to identify the true cause and determine the appropriate treatment or assistance. [1][5]\n\nHow Are Stress and Fatigue Connected?\nThe body's stress reaction continues and continues when someone is emotionally stressed for extended periods. [2]\nThis can impact (over time):\nSleep quality\n Emotional wellbeing\n Energy levels\n Concentration\n Daily motivation\n Recovery after work\nSome people experience fatigue during stress, but fatigue can occur for a number of other reasons. Constant fatigue can also be the symptom of many physical health issues. [1][2]\nKnowledge and awareness of the relationship between stress, lifestyle and energy level can assist a person in making health choices.\n\nCan Stress Cause Fatigue?\nStress can have an impact on the mind and body. A person can feel physically drained, mentally overwhelmed and emotionally exhausted even after sleeping enough when stress occurs for a prolonged period. [2]\nStress can disrupt sleep, routine, concentration and healing. However, there are a lot of different causes of fatigue. Don't assume that all of your tiredness is due to stress. [1][2]\nFatigue that persists for weeks of time or begins to impact everyday life should be properly assessed by a healthcare professional. [3][5]\n\n\nUnderstanding Physical and Mental Fatigue\nFatigue is different between two people. A considerable number of people experience physical and mental fatigue simultaneously.\nPhysical Fatigue\nPhysical fatigue can include: Lack of energy, Tiredness in muscles, Less physical endurance, Extreme fatigue after performing simple tasks, Trouble with everyday activities.\nMental Fatigue\nSigns of mental fatigue can include: Mental fatigue, problems concentrating, poor memory, decreased productivity, feeling overwhelmed, poor decision making, decreased motivation.\n\nCommon Symptoms Associated With Fatigue\nFatigue does not feel the same for everyone.\nYou might have the following symptoms:\nConstant tiredness\n Low energy levels\n Mental exhaustion\n Difficulty concentrating\n Poor motivation\n Reduced physical stamina\n Sleep disturbances\n Not getting enough rest during sleep\n Reduced work performance\n Emotional exhaustion\nIf fatigue persists it should be examined medically to determine the true cause. [1][3]\n\nCommon Causes of Fatigue\nThere are a number of reasons for fatigue. Examples of the causes include: [1][5]\nEmotional stress\n Poor sleep\n Thyroid disorders\n Anaemia\n Diabetes\n Nutritional deficiencies\n Chronic infections\n Certain medications\n Depression\n Anxiety\n Burnout\n Long working hours\nThere are many factors that can cause fatigue, therefore it is preferable to not self-diagnose fatigue. [1]\n\nCommon Signs You Should Not Ignore\nIf fatigue continues, it is important not to shrug this off, particularly if it is accompanied by other symptoms.\nIf you have the following symptoms, get medical help:\nFatigue lasting several weeks\nUnexplained weight loss\nPersistent fever\nSevere weakness\nShortness of breath\nChest pain\nFrequent dizziness\nSwollen lymph nodes\nBlood in stool\nPersistent night sweats\nThese signs can be a sign of an underlying medical problem and should be addressed in a timely manner. [5]\n\nWhy emotional wellbeing matters\nThere are a lot of areas of life that can become affected by long term fatigue.\nSome individuals experience:\nReduced productivity\n Difficulty concentrating\n Irritability\n Lack of motivation\n Reduced confidence\n Social withdrawal\n Difficulty maintaining relationships\n Lower standard of living.\nEmotional wellbeing is there in addition to medical care and healthy lifestyle practices, which makes life easier to manage everyday.\n\nOur Stress & Fatigue Assessment Process\nFatigue is a symptom of many causes. Stress can be a very significant issue for one person. Other people might have a sleeping disorder, nutritional deficiency, medical conditions or lifestyle factors. That's why the whole story is important. [1][5]\n\nHere at Manovaidya, we consider emotional wellbeing, lifestyle, sleeping and daily habits in relation to energy to assess. We also recommend that medical assessment be undertaken when necessary.\n1. Understanding Your Health Journey\nEvery consultation starts with your complete health history. Discussed: Beginning of fatigue, energy levels during the day, quality of sleep, emotional well being, levels of stress, work routine, physical activity, nutrition habits, existing medical conditions, existing medication, and previous investigations and treatments. This aids to grasp your general well-being profile prior to providing customized advice.\n2. Comprehensive Mind-Body Assessment\nThe assessment we use is structured and examines various aspects that could impact energy and wellbeing. These are: Emotional wellbeing, Stress patterns, Sleep quality, Lifestyle habits, Nutrition, Physical activity, Work-life balance, Behavioural patterns, Daily routines, and Overall quality of life. The aim is to gain insight into the linkage of these areas to long-term wellness and healing.\n3. Understanding Your Wellbeing Profile\nThere is an explanation of the observations in simple and practical language after the assessment. This consists of: Emotional wellbeing profile, Lifestyle observations, Stress patterns, Sleep assessment, Daily routine analysis, Areas requiring attention, Personalised lifestyle guidance and Practical next steps. We want to inform people about the relationship between emotional wellbeing and lifestyle and prolonged tiredness, and help them make informed decisions about their health.\n\nThe Neuro-Ayurveda Development System\nIn Manovaidya, chronic fatigue is explained using the Neuro-Ayurveda Development System. This five-pillars approach addresses brain health, gut health, behaviour, lifestyle and emotional wellbeing as a whole.\nThis approach is not just about fatigue, it is about a more comprehensive approach to long term mind body wellness and sustainable energy.\n\n1. Brain Nourishment System\nBenefits of healthy brain function include: Mental clarity, Emotional balance, Healthy sleep, Stress resilience, Cognitive performance, Overall quality of life. If the brain is healthy, an individual can better deal with tasks of everyday life.\n\n2. Gut Response System\nEnsuring proper nutrition and digestive health is key for good energy levels. Understanding is the theme of this pillar and includes the following topics: Healthy eating habits, Gut-brain communication, Digestive wellbeing, Nutrition patterns and Lifestyle influences.\n\n3. Neural Network System\nThe brain continues to change as a result of learning and life experiences. This pillar is about strengthening: Emotional resilience, Healthy thinking patterns, Behavioural awareness, Stress management, Cognitive flexibility.\n\n4. Sensory Integration System\nThe daily environment and lifestyle can impact recovery. This pillar takes into account Mental workload, Environmental stress, Recovery, Relaxation and Lifestyle balance.\n5. Behaviour Guidance System\nPositive lifestyles help to maintain energy and wellbeing over time. Here is the list of the key areas this pillar addresses: Sustainable daily routines, Healthy sleep habits, Behavioural awareness, Stress management and Lifestyle improvement.\n\nHow we support individuals concerned about fatigue\nFatigue is a unique experience for each person. Here at Manovaidya, support is tailored to the emotional wellbeing, lifestyle and health concerns of the individual.\nWe will base our approach on:\nStress & Fatigue Assessment\n Mind-Body Health Assessment\n Emotional Wellbeing Guidance\n Lifestyle Education\n Healthy Habit Planning\n Stress Management Guidance\n Brain Wellness Education\n Progress Monitoring & Follow-Up\nWe want to get people to be aware of the impact of emotional wellbeing, lifestyle and everyday habits.\n\nSupporting Healthy Energy Levels\nSmall, everyday actions can contribute to energy, recovery and well-being. Helpful practices include: [1][4]\nGetting adequate sleep\nEating a balanced diet\nStaying physically active\nDrinking enough water\nTaking regular breaks during work\nManaging everyday stress\nLimiting tobacco and alcohol\nFollowing medical advice\nLifestyle habits become useful, but cannot be a substitute for adequate medical treatment. [1]\n\nWhen Should You See a Healthcare Professional?\n\n\nPlease see a health care professional if: [1][3]\n• Fatigue affects your work or daily life\n • Rest does not improve your energy levels\n • Symptoms continue for several weeks\n • You experience new or worsening symptoms\n • You have existing medical conditions\n • You are unsure about the cause of your fatigue\nEarly assessment may aid in the diagnosis and management of the problem. [1][5]\n\nLooking Beyond Feeling Tired\nFatigue may be a precursor to a health need, in the body or in the mind. Long-term energy is influenced by sleep, food, emotional status, activity level, and health conditions and daily habits. [1][2]\nTiredness is not the only factor we consider at Manovaidya. We consider the big picture! When emotional wellbeing, lifestyle and physical health are seen together, one can make better informed choices for sustainable health.\n\nWhy People Across India Choose Manovaidya\n\nPeople and families from Delhi, Noida, Gurgaon, Faridabad, Ghaziabad and rest of India prefer our holistic approach to mind-body health to avail of Manovaidya.\nComprehensive Mind-Body Health Assessments\nNeuro-Ayurveda Development System\nLifestyle & Stress Management Guidance\nHolistic Emotional Wellbeing Support\nPersonalised Long-Term Wellness Approach\nOnline & In-Clinic Consultations\nGuidance by Dr. Ankush Garg \nWe want individuals to become aware of the connection between emotional wellbeing and lifestyle - and long term health and sustainable wellbeing.\n\nAbout \nDr. Ankush Garg\nMental Health Specialist & Founder of Manovaidya\nDr. Ankush Garg is the Founder of Manovaidya and the developer of the Neuro-Ayurveda Development System.\nHis work focuses on the connection between emotional wellbeing, lifestyle, brain health and mind-body wellness. Through structured assessments, personalised guidance and regular follow-up, he helps people understand how stress and daily habits can affect their energy and overall wellbeing.\nBased in Delhi NCR, Dr. Ankush Garg provides Mind-Body Health consultations for individuals across India through both online and in-clinic appointments.\n\nFrequently Asked Questions (FAQs)\n\n1.Can stress cause fatigue?\nYes. Emotional stress can cause physical, mental and emotional exhaustion in some individuals. Chronic stress has an impact on sleep, attention, motivation, and energy levels. However, there are many causes of fatigue and stress is not the only cause. [1][2]\n\n2. What is the difference between normal tiredness and fatigue?\nIf tiredness is normal, it is likely that it will get better with rest or sleep. Fatigue is more lasting. Can persist after rest and impact functioning, work, motivation. [1][3]\n\n3. What are the common symptoms of fatigue?\nCommon symptoms include feeling tired all the time, lack of energy, mental fatigue, trouble focusing, lack of motivation, lack of physical endurance, insomnia, emotional fatigue, and tiredness upon waking. [1]\n\n\n4. Can emotional stress make you feel physically tired?\nYes. Some may experience physical fatigue during prolonged periods of emotional stress. Stress can disrupt sleep, recovery, energy levels and wellbeing which can contribute to exhaustion. [2]\n\n5.Can poor sleep contribute to fatigue?\nYes. Low quality sleep or not sleeping well enough is a common cause of tiredness. A good night's sleep helps you feel physically energised, mentally sharp and emotionally balanced. [1][4]\n\n\n6.Can fatigue be caused by medical conditions?\nYes. There are numerous medical conditions associated with fatigue such as thyroid disorders, anaemia, diabetes, nutritional deficiencies, infections, heart disease and health issues. If you are still tired after the following tests, see your health care provider. [1][5]\n\n7. Can lifestyle habits improve energy levels?\nEnergy and wellbeing may be supported by healthy lifestyle practices, including regular physical activity, eating a healthy diet, getting a good night's sleep, staying hydrated, managing stress and establishing a routine. These habits are in addition to medical treatment, if required. [1][4]\n\n8. When should I see a healthcare professional for fatigue?\nA person who is tired for several weeks, and not relieved by rest, and has symptoms such as unexplained weight loss, fever, severe weakness, chest pain, shortness of breath, and persistent dizziness should seek medical evaluation. [1][5]\n\n9. Is mental fatigue different from physical fatigue?\nYes. Mental fatigue impacts on concentration, memory, decision making and motivation. Physical fatigue impacts body energy, stamina and executing daily activities. Many people suffer from both at the same time. [1]\n\n10. What is a Stress & Fatigue assessment?\nA Stress & Fatigue assessment is a systematic assessment. It takes into account: emotional wellbeing, stress, sleep quality, lifestyle habits, nutrition, daily routine, medical history and overall health. It can help to understand issues that could impact wellbeing and to provide individual guidance.\n\n11. How does Manovaidya support individuals experiencing stress-related fatigue?\nWe take a holistic approach to emotional wellbeing, lifestyle and health rather than just low energy at Manovaidya. We bridge the gap between people and their mind/body wellbeing through structured assessment, personalised guidance and the Neuro-Ayurveda Development System.\n\n12. What is the Neuro-Ayurveda Development System?\nThe Neuro-Ayurveda Development System is Manovaidya's five pillars system. It features Brain Nourishment, Gut Response, Neural Network Development and Sensory Integration and Behaviour Guidance. It assists us to see emotional wellbeing, lifestyle and overall health in a holistic way, as well as assessment and individualised guidance.\n\n13. Can managing stress help improve overall wellbeing?\nStress management by establishing healthy routines, regular activity, balanced nutrition and good sleep and relaxation habits may help to maintain emotional well-being and healthy energy. These practices are not a substitute for the proper medical diagnosis or treatment. [2][4]\n\n14. Why do I feel tired even after sleeping?\nThere are many reasons that you may be feeling tired even after sleeping. This could be caused by poor sleep, stress, thyroid disorders, nutritional deficiency, medical issues, medication or lifestyle changes. If it persists, it should be assessed by a professional health care worker. [1][5]\n\n15. Why should I choose Manovaidya for Stress & Fatigue support?\nOur emphasis at Manovaidya is on the Emotional Wellbeing, Lifestyle and Long Term Health relationship, where structured assessments, personalised guidance and the Neuro-Ayurveda Development System are used. Through our comprehensive approach, individuals can gain insight into how they can become fatigued by stress and learn how to promote sustainable mind-body health and good medical management.\n\nConcerned About Stress and Persistent Fatigue?\nBook a structured Stress & Fatigue Assessment with Manovaidya to better understand the relationship between emotional wellbeing, lifestyle, energy levels and overall mind-body health while receiving personalised guidance.\nBook Fatigue Assessment\nTalk to Our Team\n\nReferences\nCleveland Clinic – Fatigue: Causes, Symptoms & Treatment\n https://my.clevelandclinic.org/health/symptoms/21206-fatigue\nMedlinePlus – Stress: Effects on Physical and Emotional Health\n https://medlineplus.gov/stress.html\nCleveland Clinic – How to Know If Your Fatigue Is Normal\n https://health.clevelandclinic.org/how-to-know-if-your-fatigue-is-normal\nCleveland Clinic – Why You May Feel Tired Even After Sleeping\n https://newsroom.clevelandclinic.org/2026/02/09/why-you-still-feel-tired-after-sleeping\nCleveland Clinic – When Feeling Tired Could Be Something More\n https://newsroom.clevelandclinic.org/2026/03/24/when-feeling-tired-could-be-something-more\nChandrasekhar K, Kapoor J, Anishetty S. – Ashwagandha Root Extract for Stress, Anxiety and General Wellbeing: Randomized Double-Blind Placebo-Controlled Study\n https://pubmed.ncbi.nlm.nih.gov/23439798/\nSmith SJ, Lopresti AL, Fairchild TJ. – Ashwagandha Root Extract in Adults Experiencing High Stress and Fatigue: Randomized Double-Blind Placebo-Controlled Trial\n https://pubmed.ncbi.nlm.nih.gov/37740662/\nPubMed – Ashwagandha Root Extract and Stress, Sleep Quality and Psychological Wellbeing: Randomized Double-Blind Placebo-Controlled Trial\n https://pubmed.ncbi.nlm.nih.gov/41824889/\nPubMed – Ashwagandha Supplementation, Exercise Endurance and Fatigue: Randomized Placebo-Controlled Double-Blind Clinical Trial\n https://pubmed.ncbi.nlm.nih.gov/41846233/\nPubMed – Ashwagandha and Fatigue, Vigor and Wellbeing: Randomized Double-Blind Placebo-Controlled Crossover Study\n https://pubmed.ncbi.nlm.nih.gov/30854916/\n\n\n\n\n\n";
 
 const pageLinks = [
@@ -464,16 +623,11 @@ function StressFatigueIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Fatigue Treatment in India | Mind-Body Health | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy."
         keywords="Stress & Fatigue, Chronic Fatigue Treatment India, Stress and Energy Levels, Mental Fatigue, Physical Exhaustion and Stress, Adrenal Fatigue, Emotional Wellbeing, Mind-Body Health, Fatigue Assessment, Neuro-Ayurveda Development System, Low Energy Support"
         path="/stress-and-fatigue"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Fatigue Treatment in India",
-          "description": "Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy."
-        }}
+        schema={stressFatigueSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         

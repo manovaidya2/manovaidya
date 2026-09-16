@@ -26,6 +26,442 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
 import Seo from "../components/Seo";
 
+const teenConfidenceSeoTitle = "Teen Confidence & Emotional Support in India | Manovaidya";
+const teenConfidenceSeoDescription =
+  "Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
+const teenConfidenceSeoPageUrl = "https://manovaidya.org/teen-confidence-emotional-wellbeing";
+
+const articleRaw = `Key Takeaways
+Understanding Teen Confidence & Emotional Wellbeing
+Common Signs of Low Confidence
+Causes of Self-Doubt in Teenagers
+Social Comparison & Social Media Influence
+Effects on Learning, Relationships & Motivation
+Fear of Failure & Perfectionism
+Building Self-Belief & Emotional Resilience
+Supporting Social Confidence & Communication
+Neuro-Ayurveda Approach to Teen Confidence
+Parent Guidance for Confidence Building
+Manovaidya Assessment & Support Process
+FAQs About Teen Confidence & Self-Esteem
+
+Teen Confidence & Emotional Wellbeing Support in India
+Helping Teenagers Build Confidence, Emotional Resilience, Self-Belief & Healthy Emotional Wellbeing
+Confidence is essential to the way that teenagers think, learn, communicate and react to challenges. In the teen years, adolescents are continually searching for an identity, experimenting and finding their place in the world. [1][9]
+A lot of teenagers suffer from self-doubt, fear of judgement, or lack of confidence and uncertainty about their abilities. These challenges have the potential to impact emotional health, learning, relationships, and overall development. [1][3]
+Parents are often aware that their teen has developed a lack of confidence, isolation or negative self-perceptions. Some teens miss out on opportunities for fear of failure and some teens have real skill and potential but are lacking in confidence.
+We know at Manovaidya that confidence isn't really just being loud or out there. A sense of confidence is closely related to emotional wellbeing, self-belief, resilience and coping with life's challenges in a balanced manner.
+Autism, ADHD, Child Development & Mental Health Specialist in India, Dr. Ankush Garg takes an organized Neuro-Ayurveda treatment strategy that can assist teenage and family with knowing about the emotional wellness and supports their self-confidence, resilience and long haul development.
+At Manovaidya, Teen Confidence & Emotional Wellbeing Support Focuses On:
+Low Confidence & Self-Doubt
+Self-Esteem Challenges
+Emotional Wellbeing
+Motivation & Growth Mindset
+Social Confidence
+Resilience & Positive Development
+Understanding Teen Confidence & Emotional Wellbeing
+Confidence is the assurance and trust that an individual can learn, improve and deal with difficulties even when they are difficult.
+Teens go through intense emotional, social and personal growth during their teens. They start to compare themselves with other children, start to think more about the future and to develop a stronger sense of identity. [1][9]
+Many of the families who are seeking Teen Confidence Support in India, Self-Esteem Support for Teenagers or Teen Emotional Wellbeing Support in India are looking for a programmatic approach to help their teenagers build confidence and emotional wellbeing.
+Confidence is not something that appears overnight.
+It is built on experience, relationships, learning opportunities and emotional support. [3][7]
+Teenagers with healthy confidence are more likely to:
+Express their thoughts openly
+Try new experiences
+Learn from mistakes
+Build healthy relationships
+Manage challenges more effectively
+A lack of confidence can lead to teenagers feeling unsure of themselves, worried about failing and emotionally distressed.
+Familiarity with confidence from a wider lens can sometimes aid families in setting up a more conducive environment for growth and development.
+
+Common Signs of Low Confidence in Teenagers
+There are many forms of low confidence.
+Some teens are openly self-doubting, others may avoid, or be overly good or withdrawn.
+Parents might observe emotional, behavioral, educational and social changes.
+Emotional Signs
+•	Self-doubt
+•	Negative self-talk
+•	Fear of judgement
+•	Low self-esteem
+•	Increased emotional sensitivity
+•	Lack of self-belief
+Behavioural Signs
+•	Avoiding challenges
+•	Difficulty accepting change
+•	Giving up easily
+•	Excessive perfectionism
+•	Fear of participation
+Academic Signs
+Lack of confidence despite ability
+Fear of making mistakes
+Avoiding difficult tasks
+Reduced participation in class
+Excessive worry about performance
+
+
+Social Signs
+•	Difficulty expressing opinions
+•	Social withdrawal
+•	Comparing themselves to others
+•	Fear of rejection
+•	Reduced social confidence
+The occurrence of one or two signs does not necessarily mean that there is a major concern. If, however, low confidence interferes with emotional health, relationships or functioning, then there may be a need for further understanding and support. [1][3]
+
+Why Teenagers Struggle With Confidence
+There are lots of factors that could affect confidence.
+If parents know these influences, they can be better able to respond.
+Social Comparison
+Teens often make comparisons with friends, classmates and social media content.
+Constant comparison can lead to a sense of inadequacy and doubt in self. [5][10]
+Academic Pressure
+Expectations from school can impact self-awareness and confidence in their abilities among teens.
+Confidence could be adversely affected by repeated struggles or the fear of failure.
+Fear of Failure
+There are also many teens who will avoid challenges as they fear making mistakes or putting themselves in a situation where they are going to be disappointed.
+Social Media Influence
+The false idealization of success, appearance and lifestyle that is found in the online world.
+Comparisons may affect self-esteem and emotional health. [5][10]
+Peer Relationships
+The period of adolescence is a time of social experiences and friendships.
+Negative social experiences can impact confidence and self-esteem.
+Family Expectations
+Good intentions often lead to pressures when teens are not able to keep up.
+
+Negative Experiences
+You can see how previous criticism, failures, bullying or challenging experiences could impact the way that teens see themselves and their skills.
+Many parents are concerned that if they continue to have low confidence and a feeling of self-doubt or emotional problems, they are worried that these issues will impact their teen's future opportunities, relationships and overall wellbeing. Addressing these worries early can assist families foster healthier emotional development and resilience. [1][9]
+
+
+How Low Confidence Can Affect Teenagers
+Confidence impacts so much more than just teenagers' self-perception.
+It has the potential to impact emotional well-being, communication, learning, relationships and future growth.
+If confidence is low over a prolonged period of time, teenagers may start to restrict their own potential, as they lose confidence in their abilities.
+Knowing these impacts can sometimes assist families to appreciate the importance of confidence in healthy development.
+
+Emotional Wellbeing
+Low confidence can have an impact on emotional health.
+Teenagers may experience:
+Self-doubt
+Negative thinking
+Fear of judgement
+Increased emotional sensitivity
+Worry about making mistakes
+Reduced self-belief
+These emotions can shape how teens react to day-to-day struggles and opportunities over time.
+
+Academic Growth
+A lot of teenagers who don't have a lot of confidence in themselves, are unaware of their capabilities.
+They may:
+Avoid answering questions
+Hesitate to participate in class
+Doubt their capabilities
+Fear academic challenges
+Avoid taking healthy risks
+
+
+Even capable students may struggle to perform at their full potential when confidence is low.
+
+Relationships & Social Confidence
+Confidence influences communication and relationships.
+Teenagers with low confidence may:
+Avoid expressing opinions
+Fear rejection
+Struggle in social situations
+Find it difficult to make new friends
+Compare themselves to others
+Healthy confidence often helps teenagers develop stronger communication skills and healthier relationships.
+
+
+Decision Making
+At this age, teenagers are constantly making decisions involving studying, making friends, activities and future plans.
+Low confidence can make it harder to make a decision.
+Many teens start looking for constant affirmations as they are afraid of going wrong.
+
+Motivation & Personal Growth
+There is a relationship between high self-confidence and high motivation.
+But teens who have self-confidence tend to be more open to:
+•	Try new experiences
+•	Learn new skills
+•	Accept challenges
+•	Recover from setbacks
+Without confidence, teens may think they can't do it, and as a result, growth may be stunted.
+
+Future Development
+Teenagers' confidence impacts on their opportunities later in life.
+Healthy confidence supports:
+•	Leadership
+•	Communication
+•	Career development
+•	Independence
+•	Emotional resilience
+By building confidence during this adolescent period, you can get a better start for life as an adult. [3][9]
+
+The Neuro-Ayurveda Approach to Confidence & Emotional Wellbeing
+Confidence at Manovaidya is defined differently and in a wider and more encompassing way.
+Manovaidya doesn't solely concentrate on self-esteem and motivation; instead, she concentrates on comprehending the bigger picture that might be impacting emotional wellbeing, confidence, behaviour, resilience and overall development.
+The Neuro-Ayurveda Development System empowers the families to grasp emotional wellbeing in five interconnected pillars.
+
+Brain Nourishment System
+
+
+Self-confidence is linked to emotional and cognitive health.
+The Brain Nourishment System is based on the awareness of factors that can affect:
+•	Self-belief
+•	Attention
+•	Learning readiness
+•	Emotional regulation
+•	Decision making
+•	Confidence development
+Teens' experiences, challenges and achievements are processed in a certain way and this is the starting point for supporting confidence.
+
+Gut Response System
+Emotional wellbeing often goes hand-in-hand with physical wellbeing.
+People who are having confidence issues as teens might also have:
+•	Poor routines
+•	Irregular eating habits
+•	Lifestyle imbalance
+•	Low energy levels
+•	Reduced daily engagement
+The Gut Response System teaches about how the general state of wellbeing can affect emotional balance and confidence.
+
+Neural Network System
+All experiences help shape patterns of thinking and responding in the brain.
+The Neural Network System is about learning about:
+
+•	Thought patterns
+•	Self-belief systems
+•	Emotional responses
+•	Learning habits
+•	Adaptability
+Supporting healthy thinking with teens can go hand in hand with confidence and resilience.
+
+
+Sensory Integration System
+Adolescents are different when it comes to environments, experiences and social situations.
+Factors such as:
+•	Classroom settings
+•	Social environments
+•	Peer interactions
+•	Digital stimulation
+•	Performance situations
+May affect emotion, confidence.
+Families are better able to establish more supportive environments when they know what influences these factors.
+
+Behaviour Guidance System
+Teenagers' behaviours are frequently the result of their self-image.
+Low confidence teenagers may exhibit:
+•	Avoidance behaviours
+•	Hesitation
+•	Withdrawal
+•	Perfectionism
+•	Fear of participation
+This pillar is not just about behaviour; it's about understanding the underlying factors that are driving behaviours and enabling families to respond more effectively.
+
+How Parents Can Help Build Confidence in Teenagers
+Parents are one of the most influential partners in the development of healthy confidence and emotional remediation of teenagers. [3][7]
+Minor adjustments in communication and support make a lot of difference.
+
+Encourage Effort Rather Than Perfection
+It is beneficial to teenagers when effort, learning and progress is valued, not just outcomes.
+Identifying growth and accumulation of confidence over time. [3]
+
+Avoid Excessive Criticism
+It can be demoralising when you are constantly criticised and you start to doubt yourself and your ability.
+When providing constructive feedback, it's better to do so positively and compassionates.
+
+Celebrate Small Successes
+Positive experiences help build confidence.
+Praise and recognition for achievements and improvements, and personal strengths can help teenagers build a positive self-image.
+
+
+Support Independence
+
+Teens are taught to make responsible decisions, and that gives them confidence and the habit of making decisions for themselves.
+Experience learning is a crucial component of development.
+
+
+Focus on Strengths
+There are individual strengths and abilities in every teens life.
+Supporting teenagers to identify their strengths can help to boost self-belief and motivation.
+
+
+Encourage Healthy Communication
+Establishing an open conversational space helps teens to be more at ease expressing their thoughts and feelings.
+When people feel that their thoughts and feelings are being heard, their confidence is bolstered. [7]
+
+
+Teach Resilience
+Confidence isn't about the lack of failure.
+It's about how to bounce back, how to adapt and how to get straight back on track after a fall. [9]
+
+How Manovaidya Supports Teenagers & Families
+A person starts with the kid at Manovaidya, knowing and understanding the teenager as a whole, instead of the specific concern.
+Our process typically includes:
+
+
+Step 1: Detailed Assessment
+Knowing about confidence issues, emotional health, behaviour, motivation, lifestyle habits, social experiences and family issues.
+
+
+Step 2: Personalized Guidance
+Making individual recommendations as needed to the teenager's emotional, behavioural and developmental needs.
+
+
+Step 3: Parent Guidance & Family Support
+Providing parents with more information on confidence building, communication and how to support emotional development at home.
+
+Step 4: Neuro-Ayurveda Development System
+Implementing five pillars approach to gain insight into emotional wellbeing, resilience, confidence and overall development.
+
+
+Step 5: Progress Tracking & Follow-Up
+The development of an organized plan which allows families to track the development and make decisions along the way.
+
+
+When Should Parents Consider an Assessment?
+If parents observe the following, they may wish to seek advice:
+Persistent self-doubt
+Low self-esteem
+Social withdrawal
+Fear of failure
+Lack of confidence despite ability
+Emotional sensitivity
+Difficulty expressing opinions
+Reduced motivation
+Confidence challenges affecting daily life
+The structured evaluation process can assists family to understand the factors that affect emotional wellbeing, confidence and overall development. [1][9]
+
+Why Families choose Manovaidya
+For many families, finding the right support system for confidence and self-esteem and emotional wellbeing can be daunting. Parents need clarity, practical advice, a plan, and a way to help teens gain confidence while keeping their emotions in check and resilient.
+We don't just want to work on confidence at Manovaidya. We support families to understand the wider issues which could impact on emotional wellbeing, self-belief, behaviour, motivation and development.
+Families Choose Manovaidya Because Of:
+Structured Teen Confidence Assessment
+All teens are different and gain confidence in their own way. Knowing the emotional, behavioral and life style influences allows for more of a personalized plan for growth and development.
+
+
+Neuro-Ayurveda Development System
+We have a framework that supports families to learn about emotional wellbeing and confidence through five interrelated components:
+Brain Nourishment System
+Gut Response System
+Neural Network System
+Sensory Integration System
+Behaviour Guidance System
+
+
+Parent-Centred Guidance
+It's not just about building the teenager's confidence.
+Parents have a role in the development of self-belief, emotional resilience and healthy development that is often one of the most significant roles. [3][7]
+
+
+Personalized Support
+Confidence issues are unique for every teen.
+Advice takes into account individual strengths and challenges and developmental needs.
+
+
+Long-Term Growth Focus
+We're not just about getting them motivated for the moment, we're about helping them build up emotional resilience, confidence, communication and self-belief in their overall wellbeing.
+
+Family-Oriented Approach
+Progress and development can be significant when their teenage years and families collaborate effectively and together.
+
+
+Why Families Across India Connect With Manovaidya
+
+
+Delhi, Noida, Gurgaon, Faridabad and other parts of India families get in touch with Manovaidya for Teen Confidence Support, Emotional Wellbeing Support and Teen Mental Wellness guidance via online and in-clinic consultation.
+
+About Dr. Ankush Garg
+Autism, ADHD, Child Development & Mental Health Specialist in India
+Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System.
+His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach.
+Many families searching for guidance regarding confidence, self-esteem, emotional wellbeing and personal development connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support.
+Through detailed assessment, individualized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing emotional wellbeing, confidence, resilience and long-term growth.
+Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System.
+
+Frequently Asked Questions (FAQs)
+
+
+1. How can I build confidence in my teenager?
+Parents can help foster confidence through encouragement, identification of strengths, celebration of progress and by creating a supportive environment. Healthy confidence is planted when teens feel understood, respected, and encouraged to learn from their errors instead of fear. Positive experiences, emotional support and opportunities to develop new skills over time, build confidence. [3][7]
+
+2. Why does my teenager have low self-esteem?
+Social comparison, academic pressure, negative experiences, relationships with peers, fear of failure and self-criticism, may all be contributing factors to low self-esteem. Teens have a heightened awareness of how they are viewed by others, impacting confidence and self-esteem. Familiarity with the factors that impact self-esteem can help families be more supportive and encouraging. [1][10]
+
+
+3. What causes low confidence in teenagers?
+Factors that affect confidence are emotional wellbeing, family environment, social experiences, academic challenges, peer relationships and personal experiences. For some teens, repeated criticism or fear of failure and negative comparisons may result in a lack of confidence. Each teen is different and is learning to build confidence in a different way, so it's important to know what type of experiences each one has. [1][3]
+
+
+4. How does social media affect confidence?
+Social media sometimes creates an unrealistic appearance, success or lifestyle comparison. Self-esteem and emotional well-being can be impacted by constant comparison. Social media isn't always a bad thing, but spending too much time on the internet can affect teens' self-image. Well-balanced digital use and engagement can contribute to healthy confidence. [5][10]
+
+5. Can low confidence affect school performance?
+Yes. Self-confidence and academic achievement go hand in hand. Low confidence teens may be reluctant to join in with class, may not take risks and are threatened by failing or underestimate their own capabilities. Self-belief is a critical factor even for able learners who cannot perform at their best when confidence is low. Building confidence can help to establish a better basis for learning and development.
+
+6. What are the signs of low self-esteem?
+Symptoms might involve feelings of self-doubt, negative thoughts, fear of being judged, playing it safe, isolation and inability to voice one's thoughts. Some teens may get perfectionistic, others may lose confidence in themselves and not try. A timely diagnosis can enable families to provide the right support. [3][7]
+
+7. How can parents improve confidence in teenagers?
+Supporting parents to build confidence by emphasising on strengths, encouraging independence and recognising effort, rather than results. Over time, healthy communication, emotional support, and opportunities to make decisions can build up teen's self-belief and resilience. [3][7]
+
+8. Why does my teenager compare themselves to others?
+Teens have a natural drive to compare, which is often the result of developing their identity and understanding of where they fit in the world. Comparisons may be greater through social media, peer relationships and academic settings. Encouraging teen confidence and emotional health by helping them focus on their own growth, strengths and their individual progress. [5][10]
+
+9. Can confidence be learned?
+Yes. Teenagers don't just naturally have confidence. It consists of experiences, opportunities to learn, positive relationships, emotional development and facing challenges. Confidence can be nurtured and developed throughout adolescence and adulthood with the right support, encouragement and positive experiences. [3][9]
+
+10. How can I motivate my teenager?
+A sense of being able, supported and connected to meaningful objectives will often lead to improvement in motivation for teenagers. It is important for teachers to offer encouragement, healthy routines, realistic expectations and confidence-building experiences rather than pressure or criticism. It can be better to know what makes a teenager tick than to apply a cookie-cutter solution. [3][7]
+
+11. Why does my teenager lack confidence despite being talented?
+Confidence is not the same as ability, and many talented adolescents have trouble in believing themselves to be confident. Teenagers might not notice their strengths because they are afraid of failing, perfectionists, comparing themselves to others, or have had a bad experience and grown to be too critical of themselves. Supporting their focus on progress, learning and personal growth helps them to develop healthier self-belief.
+
+12. Why is my teenager afraid of making mistakes?
+Many teens are afraid to make mistakes because they don't want to fail, or because they have to deal with criticism, embarrassment or disappointing others. This fear may be caused by academic pressure, perfectionist inclinations, and the social norms that are expected of them. Supporting confidence, resilience and emotional wellbeing by helping teens to think of mistakes as learning opportunities.
+
+13. How does Manovaidya support teenagers?
+At Manovaidya, support starts with understanding the emotional wellbeing, confidence, behaviour, motivation and lifestyle related influences and a structured assessment process. Families learn more about the factors influencing confidence, resilience and long term development through personalized guidance, family support and the Neuro-Ayurveda Development System.
+
+14. Can low self-esteem affect a teenager's future?
+Low self-esteem can affect confidence, decision making, communication and relationship skills, academic development and interest in opportunities. If a teenager doesn't feel he or she is capable, then he or she won't take on anything. Adolescent emotional and confidence building can lead to better preparation for future development and independence. [1][9]
+
+15. When should parents seek guidance?
+Confidence issues may start to impact emotional wellbeing, relationships, communication, motivation, schoolwork, or daily functioning and parents might want to seek guidance. If someone persistently doubts himself/herself, fears failure, withdraws from social situations or has low self esteem, then they may need more support. A structured assessment can support families to gain more insight into what is impacting confidence, resilience and overall development. [1][3]
+
+Book a Consultation
+Concerned About Your Teenager's Confidence & Emotional Wellbeing?
+If your teenager is experiencing low confidence, self-doubt, fear of failure, emotional sensitivity or motivation challenges, seeking clarity is often the first step.
+At Manovaidya, our team helps families better understand emotional wellbeing through structured assessment, personalized guidance and family-centred support.
+
+
+Book a Consultation
+Take the First Step Towards Better Confidence, Emotional Resilience & Personal Growth
+📞 Book Assessment Session
+ 📞 Speak With Our Team
+ 📞 Get Personalized Guidance
+
+References
+[1] World Health Organization (WHO) – Mental Health of Adolescents
+ https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
+[2] Central Council for Research in Ayurvedic Sciences (CCRAS) – Clinical Research
+ https://ccras.nic.in/services/clinical-research/
+[3] UNICEF – Helping Teenagers Build Self-Confidence
+ https://www.unicef.org/parenting/mental-health/3-ways-help-your-teen-build-self-confidence
+[4] AYUSH Research Portal – Evidence-Based Research in Ayurveda
+ https://ayushportal.nic.in/
+[5] American Academy of Pediatrics – Social Media and Youth Mental Health
+ https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/the-good-and-bad-of-social-media-what-research-tells-us/
+[6] Journal of Family Medicine and Primary Care – Effect of Yoga on Emotional Regulation, Self-Esteem and Feelings of Adolescents
+ https://pmc.ncbi.nlm.nih.gov/articles/PMC7567196/
+[7] UNICEF – Supporting Your Teenager’s Mental Health
+ https://www.unicef.org/parenting/health/four-things-you-can-do-support-your-teens-mental-health
+[8] Central Council for Research in Ayurvedic Sciences (CCRAS) – Ayurveda-Based Dietary Guidelines for Mental Disorders
+ https://ccras.nic.in/e-books/
+[9] World Health Organization (WHO) – Promoting Adolescent Wellbeing
+ https://www.who.int/activities/promoting-adolescent-well-being
+[10] UNICEF – Teenagers and Body Image
+ https://www.unicef.org/parenting/mental-health/teens-body-image`;
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Confidence", id: "understanding-confidence" },
@@ -53,47 +489,49 @@ const categories = [
 
 const keyTakeaways = [
   "Understanding Teen Confidence & Emotional Wellbeing",
-  "Common Signs of Low Confidence in Teenagers",
-  "Main Causes of Teen Self-Esteem Issues",
-  "Impact of Low Confidence on Academics and Relationships",
-  "Social Media, Peer Pressure and Family Expectations",
-  "Emotional Resilience and Positive Self-Image in Teenagers",
-  "Neuro-Ayurveda Approach to Teen Confidence Building",
-  "How Parents Can Improve Teen Confidence",
-  "Manovaidya's Assessment and Personalized Support Process",
-  "When Parents Should Seek Professional Guidance",
-  "Why Families Choose Manovaidya",
-  "Frequently Asked Questions About Teen Confidence & Self-Esteem",
+  "Common Signs of Low Confidence",
+  "Causes of Self-Doubt in Teenagers",
+  "Social Comparison & Social Media Influence",
+  "Effects on Learning, Relationships & Motivation",
+  "Fear of Failure & Perfectionism",
+  "Building Self-Belief & Emotional Resilience",
+  "Supporting Social Confidence & Communication",
+  "Neuro-Ayurveda Approach to Teen Confidence",
+  "Parent Guidance for Confidence Building",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Teen Confidence & Self-Esteem",
 ];
 
 const fullMedicalReferenceContent = `References
-[1] World Health Organization - Mental Health of Adolescents
+[1] World Health Organization (WHO) - Mental Health of Adolescents
 https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
-[2] Tehrani HD, et al. - The Links Between Parenting, Self-Esteem and Depressive Symptoms: A Meta-Analysis
-https://pubmed.ncbi.nlm.nih.gov/39472151/
-[3] Vincente-Benito I, Ramirez-Duran MDV - Influence of Social Media Use on Body Image and Wellbeing Among Adolescents and Young Adults: A Systematic Review
-https://pubmed.ncbi.nlm.nih.gov/37256748/
-[4] Mullan VMR, et al. - The Relationship Between Peer Victimisation, Self-Esteem and Internalizing Symptoms in Adolescents: A Systematic Review and Meta-Analysis
-https://pubmed.ncbi.nlm.nih.gov/36989220/
-[5] Huang C - Self-Concept and Academic Achievement: A Meta-Analysis of Longitudinal Relations
-https://pubmed.ncbi.nlm.nih.gov/21930007/
-[6] Dray J, et al. - Systematic Review of Universal Resilience-Focused Interventions Targeting Child and Adolescent Mental Health
-https://pubmed.ncbi.nlm.nih.gov/28942803/
-[7] Charaka Samhita, Sutra Sthana 11 - Tistraishaniya Adhyaya
-https://www.carakasamhitaonline.com/index.php?title=Tistraishaniya_Adhyaya
-[8] Charaka Samhita - Manas: Mind and Mental Health
-https://www.carakasamhitaonline.com/index.php?title=Manas
-[9] Charaka Samhita - Dhriti
-https://www.carakasamhitaonline.com/index.php?title=Dhriti
 
-Reference Note
-This article uses recognised public health resources, peer-reviewed research and classical Ayurvedic texts for adolescent mental health, parenting, self-esteem, social media influence, peer victimisation, academic self-concept, resilience and Ayurvedic concepts related to Manas, Sattvavajaya and Dhriti.
+[2] Central Council for Research in Ayurvedic Sciences (CCRAS) - Clinical Research
+https://ccras.nic.in/services/clinical-research/
 
-Classical Ayurvedic references are included for conceptual understanding of mind regulation, emotional stability, determination and whole-person wellbeing. They are not modern diagnostic criteria and should not be interpreted as a guaranteed cure for low confidence, self-esteem concerns or teen mental health conditions.
+[3] UNICEF - Helping Teenagers Build Self-Confidence
+https://www.unicef.org/parenting/mental-health/3-ways-help-your-teen-build-self-confidence
 
-Authorised & Clinically Reviewed by Dr Ankush Garg
-Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
-Clinical Focus: Autism, ADHD, Child Development, Teen Mental Wellness and Mental Health`;
+[4] AYUSH Research Portal - Evidence-Based Research in Ayurveda
+https://ayushportal.nic.in/
+
+[5] American Academy of Pediatrics - Social Media and Youth Mental Health
+https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/the-good-and-bad-of-social-media-what-research-tells-us/
+
+[6] Journal of Family Medicine and Primary Care - Effect of Yoga on Emotional Regulation, Self-Esteem and Feelings of Adolescents
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7567196/
+
+[7] UNICEF - Supporting Your Teenager's Mental Health
+https://www.unicef.org/parenting/health/four-things-you-can-do-support-your-teens-mental-health
+
+[8] Central Council for Research in Ayurvedic Sciences (CCRAS) - Ayurveda-Based Dietary Guidelines for Mental Disorders
+https://ccras.nic.in/e-books/
+
+[9] World Health Organization (WHO) - Promoting Adolescent Wellbeing
+https://www.who.int/activities/promoting-adolescent-well-being
+
+[10] UNICEF - Teenagers and Body Image
+https://www.unicef.org/parenting/mental-health/teens-body-image`;
 
 const articleLinkRules = [
   { label: "Teen Confidence Support", href: "#introduction", pattern: /Teen Confidence Support/i },
@@ -110,12 +548,29 @@ const articleLinkRules = [
   { label: "Teen Self-Esteem Issues", href: "#common-signs", pattern: /Teen Self-Esteem Issues/i },
   { label: "Self-Esteem Support", href: "#why-families-choose", pattern: /Self-Esteem Support/i },
   { label: "Self-Esteem Challenges", href: "#common-signs", pattern: /Self-Esteem Challenges/i },
+  { label: "Low self-esteem", href: "#common-signs", pattern: /Low self-esteem/i },
+  { label: "Self-esteem", href: "#common-signs", pattern: /Self-esteem/i },
+  { label: "Self-doubt", href: "#why-teenagers-struggle", pattern: /Self-doubt/i },
+  { label: "Self-belief", href: "#understanding-confidence", pattern: /Self-belief/i },
   { label: "Low Confidence in Teenagers", href: "#how-it-affects", pattern: /Low Confidence in Teenagers/i },
   { label: "Low Confidence", href: "#common-signs", pattern: /Low Confidence/i },
   { label: "Confidence Issues in Adolescents", href: "#common-signs", pattern: /Confidence Issues in Adolescents/i },
+  { label: "Social confidence", href: "#how-it-affects", pattern: /Social confidence/i },
   { label: "Confidence", href: "#understanding-confidence", pattern: /Confidence/i },
   { label: "Emotional Wellbeing", href: "#how-it-affects", pattern: /Emotional Wellbeing/i },
   { label: "Emotional Resilience", href: "#how-parents-can-help", pattern: /Emotional Resilience/i },
+  { label: "Emotional sensitivity", href: "#common-signs", pattern: /Emotional sensitivity/i },
+  { label: "Social Comparison", href: "#why-teenagers-struggle", pattern: /Social Comparison/i },
+  { label: "Fear of Failure", href: "#why-teenagers-struggle", pattern: /Fear of Failure/i },
+  { label: "Perfectionism", href: "#common-signs", pattern: /Perfectionism/i },
+  { label: "Motivation", href: "#how-it-affects", pattern: /Motivation/i },
+  { label: "Resilience", href: "#how-parents-can-help", pattern: /Resilience/i },
+  { label: "Personal Growth", href: "#why-families-choose", pattern: /Personal Growth/i },
+  { label: "Brain Nourishment System", href: "#neuro-ayurveda-approach", pattern: /Brain Nourishment System/i },
+  { label: "Gut Response System", href: "#neuro-ayurveda-approach", pattern: /Gut Response System/i },
+  { label: "Neural Network System", href: "#neuro-ayurveda-approach", pattern: /Neural Network System/i },
+  { label: "Sensory Integration System", href: "#neuro-ayurveda-approach", pattern: /Sensory Integration System/i },
+  { label: "Behaviour Guidance System", href: "#neuro-ayurveda-approach", pattern: /Behaviour Guidance System/i },
   { label: "Academic Pressure", href: "/exam-performance-pressure", pattern: /Academic Pressure/i },
   { label: "Academic Stress", href: "/exam-performance-pressure", pattern: /Academic Stress/i },
   { label: "Social Media", href: "/teen-screen-addiction-support/", pattern: /Social Media/i },
@@ -134,77 +589,216 @@ const articleLinkRules = [
 const faqs = [
   {
     question: "1. How can I build confidence in my teenager?",
-    answer: "Parents can help build confidence by encouraging effort, recognizing strengths, celebrating progress and creating a supportive environment. Teenagers often develop healthy confidence when they feel understood, respected and encouraged to learn from mistakes rather than fear them. Confidence grows through positive experiences, emotional support and opportunities to develop new skills over time. [2] [6]",
+    answer: "Parents can help foster confidence through encouragement, identification of strengths, celebration of progress and by creating a supportive environment. Healthy confidence is planted when teens feel understood, respected, and encouraged to learn from their errors instead of fear. Positive experiences, emotional support and opportunities to develop new skills over time, build confidence. [3][7]"
   },
   {
     question: "2. Why does my teenager have low self-esteem?",
-    answer: "Low self-esteem may be influenced by social comparison, academic pressure, negative experiences, peer relationships, fear of failure or constant self-criticism. Teenagers often become more aware of how they are perceived by others, which can affect confidence and self-worth. Understanding Teen Self-Esteem Issues often helps families provide more meaningful support and encouragement. [1] [2] [3] [4]",
+    answer: "Social comparison, academic pressure, negative experiences, relationships with peers, fear of failure and self-criticism, may all be contributing factors to low self-esteem. Teens have a heightened awareness of how they are viewed by others, impacting confidence and self-esteem. Familiarity with the factors that impact self-esteem can help families be more supportive and encouraging. [1][10]"
   },
   {
     question: "3. What causes low confidence in teenagers?",
-    answer: "Confidence is influenced by many factors including emotional wellbeing, family environment, social experiences, academic challenges, peer relationships and personal experiences. Some teenagers may struggle with confidence because of repeated criticism, fear of failure or negative comparisons. Every teenager develops confidence differently, which is why understanding their individual experiences is important.",
+    answer: "Factors that affect confidence are emotional wellbeing, family environment, social experiences, academic challenges, peer relationships and personal experiences. For some teens, repeated criticism or fear of failure and negative comparisons may result in a lack of confidence. Each teen is different and is learning to build confidence in a different way, so it's important to know what type of experiences each one has. [1][3]"
   },
   {
     question: "4. How does social media affect confidence?",
-    answer: "Social media can sometimes encourage comparison with unrealistic standards of appearance, success or lifestyle. Constant comparison may affect self-esteem and emotional wellbeing. While social media is not always harmful, excessive exposure may influence how teenagers view themselves. Healthy digital habits and balanced online engagement often help support healthier confidence. [3]",
+    answer: "Social media sometimes creates an unrealistic appearance, success or lifestyle comparison. Self-esteem and emotional well-being can be impacted by constant comparison. Social media isn't always a bad thing, but spending too much time on the internet can affect teens' self-image. Well-balanced digital use and engagement can contribute to healthy confidence. [5][10]"
   },
   {
     question: "5. Can low confidence affect school performance?",
-    answer: "Yes. Confidence and academic performance are closely connected. Teenagers with low confidence may hesitate to participate in class, avoid challenges, fear making mistakes or underestimate their abilities. Even capable students may struggle to perform at their full potential when self-belief is low. Supporting confidence often helps create a stronger foundation for learning and growth. [5]",
+    answer: "Yes. Self-confidence and academic achievement go hand in hand. Low confidence teens may be reluctant to join in with class, may not take risks and are threatened by failing or underestimate their own capabilities. Self-belief is a critical factor even for able learners who cannot perform at their best when confidence is low. Building confidence can help to establish a better basis for learning and development."
   },
   {
     question: "6. What are the signs of low self-esteem?",
-    answer: "Common signs may include self-doubt, negative self-talk, fear of judgement, avoiding challenges, social withdrawal, excessive comparison with others and difficulty expressing opinions. Some teenagers may become perfectionistic, while others may give up easily because they do not believe in their abilities. Recognizing these signs early often helps families provide appropriate support.",
+    answer: "Symptoms might involve feelings of self-doubt, negative thoughts, fear of being judged, playing it safe, isolation and inability to voice one's thoughts. Some teens may get perfectionistic, others may lose confidence in themselves and not try. A timely diagnosis can enable families to provide the right support. [3][7]"
   },
   {
     question: "7. How can parents improve confidence in teenagers?",
-    answer: "Parents can improve confidence by focusing on strengths, encouraging independence, avoiding excessive criticism and recognizing effort rather than only outcomes. Healthy communication, emotional support and opportunities to make decisions often help teenagers develop stronger self-belief and resilience over time.",
+    answer: "Supporting parents to build confidence by emphasising on strengths, encouraging independence and recognising effort, rather than results. Over time, healthy communication, emotional support, and opportunities to make decisions can build up teen's self-belief and resilience. [3][7]"
   },
   {
     question: "8. Why does my teenager compare themselves to others?",
-    answer: "Comparison is a common part of adolescence because teenagers are developing their identity and understanding their place in the world. Social media, peer relationships and academic environments may increase comparison. Helping teenagers focus on personal growth, strengths and individual progress often supports healthier confidence and emotional wellbeing.",
+    answer: "Teens have a natural drive to compare, which is often the result of developing their identity and understanding of where they fit in the world. Comparisons may be greater through social media, peer relationships and academic settings. Encouraging teen confidence and emotional health by helping them focus on their own growth, strengths and their individual progress. [5][10]"
   },
   {
     question: "9. Can confidence be learned?",
-    answer: "Yes. Confidence is not something teenagers are simply born with. It develops through experiences, learning opportunities, supportive relationships, emotional growth and overcoming challenges. With appropriate guidance, encouragement and positive experiences, confidence can continue to grow throughout adolescence and adulthood.",
+    answer: "Yes. Teenagers don't just naturally have confidence. It consists of experiences, opportunities to learn, positive relationships, emotional development and facing challenges. Confidence can be nurtured and developed throughout adolescence and adulthood with the right support, encouragement and positive experiences. [3][9]"
   },
   {
     question: "10. How can I motivate my teenager?",
-    answer: "Motivation often improves when teenagers feel capable, supported and connected to meaningful goals. Encouragement, healthy routines, realistic expectations and confidence-building experiences often work better than pressure or criticism. Understanding what motivates a teenager personally is usually more effective than using a one-size-fits-all approach.",
+    answer: "A sense of being able, supported and connected to meaningful objectives will often lead to improvement in motivation for teenagers. It is important for teachers to offer encouragement, healthy routines, realistic expectations and confidence-building experiences rather than pressure or criticism. It can be better to know what makes a teenager tick than to apply a cookie-cutter solution. [3][7]"
   },
   {
     question: "11. Why does my teenager lack confidence despite being talented?",
-    answer: "Many talented teenagers struggle with confidence because confidence and ability are not the same thing. Fear of failure, perfectionism, social comparison, past experiences or excessive self-criticism may prevent teenagers from recognizing their strengths. Helping them focus on progress, learning and personal growth often supports healthier self-belief.",
+    answer: "Confidence is not the same as ability, and many talented adolescents have trouble in believing themselves to be confident. Teenagers might not notice their strengths because they are afraid of failing, perfectionists, comparing themselves to others, or have had a bad experience and grown to be too critical of themselves. Supporting their focus on progress, learning and personal growth helps them to develop healthier self-belief."
   },
   {
     question: "12. Why is my teenager afraid of making mistakes?",
-    answer: "Many teenagers fear mistakes because they worry about failure, criticism, embarrassment or disappointing others. Academic pressure, perfectionist tendencies and social expectations may contribute to this fear. Helping teenagers view mistakes as opportunities for learning and growth often supports confidence, resilience and emotional wellbeing.",
+    answer: "Many teens are afraid to make mistakes because they don't want to fail, or because they have to deal with criticism, embarrassment or disappointing others. This fear may be caused by academic pressure, perfectionist inclinations, and the social norms that are expected of them. Supporting confidence, resilience and emotional wellbeing by helping teens to think of mistakes as learning opportunities."
   },
   {
     question: "13. How does Manovaidya support teenagers?",
-    answer: "At Manovaidya, support begins with understanding emotional wellbeing, confidence, behaviour, motivation and lifestyle-related influences through a structured assessment process. Through personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of the factors influencing confidence, resilience and long-term development.",
+    answer: "At Manovaidya, support starts with understanding the emotional wellbeing, confidence, behaviour, motivation and lifestyle related influences and a structured assessment process. Families learn more about the factors influencing confidence, resilience and long term development through personalized guidance, family support and the Neuro-Ayurveda Development System."
   },
   {
     question: "14. Can low self-esteem affect a teenager's future?",
-    answer: "Low self-esteem may influence confidence, decision-making, communication, relationships, academic growth and willingness to pursue opportunities. Teenagers who do not believe in themselves may avoid challenges even when they have the ability to succeed. Supporting confidence and emotional wellbeing during adolescence often helps create a stronger foundation for future growth and independence.",
+    answer: "Low self-esteem can affect confidence, decision making, communication and relationship skills, academic development and interest in opportunities. If a teenager doesn't feel he or she is capable, then he or she won't take on anything. Adolescent emotional and confidence building can lead to better preparation for future development and independence. [1][9]"
   },
   {
     question: "15. When should parents seek guidance?",
-    answer: "Parents may consider seeking guidance when confidence challenges begin affecting emotional wellbeing, relationships, communication, motivation, academics or daily functioning. Signs such as persistent self-doubt, fear of failure, social withdrawal or low self-esteem may indicate the need for additional support. A structured assessment can help families better understand the factors influencing confidence, resilience and overall development.",
+    answer: "Confidence issues may start to impact emotional wellbeing, relationships, communication, motivation, schoolwork, or daily functioning and parents might want to seek guidance. If someone persistently doubts himself/herself, fears failure, withdraws from social situations or has low self esteem, then they may need more support. A structured assessment can support families to gain more insight into what is impacting confidence, resilience and overall development. [1][3]"
   },
 ];
 
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/^\d+\.\s*/, ""),
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. How can I build confidence in my teenager?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can help build confidence by encouraging effort, recognizing strengths, celebrating progress and creating a supportive environment. Teenagers often develop healthy confidence when they feel understood, respected and encouraged to learn from mistakes rather than fear them. Confidence grows through positive experiences, emotional support and opportunities to develop new skills over time.",
+      },
     },
-  })),
+    {
+      "@type": "Question",
+      name: "2. Why does my teenager have low self-esteem?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Low self-esteem may be influenced by social comparison, academic pressure, negative experiences, peer relationships, fear of failure or constant self-criticism. Teenagers often become more aware of how they are perceived by others, which can affect confidence and self-worth. Understanding Teen Self-Esteem Issues often helps families provide more meaningful support and encouragement.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What causes low confidence in teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Confidence is influenced by many factors including emotional wellbeing, family environment, social experiences, academic challenges, peer relationships and personal experiences. Some teenagers may struggle with confidence because of repeated criticism, fear of failure or negative comparisons. Every teenager develops confidence differently, which is why understanding their individual experiences is important.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. How does social media affect confidence?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Social media can sometimes encourage comparison with unrealistic standards of appearance, success or lifestyle. Constant comparison may affect self-esteem and emotional wellbeing. While social media is not always harmful, excessive exposure may influence how teenagers view themselves. Healthy digital habits and balanced online engagement often help support healthier confidence.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can low confidence affect school performance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Confidence and academic performance are closely connected. Teenagers with low confidence may hesitate to participate in class, avoid challenges, fear making mistakes or underestimate their abilities. Even capable students may struggle to perform at their full potential when self-belief is low. Supporting confidence often helps create a stronger foundation for learning and growth.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. What are the signs of low self-esteem?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Common signs may include self-doubt, negative self-talk, fear of judgement, avoiding challenges, social withdrawal, excessive comparison with others and difficulty expressing opinions. Some teenagers may become perfectionistic, while others may give up easily because they do not believe in their abilities. Recognizing these signs early often helps families provide appropriate support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. How can parents improve confidence in teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can improve confidence by focusing on strengths, encouraging independence, avoiding excessive criticism and recognizing effort rather than only outcomes. Healthy communication, emotional support and opportunities to make decisions often help teenagers develop stronger self-belief and resilience over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Why does my teenager compare themselves to others?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Comparison is a common part of adolescence because teenagers are developing their identity and understanding their place in the world. Social media, peer relationships and academic environments may increase comparison. Helping teenagers focus on personal growth, strengths and individual progress often supports healthier confidence and emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. Can confidence be learned?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Confidence is not something teenagers are simply born with. It develops through experiences, learning opportunities, supportive relationships, emotional growth and overcoming challenges. With appropriate guidance, encouragement and positive experiences, confidence can continue to grow throughout adolescence and adulthood.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. How can I motivate my teenager?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Motivation often improves when teenagers feel capable, supported and connected to meaningful goals. Encouragement, healthy routines, realistic expectations and confidence-building experiences often work better than pressure or criticism. Understanding what motivates a teenager personally is usually more effective than using a one-size-fits-all approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Why does my teenager lack confidence despite being talented?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many talented teenagers struggle with confidence because confidence and ability are not the same thing. Fear of failure, perfectionism, social comparison, past experiences or excessive self-criticism may prevent teenagers from recognizing their strengths. Helping them focus on progress, learning and personal growth often supports healthier self-belief.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. Why is my teenager afraid of making mistakes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many teenagers fear mistakes because they worry about failure, criticism, embarrassment or disappointing others. Academic pressure, perfectionist tendencies and social expectations may contribute to this fear. Helping teenagers view mistakes as opportunities for learning and growth often supports confidence, resilience and emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, support begins with understanding emotional wellbeing, confidence, behaviour, motivation and lifestyle-related influences through a structured assessment process. Through personalized guidance, family support and the Neuro-Ayurveda Development System, families gain a deeper understanding of the factors influencing confidence, resilience and long-term development.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Can low self-esteem affect a teenager's future?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Low self-esteem may influence confidence, decision-making, communication, relationships, academic growth and willingness to pursue opportunities. Teenagers who do not believe in themselves may avoid challenges even when they have the ability to succeed. Supporting confidence and emotional wellbeing during adolescence often helps create a stronger foundation for future growth and independence.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should parents seek guidance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents may consider seeking guidance when confidence challenges begin affecting emotional wellbeing, relationships, communication, motivation, academics or daily functioning. Signs such as persistent self-doubt, fear of failure, social withdrawal or low self-esteem may indicate the need for additional support. A structured assessment can help families better understand the factors influencing confidence, resilience and overall development.",
+      },
+    },
+  ],
+};
+
+const teenConfidenceSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: teenConfidenceSeoTitle,
+      description: teenConfidenceSeoDescription,
+      url: teenConfidenceSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Teen Confidence & Emotional Support",
+          item: teenConfidenceSeoPageUrl,
+        },
+      ],
+    },
+    faqSchema,
+  ],
 };
 
 function SidebarCard({ children, className = "" }) {
@@ -305,7 +899,7 @@ function CitationText({ text, onCitationClick }) {
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadff1] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -437,6 +1031,189 @@ function RelatedPagesCard() {
   );
 }
 
+
+const sectionIdByRawTitle = {
+  "Teen Confidence & Emotional Wellbeing Support in India": "introduction",
+  "Understanding Teen Confidence & Emotional Wellbeing": "understanding-confidence",
+  "Common Signs of Low Confidence in Teenagers": "common-signs",
+  "Why Teenagers Struggle With Confidence": "why-teenagers-struggle",
+  "How Low Confidence Can Affect Teenagers": "how-it-affects",
+  "The Neuro-Ayurveda Approach to Confidence & Emotional Wellbeing": "neuro-ayurveda-approach",
+  "How Parents Can Help Build Confidence in Teenagers": "how-parents-can-help",
+  "How Manovaidya Supports Teenagers & Families": "how-we-support",
+  "When Should Parents Consider an Assessment?": "when-to-assess",
+  "Why Families Choose Manovaidya": "why-families-choose",
+  "Why Families choose Manovaidya": "why-families-choose",
+  "Why Families Across India Connect With Manovaidya": "why-families-choose-india",
+  "About Dr. Ankush Garg": "about-dr-ankush-garg",
+  "Frequently Asked Questions (FAQs)": "faqs",
+  "Book a Consultation": "book-consultation",
+};
+
+const rawHeadings = new Set(Object.keys(sectionIdByRawTitle));
+const hiddenRawLines = new Set(["Key Takeaways", ...keyTakeaways]);
+const rawListLeadLines = new Set([
+  "At Manovaidya, Teen Confidence & Emotional Wellbeing Support Focuses On:",
+  "Teenagers with healthy confidence are more likely to:",
+  "Teenagers may experience:",
+  "They may:",
+  "Teenagers with low confidence may:",
+  "But teens who have self-confidence tend to be more open to:",
+  "Healthy confidence supports:",
+  "The Brain Nourishment System is based on the awareness of factors that can affect:",
+  "People who are having confidence issues as teens might also have:",
+  "The Neural Network System is about learning about:",
+  "Factors such as:",
+  "Low confidence teenagers may exhibit:",
+  "Our process typically includes:",
+  "If parents observe the following, they may wish to seek advice:",
+  "Families Choose Manovaidya Because Of:",
+]);
+
+function ArticleVisualBlock({ heading }) {
+  if (heading === "Teen Confidence & Emotional Wellbeing Support in India") {
+    return (
+      <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { label: "Low Confidence & Self-Doubt", Icon: Sparkles },
+            { label: "Self-Esteem Challenges", Icon: ShieldCheck },
+            { label: "Emotional Wellbeing", Icon: HeartHandshake },
+            { label: "Motivation & Growth Mindset", Icon: Activity },
+            { label: "Social Confidence", Icon: Users },
+            { label: "Resilience & Positive Development", Icon: Brain },
+          ].map(({ label, Icon }) => (
+            <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
+                <Icon className="h-6 w-6" strokeWidth={1.8} />
+              </span>
+              <span>{label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+
+  if (heading === "The Neuro-Ayurveda Approach to Confidence & Emotional Wellbeing") {
+    return (
+      <div className="mt-6 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] p-8 shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
+        <img src={neuroAyurvedaImage} alt="Neuro Ayurveda approach for teen confidence support" className="max-h-full max-w-full rounded-lg object-contain object-center" />
+      </div>
+    );
+  }
+
+  if (heading === "How Parents Can Help Build Confidence in Teenagers") {
+    return <img src={parentGuidanceImage} alt="Parent guidance for teen confidence and self esteem" className="mt-6 max-h-[380px] w-full rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]" />;
+  }
+
+  if (heading === "About Dr. Ankush Garg") {
+    return (
+      <div className="mt-4 flex flex-col gap-5 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm sm:flex-row sm:items-start">
+        <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
+        <div>
+          <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
+          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+            Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  return null;
+}
+
+function isRawShortTitle(line, next) {
+  return (
+    line.length < 90 &&
+    next &&
+    !/[.]/.test(line) &&
+    !rawHeadings.has(line) &&
+    !rawListLeadLines.has(line) &&
+    !/^\d+\./.test(line) &&
+    !line.startsWith("[") &&
+    !line.startsWith("http") &&
+    !line.startsWith("📞") &&
+    !line.startsWith("•") &&
+    !line.startsWith("✔")
+  );
+}
+
+function RawArticleContent({ onCitationClick, openFaq, setOpenFaq }) {
+  const allLines = articleRaw.split("\n").map((line) => line.trim()).filter(Boolean);
+  const introStartIndex = allLines.findIndex((line) => line === "Teen Confidence & Emotional Wellbeing Support in India");
+  const contentEndIndex = allLines.indexOf("References");
+  const articleLines = contentEndIndex > introStartIndex ? allLines.slice(0, contentEndIndex) : allLines;
+  const lines = articleLines.slice(Math.max(0, introStartIndex)).filter((line) => !hiddenRawLines.has(line));
+  const faqStartIndex = lines.indexOf("Frequently Asked Questions (FAQs)");
+  const faqEndIndex = lines.indexOf("Book a Consultation");
+
+  return (
+    <div className="mt-8 space-y-4">
+      {lines.map((line, index) => {
+        const faqMode = faqStartIndex >= 0 && index > faqStartIndex && (faqEndIndex < 0 || index < faqEndIndex);
+        const id = sectionIdByRawTitle[line];
+        const next = lines[index + 1] || "";
+
+        if (line === "Frequently Asked Questions (FAQs)") {
+          return (
+            <section key={"faq-" + index} id="faqs" className="mt-9">
+              <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions (FAQs)</h2>
+              <div className="mt-5 space-y-3">
+                {faqs.map((faq, faqIndex) => (
+                  <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
+                    <button onClick={() => setOpenFaq(openFaq === faqIndex ? null : faqIndex)} className="flex w-full items-center justify-between gap-4 p-4 text-left" aria-expanded={openFaq === faqIndex}>
+                      <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
+                      <span className={("flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform " + (openFaq === faqIndex ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"))}>
+                        <ChevronDown className="h-4 w-4" />
+                      </span>
+                    </button>
+                    {openFaq === faqIndex && (
+                      <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
+                        <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]"><CitationText text={faq.answer} onCitationClick={onCitationClick} /></p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        }
+
+        if (faqMode) return null;
+
+        if (rawHeadings.has(line) && (line !== "Book a Consultation" || index === faqEndIndex)) {
+          return (
+            <section key={"section-" + index} id={id} className="mt-9 scroll-mt-28">
+              <h2 className="text-[20px] font-black text-[#17111f]">{line}</h2>
+              <ArticleVisualBlock heading={line} />
+            </section>
+          );
+        }
+
+        if (rawListLeadLines.has(line)) {
+          return <p key={"lead-" + index} className="pt-2 text-[14px] font-black leading-7 text-[#3b2e45]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+        }
+
+        if (isRawShortTitle(line, next)) {
+          return <h3 key={"h3-" + index} className="pt-3 text-[16px] font-black leading-6 text-[#21142d]"><CitationText text={line} onCitationClick={onCitationClick} /></h3>;
+        }
+
+        if (line === "Book Consultation") {
+          return <a key={"book-" + index} href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-[#7835A4] px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">Book Consultation</a>;
+        }
+
+        return <p key={"p-" + index} className="text-[14px] font-semibold leading-7 text-[#51465a]"><CitationText text={line} onCitationClick={onCitationClick} /></p>;
+      })}
+
+      <div className="mt-6 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
+        <img src={ctaImage} alt="Teen self esteem and emotional wellbeing support" className="h-64 w-full object-cover object-center sm:h-80" />
+      </div>
+    </div>
+  );
+}
+
 function TeenConfidenceEmotionalWellbeingPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
@@ -519,16 +1296,11 @@ function TeenConfidenceEmotionalWellbeingPage() {
         style={{ font: '400 1.125rem/1.5 "Martel", serif' }}
       >
       <Seo
-        title="Teen Confidence & Emotional Wellbeing Support in India | Self-Esteem Support | Manovaidya"
-        description="Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        title={teenConfidenceSeoTitle}
+        description={teenConfidenceSeoDescription}
         keywords="Teen Confidence Support India, Teen Self-Esteem Treatment, Adolescent Emotional Wellbeing, Teen Self-Doubt, Low Confidence in Teens, Teenage Emotional Resilience, Neuro-Ayurveda Confidence Support, Dr. Ankush Garg"
         path="/teen-confidence-emotional-wellbeing"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Teen Confidence & Emotional Wellbeing Support in India",
-          "description": "Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya."
-        }}
+        schema={teenConfidenceSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
@@ -608,350 +1380,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
 
           <KeyTakeawaysBlock />
 
-          <section id="introduction" className="mt-8">
-            <h2 className="text-[20px] font-black text-[#17111f]">What is Teen Confidence & Emotional Wellbeing Support in India?</h2>
-            <Paragraph>Supporting teens to develop confidence, emotional resilience, self-belief and emotional wellbeing.</Paragraph>
-            <Paragraph>Many Indian families look for Teen Confidence Support when teenagers struggle with self-doubt, fear of judgement, motivation problems and social hesitation. Support is not about making a teenager sound louder; it is about developing steady self-esteem, emotional regulation and self-confidence in study, social and family settings.</Paragraph>
-            <Paragraph>Confidence influences how teenagers think, learn, communicate and react when they fail. During adolescence, they build identity, compare themselves with others and figure out how they fit into the world. These changes can bring doubt, fear of judgement and lack of confidence in oneself. <Citation id="1" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Many teenagers experience self-doubt, fear of judgement, low confidence or uncertainty about their abilities. These challenges can influence emotional wellbeing, academic growth, relationships and overall development.</Paragraph>
-            <Paragraph>Parents often notice that their teenager has become hesitant, withdrawn or overly critical of themselves. Some teenagers avoid opportunities because they fear making mistakes, while others struggle with confidence despite having strong abilities and potential.</Paragraph>
-            <Paragraph>At Manovaidya, we understand that confidence is not simply about speaking loudly or appearing outgoing. True confidence is closely connected to emotional wellbeing, self-belief, resilience and the ability to handle life's challenges in a balanced way.</Paragraph>
-            <Paragraph>Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps teenagers and families understand emotional patterns, confidence concerns, behaviour, routines and family influences while supporting long-term Teen Mental Wellness.</Paragraph>
-
-            <div className="mt-5 rounded-lg bg-[#f4ecf8] p-5">
-              <h3 className="mb-2 text-[14px] font-bold text-[#3b2e45]">At Manovaidya, Teen Confidence & Emotional Wellbeing Treatment Focuses On:</h3>
-              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {[
-                  { label: "Low Confidence & Self-Doubt", Icon: Sparkles },
-                  { label: "Self-Esteem Challenges", Icon: ShieldCheck },
-                  { label: "Emotional Wellbeing", Icon: HeartHandshake },
-                  { label: "Motivation & Growth Mindset", Icon: Activity },
-                  { label: "Social Confidence", Icon: Users },
-                  { label: "Resilience & Positive Development", Icon: Brain },
-                ].map(({ label, Icon }) => (
-                  <li key={label} className="flex min-h-[100px] flex-col items-center justify-start gap-3 rounded-lg border border-[#eadff1] bg-white p-4 text-center text-[13px] font-bold leading-5 text-[#51465a] shadow-[0_8px_18px_rgba(58,31,90,0.04)]">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#f0e7f6] text-[#7835A4]">
-                      <Icon className="h-6 w-6" strokeWidth={1.8} />
-                    </span>
-                    <span>{label}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          <section id="understanding-confidence" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">What Does Healthy Confidence Look Like in Teenagers?</h2>
-            <Paragraph>Confidence is the belief that a person can learn, grow and overcome difficulties even when situations feel difficult. It does not mean the absence of worry, uncertainty or disappointment.</Paragraph>
-            <Paragraph>During adolescence, teenagers experience rapid emotional, social and personal changes. They may compare themselves with peers, friends, classmates and online personalities while developing their sense of self.</Paragraph>
-            <Paragraph>Teenage Emotional Health can be affected by social experiences, family communication, academic pressure and personal achievements. <Citation id="1" onClick={handleCitationClick} /> <Citation id="3" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Many families searching for Teen Confidence Treatment in India, Self-Esteem Support for Teenagers or Teen Emotional Wellbeing Support in India are often looking for a structured approach that looks beyond visible hesitation and considers emotions, peer relationships and negative thinking patterns.</Paragraph>
-            <Paragraph>Confidence is not something that appears overnight.</Paragraph>
-            <Paragraph>It develops through supportive relationships, opportunities to try, room to make mistakes, healthy independence and emotional support. <Citation id="2" onClick={handleCitationClick} /> <Citation id="6" onClick={handleCitationClick} /></Paragraph>
-            <div className="mt-5 rounded-lg border border-[#eadff1] bg-white p-5">
-              <h3 className="text-[15px] font-black text-[#21142d]">Teenagers with healthy confidence are more likely to:</h3>
-              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-                {["Communicate freely", "Try new experiences", "Learn from mistakes", "Build healthy relationships", "Manage challenges more effectively", "Make age-appropriate decisions", "Ask for help when needed"].map((item) => (
-                  <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Paragraph>When confidence is low, teenagers may struggle with self-doubt, fear of failure and emotional distress.</Paragraph>
-            <Paragraph>Understanding confidence through a broader perspective often helps families create a healthier environment for growth and development.</Paragraph>
-          </section>
-
-          <section id="common-signs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Common Signs of Low Confidence in Teenagers</h2>
-            <Paragraph>Low confidence can appear as self-doubt, avoidance, perfectionism, anger or withdrawal.</Paragraph>
-            <Paragraph>Some teenagers openly express self-doubt, while others hide their struggles through silence, procrastination or excessive fear of getting things wrong.</Paragraph>
-            <Paragraph>Parents may notice changes in emotions, behaviour, academics and social interactions.</Paragraph>
-
-            <div className="mt-5 space-y-5">
-              {[
-                { title: "Emotional Signs", Icon: HeartHandshake, items: ["Self-doubt", "Negative self-talk", "Fear of judgement", "Low self-esteem", "Increased emotional sensitivity", "Lack of self-belief", "Worry about making mistakes"] },
-                { title: "Behavioural Signs", Icon: Users, items: ["Avoiding challenges", "Reluctance to try new things", "Giving up easily", "Excessive perfectionism", "Fear of participation", "Seeking constant reassurance"] },
-                { title: "Academic Signs", Icon: BookOpen, items: ["Low self-esteem and confidence despite ability", "Fear of making mistakes", "Avoiding difficult tasks", "Reduced class participation", "Excessive worry about performance", "Underestimating personal abilities"] },
-                { title: "Social Signs", Icon: Activity, items: ["Difficulty expressing opinions", "Social withdrawal", "Comparing themselves with others", "Fear of rejection", "Reduced social confidence", "Withdrawing from new friends and group activities"] },
-              ].map(({ title, Icon, items }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-                  <div className="mb-3 flex items-center gap-3">
-                    <Icon className="h-5 w-5 text-[#7835A4]" />
-                    <h3 className="text-[16px] font-black text-[#21142d]">{title}</h3>
-                  </div>
-                  <ul className="space-y-2 sm:columns-2">
-                    {items.map((item) => (
-                      <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#7835A4]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-            <Paragraph>These can be indicators of Teen Self-Esteem Issues or broader Confidence Issues in Adolescents, especially when they are persistent and affect daily living. <Citation id="1" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>The presence of one or two signs does not automatically indicate a significant concern. However, when low confidence begins affecting emotional wellbeing, relationships or daily functioning, Teen Counselling in India, Online Counselling for Teenagers or customized Teen Confidence Support may be helpful.</Paragraph>
-          </section>
-
-          <section id="why-teenagers-struggle" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Teenagers Struggle With Confidence</h2>
-            <Paragraph>Why teenagers lose confidence is rarely answered by one reason. Emotional experiences, peer relationships, academic stress, family expectations, social comparison and previous failures can all contribute. <Citation id="1" onClick={handleCitationClick} /> <Citation id="2" onClick={handleCitationClick} /> <Citation id="3" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Understanding these influences helps parents become part of the solution instead of assuming the teenager is simply not motivated enough.</Paragraph>
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Social Comparison", desc: "Teenagers frequently compare themselves with friends, classmates and social media content. Repeated comparison can create a feeling that everyone else is more successful, attractive, able or confident." },
-                { title: "Academic Pressure", desc: "Academic expectations can influence how teenagers view their abilities and self-worth. Repeated struggles or fear of failure may make rank and performance feel like proof of intelligence or future capability." },
-                { title: "Fear of Failure", desc: "Many teenagers avoid challenges because they worry about making mistakes or disappointing others." },
-                { title: "Social Media Influence", desc: "Online platforms often present unrealistic standards of success, appearance and lifestyle. These comparisons may influence confidence and emotional wellbeing." },
-                { title: "Peer Relationships", desc: "Friendships and social experiences play an important role during adolescence. Negative social experiences may affect confidence and self-esteem." },
-                { title: "Family Expectations", desc: "Well-intentioned expectations can sometimes create pressure if teenagers feel they are unable to meet them." },
-                { title: "Negative Experiences", desc: "Past criticism, failures, bullying or difficult experiences may influence how teenagers view themselves and their abilities." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-4 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-            <Paragraph>Many parents worry that ongoing self-doubt, low confidence or emotional struggles may affect their teenager's future opportunities, relationships and overall wellbeing. Understanding these concerns early often helps families support healthier emotional growth and resilience.</Paragraph>
-          </section>
-
-          <section id="how-it-affects" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Low Confidence Can Affect Teenagers</h2>
-            <Paragraph>Confidence influences much more than how teenagers feel about themselves.</Paragraph>
-            <Paragraph>It can affect emotional wellbeing, communication, learning, relationships and future growth.</Paragraph>
-            <Paragraph>When confidence remains low for an extended period, teenagers may begin limiting their own potential because they no longer believe in their abilities.</Paragraph>
-            <Paragraph>Persistent Low Confidence in Teenagers can impact multiple aspects of Teen Mental Wellness, and structured Self-Esteem Support can help families understand how confidence affects emotions, choices and daily functioning.</Paragraph>
-
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Emotional Wellbeing", text: "Low confidence may create self-doubt, negative thinking, fear of judgement, emotional sensitivity and worry about mistakes. Supporting emotional wellbeing means helping teenagers identify uncomfortable emotions and challenge negative self-beliefs." },
-                { title: "Academic Growth", text: "A lack of self-belief can make even capable students avoid participation or challenging work. Teen Confidence Building helps teenagers see learning as a chance to grow rather than a threat." },
-                { title: "Relationships & Social Confidence", text: "Low confidence can make teenagers avoid expressing opinions, fear rejection, struggle in social situations and depend heavily on approval. Personalized support can explore whether social worry is linked to low self-esteem, negative peer experiences or fear of judgement." },
-                { title: "Decision Making", text: "Teenagers regularly face decisions related to studies, friendships, activities and future goals. Low confidence may make decision-making more difficult. Many teenagers begin seeking constant reassurance because they fear making the wrong choice." },
-                { title: "Motivation & Personal Growth", text: "Confidence and motivation go hand-in-hand. Teenagers who believe in themselves are often more willing to try new experiences, learn new skills, accept challenges, recover from setbacks and continue after disappointment." },
-                { title: "Future Development", text: "Confidence influences how teenagers approach opportunities later in life. Healthy confidence supports: Leadership, Communication, Career development, Independence, Emotional resilience. Building confidence during adolescence often creates a stronger foundation for adulthood." },
-              ].map(({ title, text }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <h3 className="text-[16px] font-black text-[#21142d]">{title}</h3>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#51465a]">
-                    <CitationText text={text} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="neuro-ayurveda-approach" className="mt-9">
-            <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)]">
-              <h2 className="text-[18px] font-black leading-snug text-[#5d268d]">
-                The Neuro-Ayurveda Approach to Confidence & Emotional Wellbeing
-              </h2>
-              <p className="mt-2 text-[14px] font-semibold leading-6 text-[#51465a]">
-                <CitationText text="At Manovaidya, confidence is understood through a broader and more comprehensive perspective. Rather than focusing only on self-esteem or motivation, Manovaidya considers emotional wellbeing, thought patterns, behaviour, lifestyle habits and family support through five interconnected pillars. Classical concepts around Manas, Sattvavajaya and Dhriti provide Ayurvedic conceptual support for mind regulation, emotional stability and determination. [7] [8] [9]" onCitationClick={handleCitationClick} />
-              </p>
-            </div>
-
-            <div className="mt-6 space-y-4">
-              {[
-                { title: "Brain Nourishment System", text: "Confidence is closely connected to healthy emotional and cognitive functioning. The Brain Nourishment System focuses on understanding factors that may influence: Self-belief, Attention, Learning readiness, Emotional regulation, Decision making, Confidence development. Supporting confidence often begins with understanding how teenagers process experiences, challenges and achievements.", Icon: Brain },
-                { title: "Gut Response System", text: "Emotional wellbeing and physical wellbeing are often interconnected. Many teenagers experiencing confidence challenges may also struggle with: Poor routines, Irregular eating habits, Lifestyle imbalance, Low energy levels, Reduced daily engagement. The Gut Response System focuses on understanding how overall wellbeing may influence emotional balance and confidence.", Icon: Utensils },
-                { title: "Neural Network System", text: "Every experience contributes to how the brain develops patterns of thinking and responding. The Neural Network System focuses on understanding: Thought patterns, Self-belief systems, Emotional responses, Learning habits, Adaptability. Helping teenagers build healthier thinking patterns often supports confidence and resilience.", Icon: Sparkles },
-                { title: "Sensory Integration System", text: "Teenagers respond differently to environments, experiences and social situations. Factors such as: Classroom settings, Social environments, Peer interactions, Digital stimulation, Performance situations may influence emotional wellbeing and confidence. Understanding these influences often helps families create more supportive environments.", Icon: Waves },
-                { title: "Behaviour Guidance System", text: "Behaviour is often a reflection of how teenagers see themselves. Teenagers with low confidence may show: Avoidance behaviours, Hesitation, Withdrawal, Perfectionism, Fear of participation. Rather than focusing only on behaviour, this pillar focuses on understanding the factors that may be contributing to those behaviours and helping families respond more effectively.", Icon: ShieldCheck },
-              ].map((pillar) => (
-                <div key={pillar.title} className="flex gap-4 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-[#7835A4] shadow-sm">
-                    <pillar.Icon className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <h3 className="text-[15px] font-black text-[#21142d]">{pillar.title}</h3>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#51465a]">
-                      <CitationText text={pillar.text} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] p-8 shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
-              <img
-                src={neuroAyurvedaImage}
-                alt="Neuro Ayurveda approach for teen confidence support"
-                className="max-h-full max-w-full rounded-lg object-contain object-center"
-              />
-            </div>
-          </section>
-
-          <section id="how-parents-can-help" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Parents Can Help Build Confidence in Teenagers</h2>
-            <Paragraph>Parents play one of the most important roles in helping teenagers develop healthy confidence and emotional resilience. Parent-teen communication, emotional safety and recognition of effort can influence self-esteem and wellbeing. <Citation id="2" onClick={handleCitationClick} /></Paragraph>
-            <Paragraph>Small changes in communication and support often make a meaningful difference.</Paragraph>
-
-            <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              {[
-                { title: "Encourage Effort Rather Than Perfection", desc: "Teenagers benefit when effort, learning and progress are appreciated rather than only outcomes. Recognizing growth helps build confidence over time." },
-                { title: "Avoid Excessive Criticism", desc: "Frequent criticism may reduce self-belief and increase self-doubt. Constructive guidance is often more effective when delivered with encouragement and understanding." },
-                { title: "Celebrate Small Successes", desc: "Confidence grows through positive experiences. Acknowledging achievements, improvements and personal strengths often helps teenagers develop a healthier self-image." },
-                { title: "Support Independence", desc: "Allowing teenagers to make age-appropriate decisions helps build responsibility and confidence. Learning through experience is an important part of development." },
-                { title: "Focus on Strengths", desc: "Every teenager has unique strengths and abilities. Helping teenagers recognize their strengths often improves self-belief and motivation." },
-                { title: "Encourage Healthy Communication", desc: "Creating a safe environment for open conversations helps teenagers express thoughts and emotions more comfortably. Feeling heard often strengthens confidence." },
-                { title: "Teach Resilience", desc: "Confidence is not about avoiding failure. It is about learning how to recover, adapt and continue moving forward after setbacks." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <img
-              src={parentGuidanceImage}
-              alt="Parent guidance for teen confidence and self esteem"
-              className="mt-6 max-h-[380px] w-full rounded-lg object-cover object-center shadow-[0_12px_30px_rgba(58,31,90,0.08)]"
-            />
-          </section>
-
-          <section id="how-we-support" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">How Manovaidya Supports Teenagers & Families</h2>
-            <Paragraph>At Manovaidya, support begins with understanding the teenager as a whole rather than focusing on a single concern.</Paragraph>
-            <Paragraph>Families who come to Manovaidya for Teen Therapy in India, Teen Counselling in India or Teen Mental Health Support in India begin with a structured understanding of confidence, emotional wellbeing, behaviour, routines and family concerns.</Paragraph>
-            <Paragraph>Our process typically includes:</Paragraph>
-            <div className="mt-5 space-y-4">
-              {[
-                { title: "Step 1: Detailed Assessment", desc: "Understanding confidence challenges, emotional wellbeing, behaviour, motivation, lifestyle habits, social experiences and family concerns." },
-                { title: "Step 2: Personalized Guidance", desc: "Providing individualized recommendations based on the teenager's unique emotional, behavioural and developmental needs." },
-                { title: "Step 3: Parent Guidance & Family Support", desc: "Helping parents better understand confidence building, communication and practical ways to support emotional growth at home." },
-                { title: "Step 4: Neuro-Ayurveda Development System", desc: "Applying the five-pillar framework to better understand emotional wellbeing, resilience, confidence and overall development." },
-                { title: "Step 5: Progress Tracking & Follow-Up", desc: "Creating a structured roadmap that helps families monitor growth and make informed decisions over time." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5">
-                  <h4 className="text-[15px] font-black text-[#21142d]">{title}</h4>
-                  <p className="mt-2 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                    <CitationText text={desc} onCitationClick={handleCitationClick} />
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="when-to-assess" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">When Should Parents Consider an Assessment?</h2>
-            <Paragraph>Parents may consider seeking guidance if they notice:</Paragraph>
-            <ul className="mt-4 grid gap-2 rounded-lg border border-[#eadff1] bg-white p-5 sm:grid-cols-2">
-              {[
-                "Persistent self-doubt",
-                "Low self-esteem",
-                "Social withdrawal",
-                "Fear of failure",
-                "Lack of confidence despite ability",
-                "Emotional sensitivity",
-                "Difficulty expressing opinions",
-                "Reduced motivation",
-                "Confidence challenges affecting daily life",
-              ].map((item) => (
-                <li key={item} className="flex gap-2 text-[13px] font-bold text-[#51465a]">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <Paragraph>A structured assessment can help families better understand confidence issues, learning patterns, relationships and overall wellbeing. Teen Counselling in India, Online Counselling for Teenagers or individual Teen Confidence Support may be considered when concerns affect school, communication, relationships or daily functioning. <Citation id="1" onClick={handleCitationClick} /> <Citation id="4" onClick={handleCitationClick} /></Paragraph>
-          </section>
-
-          <section id="why-families-choose" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Why Families Choose Manovaidya</h2>
-            <Paragraph>Choosing the right support system for confidence, self-esteem and emotional wellbeing can feel overwhelming for many families. Parents are often looking for clarity, practical guidance and a structured approach that helps teenagers build confidence while maintaining emotional balance and resilience.</Paragraph>
-            <Paragraph>At Manovaidya, our goal is not simply to focus on confidence alone. We help families understand the broader factors that may influence emotional wellbeing, self-belief, behaviour, motivation and overall development.</Paragraph>
-
-            <h3 className="mb-4 mt-6 text-[16px] font-black text-[#17111f]">Families Choose Manovaidya Because Of:</h3>
-            <div className="space-y-4">
-              {[
-                { title: "Structured Teen Confidence Assessment", desc: "Every teenager develops confidence differently. Understanding emotional, behavioural and lifestyle-related influences helps create a more personalized roadmap for growth and development." },
-                { title: "Neuro-Ayurveda Development System", desc: "Our structured framework helps families understand emotional wellbeing and confidence through five interconnected pillars: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System, Behaviour Guidance System." },
-                { title: "Parent-Centred Guidance", desc: "Confidence building is not only about the teenager. Parents often play one of the most important roles in shaping self-belief, emotional resilience and healthy development." },
-                { title: "Personalized Support", desc: "Every teenager experiences confidence challenges differently. Guidance is tailored according to individual strengths, challenges and developmental needs." },
-                { title: "Long-Term Growth Focus", desc: "Our approach focuses on emotional resilience, confidence, communication, self-belief and overall wellbeing rather than temporary motivation alone." },
-                { title: "Family-Oriented Approach", desc: "Meaningful growth often happens when teenagers and families work together with proper understanding and support." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="flex gap-3">
-                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#7835A4]" />
-                  <div>
-                    <h4 className="text-[14px] font-black text-[#21142d]">{title}</h4>
-                    <p className="mt-1 text-[13px] font-semibold leading-6 text-[#5a5063]">
-                      <CitationText text={desc} onCitationClick={handleCitationClick} />
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-8 text-[15px] font-black leading-7 text-[#17111f]">Why Families Across India Connect With Manovaidya</p>
-            <Paragraph>Families from Delhi, Noida, Gurgaon, Faridabad and other parts of India connect with Manovaidya for online and in-clinic Teen Confidence Treatment, Self-Esteem Support and Teen Emotional Wellbeing guidance.</Paragraph>
-            <Paragraph>Parents looking for Best Online Teen Counselling in India, Online Counselling for Teenagers or Best Teen Mental Health Support in India can find guidance tailored to the teenager's needs, emotions, family environment and personal experiences.</Paragraph>
-          </section>
-
-          <section id="about-dr-ankush-garg" className="mt-9 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-5 shadow-sm">
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-              <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
-              <div>
-                <h2 className="text-[18px] font-black text-[#21142d]">About Dr. Ankush Garg</h2>
-                <p className="mt-1 text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Dr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="His work focuses on Child Development, Teen Mental Wellness, Adult Mental Health, Women's Emotional Wellbeing and Senior Mental Health Support through a structured and personalized approach." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Many families searching for guidance regarding confidence, self-esteem, emotional wellbeing and personal development connect with Dr. Ankush Garg for structured assessment, personalized guidance and family-centred support." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Through detailed assessment, individualized recommendations, family guidance and regular follow-up, he helps families better understand the factors influencing emotional wellbeing, confidence, resilience and long-term growth." onCitationClick={handleCitationClick} />
-                </p>
-                <p className="mt-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-                  <CitationText text="Based in Delhi NCR, Dr. Ankush Garg supports teenagers, adults and families from across India through structured assessment, personalized guidance and the Neuro-Ayurveda Development System." onCitationClick={handleCitationClick} />
-                </p>
-                <a href="/dr-ankush-garg/" className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
-                  Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section id="faqs" className="mt-9">
-            <h2 className="text-[20px] font-black text-[#17111f]">Frequently Asked Questions (FAQs)</h2>
-            <div className="mt-5 space-y-3">
-              {faqs.map((faq, index) => (
-                <div key={faq.question} className="overflow-hidden rounded-lg border border-[#eadff1] bg-white shadow-sm transition-all hover:border-[#c5adcf]">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="flex w-full items-center justify-between gap-4 p-4 text-left"
-                    aria-expanded={openFaq === index}
-                  >
-                    <span className="text-[14px] font-black text-[#21142d]">{faq.question}</span>
-                    <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#fbf9fd] transition-transform ${openFaq === index ? "rotate-180 bg-[#f0e7f6] text-[#7835A4]" : "text-[#9b8ea5]"}`}>
-                      <ChevronDown className="h-4 w-4" />
-                    </span>
-                  </button>
-                  {openFaq === index && (
-                    <div className="border-t border-[#eadff1] bg-[#fbf9fd] p-4">
-                      <p className="text-[13.5px] font-semibold leading-6 text-[#51465a]">
-                        <CitationText text={faq.answer} onCitationClick={handleCitationClick} />
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
+          <RawArticleContent onCitationClick={handleCitationClick} openFaq={openFaq} setOpenFaq={setOpenFaq} />
 
           <div className="mt-8">
             <button
@@ -968,45 +1397,6 @@ function TeenConfidenceEmotionalWellbeingPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <section id="book-consultation" className="mt-9 overflow-hidden rounded-lg border border-[#eadff1] bg-[#7835A4] text-white">
-            <div className="p-6 sm:p-8">
-              <h2 className="text-[22px] font-black leading-tight">
-                Concerned About Your Teenager's Confidence & Emotional Wellbeing?
-              </h2>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                If your teenager is experiencing low confidence, self-doubt, fear of failure, emotional sensitivity or motivation challenges, seeking clarity is often the first step.
-              </p>
-              <p className="mt-3 text-[14px] font-semibold leading-7 text-[#e5d5f2]">
-                At Manovaidya, our team helps families better understand emotional wellbeing through structured assessment, personalized guidance and family-centred support. Book a structured assessment and personalized guidance session with the Manovaidya team.
-              </p>
-
-              <div className="mt-6">
-                <h3 className="mb-3 text-[16px] font-black">Take the First Step Towards Better Confidence, Emotional Resilience & Personal Growth</h3>
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {["Book Assessment Session", "Speak With Our Team", "Get Personalized Guidance"].map((step) => (
-                    <li key={step} className="flex gap-2 text-[14px] font-bold">
-                      <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
-                      {step}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-4 border-t border-[#8e45bb] pt-6">
-                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-[14px] font-black text-[#7835A4] transition hover:bg-[#fbf7ff]">
-                  Book Consultation
-                </a>
-                <a href="tel:+917823838638" className="inline-flex h-12 items-center justify-center rounded-md border border-white px-8 text-[14px] font-black text-white transition hover:bg-[#632b86]">
-                  Take Teen Wellness Assessment
-                </a>
-              </div>
-            </div>
-            <img
-              src={ctaImage}
-              alt="Teen self esteem and emotional wellbeing support"
-              className="h-64 w-full object-cover object-center sm:h-80"
-            />
-          </section>
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

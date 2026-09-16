@@ -28,6 +28,165 @@ import consultationImage from "../images/acidity-consultation.png";
 import doctorImage from "../images/doctorimg-2.jpeg";
 import Seo from "../components/Seo";
 
+const seoTitle = "Stress & Acidity Treatment in India | Digestive Health | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-acidity/";
+
+const stressAcidityFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress cause acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress can disrupt digestion, and make the sensation of acidity or heartburn more apparent for some. But as with everything else, acidity often comes wrapped in a number of other packages, including diet, lifestyle, medical issues and digestive ailments. An ongoing or persistent symptom should always be evaluated by a doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. Can stress make acid reflux worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Others find that when they are emotionally upset, the acid reflux symptoms are more intense. The gut-brain connection is still being investigated for its impact on gut health. Stress can influence the level of symptoms, but it is just one of a number of factors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between acidity and acid reflux?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acidity is a generic term that is applied to indigestion and heartburn. Acid reflux is where the stomach acid goes back up into the food pipe, it can lead to burning sensation in the chest or sour taste in the mouth. A health care provider may be able to determine the cause of these symptoms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common symptoms of acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some children have heartburn, a burning sensation in the chest, a sour or bitter taste in the mouth, indigestion, upper abdominal discomfort, burping and feeling very full after a meal. These symptoms can also be seen in other digestive diseases, so a medical evaluation may be necessary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can anxiety affect acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For some, the digestive discomfort or heartburn/indigestion occurs more often during times of worry or emotional stress. The symptoms are not unique to this disease and therefore a proper evaluation by a professional is necessary to make a diagnosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can poor sleep make acidity worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is a relationship between sleep and digestion. Bad sleep can make the person stressed and affect his/her wellbeing, and acidity during the night can keep him/her awake. Getting a good night's sleep can help to improve your digestion and emotional well-being."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can lifestyle habits influence acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. What you eat, when you eat, your body weight, exercise, sleep, smoking and drinking alcohol all can affect your digestive health. Medically sound care needs to be used in conjunction with healthy lifestyle practices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I seek medical attention for acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the heartburn persists, is difficult to swallow, you have lost weight without a reason, vomit with blood, stools are black or bloody, severe chest pain or you continue to vomit or have chest pain after making lifestyle changes, you should go to the doctor for an evaluation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Is every episode of acidity caused by stress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Food habits, acid refluxes, some medicines, digestive disorders and other medical conditions could be responsible for acidity. Stress can affect symptoms in some individuals, but can't always be blamed as the only cause."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Acidity assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress & Acidity assessment is a comprehensive evaluation of digestive symptoms, emotional wellbeing, stress levels, lifestyle habits, sleep, nutrition and overall health. It can support the identification of factors that might be affecting wellbeing, and can help provide a basis for personalised guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals experiencing stress-related acidity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We see the connection between emotional well-being, lifestyle and digestive health at Manovaidya, rather than just the digestive symptom. We assist people to gain clarity of their whole mind-body condition through structured assessments, personalised guidance and Neuro-Ayurveda Development System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Neuro-Ayurveda Development System is Manovaidya's 5 pillar structure. It looks at Brain Nourishment, Gut Response, Neural Network Development and Sensory Integration and Behaviour Guidance as a whole, and discusses emotional wellbeing, gut health and lifestyle. It provides a holistic view as well as a detailed assessment and tailored support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress support digestive wellbeing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maintaining good stress management, exercising regularly, eating a balanced diet, getting sufficient sleep and following a consistent schedule can help to maintain a healthy digestive system. The measures may be used in addition to proper diagnosis and treatment, but they are not a substitute for doctors' care."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. How is stress-related acidity different from IBS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acidity primarily causes problems in the upper digestive tract and is typically accompanied by heartburn, acid reflux and indigestion. IBS mainly impacts the gut and is more commonly associated with abdominal discomfort, bloating and bowel issues. The best way to diagnose both of these conditions is to see a health professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Acidity support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manovaidya focuses on the relationship between emotional wellbeing, the gut-brain axis and lifestyle through structured assessments, personalised guidance and the Neuro-Ayurveda Development System. This holistic approach helps individuals understand stress-related digestive concerns while supporting long-term mind-body wellbeing alongside appropriate medical care."
+      }
+    }
+  ]
+};
+
+const stressAcidityBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Acidity Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressAcidityMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Acidity Treatment in India",
+  "description": "Looking for Stress & Acidity treatment in India? Learn how stress affects acid reflux, indigestion, heartburn and digestive health at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressAciditySeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressAcidityMedicalWebPageSchema,
+    stressAcidityFaqSchema,
+    stressAcidityBreadcrumbSchema
+  ]
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "What is Acidity?", id: "what-is-acidity" },
@@ -477,16 +636,11 @@ function StressAcidityIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Acidity Treatment in India | Digestive Health | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Acidity treatment in India? Learn how stress affects acid reflux, indigestion, heartburn and digestive health at Manovaidya."
         keywords="Stress & Acidity, Acid Reflux and Stress, Acidity Treatment India, Stress and Indigestion, Gut-Brain Axis, Digestive Health, Heartburn and Stress, Stress-Related Acidity, Mind-Body Health, Acidity Assessment, Neuro-Ayurveda Development System, Emotional Wellbeing and Digestion, Chronic Acidity"
         path="/stress-and-acidity"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Acidity Treatment in India",
-          "description": "Looking for Stress & Acidity treatment in India? Learn how stress affects acid reflux, indigestion, heartburn and digestive health at Manovaidya."
-        }}
+        schema={stressAciditySeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
 

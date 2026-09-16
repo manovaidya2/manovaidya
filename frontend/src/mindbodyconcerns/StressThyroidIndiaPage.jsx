@@ -28,6 +28,165 @@ import neuroAyurvedaImage from "../images/neuro-ayurveda-exam-stress-support.web
 import consultationImage from "../images/thyroid-consultation.webp";
 import doctorImage from "../images/doctorimg-2.jpeg";
 
+const seoTitle = "Stress & Thyroid Treatment in India | Mind-Body Health | Manovaidya";
+const seoPageUrl = "https://manovaidya.org/stress-and-thyroid/";
+
+const stressThyroidFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. Can stress affect thyroid health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress over extended periods can affect the body's balance of hormones, sleep, lifestyle habits and wellbeing. Stress itself is not really a direct cause of most thyroid problems, but can impact the way that some people feel symptoms of thyroid dysfunction or handle it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. Can stress cause thyroid problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At this time, there is no medical evidence to indicate that most thyroid conditions are directly caused by stress. Multiple factors such as autoimmune disease, genetics, certain medications and other medical conditions typically lead to thyroid conditions. Stress can have indirect effects on overall health and symptom management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. What is the difference between hypothyroidism and hyperthyroidism?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hypothyroidism is defined as an underactive thyroid and hyperthyroidism as an overactive thyroid. Both conditions have an impact on the body's metabolism and should be diagnosed and treated by a qualified health care professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What are the common symptoms of thyroid disorders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common symptoms may include fatigue, weight changes, feeling unusually cold or hot, hair thinning, dry skin, sleep disturbances, mood changes, changes in heart rate and difficulty concentrating. Many varieties of disease can have these symptoms, and professional assessment is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can stress make thyroid symptoms feel worse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fatigue, sleep difficulties and overall well-being are more challenging for some people with thyroid disorders when they are under emotional stress. Stress management may be a complementary strategy for maintaining quality of life along with the medical care of the disease."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Can poor sleep affect thyroid health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep has an important role in the overall hormonal health and wellbeing. Sleep issues can affect energy levels, mood and healing. Good sleep patterns are crucial to general health for those with thyroid issues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can lifestyle habits support thyroid health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Good health comes through a healthy diet, regular exercise, sleep, taking prescribed thyroid medication, follow-up appointments and stress-management. Lifestyle changes should be used in conjunction with—not in place of—medical treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. When should I see a healthcare professional for thyroid symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have any of the above symptoms that persist, or if you are experiencing other changes in your health or occurrence of heat or cold intolerance, medical evaluation should be considered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "9. Do thyroid disorders always cause noticeable symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This can be a mild thyroid condition that has virtually no symptoms, or it can be a condition that affects energy, metabolism and overall well-being. Often blood tests are required to confirm a diagnosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10. What is a Stress & Thyroid assessment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stress & Thyroid is a structured test that delves into the emotional health, stress, sleep hygiene, lifestyle, nutrition, daily routine, thyroid history, and overall health. It can be used to provide an overview of factors which may affect overall wellbeing and for personalised guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "11. How does Manovaidya support individuals concerned about thyroid health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At Manovaidya, we are more interested in the connection between emotional well being, lifestyle and general health than simply in thyroid hormone levels. We provide detailed information about the whole person mind-body wellbeing through structured evaluations, personalised guidance and Neuro-Ayurveda Development System."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "12. What is the Neuro-Ayurveda Development System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brain Nourishment, Gut Response, Neural Network Development, Sensory Integration and Behaviour Guidance are Manovaidya's structured five-pillar approach, which takes a whole-person perspective of emotional wellbeing, lifestyle and overall health. It offers a global view, in-depth evaluation and tailored advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "13. Can managing stress support people living with thyroid disorders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Healthy routines, regular exercise, healthy eating, good sleep and relaxation techniques can help manage stress and contribute to emotional wellbeing and a positive lifestyle. These practices are not a substitute for proper medical diagnosis and treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "14. How are thyroid disorders diagnosed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thyroid disorders are typically detected by a physical exam, blood tests (including those related to thyroid hormone levels) and imaging tests (if needed). Investigations are tailored to individual symptoms, based on advice from a trained health care professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "15. Why should I choose Manovaidya for Stress & Thyroid support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Here at Manovaidya, we strive to create a sense of understanding the connection between emotional well being, lifestyle and long-term health with structured assessments, personalised guidance and the Neuro-Ayurveda Development System. Our integrated practice allows us to educate our clients on stress related wellbeing issues, while supporting them in managing their thyroid conditions with appropriate medical treatment."
+      }
+    }
+  ]
+};
+
+const stressThyroidBreadcrumbSchema = {
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Stress & Thyroid Treatment",
+      "item": seoPageUrl
+    }
+  ]
+};
+
+const stressThyroidMedicalWebPageSchema = {
+  "@type": "MedicalWebPage",
+  "name": "Stress & Thyroid Treatment in India",
+  "description": "Looking for Stress & Thyroid treatment in India? Learn how stress impacts thyroid function, metabolism, and hormonal balance at Manovaidya.",
+  "url": seoPageUrl
+};
+
+const stressThyroidSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    stressThyroidMedicalWebPageSchema,
+    stressThyroidFaqSchema,
+    stressThyroidBreadcrumbSchema
+  ]
+};
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Thyroid Gland", id: "what-is-the-thyroid-gland" },
@@ -478,16 +637,11 @@ function StressThyroidIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Stress & Thyroid Treatment in India | Mind-Body Health | Manovaidya"
+        title={seoTitle}
         description="Looking for Stress & Thyroid treatment in India? Learn how stress impacts thyroid function, metabolism, and hormonal balance at Manovaidya."
         keywords="Stress & Thyroid, Thyroid Health India, Stress and Hormones, Hypothyroidism and Stress, Hyperthyroidism, Thyroid Function, Emotional Wellbeing, Mind-Body Health, Thyroid Assessment, Neuro-Ayurveda Development System, Hormonal Wellbeing"
         path="/stress-and-thyroid"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Stress & Thyroid Treatment in India",
-          "description": "Looking for Stress & Thyroid treatment in India? Learn how stress impacts thyroid function, metabolism, and hormonal balance at Manovaidya."
-        }}
+        schema={stressThyroidSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         

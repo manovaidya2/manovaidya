@@ -471,14 +471,128 @@ const autismMetaKeywords =
   "Autism Treatment in India, Autism Assessment, Autism Spectrum Disorder, Autism Diagnosis, Autism Therapy, Early Signs of Autism, Child Development Support, Sensory Processing Support, Behavioural Support for Autism, Parent Guidance for Autism, Personalized Autism Care, Neuro-Ayurveda Development System, Manovaidya";
 const autismFaqSchema = {
   "@type": "FAQPage",
-  mainEntity: rawFaqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer.join("\n"),
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is Autism Spectrum Disorder (ASD)?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Autism Spectrum Disorder (ASD) is a condition affecting the developmental functioning of the brain that could affect communication, social interaction, behaviour, learning, and sensory processing. Each child with autism is an individual and the developmental needs of children may differ in many ways. Some children may have delays in speaking, or problems with attention/sensory sensitivities or social interaction. Autism is seen at Manovaidya in the context of the whole child; the child's communication, behaviour, learning, emotional development and wellbeing."
+      }
     },
-  })),
+    {
+      "@type": "Question",
+      name: "2. What are the early signs of autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Early indications of autism can include limited eye-to-eye contact, not responding well to being named, delayed speech development, repetitive behaviours, sensory sensitivities and difficulties in social interaction. It is also possible that parents will observe that their child's play skills, communication or emotional reactions have changed. Each child is unique, and having one or two of these signs does not necessarily mean that a child is autistic. A developmental assessment can be structured to help families understand the developmental strengths and challenges, as well as the support needed, of their child."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "3. At what age can autism signs become noticeable?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Autism symptoms can be seen from infancy and are more noticeable in some children in their toddler years or early childhood. Parents might notice that the child doesn't talk to them, look them in the eye, interact socially with them, play with them or respond to their name. Developmental issues may be more apparent when a child starts interacting with peers or begins a formal learning program. Early identification can assist families in gaining a better understanding of developmental needs, and provide them with guidance and support where and when it is needed."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "4. What are the top 3 signs of autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "While each child with autism is unique, three key areas of difficulty are often seen in communication, social interactions, or repetitive behaviors and limited interests. Parents might see less eye-to-eye, later to speak, or difficulty making eye contact or a desire for repetition. Some children may also be sensitive to sounds, lights or textures. If these signs are noticed early, they will help families to have a clearer picture of their child's developmental needs and support planning."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "5. What are the 7 signs of autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some signs of autism that are common include less eye contact, a low response to their name and limited interaction with other people, repetitive movements and patterns, sensitivities to the senses and a need for routine. All children will not show all of these signs and some children will show more or less of these signs. Developmental issues must always be interpreted in the context of the child's growth, communication skills and daily functioning. A structured, systematic evaluation may help to give a more complete developmental picture."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "6. How to spot autism in babies?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Early signs of autism in infants might include less eye contact, less responsiveness to their names, fewer social smiles, or trouble with communication skills development, and less interest in interactive play. Parents may also observe fewer gestures used for sharing of interest including pointing, waving or reaching out. Each infant has a unique rate of development, meaning that a few delays are not necessarily autism. If developmental issues are persistent over time, however, a developmental assessment that incorporates a structured process can help to offer more clarity about the child's communication, social interaction and developmental needs."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "7. When should parents worry about autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents may want to seek professional advice should they have ongoing concerns relating to communication, social interaction, behaviour, sensory responses or developmental milestones. These may be things such as not making eye contact with others, taking longer to learn to talk, not responding to their name, repeating actions or being awkward when interacting with others. Early developmental differences may not be a sign of autism, however so should not be something that should not be ignored if they persist. A structured assessment can assist families to understand whether observed behaviours are within normal developmental variation or if further support and guidance will be beneficial."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "8. Does every child with autism have speech delay?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Each child with autism is different and not every child suffers from a speech delay. Some children may have a delay in language development, others may acquire speech at an appropriate age but struggle with conversational skills, social communication or social cues. Each person with autism is unique and so are their developmental needs. A structured assessment of a child's communication profile can inform a family of their strengths, challenges and support plan for their child."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "9. Will my autistic child ever talk?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is often a concern by parents that their child will ever learn to speak and communicate. Each child with autism is an individual, and communication improvements are unique and may be quite different. Some children have a clearer onset of speech, while some children might need more assistance and time. Communication can be through verbal exchange, but can also involve gesture, visual communication and social interaction and alternative methods. For the family, early understanding, developmental guidance and consistent support can assist in supporting the development of communication skills according to the child's needs."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "10. Can an autistic child speak after 5 years?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, a child with autism can still make progress in communication and speech thereafter. All children don't develop at the same rate, and progress with communications can be ongoing throughout childhood. Communication skills, readiness for learning, social engagement and individualized support can impact developmental outcomes. Sometimes an understanding of the child's developmental profile as a whole, and their communication needs, is more useful than concentrating on age. A developmental approach can assist families to pinpoint practical strategies to foster communication development and involvement."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "11. Can autism get better with age?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "All children with autism are on a different journey. Although autism is a lifelong condition that affects the development of the nervous system, many children develop communication, learning, social interaction and daily living skills as they get older. Developmental progress may be influenced by factors such as family support, learning opportunities, communication development and individualized guidance. It is not always best to just look at the label and concentrate on what is wrong with the child, but rather it is better to help the child develop strengths, to be independent and to be able to participate in daily life. Providing families with early understanding and on-going developmental support can help them establish a positive developmental pathway to the future."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "12. Can an autistic child go to a normal school in India?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In India many kids with autism go to mainstream schools, some might require inclusive classroom and some might require special educational support and/or individual learning plans. The setting in which the child learns is based on the child's communication skills, learning needs, social development and level of support needed. All children are unique and the school decision is not about the diagnosis alone and should be based on each child's strengths and developmental needs. A developmental assessment can provide a structure that will help parents understand the kind of educational environment which may be best suited to help their child learn and develop."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "13. How can parents help a child with autism at home?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "One of the most critical roles in the development of a child is played by the parents. Some simple interventions, like keeping routines consistent, encouraging communication, offering opportunities for structured learning, facilitating social interaction, and setting up a quiet environment, can assist children's participation in daily activities. Parents should also concentrate on their child's strengths instead of just challenges. It is often possible to make progress in the long run with small, regular efforts. Parent guidance at Manovaidya is deemed to be very significant in supporting and assisting families to understand and support their child's development."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "14. What is the Neuro-Ayurveda Development System?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Dr. Ankush Garg has created a structured system called the Neuro-Ayurveda Development System to enable a family to have a better understanding of developmental, behavioural and mental wellness concerns. The system is structured around five systems that are closely linked to each other: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. The framework is not only about the individual symptom, it aims to have a more general grasp of communication, learning, behaviour, attention, sensory processing and general development. This is a structured process that can help families to understand their developmental needs and long-term planning for support."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "15. How does Manovaidya assess and support children with autism?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In the assessment of autism at Manovaidya an emphasis is put on understanding the child as a whole, and not a single symptom alone. This process could involve developmental history, communication, learning, behaviour, sensory processing and parental concerns. From this insight, individual guidance is provided to families and a developmental roadmap is created. Using the Neuro-Ayurveda Development System, Support caters to the needs of families to increase their understanding of communication, behaviour, learning, sensory integration and overall child development. To give clarity, direction and long-term developmental support specific to the needs of the individual child."
+      }
+    }
+  ],
 };
 const autismSchema = {
   "@context": "https://schema.org",
@@ -500,9 +614,7 @@ const autismSchema = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://manovaidya.org" },
-        { "@type": "ListItem", position: 2, name: "Child Health Care", item: "https://manovaidya.org/child-health-care" },
-        { "@type": "ListItem", position: 3, name: autismTitle, item: autismPageUrl },
+        { "@type": "ListItem", position: 1, name: "Autism Treatment", item: autismPageUrl },
       ],
     },
     autismFaqSchema,

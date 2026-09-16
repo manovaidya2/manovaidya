@@ -24,6 +24,11 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedTeenMentalWellnessPages from "./RelatedTeenMentalWellnessPages";
 import Seo from "../components/Seo";
 
+const parentTeenSeoTitle = "Parent-Teen Relationship Support in India | Manovaidya";
+const parentTeenSeoDescription =
+  "Looking for Parent-Teen Relationship Support in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
+const parentTeenSeoPageUrl = "https://manovaidya.org/parent-teen-relationship-support";
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Parent-Teen Relationships", id: "understanding-parent-teen-relationships" },
@@ -49,55 +54,21 @@ const categories = [
 ];
 
 const keyTakeaways = [
-  "Understanding Parent-Teen Relationship Challenges",
-  "Signs of Communication and Trust Problems",
-  "Why Teenagers Become Distant From Parents",
-  "Impact of Family Conflict on Teen Wellbeing",
-  "How to Improve Parent-Teen Communication",
-  "Building Trust and Emotional Safety at Home",
-  "Healthy Boundaries and Growing Independence",
-  "Managing Anger, Arguments and Teen Behaviour",
-  "Neuro-Ayurveda Approach to Family Support",
-  "Parent Guidance and Family-Centred Counselling",
-  "Manovaidya's Assessment and Support Process",
-  "When Parents Should Consider an Assessment",
-  "Why Families Choose Manovaidya",
-  "Online and In-Clinic Support Across India",
-  "About Dr. Ankush Garg",
-  "Related Teen Mental Wellness Resources",
-  "FAQs on Parent-Teen Relationships",
+  "Understanding Parent-Teen Relationships",
+  "Common Parent-Teen Relationship Challenges",
+  "Reasons Teenagers Become Emotionally Distant",
+  "Impact on Teen Emotional Wellbeing",
+  "Confidence, Self-Esteem & Behaviour",
+  "Academic and Social Relationship Challenges",
+  "Building Better Communication & Trust",
+  "Creating Healthy Boundaries",
+  "Neuro-Ayurveda Relationship Support Approach",
+  "Parent Guidance & Family Support",
+  "Manovaidya Assessment & Support Process",
+  "FAQs About Parent-Teen Relationships"
 ];
 
-const fullMedicalReferenceContent = `References
-[1] World Health Organization - Mental Health of Adolescents
-https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health
-[2] World Health Organization - Positive Family Relationships in Adolescence
-https://www.who.int/data/gho/indicator-metadata-registry/imr-details/proportion-of-adolescents-reporting-positive-family-relationships
-[3] Zapf H, et al. - Parent-Child Communication and Adolescent Mental Health: A Systematic Review
-https://pubmed.ncbi.nlm.nih.gov/38827979/
-[4] Lin SC, et al. - Child Emotion Regulation, Family Factors and Internalizing Symptoms: A Meta-Analysis
-https://pubmed.ncbi.nlm.nih.gov/37803878/
-[5] Havighurst SS, et al. - Emotion-Focused Parenting Interventions for Child and Adolescent Mental Health Problems
-https://pubmed.ncbi.nlm.nih.gov/32858599/
-[6] Parenting and Family Interventions for Child and Adolescent Mental Health in Low- and Middle-Income Countries
-https://pubmed.ncbi.nlm.nih.gov/38631272/
-[7] Charaka Samhita - Sattvavajaya
-https://www.carakasamhitaonline.com/index.php/Sattvavajaya
-[8] Charaka Samhita - Manas: Mind and Mental Health
-https://www.carakasamhitaonline.com/index.php?title=Manas
-[9] Charaka Samhita, Sutra Sthana 8 - Indriyopakramaniya Adhyaya
-https://www.carakasamhitaonline.com/index.php/Indriyopakramaniya_Adhyaya
-[10] Charaka Samhita, Chikitsa Sthana 1 - Rasayana Adhyaya: Achara Rasayana
-https://www.carakasamhitaonline.com/index.php/Rasayana_Adhyaya
-
-Reference Note
-This article uses recognised public health resources, peer-reviewed research and classical Ayurvedic texts for adolescent mental health, positive family relationships, parent-child communication, emotion regulation, family interventions and Ayurvedic concepts related to Manas, Sattvavajaya, Sadvritta and Achara Rasayana.
-
-Classical Ayurvedic references are included for conceptual understanding of mind regulation, healthy conduct, respectful communication, sensory balance and whole-person wellbeing. They are not modern diagnostic criteria and should not be interpreted as a guaranteed cure for family conflict, teen behaviour concerns or teen mental health conditions.
-
-Authorised & Clinically Reviewed by Dr Ankush Garg
-Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System
-Clinical Focus: Autism, ADHD, Child Development, Teen Mental Wellness and Mental Health`;
+const fullMedicalReferenceContent = "References\n[1] World Health Organization (WHO) - Improving the Mental and Brain Health of Children and Adolescents\nhttps://www.who.int/activities/improving-the-mental-and-brain-health-of-children-and-adolescents\n[2] UNICEF - Tips for Parents and Caregivers to Support Adolescents\nhttps://www.unicef.org/india/stories/tips-parents-and-caregivers-support-adolescents\n[3] JCPP Advances - Association Between Parent-Child Communication and Adolescent Mental Health: A Systematic Review\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC11143954/\n[4] UNICEF - Tips for Communicating With Your Teenager\nhttps://www.unicef.org/parenting/child-care/11-tips-communicating-your-teen\n[5] Indian Journal of Psychiatry - Ayurvedic Concepts Related to Psychotherapy\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC3705701/\n[6] International Journal of Ayurveda and Medical Sciences - Integrative Perspectives on Adolescent Mental Health\nhttps://jaims.in/jaims/article/view/5990/10920\n[7] Journal of Ayurveda and Integrative Medicine - Microbiome, Gut-Brain Axis and Mental Health from an Ayurvedic Perspective\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC7559905/";
 
 const articleLinkRules = [
   { label: "Parent-Teen Relationship Treatment in India", href: "#introduction", pattern: /Parent-Teen Relationship Treatment in India/i },
@@ -175,44 +146,45 @@ function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
 
 const sections = [
   {
-    "title": "Introduction",
+    "title": "Parent-Teen Relationship Support in India",
     "id": "introduction",
     "lines": [
-      "The teenage years are a period of significant emotional, social and personal growth. During this stage, teenagers begin developing their own identity, becoming more independent and learning to make decisions about their future. While this growth is a natural part of adolescence, it can also create misunderstandings, communication gaps and conflicts within families. [1]",
-      "Many parents notice that their teenager has become quieter, more argumentative, emotionally distant or less willing to share their thoughts. Some teenagers may spend more time alone, react strongly to simple conversations or become frustrated when parents try to offer advice. These situations often leave parents wondering whether such changes are a normal part of adolescence or a sign that their child needs additional support.",
-      "At Manovaidya, we understand that a healthy parent-teen relationship is one of the strongest foundations for emotional wellbeing, confidence and long-term development. Good communication, trust and mutual understanding help teenagers navigate challenges more effectively while also helping parents provide guidance in a supportive way. [2] [3]",
-      "Led by Dr. Ankush Garg, Autism, ADHD, Child Development & Mental Health Specialist in India, Manovaidya follows a structured Neuro-Ayurveda approach that helps families better understand teenage behaviour, emotional wellbeing and family dynamics while supporting stronger relationships and healthier communication.",
-      "At Manovaidya, Parent-Teen Relationship Treatment Focuses On:",
-      "✔ Parent-Teen Communication",
-      "✔ Teenage Behaviour Challenges",
-      "✔ Emotional Connection",
-      "✔ Trust Building",
-      "✔ Family Conflict Resolution",
-      "✔ Healthy Boundaries & Positive Relationships"
+      "Helping Parents & Teenagers Build Better Communication, Trust, Emotional Connection & Healthy Relationships",
+      "Adolescent years are very meaningful for the emotional, social and personal development. This period is an integral part of the adolescent development process and may lead to a sense of self-awareness, increased independence and decision making, but it can also cause conflict, misunderstandings and communication issues in the family.",
+      "Many parents report that their teen is not talking as much, is more likely to argue, or is less communicating or sharing thoughts. Some teenagers might be spending more time alone, might have strong responses to basic communication or may get frustrated when parents try to give them advice. In these circumstances, parents may not be sure whether these changes are typical to adolescence or a reason that their child requires extra support.",
+      "A healthy parent-teen relationship is one of the most important building blocks of emotional wellbeing, confidence, and long-term development of the teenager, and good communication, trust and understanding helps teenagers to deal with their challenges more effectively, and at the same time helps parents to provide guidance in a supportive way.",
+      "As a Neuro-Ayurveda expert, Dr. Ankush Garg (Autism, ADHD, Child Development & Mental Health Specialist in India) adopts a systematic approach to understand the behaviour of teenagers, emotional well being and family dynamics, thereby fostering better relationships and healthy communication with the family members.",
+      "At Manovaidya, Parent-Teen Relationship Support Focuses On:",
+      "Parent-Teen Communication",
+      "Teenage Behaviour Challenges",
+      "Emotional Connection",
+      "Trust Building",
+      "Family Conflict Resolution",
+      "Communication, conflict resolution & problem solving skills"
     ]
   },
   {
     "title": "Understanding Parent-Teen Relationships",
     "id": "understanding-parent-teen-relationships",
     "lines": [
-      "The relationship between parents and teenagers naturally changes during adolescence.",
-      "Children who once openly shared every experience with their parents may gradually become more private as they begin exploring independence and personal identity.",
-      "This change is often confusing for families.",
-      "Parents may feel that their teenager no longer listens to them, while teenagers may feel that they are not being understood.",
-      "In reality, both parents and teenagers are adjusting to a new stage of life.",
-      "Many families searching for Parent-Teen Relationship Treatment in India, Parenting Teenagers or Teen Behaviour Support are looking for practical ways to improve communication and rebuild trust.",
-      "Healthy relationships during adolescence are not built by controlling teenagers. They are built through understanding, respect, communication and consistent emotional support. [2] [3]",
-      "Teenagers who experience healthy family relationships often feel more comfortable discussing their worries, asking for guidance and navigating life's challenges.",
-      "Strong relationships also help teenagers develop confidence, emotional resilience and better decision-making skills."
+      "As a teenager grows, parents' and teen's interactions will inevitably undergo change. [1]",
+      "Once, children would tell their parents everything, but as they start to learn about themselves and their independence, they become more private.",
+      "Familiarizing families with this change can be confusing.",
+      "Parents feel their teen does not listen to them and teens feel they are not being understood.",
+      "In fact, both parents and teens are in a new phase of their lives.",
+      "Several families looking for Parent-Teen Relationship Support in India, Parenting Teenagers or Teen Behaviour Support are seeking practical solutions to help them communicate and gain trust again.",
+      "Adolescent healthy relationships cannot be created through control. They are developed with understanding, respect, communication and continued emotional support.[2][4]",
+      "Adolescents who have healthy family relationships are more likely to be able to express themselves when they have concerns, seek advice from their families, and cope with life's problems.",
+      "Teens who have strong relationships are more likely to be confident and to be emotionally resilient and to make good choices. [1][3]"
     ]
   },
   {
     "title": "Common Parent-Teen Relationship Challenges",
     "id": "common-parent-teen-relationship-challenges",
     "lines": [
-      "Every family experiences disagreements from time to time.",
-      "However, when conflicts become frequent or communication begins breaking down, relationships may require additional attention.",
-      "Parents may notice changes in behaviour, communication and emotional connection.",
+      "No family is perfect and fights happen from time to time.",
+      "But the relationships can need more attention when there are conflicts that happen regularly or when communication starts to fail.",
+      "Parents might observe alterations of behaviour, communication, and emotional relationship.",
       "Communication Challenges",
       "Limited conversations",
       "One-word answers",
@@ -237,7 +209,7 @@ const sections = [
       "Lack of family engagement",
       "Irregular routines",
       "Reduced participation in shared activities",
-      "The presence of occasional disagreements is a normal part of adolescence. However, when relationship difficulties begin affecting communication, emotional wellbeing or family harmony, they deserve understanding and support."
+      "The presence of occasional disagreements is a normal part of adolescence. However, when relationship difficulties begin affecting communication, emotional wellbeing or family harmony, they deserve understanding and support.[1][3]"
     ]
   },
   {
@@ -247,25 +219,25 @@ const sections = [
       "Many parents believe that teenagers intentionally avoid them or no longer value family relationships.",
       "In reality, emotional distance often develops because multiple factors influence a teenager's behaviour during adolescence.",
       "Identity Development",
-      "Teenagers naturally begin developing their own opinions, values and interests.",
-      "This growing independence may sometimes be misunderstood as rejection.",
+      "Teens' opinions, values and interests naturally start to form. [1]",
+      "This growing independence can be mistaken as rejection at times.",
       "Emotional Changes",
-      "Adolescence involves significant emotional development.",
-      "Teenagers may experience mood changes, uncertainty and increased emotional sensitivity while learning to manage new experiences. [1]",
+      "There is a tremendous emotional development during adolescence. [1]",
+      "While learning to cope with new experiences, teenagers can be subject to emotional or temperamental changes.",
       "Academic Pressure",
-      "School expectations, examinations and future career concerns may leave teenagers feeling emotionally overwhelmed, making them less likely to communicate openly.",
+      "Teenagers may not communicate openly with their schools and teachers because of their emotions and fears of exams or future careers.",
       "Peer Relationships",
-      "Friends become an increasingly important part of teenage life.",
-      "Teenagers may seek advice and emotional support from peers while gradually becoming more independent from parents.",
+      "Friends are becoming more important in the life of the teenager.",
+      "You can find emotional support and advice among peers and slowly gain independence from parents as a teenager.",
       "Screen & Social Media Use",
-      "Digital devices can reduce face-to-face family interaction when screen use becomes excessive.",
-      "Online engagement may replace meaningful conversations if healthy boundaries are not maintained.",
+      "Excessive use of digital devices can decrease face-to-face family interaction.",
+      "If healthy boundaries are not maintained, engaging in online communication can come across as something other than a meaningful conversation.",
       "Fear of Judgement",
-      "Some teenagers avoid talking because they fear criticism, punishment or not being understood.",
-      "Creating an emotionally safe environment often encourages more open communication. [3] [5]",
+      "Some teenagers don't talk because they think they'll be criticized or punished or that they won't be understood.",
+      "An emotionally safe setting can help to foster more communication.",
       "Communication Patterns",
-      "When conversations become focused only on academics, rules or mistakes, teenagers may become reluctant to share their emotions or daily experiences.",
-      "Many parents worry that emotional distance today may permanently damage their relationship with their teenager. In most situations, healthy communication, understanding and consistent emotional support can help rebuild trust and strengthen family relationships over time."
+      "Teenagers might be less inclined to express their feelings or their daily life when the discussion turns to academics, rules or mistakes.If discussion focuses only on academics, rules or mistakes, teenagers may not be inclined to share their thoughts or daily life.",
+      "Many parents are concerned that the lack of emotional closeness they have with their teen now, may be a permanent condition. In most cases, healthy communication, understanding and a consistent emotional response can help to restore trust and improve family relationships over time."
     ]
   },
   {
@@ -273,151 +245,151 @@ const sections = [
     "id": "how-parent-teen-relationship-challenges-affect-teenagers",
     "lines": [
       "The relationship between parents and teenagers influences much more than daily communication.",
-      "A healthy family relationship provides emotional security, trust and guidance during one of the most important stages of life. When communication becomes difficult or conflicts continue for a long time, teenagers may find it harder to manage emotions, make decisions and navigate everyday challenges. [2] [3]",
+      "A healthy family relationship provides emotional security, trust and guidance during one of the most important stages of life.[1][3] When communication becomes difficult or conflicts continue for a long time, teenagers may find it harder to manage emotions, make decisions and navigate everyday challenges.[3]",
       "Understanding how relationship challenges influence overall wellbeing often helps families focus on building connection rather than simply correcting behaviour.",
       "Emotional Wellbeing",
-      "Teenagers who feel misunderstood or emotionally disconnected may experience:",
+      "When teens feel unwell understood and emotionally unattached, they can have the following experiences:",
       "Emotional withdrawal",
       "Increased frustration",
       "Irritability",
       "Low confidence",
       "Feelings of loneliness",
       "Difficulty expressing emotions",
-      "Many teenagers want support from their parents but struggle to communicate what they are feeling.",
-      "Creating an emotionally safe environment often encourages healthier conversations and stronger relationships. [3] [4] [5]",
+      "Many teens wish their parents would help them, but don't know how to tell their parents what they're feeling.",
+      "An emotionally safe space can be a more conducive place for people to have healthier conversations and foster better relationships. [2][4]",
       "Confidence & Self-Esteem",
-      "The way teenagers experience communication at home often influences how they view themselves.",
-      "Constant criticism, comparison or frequent conflict may gradually reduce confidence and self-belief.",
-      "On the other hand, encouragement, trust and respectful communication help teenagers develop emotional resilience and healthier self-esteem. [2] [4] [5]",
+      "Adolescents' experiences of communication at home can affect their self-understanding.",
+      "This can lead to low levels of confidence and self-belief over time if there is lots of criticism, comparison or conflict.",
+      "Conversely, positive encouragement, trust and respectful communication support teens skills in emotional self-regulation and positive self-esteem. [2][4]",
       "Behaviour",
-      "Behaviour is often a form of communication.",
-      "When teenagers become angry, distant or argumentative, it does not always mean they are being intentionally difficult.",
-      "Sometimes these behaviours reflect emotional stress, confusion, frustration or difficulty expressing feelings.",
-      "Understanding the reasons behind behaviour often helps parents respond more effectively.",
+      "People's behaviour is frequently a way of communicating.",
+      "Teenagers' acting up and being remote and argumentative doesn't always mean that they are purposely being difficult.",
+      "These behaviours may be a result of emotional stress, confusion, frustration or trouble expressing emotions.",
+      "Knowing what is causing the behavior can aid parents in responding to it more effectively. [2][5]",
       "Academic Performance",
-      "Relationship challenges at home may influence concentration, motivation and learning.",
-      "Teenagers experiencing ongoing emotional stress may find it difficult to:",
-      "Focus on studies",
-      "Complete assignments",
-      "Stay motivated",
-      "Manage examination pressure",
-      "Supporting emotional wellbeing at home often creates a stronger foundation for academic growth.",
+      "Relationship challenges at home may influence concentration, motivation and learning.[1][3]",
+      "If teenagers are in chronic emotional stress, they can have trouble:",
+      "•\tFocus on studies",
+      "•\tComplete assignments",
+      "•\tStay motivated",
+      "•\tManage examination pressure",
+      "Emotional wellbeing at home can provide a better foundation for future achievement. [1]",
       "Social Relationships",
-      "Teenagers learn communication, trust and emotional regulation within their family environment.",
-      "Positive parent-teen relationships often help teenagers build healthier friendships and stronger interpersonal skills. [2] [3]",
-      "When family communication improves, teenagers frequently become more comfortable expressing themselves in other areas of life as well.",
+      "Communication, trust and emotional regulation is taught to teens in the family.",
+      "Creating healthy relationships between parents and teens can positively impact teens' friendships and interpersonal skills.[1][3]",
+      "With better family communication, teens often feel more at ease with their own voice in areas of their lives outside of the family.",
       "Long-Term Development",
-      "The teenage years help shape future confidence, communication skills and emotional resilience.",
-      "Strong family relationships can support:",
+      "Adolescence is a time that is important for developing future confidence, communication and emotional resilience [1].",
+      "Strong family relationships can help to support:",
       "Better decision-making",
       "Greater independence",
       "Healthy emotional regulation",
       "Positive self-esteem",
       "Stronger coping skills",
-      "Building trust during adolescence often benefits both parents and teenagers for many years."
+      "Establishing trust in the teen years can prove to be advantageous to parents and teens for years to come. [3]"
     ]
   },
   {
     "title": "The Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment",
     "id": "neuro-ayurveda-approach",
     "lines": [
-      "At Manovaidya, we understand that relationship challenges are rarely caused by one person alone.",
-      "Rather than focusing only on behaviour or communication problems, we look at the broader factors that may influence emotional wellbeing, confidence, behaviour, family interactions and overall development.",
-      "The Neuro-Ayurveda Development System helps families better understand these challenges through five interconnected pillars. Ayurvedic concepts around Manas, Sattvavajaya, Sadvritta and Achara Rasayana provide conceptual support for mind regulation, healthy conduct, respectful communication and emotional balance. [7] [8] [9] [10]",
+      "At Manovaidya, we know that problems in relationships are not usually the fault of just one person.",
+      "We consider the whole situation and don't just concentrate on behaviours or communication issues but on the wider issues that could affect emotional wellbeing, confidence, behaviour, family relationships and development.",
+      "The Neuro-Ayurveda Development System assists families to understand these challenges in five interconnected systems.",
       "Brain Nourishment System",
-      "Healthy communication begins with healthy emotional and cognitive functioning.",
-      "The Brain Nourishment System focuses on understanding factors that may influence:",
+      "Good communication starts with good emotional and thinking capabilities.",
+      "The Brain Nourishment System is centered on learning about the elements that could have an impact on:",
       "Emotional regulation",
       "Attention",
       "Decision making",
       "Self-awareness",
       "Confidence",
       "Communication",
-      "Supporting emotional growth often begins with understanding how teenagers process thoughts, emotions and daily experiences.",
+      "Helping teenagers develop emotionally sometimes starts with the knowledge of how they process thoughts, emotions and events in their everyday lives.",
       "Gut Response System",
-      "Growing research continues to explore the relationship between physical wellbeing and emotional health.",
-      "Many teenagers experiencing emotional stress may also experience:",
+      "Growing research continues to explore the relationship between physical wellbeing and emotional health.[7]",
+      "Emotional stress can also cause many teenagers to suffer from:",
       "Irregular eating habits",
       "Digestive discomfort",
       "Reduced energy",
       "Lifestyle imbalance",
       "Sleep disturbances",
-      "The Gut Response System focuses on understanding how overall wellbeing may influence emotional balance and daily functioning. Ayurvedic philosophy traditionally views diet, sleep, lifestyle and mental wellbeing as interconnected. [7] [8]",
+      "The Gut Response System is based on the idea that a person's overall wellbeing might affect their emotional balance and functioning in their everyday life.",
       "Neural Network System",
-      "Every experience contributes to patterns of thinking and responding.",
-      "The Neural Network System focuses on understanding:",
+      "All experiences help to contribute to the thinking and responding patterns.",
+      "The Neural Network System is about understanding:",
       "Communication habits",
       "Emotional responses",
       "Behavioural patterns",
       "Relationship experiences",
       "Adaptability",
-      "Understanding these patterns often helps families improve communication and strengthen relationships over time.",
+      "Over time, families can use this knowledge of patterns to enhance communication and relationship development.",
       "Sensory Integration System",
-      "The environment around teenagers influences emotional wellbeing.",
+      "Teenagers' emotional wellbeing is affected by their surroundings.[1]",
       "Factors such as:",
       "School environment",
       "Social situations",
       "Family atmosphere",
       "Digital stimulation",
       "Daily routines",
-      "may influence behaviour, communication and emotional responses.",
-      "Understanding these influences often helps families create healthier home environments. [9] [10]",
+      "may affect behavior, communication and emotional reactions.",
+      "Families can benefit from understanding these influences, which can aid in making healthier home environments.",
       "Behaviour Guidance System",
-      "Behaviour is often a reflection of underlying emotional experiences.",
-      "Teenagers experiencing relationship challenges may show:",
+      "Emotional experiences can frequently be reflected in behaviour.",
+      "Adolescents dealing with relationship issues may exhibit:",
       "Anger",
       "Emotional withdrawal",
       "Reduced communication",
       "Irritability",
       "Defiance",
       "Avoidance",
-      "Rather than reacting only to behaviour, this pillar focuses on understanding what may be influencing those behaviours and helping families respond with greater understanding and consistency."
+      "Unlike the other pillars which respond to behaviour, this pillar aims to respond to what is going on in the family member and what may be influencing those behaviours."
     ]
   },
   {
     "title": "How Parents Can Build Stronger Relationships With Teenagers",
     "id": "how-parents-can-build-stronger-relationships-with-teenagers",
     "lines": [
-      "Healthy relationships are built through trust, communication and mutual respect.",
-      "Small and consistent changes often strengthen family relationships over time.",
+      "Trust, communication and respect are the foundations of healthy relationships. [2,4]",
+      "Often, little, but regular changes can have a lasting impact on family relationships.",
       "Listen Before Giving Advice",
-      "Teenagers often want to feel heard before they are corrected.",
-      "Listening calmly without interrupting helps create emotional safety and encourages open communication. [3] [5]",
+      "Often teens want to be heard before corrected. [2]",
+      "When someone is upset, it is important to listen without interrupting them in order to establish an emotional climate of safety and promote open communication. [2][4]",
       "Avoid Judging Every Conversation",
       "If every discussion turns into criticism or advice, teenagers may stop sharing their thoughts.",
-      "Showing curiosity and understanding often builds stronger trust.",
+      "Showing curiosity and understanding often builds stronger trust.[2][4]",
       "Respect Growing Independence",
-      "Teenagers naturally seek more independence.",
-      "Providing appropriate freedom while maintaining healthy boundaries often supports confidence and responsibility.",
+      "Teenagers are in a natural phase of need for increased independence [1].",
+      "Giving the right type of freedom and maintaining good boundaries can enhance confidence and responsibility.",
       "Spend Quality Time Together",
       "Meaningful family time does not always require elaborate activities.",
-      "Simple conversations, shared meals or spending uninterrupted time together can strengthen emotional connection.",
+      "Simple conversations, shared meals or spending uninterrupted time together can strengthen emotional connection.[2][4]",
       "Appreciate Effort",
-      "Recognizing effort, kindness and personal growth often builds confidence and encourages healthier communication.",
+      "Recognizing effort, kindness and personal growth often builds confidence and encourages healthier communication.[2]",
       "Stay Calm During Conflicts",
       "Disagreements are a normal part of adolescence.",
-      "Responding calmly instead of reacting emotionally often helps resolve conflicts more effectively.",
+      "Responding calmly instead of reacting emotionally often helps resolve conflicts more effectively.[2][4]",
       "Create Emotional Safety",
-      "Teenagers are more likely to share their thoughts when they know they will be listened to with respect rather than fear criticism or punishment.",
-      "Building emotional safety is one of the strongest foundations of a healthy parent-teen relationship."
+      "When teenagers know they can be heard with respect instead of fearing criticism or punishment, they are more likely to share their thoughts with respect.Teenagers will respond with respect when they know that they will be heard with respect, not fear criticism or punishment.",
+      "Establishing emotional safety is one of the most important bases for a healthy parent-teen relationship.[3]"
     ]
   },
   {
     "title": "How Manovaidya Supports Families",
     "id": "how-manovaidya-supports-families",
     "lines": [
-      "At Manovaidya, support begins with understanding the family as a whole rather than focusing only on the teenager's behaviour.",
-      "Our process typically includes:",
+      "Support starts with an understanding of the family as a whole at Manovaidya, rather than with only the teen's behavior.",
+      "We usually do the following:",
       "Step 1: Comprehensive Assessment",
-      "Understanding family communication, emotional wellbeing, behaviour patterns, daily routines, lifestyle habits and parent concerns.",
+      "Knowing about the family communication, emotional wellbeing, behaviour patterns, daily routines, lifestyle habits and concerns of parents.",
       "Step 2: Personalized Guidance",
-      "Providing recommendations based on the teenager's emotional, behavioural and developmental needs while considering the family environment.",
+      "Making recommendations for emotional, behavioural and developmental needs of the teenager, taking into account the family environment.",
       "Step 3: Parent Guidance & Family Support",
-      "Helping parents improve communication, strengthen trust and create a more supportive home environment.",
+      "Helping parents improve communication, strengthen trust and create a more supportive home environment.[2][3]",
       "Step 4: Neuro-Ayurveda Development System",
-      "Applying the five-pillar framework to better understand emotional wellbeing, family dynamics, confidence and behaviour.",
+      "Utilize the five pillars approach to understanding emotional wellbeing, family, confidence and behaviour.",
       "Step 5: Progress Tracking & Follow-Up",
-      "Creating a structured roadmap that helps families monitor improvements in communication, emotional wellbeing and overall development.",
+      "Having a clear plan to track how the family's communication, emotional wellbeing and development are improving.",
       "When Should Parents Consider an Assessment?",
       "Parents may consider seeking guidance if they notice:",
       "Frequent arguments",
@@ -436,42 +408,42 @@ const sections = [
     "title": "Why Families Choose Manovaidya",
     "id": "why-families-choose-manovaidya",
     "lines": [
-      "Choosing the right support for teenage behavioural, emotional and family relationship challenges can feel overwhelming. Many parents are not only looking for answers to difficult behaviours but also for a structured approach that helps rebuild trust, improve communication and strengthen family relationships.",
-      "At Manovaidya, we believe that lasting change begins with understanding. Rather than focusing only on arguments, behaviour or discipline, we help families understand the emotional, behavioural and developmental factors that may be influencing the parent-teen relationship.",
-      "✔ Comprehensive Parent-Teen Relationship Assessment",
-      "Every family is different.",
-      "Every teenager has a unique personality, communication style, emotional needs and developmental journey.",
-      "Our structured assessment helps families understand communication patterns, behavioural concerns, emotional wellbeing and family dynamics before creating personalized guidance.",
-      "✔ Neuro-Ayurveda Development System",
-      "Manovaidya follows the Neuro-Ayurveda Development System, a structured framework that understands emotional wellbeing and family relationships through five interconnected pillars:",
-      "Brain Nourishment System",
-      "Gut Response System",
-      "Neural Network System",
-      "Sensory Integration System",
-      "Behaviour Guidance System",
-      "This approach helps families understand not only behaviours but also the factors that may be influencing them.",
-      "✔ Parent-Focused Guidance",
-      "Teenagers grow best when parents feel confident in supporting them.",
-      "Our guidance helps parents improve communication, develop healthy boundaries and build stronger emotional connections with their teenagers.",
-      "✔ Personalized Family Support",
+      "It can be a challenge to know exactly what to do to support a teen with behavioural, emotional or family issues. Many parents are not only seeking solutions to challenging behaviours, but also a framework on how to restore trust and communication and establish healthy familial relationships.",
+      "At Manovaidya we feel that change is only possible through understanding. We take a broader view and focus on arguments, behaviour/discipline, and do not miss the chance to help families understand the emotional, behavioural, and developmental factors that could be impacting the parent/teen relationship.",
+      "Comprehensive Parent-Teen Relationship Assessment",
+      "All families are unique.",
+      "Each teenager is unique in their personality, communication, emotional needs and developmental experience.",
+      "We use a structured assessment to get families to see how they communicate, what behaviours are of concern, how they feel and how they function as a family, before developing bespoke guidance.",
+      "Neuro-Ayurveda Development System",
+      "Manovaidya has adopted the Neuro-Ayurveda Development System, which is a structured system that takes into account emotional well-being and family dynamics from five perspectives:",
+      "•\tBrain Nourishment System",
+      "•\tGut Response System",
+      "•\tNeural Network System",
+      "•\tSensory Integration System",
+      "•\tBehaviour Guidance System",
+      "This helps the family to not only have an understanding of behaviours, but also the factors impacting on behaviours.",
+      "Parent-Focused Guidance",
+      "When parents feel confident in supporting teens, they will grow best.",
+      "Our guidance supports parents to better communicate with their teens and establish healthy boundaries and emotional connections with them.",
+      "Personalized Family Support",
       "Every family experiences different challenges.",
       "Some struggle with communication.",
       "Some experience emotional distance.",
       "Others face frequent arguments, trust issues or behavioural concerns.",
       "Guidance is personalized according to the family's unique needs.",
-      "✔ Long-Term Relationship Building",
-      "Our goal is not simply to reduce conflicts.",
-      "We focus on helping families build healthier communication, stronger trust, emotional resilience and positive long-term relationships.",
-      "✔ Family-Centred Approach",
-      "Parents and teenagers grow together.",
-      "When families understand each other better, communication often becomes healthier, relationships become stronger and emotional wellbeing improves naturally."
+      "Long-Term Relationship Building",
+      "Our intent is not just to temper down the conflict.",
+      "We emphasize the development of healthier communication, more trust, emotional strength and positive long-term relationships with families.",
+      "Family-Centred Approach",
+      "Teens and parents have similar growth patterns.",
+      "With families better understanding one another, communication can become more healthy, relationships grow and emotional well-being is enhanced on its own. [2][3]"
     ]
   },
   {
     "title": "Why Families Across India Connect With Manovaidya",
     "id": "why-families-across-india-connect-with-manovaidya",
     "lines": [
-      "Families from Delhi, Noida, Gurgaon, Faridabad and different parts of India connect with Manovaidya for Parent-Teen Relationship Treatment, Teen Behaviour Guidance and Family Communication Support through both online and in-clinic consultations."
+      "Delhi, Noida, Gurgaon, Faridabad and other parts of India have families reaching out to Manovaidya for Parent-Teen Relationship Support, Teen Behaviour Guidance, Family Communication Support via online and in-clinic consultation."
     ]
   },
   {
@@ -492,18 +464,11 @@ const sections = [
     "lines": [
       "Concerned About Your Relationship With Your Teenager?",
       "If communication has become difficult, trust feels weaker, arguments have become more frequent or your teenager seems emotionally distant, understanding the underlying factors is often the first step toward rebuilding a healthier relationship.",
-      "At Manovaidya, we help families better understand teenage behaviour, emotional wellbeing and communication through structured assessment, personalized guidance and family-centred support."
-    ]
-  },
-  {
-    "title": "Book a Consultation",
-    "id": "book-consultation",
-    "lines": [
+      "At Manovaidya, we help families better understand teenage behaviour, emotional wellbeing and communication through structured assessment, personalized guidance and family-centred support.",
       "Take the First Step Towards Better Communication, Stronger Trust & Healthier Family Relationships",
       "📞 Book Assessment Session",
       "📞 Speak With Our Team",
-      "📞 Get Personalized Guidance",
-      "complete karenge."
+      "📞 Get Personalized Guidance"
     ]
   }
 ];
@@ -572,32 +537,144 @@ const faqs = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/^\d+\.\s*/, ""),
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. Why doesn't my teenager talk to me anymore?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many teenagers become more private as they grow and develop independence. Academic pressure, friendships, emotional changes and fear of judgement may reduce communication. This does not always mean they no longer trust their parents. Creating a calm and supportive environment often helps teenagers open up over time.",
+      },
     },
-  })),
+    {
+      "@type": "Question",
+      name: "2. Why is my teenager always angry with me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Teenagers often experience emotional, social and academic pressures that may lead to frustration or irritability. Sometimes anger is actually a sign of stress, confusion or feeling misunderstood. Staying calm, listening carefully and avoiding constant criticism can help improve communication and reduce conflict.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. How can I improve my relationship with my teenager?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Building a stronger relationship starts with trust, communication and quality time. Listening without judgement, respecting growing independence and showing interest in your teenager's life can strengthen emotional connection. Small positive interactions often make a big difference over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Why do teenagers become distant from parents?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Teenagers naturally seek more independence as they develop their identity. Academic pressure, peer relationships, emotional changes and excessive screen use may also contribute to emotional distance. Maintaining open communication and emotional support can help preserve connection during adolescence.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. How should parents communicate with teenagers?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The most effective communication involves listening first, staying calm and avoiding immediate criticism. Teenagers are more likely to share their thoughts when they feel respected and understood. Open conversations often help build trust and strengthen family relationships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. What should I do if my teenager doesn't listen to me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Teenagers respond better when they feel involved rather than controlled. Clear expectations, consistent boundaries and respectful communication are often more effective than repeated instructions or arguments. Understanding the reason behind resistance can also improve cooperation.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. How do I handle frequent arguments with my teenager?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Frequent arguments can often be reduced by staying calm, choosing the right time for discussions and focusing on solutions rather than blame. Listening carefully and avoiding emotional reactions may help create healthier communication and reduce conflict.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Is teenage rebellion normal?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A certain level of independence-seeking behaviour is a normal part of adolescence. Teenagers often question rules and explore their own opinions. However, if behaviour begins affecting emotional wellbeing, relationships or daily functioning, additional support may be helpful.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. How can I build trust with my teenager?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Trust develops through honesty, consistency and respectful communication. Keeping promises, listening without judgement and respecting appropriate privacy can help strengthen trust and improve parent-teen relationships over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. How can I discipline my teenager without damaging our relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Healthy discipline focuses on guidance rather than punishment. Clear boundaries, consistent expectations and respectful communication often help teenagers learn responsibility while preserving trust and emotional connection.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Can family relationships affect teen mental health?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Supportive family relationships can strengthen confidence, emotional wellbeing and resilience. Ongoing conflict, communication problems or emotional distance may increase stress and affect a teenager's overall wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. How can parents support teenagers emotionally?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents can support teenagers by listening without judgement, validating emotions and providing consistent encouragement. Creating a safe space where teenagers feel comfortable sharing their thoughts often strengthens emotional wellbeing and trust.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. How does Manovaidya support families?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Manovaidya supports families through structured assessment, personalized guidance, parent support and the Neuro-Ayurveda Development System. The goal is to improve communication, strengthen relationships and support healthy emotional development.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. Can parent guidance improve teenage behaviour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In many situations, yes. Behaviour is often influenced by communication, family dynamics and emotional wellbeing. Small changes in parenting approaches can sometimes lead to meaningful improvements in behaviour and family relationships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should parents seek professional guidance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parents may consider seeking guidance when communication becomes difficult, arguments become frequent, trust breaks down or emotional wellbeing is affected. A structured assessment can help families better understand challenges and identify practical solutions.",
+      },
+    },
+  ],
 };
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Teen Mental Wellness", item: "/teen-mental-wellness-india/" },
-    { "@type": "ListItem", position: 3, name: "Parent-Teen Relationship Treatment", item: "/parent-teen-relationship-support/" },
+    { "@type": "ListItem", position: 1, name: "Parent-Teen Relationship Support", item: parentTeenSeoPageUrl },
   ],
 };
 
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Parent-Teen Relationship Treatment in India",
-  description: "Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.",
-  url: "/parent-teen-relationship-support/",
+  name: parentTeenSeoTitle,
+  description: parentTeenSeoDescription,
+  url: parentTeenSeoPageUrl,
   about: ["Parent Teen Relationship Support", "Teen Behaviour Support", "Family Relationship Support"],
 };
 
@@ -638,7 +715,7 @@ function CitationText({ text, onCitationClick, allowedRuleKeys }) {
   const linkContext = React.useContext(CitationClickContext);
   const citationHandler = onCitationClick || linkContext?.onCitationClick;
   const source = String(text);
-  const citationPattern = /\[(\d+)\]/;
+  const citationPattern = /\[(\d+(?:\s*,\s*\d+)*)\]/;
   const linkedRuleKeysInText = new Set();
   const parts = [];
   let cursor = 0;
@@ -654,7 +731,7 @@ function CitationText({ text, onCitationClick, allowedRuleKeys }) {
       candidates.push({
         index: citationMatch.index,
         text: citationMatch[0],
-        citationId: citationMatch[1],
+        citationIds: citationMatch[1].split(/\s*,\s*/),
         type: "citation",
       });
     }
@@ -689,11 +766,17 @@ function CitationText({ text, onCitationClick, allowedRuleKeys }) {
     }
 
     if (next.type === "citation") {
-      parts.push(<Citation key={`${next.text}-${parts.length}`} id={next.citationId} onClick={citationHandler} />);
+      parts.push(
+        <React.Fragment key={`${next.text}-${parts.length}`}>
+          {next.citationIds.map((citationId) => (
+            <Citation key={citationId} id={citationId} onClick={citationHandler} />
+          ))}
+        </React.Fragment>
+      );
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+        <a key={`${next.text}-${parts.length}`} href={next.rule.href} className="rounded bg-[#f4ecf8] px-1 font-black text-[#7835A4] underline decoration-[#7835A4] decoration-2 underline-offset-4 transition hover:bg-[#eadcf3] hover:text-[#4c1d6b]">
           {next.text}
         </a>
       );
@@ -882,10 +965,7 @@ const internalLinks = [
 ];
 
 function ContentLine({ line, onCitationClick, allowedRuleKeys }) {
-  const cleanLine = line
-    .replace(/^âœ”\s*/, "")
-    .replace(/^ðŸ“ž\s*/, "")
-    .replace(/^complete karenge\.$/, "");
+  const cleanLine = line.replace(/^complete karenge\.$/, "");
 
   if (!cleanLine) {
     return null;
@@ -895,7 +975,7 @@ function ContentLine({ line, onCitationClick, allowedRuleKeys }) {
     return <h3 className="mt-5 text-[16px] font-black text-[#21142d]">{cleanLine}</h3>;
   }
 
-  if (line.startsWith("?") || line.startsWith("??") || line.startsWith("âœ”") || line.startsWith("ðŸ“ž")) {
+  if (line.startsWith("?") || line.startsWith("??")) {
     return (
       <p className="mt-2 flex gap-2 text-[13.5px] font-bold leading-6 text-[#51465a]">
         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
@@ -922,7 +1002,7 @@ function SectionImage({ title }) {
     );
   }
 
-  if (title === "The Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment") {
+  if ((title === "The Neuro-Ayurveda Approach to Parent-Teen Relationship Treatment" || title === "The Neuro-Ayurveda Approach to Parent-Teen Relationship Support")) {
     return (
       <div className="mt-5 flex h-[380px] w-full items-center justify-center rounded-lg bg-[#fbf9fd] shadow-[0_12px_30px_rgba(58,31,90,0.08)]">
         <img
@@ -947,7 +1027,7 @@ function ContentSection({ section, onCitationClick, ruleKeysByLine }) {
             {section.lines.map((line, index) => (
               <p key={line} className="text-[14px] font-semibold leading-7 text-[#e5d5f2]">
                 <CitationText
-                  text={line.replace(/^ðŸ“ž\s*/, "").replace(/^complete karenge\.$/, "")}
+                  text={line.replace(/^complete karenge\.$/, "")}
                   onCitationClick={onCitationClick}
                   allowedRuleKeys={ruleKeysByLine?.get(`${section.id}-${index}`)}
                 />
@@ -992,7 +1072,7 @@ function ParentTeenRelationshipSupportPage() {
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const pageUrl = "https://manovaidya.org/parent-teen-relationship-support";
-  const pageTitle = "Parent-Teen Relationship Treatment in India | Manovaidya";
+  const pageTitle = "Parent-Teen Relationship Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
   const articleShareLinks = [
@@ -1017,10 +1097,7 @@ function ParentTeenRelationshipSupportPage() {
 
     sections.forEach((section) => {
       section.lines.forEach((line, index) => {
-        const cleanLine = line
-          .replace(/^âœ”\s*/, "")
-          .replace(/^ðŸ“ž\s*/, "")
-          .replace(/^complete karenge\.$/, "");
+        const cleanLine = line.replace(/^complete karenge\.$/, "");
 
         if (!cleanLine || subheadingLines.has(line) || subheadingLines.has(cleanLine)) return;
 
@@ -1096,16 +1173,11 @@ function ParentTeenRelationshipSupportPage() {
     <CitationClickContext.Provider value={linkRenderContext}>
       <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Parent-Teen Relationship Treatment in India | Teen Behaviour & Family Guidance | Manovaidya"
-        description="Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya."
+        title={parentTeenSeoTitle}
+        description={parentTeenSeoDescription}
         keywords="Parent Teen Relationship Support, Parent Teen Relationship Treatment in India, Teen Behaviour Support, Teen Communication Problems, Teen Behaviour Problems, Teen Relationship With Parents, Teen Parenting Support, Family Relationship Support, Teenage Anger, Teenage Attitude Problems, Parent Child Communication, Parent Teen Trust Issues, Teen Emotional Support, Teen Behaviour Challenges, Parenting Teenagers, Teen Family Problems"
         path="/parent-teen-relationship-support"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "MedicalWebPage",
-          "name": "Parent-Teen Relationship Treatment in India",
-          "description": "Looking for Parent-Teen Relationship Treatment in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya."
-        }}
+        schema={medicalWebPageSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
@@ -1116,10 +1188,10 @@ function ParentTeenRelationshipSupportPage() {
                 <span>&gt;</span>
                 <a href="/teen-mental-wellness-india/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
-                <span className="text-[#4b345d]">Parent-Teen Relationship Treatment</span>
+                <span className="text-[#4b345d]">Parent-Teen Relationship Support</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Teen Behaviour & Family Guidance</p>
-              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Parent-Teen Relationship Treatment in India</h1>
+              <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">Parent-Teen Relationship Support in India</h1>
               <p className="mt-4 max-w-[660px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">Helping Parents & Teenagers Build Better Communication, Trust, Emotional Connection & Healthy Relationships</p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#book-consultation" className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]">Book Consultation</a>
