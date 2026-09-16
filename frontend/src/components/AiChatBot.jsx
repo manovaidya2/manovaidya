@@ -771,6 +771,8 @@ const normalizeQuestion = (value) =>
     .replace(/\s+/g, " ")
     .trim();
 
+const sanitizeMobileNumber = (value) => String(value || "").replace(/\D/g, "").slice(0, 10);
+
 const hasAnyTerm = (value, terms) => terms.some((term) => value.includes(term));
 
 const isBookingCancelIntent = (value) => {
@@ -1392,16 +1394,24 @@ function AiChatBot() {
   const chatScrollRef = useRef(null);
   const chatEndRef = useRef(null);
   const seenLiveMessageIds = useRef(new Set());
+  const activeStep =
+    bookingStep !== null
+      ? bookingSteps[bookingStep]
+      : agentLeadStep !== null
+        ? agentLeadSteps[agentLeadStep]
+        : null;
+  const isPhoneStep = activeStep?.key === "phone";
 
   const canSend = useMemo(
     () => {
       if (isLoading) return false;
-      const step = bookingStep !== null ? bookingSteps[bookingStep] : null;
+      const step = bookingStep !== null ? bookingSteps[bookingStep] : agentLeadStep !== null ? agentLeadSteps[agentLeadStep] : null;
+      if (step?.key === "phone") return sanitizeMobileNumber(question).length === 10;
       if (step?.inputType === "date") return Boolean(question);
       if (step?.inputType === "select") return Boolean(question);
       return question.trim().length > 1;
     },
-    [bookingStep, isLoading, question]
+    [agentLeadStep, bookingStep, isLoading, question]
   );
 
   const openChat = () => {
@@ -1632,7 +1642,9 @@ function AiChatBot() {
       return;
     }
 
-    if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {
+    const finalValue = step.key === "phone" ? sanitizeMobileNumber(value) : value;
+
+    if (step.key === "phone" && finalValue.length !== 10) {
       pushAssistantMessage("Please enter a valid 10 digit mobile number.");
       return;
     }
@@ -1642,9 +1654,9 @@ function AiChatBot() {
       return;
     }
 
-    const nextData = { ...bookingData, [step.key]: value };
+    const nextData = { ...bookingData, [step.key]: finalValue };
     setBookingData(nextData);
-    setMessages((current) => [...current, { role: "user", text: step.options?.find((option) => option.value === value)?.label || value }]);
+    setMessages((current) => [...current, { role: "user", text: step.options?.find((option) => option.value === value)?.label || finalValue }]);
     setQuestion("");
 
     const nextStep = bookingStep + 1;
@@ -1722,14 +1734,16 @@ function AiChatBot() {
       return;
     }
 
-    if (step.key === "phone" && value.replace(/\D/g, "").length < 10) {
+    const finalValue = step.key === "phone" ? sanitizeMobileNumber(value) : value;
+
+    if (step.key === "phone" && finalValue.length !== 10) {
       pushAssistantMessage("Please enter a valid 10 digit mobile number.");
       return;
     }
 
-    const nextData = { ...agentLeadData, [step.key]: value };
+    const nextData = { ...agentLeadData, [step.key]: finalValue };
     setAgentLeadData(nextData);
-    setMessages((current) => [...current, { role: "user", text: value }]);
+    setMessages((current) => [...current, { role: "user", text: finalValue }]);
     setQuestion("");
 
     const nextStep = agentLeadStep + 1;
@@ -1843,7 +1857,7 @@ function AiChatBot() {
                 <Bot className="h-5 w-5" strokeWidth={2.4} />
               </span>
               <div className="min-w-0">
-                <h2 className="truncate text-[15px] font-black">Manovaidya AI Assistant</h2>
+                <h2 className="truncate text-[15px] font-black">Abhi</h2>
                 <p className="truncate text-[12px] font-semibold text-white/78">
                   {agentMode ? "Connected with support team" : "Guided by Manovaidya information"}
                 </p>
@@ -1964,9 +1978,11 @@ function AiChatBot() {
                 <textarea
                   value={question}
                   rows={1}
+                  inputMode={isPhoneStep ? "numeric" : undefined}
+                  maxLength={isPhoneStep ? 10 : undefined}
                   className="min-h-11 flex-1 resize-none rounded-xl border border-[#8B43BA]/18 bg-[#fbfaff] px-3 py-3 text-[14px] font-semibold leading-5 text-[#251553] outline-none transition placeholder:text-slate-400 focus:border-[#8B43BA]"
                   placeholder={agentMode ? "Message agent..." : bookingStep !== null ? bookingSteps[bookingStep]?.prompt || "Type your answer..." : "Ask your question..."}
-                  onChange={(event) => setQuestion(event.target.value)}
+                  onChange={(event) => setQuestion(isPhoneStep ? sanitizeMobileNumber(event.target.value) : event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === "Enter" && !event.shiftKey) {
                       event.preventDefault();
@@ -1991,14 +2007,14 @@ function AiChatBot() {
       <button
         type="button"
         className="flex h-15 min-h-[60px] items-center gap-3 rounded-full bg-[#8B43BA] px-5 text-white shadow-[0_18px_38px_rgba(93,40,128,0.32)] transition hover:-translate-y-0.5 hover:bg-[#7434a0]"
-        aria-label="Open Manovaidya AI Assistant"
+        aria-label="Open Abhi chat assistant"
         onClick={openChat}
       >
         <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/14">
           {isOpen ? <X className="h-5 w-5" /> : <MessageCircle className="h-5 w-5" />}
         </span>
         <span className="hidden text-left sm:block">
-          <span className="block text-[14px] font-black leading-4">Ask AI</span>
+          <span className="block text-[14px] font-black leading-4">Ask Abhi</span>
           <span className="flex items-center gap-1 text-[11px] font-bold text-white/76">
             <Sparkles className="h-3 w-3" />
             Smart guidance

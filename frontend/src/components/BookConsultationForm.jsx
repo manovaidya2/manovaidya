@@ -20,6 +20,8 @@ const initialForm = {
   message: "",
 };
 
+const sanitizeMobileNumber = (value) => String(value || "").replace(/\D/g, "").slice(0, 10);
+
 function BookConsultationForm({ onSuccess }) {
   const [form, setForm] = React.useState(initialForm);
   const [status, setStatus] = React.useState({ type: "", message: "" });
@@ -27,7 +29,7 @@ function BookConsultationForm({ onSuccess }) {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setForm((current) => ({ ...current, [name]: value }));
+    setForm((current) => ({ ...current, [name]: name === "phone" ? sanitizeMobileNumber(value) : value }));
     if (status.message) setStatus({ type: "", message: "" });
   };
 
@@ -36,9 +38,16 @@ function BookConsultationForm({ onSuccess }) {
     setIsSubmitting(true);
     setStatus({ type: "", message: "" });
 
+    if (sanitizeMobileNumber(form.phone).length !== 10) {
+      setIsSubmitting(false);
+      setStatus({ type: "error", message: "Please enter a valid 10 digit mobile number." });
+      return;
+    }
+
     try {
       const { data } = await api.post("/consultations", {
         ...form,
+        phone: sanitizeMobileNumber(form.phone),
         message: [
           form.message,
           "Consultation fee: Rs. 599",
@@ -95,6 +104,9 @@ function BookConsultationForm({ onSuccess }) {
           name="phone"
           value={form.phone}
           onChange={handleChange}
+          inputMode="numeric"
+          maxLength={10}
+          pattern="[0-9]{10}"
           className="mt-1 block w-full rounded-lg border border-violet-200 px-3 py-1.5 text-[13px] text-[#272047] shadow-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
           required
         />

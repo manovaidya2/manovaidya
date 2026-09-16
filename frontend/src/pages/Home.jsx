@@ -1,6 +1,5 @@
 import React from "react";
 import Seo from "../components/Seo";
-import AiChatBot from "../components/AiChatBot";
 import CareStagesSection from "../homepage/CareStagesSection";
 import ConditionsSupportSection from "../homepage/ConditionsSupportSection";
 import HeroSection from "../homepage/HeroSection";
@@ -32,7 +31,6 @@ function Home() {
         <ScienceStoriesSection />
         <InsightsFaqSection />
       </main>
-      <AiChatBot />
     </React.Fragment>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import AiChatBot from "./components/AiChatBot";
 import Footer from "./components/Footer";
 import FloatingShareBar from "./components/FloatingShareBar";
 import Header from "./components/Header";
@@ -230,6 +231,7 @@ function App() {
           <Route path="/contact-us/" element={<ContactUsPage />} />
         </Routes>
         <Footer />
+        <AiChatBot />
       </BrowserRouter>
     </React.Fragment>
   );

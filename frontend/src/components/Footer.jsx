@@ -153,8 +153,9 @@ function Footer() {
         <div>
           <h3 className="text-base font-black text-[#251553]">Clinic Timings</h3>
           <p className="mt-4 text-sm font-bold leading-6 text-[#4c3a6b]">
-            Mon - Sat: 10:00 AM - 7:00 PM
-            <span className="block">(Sunday Closed)</span>
+            Open: Mon - Tue, Thu - Sun
+            <span className="block">10:00 AM - 7:00 PM</span>
+            <span className="block">Closed: Wednesday</span>
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-5">
