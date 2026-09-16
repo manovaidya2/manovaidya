@@ -30,6 +30,159 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Addiction & Unhealthy Habits Treatment in India";
 const pageUrl = "https://www.manovaidya.com/addiction-unhealthy-habits-support-india";
+const addictionSeoTitle = `${pageTitle} | Manovaidya`;
+const addictionSeoDescription =
+  "Looking for Addiction & Unhealthy Habits Treatment in India? Learn about behavioural addiction, unhealthy habits, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.";
+const addictionSeoPageUrl = "https://www.manovaidya.org/addiction-unhealthy-habits-support-india";
+const addictionFaqSchema = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What is addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Addiction is a state of being in which someone has trouble managing the use of a substance or a recurring behaviour even when it's causing them harm. Addiction can be to alcohol, drugs, tobacco, or behaviours, for example, excessive use of the mobile phone, gaming or social media. Addiction can impact on emotional function, interpersonal relationships, functioning at work and life functioning over time.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What's the difference between a habit and an addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A habit is a repeated behaviour that is generally under your control, and can often be changed if you work on it constantly. Addiction is a loss of control over the behaviour that occurs despite negative consequences. People often begin to develop an addiction to a habit when they suffer from strong cravings, multiple failed attempts at breaking the habit, or struggles with stopping the habit.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What are the signs of addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "An addiction can manifest itself in many ways including through strong cravings, repeated unsuccessful attempts to stop, time spent on the behaviour, a loss of control, continuing even when it is not helping, mood swings, withdrawal from family and/or social activities and neglect of responsibilities. The symptoms could differ from one person to another or from one addiction to another.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. What causes addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Addiction typically is the result of a mixture of biological, psychological and environmental influences. Chronic stress, trauma, emotional issues, mental health disorders, family background, and social factors and repeated exposure to rewarding behaviours can all play a role. Knowing these factors will aid in having a more individualistic strategy towards behavioural change and emotional well-being.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. Can stress lead to addiction?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. A few people may turn to substances or repetitive actions as a coping mechanism to a persistent state of stress, anxiety or emotional tension. These coping strategies can become automatic and uncontrolled over time. Learning to manage stress in a healthier way and understanding the triggers of emotions might help to decrease unhealthy habits.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Is addiction a mental health problem?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Addiction and mental health can go hand-in-hand. Continued use of addictive behaviour may lead to heightened emotional stress, emotions of depression, low self-esteem, sleep issues and heightened anxiety. Similarly, some may be more susceptible to unhealthy coping behaviors because of mental health issues. A thorough evaluation will assist in the understanding of these interdependent elements.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What are behaviour addictions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Behavioural addictions are addictive behaviours that are difficult to control despite the absence of a substance. Examples include overuse of the mobile phone, Internet addiction, gambling addiction, compulsive pornography use, and social media addiction, and gaming addiction. These behaviours may be interfering with work, relationships, emotional wellbeing and everyday activities.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Is it possible to make changes to unhealthy habits?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. With increased awareness, consistent routines, better coping mechanisms and work, many of the unhealthy habits can be improved. The process is typically a slow one. If you can see the emotions and behaviors that underlie the habit, then it can be more sustainable for the long haul.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. What is the easiest way to get rid of a bad habit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No predetermined schedule for replacing a habit; depends on the person, the nature of the behaviour, and the length of time that it's been around. Habits can start to shift in as little as weeks, or they may take longer to shift if they are a more consistent effort and support. Sustainable behaviour change is more likely when a focus is taken on gradual change instead of rapid change.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Is addiction a factor in relationships?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Communication, trust, emotional bond and family relationships can be involved in addiction. Others get more emotionally detached, skip out on work or have conflicts with friends or family. If there are unhealthy behaviours, tackling them early could have a beneficial impact on emotional wellbeing and relationship health.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Does professional counseling assistance exist in addictions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Individuals can gain a clearer understanding of their emotions, behaviours and lifestyles that are fueling addiction with professional guidance. Support can include psychological intervention, lifestyle advice, stress management and strategies to create healthy habits depending on the individual's needs. This will depend on the individual and their situation and may be different for each person.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. What are Manovaidya's services to adults who have addiction issues?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In Manovaidya, the support starts with understanding the person, rather than just the addictive behaviour. We impart knowledge about the patterns of behavior, emotional health, lifestyle habits and the factors that lead to poor habits through structured assessment and personalised guidance and through using the Neuro-Ayurveda Development System. We aim to facilitate healthier routines, emotional strength and ongoing behavioural wellbeing, through a holistic and personalized approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. Can addiction recovery enhance the improvement of emotional well being?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For many people, identifying and changing unhealthy behaviours and establishing healthier coping mechanisms may have a positive impact on emotional well-being, self-confidence, relationships and quality of life. Recovery can be a gradual process and recovery can be unique for every individual. Continued improvement typically requires sustained healthy behaviors and professional advice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. What are the first signs that unhealthy habits are becoming addictions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Early signs can range from becoming more at ease allowing the behaviour to happen more often, repeated unsuccessful attempts to stop the behaviour, strong urges, or cravings, to neglecting other responsibilities and continuing the behaviour despite its negative effects. Knowing them in their early stages can help people reach out for advice before they start to impact many aspects of life.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When is it okay to ask for expert advice on addiction or unhealthy behaviors?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If an unhealthy habit or addictive behaviour has become hard to control, persists despite any negative outcomes, or starts to impact your emotional state, relationships, work or everyday functioning, professional help should be sought. Structured assessments at Manovaidya help determine the emotional, behavioral and lifestyle triggers of addiction and offer individualised guidance to promote wellness and healthier habits.",
+      },
+    },
+  ],
+};
+const addictionSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: addictionSeoTitle,
+      description: addictionSeoDescription,
+      url: addictionSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Addiction & Unhealthy Habits Treatment",
+          item: addictionSeoPageUrl,
+        },
+      ],
+    },
+    addictionFaqSchema,
+  ],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Addiction and Unhealthy Habits
@@ -835,7 +988,14 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={`${pageTitle} | Manovaidya`} description="Looking for Addiction & Unhealthy Habits Treatment in India? Learn about behavioural addiction, unhealthy habits, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya." keywords="Addiction Treatment in India, Unhealthy Habits, Behavioural Addiction, Mobile Addiction, Social Media Addiction, Gaming Addiction, Habit Change, Emotional Wellbeing" />
+      <Seo
+        title={addictionSeoTitle}
+        description={addictionSeoDescription}
+        keywords="Addiction Treatment in India, Unhealthy Habits, Behavioural Addiction, Mobile Addiction, Social Media Addiction, Gaming Addiction, Habit Change, Emotional Wellbeing"
+        path="/addiction-unhealthy-habits-support-india"
+        image={heroImage}
+        schema={addictionSeoSchema}
+      />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -894,8 +1054,6 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Addiction and unhealthy habits treatment support in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

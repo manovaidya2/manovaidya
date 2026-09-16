@@ -29,6 +29,159 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Relationship Challenges & Emotional Wellbeing Support in India";
 const pageUrl = "https://www.manovaidya.com/relationship-challenges-support-india";
+const relationshipSeoTitle = "Relationship Challenges & Emotional Support in India | Manovaidya";
+const relationshipSeoDescription =
+  "Looking for Relationship Challenges Support in India? Learn about relationship problems, communication difficulties, trust issues, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.";
+const relationshipSeoPageUrl = "https://www.manovaidya.org/relationship-challenges-support-india";
+const relationshipFaqSchema = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What are the indicators that something isn't right with your relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Relationships can be unhealthy if there is a lot of disagreement, no communication, no trust, constant criticism, emotional detachment, controlling behaviours or a feeling of emotional unsafe. Some people also could feel unheard, unappreciated or anxious in the relationship. Each relationship has its ups and downs and sometimes there are conflicts and disagreements that will impact emotional health and relationships in the home, but there are times when a pattern of conflict or issues may be a possibility that additional support or guidance may be helpful.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What are the reasons for relationship issues?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Typically, the problems in relationships are not one but a combination of a number of factors. These can be due to poor communication or lack of trust, unresolved conflict, work stress, financial strain, parenting responsibilities, differing expectations, mental health issues such as anxiety and depression. It's crucial to understand the root issues in order to enhance communication and cultivate healthier relationships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What are some practice steps to better communicate in my relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Communication is vital, just as listening is. Open and respectful but not blaming discussions and choosing a good time to discuss important issues can help to build understanding. Regular communication, empathy and patience in many situations can strengthen the emotional bond. Communication issues that continue over time can be better understood with the help of a professional to identify unhealthy communication patterns and develop healthier communication.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Does mental health issues relate to relationship problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Long-standing issues in the relationship can affect how emotionally healthy a person feels and may result in increased stress, anxiety, depression, sleep difficulties, and/or decreased self-confidence. Emotional conflict in the family can also have an impact on employment and life satisfaction. Relationship problems could be addressed at the early stage to benefit mental health and health of relationships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. What do you mean by trust issues in a relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Trust Issues: Ongoing lack of trust in the integrity or reliability of a partner or lack of emotional security with him. These concerns may be based on the past experiences, disappointments, communication or conflict issues. When it comes to trust, it could result in overthinking, seeking reassurance, being jealous or becoming emotionally distant. Restoring faith typically demands openness in communication, consistency, and collaboration.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. Why do couples get into conflicts so frequently?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Couples can argue because of contrasting expectations, communication, finances, parenting, work stress and/or emotional issues. Conflict is not a sign of an unhealthy relationship, but if it becomes a frequent occurrence and there is no healthy way of dealing with the conflict then the emotional distance can be increased. Learning to recognize the \"why\" of the differences can promote healthier communication styles.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. Do relationships change when there is stress?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Patience may be affected by work-related or financial stress, health issues, or family obligations, making communication harder. Individuals under chronic stress can be emotionally numb or on edge in conflicts. Stress management is a tool that can be used to promote good communication and relationships.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. What are some ways to restore trust in a relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Trust, consistency and honesty in communication takes time to be restored. Trust can be slowly developed through disclosure and taking responsibility (as applicable), setting boundaries, and keeping promises. It's important to be patient and understanding for both. If the damage is extensive, it may be helpful to get the help of a professional to help you rebuild the trust in the relationship and to work on communication.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. What are the indications of emotional detachment in a relationship?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Emotional distance can develop over time, and sometimes manifests as less talking, lack of emotional connection, feeling disconnected, avoiding emotional communication or less quality time together. For some individuals, loneliness may be a sensation that they can experience even when they are in a relationship. Understanding these indications early will enable the couple to take steps to solve communication problems before they turn into more significant emotional disconnections.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Do relationship difficulties lead to feelings of anxiety or depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Emotional stress can be related to relationship problems, and some people can experience both anxiety and depression. Mood, confidence and emotional wellbeing can be impacted by ongoing conflict, uncertainty, emotional distance and lack of support. Relationships and emotional health go hand-in-hand and looking at both may help to create a clearer picture.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. How can couples cope with relationship stress?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "They can help to lower relationship stress by talking about issues, listening to each other without talking over, spending quality time together, practicing stress management, setting boundaries and resolving issues as a team. If a couple makes small attempts to understand the needs of the other many times, it can improve their emotional connection. If the strain in the relationship continues and is affecting your life, there may be help from an expert.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. Is professional help available for relationship problems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. It can be beneficial for people and couples to receive guidance and insight into communication dynamics, emotional responses, conflict resolution and relationships from a professional. Depending on the needs of the individual, support may be psychological guidance and advice to improve communication and emotional wellbeing. This will be based on the specific relationship.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. What can couples do to strengthen emotional bond?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Emotional bonding frequently occurs through open communication, understanding, respect and quality time together. By expressing gratitude, actively listening to one another, encouraging one another through challenging times and establishing good boundaries, relationships can be enhanced over time. Small frequent contributions are better than big ones at specific points.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. What does Manovaidya do to promote relationship wellbeing?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, support begins with understanding the person involved and the relationship involved and not necessarily the conflict. Assessment, guidance and the Neuro-Ayurveda Development System are used to guide and support individuals to understand communication patterns, emotional wellbeing, lifestyle habits and behaviour that can impact their relationships. We aim to enhance communication, emotional bond and achieve long-term wellbeing in relationships in a holistic and personalised way.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When is it OK to ask for professional advice or help with a relationship issue?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If communication difficulties, disagreements, trust issues, emotional distance and frequent conflicts persist for a few weeks and are starting to impact your emotional health, family, work or overall functioning, you may need professional help. When stress is ongoing in your relationship, it's something you can't ignore. There will be structured assessments at Manovaidya that will expose some of the underlying factors and provide specialist feedback to ensure there is a difference in achieving a healthier relationship, wellbeing and that lasting harmony of the family unit.",
+      },
+    },
+  ],
+};
+const relationshipSeoSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      name: relationshipSeoTitle,
+      description: relationshipSeoDescription,
+      url: relationshipSeoPageUrl,
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Relationship Challenges & Emotional Support",
+          item: relationshipSeoPageUrl,
+        },
+      ],
+    },
+    relationshipFaqSchema,
+  ],
+};
 
 const articleRaw = `Key Takeaways
 Understanding Relationship Challenges and Emotional Wellbeing
@@ -1033,9 +1186,12 @@ function AdultRelationshipChallengesSupportIndiaPage() {
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title={`${pageTitle} | Manovaidya`}
-        description="Looking for Relationship Challenges Support in India? Learn about relationship problems, communication difficulties, trust issues, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya."
+        title={relationshipSeoTitle}
+        description={relationshipSeoDescription}
         keywords="Relationship Challenges Support, Relationship Problems, Communication Difficulties, Trust Issues, Emotional Distance, Relationship Stress, Couple Communication, Emotional Wellbeing"
+        path="/relationship-challenges-support-india"
+        image={heroImage}
+        schema={relationshipSeoSchema}
       />
 
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1099,8 +1255,6 @@ function AdultRelationshipChallengesSupportIndiaPage() {
             {showResources && <MedicalReferencesBlock />}
           </div>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "MedicalWebPage", name: pageTitle, description: "Relationship challenges, communication, trust and emotional wellbeing support in India.", url: pageUrl }) }} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: parsedFaqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer.join(" ") } })) }) }} />
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">

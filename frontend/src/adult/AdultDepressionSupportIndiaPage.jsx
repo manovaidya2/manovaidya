@@ -27,6 +27,11 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedAdultPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
+const adultDepressionSeoTitle = "Adult Depression Treatment & Low Mood in India | Manovaidya";
+const adultDepressionSeoDescription =
+  "Looking for Adult Depression Support in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.";
+const adultDepressionSeoPageUrl = "https://manovaidya.org/adult-depression-support";
+
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
   { label: "Understanding Depression", id: "understanding-depression-in-adults" },
@@ -586,29 +591,144 @@ const faqs = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question.replace(/^\d+\.\s*/, ""),
-    acceptedAnswer: { "@type": "Answer", text: faq.answer },
-  })),
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "1. What are the first signs of depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The first signs of depression may include persistent sadness, loss of interest in activities, low energy, changes in sleep or appetite, difficulty concentrating and feeling emotionally exhausted. Some people become more irritable or socially withdrawn instead of appearing sad. While everyone experiences occasional low mood, symptoms that continue for several weeks and begin affecting daily life may deserve professional evaluation and support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "2. What causes depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depression usually develops because of multiple factors rather than one single cause. Ongoing stress, anxiety, difficult life experiences, relationship challenges, financial pressure, poor sleep, chronic health conditions and individual biological factors may all contribute. Since every person's situation is different, understanding the underlying influences is an important step towards choosing the most appropriate support.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "3. What are the symptoms of depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Depression may affect emotions, thoughts, behaviour and physical wellbeing. Common symptoms include persistent sadness, loss of interest in enjoyable activities, low motivation, fatigue, sleep disturbances, appetite changes, poor concentration, feelings of hopelessness and social withdrawal. The symptoms and their severity vary from person to person, and not everyone experiences depression in the same way.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "4. Can depression affect physical health?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Depression can affect both emotional and physical wellbeing. Some people experience constant fatigue, headaches, body aches, digestive discomfort, reduced energy, sleep disturbances or appetite changes. These physical symptoms can make daily activities more difficult and highlight the close connection between mental and physical health.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "5. How do doctors diagnose depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Doctors diagnose depression by understanding a person's symptoms, medical history, emotional wellbeing and how these symptoms affect everyday life. They may ask about mood, sleep, energy levels, appetite, work, relationships and daily functioning. In some cases, additional medical evaluation may be recommended to rule out other health conditions that may cause similar symptoms.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "6. How can I check if I have depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "If you have been experiencing persistent sadness, loss of interest, low motivation or emotional exhaustion for several weeks, it may be helpful to seek a professional assessment. Mental health professionals often use structured questionnaires, detailed discussions and clinical evaluation to better understand your symptoms and determine the most appropriate guidance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "7. What is the best treatment for depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The most appropriate approach depends on the individual's symptoms, severity and personal circumstances. Many people benefit from psychological support, healthy lifestyle changes, counselling and medical care when appropriate. At Manovaidya, support begins with a structured assessment and the Neuro-Ayurveda Development System to better understand emotional wellbeing before providing personalized guidance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "8. Can depression be managed without medication?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Some individuals with mild or moderate depression may benefit from healthy lifestyle changes, counselling, regular physical activity, good sleep, stress management and emotional support. However, the most appropriate approach depends on the individual's condition. It is important to consult a qualified healthcare professional rather than deciding treatment independently.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "9. How long can depression last?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The duration of depression varies from person to person. Some individuals experience symptoms for weeks, while others may struggle for months or longer without appropriate support. Early recognition and timely professional guidance often improve the chances of better long-term emotional wellbeing and recovery.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "10. Can depression affect sleep?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Depression commonly affects sleep patterns. Some people find it difficult to fall asleep or stay asleep, while others may sleep much longer than usual but still feel tired. Poor sleep can further affect mood, concentration, energy levels and overall emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "11. Can depression affect relationships and work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Depression may influence communication, motivation, concentration and emotional connection with others. It can affect work performance, family relationships, friendships and daily responsibilities. Some individuals may withdraw socially or find it difficult to manage routine tasks. Recognising these changes early can help individuals seek appropriate support before they begin affecting multiple areas of life.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "12. Can lifestyle changes help depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Healthy lifestyle habits may support emotional wellbeing and complement professional care. Regular sleep, balanced nutrition, physical activity, meaningful social connections, stress management and structured daily routines often contribute to better mental health. Lifestyle changes are usually most effective when combined with personalized professional guidance.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "13. Can people recover from depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Many people recover from depression with appropriate support and ongoing care. Recovery looks different for everyone and may involve psychological support, lifestyle improvements, counselling, medical treatment when needed and healthy coping strategies. Seeking help early often leads to better outcomes and improved long-term emotional wellbeing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "14. How does Manovaidya support adults with depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At Manovaidya, support begins with understanding the individual rather than focusing only on symptoms. Through structured assessment, personalized guidance and the Neuro-Ayurveda Development System, we help individuals better understand emotional wellbeing, lifestyle influences and behavioural patterns. Our goal is to support long-term emotional balance, resilience and healthier daily functioning through a holistic and personalized approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "15. When should I seek professional guidance for depression?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You should consider seeking professional guidance if sadness, loss of interest, emotional exhaustion or low motivation continues for several weeks or begins affecting your work, relationships, sleep or daily life. Early assessment helps identify contributing factors and allows timely support. At Manovaidya, we provide structured assessments and personalized guidance to help individuals better understand and improve their emotional wellbeing.",
+      },
+    },
+  ],
 };
 
 const breadcrumbSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Adult Mental Health Care", item: "/adult-mental-health-care/" },
-    { "@type": "ListItem", position: 3, name: "Adult Depression Support", item: "/adult-depression-support/" },
+    { "@type": "ListItem", position: 1, name: "Adult Depression Treatment & Low Mood", item: adultDepressionSeoPageUrl },
   ],
 };
 
 const medicalWebPageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalWebPage",
-  name: "Adult Depression Support in India",
-  description: "Looking for Adult Depression Support in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.",
-  url: "/adult-depression-support/",
+  name: adultDepressionSeoTitle,
+  description: adultDepressionSeoDescription,
+  url: adultDepressionSeoPageUrl,
   about: ["Adult Depression Support", "Depression Symptoms", "Persistent Low Mood", "Emotional Wellbeing"],
 };
 
@@ -1116,9 +1236,11 @@ function AdultDepressionSupportIndiaPage() {
     <CitationClickContext.Provider value={linkRenderContext}>
       <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
       <Seo
-        title="Adult Depression Support in India | Depression Symptoms, Low Mood & Emotional Wellbeing | Manovaidya"
-        description="Looking for Adult Depression Support in India? Learn about depression symptoms, persistent low mood, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya."
+        title={adultDepressionSeoTitle}
+        description={adultDepressionSeoDescription}
         keywords="Adult Depression Support, Adult Depression Support in India, Depression Support India, Depression Symptoms, Persistent Low Mood, Emotional Wellbeing, Loss of Interest, Low Motivation, Emotional Exhaustion, Depression Help, Signs of Depression, Physical Symptoms of Depression, Depression and Sleep, Persistent Sadness, Depression Assessment, Adult Mental Health"
+        path="/adult-depression-support"
+        schema={medicalWebPageSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">

@@ -325,7 +325,7 @@ Teenagers can be helped by setting healthy limits, but limits alone are not enou
 
 
 
-15. When should parents seek professional guidance?
+15. When should parents seek p rofessional guidance?
 
 If screen use is having an impact on sleep, concentration, schoolwork, emotional health, relationships or daily functioning, parents should seek help when it is persistent, or when the child becomes irritated when devices are taken away, or when the child starts to be socially withdrawn or to show a significant behaviour change. A formal evaluation may be helpful to the family to better understand the factors that affect screen-related issues and wellbeing.
 
