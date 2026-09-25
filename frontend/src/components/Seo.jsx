@@ -1,24 +1,31 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { getCanonicalUrl, SITE_URL } from "../utils/canonical";
 
-export const SITE_URL = "https://manovaidya.org";
+export { SITE_URL } from "../utils/canonical";
 export const DEFAULT_TITLE = "Manovaidya | Child Development & Mental Health Clinic in Noida";
 export const DEFAULT_DESCRIPTION =
   "Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns.";
 const DEFAULT_IMAGE = `${SITE_URL}/favicon%20(4).png`;
 
-const normalizePath = (pathname) => {
-  if (!pathname || pathname === "/") return "/";
-  return pathname.replace(/\/+$/, "");
-};
-
 function Seo({ title, description, path, image, noindex = false, keywords, schema }) {
   const location = useLocation();
   const resolvedTitle = title || DEFAULT_TITLE;
   const resolvedDescription = description || DEFAULT_DESCRIPTION;
-  const canonicalUrl = `${SITE_URL}${normalizePath(path || location.pathname)}`;
+  const canonicalUrl = getCanonicalUrl(path || location.pathname);
   const resolvedImage = image || DEFAULT_IMAGE;
+
+  React.useLayoutEffect(() => {
+    const canonicalLinks = [...document.head.querySelectorAll('link[rel="canonical"]')];
+    const canonicalLink = canonicalLinks.shift() || document.createElement("link");
+
+    canonicalLink.rel = "canonical";
+    canonicalLink.href = canonicalUrl;
+    canonicalLink.setAttribute("data-seo-canonical", "true");
+    if (!canonicalLink.parentNode) document.head.appendChild(canonicalLink);
+    canonicalLinks.forEach((duplicate) => duplicate.remove());
+  }, [canonicalUrl]);
 
   return (
     <React.Fragment>
@@ -26,7 +33,6 @@ function Seo({ title, description, path, image, noindex = false, keywords, schem
         <title>{resolvedTitle}</title>
         <meta name="description" content={resolvedDescription} />
         {keywords ? <meta name="keywords" content={keywords} /> : null}
-        <link rel="canonical" href={canonicalUrl} />
         <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
         <meta property="og:type" content="website" />
