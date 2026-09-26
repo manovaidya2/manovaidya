@@ -168,7 +168,7 @@ export const answerWebsiteQuestion = async ({ question, context, conversationId 
     answer = 'Consultation fee ₹599 hai.';
   }
   if (!answer && resolution.intent === INTENTS.LOCATION) {
-    answer = `Manovaidya Ayurvedic Clinic ka current address:\n${CLINIC_ADDRESS}\n\nGoogle Maps: ${CLINIC_MAP_URL}`;
+    answer = `Manovaidya Ayurvedic Clinic ka address:\n${CLINIC_ADDRESS}\n\nGoogle Maps: ${CLINIC_MAP_URL}`;
   }
 
   if (!answer) {

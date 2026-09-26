@@ -1852,7 +1852,7 @@ function AiChatBot() {
                 <Bot className="h-5 w-5" strokeWidth={2.4} />
               </span>
               <div className="min-w-0">
-                <h2 className="truncate text-[15px] font-black">Abhi</h2>
+                <h2 className="truncate text-[15px] font-black">Mano Mitra</h2>
                 <p className="truncate text-[12px] font-semibold text-white/78">
                   {agentMode ? "Connected with support team" : "Guided by Manovaidya information"}
                 </p>
@@ -2002,14 +2002,14 @@ function AiChatBot() {
       <button
         type="button"
         className="flex h-15 min-h-[60px] items-center gap-3 rounded-full bg-[#8B43BA] px-5 text-white shadow-[0_18px_38px_rgba(93,40,128,0.32)] transition hover:-translate-y-0.5 hover:bg-[#7434a0]"
-        aria-label="Open Abhi chat assistant"
+        aria-label="Open Mano Mitra chat assistant"
         onClick={openChat}
       >
         <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/14">
           {isOpen ? <X className="h-5 w-5" /> : <MessageCircle className="h-5 w-5" />}
         </span>
         <span className="hidden text-left sm:block">
-          <span className="block text-[14px] font-black leading-4">Ask Abhi</span>
+          <span className="block text-[14px] font-black leading-4">Mano Mitra</span>
           <span className="flex items-center gap-1 text-[11px] font-bold text-white/76">
             <Sparkles className="h-3 w-3" />
             Smart guidance
