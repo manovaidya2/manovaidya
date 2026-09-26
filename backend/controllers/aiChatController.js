@@ -1,4 +1,6 @@
 import { answerWebsiteQuestion, getAiChatConfigStatus } from '../services/aiChatService.js';
+import { checkConsultationAvailability } from '../services/consultationAvailabilityService.js';
+import { syncConversationUserDetails } from '../services/aiConversationService.js';
 
 const getErrorStatus = (error) => {
   if (error.code === 'QUESTION_REQUIRED') return 400;
@@ -18,7 +20,8 @@ export const askAiChat = async (req, res) => {
     const body = req.body || {};
     const result = await answerWebsiteQuestion({
       question: body.question || body.message || body.prompt || body.text,
-      context: body.context || body.websiteContext || body.content
+      context: body.context || body.websiteContext || body.content,
+      conversationId: body.conversationId
     });
 
     res.json({
@@ -36,5 +39,32 @@ export const askAiChat = async (req, res) => {
       message: error.message,
       code: error.code || 'AI_CHAT_ERROR'
     });
+  }
+};
+
+export const checkAiChatConsultationAvailability = async (req, res) => {
+  try {
+    const result = await checkConsultationAvailability({
+      mode: req.body?.mode,
+      date: req.body?.date,
+      time: req.body?.time
+    });
+    res.json({ success: true, data: result });
+  } catch (error) {
+    console.error('AI chat availability error:', error.message);
+    res.status(500).json({ success: false, message: 'Unable to check slot availability.' });
+  }
+};
+
+export const syncAiChatConversationDetails = async (req, res) => {
+  try {
+    const conversation = await syncConversationUserDetails(req.body?.conversationId, req.body || {});
+    if (!conversation) {
+      return res.status(404).json({ success: false, message: 'Conversation not found.' });
+    }
+    res.json({ success: true });
+  } catch (error) {
+    console.error('AI chat detail sync error:', error.message);
+    res.status(500).json({ success: false, message: 'Unable to update conversation details.' });
   }
 };

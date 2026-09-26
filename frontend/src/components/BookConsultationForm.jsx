@@ -22,6 +22,16 @@ const initialForm = {
 
 const sanitizeMobileNumber = (value) => String(value || "").replace(/\D/g, "").slice(0, 10);
 
+const consultationDaysByMode = {
+  clinic: ["Tuesday", "Saturday", "Sunday"],
+  online: ["Monday", "Thursday"],
+};
+
+const getDateDay = (dateValue) => new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  timeZone: "UTC",
+}).format(new Date(`${dateValue}T12:00:00.000Z`));
+
 function BookConsultationForm({ onSuccess }) {
   const [form, setForm] = React.useState(initialForm);
   const [status, setStatus] = React.useState({ type: "", message: "" });
@@ -44,15 +54,37 @@ function BookConsultationForm({ onSuccess }) {
       return;
     }
 
+    const selectedDay = getDateDay(form.preferredDate);
+    if (!consultationDaysByMode[form.consultationMode]?.includes(selectedDay)) {
+      setIsSubmitting(false);
+      setStatus({
+        type: "error",
+        message: form.consultationMode === "clinic"
+          ? "Clinic visits are available Tuesday, Saturday and Sunday."
+          : "Online consultations are available Monday and Thursday.",
+      });
+      return;
+    }
+
     try {
+      const availability = await api.post("/ai-chat/availability", {
+        mode: form.consultationMode === "clinic" ? "offline" : form.consultationMode,
+        date: form.preferredDate,
+        time: form.preferredTime,
+      });
+      if (!availability.data?.data?.available) {
+        throw new Error("Selected slot is not available. Please choose another date or time.");
+      }
+
       const { data } = await api.post("/consultations", {
         ...form,
         phone: sanitizeMobileNumber(form.phone),
         message: [
           form.message,
           "Consultation fee: Rs. 599",
-          "OPD days: Tuesday, Thursday and Saturday",
-          "Slot confirmation requires payment.",
+          "Offline schedule: Tuesday, Saturday and Sunday",
+          "Online schedule: Monday and Thursday",
+          "Final confirmation is completed by the team.",
         ].filter(Boolean).join("\n"),
       });
 
@@ -82,7 +114,7 @@ function BookConsultationForm({ onSuccess }) {
   return (
     <form className="space-y-3" onSubmit={handleSubmit}>
       <div className="rounded-lg border border-violet-100 bg-violet-50/70 p-2.5 text-[11px] font-bold leading-4 text-[#4d3a61]">
-        Rs. 599 consultation fee. OPD days: Tue, Thu, Sat. Limited slots. Payment confirms your slot.
+        Rs. 599 consultation fee. Clinic: Tue, Sat, Sun. Online: Mon, Thu. Slots are checked before submission.
       </div>
 
       <div>

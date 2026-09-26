@@ -1,6 +1,16 @@
 import React, { useMemo, useRef, useState } from "react";
 import { Bot, MessageCircle, RotateCcw, Send, Sparkles, X } from "lucide-react";
 import api from "../api/axiosInstance";
+import {
+  consultationDaysByMode,
+  consultationTimes,
+  createSecureConversationId,
+  getBookingPrefill,
+  getDateDay,
+  getNextMissingBookingStep,
+  isAgentIntent,
+  isDirectBookingCommand,
+} from "../utils/aiChatUtils";
 
 const greeting = {
   role: "assistant",
@@ -15,21 +25,11 @@ const quickQuestions = [
   "Can I book an online consultation?",
 ];
 
-const consultationTimes = [
-  "10:30 AM - 11:00 AM",
-  "11:00 AM - 11:30 AM",
-  "11:30 AM - 12:00 PM",
-  "12:00 PM - 12:30 PM",
-  "05:00 PM - 05:30 PM",
-  "05:30 PM - 06:00 PM",
-  "06:00 PM - 06:30 PM",
-];
-
 const reviewNote = "Consultation with Dr. Ankush Garg. Google rating 4.9/5 from positive patient reviews.";
 const clinicPhone = "7823838638";
 const clinicPhoneDisplay = "+91 78238 38638";
 const consultationFee = "599";
-const opdNote = "Consultation fee is Rs. 599. OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so please book your slot and complete payment to confirm it.";
+const opdNote = "Consultation fee is Rs. 599. Noida clinic visits are available Tuesday, Saturday and Sunday. Online consultations are available Monday and Thursday. Slots are limited and submission does not guarantee confirmation.";
 const medicineNote = "Medicine cost fixed nahi hoti. Har child/person, disease/condition aur symptoms alag hote hain, isliye Manovaidya me customized medicine di jati hai. Medicine condition details aur har symptom profile ke according banti hai. Exact medicine cost assessment ke baad team confirm karti hai.";
 const onlineConsultationNote = `Haan, online consultation available hai. Dr. Ankush Garg ke saath online consultation book ho sakti hai; consultation fee Rs. ${consultationFee} hai. Booking ke time name, phone, location, date aur preferred time share karna hota hai.`;
 
@@ -310,7 +310,7 @@ const websitePageKnowledge = [
   {
     "title": "BookConsultationForm",
     "source": "components/BookConsultationForm.jsx",
-    "text": "{ event.preventDefault(); setIsSubmitting(true); setStatus({ type: \"\", message: \"\" }); try { const { data } = await api.post(\"/consultations\", { ...form, message: [ form.message, \"Consultation fee: Rs. 599\", \"OPD days: Tuesday, Thursday and Saturday\", \"Slot confirmation requires payment.\", ].filter(Boolean).join(\" \"), }); if (!data.success) { throw new Error(data.message || \"Unable to submit consultation request\"); } setStatus({ type: \"success\", message: \"Request submitted successfully. Our team will contact you soon.\", }); setForm(initialForm); onSuccess?.(); } catch (error) { setStatus({ type: \"error\", message: error.response?.data?.message || error.message || \"Something went wrong. Please try again.\", }); } finally { setIsSubmitting(false); } }; return ( Rs. 599 consultation fee. OPD days: Tue, Thu, Sat. Limited slots. Payment confirms your slot. {isSubmitting ? \"Submitting...\" : \"Submit Request\"}"
+    "text": "Public consultation form submits booking requests through the consultation API. Consultation fee is Rs. 599. Noida clinic visits are scheduled Tuesday, Saturday and Sunday. Online consultations are scheduled Monday and Thursday. Slot availability must be checked by the backend before submission, and the team completes final confirmation."
   },
   {
     "title": "Footer",
@@ -695,70 +695,6 @@ const isBookingIntent = (value) =>
   /book|appointment|schedule|call\s?back/i.test(value) ||
   /\b(consultation|consult|doctor)\b/i.test(value);
 
-const isDirectBookingCommand = (value) => {
-  const cleanValue = normalizeQuestion(value);
-  const infoQuestionTerms = [
-    "can",
-    "kya",
-    "kaise",
-    "how",
-    "fee",
-    "fees",
-    "cost",
-    "price",
-    "charge",
-    "online",
-    "clinic",
-    "timing",
-    "available",
-    "possible",
-    "ho sakta",
-    "hota",
-  ];
-
-  if (cleanValue === "book consultation") return true;
-  if (hasAnyTerm(cleanValue, infoQuestionTerms) || /[?ØŸ]/.test(value)) return false;
-
-  return hasAnyTerm(cleanValue, [
-    "book appointment",
-    "appointment book",
-    "book my appointment",
-    "book slot",
-    "slot book",
-    "schedule appointment",
-    "consultation book",
-    "consult book",
-    "mujhe appointment chahiye",
-    "appointment chahiye",
-    "consultation chahiye",
-  ]);
-};
-
-const isAgentIntent = (value) => {
-  const cleanValue = normalizeQuestion(value);
-
-  const directTerms = [
-    "agent",
-    "human",
-    "live chat",
-    "livechat",
-    "representative",
-    "insaan",
-    "customer support",
-    "support team",
-    "live support",
-    "helpline",
-    "real person",
-  ];
-  if (hasAnyTerm(cleanValue, directTerms)) return true;
-
-  const connectVerbs = ["connect", "talk", "baat", "bat", "chat", "speak"];
-  const targetWords = ["agent", "team", "support", "someone", "admin", "human", "person", "staff", "insaan"];
-  return connectVerbs.some((verb) =>
-    targetWords.some((target) => new RegExp(`\\b${verb}\\b[\\s\\S]{0,15}\\b${target}\\b`).test(cleanValue))
-  );
-};
-
 const agentLeadSteps = [
   { key: "name", prompt: "Before connecting you to an agent, please share your full name." },
   { key: "phone", prompt: "Please share your mobile number." }
@@ -777,8 +713,7 @@ const hasAnyTerm = (value, terms) => terms.some((term) => value.includes(term));
 
 const isBookingCancelIntent = (value) => {
   const cleanValue = normalizeQuestion(value);
-  const mentionsConsultation = hasAnyTerm(cleanValue, ["consultation", "consult", "appointment", "book", "booking"]);
-  const negativeIntent = hasAnyTerm(cleanValue, [
+  const negativePhrases = [
     "nahi",
     "nhi",
     "nahin",
@@ -792,8 +727,10 @@ const isBookingCancelIntent = (value) => {
     "stop",
     "mat karo",
     "no",
-  ]);
-  return negativeIntent && (mentionsConsultation || hasAnyTerm(cleanValue, ["nahi chahiye", "nhi chahiye", "nahin chahiye", "cancel", "stop"]));
+  ];
+  return negativePhrases.some(
+    (phrase) => cleanValue === phrase || cleanValue.startsWith(`${phrase} `)
+  );
 };
 
 const isFillerReply = (value) =>
@@ -900,7 +837,7 @@ const getLocalBookingSideAnswer = (question, currentPrompt) => {
 
   if (hasAnyTerm(value, ["clinic", "aake", "aaunga", "aaungi", "visit"])) {
     return [
-      "Haan, clinic visit bhi available hai. Noida OPD Tuesday, Thursday aur Saturday ko hoti hai.",
+      "Haan, clinic visit bhi available hai. Noida clinic Tuesday, Saturday aur Sunday ko available hai.",
       currentPrompt,
     ].join("\n\n");
   }
@@ -990,7 +927,7 @@ const getBookingQuestionAnswer = (question, currentPrompt) => {
   if (localSideAnswer) return localSideAnswer;
 
   if (hasAnyTerm(value, ["online", "clinic", "mode", "visit"])) {
-    return `Consultation online aur clinic visit, dono mode me available hai. Noida OPD Tuesday, Thursday and Saturday ko hoti hai, aur slots limited rehte hain.\n\n${currentPrompt}`;
+    return `Consultation online aur clinic visit, dono mode me available hai. Noida clinic Tuesday, Saturday aur Sunday ko aur online consultation Monday aur Thursday ko available hai.\n\n${currentPrompt}`;
   }
 
   if (isMedicineIntent(value)) {
@@ -1104,7 +1041,7 @@ const knowledgeBase = [
   {
     title: "Consultation and Online Support",
     terms: ["consultation", "book", "online", "appointment", "clinic", "assessment", "fee", "slot", "opd"],
-    text: `Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. ${onlineConsultationNote} OPD is available in Noida only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it. Online consultations include concern/history understanding, personalised guidance and follow-up planning. A consultation can help families understand the concern, decide the right support direction and create a practical care plan.`
+    text: `Manovaidya offers structured consultations and guidance for children, teenagers, adults, women and seniors. ${onlineConsultationNote} Noida clinic visits are available Tuesday, Saturday and Sunday. Online consultations are available Monday and Thursday. Slots are limited and must be checked by the backend before submission. Online consultations include concern/history understanding, personalised guidance and follow-up planning.`
   },
   {
     title: "How to Book or Connect with Team",
@@ -1260,30 +1197,21 @@ const getRelevantChunks = async (question) => {
     .slice(0, 6500);
 };
 
-async function askWebsiteAi(question) {
+async function askWebsiteAi(question, conversationId) {
   const context = await getRelevantChunks(question);
   const response = await api.post("/ai-chat", {
     question,
-    context: [
-      "Website-first rule: analyse the supplied Manovaidya website context from all matching pages first, then use general AI reasoning only to explain it clearly. Do not invent services, fees, clinic days, guarantees, doctor names, or medical claims that are not supported by context or fixed rules.",
-      "Tone rule: reply like a helpful human clinic assistant. Use simple Hinglish when the visitor writes Hinglish/Hindi, and simple English when the visitor writes English. Be warm, direct, and easy to understand.",
-      "Answer quality rule: directly answer the visitor's exact question first, then add the most relevant website-backed details, practical next step, and relevant page reference if available. Keep replies concise but complete; avoid dumping unrelated services.",
-      "Result rule: if the visitor asks about result, reviews, rating, Google result or success, do not explain the whole service first. Mention rating/success signals only if present in context. Say Manovaidya confidently shares that with consistent assessment, guidance, follow-up and family involvement, progress or results often start becoming visible, while exact outcomes vary person to person and no fixed timeline or identical result is promised for everyone.",
-      `Booking rule: consultation fee is Rs. ${consultationFee}. Noida OPD is available only on Tuesday, Thursday and Saturday. Slots are limited, so visitors should book their slot and complete payment to confirm it.`,
-      `Online consultation rule: ${onlineConsultationNote}`,
-      `Medicine rule: ${medicineNote}`,
-      "Flow rule: do not remove or rename the Book consultation, Connect with agent, or Can I book an online consultation quick actions. If the visitor wants booking or a human agent, guide them to those actions.",
-      "Reference rule: if the visitor asks about a listed service, disease, condition, symptoms, or page, include the most relevant Manovaidya page reference from the supplied context.",
-      context,
-    ].join("\n\n"),
+    conversationId,
+    context,
   }, { timeout: 5500 });
-  const answer = response.data?.data?.answer?.trim();
+  const result = response.data?.data;
+  const answer = result?.answer?.trim();
 
   if (!answer) {
     throw new Error("AI did not return an answer.");
   }
 
-  return answer;
+  return { ...result, answer };
 }
 
 const getFastFallbackAnswer = (question) => {
@@ -1312,6 +1240,20 @@ const formatAssistantText = (text) =>
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 
+const renderLinkedText = (text) => String(text || "").split(/(https?:\/\/[^\s]+)/g).map((part) =>
+  /^https?:\/\//.test(part) ? (
+    <a
+      key={part}
+      href={part}
+      target="_blank"
+      rel="noreferrer"
+      className="break-all font-black text-[#7b36a8] underline underline-offset-2"
+    >
+      Open in Google Maps
+    </a>
+  ) : part
+);
+
 function AssistantMessage({ text }) {
   const cleanText = formatAssistantText(text);
   const blocks = cleanText.split(/\n{2,}/).filter(Boolean);
@@ -1326,7 +1268,7 @@ function AssistantMessage({ text }) {
           return (
             <ul key={`${block}-${index}`} className="list-disc space-y-1 pl-4">
               {bulletLines.map((line) => (
-                <li key={line}>{line.replace(/^•\s*/, "")}</li>
+                <li key={line}>{renderLinkedText(line.replace(/^•\s*/, ""))}</li>
               ))}
             </ul>
           );
@@ -1334,7 +1276,7 @@ function AssistantMessage({ text }) {
 
         return (
           <p key={`${block}-${index}`} className="leading-6">
-            {block.replace(/^•\s*/, "")}
+            {renderLinkedText(block.replace(/^•\s*/, ""))}
           </p>
         );
       })}
@@ -1352,7 +1294,7 @@ function ConsultationCta() {
         Need personalised guidance? Book a consultation or call our team.
       </p>
       <p className="mt-2 text-[12px] font-bold leading-5 text-[#5f4d73]">
-        Rs. {consultationFee} consultation fee. OPD days: Tue, Thu, Sat. Limited slots.
+        Rs. {consultationFee} consultation fee. Clinic: Tue, Sat, Sun. Online: Mon, Thu.
       </p>
       <div className="mt-3 grid gap-2 sm:grid-cols-2">
         <button
@@ -1391,6 +1333,7 @@ function AiChatBot() {
   const [agentLeadData, setAgentLeadData] = useState({});
   const [agentSession, setAgentSession] = useState(null);
   const [agentMode, setAgentMode] = useState(false);
+  const conversationIdRef = useRef(createSecureConversationId());
   const chatScrollRef = useRef(null);
   const chatEndRef = useRef(null);
   const seenLiveMessageIds = useRef(new Set());
@@ -1432,6 +1375,7 @@ function AiChatBot() {
     setAgentLeadData({});
     setAgentMode(false);
     setAgentSession(null);
+    conversationIdRef.current = createSecureConversationId();
     seenLiveMessageIds.current = new Set();
   };
 
@@ -1525,17 +1469,21 @@ function AiChatBot() {
     return () => window.clearInterval(intervalId);
   }, [agentMode, agentSession?.sessionKey]);
 
-  const startBookingFlow = () => {
+  const startBookingFlow = (conversationState = null) => {
+    const prefill = getBookingPrefill(conversationState);
+    const firstStep = getNextMissingBookingStep(bookingSteps, prefill);
     setIsOpen(true);
-    setBookingData({});
-    setBookingStep(0);
+    setBookingData(prefill);
+    setBookingStep(firstStep < bookingSteps.length ? firstStep : null);
     setAgentLeadStep(null);
     pushAssistantMessage(
-      `Haan, bilkul. Dr. Ankush Garg ke saath online consultation book ho sakti hai; fee Rs. ${consultationFee} hai.`
+      `Bilkul. Consultation fee Rs. ${consultationFee} hai. Checked slot ke saath request complete karte hain; final confirmation successful submission ke baad hi hogi.`
     );
-    window.setTimeout(() => {
-      pushAssistantMessage(bookingSteps[0].prompt);
-    }, 350);
+    if (firstStep < bookingSteps.length) {
+      window.setTimeout(() => {
+        pushAssistantMessage(bookingSteps[firstStep].prompt);
+      }, 350);
+    }
   };
 
   const startAgentLeadFlow = () => {
@@ -1562,7 +1510,24 @@ function AiChatBot() {
     };
   }, []);
 
+  const syncConversationDetails = (details) => {
+    if (!conversationIdRef.current) return Promise.resolve();
+    return api.post("/ai-chat/conversation-details", {
+      conversationId: conversationIdRef.current,
+      ...details,
+    });
+  };
+
   const submitConsultation = async (data) => {
+    const availability = await api.post("/ai-chat/availability", {
+      mode: data.consultationMode === "clinic" ? "offline" : data.consultationMode,
+      date: data.preferredDate,
+      time: data.preferredTime,
+    });
+    if (!availability.data?.data?.available) {
+      throw new Error("Selected slot is no longer available. Please choose another date or time.");
+    }
+
     await api.post("/consultations", {
       name: data.name,
       phone: data.phone,
@@ -1573,10 +1538,20 @@ function AiChatBot() {
         `Location: ${data.location}`,
         "Consultation with: Dr. Ankush Garg",
         `Consultation fee: Rs. ${consultationFee}`,
-        "OPD note: Noida OPD is available only on Tuesday, Thursday and Saturday. Slot confirmation requires payment.",
+        "Offline schedule: Tuesday, Saturday and Sunday. Online schedule: Monday and Thursday.",
+        data.patient?.name ? `Patient: ${data.patient.name}` : "",
+        data.patient?.age !== null && data.patient?.age !== undefined ? `Patient age: ${data.patient.age}` : "",
+        data.patient?.relation ? `Relation: ${data.patient.relation}` : "",
+        data.patient?.concern ? `Concern: ${data.patient.concern}` : "",
         "Source: AI chat assistant",
-      ].join("\n"),
+      ].filter(Boolean).join("\n"),
     });
+    await syncConversationDetails({
+      name: data.name,
+      phone: data.phone,
+      city: data.location,
+      submitted: true,
+    }).catch(() => {});
   };
 
   const handleBookingResponse = async (rawValue) => {
@@ -1622,8 +1597,9 @@ function AiChatBot() {
 
         setIsLoading(true);
         try {
-          const answer = await askWebsiteAi(value);
-          pushAssistantMessage(`${answer}\n\n${step.prompt}`);
+          const result = await askWebsiteAi(value, conversationIdRef.current);
+          conversationIdRef.current = result.conversationId || conversationIdRef.current;
+          pushAssistantMessage(`${result.answer}\n\n${step.prompt}`);
         } catch {
           pushAssistantMessage(
             `Main samajh raha hu. Is query ke liye Manovaidya team aapko better guide kar sakti hai.\n\n${step.prompt}`
@@ -1654,12 +1630,30 @@ function AiChatBot() {
       return;
     }
 
+    if (step.key === "preferredDate") {
+      const validDays = consultationDaysByMode[bookingData.consultationMode] || [];
+      const selectedDay = getDateDay(value);
+      if (!validDays.includes(selectedDay)) {
+        pushAssistantMessage(
+          bookingData.consultationMode === "clinic"
+            ? "Noida clinic visit Tuesday, Saturday ya Sunday ko available hai. Please inmein se kisi din ki date choose karein."
+            : "Online consultation Monday ya Thursday ko available hai. Please inmein se kisi din ki date choose karein."
+        );
+        return;
+      }
+    }
+
     const nextData = { ...bookingData, [step.key]: finalValue };
     setBookingData(nextData);
     setMessages((current) => [...current, { role: "user", text: step.options?.find((option) => option.value === value)?.label || finalValue }]);
     setQuestion("");
 
-    const nextStep = bookingStep + 1;
+    if (["name", "phone", "location"].includes(step.key)) {
+      const detailKey = step.key === "location" ? "city" : step.key;
+      void syncConversationDetails({ [detailKey]: finalValue }).catch(() => {});
+    }
+
+    const nextStep = getNextMissingBookingStep(bookingSteps, nextData, bookingStep + 1);
     if (nextStep < bookingSteps.length) {
       setBookingStep(nextStep);
       pushAssistantMessage(bookingSteps[nextStep].prompt);
@@ -1672,7 +1666,7 @@ function AiChatBot() {
       setBookingStep(null);
       setBookingData({});
       pushAssistantMessage(
-        `Your consultation request has been submitted successfully.\n\nDoctor: Dr. Ankush Garg\nConsultation fee: Rs. ${consultationFee}\nMode: ${nextData.consultationMode === "clinic" ? "Clinic Visit" : "Online Consultation"}\nDate: ${nextData.preferredDate}\nTime: ${nextData.preferredTime}\n\nNoida OPD Tuesday, Thursday and Saturday ko hoti hai. Slots limited rehte hain, so payment karke apna slot confirm karein.\n\nOur team will contact you shortly.`
+        `Your consultation request has been submitted successfully.\n\nDoctor: Dr. Ankush Garg\nConsultation fee: Rs. ${consultationFee}\nMode: ${nextData.consultationMode === "clinic" ? "Clinic Visit" : "Online Consultation"}\nDate: ${nextData.preferredDate}\nTime: ${nextData.preferredTime}\n\nOur team will contact you to complete the final confirmation.`
       );
     } catch (error) {
       pushAssistantMessage(
@@ -1797,35 +1791,36 @@ function AiChatBot() {
     setIsOpen(true);
     setMessages((current) => [...current, { role: "user", text: trimmedQuestion }]);
 
-    if (isAgentIntent(trimmedQuestion)) {
-      startAgentLeadFlow();
-      return;
-    }
-
-    if (isDirectBookingCommand(trimmedQuestion)) {
-      startBookingFlow();
-      return;
-    }
-
-    const exactAnswer = getExactLocalAnswer(trimmedQuestion);
-    if (exactAnswer) {
-      setIsLoading(true);
-      scrollChatToBottom();
-      window.setTimeout(() => {
-        setMessages((current) => [...current, { role: "assistant", text: exactAnswer, showCta: true }]);
-        setIsLoading(false);
-        scrollChatToBottom();
-      }, 650);
-      return;
-    }
-
     setIsLoading(true);
     scrollChatToBottom();
 
     try {
-      const answer = await askWebsiteAi(trimmedQuestion);
-      setMessages((current) => [...current, { role: "assistant", text: answer, showCta: true }]);
+      const result = await askWebsiteAi(trimmedQuestion, conversationIdRef.current);
+      conversationIdRef.current = result.conversationId || conversationIdRef.current;
+
+      if (result.action === "BOOK_CONSULTATION") {
+        startBookingFlow(result.state);
+        return;
+      }
+      if (result.action === "CONNECT_AGENT") {
+        startAgentLeadFlow();
+        return;
+      }
+
+      setMessages((current) => [
+        ...current,
+        { role: "assistant", text: result.answer, showCta: Boolean(result.showCta) },
+      ]);
     } catch (error) {
+      if (isAgentIntent(trimmedQuestion)) {
+        startAgentLeadFlow();
+        return;
+      }
+      if (isDirectBookingCommand(trimmedQuestion)) {
+        startBookingFlow();
+        return;
+      }
+
       const errorMessage =
         error.response?.data?.message ||
         (error.code === "ECONNABORTED" || error.message === "Network Error"
