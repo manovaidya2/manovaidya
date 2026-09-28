@@ -19,6 +19,7 @@ import {
 import NewsletterSection from "../blog/NewsletterSection";
 import Seo from "../components/Seo";
 import api, { getAssetUrl } from "../api/axiosInstance";
+import { usePrerenderData } from "../prerenderData";
 import heroImage from "../images/blog-insights-family.png";
 import childImage from "../images/child-support-family.png";
 import autismImage from "../images/autism-treatment-hero.png";
@@ -97,8 +98,10 @@ const processSteps = [
 ];
 
 function CaseStudiesPage() {
-  const [caseStudies, setCaseStudies] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const prerenderData = usePrerenderData();
+  const initialCaseStudies = Array.isArray(prerenderData.caseStudies) ? prerenderData.caseStudies : [];
+  const [caseStudies, setCaseStudies] = useState(initialCaseStudies);
+  const [loading, setLoading] = useState(initialCaseStudies.length === 0);
   const [error, setError] = useState("");
 
   useEffect(() => {

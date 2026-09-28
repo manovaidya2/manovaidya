@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CalendarDays, Plus, Sparkles } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
 import BookConsultationButton from "../components/BookConsultationButton";
+import { usePrerenderData } from "../prerenderData";
 import childImage from "../images/child.png";
 import boyImage from "../images/boy.png";
 import scienceImage from "../images/science-neuro-ayurveda.png";
@@ -122,8 +123,15 @@ const faqs = [
 ];
 
 function InsightsFaqSection() {
+  const prerenderData = usePrerenderData();
+  const initialBlogs = Array.isArray(prerenderData.blogs)
+    ? prerenderData.blogs
+        .filter((blog) => !blog.status || blog.status === "published")
+        .filter((blog) => !hasPublicTestContent(blog))
+        .slice(0, 6)
+    : [];
   const [openIndex, setOpenIndex] = useState(0);
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState(initialBlogs);
 
   useEffect(() => {
     let isMounted = true;

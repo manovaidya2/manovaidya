@@ -3,11 +3,15 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, CalendarCheck, CheckCircle2, Clock3, MapPin, PhoneCall, Sparkles } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
 import NewsletterSection from "../blog/NewsletterSection";
+import Seo from "../components/Seo";
+import { usePrerenderData } from "../prerenderData";
 
 function CaseStudyDetails() {
   const { slug } = useParams();
-  const [study, setStudy] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const prerenderData = usePrerenderData();
+  const initialStudy = prerenderData.caseStudiesBySlug?.[slug] || null;
+  const [study, setStudy] = useState(initialStudy);
+  const [loading, setLoading] = useState(!initialStudy);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -94,6 +98,14 @@ function CaseStudyDetails() {
 
   return (
     <main className="bg-[#fbfcfa]">
+      <Seo
+        title={study.metaTitle || `${study.title} | Case Study | Manovaidya`}
+        description={study.metaDescription || study.summary}
+        keywords={study.metaKeywords || study.focusKeyword}
+        path={`/case-studies/${study.slug || slug}`}
+        image={getAssetUrl(study.ogImage || study.image)}
+        noindex={String(study.robots || '').startsWith("noindex")}
+      />
       <section className="px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
         <div className="mx-auto grid max-w-[1280px] gap-8 lg:grid-cols-[minmax(0,1fr)_330px]">
           <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">

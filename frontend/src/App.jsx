@@ -90,10 +90,10 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+function App({ Router = BrowserRouter, routerProps = {} }) {
   return (
     <React.Fragment>
-      <BrowserRouter>
+      <Router {...routerProps}>
         <ScrollToTop />
         <Header />
         <FloatingShareBar />
@@ -139,6 +139,8 @@ function App() {
           <Route path="/senior-depression-support-india/" element={<SeniorDepressionSupportPage />} />
           <Route path="/sleep-disorders-seniors-support-india" element={<SeniorSleepDisordersSupportPage />} />
           <Route path="/sleep-disorders-seniors-support-india/" element={<SeniorSleepDisordersSupportPage />} />
+          <Route path="/senior-sleep-disorders-support-india" element={<SeniorSleepDisordersSupportPage />} />
+          <Route path="/senior-sleep-disorders-support-india/" element={<SeniorSleepDisordersSupportPage />} />
           <Route path="/women-health-care" element={<WomenHealthCarePage />} />
           <Route path="/women-mental-health-care-india" element={<WomenMentalHealthCareIndiaPage />} />
           <Route path="/women-mental-health-care-india/" element={<WomenMentalHealthCareIndiaPage />} />
@@ -232,7 +234,7 @@ function App() {
         </Routes>
         <Footer />
         <AiChatBot />
-      </BrowserRouter>
+      </Router>
     </React.Fragment>
   );
 }

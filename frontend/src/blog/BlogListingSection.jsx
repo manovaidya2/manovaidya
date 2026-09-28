@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
 import BookConsultationButton from "../components/BookConsultationButton";
+import { usePrerenderData } from "../prerenderData";
 
 const categoriesData = [
   { name: "Autism", count: 12, Icon: Puzzle },
@@ -49,9 +50,13 @@ const hasPublicTestContent = (blog) =>
   );
 
 function BlogListingSection() {
-  const [blogs, setBlogs] = useState([]);
-  const [popularPosts, setPopularPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const prerenderData = usePrerenderData();
+  const initialBlogs = Array.isArray(prerenderData.blogs)
+    ? prerenderData.blogs.filter((blog) => !hasPublicTestContent(blog))
+    : [];
+  const [blogs, setBlogs] = useState(initialBlogs);
+  const [popularPosts, setPopularPosts] = useState(initialBlogs.slice(0, 4));
+  const [loading, setLoading] = useState(initialBlogs.length === 0);
   const [error, setError] = useState(null);
 
   useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { ArrowRight, Library, Play, Sparkles, Video as VideoIcon, X } from "lucide-react";
 import Seo from "../components/Seo";
 import api from "../api/axiosInstance";
+import { usePrerenderData } from "../prerenderData";
 
 function VideoModal({ video, onClose }) {
   useEffect(() => {
@@ -151,8 +152,10 @@ function FeaturedVideoPanel({ video, onPlay }) {
 }
 
 function VideoLibraryPage() {
-  const [videos, setVideos] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const prerenderData = usePrerenderData();
+  const initialVideos = Array.isArray(prerenderData.videos) ? prerenderData.videos : [];
+  const [videos, setVideos] = useState(initialVideos);
+  const [loading, setLoading] = useState(initialVideos.length === 0);
   const [error, setError] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
   const [playingVideo, setPlayingVideo] = useState(null);

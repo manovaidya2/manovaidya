@@ -6,6 +6,8 @@ import {
   Link2, ChevronDown, ChevronUp, Sparkles, BookOpen, AlertCircle
 } from 'lucide-react';
 import BookConsultationButton from '../components/BookConsultationButton';
+import Seo, { SITE_URL } from '../components/Seo';
+import { usePrerenderData } from '../prerenderData';
 
 // Custom SVG Icons for Socials to avoid lucide-react version issues
 const FacebookIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>;
@@ -13,6 +15,48 @@ const TwitterIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" w
 const LinkedinIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>;
 const MessageCircleIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>;
 import api, { getAssetUrl } from '../api/axiosInstance';
+
+const createHeadingId = (text = '') =>
+  text.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/g, '');
+
+const processBlogContent = (content = '') => {
+  if (!content) return { html: '', toc: [] };
+
+  if (typeof DOMParser !== 'undefined') {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(content, 'text/html');
+
+    const allElements = doc.querySelectorAll('*');
+    allElements.forEach(el => {
+      if (el.style && (el.style.backgroundColor === 'white' || el.style.backgroundColor === '#ffffff' || el.style.backgroundColor === 'rgb(255, 255, 255)' || el.style.backgroundColor)) {
+        el.style.backgroundColor = 'transparent';
+      }
+    });
+
+    const headings = doc.querySelectorAll('h2, h3');
+    const newToc = [];
+
+    headings.forEach((h) => {
+      const id = createHeadingId(h.textContent);
+      h.id = id;
+      newToc.push({ id, text: h.textContent, level: h.tagName.toLowerCase() });
+    });
+
+    return { html: doc.body.innerHTML, toc: newToc };
+  }
+
+  const newToc = [];
+  const html = content.replace(/<h([23])([^>]*)>([\s\S]*?)<\/h\1>/gi, (match, level, attrs, innerHtml) => {
+    const text = innerHtml.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    const id = createHeadingId(text);
+    if (!id) return match;
+    newToc.push({ id, text, level: `h${level}` });
+    if (/\sid\s*=/i.test(attrs)) return match;
+    return `<h${level}${attrs} id="${id}">${innerHtml}</h${level}>`;
+  });
+
+  return { html, toc: newToc };
+};
 
 const TableOfContents = ({ toc, activeId }) => {
   if (!toc || toc.length === 0) return null;
@@ -48,9 +92,14 @@ const TableOfContents = ({ toc, activeId }) => {
 
 export default function BlogDetails() {
   const { slug } = useParams();
-  const [blog, setBlog] = useState(null);
-  const [relatedBlogs, setRelatedBlogs] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const prerenderData = usePrerenderData();
+  const initialBlog = prerenderData.blogsBySlug?.[slug] || null;
+  const initialRelatedBlogs = Array.isArray(prerenderData.blogs)
+    ? prerenderData.blogs.filter(b => b.slug !== slug).slice(0, 3)
+    : [];
+  const [blog, setBlog] = useState(initialBlog);
+  const [relatedBlogs, setRelatedBlogs] = useState(initialRelatedBlogs);
+  const [loading, setLoading] = useState(!initialBlog);
   const [error, setError] = useState(null);
   const [toc, setToc] = useState([]);
   const [activeId, setActiveId] = useState('');
@@ -137,31 +186,11 @@ export default function BlogDetails() {
   }, [slug]);
 
   // Process HTML for TOC and styling
-  const processedContent = useMemo(() => {
-    if (!blog?.content) return '';
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(blog.content, 'text/html');
+  const processedContent = useMemo(() => processBlogContent(blog?.content), [blog?.content]);
 
-    // Remove inline background colors (often caused by copy-pasting into the editor)
-    const allElements = doc.querySelectorAll('*');
-    allElements.forEach(el => {
-      if (el.style && (el.style.backgroundColor === 'white' || el.style.backgroundColor === '#ffffff' || el.style.backgroundColor === 'rgb(255, 255, 255)' || el.style.backgroundColor)) {
-        el.style.backgroundColor = 'transparent';
-      }
-    });
-
-    const headings = doc.querySelectorAll('h2, h3');
-    const newToc = [];
-
-    headings.forEach((h) => {
-      const id = h.textContent.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/g, '');
-      h.id = id;
-      newToc.push({ id, text: h.textContent, level: h.tagName.toLowerCase() });
-    });
-
-    setToc(newToc);
-    return doc.body.innerHTML;
-  }, [blog?.content]);
+  useEffect(() => {
+    setToc(processedContent.toc);
+  }, [processedContent.toc]);
 
   // TOC active state tracking
   useEffect(() => {
@@ -219,12 +248,22 @@ export default function BlogDetails() {
 
   const readTime = Math.ceil((blog.content?.length || 1000) / 1000);
   const publishDate = new Date(blog.createdAt || blog.date).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' });
+  const tocForRender = toc.length ? toc : processedContent.toc;
+  const schema = (() => {
+    if (!blog.schemaMarkup) return undefined;
+    try {
+      return JSON.parse(blog.schemaMarkup);
+    } catch {
+      return undefined;
+    }
+  })();
 
+  const currentUrl = typeof window === 'undefined' ? `${SITE_URL}/blog/${slug}` : window.location.href;
   const shareLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`,
-    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(blog.title)}`,
-    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(blog.title)}`,
-    whatsapp: `https://wa.me/?text=${encodeURIComponent(blog.title + " " + window.location.href)}`
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
+    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`,
+    linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(blog.title)}`,
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(blog.title + " " + currentUrl)}`
   };
 
   const copyLink = () => {
@@ -234,6 +273,15 @@ export default function BlogDetails() {
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] pb-24 ">
+      <Seo
+        title={blog.metaTitle || blog.title || 'Blog Details - Manovaidya'}
+        description={blog.metaDescription || blog.shortDescription}
+        keywords={blog.metaKeywords || blog.focusKeyword}
+        path={`/blog/${blog.slug || slug}`}
+        image={getAssetUrl(blog.ogImage || blog.image)}
+        noindex={String(blog.robots || '').startsWith('noindex')}
+        schema={schema}
+      />
       {/* Breadcrumb */}
       <div className="border-b border-slate-200 bg-white">
         <div className="mx-auto px-4 py-4 sm:px-6 lg:px-10">
@@ -342,7 +390,7 @@ export default function BlogDetails() {
               [&>img]:rounded-[20px] [&>img]:my-12 [&>img]:w-full [&>img]:shadow-md
               [&>blockquote]:my-10 [&>blockquote]:rounded-r-2xl [&>blockquote]:border-l-4 [&>blockquote]:border-teal-600 [&>blockquote]:bg-teal-50 [&>blockquote]:py-6 [&>blockquote]:px-8 [&>blockquote]:text-xl [&>blockquote]:font-medium [&>blockquote]:italic [&>blockquote]:text-teal-900
               [&>iframe]:w-full [&>iframe]:rounded-[20px] [&>iframe]:shadow-lg [&>iframe]:my-10"
-            dangerouslySetInnerHTML={{ __html: processedContent }}
+            dangerouslySetInnerHTML={{ __html: processedContent.html }}
           />
 
           {/* FAQ Accordion */}
@@ -416,7 +464,7 @@ export default function BlogDetails() {
             </div>
 
             {/* Table of Contents */}
-            <TableOfContents toc={toc} activeId={activeId} />
+            <TableOfContents toc={tocForRender} activeId={activeId} />
 
             {/* Author Mini Card */}
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
