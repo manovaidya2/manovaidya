@@ -154,7 +154,7 @@ const references = [
   }
 ];
 const categories = [
-  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india" },
+  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
   { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
   { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
   { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india" },
@@ -171,8 +171,8 @@ const articleLinkRules = [
   { label: "Child Development Assessment", href: "#assessment", pattern: /Child Development Assessment/i },
   { label: "Parent Guidance", href: "#parent-guidance", pattern: /Parent Guidance/i },
   { label: "Family Support", href: "#parent-guidance", pattern: /Family Support/i },
-  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india", pattern: /Autism Spectrum Disorder(?: \(ASD\))?/i },
-  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
+  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder(?: \(ASD\))?/i },
+  { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
   { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
   { label: "Speech and Language Delays", href: "/speech-delay-support-india", pattern: /Speech (?:&|and) Language Delays/i },
   { label: "Speech Delay", href: "/speech-delay-support-india", pattern: /Speech Delay/i },

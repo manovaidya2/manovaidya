@@ -648,7 +648,7 @@ const pageLinks = [
 ];
 
 const categories = [
-  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india" },
+  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
   { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
   { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
   { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india" },
@@ -660,7 +660,7 @@ const internalLinks = [
   { title: "Child Development Care in India", href: "/child-development-care-india" },
   { title: "Child Development Support", href: "/child-development-support-india" },
   { title: "ADHD Treatment in India", href: "/child-health-care/adhd-child" },
-  { title: "Autism Treatment in India", href: "/autism-treatment-india" },
+  { title: "Autism Treatment in India", href: "/autism-treatment-india/" },
   { title: "Speech Delay & Communication Support", href: "/speech-delay-support-india" },
   { title: "Behavioural Concerns in Children", href: "/behavioural-concerns-children-india" },
   { title: "About Manovaidya", href: "/about/manovaidya" },
@@ -691,8 +691,8 @@ const articleLinkRules = [
   { label: "Communication", href: "/speech-delay-support-india", pattern: /Communication/i, maxPerPage: 5 },
   { label: "Speech", href: "/speech-delay-support-india", pattern: /Speech/i, maxPerPage: 3 },
   { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i, maxPerPage: 5 },
-  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india", pattern: /Autism Spectrum Disorder|ASD/i, maxPerPage: 3 },
-  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i, maxPerPage: 5 },
+  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder|ASD/i, maxPerPage: 3 },
+  { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i, maxPerPage: 5 },
   { label: "Behavioural Concerns", href: "/behavioural-concerns-children-india", pattern: /Behavioural Concerns/i, maxPerPage: 4 },
   { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioural Challenges/i, maxPerPage: 4 },
   { label: "Behavioral Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioral Challenges/i, maxPerPage: 3 },

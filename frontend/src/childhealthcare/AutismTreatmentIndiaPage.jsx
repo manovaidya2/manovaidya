@@ -48,7 +48,7 @@ const pageLinks = [
 ];
 
 const categories = [
-  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india" },
+  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
   { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
   { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
   { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-support-india" },
@@ -462,7 +462,7 @@ function buildRawFaqs(lines) {
 }
 
 const rawFaqs = buildRawFaqs(rawFaqLines);
-const autismPageUrl = "https://manovaidya.org/autism-treatment-india";
+const autismPageUrl = "https://manovaidya.org/autism-treatment-india/";
 const autismTitle = "Autism Treatment in India for Children";
 const autismMetaTitle = `${autismTitle} | Manovaidya`;
 const autismMetaDescription =
@@ -1183,7 +1183,7 @@ const manovaidyaSocialLinks = [
 ];
 
 function FloatingShareBar() {
-  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://www.manovaidya.com/autism-treatment-india";
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://www.manovaidya.com/autism-treatment-india/";
   const pageTitle = autismTitle;
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedTitle = encodeURIComponent(pageTitle);
@@ -1416,7 +1416,7 @@ function AutismTreatmentIndiaPage() {
         title={autismMetaTitle}
         description={autismMetaDescription}
         keywords={autismMetaKeywords}
-        path="/autism-treatment-india"
+        path="/autism-treatment-india/"
         image={childHeroImage}
         schema={autismSchema}
       />

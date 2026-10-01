@@ -18,7 +18,7 @@ const conditionGroups = [
     href: "/child-health-care",
     featuredTitle: "Child Development Care",
     items: [
-      { label: "Autism Spectrum Disorder", href: "/autism-treatment-india" },
+      { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/" },
       { label: "ADHD & Hyperactivity", href: "/child-health-care/adhd-child" },
       { label: "Speech Delay Treatment", href: "/speech-delay-support-india" },
       { label: "Learning Difficulties", href: "/learning-attention-difficulties-india" },

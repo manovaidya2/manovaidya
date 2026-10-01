@@ -35,7 +35,7 @@ const onlineConsultationNote = `Haan, online consultation available hai. Dr. Ank
 
 const serviceReferences = [
   ["Child Health Care", "/child-health-care"],
-  ["Autism Spectrum Disorder", "/autism-treatment-india"],
+  ["Autism Spectrum Disorder", "/autism-treatment-india/"],
   ["ADHD & Hyperactivity", "/child-health-care/adhd-child"],
   ["Speech Delay Treatment", "/speech-delay-support-india"],
   ["Learning Difficulties", "/learning-attention-difficulties-india"],

@@ -655,8 +655,8 @@ const articleLinkRules = [
   { label: "Development Roadmap", href: "/child-development-support-india", pattern: /Development Roadmap/i },
   { label: "Child Development", href: "/child-development-care-india", pattern: /child development/i },
   { label: "Holistic Child Development Services", href: "/child-development-support-india", pattern: /Holistic Child Development Services/i },
-  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
-  { label: "ASD", href: "/autism-treatment-india", pattern: /ASD/i },
+  { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
+  { label: "ASD", href: "/autism-treatment-india/", pattern: /ASD/i },
   { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
   { label: "Learning and Attention", href: "/learning-attention-difficulties-india", pattern: /Learning (?:and|&) Attention/i },
   { label: "Learning Difficulties", href: "/learning-attention-difficulties-india", pattern: /Learning Difficulties/i },
@@ -910,7 +910,7 @@ const whyChoose = [
 ];
 
 const relatedPages = [
-  { title: "Autism Treatment in India", href: "/autism-treatment-india" },
+  { title: "Autism Treatment in India", href: "/autism-treatment-india/" },
   { title: "ADHD Treatment in India", href: "/child-health-care/adhd-child" },
   { title: "Child Development Treatment", href: "/child-development-support-india" },
   { title: "Behavioural Concerns in Children", href: "/behavioural-concerns-children-india" },
@@ -918,7 +918,7 @@ const relatedPages = [
 ];
 
 const internalLinks = [
-  { title: "Learn more about Autism Treatment in India.", href: "/autism-treatment-india" },
+  { title: "Learn more about Autism Treatment in India.", href: "/autism-treatment-india/" },
   { title: "Explore ADHD Treatment in India.", href: "/child-health-care/adhd-child" },
   { title: "Explore our Child Development Support Programs.", href: "/child-development-support-india" },
   { title: "Know more about Dr. Ankush Garg.", href: "/about/doctor" },

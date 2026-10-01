@@ -8,7 +8,7 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 const relatedPages = [
   {
     title: "Autism Treatment in India",
-    href: "/autism-treatment-india",
+    href: "/autism-treatment-india/",
     image: childHeroImage,
   },
   {

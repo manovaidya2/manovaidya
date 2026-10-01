@@ -19,7 +19,7 @@ const concerns = [
     iconColor: "#6043c4",
     iconBg: "#eee6ff",
     linkText: "Explore Autism Treatment",
-    href: "/autism-treatment-india",
+    href: "/autism-treatment-india/",
   },
   {
     title: "ADHD &\nHyperactivity",

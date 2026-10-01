@@ -105,7 +105,7 @@ const articleLinkRules = [
   { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
   { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
   { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
-  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
+  { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
   { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
 ];
 

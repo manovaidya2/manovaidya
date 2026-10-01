@@ -649,7 +649,7 @@ const pageLinks = [
 ];
 
 const categories = [
-  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india" },
+  { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
   { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
   { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
   { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india" },
@@ -679,8 +679,8 @@ const articleLinkRules = [
   { label: "Communication Skills", href: "/speech-delay-support-india", pattern: /Communication Skills/i },
   { label: "Communication", href: "/speech-delay-support-india", pattern: /Communication/i },
   { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
-  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india", pattern: /Autism Spectrum Disorder|ASD/i },
-  { label: "Autism", href: "/autism-treatment-india", pattern: /Autism/i },
+  { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder|ASD/i },
+  { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
   { label: "Learning Challenges", href: "/learning-attention-difficulties-india", pattern: /Learning Challenges/i },
   { label: "Learning Difficulties", href: "/learning-attention-difficulties-india", pattern: /Learning Difficulties/i },
   { label: "Focus Challenges", href: "/learning-attention-difficulties-india", pattern: /Focus Challenges/i },

@@ -2,7 +2,7 @@ export const SITE_URL = "https://manovaidya.org";
 
 export const canonicalPaths = [
   "/",
-  "/autism-treatment-india",
+  "/autism-treatment-india/",
   "/child-health-care/adhd-child",
   "/speech-delay-support-india",
   "/learning-attention-difficulties-india",
