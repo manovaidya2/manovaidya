@@ -1,6 +1,7 @@
 import Blog from '../models/Blog.js';
 import { analyzeBlogSeo, getGeminiConfigStatus } from '../services/aiSeoService.js';
 import { getSearchConsoleConfigStatus, getSearchConsoleMetrics } from '../services/searchConsoleService.js';
+import { runSpecialSeoAudit, runSpecialSeoDeterminismTest } from '../services/specialSeoAuditService.js';
 
 const getBlog = async (id) => {
   const blog = await Blog.findById(id);
@@ -85,5 +86,25 @@ export const getBlogGeminiSeoReview = async (req, res) => {
   } catch (error) {
     console.error('Gemini SEO review error:', error.message);
     res.status(getErrorStatus(error)).json({ success: false, message: error.message, code: error.code || 'GEMINI_SEO_ERROR' });
+  }
+};
+
+export const runSpecialSeoReview = async (req, res) => {
+  try {
+    const result = await runSpecialSeoAudit(req.body?.url || req.query.url);
+    res.json({ success: true, data: result });
+  } catch (error) {
+    console.error('Special SEO audit error:', error);
+    res.status(500).json({ success: false, message: error.message, code: 'SPECIAL_SEO_AUDIT_ERROR' });
+  }
+};
+
+export const runSpecialSeoDeterminismReview = async (req, res) => {
+  try {
+    const result = await runSpecialSeoDeterminismTest(req.body?.url || req.query.url, req.body?.runs || req.query.runs);
+    res.json({ success: true, data: result });
+  } catch (error) {
+    console.error('Special SEO determinism test error:', error);
+    res.status(500).json({ success: false, message: error.message, code: 'SPECIAL_SEO_DETERMINISM_ERROR' });
   }
 };

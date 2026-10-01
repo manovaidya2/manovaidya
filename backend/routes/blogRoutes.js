@@ -9,6 +9,8 @@ const router = express.Router();
 router.post('/blogs', upload.single('image'), blogController.createBlog);
 router.get('/blogs', blogController.getAllBlogs);
 router.get('/seo/integrations/status', seoIntegrationController.getSeoIntegrationStatus);
+router.post('/seo/special-audit', seoIntegrationController.runSpecialSeoReview);
+router.post('/seo/special-audit/determinism', seoIntegrationController.runSpecialSeoDeterminismReview);
 router.get('/blogs/:id/search-console', seoIntegrationController.getBlogSearchPerformance);
 router.post('/blogs/:id/gemini-seo-review', seoIntegrationController.getBlogGeminiSeoReview);
 router.get('/blogs/search', blogController.searchBlogs);
