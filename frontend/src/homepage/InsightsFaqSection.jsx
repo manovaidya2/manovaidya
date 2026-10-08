@@ -4,6 +4,7 @@ import { ArrowRight, CalendarDays, Plus, Sparkles } from "lucide-react";
 import api, { getAssetUrl } from "../api/axiosInstance";
 import BookConsultationButton from "../components/BookConsultationButton";
 import { usePrerenderData } from "../prerenderData";
+import { isPublicBlog } from "../utils/publicContent";
 import childImage from "../images/child.png";
 import boyImage from "../images/boy.png";
 import scienceImage from "../images/science-neuro-ayurveda.png";
@@ -20,52 +21,36 @@ const fallbackImages = [
   nutritionImage,
 ];
 
-const publicTestContentPattern = /(?:\btesting\s+blog\b|\btest\s+blog\b|\bdummy\b|\bdemo\b|lorem\s+ipsum)/i;
-
-const hasPublicTestContent = (blog) =>
-  publicTestContentPattern.test(
-    [
-      blog?.title,
-      blog?.slug,
-      blog?.shortDescription,
-      blog?.metaTitle,
-      blog?.metaDescription,
-      blog?.content,
-    ]
-      .filter(Boolean)
-      .join(" ")
-  );
-
 const fallbackArticles = [
   {
     title: "Understanding Autism & How to Support",
     image: childImage,
-    href: "/blog",
+    href: "/blog/",
   },
   {
     title: "How Gut Health Affects Your Mental Health",
     image: scienceImage,
-    href: "/blog",
+    href: "/blog/",
   },
   {
     title: "Managing Stress Naturally with Ayurveda",
     image: adultImage,
-    href: "/blog",
+    href: "/blog/",
   },
   {
     title: "ADHD in Teens: Signs, Causes & Care",
     image: boyImage,
-    href: "/blog",
+    href: "/blog/",
   },
   {
     title: "Sleep Hygiene Tips for Better Mental Wellbeing",
     image: sleepImage,
-    href: "/blog",
+    href: "/blog/",
   },
   {
     title: "Nutrition & Diet for Brain & Gut Health",
     image: nutritionImage,
-    href: "/blog",
+    href: "/blog/",
   },
 ];
 
@@ -127,7 +112,7 @@ function InsightsFaqSection() {
   const initialBlogs = Array.isArray(prerenderData.blogs)
     ? prerenderData.blogs
         .filter((blog) => !blog.status || blog.status === "published")
-        .filter((blog) => !hasPublicTestContent(blog))
+        .filter(isPublicBlog)
         .slice(0, 6)
     : [];
   const [openIndex, setOpenIndex] = useState(0);
@@ -142,7 +127,7 @@ function InsightsFaqSection() {
         const blogList = Array.isArray(response.data?.data) ? response.data.data : [];
         const publishedBlogs = blogList
           .filter((blog) => !blog.status || blog.status === "published")
-          .filter((blog) => !hasPublicTestContent(blog))
+          .filter(isPublicBlog)
           .slice(0, 6);
 
         if (isMounted) {
@@ -171,7 +156,7 @@ function InsightsFaqSection() {
       title: blog.title,
       image: getAssetUrl(blog.image) || fallbackImages[index % fallbackImages.length],
       alt: blog.imageAlt || blog.title,
-      href: blog.slug ? `/blog/${blog.slug}` : "/blog",
+      href: blog.slug ? `/blog/${blog.slug}/` : "/blog/",
     }));
   }, [blogs]);
 
@@ -186,7 +171,7 @@ function InsightsFaqSection() {
                   Expert Insights & Resources.
                 </h2>
                 <Link
-                  to="/blog"
+                  to="/blog/"
                   className="hidden items-center gap-2 text-[13px] font-black text-[#8B43BA] sm:inline-flex"
                 >
                   View All Articles

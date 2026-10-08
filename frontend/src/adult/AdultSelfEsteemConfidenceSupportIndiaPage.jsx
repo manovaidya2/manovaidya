@@ -25,11 +25,11 @@ import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
 const pageTitle = "Low Self-Esteem & Confidence Support in India";
-const pageUrl = "https://www.manovaidya.com/low-self-esteem-confidence-support-india";
+const pageUrl = "https://manovaidya.org/low-self-esteem-confidence-support-india/";
 const selfEsteemSeoTitle = "Low Self-Esteem & Confidence Support in India | Manovaidya";
 const selfEsteemSeoDescription =
   "Get low self-esteem and confidence support in India. Explore signs, causes, self-worth issues and confidence building with emotional wellbeing guidance.";
-const selfEsteemSeoPageUrl = "https://www.manovaidya.org/low-self-esteem-confidence-support-india";
+const selfEsteemSeoPageUrl = "https://manovaidya.org/low-self-esteem-confidence-support-india/";
 const selfEsteemFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -319,7 +319,7 @@ const articleLinkRules = [
 const categories = [
   { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake, href: "/adult-mental-wellness/" },
   { label: "Self-Esteem & Confidence", count: 12, Icon: Sparkles, href: "/low-self-esteem-confidence-support-india/" },
-  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-treatment-india/" },
+  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-support/" },
   { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
   { label: "Relationship Challenges", count: 9, Icon: Users, href: "/relationship-challenges-support-india/" },
   { label: "Neuro-Ayurveda", count: 10, Icon: Sparkles, href: "#neuro-ayurveda" },
@@ -694,7 +694,7 @@ function KeyTakeawaysBlock() {
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -778,7 +778,7 @@ function AdultSelfEsteemConfidenceSupportIndiaPage() {
         title={selfEsteemSeoTitle}
         description={selfEsteemSeoDescription}
         keywords="Low Self-Esteem Support in India, Confidence Building Support, Self-Doubt Help, Negative Self-Talk, Fear of Failure, Emotional Wellbeing, Self-Worth"
-        path="/low-self-esteem-confidence-support-india"
+        path="/low-self-esteem-confidence-support-india/"
         image={heroImage}
         schema={selfEsteemSeoSchema}
       />
@@ -789,7 +789,7 @@ function AdultSelfEsteemConfidenceSupportIndiaPage() {
             <div className="relative z-10">
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>/</span>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Self-Esteem & Confidence Support</p>
@@ -839,7 +839,7 @@ function AdultSelfEsteemConfidenceSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya self-esteem and confidence clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

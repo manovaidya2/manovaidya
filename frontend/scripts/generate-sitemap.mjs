@@ -1,8 +1,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { getCanonicalUrl } from "../src/utils/canonical.js";
+import { fetchPublishedContent, isIndexable, saveContentSnapshot } from "./seo-content.mjs";
 
-const SITE_URL = "https://manovaidya.org";
-const API_ORIGIN = process.env.VITE_API_ORIGIN || process.env.SITEMAP_API_ORIGIN || "https://api.manovaidya.org";
 const publicDir = path.resolve("public");
 const staticSitemapPath = path.join(publicDir, "sitemap-static.xml");
 const sitemapPath = path.join(publicDir, "sitemap.xml");
@@ -22,53 +22,41 @@ const formatDate = (value) => {
 
 const getFirstDate = (...values) => values.find((value) => value && String(value).trim()) || null;
 
-const fetchJson = async (url) => {
-  const response = await fetch(url, { headers: { Accept: "application/json" } });
-  if (!response.ok) throw new Error(`${url} returned ${response.status}`);
-  return response.json();
-};
-
 const readStaticUrls = async () => {
   const staticXml = await fs.readFile(staticSitemapPath, "utf8");
-  return [...staticXml.matchAll(/<url>[\s\S]*?<\/url>/g)].map((match) => match[0]);
+  const seen = new Set();
+  return [...staticXml.matchAll(/<url>[\s\S]*?<\/url>/g)].flatMap(([entry]) => {
+    const loc = entry.match(/<loc>(.*?)<\/loc>/)?.[1];
+    if (!loc) throw new Error("Static sitemap entry is missing loc");
+    const canonical = getCanonicalUrl(new URL(loc).pathname);
+    if (seen.has(canonical)) return [];
+    seen.add(canonical);
+    return [entry.replace(/<loc>.*?<\/loc>/, `<loc>${escapeXml(canonical)}</loc>`)];
+  });
 };
 
 const buildDynamicUrl = ({ loc, lastmod, priority = "0.7" }) =>
   `  <url><loc>${escapeXml(loc)}</loc><lastmod>${formatDate(lastmod)}</lastmod><changefreq>weekly</changefreq><priority>${priority}</priority></url>`;
 
 const getDynamicUrls = async () => {
-  const [blogsResult, caseStudiesResult] = await Promise.allSettled([
-    fetchJson(`${API_ORIGIN.replace(/\/$/, "")}/api/blogs?status=published`),
-    fetchJson(`${API_ORIGIN.replace(/\/$/, "")}/api/case-studies?status=published`),
-  ]);
-
-  const blogs = blogsResult.status === "fulfilled" && blogsResult.value?.success ? blogsResult.value.data || [] : [];
-  const caseStudies = caseStudiesResult.status === "fulfilled" && caseStudiesResult.value?.success ? caseStudiesResult.value.data || [] : [];
-
-  if (blogsResult.status === "rejected") {
-    console.warn(`Blog sitemap fetch failed: ${blogsResult.reason.message}`);
-  }
-  if (caseStudiesResult.status === "rejected") {
-    console.warn(`Case-study sitemap fetch failed: ${caseStudiesResult.reason.message}`);
-  }
+  const content = await fetchPublishedContent();
+  await saveContentSnapshot(content);
+  const { blogs, caseStudies } = content;
 
   const blogUrls = blogs
-    .filter((blog) => blog?.slug)
-    .filter((blog) => !String(blog.robots || "").startsWith("noindex"))
-    .filter((blog) => blog.showOnFrontend !== false)
+    .filter(isIndexable)
     .map((blog) =>
       buildDynamicUrl({
-        loc: `${SITE_URL}/blog/${blog.slug}`,
+        loc: getCanonicalUrl(`/blog/${blog.slug}`),
         lastmod: getFirstDate(blog.updatedAt, blog.createdAt, blog.date),
       })
     );
 
   const caseStudyUrls = caseStudies
-    .filter((study) => study?.slug)
-    .filter((study) => !String(study.robots || "").startsWith("noindex"))
+    .filter(isIndexable)
     .map((study) =>
       buildDynamicUrl({
-        loc: `${SITE_URL}/case-studies/${study.slug}`,
+        loc: getCanonicalUrl(`/case-studies/${study.slug}`),
         lastmod: getFirstDate(study.updatedAt, study.createdAt),
       })
     );

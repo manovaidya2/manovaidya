@@ -11,7 +11,7 @@ function BlogPage() {
         title="Manovaidya Blog | Child Development & Mental Health Articles"
         description="Read Manovaidya's evidence-informed articles on child development, mental health and Neuro-Ayurveda to help families make informed wellbeing choices."
         keywords="Manovaidya blog, child development articles, mental health blog India, Neuro-Ayurveda articles, autism ADHD blog, parenting resources, family wellbeing articles, Ayurveda mental health insights, evidence-informed health content, child psychology blog"
-        path="/blog"
+        path="/blog/"
         schema={{
           "@context": "https://schema.org",
           "@type": "Blog",

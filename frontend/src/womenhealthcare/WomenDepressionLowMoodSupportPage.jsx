@@ -320,24 +320,24 @@ const references = referencesRaw
   .filter((reference) => reference.n);
 
 const articleLinkRules = [
-  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care" },
-  { pattern: /\bDepression & Low Mood\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\blow mood\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\bStress & Anxiety\b/i, href: "/women-stress-anxiety-support-india" },
-  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india" },
-  { pattern: /\bemotional burnout\b/i, href: "/women-stress-management-mind-body-balance-india" },
-  { pattern: /\bsleep problems\b/i, href: "/women-sleep-disorders-support-india" },
-  { pattern: /\bpoor sleep\b/i, href: "/women-sleep-disorders-support-india" },
-  { pattern: /\brelationship challenges\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
+  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care/" },
+  { pattern: /\bDepression & Low Mood\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\blow mood\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\bStress & Anxiety\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bemotional burnout\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bsleep problems\b/i, href: "/women-mental-health-care-india/#common-womens-mental-health-concerns" },
+  { pattern: /\bpoor sleep\b/i, href: "/women-mental-health-care-india/#common-womens-mental-health-concerns" },
+  { pattern: /\brelationship challenges\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
   { pattern: /\bSelf-Esteem\b/i, href: "/self-esteem-confidence-support-india" },
   { pattern: /\bgrief\b/i, href: "/grief-bereavement-support-india" },
-  { pattern: /\bPregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bpostpartum\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bmenopause\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bhormonal changes\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
-  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { pattern: /\bPregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bpostpartum\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bmenopause\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bhormonal changes\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor/" },
+  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach/" },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -800,7 +800,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -876,7 +876,7 @@ function WomenDepressionLowMoodSupportPage() {
         title={seoTitle} 
         description="Looking for Depression & Low Mood Treatment for Women in India? Learn about persistent sadness, loss of interest, emotional wellbeing, women's mental health and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="Depression in Women, Women's Depression, Low Mood in Women, Women's Mental Health, Depression Treatment for Women, Persistent Sadness, Emotional Wellbeing, Mental Health for Women, Depression Support India, Loss of Interest, Low Motivation, Emotional Exhaustion, Feeling Empty, Hormonal Depression, Sleep & Depression, Depression & Relationships, Emotional Burnout" 
-        path="/women-depression-low-mood-support-india"
+        path="/women-depression-low-mood-support-india/"
         schema={womenDepressionSeoSchema}
       />
 
@@ -887,7 +887,7 @@ function WomenDepressionLowMoodSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8B43BA]">Home</a>
                 <span>/</span>
-                <a href="/women-health-care" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
+                <a href="/women-health-care/" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Depression & Low Mood</span>
               </nav>
@@ -1033,7 +1033,7 @@ function WomenDepressionLowMoodSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya women's mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">

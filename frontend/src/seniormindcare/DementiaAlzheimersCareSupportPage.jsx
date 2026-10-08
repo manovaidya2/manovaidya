@@ -21,7 +21,7 @@ import RelatedSeniorMindCarePages from "./RelatedSeniorMindCarePages";
 import Seo from "../components/Seo";
 
 const pageTitle = "Dementia & Alzheimer's Care Treatment for Seniors in India";
-const pageUrl = "https://www.manovaidya.com/dementia-alzheimers-care-support-seniors-india";
+const pageUrl = "https://manovaidya.org/dementia-alzheimers-care-support-seniors-india/";
 const seoTitle = "Dementia & Alzheimer�s in Seniors: Care & Support in India";
 const seoPageUrl = "https://manovaidya.org/dementia-alzheimers-care-support-seniors-india/";
 
@@ -887,22 +887,22 @@ const articleLinkRules = [
   { href: "#common-signs-symptoms", pattern: /Cognitive Decline in Older Adults/i },
   { href: "#maintaining-independence", pattern: /independence/i },
   { href: "#supporting-brain-function", pattern: /healthy cognitive ageing/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /sleep/i },
-  { href: "/senior-anxiety-support-india/", pattern: /anxiety/i },
-  { href: "/caregiver-support-india/", pattern: /Family Caregiver Support/i },
-  { href: "/senior-mental-health-care/", pattern: /Senior Cognitive Health Guidance/i },
-  { href: "/about/approach", pattern: /Neuro[-s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr.?s+Ankushs+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /sleep/i },
+  { href: "/senior-mental-health-care-india/#common-senior-mental-health-concerns", pattern: /anxiety/i },
+  { href: "/senior-mental-health-care-india/#how-we-support-older-adults", pattern: /Family Caregiver Support/i },
+  { href: "/senior-mental-health-care-india/", pattern: /Senior Cognitive Health Guidance/i },
+  { href: "/about/approach/", pattern: /Neuro[-s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr.?s+Ankushs+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#professional-guidance", pattern: /professional guidance/i },
 ];
 
 const categories = [
-  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care/" },
+  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care-india/" },
   { label: "Dementia Care", count: 10, Icon: Brain, href: "/dementia-alzheimers-care-support-seniors-india/" },
   { label: "Alzheimer's Awareness", count: 8, Icon: ShieldCheck, href: "#alzheimers-disease" },
   { label: "Healthy Ageing", count: 11, Icon: Sparkles, href: "#supporting-brain-function" },
-  { label: "Caregiver Support", count: 9, Icon: Users, href: "/caregiver-support-india/" },
+  { label: "Caregiver Support", count: 9, Icon: Users, href: "/senior-mental-health-care-india/#how-we-support-older-adults" },
   { label: "Cognitive Wellbeing", count: 13, Icon: Activity, href: "#common-signs-symptoms" },
 ];
 
@@ -1215,7 +1215,7 @@ function KeyTakeawaysBlock() {
             <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
-          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
         </div>
       </div>
     </section>
@@ -1285,7 +1285,7 @@ function DementiaAlzheimersCareSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={seoTitle} description="Looking for Dementia & Alzheimer's Care Treatment for Seniors in India? Learn about symptoms, stages, causes, family caregiving, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Dementia Care India, Alzheimer's Disease Support, Senior Dementia Support, Memory Loss Care, Cognitive Decline, Family Caregiver Support, Neuro-Ayurveda Dementia Care, Dr. Ankush Garg, Senior Mental Health" path="/dementia-alzheimers-care-support-seniors-india" schema={dementiaSeoSchema} />
+      <Seo title={seoTitle} description="Looking for Dementia & Alzheimer's Care Treatment for Seniors in India? Learn about symptoms, stages, causes, family caregiving, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Dementia Care India, Alzheimer's Disease Support, Senior Dementia Support, Memory Loss Care, Cognitive Decline, Family Caregiver Support, Neuro-Ayurveda Dementia Care, Dr. Ankush Garg, Senior Mental Health" path="/dementia-alzheimers-care-support-seniors-india/" schema={dementiaSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1293,7 +1293,7 @@ function DementiaAlzheimersCareSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
+                <a href="/senior-mind-memory-care/" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Dementia & Alzheimer's Care Treatment</span>
               </nav>
@@ -1347,7 +1347,7 @@ function DementiaAlzheimersCareSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya senior senior mind care clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

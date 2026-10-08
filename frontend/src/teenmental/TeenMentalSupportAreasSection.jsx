@@ -17,7 +17,7 @@ const supportAreas = [
     action: "Explore Stress Support",
     Icon: Brain,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/teen-stress-anxiety-support",
+    href: "/teen-stress-anxiety-support/",
   },
   {
     title: "Depression &\nLow Mood",
@@ -26,7 +26,7 @@ const supportAreas = [
     action: "Explore Depression Support",
     Icon: CloudRain,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/teen-depression-support",
+    href: "/teen-depression-support/",
   },
   {
     title: "Exam & Academic\nPressure",
@@ -35,7 +35,7 @@ const supportAreas = [
     action: "Explore Exam Support",
     Icon: GraduationCap,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/exam-performance-pressure",
+    href: "/exam-performance-pressure/",
   },
   {
     title: "Low Confidence &\nSelf-Esteem",
@@ -44,7 +44,7 @@ const supportAreas = [
     action: "Explore Confidence Support",
     Icon: UserRound,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/teen-confidence-emotional-wellbeing",
+    href: "/teen-confidence-emotional-wellbeing/",
   },
   {
     title: "Screen Addiction &\nDigital Wellbeing",
@@ -53,7 +53,7 @@ const supportAreas = [
     action: "Explore Digital Wellbeing",
     Icon: Phone,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/teen-screen-addiction-support",
+    href: "/teen-screen-addiction-support/",
   },
   {
     title: "Parent-Teen\nRelationship Support",
@@ -62,7 +62,7 @@ const supportAreas = [
     action: "Explore Relationship Support",
     Icon: UsersRound,
     iconClass: "bg-[#8B43BA]/10 text-[#8B43BA]",
-    href: "/parent-teen-relationship-support",
+    href: "/parent-teen-relationship-support/",
   },
 ];
 

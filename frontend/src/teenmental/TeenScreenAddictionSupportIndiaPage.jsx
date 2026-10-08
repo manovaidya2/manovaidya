@@ -33,7 +33,7 @@ import Seo from "../components/Seo";
 const teenScreenSeoTitle = "Teen Screen Addiction Treatment in India | Manovaidya";
 const teenScreenSeoDescription =
   "Looking for Teen Screen Addiction Support in India? Learn about mobile addiction, gaming addiction, social media dependency, screen time concerns and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
-const teenScreenSeoPageUrl = "https://manovaidya.org/teen-screen-addiction-support";
+const teenScreenSeoPageUrl = "https://manovaidya.org/teen-screen-addiction-support/";
 
 const articleRaw = `Key Takeaways
 - Understanding Screen Addiction in Teenagers
@@ -453,15 +453,15 @@ const articleLinkRules = [
   { label: "Family Media Plan", href: "#how-parents-can-help", pattern: /Family Media Plan/i },
   { label: "Parent Guidance", href: "#how-parents-can-help", pattern: /Parent Guidance/i },
   { label: "Family Support", href: "/parent-teen-relationship-support/", pattern: /Family Support/i },
-  { label: "Teen Mental Wellness", href: "/teen-mental-wellness-india/", pattern: /Teen Mental Wellness/i },
+  { label: "Teen Mental Wellness", href: "/teen-mental-wellness/", pattern: /Teen Mental Wellness/i },
   { label: "Emotional Wellbeing", href: "#how-it-affects", pattern: /Emotional Wellbeing/i },
-  { label: "Academic Pressure", href: "/exam-performance-pressure", pattern: /Academic Pressure/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Neuro-Ayurveda", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
-  { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
+  { label: "Academic Pressure", href: "/exam-performance-pressure/", pattern: /Academic Pressure/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Neuro-Ayurveda", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
+  { label: "Child Development", href: "/child-development-support-india/", pattern: /Child Development/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
 ];
 
@@ -836,7 +836,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -980,7 +980,7 @@ function ArticleVisualBlock({ heading }) {
         <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
         <div>
           <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" /></a>
+          <a href="/about/doctor/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" /></a>
         </div>
       </div>
     );
@@ -1069,7 +1069,7 @@ function TeenScreenAddictionSupportIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
-  const pageUrl = "https://manovaidya.org/teen-screen-addiction-support";
+  const pageUrl = "https://manovaidya.org/teen-screen-addiction-support/";
   const pageTitle = "Teen Screen Addiction Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
@@ -1147,7 +1147,7 @@ function TeenScreenAddictionSupportIndiaPage() {
         title={teenScreenSeoTitle}
         description={teenScreenSeoDescription}
         keywords="Teen Screen Addiction India, Mobile Addiction Treatment, Gaming Addiction in Teens, Social Media Addiction Support, Excessive Screen Time, Teenage Digital Detox, Parent Guidance for Screen Addiction, Neuro-Ayurveda Addiction Care, Dr. Ankush Garg"
-        path="/teen-screen-addiction-support"
+        path="/teen-screen-addiction-support/"
         schema={teenScreenSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1157,7 +1157,7 @@ function TeenScreenAddictionSupportIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/teen-mental-wellness-india/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
+                <a href="/teen-mental-wellness/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Teen Screen Addiction Treatment</span>
               </nav>
@@ -1232,7 +1232,7 @@ function TeenScreenAddictionSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img
                 src={doctorImage}
                 alt="Dr Ankush Garg Manovaidya teen screen addiction digital wellbeing clinician"

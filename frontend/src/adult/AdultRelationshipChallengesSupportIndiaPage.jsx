@@ -28,11 +28,11 @@ import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
 const pageTitle = "Relationship Challenges & Emotional Wellbeing Support in India";
-const pageUrl = "https://www.manovaidya.com/relationship-challenges-support-india";
+const pageUrl = "https://manovaidya.org/relationship-challenges-support-india/";
 const relationshipSeoTitle = "Relationship Challenges & Emotional Support in India | Manovaidya";
 const relationshipSeoDescription =
   "Looking for Relationship Challenges Support in India? Learn about relationship problems, communication difficulties, trust issues, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.";
-const relationshipSeoPageUrl = "https://www.manovaidya.org/relationship-challenges-support-india";
+const relationshipSeoPageUrl = "https://manovaidya.org/relationship-challenges-support-india/";
 const relationshipFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -699,12 +699,12 @@ const articleLinkRules = [
   { href: "#mental-health-impact", pattern: /emotional wellbeing/i },
   { href: "/stress-burnout-support-india/", pattern: /stress/i },
   { href: "/anxiety-support-india/", pattern: /anxiety/i },
-  { href: "/depression-treatment-india/", pattern: /depression/i },
+  { href: "/adult-depression-support/", pattern: /depression/i },
   { href: "/low-self-esteem-confidence-support-india/", pattern: /self-esteem/i },
   { href: "/sleep-disorders-insomnia-support-india/", pattern: /sleep/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#assessment", pattern: /professional guidance/i },
   { href: "#book-consultation", pattern: /Schedule an assessment/i },
 ];
@@ -713,7 +713,7 @@ const categories = [
   { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake, href: "/adult-mental-wellness/" },
   { label: "Relationship Challenges", count: 9, Icon: Users, href: "/relationship-challenges-support-india/" },
   { label: "Self-Esteem & Confidence", count: 12, Icon: Sparkles, href: "/low-self-esteem-confidence-support-india/" },
-  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-treatment-india/" },
+  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-support/" },
   { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
   { label: "Neuro-Ayurveda", count: 10, Icon: Sparkles, href: "#neuro-ayurveda-system" },
 ];
@@ -1111,7 +1111,7 @@ function KeyTakeawaysBlock() {
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -1189,7 +1189,7 @@ function AdultRelationshipChallengesSupportIndiaPage() {
         title={relationshipSeoTitle}
         description={relationshipSeoDescription}
         keywords="Relationship Challenges Support, Relationship Problems, Communication Difficulties, Trust Issues, Emotional Distance, Relationship Stress, Couple Communication, Emotional Wellbeing"
-        path="/relationship-challenges-support-india"
+        path="/relationship-challenges-support-india/"
         image={heroImage}
         schema={relationshipSeoSchema}
       />
@@ -1201,7 +1201,7 @@ function AdultRelationshipChallengesSupportIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Relationship Challenges Support</span>
               </nav>
@@ -1259,7 +1259,7 @@ function AdultRelationshipChallengesSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya relationship wellbeing clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

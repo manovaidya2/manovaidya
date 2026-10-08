@@ -109,7 +109,7 @@ function CaseStudiesPage() {
 
     const fetchCaseStudies = async () => {
       try {
-        const { data } = await api.get("/case-studies?status=published");
+        const { data } = await api.get("/case-studies/?status=published");
         if (!data.success) {
           throw new Error(data.message || "Unable to load case studies.");
         }
@@ -152,7 +152,7 @@ function CaseStudiesPage() {
         title="Case Studies | Real Care Journeys & Outcomes | Manovaidya"
         description="Browse Manovaidya case studies on autism, speech delay and teen wellness, showing how personalised Neuro-Ayurveda care plans support real family outcomes."
         keywords="Manovaidya case studies, autism case study, speech delay case study, teen mental wellness case study, child development case studies, Neuro-Ayurveda care journeys, personalised care plans, ADHD case study, family care outcomes, real patient case studies"
-        path="/case-studies"
+        path="/case-studies/"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
@@ -236,7 +236,7 @@ function CaseStudiesPage() {
                 </h2>
               </div>
               <Link
-                to="/success-stories"
+                to="/success-stories/"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-violet-200 bg-white px-4 text-[12px] font-extrabold text-[#8b43ba] transition hover:border-[#8b43ba] hover:bg-violet-50"
               >
                 See Success Stories
@@ -288,7 +288,7 @@ function CaseStudiesPage() {
                     </div>
                     <h3 className="mt-3 text-[17px] font-extrabold leading-[1.25] text-[#17201c]">
                       {study.slug ? (
-                        <Link to={`/case-studies/${study.slug}`} className="transition hover:text-[#8b43ba]">
+                        <Link to={`/case-studies/${study.slug}/`} className="transition hover:text-[#8b43ba]">
                           {study.title}
                         </Link>
                       ) : study.title}
@@ -297,7 +297,7 @@ function CaseStudiesPage() {
                       {study.summary}
                     </p>
                     {study.slug ? (
-                      <Link to={`/case-studies/${study.slug}`} className="mt-4 inline-flex text-[12px] font-black text-[#8b43ba]">
+                      <Link to={`/case-studies/${study.slug}/`} className="mt-4 inline-flex text-[12px] font-black text-[#8b43ba]">
                         Read Case Study
                       </Link>
                     ) : null}

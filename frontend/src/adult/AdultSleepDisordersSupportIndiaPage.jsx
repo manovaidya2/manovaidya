@@ -30,11 +30,11 @@ import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
 const pageTitle = "Sleep Disorders & Insomnia Treatment in India";
-const pageUrl = "https://www.manovaidya.com/sleep-disorders-insomnia-support-india";
+const pageUrl = "https://manovaidya.org/sleep-disorders-insomnia-support-india/";
 const sleepDisordersSeoTitle = "Sleep Disorders & Insomnia Treatment in India | Manovaidya";
 const sleepDisordersSeoDescription =
   "Looking for insomnia treatment in India or help for difficulty sleeping at night? Explore support for poor sleep, sleep disorders, and healthy sleep with Manovaidya.";
-const sleepDisordersSeoPageUrl = "https://manovaidya.org/sleep-disorders-insomnia-support-india";
+const sleepDisordersSeoPageUrl = "https://manovaidya.org/sleep-disorders-insomnia-support-india/";
 const sleepDisordersFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -315,11 +315,11 @@ const articleLinkRules = [
   { href: "/sleep-disorders-insomnia-support-india/", pattern: /Poor Sleep Quality/i },
   { href: "/stress-burnout-support-india/", pattern: /stress/i },
   { href: "/anxiety-support-india/", pattern: /anxiety/i },
-  { href: "/depression-treatment-india/", pattern: /depression/i },
+  { href: "/adult-depression-support/", pattern: /depression/i },
   { href: "/adult-mental-health-care-india/", pattern: /Adult Mental Health/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#sleep-habits", pattern: /Healthy Sleep Habits/i },
   { href: "#sleep-habits", pattern: /Sleep Hygiene/i },
   { href: "#daily-life-impact", pattern: /emotional wellbeing/i },
@@ -330,7 +330,7 @@ const categories = [
   { label: "Sleep Disorders", count: 12, Icon: BedDouble, href: "/sleep-disorders-insomnia-support-india/" },
   { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
   { label: "Anxiety Support", count: 14, Icon: Brain, href: "/anxiety-support-india/" },
-  { label: "Depression Support", count: 13, Icon: Activity, href: "/depression-treatment-india/" },
+  { label: "Depression Support", count: 13, Icon: Activity, href: "/adult-depression-support/" },
   { label: "Work-Life Balance", count: 9, Icon: Briefcase, href: "/stress-burnout-support-india/#manage-stress" },
 ];
 
@@ -751,7 +751,7 @@ function KeyTakeawaysBlock() {
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -835,7 +835,7 @@ function AdultSleepDisordersSupportIndiaPage() {
         title={sleepDisordersSeoTitle}
         description={sleepDisordersSeoDescription}
         keywords="Sleep Disorders Treatment in India, Insomnia Support, Poor Sleep Quality, Difficulty Sleeping, Sleep Hygiene, Healthy Sleep Habits, Daytime Fatigue, Sleep and Mental Health"
-        path="/sleep-disorders-insomnia-support-india"
+        path="/sleep-disorders-insomnia-support-india/"
         image={heroImage}
         schema={sleepDisordersSeoSchema}
       />
@@ -846,7 +846,7 @@ function AdultSleepDisordersSupportIndiaPage() {
             <div className="relative z-10">
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>/</span>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Sleep Disorders & Insomnia Support</p>
@@ -896,7 +896,7 @@ function AdultSleepDisordersSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya sleep disorders clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

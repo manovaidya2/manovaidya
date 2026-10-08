@@ -22,7 +22,7 @@ const careStages = [
     image: childImage,
     Icon: HeartPulse,
     color: "violet",
-    link: "/child-health-care",
+    link: "/child-health-care/",
     description:
       "Supporting children's growth, development and emotional wellbeing",
     items: [
@@ -39,7 +39,7 @@ const careStages = [
     image: boyImage,
     Icon: UserRound,
     color: "emerald",
-    link: "/teen-mental-wellness",
+    link: "/teen-mental-wellness/",
     description:
       "Guiding teenagers towards emotional balance, confidence and a positive future",
     items: [
@@ -56,7 +56,7 @@ const careStages = [
     image: adultImage,
     Icon: Brain,
     color: "sky",
-    link: "/adult-mental-wellness",
+    link: "/adult-mental-wellness/",
     description:
       "Compassionate care for stress, anxiety, emotional challenges and life balance",
     items: [
@@ -73,7 +73,7 @@ const careStages = [
     image: seniorImage,
     Icon: ShieldCheck,
     color: "orange",
-    link: "/senior-mind-memory-care",
+    link: "/senior-mind-memory-care/",
     description:
       "Supporting healthy ageing, memory, cognitive strength and emotional wellbeing",
     items: [
@@ -90,7 +90,7 @@ const careStages = [
     image: womenImage,
     Icon: Sparkles,
     color: "pink",
-    link: "/women-health-care",
+    link: "/women-health-care/",
     description:
       "Empowering women through every phase of life with care and understanding",
     items: [
@@ -107,7 +107,7 @@ const careStages = [
     image: mindBodyImage,
     Icon: Leaf,
     color: "green",
-    link: "/mind-body-wellbeing",
+    link: "/mind-body-wellbeing/",
     description:
       "Holistic support for physical symptoms linked with stress and emotional health",
     items: [

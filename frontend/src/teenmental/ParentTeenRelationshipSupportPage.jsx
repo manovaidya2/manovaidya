@@ -27,7 +27,7 @@ import Seo from "../components/Seo";
 const parentTeenSeoTitle = "Parent-Teen Relationship Support in India | Manovaidya";
 const parentTeenSeoDescription =
   "Looking for Parent-Teen Relationship Support in India? Learn about teenage behaviour, communication challenges, trust building and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
-const parentTeenSeoPageUrl = "https://manovaidya.org/parent-teen-relationship-support";
+const parentTeenSeoPageUrl = "https://manovaidya.org/parent-teen-relationship-support/";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -91,22 +91,22 @@ const articleLinkRules = [
   { label: "Emotional Connection", href: "#introduction", pattern: /Emotional Connection/i },
   { label: "Trust Building", href: "#how-parents-can-build-stronger-relationships-with-teenagers", pattern: /Trust Building/i },
   { label: "Communication Challenges", href: "#common-parent-teen-relationship-challenges", pattern: /Communication Challenges/i },
-  { label: "Academic Pressure", href: "/exam-performance-pressure", pattern: /Academic Pressure/i },
+  { label: "Academic Pressure", href: "/exam-performance-pressure/", pattern: /Academic Pressure/i },
   { label: "Screen Addiction", href: "/teen-screen-addiction-support/", pattern: /Screen Addiction/i },
   { label: "Screen Use", href: "/teen-screen-addiction-support/", pattern: /Screen Use/i },
   { label: "Social Media", href: "/teen-screen-addiction-support/", pattern: /Social Media/i },
   { label: "Teen Stress & Anxiety", href: "/teen-stress-anxiety-support/", pattern: /Teen Stress (?:&|and) Anxiety/i },
   { label: "Teen Depression", href: "/teen-depression-support/", pattern: /Teen Depression/i },
   { label: "Teen Confidence", href: "/teen-confidence-emotional-wellbeing/", pattern: /Teen Confidence/i },
-  { label: "Teen Mental Wellness", href: "/teen-mental-wellness-india/", pattern: /Teen Mental Wellness/i },
-  { label: "Mental Health", href: "/teen-mental-wellness-india/", pattern: /Mental Health/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Neuro-Ayurveda", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
-  { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
+  { label: "Teen Mental Wellness", href: "/teen-mental-wellness/", pattern: /Teen Mental Wellness/i },
+  { label: "Mental Health", href: "/teen-mental-wellness/", pattern: /Mental Health/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Neuro-Ayurveda", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
+  { label: "Child Development", href: "/child-development-support-india/", pattern: /Child Development/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -828,7 +828,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -956,12 +956,12 @@ const subheadingLines = new Set([
 ]);
 
 const internalLinks = [
-  { text: "Learn more about Teen Mental Wellness Treatment.", href: "/teen-mental-wellness-india/" },
+  { text: "Learn more about Teen Mental Wellness Treatment.", href: "/teen-mental-wellness/" },
   { text: "Explore Teen Stress & Anxiety Treatment.", href: "/teen-stress-anxiety-support/" },
   { text: "Learn about Teen Depression & Low Mood Treatment.", href: "/teen-depression-support/" },
   { text: "Explore Teen Confidence & Emotional Wellbeing Support.", href: "/teen-confidence-emotional-wellbeing/" },
   { text: "Understand Teen Screen Addiction Treatment.", href: "/teen-screen-addiction-support/" },
-  { text: "Know more about Dr. Ankush Garg.", href: "/dr-ankush-garg/" },
+  { text: "Know more about Dr. Ankush Garg.", href: "/about/doctor/" },
 ];
 
 function ContentLine({ line, onCitationClick, allowedRuleKeys }) {
@@ -1071,7 +1071,7 @@ function ParentTeenRelationshipSupportPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
-  const pageUrl = "https://manovaidya.org/parent-teen-relationship-support";
+  const pageUrl = "https://manovaidya.org/parent-teen-relationship-support/";
   const pageTitle = "Parent-Teen Relationship Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
@@ -1176,7 +1176,7 @@ function ParentTeenRelationshipSupportPage() {
         title={parentTeenSeoTitle}
         description={parentTeenSeoDescription}
         keywords="Parent Teen Relationship Support, Parent Teen Relationship Treatment in India, Teen Behaviour Support, Teen Communication Problems, Teen Behaviour Problems, Teen Relationship With Parents, Teen Parenting Support, Family Relationship Support, Teenage Anger, Teenage Attitude Problems, Parent Child Communication, Parent Teen Trust Issues, Teen Emotional Support, Teen Behaviour Challenges, Parenting Teenagers, Teen Family Problems"
-        path="/parent-teen-relationship-support"
+        path="/parent-teen-relationship-support/"
         schema={medicalWebPageSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1186,7 +1186,7 @@ function ParentTeenRelationshipSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/teen-mental-wellness-india/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
+                <a href="/teen-mental-wellness/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Parent-Teen Relationship Support</span>
               </nav>
@@ -1301,7 +1301,7 @@ function ParentTeenRelationshipSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img
                 src={doctorImage}
                 alt="Dr Ankush Garg Manovaidya parent teen relationship family guidance clinician"

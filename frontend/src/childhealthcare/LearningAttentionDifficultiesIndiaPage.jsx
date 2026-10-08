@@ -24,7 +24,7 @@ import Seo from "../components/Seo";
 const learningAttentionSeoTitle = "Learning Assessment & Child Development Support in India";
 const learningAttentionSeoDescription =
   "Get expert learning assessment for children, attention support for kids, and child development guidance in India at Manovaidya.";
-const learningAttentionSeoPageUrl = "https://manovaidya.org/learning-attention-difficulties-india";
+const learningAttentionSeoPageUrl = "https://manovaidya.org/learning-attention-difficulties-india/";
 
 const learningAttentionFaqSchema = {
   "@type": "FAQPage",
@@ -649,22 +649,22 @@ const pageLinks = [
 
 const categories = [
   { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
-  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
-  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
-  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india" },
-  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india" },
+  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child/" },
+  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india/" },
+  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india/" },
+  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india/" },
   { label: "Parenting", count: 9, Icon: Users, href: "#parent-and-family-support" },
 ];
 
 const internalLinks = [
-  { title: "Child Development Care in India", href: "/child-development-care-india" },
-  { title: "Child Development Support", href: "/child-development-support-india" },
-  { title: "ADHD Treatment in India", href: "/child-health-care/adhd-child" },
+  { title: "Child Development Care in India", href: "/child-development-care-india/" },
+  { title: "Child Development Support", href: "/child-development-support-india/" },
+  { title: "ADHD Treatment in India", href: "/child-health-care/adhd-child/" },
   { title: "Autism Treatment in India", href: "/autism-treatment-india/" },
-  { title: "Speech Delay & Communication Support", href: "/speech-delay-support-india" },
-  { title: "Behavioural Concerns in Children", href: "/behavioural-concerns-children-india" },
-  { title: "About Manovaidya", href: "/about/manovaidya" },
-  { title: "Neuro-Ayurveda Development System", href: "/about/approach" },
+  { title: "Speech Delay & Communication Support", href: "/speech-delay-support-india/" },
+  { title: "Behavioural Concerns in Children", href: "/behavioural-concerns-children-india/" },
+  { title: "About Manovaidya", href: "/about/manovaidya/" },
+  { title: "Neuro-Ayurveda Development System", href: "/about/approach/" },
 ];
 
 const articleLinkRules = [
@@ -679,48 +679,48 @@ const articleLinkRules = [
   { label: "Learning Readiness", href: "#supporting-learning-attention-needs", pattern: /Learning Readiness/i, maxPerPage: 3 },
   { label: "Learning Challenges", href: "#learning-challenges-and-processing-skills", pattern: /Learning Challenges/i, maxPerPage: 3 },
   { label: "Learning Support", href: "#supporting-learning-attention-needs", pattern: /Learning Support/i, maxPerPage: 3 },
-  { label: "Child Development Support", href: "/child-development-support-india", pattern: /Child Development Support/i, maxPerPage: 4 },
-  { label: "Child Development Care", href: "/child-development-care-india", pattern: /Child Development Care/i, maxPerPage: 3 },
-  { label: "Child Development", href: "/child-development-care-india", pattern: /Child Development/i, maxPerPage: 5 },
-  { label: "Developmental Support", href: "/child-development-support-india", pattern: /Developmental Support/i, maxPerPage: 4 },
-  { label: "Developmental Assessment", href: "/child-development-support-india", pattern: /Developmental Assessment/i, maxPerPage: 3 },
-  { label: "Developmental Milestones", href: "/child-development-care-india", pattern: /Developmental Milestones/i, maxPerPage: 3 },
-  { label: "Developmental Progress", href: "/child-development-support-india", pattern: /Developmental Progress/i, maxPerPage: 3 },
-  { label: "Speech Delay", href: "/speech-delay-support-india", pattern: /Speech Delay/i, maxPerPage: 4 },
-  { label: "Communication Skills", href: "/speech-delay-support-india", pattern: /Communication Skills/i, maxPerPage: 3 },
-  { label: "Communication", href: "/speech-delay-support-india", pattern: /Communication/i, maxPerPage: 5 },
-  { label: "Speech", href: "/speech-delay-support-india", pattern: /Speech/i, maxPerPage: 3 },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i, maxPerPage: 5 },
+  { label: "Child Development Support", href: "/child-development-support-india/", pattern: /Child Development Support/i, maxPerPage: 4 },
+  { label: "Child Development Care", href: "/child-development-care-india/", pattern: /Child Development Care/i, maxPerPage: 3 },
+  { label: "Child Development", href: "/child-development-care-india/", pattern: /Child Development/i, maxPerPage: 5 },
+  { label: "Developmental Support", href: "/child-development-support-india/", pattern: /Developmental Support/i, maxPerPage: 4 },
+  { label: "Developmental Assessment", href: "/child-development-support-india/", pattern: /Developmental Assessment/i, maxPerPage: 3 },
+  { label: "Developmental Milestones", href: "/child-development-care-india/", pattern: /Developmental Milestones/i, maxPerPage: 3 },
+  { label: "Developmental Progress", href: "/child-development-support-india/", pattern: /Developmental Progress/i, maxPerPage: 3 },
+  { label: "Speech Delay", href: "/speech-delay-support-india/", pattern: /Speech Delay/i, maxPerPage: 4 },
+  { label: "Communication Skills", href: "/speech-delay-support-india/", pattern: /Communication Skills/i, maxPerPage: 3 },
+  { label: "Communication", href: "/speech-delay-support-india/", pattern: /Communication/i, maxPerPage: 5 },
+  { label: "Speech", href: "/speech-delay-support-india/", pattern: /Speech/i, maxPerPage: 3 },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i, maxPerPage: 5 },
   { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder|ASD/i, maxPerPage: 3 },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i, maxPerPage: 5 },
-  { label: "Behavioural Concerns", href: "/behavioural-concerns-children-india", pattern: /Behavioural Concerns/i, maxPerPage: 4 },
-  { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioural Challenges/i, maxPerPage: 4 },
-  { label: "Behavioral Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioral Challenges/i, maxPerPage: 3 },
-  { label: "Behaviour", href: "/behavioural-concerns-children-india", pattern: /Behaviour/i, maxPerPage: 5 },
-  { label: "Behavior", href: "/behavioural-concerns-children-india", pattern: /Behavior/i, maxPerPage: 3 },
+  { label: "Behavioural Concerns", href: "/behavioural-concerns-children-india/", pattern: /Behavioural Concerns/i, maxPerPage: 4 },
+  { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india/", pattern: /Behavioural Challenges/i, maxPerPage: 4 },
+  { label: "Behavioral Challenges", href: "/behavioural-concerns-children-india/", pattern: /Behavioral Challenges/i, maxPerPage: 3 },
+  { label: "Behaviour", href: "/behavioural-concerns-children-india/", pattern: /Behaviour/i, maxPerPage: 5 },
+  { label: "Behavior", href: "/behavioural-concerns-children-india/", pattern: /Behavior/i, maxPerPage: 3 },
   { label: "Parent Support", href: "#parent-and-family-support", pattern: /Parent Support/i, maxPerPage: 3 },
   { label: "Parental Support", href: "#parent-and-family-support", pattern: /Parental Support/i, maxPerPage: 3 },
   { label: "Family Support", href: "#parent-and-family-support", pattern: /Family Support/i, maxPerPage: 4 },
-  { label: "Mental Wellbeing of Teenagers", href: "/teen-mental-health-care-india", pattern: /Mental Wellbeing of Teenagers/i, maxPerPage: 2 },
-  { label: "Mental Wellbeing of Adults", href: "/adult-mental-health-care-india", pattern: /Mental Wellbeing of Adults/i, maxPerPage: 2 },
-  { label: "Emotional Wellbeing of Women", href: "/women-health-care", pattern: /Emotional Wellbeing of Women/i, maxPerPage: 2 },
-  { label: "Mental Wellbeing of Seniors", href: "/senior-mental-health-care-india", pattern: /Mental Wellbeing of Seniors/i, maxPerPage: 2 },
-  { label: "Mental Health", href: "/adult-mental-health-care-india", pattern: /Mental Health/i, maxPerPage: 3 },
-  { label: "Emotional Wellbeing", href: "/adult-emotional-wellbeing-support-india", pattern: /Emotional Wellbeing/i, maxPerPage: 3 },
-  { label: "Anxiety", href: "/anxiety-support-india", pattern: /Anxiety/i, maxPerPage: 2 },
-  { label: "Stress", href: "/stress-burnout-support-india", pattern: /Stress/i, maxPerPage: 2 },
-  { label: "Sleep", href: "/sleep-disorders-insomnia-support-india", pattern: /Sleep/i, maxPerPage: 2 },
-  { label: "Digestive Health", href: "/stress-and-digestive-health", pattern: /Digestive Health/i, maxPerPage: 2 },
-  { label: "Brain Nourishment System", href: "/about/approach", pattern: /Brain Nourishment System/i, maxPerPage: 3 },
-  { label: "Gut Response System", href: "/about/approach", pattern: /Gut Response System/i, maxPerPage: 3 },
-  { label: "Neural Network System", href: "/about/approach", pattern: /Neural Network System/i, maxPerPage: 3 },
-  { label: "Sensory Integration System", href: "/about/approach", pattern: /Sensory Integration System/i, maxPerPage: 3 },
-  { label: "Behaviour Guidance System", href: "/about/approach", pattern: /Behaviour Guidance System/i, maxPerPage: 3 },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i, maxPerPage: 5 },
-  { label: "Neuro Ayurveda Development System", href: "/about/approach", pattern: /Neuro Ayurveda Development System/i, maxPerPage: 4 },
-  { label: "Child Health Care", href: "/child-health-care", pattern: /Child Health Care/i, maxPerPage: 3 },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i, maxPerPage: 5 },
-  { label: "Dr Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i, maxPerPage: 4 },
+  { label: "Mental Wellbeing of Teenagers", href: "/teen-mental-health-care-india/", pattern: /Mental Wellbeing of Teenagers/i, maxPerPage: 2 },
+  { label: "Mental Wellbeing of Adults", href: "/adult-mental-health-care-india/", pattern: /Mental Wellbeing of Adults/i, maxPerPage: 2 },
+  { label: "Emotional Wellbeing of Women", href: "/women-health-care/", pattern: /Emotional Wellbeing of Women/i, maxPerPage: 2 },
+  { label: "Mental Wellbeing of Seniors", href: "/senior-mental-health-care-india/", pattern: /Mental Wellbeing of Seniors/i, maxPerPage: 2 },
+  { label: "Mental Health", href: "/adult-mental-health-care-india/", pattern: /Mental Health/i, maxPerPage: 3 },
+  { label: "Emotional Wellbeing", href: "/adult-mental-health-care-india/", pattern: /Emotional Wellbeing/i, maxPerPage: 3 },
+  { label: "Anxiety", href: "/anxiety-support-india/", pattern: /Anxiety/i, maxPerPage: 2 },
+  { label: "Stress", href: "/stress-burnout-support-india/", pattern: /Stress/i, maxPerPage: 2 },
+  { label: "Sleep", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep/i, maxPerPage: 2 },
+  { label: "Digestive Health", href: "/stress-and-digestive-health/", pattern: /Digestive Health/i, maxPerPage: 2 },
+  { label: "Brain Nourishment System", href: "/about/approach/", pattern: /Brain Nourishment System/i, maxPerPage: 3 },
+  { label: "Gut Response System", href: "/about/approach/", pattern: /Gut Response System/i, maxPerPage: 3 },
+  { label: "Neural Network System", href: "/about/approach/", pattern: /Neural Network System/i, maxPerPage: 3 },
+  { label: "Sensory Integration System", href: "/about/approach/", pattern: /Sensory Integration System/i, maxPerPage: 3 },
+  { label: "Behaviour Guidance System", href: "/about/approach/", pattern: /Behaviour Guidance System/i, maxPerPage: 3 },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i, maxPerPage: 5 },
+  { label: "Neuro Ayurveda Development System", href: "/about/approach/", pattern: /Neuro Ayurveda Development System/i, maxPerPage: 4 },
+  { label: "Child Health Care", href: "/child-health-care/", pattern: /Child Health Care/i, maxPerPage: 3 },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i, maxPerPage: 5 },
+  { label: "Dr Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i, maxPerPage: 4 },
   { label: "Book a Consultation", href: "#schedule-a-consultation", pattern: /Book a Consultation/i },
   { label: "Contact Us", href: "#schedule-a-consultation", pattern: /Contact Us/i },
 ];
@@ -1130,7 +1130,7 @@ function ArticleLine({ line, index, onCitationClick, allowedRuleKeys, faqAnswerR
           </h2>
           <div className="mt-5 rounded-lg border border-[#eadff1] bg-[#fbf9fd] p-6 shadow-sm">
             <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start">
-              <a href="/about/doctor">
+              <a href="/about/doctor/">
                 <img
                   src={doctorImage}
                   alt="Dr Ankush Garg Manovaidya learning attention child development and mental health clinician"
@@ -1141,7 +1141,7 @@ function ArticleLine({ line, index, onCitationClick, allowedRuleKeys, faqAnswerR
               </a>
               <div>
                 <p className="text-[12px] font-black uppercase tracking-[0.1em] text-[#7835A4]">Authorised & Clinically Reviewed</p>
-                <a href="/about/doctor" className="mt-1 block text-[18px] font-black text-[#17111f] transition hover:text-[#7835A4]">
+                <a href="/about/doctor/" className="mt-1 block text-[18px] font-black text-[#17111f] transition hover:text-[#7835A4]">
                   Dr Ankush Garg
                 </a>
                 <p className="mt-3 text-[13.5px] font-semibold leading-6 text-[#5a5063]">
@@ -1423,7 +1423,7 @@ function LearningAttentionDifficultiesIndiaPage() {
         title={learningAttentionSeoTitle}
         description={learningAttentionSeoDescription}
         keywords="Learning Assessment, Attention Support, Child Development Guidance, Learning and Attention Support Services in India"
-        path="/learning-attention-difficulties-india"
+        path="/learning-attention-difficulties-india/"
         image={childHeroImage}
         schema={learningAttentionSeoSchema}
       />
@@ -1435,7 +1435,7 @@ function LearningAttentionDifficultiesIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a>
+                <a href="/child-health-care/" className="transition hover:text-[#7835A4]">Child Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">{learningTitle}</span>
               </nav>
@@ -1517,7 +1517,7 @@ function LearningAttentionDifficultiesIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya learning attention child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">

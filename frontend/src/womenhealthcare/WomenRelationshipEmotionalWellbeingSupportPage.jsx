@@ -25,7 +25,7 @@ import Seo from "../components/Seo";
 
 const seoTitle = "Women’s Relationship & Emotional Wellbeing Support in India";
 
-const seoPageUrl = "https://www.manovaidya.org/women-relationship-emotional-wellbeing-support-india/";
+const seoPageUrl = "https://manovaidya.org/women-relationship-emotional-wellbeing-support-india/";
 
 const womenRelationshipFaqSchema = {
   "@context": "https://schema.org",
@@ -323,25 +323,25 @@ const references = referencesRaw
   .filter((reference) => reference.n);
 
 const articleLinkRules = [
-  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care" },
-  { pattern: /\bRelationship Challenges\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bRelationship Stress\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bRelationship Counselling\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bTrust Issues\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bCommunication Problems\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bEmotional Wellbeing\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bEmotional Imbalance\b/i, href: "/women-relationship-emotional-wellbeing-support-india" },
-  { pattern: /\bSelf-Esteem & Body Image\b/i, href: "/women-self-esteem-body-image-support-india" },
-  { pattern: /\bself-esteem\b/i, href: "/women-self-esteem-body-image-support-india" },
-  { pattern: /\banxiety\b/i, href: "/women-stress-anxiety-support-india" },
-  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india" },
-  { pattern: /\bsleep\b/i, href: "/women-sleep-disorders-support-india" },
-  { pattern: /\bpregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bparenthood\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bHormonal Mood Changes\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
-  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care/" },
+  { pattern: /\bRelationship Challenges\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bRelationship Stress\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bRelationship Counselling\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bTrust Issues\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bCommunication Problems\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bEmotional Wellbeing\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bEmotional Imbalance\b/i, href: "/women-relationship-emotional-wellbeing-support-india/" },
+  { pattern: /\bSelf-Esteem & Body Image\b/i, href: "/women-self-esteem-body-image-support-india/" },
+  { pattern: /\bself-esteem\b/i, href: "/women-self-esteem-body-image-support-india/" },
+  { pattern: /\banxiety\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bsleep\b/i, href: "/women-mental-health-care-india/#common-womens-mental-health-concerns" },
+  { pattern: /\bpregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bparenthood\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bHormonal Mood Changes\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor/" },
+  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach/" },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -809,7 +809,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -885,7 +885,7 @@ function WomenRelationshipEmotionalWellbeingSupportPage() {
         title={seoTitle} 
         description="Looking for Relationship Challenges & Emotional Wellbeing Support for Women in India? Learn about relationship stress, trust issues, communication problems, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="Relationship Stress, Relationship Challenges, Emotional Imbalance, Marriage Stress, Women's Mental Health, Trust Issues, Communication Problems, Relationship Anxiety, Emotional Wellbeing, Relationship Counselling, Emotional Distance, Relationship Conflict, Healthy Relationships, Emotional Exhaustion, Family Relationship Problems, Relationship Communication, Women's Emotional Health" 
-        path="/women-relationship-emotional-wellbeing-support-india"
+        path="/women-relationship-emotional-wellbeing-support-india/"
         schema={womenRelationshipSeoSchema}
       />
 
@@ -896,7 +896,7 @@ function WomenRelationshipEmotionalWellbeingSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8B43BA]">Home</a>
                 <span>/</span>
-                <a href="/women-health-care" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
+                <a href="/women-health-care/" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Relationship & Emotional Challenges</span>
               </nav>
@@ -1043,7 +1043,7 @@ function WomenRelationshipEmotionalWellbeingSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya women's mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">

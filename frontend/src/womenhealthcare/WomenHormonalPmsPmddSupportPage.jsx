@@ -319,24 +319,24 @@ const references = referencesRaw
   .filter((reference) => reference.n);
 
 const articleLinkRules = [
-  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care" },
-  { pattern: /\bHormonal Mood Changes\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bPremenstrual Syndrome\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bPremenstrual Dysphoric Disorder\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bPMS\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bPMDD\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
-  { pattern: /\bStress & Anxiety\b/i, href: "/women-stress-anxiety-support-india" },
-  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india" },
-  { pattern: /\bDepression & Low Mood\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india" },
-  { pattern: /\banxiety\b/i, href: "/women-stress-anxiety-support-india" },
-  { pattern: /\bsleep\b/i, href: "/women-sleep-disorders-support-india" },
-  { pattern: /\bPregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bpostpartum\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india" },
-  { pattern: /\bMenopause\b/i, href: "/women-hormonal-pms-pmdd-support-india" },
+  { pattern: /\bWomen's Mental Health\b/i, href: "/women-health-care/" },
+  { pattern: /\bHormonal Mood Changes\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bPremenstrual Syndrome\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bPremenstrual Dysphoric Disorder\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bPMS\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bPMDD\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
+  { pattern: /\bStress & Anxiety\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bchronic stress\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bDepression & Low Mood\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\bdepression\b/i, href: "/women-depression-low-mood-support-india/" },
+  { pattern: /\banxiety\b/i, href: "/women-stress-management-mind-body-balance-india/" },
+  { pattern: /\bsleep\b/i, href: "/women-mental-health-care-india/#common-womens-mental-health-concerns" },
+  { pattern: /\bPregnancy\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bpostpartum\b/i, href: "/women-pregnancy-postpartum-motherhood-mental-health-india/" },
+  { pattern: /\bMenopause\b/i, href: "/women-hormonal-pms-pmdd-support-india/" },
   { pattern: /\bSelf-Esteem\b/i, href: "/self-esteem-confidence-support-india" },
-  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
-  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
+  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor/" },
+  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach/" },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -799,7 +799,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -875,7 +875,7 @@ function WomenHormonalPmsPmddSupportPage() {
         title={seoTitle} 
         description="Looking for Hormonal Mood Changes, PMS & PMDD Treatment for Women in India? Learn about PMS, PMDD, mood swings before periods, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya." 
         keywords="PMS, PMDD, Premenstrual Syndrome, Premenstrual Dysphoric Disorder, Hormonal Mood Changes, Mood Swings Before Periods, Women's Mental Health, Hormonal Mental Health, PMS Support, PMDD Support, Hormonal Anxiety, Hormonal Depression, Emotional Wellbeing, Periods Mood Swings, Anxiety Before Periods, Premenstrual Mood Changes, Women's Emotional Health" 
-        path="/women-hormonal-pms-pmdd-support-india"
+        path="/women-hormonal-pms-pmdd-support-india/"
         schema={womenHormonalSeoSchema}
       />
 
@@ -886,7 +886,7 @@ function WomenHormonalPmsPmddSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8B43BA]">Home</a>
                 <span>/</span>
-                <a href="/women-health-care" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
+                <a href="/women-health-care/" className="transition hover:text-[#8B43BA]">Women's Mental Health</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Hormonal & PMS/PMDD</span>
               </nav>
@@ -1032,7 +1032,7 @@ function WomenHormonalPmsPmddSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya women's mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">

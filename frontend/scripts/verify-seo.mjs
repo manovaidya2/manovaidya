@@ -1,0 +1,182 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import { SITE_URL, canonicalPaths, canonicalPathAliases, getCanonicalUrl } from "../src/utils/canonical.js";
+import { readContentSnapshot, isIndexable, getLegacyAliases } from "./seo-content.mjs";
+
+const failures = [];
+const internalPageLinks = new Set();
+const check = (condition, message) => { if (!condition) failures.push(message); };
+const sitemap = await fs.readFile("dist/sitemap.xml", "utf8");
+const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => loc);
+check(urls.length > 0, "Sitemap is empty");
+check(new Set(urls).size === urls.length, "Sitemap contains duplicate URLs");
+for (const route of canonicalPaths) {
+  check(urls.includes(getCanonicalUrl(route)), `Missing canonical page in sitemap: ${route}`);
+}
+
+const inspectHtml = (html, url, label, indexable = true) => {
+  const canonicals = [...html.matchAll(/<link\b[^>]*rel=["']canonical["'][^>]*>/gi)];
+  check(canonicals.length === 1, `${label}: expected exactly one canonical`);
+  check(canonicals[0]?.[0].includes(`href="${url}"`), `${label}: canonical must be ${url}`);
+  if (indexable) {
+    check(/<meta\b[^>]*name=["']robots["'][^>]*content=["']index,\s*follow["']/i.test(html), `${label}: missing index, follow`);
+    check(!/<meta\b[^>]*noindex/i.test(html), `${label}: noindex present`);
+  } else {
+    check(/<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html), `${label}: noindex directive was lost`);
+  }
+  check(!/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html), `${label}: meta refresh present`);
+  check(/<div id="root">[\s\S]+?<\/div>/.test(html), `${label}: missing rendered page content`);
+  check(/<main\b/i.test(html), `${label}: missing page body`);
+  for (const [, href] of html.matchAll(/<a\b[^>]*\bhref="([^"<>]+)"/gi)) {
+    if (!href.startsWith("/") && !/^https?:\/\/(www\.)?manovaidya\.(org|com)(?:\/|$)/i.test(href)) continue;
+    const target = new URL(href.replace(/&amp;/g, "&"), SITE_URL);
+    if (!/^(www\.)?manovaidya\.(org|com)$/.test(target.hostname)) continue;
+    const route = target.pathname;
+    if (!path.extname(route.replace(/\/$/, ""))) internalPageLinks.add(route);
+    const isPage = canonicalPaths.includes(getCanonicalUrl(route).slice(SITE_URL.length)) || /^\/(blog|case-studies)\/[^/]+\/?$/.test(route);
+    if (isPage) check(`${target.origin}${route}` === getCanonicalUrl(route), `${label}: noncanonical internal link ${href}`);
+  }
+};
+
+for (const url of urls) {
+  const pathname = new URL(url).pathname;
+  check(url === getCanonicalUrl(pathname), `Noncanonical sitemap URL: ${url}`);
+  const file = path.join("dist", ...pathname.split("/").filter(Boolean), "index.html");
+  try {
+    inspectHtml(await fs.readFile(file, "utf8"), url, pathname);
+  } catch (error) {
+    failures.push(`${pathname}: cannot read prerendered HTML (${error.message})`);
+  }
+}
+console.log(`Checked ${urls.length} sitemap pages: canonical URLs, rendered HTML, robots, and internal links.`);
+const content = await readContentSnapshot();
+let dynamicCount = 0;
+for (const [prefix, items] of [["blog", content.blogs], ["case-studies", content.caseStudies]]) {
+  for (const item of items) {
+    const url = getCanonicalUrl(`/${prefix}/${item.slug}`);
+    const indexable = isIndexable(item);
+    check(urls.includes(url) === indexable, `${url}: sitemap does not match the publication/robots setting`);
+    try {
+      const file = path.join("dist", prefix, item.slug, "index.html");
+      const html = await fs.readFile(file, "utf8");
+      inspectHtml(html, url, `DYNAMIC ${url}`, indexable);
+      check(/<h1\b/i.test(html), `${url}: dynamic page is missing rendered article content`);
+    } catch (error) {
+      failures.push(`${url}: missing dynamic page HTML (${error.message})`);
+    }
+    dynamicCount++;
+  }
+}
+console.log(`Checked sitemap coverage and article HTML for all ${dynamicCount} public dynamic pages, including noindex pages.`);
+for (const route of internalPageLinks) {
+  try {
+    await fs.access(path.join("dist", ...route.split("/").filter(Boolean).map(decodeURIComponent), "index.html"));
+  } catch {
+    failures.push(`Internal link points to a page that was not generated: ${route}`);
+  }
+}
+console.log(`Checked ${internalPageLinks.size} internal page destinations for missing HTML.`);
+
+if (process.argv.includes("--live")) {
+  const report = [];
+  const agents = [
+    "Mozilla/5.0 SEO validation",
+    "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  ];
+  const tasks = [];
+  for (const url of urls) {
+    for (const agent of agents) tasks.push({ url, expected: url, agent, canonical: true });
+    const pathname = new URL(url).pathname;
+    const base = pathname === "/" ? "" : pathname.slice(0, -1);
+    const paths = new Set(pathname === "/" ? ["/", "/index.html"] : [pathname, base, `${base}.html`, `${base}/index.html`]);
+    tasks.push({ url: `${url}?utm_source=seo-check&x=1`, expected: url, agent: agents[1], canonical: true });
+    for (const scheme of ["http", "https"]) {
+      for (const host of ["manovaidya.org", "www.manovaidya.org"]) {
+        for (const route of paths) {
+          const variant = `${scheme}://${host}${route}`;
+          if (variant !== url) tasks.push({ url: variant, expected: url, agent: agents[1] });
+        }
+      }
+    }
+  }
+  const aliases = new Map([
+    ...Object.keys(canonicalPathAliases).map((alias) => [alias, getCanonicalUrl(alias)]),
+    ...getLegacyAliases(content),
+  ]);
+  for (const [alias, destination] of aliases) {
+    for (const route of [alias, `${alias}/`]) {
+      for (const scheme of ["http", "https"]) {
+        for (const host of ["manovaidya.org", "www.manovaidya.org"]) {
+          tasks.push({ url: `${scheme}://${host}${route}`, expected: destination, agent: agents[1] });
+        }
+      }
+    }
+  }
+  const worker = async () => {
+    while (tasks.length) {
+      const task = tasks.shift();
+      try {
+        const response = await fetch(task.url, {
+          redirect: "manual", method: "GET",
+          headers: { "User-Agent": task.agent }, signal: AbortSignal.timeout(20000),
+        });
+        const location = response.headers.get("location");
+        const result = { url: task.url, status: response.status, location, googlebot: task.agent === agents[1] };
+        report.push(result);
+        if (task.canonical) {
+          check(response.status === 200, `${task.url}: canonical returned ${response.status}`);
+          check(!location, `${task.url}: canonical redirects to ${location}`);
+          check(!/noindex/i.test(response.headers.get("x-robots-tag") || ""), `${task.url}: X-Robots-Tag blocks indexing`);
+          inspectHtml(await response.text(), task.expected, `LIVE ${task.url}`);
+        } else {
+          check([301, 308].includes(response.status) && location === task.expected,
+            `${task.url}: expected one permanent redirect to ${task.expected}, got ${response.status} ${location || ""}`);
+          await response.body?.cancel();
+          if (location && [301, 302, 303, 307, 308].includes(response.status)) {
+            const finalResponse = await fetch(new URL(location, task.url), {
+              redirect: "follow", headers: { "User-Agent": task.agent }, signal: AbortSignal.timeout(20000),
+            });
+            result.finalUrl = finalResponse.url;
+            result.finalStatus = finalResponse.status;
+            check(finalResponse.status === 200 && finalResponse.url === task.expected,
+              `${task.url}: redirect chain ends at ${finalResponse.status} ${finalResponse.url}`);
+            await finalResponse.body?.cancel();
+          }
+        }
+      } catch (error) {
+        failures.push(`${task.url}: ${error.message}${error.cause?.message ? `: ${error.cause.message}` : ""}`);
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: 6 }, worker));
+  const apiOrigin = (process.env.VITE_API_ORIGIN || process.env.SITEMAP_API_ORIGIN || "https://api.manovaidya.org").replace(/\/$/, "");
+  for (const source of [`${SITE_URL}/sitemap.xml`, `${apiOrigin}/sitemap.xml`, `${apiOrigin}/sitemap-blog.xml`, `${apiOrigin}/sitemap-case-studies.xml`]) {
+    try {
+      const response = await fetch(source, { redirect: "manual", signal: AbortSignal.timeout(20000) });
+      check(response.status === 200, `${source}: sitemap returned ${response.status}`);
+      const xml = await response.text();
+      const liveUrls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => loc);
+      check(liveUrls.length > 0 || source !== `${SITE_URL}/sitemap.xml`, `${source}: empty sitemap`);
+      for (const url of liveUrls) {
+        check(url === getCanonicalUrl(url), `${source}: noncanonical sitemap entry ${url}`);
+        check(urls.includes(url), `${source}: sitemap entry does not match the current build ${url}`);
+      }
+      if (source === `${SITE_URL}/sitemap.xml`) {
+        for (const url of urls) check(liveUrls.includes(url), `${source}: missing current page ${url}`);
+      }
+    } catch (error) {
+      failures.push(`${source}: ${error.message}`);
+    }
+  }
+  await fs.writeFile("seo-live-report.json", JSON.stringify({ checkedAt: new Date().toISOString(), report, failures: [...new Set(failures)] }, null, 2));
+  console.log(`Checked ${report.length} live responses. Report: seo-live-report.json`);
+}
+
+const uniqueFailures = [...new Set(failures)];
+if (uniqueFailures.length) {
+  console.error(uniqueFailures.slice(0, 30).join("\n"));
+  console.error(`SEO validation failed with ${uniqueFailures.length} issues.`);
+  process.exitCode = 1;
+} else {
+  console.log("SEO validation passed.");
+}

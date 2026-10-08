@@ -22,7 +22,7 @@ import Seo from "../components/Seo";
 
 const pageTitle = "Memory Loss & Forgetfulness Treatment for Seniors in India";
 const seoTitle = "Memory Loss & Forgetfulness Support for Seniors in India";
-const pageUrl = "https://www.manovaidya.com/memory-loss-forgetfulness-support-seniors-india";
+const pageUrl = "https://manovaidya.org/memory-loss-forgetfulness-support-seniors-india/";
 const seoPageUrl = "https://manovaidya.org/memory-loss-forgetfulness-support-seniors-india/";
 
 const memoryLossFaqSchema = {
@@ -685,22 +685,22 @@ const articleLinkRules = [
   { href: "#dementia-awareness", pattern: /Alzheimer's disease/i },
   { href: "#daily-life-impact", pattern: /independence/i },
   { href: "#daily-life-impact", pattern: /cognitive wellbeing/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /sleep/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /sleep/i },
   { href: "/stress-burnout-support-india/", pattern: /stress/i },
   { href: "/senior-depression-support-india/", pattern: /depression/i },
-  { href: "/senior-mental-health-care/", pattern: /Senior Mental Health Support/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Support/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#assessment", pattern: /professional guidance/i },
 ];
 
 const categories = [
-  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care/" },
+  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care-india/" },
   { label: "Memory Loss", count: 10, Icon: Brain, href: "/memory-loss-forgetfulness-support-seniors-india/" },
   { label: "Dementia Awareness", count: 8, Icon: ShieldCheck, href: "#dementia-awareness" },
   { label: "Healthy Ageing", count: 11, Icon: Sparkles, href: "#supporting-brain-ageing" },
-  { label: "Caregiver Support", count: 9, Icon: Users, href: "/caregiver-support-india/" },
+  { label: "Caregiver Support", count: 9, Icon: Users, href: "/senior-mental-health-care-india/#how-we-support-older-adults" },
   { label: "Cognitive Wellbeing", count: 13, Icon: Activity, href: "#daily-life-impact" },
 ];
 
@@ -1015,7 +1015,7 @@ function KeyTakeawaysBlock() {
             <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
-          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
         </div>
       </div>
     </section>
@@ -1085,7 +1085,7 @@ function MemoryLossForgetfulnessSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={seoTitle} description="Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Memory Loss Treatment India, Forgetfulness Support, Senior Brain Health, Dementia Awareness, Age-related Memory Changes, Cognitive Wellbeing, Neuro-Ayurveda Memory Care, Memory Assessment, Dr. Ankush Garg, Senior Mental Health" path="/memory-loss-forgetfulness-support-seniors-india" schema={memoryLossSeoSchema} />
+      <Seo title={seoTitle} description="Looking for Memory Loss & Forgetfulness Treatment for Seniors in India? Learn about age-related memory changes, forgetfulness, dementia awareness, brain health and the Neuro-Ayurveda approach at Manovaidya." keywords="Memory Loss Treatment India, Forgetfulness Support, Senior Brain Health, Dementia Awareness, Age-related Memory Changes, Cognitive Wellbeing, Neuro-Ayurveda Memory Care, Memory Assessment, Dr. Ankush Garg, Senior Mental Health" path="/memory-loss-forgetfulness-support-seniors-india/" schema={memoryLossSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1093,7 +1093,7 @@ function MemoryLossForgetfulnessSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
+                <a href="/senior-mind-memory-care/" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Memory Loss & Forgetfulness Treatment</span>
               </nav>
@@ -1148,7 +1148,7 @@ function MemoryLossForgetfulnessSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya senior memory care clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

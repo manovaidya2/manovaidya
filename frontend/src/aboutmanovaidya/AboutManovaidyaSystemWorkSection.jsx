@@ -70,7 +70,7 @@ function AboutManovaidyaSystemWorkSection() {
               wellbeing.
             </p>
             <a
-              href="/about/approach"
+              href="/about/approach/"
               className="mx-auto mt-5 inline-flex h-11 w-full max-w-[260px] items-center justify-center gap-3 rounded-lg bg-[#4d238e] px-5 text-[13px] font-black text-white shadow-[0_12px_24px_rgba(77,35,142,0.22)] transition hover:-translate-y-0.5 sm:w-auto lg:mx-0"
             >
               Explore Our Approach

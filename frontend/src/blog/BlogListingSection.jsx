@@ -20,6 +20,7 @@ import {
 import api, { getAssetUrl } from "../api/axiosInstance";
 import BookConsultationButton from "../components/BookConsultationButton";
 import { usePrerenderData } from "../prerenderData";
+import { isPublicBlog } from "../utils/publicContent";
 
 const categoriesData = [
   { name: "Autism", count: 12, Icon: Puzzle },
@@ -33,26 +34,10 @@ const categoriesData = [
   { name: "Gut Health", count: 6, Icon: Apple },
 ];
 
-const publicTestContentPattern = /(?:\btesting\s+blog\b|\btest\s+blog\b|\bdummy\b|\bdemo\b|lorem\s+ipsum)/i;
-
-const hasPublicTestContent = (blog) =>
-  publicTestContentPattern.test(
-    [
-      blog?.title,
-      blog?.slug,
-      blog?.shortDescription,
-      blog?.metaTitle,
-      blog?.metaDescription,
-      blog?.content,
-    ]
-      .filter(Boolean)
-      .join(" ")
-  );
-
 function BlogListingSection() {
   const prerenderData = usePrerenderData();
   const initialBlogs = Array.isArray(prerenderData.blogs)
-    ? prerenderData.blogs.filter((blog) => !hasPublicTestContent(blog))
+    ? prerenderData.blogs.filter(isPublicBlog)
     : [];
   const [blogs, setBlogs] = useState(initialBlogs);
   const [popularPosts, setPopularPosts] = useState(initialBlogs.slice(0, 4));
@@ -65,7 +50,7 @@ function BlogListingSection() {
         const { data } = await api.get('/blogs?status=published');
         if (data.success) {
           const publicBlogs = Array.isArray(data.data)
-            ? data.data.filter((blog) => !hasPublicTestContent(blog))
+            ? data.data.filter(isPublicBlog)
             : [];
           setBlogs(publicBlogs);
           setPopularPosts(publicBlogs.slice(0, 4));
@@ -113,7 +98,7 @@ function BlogListingSection() {
                   key={post._id || post.slug}
                   className="group flex min-h-[390px] flex-col overflow-hidden rounded-lg border border-[#dce3dd] bg-white shadow-[0_2px_8px_rgba(26,56,42,0.04)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(26,56,42,0.12)]"
                 >
-                  <Link to={`/blog/${post.slug}`} className="block h-[160px] overflow-hidden bg-[#eef2ee]" title={post.title}>
+                  <Link to={`/blog/${post.slug}/`} className="block h-[160px] overflow-hidden bg-[#eef2ee]" title={post.title}>
                     <img
                       src={getAssetUrl(post.image)}
                       alt={post.imageAlt || post.title}
@@ -127,7 +112,7 @@ function BlogListingSection() {
                       {post.category || "General"}
                     </p>
                     <h3 className="mt-2 text-[15px] font-extrabold leading-[1.35] tracking-[-0.015em] text-[#17201c]">
-                      <Link to={`/blog/${post.slug}`} className="hover:text-[#8b43ba]">
+                      <Link to={`/blog/${post.slug}/`} className="hover:text-[#8b43ba]">
                         {post.title}
                       </Link>
                     </h3>
@@ -213,7 +198,7 @@ function BlogListingSection() {
             <div className="mt-4 space-y-4">
               {popularPosts.map((post) => (
                 <article key={post._id || post.slug} className="flex gap-3">
-                  <Link to={`/blog/${post.slug}`} className="shrink-0" title={post.title}>
+                  <Link to={`/blog/${post.slug}/`} className="shrink-0" title={post.title}>
                     <img
                       src={getAssetUrl(post.image)}
                       alt={post.imageAlt || post.title}
@@ -223,7 +208,7 @@ function BlogListingSection() {
                   </Link>
                   <div className="min-w-0">
                     <h4 className="line-clamp-2 text-[11px] font-extrabold leading-[1.35] text-[#27332d]">
-                      <Link to={`/blog/${post.slug}`} className="hover:text-[#8b43ba]">
+                      <Link to={`/blog/${post.slug}/`} className="hover:text-[#8b43ba]">
                         {post.title}
                       </Link>
                     </h4>

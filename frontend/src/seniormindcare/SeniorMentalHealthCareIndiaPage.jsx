@@ -131,7 +131,7 @@ const references = referencesRaw.split(/\r?\n/).map(cleanSourceLine).filter(Bool
   return items;
 }, []);
 const articleLinkRules = [
-  { label: "Memory Loss", href: "/memory-loss-forgetfulness-support-seniors-india/", pattern: /Memory Loss/i }, { label: "Cognitive Changes", href: "/mild-cognitive-impairment-mci-support-seniors-india/", pattern: /Cognitive Changes/i }, { label: "Dementia Care", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Dementia Care/i }, { label: "Dementia", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Dementia/i }, { label: "Alzheimer's Care", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Alzheimer's Care/i }, { label: "Alzheimer's Disease", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Alzheimer's Disease/i }, { label: "Depression & Low Mood", href: "/senior-depression-support-india/", pattern: /Depression (?:&|and) Low Mood/i }, { label: "Sleep Problems", href: "/sleep-disorders-seniors-support-india/", pattern: /Sleep Problems/i }, { label: "Loneliness & Social Isolation", href: "#common-senior-mental-health-concerns", pattern: /Loneliness (?:&|and) Social Isolation/i }, { label: "Senior Mental Health Assessment", href: "#senior-mental-health-assessment-process", pattern: /Senior Mental Health Assessment/i }, { label: "Senior Mental Health Care", href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Care/i }, { label: "Healthy Ageing", href: "/senior-mind-memory-care", pattern: /Healthy Ageing/i }, { label: "Brain Wellness", href: "/senior-mind-memory-care", pattern: /Brain Wellness/i }, { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro-Ayurveda Development System/i }, { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.\s*Ankush Garg/i }, { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Memory Loss", href: "/memory-loss-forgetfulness-support-seniors-india/", pattern: /Memory Loss/i }, { label: "Cognitive Changes", href: "/mild-cognitive-impairment-mci-support-seniors-india/", pattern: /Cognitive Changes/i }, { label: "Dementia Care", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Dementia Care/i }, { label: "Dementia", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Dementia/i }, { label: "Alzheimer's Care", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Alzheimer's Care/i }, { label: "Alzheimer's Disease", href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /Alzheimer's Disease/i }, { label: "Depression & Low Mood", href: "/senior-depression-support-india/", pattern: /Depression (?:&|and) Low Mood/i }, { label: "Sleep Problems", href: "/sleep-disorders-seniors-support-india/", pattern: /Sleep Problems/i }, { label: "Loneliness & Social Isolation", href: "#common-senior-mental-health-concerns", pattern: /Loneliness (?:&|and) Social Isolation/i }, { label: "Senior Mental Health Assessment", href: "#senior-mental-health-assessment-process", pattern: /Senior Mental Health Assessment/i }, { label: "Senior Mental Health Care", href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Care/i }, { label: "Healthy Ageing", href: "/senior-mind-memory-care/", pattern: /Healthy Ageing/i }, { label: "Brain Wellness", href: "/senior-mind-memory-care/", pattern: /Brain Wellness/i }, { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro-Ayurveda Development System/i }, { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.\s*Ankush Garg/i }, { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
 const lineRuleKeys = new Map();
@@ -383,7 +383,7 @@ function SeniorMentalHealthCareIndiaPage() {
         title="Senior Mental Health Care in India | Healthy Ageing, Memory & Emotional Wellbeing | Manovaidya"
         description="Looking for Senior Mental Health Care in India? Learn about healthy ageing, memory loss, dementia, Alzheimer's, emotional wellbeing, brain health and senior mental health assessments at Manovaidya."
         keywords="Senior Mental Health Care India, Healthy Ageing, Memory Loss Support, Dementia Care India, Alzheimer's Support, Emotional Wellbeing for Seniors, Brain Health Assessment, Neuro-Ayurveda for Seniors, Geriatric Mental Health, Dr. Ankush Garg"
-        path="/senior-mental-health-care-india"
+        path="/senior-mental-health-care-india/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
@@ -398,7 +398,7 @@ function SeniorMentalHealthCareIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mind & Memory Care</a>
+                <a href="/senior-mind-memory-care/" className="transition hover:text-[#7835A4]">Senior Mind & Memory Care</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Senior Mental Health Care</span>
               </nav>
@@ -467,7 +467,7 @@ function SeniorMentalHealthCareIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya teen mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

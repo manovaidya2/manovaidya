@@ -13,7 +13,7 @@ function WomenHealthCarePage() {
         title="Women's Mental Health Care | Stress, Hormonal & Emotional Wellness | Manovaidya"
         description="Comprehensive mental health care for women at Manovaidya. Specialized Neuro-Ayurveda support for stress, anxiety, PMDD, postpartum depression, and life transitions."
         keywords="women mental health India, postpartum depression support, PMDD treatment, stress management for women, hormonal mental health, pregnancy emotional wellbeing, Neuro-Ayurveda, Dr. Ankush Garg"
-        path="/women-health-care"
+        path="/women-health-care/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",

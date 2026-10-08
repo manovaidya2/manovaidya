@@ -33,7 +33,7 @@ const pageTitle = "Child Development Support in India";
 const childDevelopmentSeoTitle = "Child Development Assessment & Support in India | Manovaidya";
 const childDevelopmentSeoDescription =
   "Get child development assessment in India, developmental support for children, and family guidance for child development with expert care at Manovaidya.";
-const childDevelopmentSeoPageUrl = "https://manovaidya.org/child-development-support-india";
+const childDevelopmentSeoPageUrl = "https://manovaidya.org/child-development-support-india/";
 const childDevelopmentFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -279,36 +279,36 @@ const references = [
 
 const categories = [
   { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
-  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
-  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
-  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-support-india" },
-  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india" },
-  { label: "Behaviour", count: 9, Icon: Users, href: "/behavioural-concerns-children-india" },
+  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child/" },
+  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india/" },
+  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-support-india/" },
+  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india/" },
+  { label: "Behaviour", count: 9, Icon: Users, href: "/behavioural-concerns-children-india/" },
 ];
 
 const articleShareLinks = [
-  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://www.manovaidya.com/child-development-support-india" },
-  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/child-development-support-india&text=Child%20Development%20Treatment%20in%20India" },
-  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.manovaidya.com/child-development-support-india" },
-  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Child%20Development%20Treatment%20in%20India%20https://www.manovaidya.com/child-development-support-india" },
+  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/child-development-support-india/" },
+  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/child-development-support-india/&text=Child%20Development%20Treatment%20in%20India" },
+  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/child-development-support-india/" },
+  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Child%20Development%20Treatment%20in%20India%20https://manovaidya.org/child-development-support-india/" },
 ];
 
 const floatingShareLinks = [
   {
     title: "Share on Facebook",
-    href: "https://www.facebook.com/sharer/sharer.php?u=https://www.manovaidya.com/child-development-support-india",
+    href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/child-development-support-india/",
     className: "bg-[#3d5f9f] hover:bg-[#324f86]",
     Icon: () => <span className="text-[21px] font-black leading-none">f</span>,
   },
   {
     title: "Share on X",
-    href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/child-development-support-india&text=Child%20Development%20Treatment%20in%20India",
+    href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/child-development-support-india/&text=Child%20Development%20Treatment%20in%20India",
     className: "bg-black hover:bg-[#1c1c1c]",
     Icon: () => <span className="text-[20px] font-normal leading-none">X</span>,
   },
   {
     title: "Share on Flipboard",
-    href: "https://share.flipboard.com/bookmarklet/popout?v=2&url=https://www.manovaidya.com/child-development-support-india&title=Child%20Development%20Treatment%20in%20India",
+    href: "https://share.flipboard.com/bookmarklet/popout?v=2&url=https://manovaidya.org/child-development-support-india/&title=Child%20Development%20Treatment%20in%20India",
     className: "bg-[#ef262b] hover:bg-[#d91d22]",
     Icon: () => (
       <span className="grid h-4 w-4 grid-cols-3 grid-rows-3 gap-[1.5px]" aria-hidden="true">
@@ -326,22 +326,22 @@ const floatingShareLinks = [
   },
   {
     title: "Share on Pinterest",
-    href: "https://pinterest.com/pin/create/button/?url=https://www.manovaidya.com/child-development-support-india&description=Child%20Development%20Treatment%20in%20India",
+    href: "https://pinterest.com/pin/create/button/?url=https://manovaidya.org/child-development-support-india/&description=Child%20Development%20Treatment%20in%20India",
     className: "bg-[#cf0026] hover:bg-[#b80022]",
     Icon: () => <span className="font-serif text-[21px] font-black leading-none">p</span>,
   },
   {
     title: "Share by Email",
-    href: "mailto:?subject=Child%20Development%20Treatment%20in%20India&body=https://www.manovaidya.com/child-development-support-india",
+    href: "mailto:?subject=Child%20Development%20Treatment%20in%20India&body=https://manovaidya.org/child-development-support-india/",
     className: "bg-[#dd1590] hover:bg-[#c51280]",
     Icon: () => <Mail className="h-3.5 w-3.5" strokeWidth={2.2} />,
   },
 ];
 
 const articleLinkRules = [
-  { label: "Child Health Care", href: "/child-health-care", pattern: /Child Health Care/i },
-  { label: "Child Development Treatment", href: "/child-development-support-india", pattern: /Child Development Treatment/i },
-  { label: "Child Development Support", href: "/child-development-support-india", pattern: /Child Development Support/i },
+  { label: "Child Health Care", href: "/child-health-care/", pattern: /Child Health Care/i },
+  { label: "Child Development Treatment", href: "/child-development-support-india/", pattern: /Child Development Treatment/i },
+  { label: "Child Development Support", href: "/child-development-support-india/", pattern: /Child Development Support/i },
   { label: "Developmental Assessment", href: "#assessment", pattern: /Developmental Assessment/i },
   { label: "Developmental Screening", href: "#assessment", pattern: /Developmental screening/i },
   { label: "Child Development Assessment", href: "#assessment", pattern: /Child Development Assessment/i },
@@ -349,24 +349,24 @@ const articleLinkRules = [
   { label: "Family Support", href: "#parent-guidance", pattern: /Family Support/i },
   { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder(?: \(ASD\))?/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
-  { label: "Speech and Language Delays", href: "/speech-delay-support-india", pattern: /Speech (?:&|and) Language Delays/i },
-  { label: "Speech Delay", href: "/speech-delay-support-india", pattern: /Speech Delay/i },
-  { label: "Communication Development", href: "/speech-delay-support-india", pattern: /Communication Development/i },
-  { label: "Learning and Attention Difficulties", href: "/learning-attention-difficulties-india", pattern: /Learning (?:&|and) Attention Difficulties/i },
-  { label: "Learning Skills", href: "/learning-attention-difficulties-india", pattern: /Learning Skills/i },
-  { label: "Attention and Concentration", href: "/learning-attention-difficulties-india", pattern: /Attention (?:&|and) Concentration/i },
-  { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india", pattern: /Behavioural Challenges/i },
-  { label: "Behaviour Support", href: "/behavioural-concerns-children-india", pattern: /Behaviour Support/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
+  { label: "Speech and Language Delays", href: "/speech-delay-support-india/", pattern: /Speech (?:&|and) Language Delays/i },
+  { label: "Speech Delay", href: "/speech-delay-support-india/", pattern: /Speech Delay/i },
+  { label: "Communication Development", href: "/speech-delay-support-india/", pattern: /Communication Development/i },
+  { label: "Learning and Attention Difficulties", href: "/learning-attention-difficulties-india/", pattern: /Learning (?:&|and) Attention Difficulties/i },
+  { label: "Learning Skills", href: "/learning-attention-difficulties-india/", pattern: /Learning Skills/i },
+  { label: "Attention and Concentration", href: "/learning-attention-difficulties-india/", pattern: /Attention (?:&|and) Concentration/i },
+  { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india/", pattern: /Behavioural Challenges/i },
+  { label: "Behaviour Support", href: "/behavioural-concerns-children-india/", pattern: /Behaviour Support/i },
   { label: "Sensory Processing", href: "#neuro-ayurveda-system", pattern: /Sensory Processing/i },
-  { label: "Sensory Integration System", href: "/about/approach", pattern: /Sensory Integration System/i },
-  { label: "Brain Nourishment System", href: "/about/approach", pattern: /Brain Nourishment System/i },
-  { label: "Gut Response System", href: "/about/approach", pattern: /Gut Response System/i },
-  { label: "Neural Network System", href: "/about/approach", pattern: /Neural Network System/i },
-  { label: "Behaviour Guidance System", href: "/about/approach", pattern: /Behaviour Guidance System/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development (?:Support )?System/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Sensory Integration System", href: "/about/approach/", pattern: /Sensory Integration System/i },
+  { label: "Brain Nourishment System", href: "/about/approach/", pattern: /Brain Nourishment System/i },
+  { label: "Gut Response System", href: "/about/approach/", pattern: /Gut Response System/i },
+  { label: "Neural Network System", href: "/about/approach/", pattern: /Neural Network System/i },
+  { label: "Behaviour Guidance System", href: "/about/approach/", pattern: /Behaviour Guidance System/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development (?:Support )?System/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { label: "Book a Consultation", href: "#book-consultation", pattern: /Book a (?:Child )?Consultation/i },
 ];
 
@@ -583,7 +583,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -760,7 +760,7 @@ function VisualBlock({ heading }) {
   if (heading === "What is The Neuro-Ayurveda Development System?" || heading === "The Neuro-Ayurveda Development System®") {
     return (
       <div className="mt-4 space-y-4">
-        <a href="/about/approach">
+        <a href="/about/approach/">
           <img
             src={neuroDiagramImage}
             alt="Neuro-Ayurveda Development System five pillar framework for child development support"
@@ -1110,7 +1110,7 @@ function ChildDevelopmentSupportIndiaPage() {
         title={childDevelopmentSeoTitle}
         description={childDevelopmentSeoDescription}
         keywords="Child Development Treatment in India, Developmental Assessment, Child Development Specialist in India, Neuro-Ayurveda Development System, Parent Guidance for Child Development, Dr. Ankush Garg"
-        path="/child-development-support-india"
+        path="/child-development-support-india/"
         image={childHeroImage}
         schema={childDevelopmentSeoSchema}
       />
@@ -1121,7 +1121,7 @@ function ChildDevelopmentSupportIndiaPage() {
             <div className="relative z-10">
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span>
-                <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a><span>/</span>
+                <a href="/child-health-care/" className="transition hover:text-[#7835A4]">Child Health Care</a><span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{pageTitle}</p>
@@ -1171,7 +1171,7 @@ function ChildDevelopmentSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya autism ADHD child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

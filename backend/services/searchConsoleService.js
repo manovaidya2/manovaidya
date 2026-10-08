@@ -1,4 +1,5 @@
 import { google } from 'googleapis';
+import { getPublicPageUrl } from '../utils/publicPageUrl.js';
 
 const SEARCH_CONSOLE_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly';
 const DEFAULT_SITE_URL = 'https://manovaidya.org/';
@@ -83,11 +84,7 @@ export const getSearchConsoleConfigStatus = () => {
   };
 };
 
-export const getBlogPageUrl = (blog) => {
-  if (blog.canonicalUrl) return blog.canonicalUrl;
-  const publicSiteUrl = (process.env.PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, '');
-  return publicSiteUrl && blog.slug ? `${publicSiteUrl}/blog/${blog.slug}` : null;
-};
+export const getBlogPageUrl = (blog) => blog.slug ? getPublicPageUrl(`/blog/${blog.slug}`) : null;
 
 export const getSearchConsoleMetrics = async (blog, requestedDays = 28) => {
   const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL || DEFAULT_SITE_URL;
@@ -99,7 +96,7 @@ export const getSearchConsoleMetrics = async (blog, requestedDays = 28) => {
 
   const pageUrl = getBlogPageUrl(blog);
   if (!pageUrl) {
-    const error = new Error('Blog canonical URL or PUBLIC_SITE_URL is required for Search Console matching.');
+    const error = new Error('A blog slug is required for Search Console matching.');
     error.code = 'BLOG_URL_MISSING';
     throw error;
   }

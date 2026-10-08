@@ -126,7 +126,7 @@ const references = referencesRaw.split(/\r?\n/).map(cleanSourceLine).filter(Bool
   return items;
 }, []);
 const articleLinkRules = [
-  { label: "Stress & Anxiety", href: "/anxiety-support-india/", pattern: /Stress (?:&|and) Anxiety/i }, { label: "Depression & Low Mood", href: "/adult-depression-support/", pattern: /Depression (?:&|and) Low Mood/i }, { label: "Burnout", href: "/stress-burnout-support-india/", pattern: /Burnout/i }, { label: "Sleep Problems & Insomnia", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Problems (?:&|and) Insomnia/i }, { label: "Sleep Disorders & Insomnia", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Disorders (?:&|and) Insomnia/i }, { label: "Relationship & Emotional Wellbeing", href: "/relationship-challenges-support-india/", pattern: /Relationship (?:&|and) Emotional Wellbeing/i }, { label: "Relationship Challenges", href: "/relationship-challenges-support-india/", pattern: /Relationship Challenges/i }, { label: "Career Pressure", href: "/women-life-transitions-career-pressure-support-india/", pattern: /Career Pressure/i }, { label: "Mind-Body Balance", href: "/mind-body-health-care-india/", pattern: /Mind-Body Balance/i }, { label: "Emotional Resilience", href: "#how-we-support-adults", pattern: /Emotional Resilience/i }, { label: "Adult Mental Health Assessment", href: "#adult-mental-health-assessment-process", pattern: /Adult Mental Health Assessment/i }, { label: "Adult Mental Health Care", href: "/adult-mental-health-care-india/", pattern: /Adult Mental Health Care/i }, { label: "Women's Mental Health Care", href: "/women-health-care", pattern: /Women's Mental Health Care/i }, { label: "Senior Mental Health Care", href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Care/i }, { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro-Ayurveda Development System/i }, { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.\s*Ankush Garg/i }, { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Stress & Anxiety", href: "/anxiety-support-india/", pattern: /Stress (?:&|and) Anxiety/i }, { label: "Depression & Low Mood", href: "/adult-depression-support/", pattern: /Depression (?:&|and) Low Mood/i }, { label: "Burnout", href: "/stress-burnout-support-india/", pattern: /Burnout/i }, { label: "Sleep Problems & Insomnia", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Problems (?:&|and) Insomnia/i }, { label: "Sleep Disorders & Insomnia", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep Disorders (?:&|and) Insomnia/i }, { label: "Relationship & Emotional Wellbeing", href: "/relationship-challenges-support-india/", pattern: /Relationship (?:&|and) Emotional Wellbeing/i }, { label: "Relationship Challenges", href: "/relationship-challenges-support-india/", pattern: /Relationship Challenges/i }, { label: "Career Pressure", href: "/women-life-transitions-career-pressure-support-india/", pattern: /Career Pressure/i }, { label: "Mind-Body Balance", href: "/mind-body-health-care-india/", pattern: /Mind-Body Balance/i }, { label: "Emotional Resilience", href: "#how-we-support-adults", pattern: /Emotional Resilience/i }, { label: "Adult Mental Health Assessment", href: "#adult-mental-health-assessment-process", pattern: /Adult Mental Health Assessment/i }, { label: "Adult Mental Health Care", href: "/adult-mental-health-care-india/", pattern: /Adult Mental Health Care/i }, { label: "Women's Mental Health Care", href: "/women-health-care/", pattern: /Women's Mental Health Care/i }, { label: "Senior Mental Health Care", href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Care/i }, { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro-Ayurveda Development System/i }, { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.\s*Ankush Garg/i }, { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
 const lineRuleKeys = new Map();
@@ -422,7 +422,7 @@ function AdultMentalHealthCareIndiaPage() {
         title="Adult Mental Health Care in India | Mental Health Assessment & Emotional Wellbeing | Manovaidya"
         description="Looking for Adult Mental Health Care in India? Learn about stress, anxiety, depression, burnout, sleep problems, emotional wellbeing and mental health assessments at Manovaidya."
         keywords="Adult Mental Health, Adult Mental Health Care, Adult Mental Health Specialist, Mental Health Assessment, Emotional Wellbeing, Mental Wellness, Mental Health Support, Adult Counselling, Mental Health Clinic India, Stress and Anxiety, Depression, Burnout, Panic Disorder, OCD, Sleep Problems, Emotional Resilience"
-        path="/adult-mental-health-care-india"
+        path="/adult-mental-health-care-india/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
@@ -437,7 +437,7 @@ function AdultMentalHealthCareIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Wellness</a>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Wellness</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Adult Mental Health Care</span>
               </nav>
@@ -506,7 +506,7 @@ function AdultMentalHealthCareIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya teen mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

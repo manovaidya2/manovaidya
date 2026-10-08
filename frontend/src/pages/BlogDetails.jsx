@@ -6,8 +6,11 @@ import {
   Link2, ChevronDown, ChevronUp, Sparkles, BookOpen, AlertCircle
 } from 'lucide-react';
 import BookConsultationButton from '../components/BookConsultationButton';
-import Seo, { SITE_URL } from '../components/Seo';
+import Seo from '../components/Seo';
 import { usePrerenderData } from '../prerenderData';
+import { getCanonicalUrl } from '../utils/canonical';
+import { isPublicBlog } from '../utils/publicContent';
+import { normalizeArticleLinks } from '../utils/articleLinks';
 
 // Custom SVG Icons for Socials to avoid lucide-react version issues
 const FacebookIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>;
@@ -21,6 +24,7 @@ const createHeadingId = (text = '') =>
 
 const processBlogContent = (content = '') => {
   if (!content) return { html: '', toc: [] };
+  content = normalizeArticleLinks(content);
 
   if (typeof DOMParser !== 'undefined') {
     const parser = new DOMParser();
@@ -95,7 +99,7 @@ export default function BlogDetails() {
   const prerenderData = usePrerenderData();
   const initialBlog = prerenderData.blogsBySlug?.[slug] || null;
   const initialRelatedBlogs = Array.isArray(prerenderData.blogs)
-    ? prerenderData.blogs.filter(b => b.slug !== slug).slice(0, 3)
+    ? prerenderData.blogs.filter(isPublicBlog).filter(b => b.slug !== slug).slice(0, 3)
     : [];
   const [blog, setBlog] = useState(initialBlog);
   const [relatedBlogs, setRelatedBlogs] = useState(initialRelatedBlogs);
@@ -136,7 +140,7 @@ export default function BlogDetails() {
           // Open Graph (Social Sharing SEO)
           setMetaTag('og:title', data.data.ogTitle || data.data.metaTitle || data.data.title, true);
           setMetaTag('og:description', data.data.ogDescription || data.data.metaDescription || data.data.shortDescription, true);
-          setMetaTag('og:url', window.location.href, true);
+          setMetaTag('og:url', getCanonicalUrl(`/blog/${data.data.slug || slug}/`), true);
           setMetaTag('og:type', 'article', true);
           const ogImg = data.data.ogImage || data.data.image;
           if (ogImg) setMetaTag('og:image', getAssetUrl(ogImg), true);
@@ -155,7 +159,7 @@ export default function BlogDetails() {
             canonicalLink.rel = "canonical";
             document.head.appendChild(canonicalLink);
           }
-          canonicalLink.setAttribute("href", data.data.canonicalUrl || window.location.href);
+          canonicalLink.setAttribute("href", getCanonicalUrl(`/blog/${data.data.slug || slug}/`));
 
           // Schema Markup (JSON-LD)
           if (data.data.schemaMarkup) {
@@ -169,9 +173,9 @@ export default function BlogDetails() {
           }
 
           // Fetch related blogs (mocking by just fetching latest 3 from same category if possible, else just 3 latest)
-          const relatedRes = await api.get(`/blogs`);
+          const relatedRes = await api.get(`/blogs?status=published`);
           if (relatedRes.data.success) {
-            setRelatedBlogs(relatedRes.data.data.filter(b => b.slug !== slug).slice(0, 3));
+            setRelatedBlogs(relatedRes.data.data.filter(isPublicBlog).filter(b => b.slug !== slug).slice(0, 3));
           }
         } else {
           setError('Blog not found');
@@ -239,7 +243,7 @@ export default function BlogDetails() {
       <div className="flex min-h-screen flex-col items-center justify-center bg-[#F8FAFC] px-4 text-center">
         <AlertCircle size={48} className="mb-4 text-red-500" />
         <h2 className="mb-6 text-3xl font-bold text-slate-800">{error || 'Blog not found'}</h2>
-        <Link to="/blog" className="rounded-full bg-teal-700 px-8 py-3 font-semibold text-white transition hover:bg-teal-800 hover:shadow-lg">
+        <Link to="/blog/" className="rounded-full bg-teal-700 px-8 py-3 font-semibold text-white transition hover:bg-teal-800 hover:shadow-lg">
           Explore All Articles
         </Link>
       </div>
@@ -258,7 +262,7 @@ export default function BlogDetails() {
     }
   })();
 
-  const currentUrl = typeof window === 'undefined' ? `${SITE_URL}/blog/${slug}` : window.location.href;
+  const currentUrl = getCanonicalUrl(`/blog/${slug}/`);
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(blog.title)}`,
@@ -267,7 +271,7 @@ export default function BlogDetails() {
   };
 
   const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(currentUrl);
     alert("Link copied to clipboard!");
   };
 
@@ -277,9 +281,9 @@ export default function BlogDetails() {
         title={blog.metaTitle || blog.title || 'Blog Details - Manovaidya'}
         description={blog.metaDescription || blog.shortDescription}
         keywords={blog.metaKeywords || blog.focusKeyword}
-        path={`/blog/${blog.slug || slug}`}
+        path={`/blog/${blog.slug || slug}/`}
         image={getAssetUrl(blog.ogImage || blog.image)}
-        noindex={String(blog.robots || '').startsWith('noindex')}
+        noindex={/\bnoindex\b/i.test(blog.robots || '')}
         schema={schema}
       />
       {/* Breadcrumb */}
@@ -288,7 +292,7 @@ export default function BlogDetails() {
           <nav className="flex items-center text-sm font-medium text-slate-500">
             <Link to="/" className="hover:text-teal-700">Home</Link>
             <span className="mx-3 text-slate-300">{'>'}</span>
-            <Link to="/blog" className="hover:text-teal-700">Blog</Link>
+            <Link to="/blog/" className="hover:text-teal-700">Blog</Link>
             <span className="mx-3 text-slate-300">{'>'}</span>
             <span className="text-slate-900 font-semibold truncate max-w-[200px] sm:max-w-md">{blog.title}</span>
           </nav>
@@ -503,7 +507,7 @@ export default function BlogDetails() {
                 <h3 className="mb-5 text-lg font-bold text-slate-900">Related Articles</h3>
                 <div className="space-y-4">
                   {relatedBlogs.map(post => (
-                    <Link key={post._id} to={`/blog/${post.slug}`} className="group flex gap-4">
+                    <Link key={post._id} to={`/blog/${post.slug}/`} className="group flex gap-4">
                       <img src={getAssetUrl(post.image)} alt={post.title} className="h-16 w-16 rounded-xl object-cover transition group-hover:opacity-80" />
                       <div className="min-w-0">
                         <h4 className="line-clamp-2 text-sm font-bold text-slate-800 transition group-hover:text-teal-700 leading-snug">
@@ -514,7 +518,7 @@ export default function BlogDetails() {
                     </Link>
                   ))}
                 </div>
-                <Link to="/blog" className="mt-6 inline-block text-sm font-bold text-teal-700 hover:underline">
+                <Link to="/blog/" className="mt-6 inline-block text-sm font-bold text-teal-700 hover:underline">
                   View All Articles →
                 </Link>
               </div>

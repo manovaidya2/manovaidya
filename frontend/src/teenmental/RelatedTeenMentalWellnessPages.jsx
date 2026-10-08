@@ -11,37 +11,37 @@ const relatedPages = [
   {
     title: "Teen Stress & Anxiety Treatment",
     description: "Stress, worry, overthinking and daily pressure support.",
-    href: "/teen-stress-anxiety-support",
+    href: "/teen-stress-anxiety-support/",
     image: stressImage,
   },
   {
     title: "Teen Depression & Low Mood Treatment",
     description: "Low mood, sadness, loneliness and emotional heaviness.",
-    href: "/teen-depression-support",
+    href: "/teen-depression-support/",
     image: depressionImage,
   },
   {
     title: "Exam & Performance Pressure Support",
     description: "Exam stress, academic pressure and fear of failure.",
-    href: "/exam-performance-pressure",
+    href: "/exam-performance-pressure/",
     image: examImage,
   },
   {
     title: "Teen Confidence & Emotional Wellbeing",
     description: "Self-belief, self-esteem and emotional resilience.",
-    href: "/teen-confidence-emotional-wellbeing",
+    href: "/teen-confidence-emotional-wellbeing/",
     image: confidenceImage,
   },
   {
     title: "Teen Screen Addiction Treatment",
     description: "Screen use, gaming habits and digital wellbeing.",
-    href: "/teen-screen-addiction-support",
+    href: "/teen-screen-addiction-support/",
     image: screenImage,
   },
   {
     title: "Parent-Teen Relationship Treatment",
     description: "Communication, trust and emotional connection at home.",
-    href: "/parent-teen-relationship-support",
+    href: "/parent-teen-relationship-support/",
     image: relationshipImage,
   },
 ];
@@ -64,7 +64,7 @@ function RelatedTeenMentalWellnessPages() {
         {pages.map(({ title, description, href, image }) => (
           <a
             key={href}
-            href={`${href}/`}
+            href={href}
             className="group grid grid-cols-[58px_minmax(0,1fr)] gap-3 rounded-md border border-[#eadff1] bg-[#fbf9fd] p-2 transition hover:border-[#c5adcf] hover:bg-white"
           >
             <img

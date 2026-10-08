@@ -5,6 +5,8 @@ import api, { getAssetUrl } from "../api/axiosInstance";
 import NewsletterSection from "../blog/NewsletterSection";
 import Seo from "../components/Seo";
 import { usePrerenderData } from "../prerenderData";
+import { getCanonicalUrl } from "../utils/canonical";
+import { normalizeArticleLinks } from "../utils/articleLinks";
 
 function CaseStudyDetails() {
   const { slug } = useParams();
@@ -69,8 +71,8 @@ function CaseStudyDetails() {
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = study.canonicalUrl || `${window.location.origin}/case-studies/${study.slug}`;
-  }, [study]);
+    canonical.href = getCanonicalUrl(`/case-studies/${study.slug || slug}/`);
+  }, [study, slug]);
 
   const outcomes = useMemo(
     () => (study?.outcomes || []).map((item) => item.text || item).filter(Boolean),
@@ -89,7 +91,7 @@ function CaseStudyDetails() {
     return (
       <main className="min-h-[60vh] bg-[#fbfcfa] px-6 py-16 text-center">
         <p className="text-lg font-black text-slate-900">{error || "Case study not found."}</p>
-        <Link to="/case-studies" className="mt-5 inline-flex rounded-md bg-[#8b43ba] px-5 py-3 text-sm font-black text-white">
+        <Link to="/case-studies/" className="mt-5 inline-flex rounded-md bg-[#8b43ba] px-5 py-3 text-sm font-black text-white">
           Back to Case Studies
         </Link>
       </main>
@@ -102,9 +104,9 @@ function CaseStudyDetails() {
         title={study.metaTitle || `${study.title} | Case Study | Manovaidya`}
         description={study.metaDescription || study.summary}
         keywords={study.metaKeywords || study.focusKeyword}
-        path={`/case-studies/${study.slug || slug}`}
+        path={`/case-studies/${study.slug || slug}/`}
         image={getAssetUrl(study.ogImage || study.image)}
-        noindex={String(study.robots || '').startsWith("noindex")}
+        noindex={/\bnoindex\b/i.test(study.robots || '')}
       />
       <section className="px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
         <div className="mx-auto grid max-w-[1280px] gap-8 lg:grid-cols-[minmax(0,1fr)_330px]">
@@ -118,7 +120,7 @@ function CaseStudyDetails() {
             ) : null}
 
             <div className="p-5 sm:p-8">
-              <Link to="/case-studies" className="inline-flex items-center gap-2 text-sm font-black text-[#8b43ba]">
+              <Link to="/case-studies/" className="inline-flex items-center gap-2 text-sm font-black text-[#8b43ba]">
                 <ArrowLeft className="h-4 w-4" />
                 Back to Case Studies
               </Link>
@@ -159,7 +161,7 @@ function CaseStudyDetails() {
               {study.content ? (
                 <div
                   className="prose-blog mt-8 max-w-none text-[16px] font-medium leading-8 text-slate-700 [&>h2]:mt-8 [&>h2]:text-2xl [&>h2]:font-black [&>h2]:text-slate-950 [&>h3]:mt-6 [&>h3]:text-xl [&>h3]:font-black [&>h3]:text-slate-950 [&>p]:mb-4 [&>ul]:my-5 [&>ul]:list-disc [&>ul]:pl-6"
-                  dangerouslySetInnerHTML={{ __html: study.content }}
+                  dangerouslySetInnerHTML={{ __html: normalizeArticleLinks(study.content) }}
                 />
               ) : null}
             </div>

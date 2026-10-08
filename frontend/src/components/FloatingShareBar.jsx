@@ -1,58 +1,54 @@
 import React from "react";
 import { Mail } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import { getCanonicalUrl } from "../utils/canonical";
 
 const shareEnabledPaths = new Set([
-  "/mind-body-health-care-india",
-  "/stress-ibs-support-india",
-  "/stress-and-acidity",
-  "/stress-and-digestive-health",
-  "/stress-and-migraine",
-  "/stress-and-headaches",
-  "/stress-and-fatigue",
-  "/stress-and-thyroid",
-  "/stress-and-high-blood-pressure",
-  "/senior-mental-health-care-india",
-  "/senior-mental-health-care",
-  "/memory-loss-forgetfulness-support-seniors-india",
-  "/confusion-disorientation-support-seniors-india",
-  "/mild-cognitive-impairment-mci-support-seniors-india",
-  "/dementia-alzheimers-care-support-seniors-india",
-  "/senior-depression-support-india",
-  "/sleep-disorders-seniors-support-india",
-  "/women-stress-management-mind-body-balance-india",
-  "/women-mental-health-care-india",
-  "/women-depression-low-mood-support-india",
-  "/women-hormonal-pms-pmdd-support-india",
-  "/women-self-esteem-body-image-support-india",
-  "/women-relationship-emotional-wellbeing-support-india",
-  "/women-pregnancy-postpartum-motherhood-mental-health-india",
-  "/women-life-transitions-career-pressure-support-india",
-  "/adult-mental-health-care-india",
-  "/adult-emotional-wellbeing-support-india",
-  "/adult-mental-health-care",
-  "/anxiety-support-india",
-  "/anxiety-treatment-india",
-  "/adult-depression-support",
-  "/depression-treatment-india",
-  "/stress-burnout-support-india",
-  "/sleep-disorders-insomnia-support-india",
-  "/low-self-esteem-confidence-support-india",
-  "/relationship-challenges-support-india",
-  "/addiction-unhealthy-habits-support-india",
-  "/teen-mental-health-care-india",
-  "/teen-emotional-wellbeing-support-india",
-  "/exam-performance-pressure",
-  "/teen-confidence-emotional-wellbeing",
-  "/teen-screen-addiction-support",
-  "/parent-teen-relationship-support",
-  "/child-development-care-india",
+  "/mind-body-health-care-india/",
+  "/stress-ibs-support-india/",
+  "/stress-and-acidity/",
+  "/stress-and-digestive-health/",
+  "/stress-and-migraine/",
+  "/stress-and-headaches/",
+  "/stress-and-fatigue/",
+  "/stress-and-thyroid/",
+  "/stress-and-high-blood-pressure/",
+  "/senior-mental-health-care-india/",
+  "/senior-mental-health-care-india/",
+  "/memory-loss-forgetfulness-support-seniors-india/",
+  "/confusion-disorientation-support-seniors-india/",
+  "/mild-cognitive-impairment-mci-support-seniors-india/",
+  "/dementia-alzheimers-care-support-seniors-india/",
+  "/senior-depression-support-india/",
+  "/sleep-disorders-seniors-support-india/",
+  "/women-stress-management-mind-body-balance-india/",
+  "/women-mental-health-care-india/",
+  "/women-depression-low-mood-support-india/",
+  "/women-hormonal-pms-pmdd-support-india/",
+  "/women-self-esteem-body-image-support-india/",
+  "/women-relationship-emotional-wellbeing-support-india/",
+  "/women-pregnancy-postpartum-motherhood-mental-health-india/",
+  "/women-life-transitions-career-pressure-support-india/",
+  "/adult-mental-health-care-india/",
+  "/adult-mental-health-care-india/",
+  "/adult-mental-health-care-india/",
+  "/anxiety-support-india/",
+  "/anxiety-support-india/",
+  "/adult-depression-support/",
+  "/adult-depression-support/",
+  "/stress-burnout-support-india/",
+  "/sleep-disorders-insomnia-support-india/",
+  "/low-self-esteem-confidence-support-india/",
+  "/relationship-challenges-support-india/",
+  "/addiction-unhealthy-habits-support-india/",
+  "/teen-mental-health-care-india/",
+  "/teen-mental-health-care-india/",
+  "/exam-performance-pressure/",
+  "/teen-confidence-emotional-wellbeing/",
+  "/teen-screen-addiction-support/",
+  "/parent-teen-relationship-support/",
+  "/child-development-care-india/",
 ]);
-
-function normalizePath(pathname) {
-  if (pathname.length <= 1) return pathname;
-  return pathname.replace(/\/+$/, "");
-}
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
@@ -80,11 +76,11 @@ const PinterestIcon = () => (
 
 function FloatingShareBar() {
   const { pathname } = useLocation();
-  const normalizedPath = normalizePath(pathname);
+  const pageUrl = getCanonicalUrl(pathname);
+  const normalizedPath = new URL(pageUrl).pathname;
 
   if (!shareEnabledPaths.has(normalizedPath)) return null;
 
-  const pageUrl = `https://www.manovaidya.com${normalizedPath}`;
   const pageTitle = typeof document === "undefined" ? "Manovaidya" : document.title || "Manovaidya";
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedTitle = encodeURIComponent(pageTitle);

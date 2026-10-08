@@ -33,7 +33,7 @@ const pageTitle = "Stress & Burnout Support in India";
 const stressBurnoutSeoTitle = "Stress & Burnout Treatment in India | Manovaidya";
 const stressBurnoutSeoDescription =
   "Stress and burnout support in India with chronic stress signs, workplace burnout, emotional exhaustion, structured assessment and Neuro-Ayurveda guidance.";
-const stressBurnoutSeoPageUrl = "https://manovaidya.org/stress-burnout-support-india";
+const stressBurnoutSeoPageUrl = "https://manovaidya.org/stress-burnout-support-india/";
 const stressBurnoutFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -232,17 +232,17 @@ const references = [
 const categories = [
   { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake, href: "/adult-mental-wellness/" },
   { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
-  { label: "Anxiety Support", count: 14, Icon: Brain, href: "/adult-anxiety-support-india/" },
-  { label: "Depression Support", count: 13, Icon: Activity, href: "/adult-depression-support-india/" },
-  { label: "Sleep Disorders", count: 8, Icon: Clock, href: "/sleep-disorders-support-india/" },
+  { label: "Anxiety Support", count: 14, Icon: Brain, href: "/anxiety-support-india/" },
+  { label: "Depression Support", count: 13, Icon: Activity, href: "/adult-depression-support/" },
+  { label: "Sleep Disorders", count: 8, Icon: Clock, href: "/sleep-disorders-insomnia-support-india/" },
   { label: "Work-Life Balance", count: 9, Icon: Briefcase, href: "/stress-burnout-support-india/#manage-stress" },
 ];
 
 const articleShareLinks = [
-  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://www.manovaidya.com/stress-burnout-support-india" },
-  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/stress-burnout-support-india&text=Stress%20and%20Burnout%20Support%20in%20India" },
-  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.manovaidya.com/stress-burnout-support-india" },
-  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Stress%20and%20Burnout%20Support%20in%20India%20https://www.manovaidya.com/stress-burnout-support-india" },
+  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/stress-burnout-support-india/" },
+  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/stress-burnout-support-india/&text=Stress%20and%20Burnout%20Support%20in%20India" },
+  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/stress-burnout-support-india/" },
+  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Stress%20and%20Burnout%20Support%20in%20India%20https://manovaidya.org/stress-burnout-support-india/" },
 ];
 
 const articleLinkRules = [
@@ -253,9 +253,9 @@ const articleLinkRules = [
   { href: "/stress-burnout-support-india/", pattern: /Chronic Stress/i },
   { href: "/adult-mental-wellness/", pattern: /Adult Mental Health/i },
   { href: "/adult-mental-wellness/", pattern: /Mental Wellness Support/i },
-  { href: "/adult-depression-support-india/", pattern: /depression/i },
-  { href: "/adult-anxiety-support-india/", pattern: /anxiety/i },
-  { href: "/sleep-disorders-support-india/", pattern: /sleep habits/i },
+  { href: "/adult-depression-support/", pattern: /depression/i },
+  { href: "/anxiety-support-india/", pattern: /anxiety/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /sleep habits/i },
   { href: "#signs-and-symptoms", pattern: /Emotional exhaustion/i },
   { href: "#manage-stress", pattern: /Work-Life Balance/i },
   { href: "#manage-stress", pattern: /Healthy Work Boundaries/i },
@@ -265,9 +265,9 @@ const articleLinkRules = [
   { href: "#neuro-ayurveda", pattern: /Neural Network System/i },
   { href: "#neuro-ayurveda", pattern: /Sensory Integration System/i },
   { href: "#neuro-ayurveda", pattern: /Behaviour Guidance System/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#book-consultation", pattern: /Book (?:a Structured Assessment|Consultation)/i },
 ];
 
@@ -449,7 +449,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -578,7 +578,7 @@ function VisualBlock({ heading }) {
   if (heading === "The Neuro-Ayurveda Approach to Stress & Burnout Support") {
     return (
       <div className="mt-4 space-y-4">
-        <a href="/about/approach">
+        <a href="/about/approach/">
           <img src={neuroDiagramImage} alt="Neuro-Ayurveda approach for stress and burnout support" className="max-h-[350px] w-full rounded-lg border border-[#eadff1] bg-white object-cover p-2 transition hover:shadow-md" loading="lazy" decoding="async" />
         </a>
         <IconGrid items={neuroPillarItems} columns="sm:grid-cols-2 lg:grid-cols-5" />
@@ -629,7 +629,7 @@ function VisualBlock({ heading }) {
           <div>
             <p className="text-[12px] font-bold text-[#75677d]">Mental Health & Wellness Specialist</p>
             <p className="mt-2 text-[14px] font-black text-[#21142d]">Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System</p>
-            <a href="/about/doctor" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+            <a href="/about/doctor/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
               Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -878,7 +878,7 @@ function StressBurnoutSupportPage() {
         title={stressBurnoutSeoTitle}
         description={stressBurnoutSeoDescription}
         keywords="Stress and Burnout Support, Stress and Burnout Support in India, Chronic Stress, Workplace Burnout, Emotional Exhaustion, Burnout Symptoms, Stress Management, Work-Life Balance, Burnout Recovery, Emotional Wellbeing, Mind-Body Balance"
-        path="/stress-burnout-support-india"
+        path="/stress-burnout-support-india/"
         image={heroImage}
         schema={stressBurnoutSeoSchema}
       />
@@ -890,7 +890,7 @@ function StressBurnoutSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
@@ -942,7 +942,7 @@ function StressBurnoutSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya adult stress burnout clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

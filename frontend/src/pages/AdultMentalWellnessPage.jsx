@@ -13,7 +13,7 @@ function AdultMentalWellnessPage() {
         title="Adult Mental Wellness | Anxiety, Depression & Stress Support | Manovaidya"
         description="Holistic adult mental wellness care for anxiety, depression, stress, burnout and sleep disorders through Neuro-Ayurveda at Manovaidya."
         keywords="adult mental wellness, anxiety support India, depression treatment, stress management, burnout support, adult mental health care, Neuro-Ayurveda, Dr. Ankush Garg"
-        path="/adult-mental-wellness"
+        path="/adult-mental-wellness/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",

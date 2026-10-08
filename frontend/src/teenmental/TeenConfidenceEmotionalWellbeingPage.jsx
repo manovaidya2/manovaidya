@@ -29,7 +29,7 @@ import Seo from "../components/Seo";
 const teenConfidenceSeoTitle = "Teen Confidence & Emotional Support in India | Manovaidya";
 const teenConfidenceSeoDescription =
   "Looking for Teen Confidence & Emotional Wellbeing Support in India? Learn about self-esteem, confidence challenges, emotional resilience and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
-const teenConfidenceSeoPageUrl = "https://manovaidya.org/teen-confidence-emotional-wellbeing";
+const teenConfidenceSeoPageUrl = "https://manovaidya.org/teen-confidence-emotional-wellbeing/";
 
 const articleRaw = `Key Takeaways
 Understanding Teen Confidence & Emotional Wellbeing
@@ -540,8 +540,8 @@ const articleLinkRules = [
   { label: "Teen Emotional Wellbeing Support", href: "#understanding-confidence", pattern: /Teen Emotional Wellbeing Support/i },
   { label: "Teen Emotional Wellbeing", href: "#why-families-choose", pattern: /Teen Emotional Wellbeing/i },
   { label: "Teenage Emotional Health", href: "#understanding-confidence", pattern: /Teenage Emotional Health/i },
-  { label: "Teen Mental Wellness", href: "/teen-mental-wellness-india/", pattern: /Teen Mental Wellness/i },
-  { label: "Teen Mental Health Support", href: "/teen-mental-wellness-india/", pattern: /Teen Mental Health Support/i },
+  { label: "Teen Mental Wellness", href: "/teen-mental-wellness/", pattern: /Teen Mental Wellness/i },
+  { label: "Teen Mental Health Support", href: "/teen-mental-wellness/", pattern: /Teen Mental Health Support/i },
   { label: "Teen Therapy", href: "#how-we-support", pattern: /Teen Therapy/i },
   { label: "Teen Counselling", href: "#when-to-assess", pattern: /Teen Counselling/i },
   { label: "Online Counselling for Teenagers", href: "#when-to-assess", pattern: /Online Counselling for Teenagers/i },
@@ -571,19 +571,19 @@ const articleLinkRules = [
   { label: "Neural Network System", href: "#neuro-ayurveda-approach", pattern: /Neural Network System/i },
   { label: "Sensory Integration System", href: "#neuro-ayurveda-approach", pattern: /Sensory Integration System/i },
   { label: "Behaviour Guidance System", href: "#neuro-ayurveda-approach", pattern: /Behaviour Guidance System/i },
-  { label: "Academic Pressure", href: "/exam-performance-pressure", pattern: /Academic Pressure/i },
-  { label: "Academic Stress", href: "/exam-performance-pressure", pattern: /Academic Stress/i },
+  { label: "Academic Pressure", href: "/exam-performance-pressure/", pattern: /Academic Pressure/i },
+  { label: "Academic Stress", href: "/exam-performance-pressure/", pattern: /Academic Stress/i },
   { label: "Social Media", href: "/teen-screen-addiction-support/", pattern: /Social Media/i },
   { label: "Parent Guidance", href: "#how-parents-can-help", pattern: /Parent Guidance/i },
   { label: "Family Support", href: "/parent-teen-relationship-support/", pattern: /Family Support/i },
   { label: "Parent-Teen Communication", href: "/parent-teen-relationship-support/", pattern: /Parent-Teen Communication/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Neuro-Ayurveda", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
-  { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Neuro-Ayurveda", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
+  { label: "Child Development", href: "/child-development-support-india/", pattern: /Child Development/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
 ];
 
 const faqs = [
@@ -951,7 +951,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -1113,7 +1113,7 @@ function ArticleVisualBlock({ heading }) {
         <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
         <div>
           <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+          <a href="/about/doctor/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
             Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
           </a>
         </div>
@@ -1218,7 +1218,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
-  const pageUrl = "https://manovaidya.org/teen-confidence-emotional-wellbeing";
+  const pageUrl = "https://manovaidya.org/teen-confidence-emotional-wellbeing/";
   const pageTitle = "Teen Confidence & Emotional Wellbeing Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
@@ -1299,7 +1299,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
         title={teenConfidenceSeoTitle}
         description={teenConfidenceSeoDescription}
         keywords="Teen Confidence Support India, Teen Self-Esteem Treatment, Adolescent Emotional Wellbeing, Teen Self-Doubt, Low Confidence in Teens, Teenage Emotional Resilience, Neuro-Ayurveda Confidence Support, Dr. Ankush Garg"
-        path="/teen-confidence-emotional-wellbeing"
+        path="/teen-confidence-emotional-wellbeing/"
         schema={teenConfidenceSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1309,7 +1309,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/teen-mental-wellness-india/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
+                <a href="/teen-mental-wellness/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Teen Confidence & Emotional Wellbeing Support</span>
               </nav>
@@ -1401,7 +1401,7 @@ function TeenConfidenceEmotionalWellbeingPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img
                 src={doctorImage}
                 alt="Dr Ankush Garg Manovaidya teen confidence emotional wellbeing clinician"

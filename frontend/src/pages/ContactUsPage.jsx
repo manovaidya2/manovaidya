@@ -137,13 +137,13 @@ function ContactUsPage() {
       <Seo
         title="Contact Us | Manovaidya"
         description="Contact Manovaidya for online and clinic consultations in Noida, Delhi NCR and across India."
-        path="/contact-us"
+        path="/contact-us/"
         keywords="contact Manovaidya, Manovaidya phone number, Manovaidya clinic Noida, book consultation Manovaidya"
         schema={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
           name: "Contact Us",
-          url: "https://manovaidya.org/contact-us",
+          url: "https://manovaidya.org/contact-us/",
         }}
       />
 

@@ -13,32 +13,32 @@ const relatedPages = [
   },
   {
     title: "ADHD Treatment in India",
-    href: "/child-health-care/adhd-child",
+    href: "/child-health-care/adhd-child/",
     image: supportFamilyImage,
   },
   {
     title: "Speech Delay & Communication Support",
-    href: "/speech-delay-support-india",
+    href: "/speech-delay-support-india/",
     image: signsImage,
   },
   {
     title: "Learning & Attention Difficulties",
-    href: "/learning-attention-difficulties-india",
+    href: "/learning-attention-difficulties-india/",
     image: ctaImage,
   },
   {
     title: "Behavioural Concerns in Children",
-    href: "/behavioural-concerns-children-india",
+    href: "/behavioural-concerns-children-india/",
     image: childHeroImage,
   },
   {
     title: "Child Development Treatment in India",
-    href: "/child-development-support-india",
+    href: "/child-development-support-india/",
     image: supportFamilyImage,
   },
   {
     title: "Know more about Dr. Ankush Garg",
-    href: "/about/doctor",
+    href: "/about/doctor/",
     image: doctorImage,
   },
 ];

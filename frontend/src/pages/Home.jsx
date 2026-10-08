@@ -19,7 +19,7 @@ function Home() {
           "@context": "https://schema.org",
           "@type": "MedicalOrganization",
           "name": "Manovaidya",
-          "url": "https://manovaidya.org",
+          "url": "https://manovaidya.org/",
           "description": "Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns."
         }}
       />

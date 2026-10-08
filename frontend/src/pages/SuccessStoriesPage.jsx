@@ -22,7 +22,7 @@ function SuccessStoriesPage() {
         title="Success Stories | Patient & Family Testimonials | Manovaidya"
         description="Explore real success stories and video testimonials from families across India who found guidance and support through Manovaidya's Neuro-Ayurveda care."
         keywords="Manovaidya success stories, patient testimonials, family reviews, video testimonials, real recovery stories, Neuro-Ayurveda outcomes, child development success, autism success stories, parent testimonials India, mental health patient reviews"
-        path="/success-stories"
+        path="/success-stories/"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",

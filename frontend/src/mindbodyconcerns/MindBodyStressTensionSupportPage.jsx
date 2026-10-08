@@ -541,7 +541,7 @@ function MindBodyStressTensionSupportPage() {
         "@type": "MedicalWebPage",
         name: "Mind-Body Health Care & Stress-Related Health Treatment in India",
         description: "Mind-body health care, stress-related physical symptoms, gut-brain wellness and emotional wellbeing support at Manovaidya.",
-        url: "https://www.manovaidya.com/mind-body-health-care-india/",
+        url: "https://manovaidya.org/mind-body-health-care-india/",
       },
       {
         "@type": "FAQPage",
@@ -554,9 +554,9 @@ function MindBodyStressTensionSupportPage() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.manovaidya.com/" },
-          { "@type": "ListItem", position: 2, name: "Mind-Body Health", item: "https://www.manovaidya.com/mind-body-wellbeing/" },
-          { "@type": "ListItem", position: 3, name: "Stress & Tension Support", item: "https://www.manovaidya.com/mind-body-health-care-india/" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://manovaidya.org/" },
+          { "@type": "ListItem", position: 2, name: "Mind-Body Health", item: "https://manovaidya.org/mind-body-wellbeing/" },
+          { "@type": "ListItem", position: 3, name: "Stress & Tension Support", item: "https://manovaidya.org/mind-body-health-care-india/" },
         ],
       },
       {
@@ -574,7 +574,7 @@ function MindBodyStressTensionSupportPage() {
         title="Mind-Body Health Care in India | Stress, Gut-Brain & Physical Health | Manovaidya"
         description="Looking for Mind-Body Health Care in India? Learn how stress may affect digestion, IBS, acidity, migraine, headaches, thyroid, blood pressure, fatigue and overall wellbeing at Manovaidya."
         keywords="Mind-Body Health, Mind-Body Health Care, Mind-Body Connection, Stress and Physical Health, Gut-Brain Axis, Psychosomatic Health, Mind-Body Wellness, Mind-Body Assessment, Stress & Digestive Health, Stress & IBS, Stress & Acidity, Stress & Migraine, Stress & Headaches, Stress & High Blood Pressure, Stress & Thyroid, Stress & Fatigue, Chronic Stress"
-        path="/mind-body-health-care-india"
+        path="/mind-body-health-care-india/"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
@@ -585,7 +585,7 @@ function MindBodyStressTensionSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8B43BA]">Home</a>
                 <span>/</span>
-                <a href="/mind-body-wellbeing" className="transition hover:text-[#8B43BA]">Mind-Body Health</a>
+                <a href="/mind-body-wellbeing/" className="transition hover:text-[#8B43BA]">Mind-Body Health</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Stress & Tension</span>
               </nav>

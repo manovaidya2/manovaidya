@@ -468,12 +468,12 @@ function buildRawFaqs(lines) {
 const rawFaqs = buildRawFaqs(rawFaqLines);
 
 const articleLinkRules = [
-  { href: "/child-health-care", pattern: /Child Health Care/i },
-  { href: "/child-development-care-india", pattern: /Child Development/i },
-  { href: "/child-development-support-india", pattern: /Child Development Support/i },
-  { href: "/learning-attention-difficulties-india", pattern: /Learning (?:and|&) Attention/i },
-  { href: "/learning-attention-difficulties-india", pattern: /Learning (?:Support|Readiness|Skills|capacity)/i },
-  { href: "/learning-attention-difficulties-india", pattern: /Attention (?:Support|Deficit Hyperactivity Disorder|and Focus|& Focus)/i },
+  { href: "/child-health-care/", pattern: /Child Health Care/i },
+  { href: "/child-development-care-india/", pattern: /Child Development/i },
+  { href: "/child-development-support-india/", pattern: /Child Development Support/i },
+  { href: "/learning-attention-difficulties-india/", pattern: /Learning (?:and|&) Attention/i },
+  { href: "/learning-attention-difficulties-india/", pattern: /Learning (?:Support|Readiness|Skills|capacity)/i },
+  { href: "/learning-attention-difficulties-india/", pattern: /Attention (?:Support|Deficit Hyperactivity Disorder|and Focus|& Focus)/i },
   { href: "#adhd-assessment", pattern: /ADHD Assessment/i },
   { href: "#adhd-assessment", pattern: /ADHD screening/i },
   { href: "#adhd-assessment", pattern: /ADHD evaluation/i },
@@ -481,35 +481,35 @@ const articleLinkRules = [
   { href: "#book-consultation", pattern: /ADHD treatment/i },
   { href: "#book-consultation", pattern: /ADHD support/i },
   { href: "#parent-guidance", pattern: /Parent (?:Training|Coaching|Guidance|Support)/i },
-  { href: "/behavioural-concerns-children-india", pattern: /Behaviour Guidance/i },
-  { href: "/behavioural-concerns-children-india", pattern: /Behaviour(?:al)? (?:Control|Challenges|Concerns|Support)/i },
-  { href: "/behavioural-concerns-children-india", pattern: /Behavior(?:al)? (?:Control|Challenges|Concerns|Support)/i },
+  { href: "/behavioural-concerns-children-india/", pattern: /Behaviour Guidance/i },
+  { href: "/behavioural-concerns-children-india/", pattern: /Behaviour(?:al)? (?:Control|Challenges|Concerns|Support)/i },
+  { href: "/behavioural-concerns-children-india/", pattern: /Behavior(?:al)? (?:Control|Challenges|Concerns|Support)/i },
   { href: "#neuro-ayurveda-system", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/approach", pattern: /Brain Nourishment System/i },
-  { href: "/about/approach", pattern: /Gut Response System/i },
-  { href: "/about/approach", pattern: /Neural Network System/i },
-  { href: "/about/approach", pattern: /Sensory Integration System/i },
-  { href: "/about/approach", pattern: /Behaviour Guidance System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Brain Nourishment System/i },
+  { href: "/about/approach/", pattern: /Gut Response System/i },
+  { href: "/about/approach/", pattern: /Neural Network System/i },
+  { href: "/about/approach/", pattern: /Sensory Integration System/i },
+  { href: "/about/approach/", pattern: /Behaviour Guidance System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "/autism-treatment-india/", pattern: /Autism/i },
-  { href: "/speech-delay-support-india", pattern: /Speech/i },
-  { href: "/adult-mental-health-care-india", pattern: /Mental Health/i },
-  { href: "/adult-emotional-wellbeing-support-india", pattern: /Emotional Wellbeing/i },
-  { href: "/stress-burnout-support-india", pattern: /Stress/i },
-  { href: "/sleep-disorders-insomnia-support-india", pattern: /Sleep/i },
-  { href: "/success-stories", pattern: /Success Stories/i },
-  { href: "/blog", pattern: /ADHD Blogs/i },
+  { href: "/speech-delay-support-india/", pattern: /Speech/i },
+  { href: "/adult-mental-health-care-india/", pattern: /Mental Health/i },
+  { href: "/adult-mental-health-care-india/", pattern: /Emotional Wellbeing/i },
+  { href: "/stress-burnout-support-india/", pattern: /Stress/i },
+  { href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep/i },
+  { href: "/success-stories/", pattern: /Success Stories/i },
+  { href: "/blog/", pattern: /ADHD Blogs/i },
 ];
 
 const articleKeywordLinks = [
   { text: "ADHD", href: "#book-consultation" },
-  { text: "attention", href: "/learning-attention-difficulties-india" },
-  { text: "focus", href: "/learning-attention-difficulties-india" },
-  { text: "learning", href: "/learning-attention-difficulties-india" },
-  { text: "behaviour", href: "/behavioural-concerns-children-india" },
-  { text: "behavior", href: "/behavioural-concerns-children-india" },
-  { text: "developmental", href: "/child-development-support-india" },
+  { text: "attention", href: "/learning-attention-difficulties-india/" },
+  { text: "focus", href: "/learning-attention-difficulties-india/" },
+  { text: "learning", href: "/learning-attention-difficulties-india/" },
+  { text: "behaviour", href: "/behavioural-concerns-children-india/" },
+  { text: "behavior", href: "/behavioural-concerns-children-india/" },
+  { text: "developmental", href: "/child-development-support-india/" },
   { text: "ADHD Treatment in India", href: "#book-consultation" },
   { text: "ADHD treatment", href: "#book-consultation" },
   { text: "ADHD support", href: "#book-consultation" },
@@ -517,36 +517,36 @@ const articleKeywordLinks = [
   { text: "ADHD Assessment", href: "#adhd-assessment" },
   { text: "ADHD screening", href: "#adhd-assessment" },
   { text: "ADHD evaluation", href: "#adhd-assessment" },
-  { text: "Attention Deficit Hyperactivity Disorder", href: "/learning-attention-difficulties-india" },
-  { text: "Attention Support", href: "/learning-attention-difficulties-india" },
-  { text: "Learning Support", href: "/learning-attention-difficulties-india" },
-  { text: "Learning Readiness", href: "/learning-attention-difficulties-india" },
-  { text: "Learning Skills", href: "/learning-attention-difficulties-india" },
-  { text: "Child Development Support", href: "/child-development-support-india" },
-  { text: "Child Development", href: "/child-development-care-india" },
+  { text: "Attention Deficit Hyperactivity Disorder", href: "/learning-attention-difficulties-india/" },
+  { text: "Attention Support", href: "/learning-attention-difficulties-india/" },
+  { text: "Learning Support", href: "/learning-attention-difficulties-india/" },
+  { text: "Learning Readiness", href: "/learning-attention-difficulties-india/" },
+  { text: "Learning Skills", href: "/learning-attention-difficulties-india/" },
+  { text: "Child Development Support", href: "/child-development-support-india/" },
+  { text: "Child Development", href: "/child-development-care-india/" },
   { text: "Parent Training", href: "#parent-guidance" },
   { text: "Parent Coaching", href: "#parent-guidance" },
   { text: "Parent Guidance", href: "#parent-guidance" },
   { text: "Parent Support", href: "#parent-guidance" },
-  { text: "Behaviour Control", href: "/behavioural-concerns-children-india" },
-  { text: "Behavioral Challenges", href: "/behavioural-concerns-children-india" },
-  { text: "Behavioural Concerns", href: "/behavioural-concerns-children-india" },
+  { text: "Behaviour Control", href: "/behavioural-concerns-children-india/" },
+  { text: "Behavioral Challenges", href: "/behavioural-concerns-children-india/" },
+  { text: "Behavioural Concerns", href: "/behavioural-concerns-children-india/" },
   { text: "Neuro-Ayurveda Development System", href: "#neuro-ayurveda-system" },
-  { text: "Brain Nourishment System", href: "/about/approach" },
-  { text: "Gut Response System", href: "/about/approach" },
-  { text: "Neural Network System", href: "/about/approach" },
-  { text: "Behaviour Guidance System", href: "/about/approach" },
-  { text: "Dr. Ankush Garg", href: "/about/doctor" },
-  { text: "Dr Ankush Garg", href: "/about/doctor" },
-  { text: "Manovaidya", href: "/about/manovaidya" },
+  { text: "Brain Nourishment System", href: "/about/approach/" },
+  { text: "Gut Response System", href: "/about/approach/" },
+  { text: "Neural Network System", href: "/about/approach/" },
+  { text: "Behaviour Guidance System", href: "/about/approach/" },
+  { text: "Dr. Ankush Garg", href: "/about/doctor/" },
+  { text: "Dr Ankush Garg", href: "/about/doctor/" },
+  { text: "Manovaidya", href: "/about/manovaidya/" },
   { text: "Autism", href: "/autism-treatment-india/" },
-  { text: "Speech", href: "/speech-delay-support-india" },
-  { text: "Mental Health", href: "/adult-mental-health-care-india" },
-  { text: "Emotional Wellbeing", href: "/adult-emotional-wellbeing-support-india" },
-  { text: "Stress", href: "/stress-burnout-support-india" },
-  { text: "Sleep", href: "/sleep-disorders-insomnia-support-india" },
-  { text: "Success Stories", href: "/success-stories" },
-  { text: "ADHD Blogs", href: "/blog" },
+  { text: "Speech", href: "/speech-delay-support-india/" },
+  { text: "Mental Health", href: "/adult-mental-health-care-india/" },
+  { text: "Emotional Wellbeing", href: "/adult-mental-health-care-india/" },
+  { text: "Stress", href: "/stress-burnout-support-india/" },
+  { text: "Sleep", href: "/sleep-disorders-insomnia-support-india/" },
+  { text: "Success Stories", href: "/success-stories/" },
+  { text: "ADHD Blogs", href: "/blog/" },
 ];
 
 function VisualBlock({ heading }) {
@@ -703,7 +703,7 @@ function VisualBlock({ heading }) {
   if (heading === "What is the Neuro Ayurveda Development system?" || heading === "The Neuro-Ayurveda Development System") {
     return (
       <div className="mt-4">
-        <a href="/about/neuro-ayurveda">
+        <a href="/about/approach/">
           <img
             src={neuroDiagramImage}
             alt="Neuro-Ayurveda five pillar development system"
@@ -941,7 +941,7 @@ function CoreInsightsBlock({ onCitationClick }) {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -1155,7 +1155,7 @@ const PinterestShareIcon = () => (
 );
 
 function FloatingShareBar() {
-  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://manovaidya.org/child-health-care/adhd-child";
+  const pageUrl = typeof window !== "undefined" ? window.location.href : "https://manovaidya.org/child-health-care/adhd-child/";
   const pageTitle = "ADHD Treatment in India";
   const encodedUrl = encodeURIComponent(pageUrl);
   const encodedTitle = encodeURIComponent(pageTitle);
@@ -1210,7 +1210,7 @@ function FloatingShareBar() {
   );
 }
 
-const adhdPageUrl = "https://manovaidya.org/child-health-care/adhd-child";
+const adhdPageUrl = "https://manovaidya.org/child-health-care/adhd-child/";
 const adhdPageTitle = "ADHD Treatment in India | ADHD Assessment | Manovaidya";
 const adhdPageDescription =
   "Looking for ADHD Treatment in India? Get expert ADHD assessment, personalized child development support, and parent guidance at Manovaidya.";
@@ -1359,7 +1359,7 @@ const adhdPageSchema = {
         "Neuro-Ayurveda Development System",
       ],
       reviewedBy: {
-        "@id": "https://manovaidya.org/about/doctor#physician",
+        "@id": "https://manovaidya.org/about/doctor/#physician",
       },
     },
     {
@@ -1383,14 +1383,14 @@ const adhdPageSchema = {
     },
     {
       "@type": "Physician",
-      "@id": "https://manovaidya.org/about/doctor#physician",
+      "@id": "https://manovaidya.org/about/doctor/#physician",
       name: "Dr. Ankush Garg",
-      url: "https://manovaidya.org/about/doctor",
+      url: "https://manovaidya.org/about/doctor/",
       medicalSpecialty: ["Mental Health", "Child Development", "ADHD", "Autism"],
       worksFor: {
         "@type": "MedicalOrganization",
         name: "Manovaidya",
-        url: "https://manovaidya.org",
+        url: "https://manovaidya.org/",
       },
       address: {
         "@type": "PostalAddress",
@@ -1407,10 +1407,10 @@ function ADHDChildArticlePage() {
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
   const articleShareLinks = [
-    { label: "f", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/child-health-care/adhd-child", title: "Share on Facebook" },
-    { label: "x", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/child-health-care/adhd-child&text=ADHD%20Treatment%20in%20India", title: "Share on X" },
-    { label: "in", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/child-health-care/adhd-child", title: "Share on LinkedIn" },
-    { label: "wa", href: "https://wa.me/?text=ADHD%20Treatment%20in%20India%20https://manovaidya.org/child-health-care/adhd-child", title: "Share on WhatsApp" },
+    { label: "f", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/child-health-care/adhd-child/", title: "Share on Facebook" },
+    { label: "x", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/child-health-care/adhd-child/&text=ADHD%20Treatment%20in%20India", title: "Share on X" },
+    { label: "in", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/child-health-care/adhd-child/", title: "Share on LinkedIn" },
+    { label: "wa", href: "https://wa.me/?text=ADHD%20Treatment%20in%20India%20https://manovaidya.org/child-health-care/adhd-child/", title: "Share on WhatsApp" },
   ];
 
   const handleCitationClick = React.useCallback((referenceId) => {
@@ -1467,7 +1467,7 @@ function ADHDChildArticlePage() {
         title={adhdPageTitle}
         description={adhdPageDescription}
         keywords={adhdPageKeywords}
-        path="/child-health-care/adhd-child"
+        path="/child-health-care/adhd-child/"
         schema={adhdPageSchema}
       />
       <FloatingShareBar />
@@ -1479,7 +1479,7 @@ function ADHDChildArticlePage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a>
+                <a href="/child-health-care/" className="transition hover:text-[#7835A4]">Child Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">ADHD</span>
               </nav>
@@ -1622,7 +1622,7 @@ function ADHDChildArticlePage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya ADHD autism child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">

@@ -31,7 +31,7 @@ const pageTitle = "Teen Depression & Low Mood Support in India";
 const teenDepressionSeoTitle = "Teen Depression & Low Mood Treatment in India | Manovaidya";
 const teenDepressionSeoDescription =
   "Teen depression and low mood support in India with signs, causes, parent guidance, structured assessment and Neuro-Ayurveda teen wellness approach at Manovaidya.";
-const teenDepressionSeoPageUrl = "https://manovaidya.org/teen-depression-support";
+const teenDepressionSeoPageUrl = "https://manovaidya.org/teen-depression-support/";
 const teenDepressionFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -856,16 +856,16 @@ const categories = [
   { label: "Teen Depression", count: 12, Icon: Activity, href: "/teen-depression-support/" },
   { label: "Exam Pressure", count: 10, Icon: BookOpen, href: "/exam-performance-pressure/" },
   { label: "Screen Addiction", count: 8, Icon: Brain, href: "/teen-screen-addiction-support/" },
-  { label: "Confidence & Self-Esteem", count: 11, Icon: Sparkles, href: "/teen-mental-wellness-india/" },
+  { label: "Confidence & Self-Esteem", count: 11, Icon: Sparkles, href: "/teen-mental-wellness/" },
   { label: "Parent-Teen Relationship", count: 9, Icon: Users, href: "/parent-teen-relationship-support/" },
   { label: "Teen Stress & Anxiety", count: 13, Icon: HeartHandshake, href: "/teen-stress-anxiety-support/" },
 ];
 
 const articleShareLinks = [
-  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://www.manovaidya.com/teen-depression-support" },
-  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://www.manovaidya.com/teen-depression-support&text=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India" },
-  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.manovaidya.com/teen-depression-support" },
-  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India%20https://www.manovaidya.com/teen-depression-support" },
+  { label: "f", title: "Share on Facebook", href: "https://www.facebook.com/sharer/sharer.php?u=https://manovaidya.org/teen-depression-support/" },
+  { label: "x", title: "Share on X", href: "https://twitter.com/intent/tweet?url=https://manovaidya.org/teen-depression-support/&text=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India" },
+  { label: "in", title: "Share on LinkedIn", href: "https://www.linkedin.com/shareArticle?mini=true&url=https://manovaidya.org/teen-depression-support/" },
+  { label: "wa", title: "Share on WhatsApp", href: "https://api.whatsapp.com/send?text=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India%20https://manovaidya.org/teen-depression-support/" },
 ];
 
 const floatingShareLinks = [
@@ -873,7 +873,7 @@ const floatingShareLinks = [
   { title: "Share on X", href: articleShareLinks[1].href, className: "bg-black hover:bg-[#1c1c1c]", Icon: () => <span className="text-[20px] font-normal leading-none">X</span> },
   {
     title: "Share on Flipboard",
-    href: "https://share.flipboard.com/bookmarklet/popout?v=2&url=https://www.manovaidya.com/teen-depression-support&title=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India",
+    href: "https://share.flipboard.com/bookmarklet/popout?v=2&url=https://manovaidya.org/teen-depression-support/&title=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India",
     className: "bg-[#ef262b] hover:bg-[#d91d22]",
     Icon: () => (
       <span className="grid h-4 w-4 grid-cols-3 grid-rows-3 gap-[1.5px]" aria-hidden="true">
@@ -891,20 +891,20 @@ const floatingShareLinks = [
   },
   {
     title: "Share on Pinterest",
-    href: "https://pinterest.com/pin/create/button/?url=https://www.manovaidya.com/teen-depression-support&description=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India",
+    href: "https://pinterest.com/pin/create/button/?url=https://manovaidya.org/teen-depression-support/&description=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India",
     className: "bg-[#cf0026] hover:bg-[#b80022]",
     Icon: () => <span className="font-serif text-[21px] font-black leading-none">p</span>,
   },
-  { title: "Share by Email", href: "mailto:?subject=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India&body=https://www.manovaidya.com/teen-depression-support", className: "bg-[#dd1590] hover:bg-[#c51280]", Icon: () => <Mail className="h-3.5 w-3.5" strokeWidth={2.2} /> },
+  { title: "Share by Email", href: "mailto:?subject=Teen%20Depression%20and%20Low%20Mood%20Treatment%20in%20India&body=https://manovaidya.org/teen-depression-support/", className: "bg-[#dd1590] hover:bg-[#c51280]", Icon: () => <Mail className="h-3.5 w-3.5" strokeWidth={2.2} /> },
 ];
 
 const articleLinkRules = [
   { href: "/teen-depression-support/", pattern: /Teen Depression Treatment/i },
   { href: "/teen-depression-support/", pattern: /Teen Depression/i },
-  { href: "/teen-mental-wellness-india/", pattern: /Teen Mental Health Treatment/i },
-  { href: "/teen-mental-wellness-india/", pattern: /Teen Mental Health Support/i },
-  { href: "/teen-mental-wellness-india/", pattern: /Teen Emotional Wellbeing/i },
-  { href: "/teen-mental-wellness-india/", pattern: /Teen Mental Wellness/i },
+  { href: "/teen-mental-wellness/", pattern: /Teen Mental Health Treatment/i },
+  { href: "/teen-mental-wellness/", pattern: /Teen Mental Health Support/i },
+  { href: "/teen-mental-wellness/", pattern: /Teen Emotional Wellbeing/i },
+  { href: "/teen-mental-wellness/", pattern: /Teen Mental Wellness/i },
   { href: "/parent-teen-relationship-support/", pattern: /Parent-Teen Communication/i },
   { href: "/parent-teen-relationship-support/", pattern: /Parent Guidance/i },
   { href: "/exam-performance-pressure/", pattern: /Academic Pressure/i },
@@ -919,9 +919,9 @@ const articleLinkRules = [
   { href: "#neuro-ayurveda-approach", pattern: /Neural Network System/i },
   { href: "#neuro-ayurveda-approach", pattern: /Sensory Integration System/i },
   { href: "#neuro-ayurveda-approach", pattern: /Behaviour Guidance System/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda (?:Development )?(?:approach|System)/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda (?:Development )?(?:approach|System)/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#book-consultation", pattern: /Book Consultation/i },
 ];
 
@@ -1120,7 +1120,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -1252,7 +1252,7 @@ function VisualBlock({ heading }) {
   if (heading === "The Neuro-Ayurveda Approach to Teen Depression & Low Mood") {
     return (
       <div className="mt-4 space-y-4">
-        <a href="/about/approach">
+        <a href="/about/approach/">
           <img src={neuroAyurvedaImage} alt="Neuro-Ayurveda teen depression and emotional wellbeing framework" className="max-h-[350px] w-full rounded-lg border border-[#eadff1] bg-white object-cover p-2 transition hover:shadow-md" loading="lazy" decoding="async" />
         </a>
         <IconGrid items={neuroPillarItems} columns="sm:grid-cols-2 lg:grid-cols-5" />
@@ -1300,7 +1300,7 @@ function VisualBlock({ heading }) {
           <div>
             <p className="text-[12px] font-bold text-[#75677d]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
             <p className="mt-2 text-[14px] font-black text-[#21142d]">Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System</p>
-            <a href="/about/doctor" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+            <a href="/about/doctor/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
               Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -1569,7 +1569,7 @@ function TeenDepressionLowMoodIndiaPage() {
         title={teenDepressionSeoTitle}
         description={teenDepressionSeoDescription}
         keywords="Teen Depression Treatment India, Teen Low Mood, Adolescent Depression, Teenage Depression Support, Teen Mental Health, Parent Guidance for Teen Depression, Neuro-Ayurveda Teen Care, Emotional Wellbeing, Dr. Ankush Garg"
-        path="/teen-depression-support"
+        path="/teen-depression-support/"
         image={heroImage}
         schema={teenDepressionSeoSchema}
       />
@@ -1581,7 +1581,7 @@ function TeenDepressionLowMoodIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/teen-mental-wellness" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
+                <a href="/teen-mental-wellness/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">{pageTitle}</span>
               </nav>
@@ -1641,7 +1641,7 @@ function TeenDepressionLowMoodIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya teen mental wellness clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

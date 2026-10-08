@@ -29,11 +29,11 @@ import BookConsultationButton from "../components/BookConsultationButton";
 import Seo from "../components/Seo";
 
 const pageTitle = "Addiction & Unhealthy Habits Treatment in India";
-const pageUrl = "https://www.manovaidya.com/addiction-unhealthy-habits-support-india";
+const pageUrl = "https://manovaidya.org/addiction-unhealthy-habits-support-india/";
 const addictionSeoTitle = `${pageTitle} | Manovaidya`;
 const addictionSeoDescription =
   "Looking for Addiction & Unhealthy Habits Treatment in India? Learn about behavioural addiction, unhealthy habits, emotional wellbeing and the Neuro-Ayurveda approach at Manovaidya.";
-const addictionSeoPageUrl = "https://www.manovaidya.org/addiction-unhealthy-habits-support-india";
+const addictionSeoPageUrl = "https://manovaidya.org/addiction-unhealthy-habits-support-india/";
 const addictionFaqSchema = {
   "@type": "FAQPage",
   mainEntity: [
@@ -561,13 +561,13 @@ const articleLinkRules = [
   { href: "#daily-life-impact", pattern: /emotional wellbeing/i },
   { href: "/stress-burnout-support-india/", pattern: /stress/i },
   { href: "/anxiety-support-india/", pattern: /anxiety/i },
-  { href: "/depression-treatment-india/", pattern: /depression/i },
+  { href: "/adult-depression-support/", pattern: /depression/i },
   { href: "/low-self-esteem-confidence-support-india/", pattern: /self-esteem/i },
   { href: "/sleep-disorders-insomnia-support-india/", pattern: /sleep/i },
   { href: "/relationship-challenges-support-india/", pattern: /relationships/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#assessment", pattern: /professional guidance/i },
 ];
 
@@ -575,7 +575,7 @@ const categories = [
   { label: "Adult Mental Wellness", count: 15, Icon: HeartHandshake, href: "/adult-mental-wellness/" },
   { label: "Addiction & Habits", count: 11, Icon: Smartphone, href: "/addiction-unhealthy-habits-support-india/" },
   { label: "Self-Esteem & Confidence", count: 12, Icon: Sparkles, href: "/low-self-esteem-confidence-support-india/" },
-  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-treatment-india/" },
+  { label: "Anxiety & Depression", count: 14, Icon: Brain, href: "/adult-depression-support/" },
   { label: "Stress & Burnout", count: 12, Icon: BatteryLow, href: "/stress-burnout-support-india/" },
   { label: "Neuro-Ayurveda", count: 10, Icon: Sparkles, href: "#neuro-ayurveda-system" },
 ];
@@ -916,7 +916,7 @@ function KeyTakeawaysBlock() {
             <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
-          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
         </div>
       </div>
     </section>
@@ -992,7 +992,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
         title={addictionSeoTitle}
         description={addictionSeoDescription}
         keywords="Addiction Treatment in India, Unhealthy Habits, Behavioural Addiction, Mobile Addiction, Social Media Addiction, Gaming Addiction, Habit Change, Emotional Wellbeing"
-        path="/addiction-unhealthy-habits-support-india"
+        path="/addiction-unhealthy-habits-support-india/"
         image={heroImage}
         schema={addictionSeoSchema}
       />
@@ -1003,7 +1003,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Addiction & Habit Support</span>
               </nav>
@@ -1058,7 +1058,7 @@ function AdultAddictionUnhealthyHabitsSupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya addiction habit support clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

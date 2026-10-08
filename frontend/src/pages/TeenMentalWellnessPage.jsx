@@ -13,7 +13,7 @@ function TeenMentalWellnessPage() {
         title="Teen Mental Wellness | Stress, Anxiety & Academic Pressure | Manovaidya"
         description="Support your teen's mental wellness with Manovaidya's Neuro-Ayurveda care for stress, anxiety, low mood, screen addiction, and academic pressure."
         keywords="teen mental wellness, teen anxiety support, exam pressure support, teen depression India, screen addiction in teens, child and adolescent mental health, Neuro-Ayurveda, Manovaidya, Dr. Ankush Garg"
-        path="/teen-mental-wellness"
+        path="/teen-mental-wellness/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",

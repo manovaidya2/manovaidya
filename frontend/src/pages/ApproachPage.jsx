@@ -14,7 +14,7 @@ function ApproachPage() {
         title="Our Approach | Personalised Neuro-Ayurveda Care"
         description="Manovaidya offers a personalised Neuro-Ayurveda approach combining Ayurveda and modern science for better development and wellbeing."
         keywords="Manovaidya Approach, Neuro-Ayurveda, Personalised Care, Holistic Mental Health, Root Cause Approach, Child Development, Autism Support India, ADHD Support India, Behavioural Health, Brain Gut Mind, Ayurveda and Modern Science"
-        path="/about/approach"
+        path="/about/approach/"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",

@@ -139,7 +139,7 @@ function MindBodyFaqSection() {
                 all age groups.
               </p>
               <a
-                href="/about/doctor"
+                href="/about/doctor/"
                 className="mt-2 inline-flex items-center gap-2 text-[14px] font-black text-[#4a2997]"
               >
                 Know more about Dr. Ankush Garg

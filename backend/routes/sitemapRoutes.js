@@ -1,9 +1,10 @@
 import express from 'express';
 import Blog from '../models/Blog.js';
 import CaseStudy from '../models/CaseStudy.js';
+import { getPublicPageUrl } from '../utils/publicPageUrl.js';
+import { isPublicBlog } from '../utils/publicContent.js';
 
 const router = express.Router();
-const SITE_URL = (process.env.PUBLIC_SITE_URL || 'https://manovaidya.org').replace(/\/$/, '');
 
 const escapeXml = (value = '') =>
   String(value)
@@ -16,11 +17,6 @@ const escapeXml = (value = '') =>
 const formatDate = (value) => {
   const date = value ? new Date(value) : new Date();
   return Number.isNaN(date.getTime()) ? new Date().toISOString() : date.toISOString();
-};
-
-const normalizeUrl = (fallbackPath, canonicalUrl) => {
-  if (/^https?:\/\//i.test(canonicalUrl || '')) return canonicalUrl;
-  return `${SITE_URL}${fallbackPath.startsWith('/') ? fallbackPath : `/${fallbackPath}`}`;
 };
 
 const buildUrl = ({ loc, lastmod, priority = '0.8', changefreq = 'weekly' }) => `  <url>
@@ -42,7 +38,7 @@ const sendXml = (res, xml) => {
 
 const getPublishedBlogs = () =>
   Blog.find({ status: 'published', showOnFrontend: { $ne: false }, robots: { $ne: 'noindex,nofollow' } })
-    .select('slug canonicalUrl updatedAt createdAt robots')
+    .select('slug updatedAt createdAt robots title shortDescription metaTitle metaDescription content showOnFrontend status')
     .sort({ updatedAt: -1 })
     .lean();
 
@@ -54,18 +50,19 @@ const getPublishedCaseStudies = () =>
 
 const mapBlogUrls = (blogs) =>
   blogs
-    .filter((blog) => blog.slug && !String(blog.robots || '').startsWith('noindex'))
+    .filter(isPublicBlog)
+    .filter((blog) => blog.slug && !/\bnoindex\b/i.test(blog.robots || ''))
     .map((blog) => buildUrl({
-      loc: normalizeUrl(`/blog/${blog.slug}`, blog.canonicalUrl),
+      loc: getPublicPageUrl(`/blog/${blog.slug}`),
       lastmod: blog.updatedAt || blog.createdAt,
       priority: '0.7',
     }));
 
 const mapCaseStudyUrls = (caseStudies) =>
   caseStudies
-    .filter((study) => study.slug && !String(study.robots || '').startsWith('noindex'))
+    .filter((study) => study.slug && !/\bnoindex\b/i.test(study.robots || ''))
     .map((study) => buildUrl({
-      loc: normalizeUrl(`/case-studies/${study.slug}`, study.canonicalUrl),
+      loc: getPublicPageUrl(`/case-studies/${study.slug}`),
       lastmod: study.updatedAt || study.createdAt,
       priority: '0.7',
     }));

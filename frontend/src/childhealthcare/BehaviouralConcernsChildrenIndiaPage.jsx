@@ -22,7 +22,7 @@ import Seo from "../components/Seo";
 const behaviouralSeoTitle = "Behavioural Concerns Support for Children in India | Manovaidya";
 const behaviouralSeoDescription =
   "Get expert support for behavioural concerns in children in India, with guidance for emotional, social, and developmental challenges at Manovaidya.";
-const behaviouralSeoPageUrl = "https://manovaidya.org/behavioural-concerns-children-india";
+const behaviouralSeoPageUrl = "https://manovaidya.org/behavioural-concerns-children-india/";
 
 const behaviouralFaqSchema = {
   "@type": "FAQPage",
@@ -591,7 +591,7 @@ References
 
 const behaviourTitle = "Behavioural Concerns in Children Support in India";
 const behaviourSubtitle = "Assessing, guiding and supporting children's behaviour.";
-const pageUrl = "https://manovaidya.org/behavioural-concerns-children-india";
+const pageUrl = "https://manovaidya.org/behavioural-concerns-children-india/";
 
 const sectionHeadingMap = new Map([
   ["Content area: Behavioural Concerns in Children Support in India.", "introduction"],
@@ -650,11 +650,11 @@ const pageLinks = [
 
 const categories = [
   { label: "Autism", count: 12, Icon: Puzzle, href: "/autism-treatment-india/" },
-  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child" },
-  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india" },
-  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india" },
-  { label: "Behaviour", count: 9, Icon: Users, href: "/behavioural-concerns-children-india" },
-  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india" },
+  { label: "ADHD", count: 10, Icon: Brain, href: "/child-health-care/adhd-child/" },
+  { label: "Speech Delay", count: 8, Icon: MessageCircle, href: "/speech-delay-support-india/" },
+  { label: "Child Development", count: 11, Icon: Baby, href: "/child-development-care-india/" },
+  { label: "Behaviour", count: 9, Icon: Users, href: "/behavioural-concerns-children-india/" },
+  { label: "Learning", count: 9, Icon: BookOpen, href: "/learning-attention-difficulties-india/" },
 ];
 
 const socialLinks = [
@@ -671,31 +671,31 @@ const articleLinkRules = [
   { label: "Child Behaviour Support", href: "#child-behaviour-support-in-india", pattern: /Child Behaviour Support/i },
   { label: "Parent Guidance", href: "#parent-guidance-and-family-support", pattern: /Parent Guidance/i },
   { label: "Family Support", href: "#parent-guidance-and-family-support", pattern: /Family Support/i },
-  { label: "Child Development Assessment", href: "/child-development-care-india", pattern: /Child Development Assessment/i },
-  { label: "Child Development Support", href: "/child-development-support-india", pattern: /Child Development Support/i },
-  { label: "Child Development", href: "/child-development-care-india", pattern: /Child Development/i },
-  { label: "Developmental Support", href: "/child-development-support-india", pattern: /Developmental Support/i },
-  { label: "Speech Delay", href: "/speech-delay-support-india", pattern: /Speech Delay/i },
-  { label: "Communication Skills", href: "/speech-delay-support-india", pattern: /Communication Skills/i },
-  { label: "Communication", href: "/speech-delay-support-india", pattern: /Communication/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+  { label: "Child Development Assessment", href: "/child-development-care-india/", pattern: /Child Development Assessment/i },
+  { label: "Child Development Support", href: "/child-development-support-india/", pattern: /Child Development Support/i },
+  { label: "Child Development", href: "/child-development-care-india/", pattern: /Child Development/i },
+  { label: "Developmental Support", href: "/child-development-support-india/", pattern: /Developmental Support/i },
+  { label: "Speech Delay", href: "/speech-delay-support-india/", pattern: /Speech Delay/i },
+  { label: "Communication Skills", href: "/speech-delay-support-india/", pattern: /Communication Skills/i },
+  { label: "Communication", href: "/speech-delay-support-india/", pattern: /Communication/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
   { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/", pattern: /Autism Spectrum Disorder|ASD/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
-  { label: "Learning Challenges", href: "/learning-attention-difficulties-india", pattern: /Learning Challenges/i },
-  { label: "Learning Difficulties", href: "/learning-attention-difficulties-india", pattern: /Learning Difficulties/i },
-  { label: "Focus Challenges", href: "/learning-attention-difficulties-india", pattern: /Focus Challenges/i },
-  { label: "Attention", href: "/learning-attention-difficulties-india", pattern: /Attention/i },
+  { label: "Learning Challenges", href: "/learning-attention-difficulties-india/", pattern: /Learning Challenges/i },
+  { label: "Learning Difficulties", href: "/learning-attention-difficulties-india/", pattern: /Learning Difficulties/i },
+  { label: "Focus Challenges", href: "/learning-attention-difficulties-india/", pattern: /Focus Challenges/i },
+  { label: "Attention", href: "/learning-attention-difficulties-india/", pattern: /Attention/i },
   { label: "Sensory Processing Issues", href: "#neuro-ayurveda-development-approach", pattern: /Sensory Processing Issues/i },
-  { label: "Sensory Integration System", href: "/about/approach", pattern: /Sensory Integration System/i },
-  { label: "Behaviour Guidance System", href: "/about/approach", pattern: /Behaviour Guidance System/i },
-  { label: "Brain Nourishment System", href: "/about/approach", pattern: /Brain Nourishment System/i },
-  { label: "Gut Response System", href: "/about/approach", pattern: /Gut Response System/i },
-  { label: "Neural Network System", href: "/about/approach", pattern: /Neural Network System/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Mental Health", href: "/adult-mental-health-care-india", pattern: /Mental Health/i },
-  { label: "Emotional Wellbeing", href: "/adult-emotional-wellbeing-support-india", pattern: /Emotional Wellbeing/i },
-  { label: "Dr Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Sensory Integration System", href: "/about/approach/", pattern: /Sensory Integration System/i },
+  { label: "Behaviour Guidance System", href: "/about/approach/", pattern: /Behaviour Guidance System/i },
+  { label: "Brain Nourishment System", href: "/about/approach/", pattern: /Brain Nourishment System/i },
+  { label: "Gut Response System", href: "/about/approach/", pattern: /Gut Response System/i },
+  { label: "Neural Network System", href: "/about/approach/", pattern: /Neural Network System/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Mental Health", href: "/adult-mental-health-care-india/", pattern: /Mental Health/i },
+  { label: "Emotional Wellbeing", href: "/adult-mental-health-care-india/", pattern: /Emotional Wellbeing/i },
+  { label: "Dr Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -1127,7 +1127,7 @@ function BehaviouralConcernsChildrenIndiaPage() {
         title={behaviouralSeoTitle}
         description={behaviouralSeoDescription}
         keywords="Child Behaviour Assessment, Parent Guidance, Developmental Support, Behavioural Concerns in Children Support in India"
-        path="/behavioural-concerns-children-india"
+        path="/behavioural-concerns-children-india/"
         image={childHeroImage}
         schema={behaviouralSeoSchema}
       />
@@ -1136,7 +1136,7 @@ function BehaviouralConcernsChildrenIndiaPage() {
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
             <div className="relative z-10">
-              <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span><a href="/child-health-care" className="transition hover:text-[#7835A4]">Child Health Care</a><span>/</span><span className="text-[#4b345d]">{behaviourTitle}</span></nav>
+              <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb"><a href="/" className="transition hover:text-[#7835A4]">Home</a><span>/</span><a href="/child-health-care/" className="transition hover:text-[#7835A4]">Child Health Care</a><span>/</span><span className="text-[#4b345d]">{behaviourTitle}</span></nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{behaviourTitle}</p>
               <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">{behaviourTitle}</h1>
               <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">{behaviourSubtitle}</p>
@@ -1155,7 +1155,7 @@ function BehaviouralConcernsChildrenIndiaPage() {
         </article>
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
-          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]"><a href="/about/doctor" className="flex items-start gap-3"><img src={doctorImage} alt="Dr Ankush Garg Manovaidya behavioural concerns child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" /><div><p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Autism, ADHD, Child Development and Mental Health</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p></div></a><div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span><p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p></div></SidebarCard>
+          <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]"><a href="/about/doctor/" className="flex items-start gap-3"><img src={doctorImage} alt="Dr Ankush Garg Manovaidya behavioural concerns child development and mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" /><div><p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Founder, Manovaidya | Ayurvedacharya | Creator of the Neuro-Ayurveda Development System</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Clinical Focus: Autism, ADHD, Child Development and Mental Health</p><p className="mt-2 text-[12px] font-bold leading-5 text-[#75677d]">Last Updated: [20-07-2026]</p></div></a><div className="mt-4 flex items-center gap-3 rounded-lg bg-[#5d3b90] p-3 text-white"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/15"><Brain className="h-5 w-5" /></span><p className="text-[12px] font-black leading-5">Neuro-Ayurveda Development System</p></div></SidebarCard>
           <SidebarCard><p className="text-[15px] font-black text-[#21142d]">Follow Manovaidya</p><div className="mt-4 flex items-center gap-3">{socialLinks.map(({ label, href, icon }) => (<a key={label} href={href} target="_blank" rel="noreferrer" className="flex h-9 w-9 items-center justify-center rounded-full bg-[#7835A4] text-[10px] font-black uppercase text-white shadow-[0_10px_22px_rgba(120,53,164,0.22)] transition hover:bg-[#632b86]" aria-label={label}>{icon}</a>))}</div></SidebarCard>
           <SidebarCard><p className="text-[15px] font-black text-[#21142d]">Search</p><label className="mt-4 flex h-11 items-center rounded-lg border border-[#eadff1] bg-[#fbf9fd] px-3"><input type="search" placeholder="Search topics..." className="min-w-0 flex-1 bg-transparent text-[12px] font-bold text-[#21142d] outline-none placeholder:text-[#9b8ea5]" /><Search className="h-4 w-4 text-[#7835A4]" /></label></SidebarCard>
           <SidebarCard><p className="text-[15px] font-black text-[#21142d]">On this page</p><nav className="mt-5 space-y-3.5">{pageLinks.map(({ label, id }) => (<a key={id} href={`#${id}`} onClick={() => setActiveSection(id)} className={`flex items-start gap-2 rounded-md px-2 py-1.5 text-[12px] font-bold leading-5 transition ${activeSection === id ? "bg-[#f0e7f6] text-[#7835A4]" : "text-[#51465a] hover:bg-[#fbf7ff] hover:text-[#7835A4]"}`}><span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${activeSection === id ? "bg-[#7835A4]" : "bg-[#c5adcf]"}`} />{label}</a>))}</nav></SidebarCard>

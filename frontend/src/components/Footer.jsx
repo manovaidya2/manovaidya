@@ -10,20 +10,20 @@ import logo from "../images/manovaidya-logo (2).png";
 
 const quickLinks = [
   { label: "Home", path: "/" },
-  { label: "About Us", path: "/about" },
-  { label: "Blogs", path: "/blog" },
-  { label: "Conditions", path: "/child-health-care" },
-  { label: "Case Studies", path: "/case-studies" },
-  { label: "Ayurvedic Doctor", path: "/about/doctor" },
+  { label: "About Us", path: "/about/doctor/" },
+  { label: "Blogs", path: "/blog/" },
+  { label: "Conditions", path: "/child-health-care/" },
+  { label: "Case Studies", path: "/case-studies/" },
+  { label: "Ayurvedic Doctor", path: "/about/doctor/" },
 ];
 
 const programs = [
-  { label: "Child Health Care", path: "/child-health-care" },
-  { label: "Teen Mental Wellness", path: "/teen-mental-wellness" },
-  { label: "Adult Mental Health Care", path: "/adult-mental-wellness" },
-  { label: "Senior Mind & Memory Care", path: "/senior-mind-memory-care" },
-  { label: "Women Mental Health Concerns", path: "/women-health-care" },
-  { label: "Mind & Body Concerns", path: "/mind-body-wellbeing" },
+  { label: "Child Health Care", path: "/child-health-care/" },
+  { label: "Teen Mental Wellness", path: "/teen-mental-wellness/" },
+  { label: "Adult Mental Health Care", path: "/adult-mental-wellness/" },
+  { label: "Senior Mind & Memory Care", path: "/senior-mind-memory-care/" },
+  { label: "Women Mental Health Concerns", path: "/women-health-care/" },
+  { label: "Mind & Body Concerns", path: "/mind-body-wellbeing/" },
 ];
 
 const FacebookIcon = () => (

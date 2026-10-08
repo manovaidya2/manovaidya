@@ -202,7 +202,7 @@ function VideoLibraryPage() {
         title="Video Library | Real Care Journeys on Video | Manovaidya"
         description="Watch real recovery stories, patient interviews and care journeys from Manovaidya's Neuro-Ayurveda mental health clinic."
         keywords="Manovaidya video library, patient stories video, autism recovery video, mental health testimonials, Neuro-Ayurveda care videos"
-        path="/video-library"
+        path="/video-library/"
         schema={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",

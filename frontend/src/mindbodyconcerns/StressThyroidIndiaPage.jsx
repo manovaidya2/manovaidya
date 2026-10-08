@@ -315,18 +315,18 @@ const faqs = faqContent
   });
 
 const articleLinkRules = [
-  { key: "mind-body-health", pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india" },
-  { key: "stress-thyroid", pattern: /\bStress & Thyroid\b/i, href: "/stress-and-thyroid" },
-  { key: "thyroid", pattern: /\bthyroid\b/i, href: "/stress-and-thyroid" },
-  { key: "hypothyroidism", pattern: /\bhypothyroidism\b/i, href: "/stress-and-thyroid" },
-  { key: "hyperthyroidism", pattern: /\bhyperthyroidism\b/i, href: "/stress-and-thyroid" },
-  { key: "stress-fatigue", pattern: /\bfatigue\b/i, href: "/stress-and-fatigue" },
-  { key: "high-blood-pressure", pattern: /\bhigh blood pressure\b/i, href: "/stress-and-high-blood-pressure" },
-  { key: "sleep", pattern: /\bsleep\b/i, href: "/sleep-disorders-treatment-india" },
-  { key: "women-health", pattern: /\bWomen's Mental Health\b/i, href: "/womens-mental-health-care" },
-  { key: "adult-health", pattern: /\bAdult Mental Health\b/i, href: "/adult-mental-health-care" },
-  { key: "neuro-ayurveda", pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
-  { key: "dr-ankush", pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
+  { key: "mind-body-health", pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india/" },
+  { key: "stress-thyroid", pattern: /\bStress & Thyroid\b/i, href: "/stress-and-thyroid/" },
+  { key: "thyroid", pattern: /\bthyroid\b/i, href: "/stress-and-thyroid/" },
+  { key: "hypothyroidism", pattern: /\bhypothyroidism\b/i, href: "/stress-and-thyroid/" },
+  { key: "hyperthyroidism", pattern: /\bhyperthyroidism\b/i, href: "/stress-and-thyroid/" },
+  { key: "stress-fatigue", pattern: /\bfatigue\b/i, href: "/stress-and-fatigue/" },
+  { key: "high-blood-pressure", pattern: /\bhigh blood pressure\b/i, href: "/stress-and-high-blood-pressure/" },
+  { key: "sleep", pattern: /\bsleep\b/i, href: "/sleep-disorders-insomnia-support-india/" },
+  { key: "women-health", pattern: /\bWomen's Mental Health\b/i, href: "/women-mental-health-care-india/" },
+  { key: "adult-health", pattern: /\bAdult Mental Health\b/i, href: "/adult-mental-health-care-india/" },
+  { key: "neuro-ayurveda", pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach/" },
+  { key: "dr-ankush", pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor/" },
 ];
 
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
@@ -375,8 +375,8 @@ const relatedPages = [
   { label: "Mind-Body Health Care", href: "/mind-body-health-care-india/" },
   { label: "Stress & Fatigue", href: "/stress-and-fatigue/" },
   { label: "Stress & High Blood Pressure", href: "/stress-and-high-blood-pressure/" },
-  { label: "Women's Mental Health Care", href: "/womens-mental-health-care/" },
-  { label: "Adult Mental Health Care", href: "/adult-mental-health-care/" },
+  { label: "Women's Mental Health Care", href: "/women-mental-health-care-india/" },
+  { label: "Adult Mental Health Care", href: "/adult-mental-health-care-india/" },
   { label: "Stress & Digestive Health", href: "/stress-and-digestive-health/" },
 ];
 
@@ -559,7 +559,7 @@ function KeyTakeawaysBlock() {
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -640,7 +640,7 @@ function StressThyroidIndiaPage() {
         title={seoTitle}
         description="Looking for Stress & Thyroid treatment in India? Learn how stress impacts thyroid function, metabolism, and hormonal balance at Manovaidya."
         keywords="Stress & Thyroid, Thyroid Health India, Stress and Hormones, Hypothyroidism and Stress, Hyperthyroidism, Thyroid Function, Emotional Wellbeing, Mind-Body Health, Thyroid Assessment, Neuro-Ayurveda Development System, Hormonal Wellbeing"
-        path="/stress-and-thyroid"
+        path="/stress-and-thyroid/"
         schema={stressThyroidSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -651,7 +651,7 @@ function StressThyroidIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8b43ba]">Home</a>
                 <span>/</span>
-                <a href="/mind-body-health-care-india" className="transition hover:text-[#8b43ba]">Mind-Body Health Care</a>
+                <a href="/mind-body-health-care-india/" className="transition hover:text-[#8b43ba]">Mind-Body Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Stress & Thyroid</span>
               </nav>
@@ -752,7 +752,7 @@ function StressThyroidIndiaPage() {
 
         <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya stress thyroid hormonal wellbeing clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

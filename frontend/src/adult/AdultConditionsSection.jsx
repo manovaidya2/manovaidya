@@ -19,7 +19,7 @@ const conditions = [
     action: "Explore Anxiety Support",
     Icon: Brain,
     iconClass: "bg-[#eee5ff] text-[#6043b8]",
-    href: "/anxiety-support-india",
+    href: "/anxiety-support-india/",
   },
   {
     title: "Depression",
@@ -28,7 +28,7 @@ const conditions = [
     action: "Explore Depression Support",
     Icon: CloudRain,
     iconClass: "bg-[#dcefff] text-[#2583c7]",
-    href: "/adult-depression-support",
+    href: "/adult-depression-support/",
   },
   {
     title: "Burnout &\nExhaustion",
@@ -37,7 +37,7 @@ const conditions = [
     action: "Explore Burnout Support",
     Icon: ScanFace,
     iconClass: "bg-[#ffe1eb] text-[#e34e7d]",
-    href: "/stress-burnout-support-india",
+    href: "/stress-burnout-support-india/",
   },
   {
     title: "Sleep\nProblems",
@@ -46,7 +46,7 @@ const conditions = [
     action: "Explore Sleep Support",
     Icon: BedDouble,
     iconClass: "bg-[#e4f1d9] text-[#60993e]",
-    href: "/sleep-disorders-insomnia-support-india",
+    href: "/sleep-disorders-insomnia-support-india/",
   },
   {
     title: "Self-Esteem &\nConfidence",
@@ -55,7 +55,7 @@ const conditions = [
     action: "Explore Confidence Support",
     Icon: Flower2,
     iconClass: "bg-[#fff0ca] text-[#a27918]",
-    href: "/low-self-esteem-confidence-support-india",
+    href: "/low-self-esteem-confidence-support-india/",
   },
   {
     title: "Relationship\nChallenges",
@@ -64,7 +64,7 @@ const conditions = [
     action: "Explore Relationship Support",
     Icon: UsersRound,
     iconClass: "bg-[#ffdadd] text-[#dc2626]",
-    href: "/relationship-challenges-support-india",
+    href: "/relationship-challenges-support-india/",
   },
   {
     title: "Addiction &\nHabit Concerns",
@@ -73,7 +73,7 @@ const conditions = [
     action: "Explore Habit Support",
     Icon: Cigarette,
     iconClass: "bg-[#e5f0ea] text-[#16a34a]",
-    href: "/addiction-unhealthy-habits-support-india",
+    href: "/addiction-unhealthy-habits-support-india/",
   },
 ];
 

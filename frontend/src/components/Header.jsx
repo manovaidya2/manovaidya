@@ -11,51 +11,52 @@ import {
 import BookConsultationButton from "./BookConsultationButton";
 import BookConsultationForm from "./BookConsultationForm";
 import logo from "../images/manovaidya-logo (2).png";
+import { getCanonicalUrl } from "../utils/canonical";
 
 const conditionGroups = [
   {
     title: "Child Health Care",
-    href: "/child-health-care",
+    href: "/child-health-care/",
     featuredTitle: "Child Development Care",
     items: [
       { label: "Autism Spectrum Disorder", href: "/autism-treatment-india/" },
-      { label: "ADHD & Hyperactivity", href: "/child-health-care/adhd-child" },
-      { label: "Speech Delay Treatment", href: "/speech-delay-support-india" },
-      { label: "Learning Difficulties", href: "/learning-attention-difficulties-india" },
-      { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india" },
-      { label: "Child Development Support", href: "/child-development-support-india" },
+      { label: "ADHD & Hyperactivity", href: "/child-health-care/adhd-child/" },
+      { label: "Speech Delay Treatment", href: "/speech-delay-support-india/" },
+      { label: "Learning Difficulties", href: "/learning-attention-difficulties-india/" },
+      { label: "Behavioural Challenges", href: "/behavioural-concerns-children-india/" },
+      { label: "Child Development Support", href: "/child-development-support-india/" },
     ],
   },
   {
     title: "Teen Mental Wellness",
-    href: "/teen-mental-wellness",
+    href: "/teen-mental-wellness/",
     featuredTitle: "Teen Mental Wellness",
     items: [
-      { label: "Teen Stress & Anxiety", href: "/teen-stress-anxiety-support" },
-      { label: "Depression & Low Mood", href: "/teen-depression-support" },
-      { label: "Exam & Academic Pressure", href: "/exam-performance-pressure" },
-      { label: "Low Confidence & Self-Esteem", href: "/teen-confidence-emotional-wellbeing" },
-      { label: "Screen Addiction & Digital Wellbeing", href: "/teen-screen-addiction-support" },
-      { label: "Parent-Teen Relationship Support", href: "/parent-teen-relationship-support" },
+      { label: "Teen Stress & Anxiety", href: "/teen-stress-anxiety-support/" },
+      { label: "Depression & Low Mood", href: "/teen-depression-support/" },
+      { label: "Exam & Academic Pressure", href: "/exam-performance-pressure/" },
+      { label: "Low Confidence & Self-Esteem", href: "/teen-confidence-emotional-wellbeing/" },
+      { label: "Screen Addiction & Digital Wellbeing", href: "/teen-screen-addiction-support/" },
+      { label: "Parent-Teen Relationship Support", href: "/parent-teen-relationship-support/" },
     ],
   },
   {
     title: "Adult Mental Health Care",
-    href: "/adult-mental-wellness",
+    href: "/adult-mental-wellness/",
     featuredTitle: "Adult Mental Health Care",
     items: [
-      { label: "Stress & Anxiety", href: "/anxiety-support-india" },
-      { label: "Depression", href: "/adult-depression-support" },
-      { label: "Burnout & Exhaustion", href: "/stress-burnout-support-india" },
-      { label: "Sleep Problems", href: "/sleep-disorders-insomnia-support-india" },
-      { label: "Self-Esteem & Confidence", href: "/low-self-esteem-confidence-support-india" },
-      { label: "Relationship Challenges", href: "/relationship-challenges-support-india" },
-      { label: "Addiction & Habit Concerns", href: "/addiction-unhealthy-habits-support-india" },
+      { label: "Stress & Anxiety", href: "/anxiety-support-india/" },
+      { label: "Depression", href: "/adult-depression-support/" },
+      { label: "Burnout & Exhaustion", href: "/stress-burnout-support-india/" },
+      { label: "Sleep Problems", href: "/sleep-disorders-insomnia-support-india/" },
+      { label: "Self-Esteem & Confidence", href: "/low-self-esteem-confidence-support-india/" },
+      { label: "Relationship Challenges", href: "/relationship-challenges-support-india/" },
+      { label: "Addiction & Habit Concerns", href: "/addiction-unhealthy-habits-support-india/" },
     ],
   },
   {
     title: "Senior Mind & Memory Care",
-    href: "/senior-mind-memory-care",
+    href: "/senior-mind-memory-care/",
     featuredTitle: "Senior Mind & Memory Care",
     items: [
       { label: "Memory Loss & Forgetfulness", href: "/memory-loss-forgetfulness-support-seniors-india/" },
@@ -68,7 +69,7 @@ const conditionGroups = [
   },
   {
     title: "Women Mental Health Concerns",
-    href: "/women-health-care",
+    href: "/women-health-care/",
     featuredTitle: "Women Mental Health",
     items: [
       { label: "Stress & Anxiety Support", href: "/women-stress-management-mind-body-balance-india/" },
@@ -82,7 +83,7 @@ const conditionGroups = [
   },
   {
     title: "Mind & Body Concerns",
-    href: "/mind-body-wellbeing",
+    href: "/mind-body-wellbeing/",
     featuredTitle: "Mind & Body Wellbeing",
     items: [
       { label: "Stress & High Blood Pressure", href: "/stress-and-high-blood-pressure/" },
@@ -101,29 +102,29 @@ const navItems = [
   { label: "Home", href: "/" },
   {
     label: "About Us",
-    href: "/about",
+    href: "/about/doctor/",
     hasMenu: true,
     submenu: [
-      { label: "About Doctor", href: "/about/doctor" },
-      { label: "About Manovaidya", href: "/about/manovaidya" },
-      { label: "Our Approach", href: "/about/approach" },
+      { label: "About Doctor", href: "/about/doctor/" },
+      { label: "About Manovaidya", href: "/about/manovaidya/" },
+      { label: "Our Approach", href: "/about/approach/" },
     ],
   },
   { label: "Conditions", href: "#conditions", hasMenu: true, megaMenu: conditionGroups },
   // { label: "Programs", href: "#programs", hasMenu: true },
-  { label: "Success Stories", href: "/success-stories" },
+  { label: "Success Stories", href: "/success-stories/" },
   {
     label: "Resources",
     href: "#resources",
     hasMenu: true,
     submenu: [
-      { label: "Blog", href: "/blog" },
-      { label: "Case Studies", href: "/case-studies" },
-      { label: "Media & PR", href: "/media-coverage" },
-      { label: "Video Library", href: "/video-library" },
+      { label: "Blog", href: "/blog/" },
+      { label: "Case Studies", href: "/case-studies/" },
+      { label: "Media & PR", href: "/media-coverage/" },
+      { label: "Video Library", href: "/video-library/" },
     ],
   },
-  { label: "Contact Us", href: "/contact-us" },
+  { label: "Contact Us", href: "/contact-us/" },
   // { label: "Our Approach", href: "/about/approach" },
 ];
 
@@ -133,6 +134,7 @@ const topLevelNavHrefs = navItems
 
 function Header() {
   const location = useLocation();
+  const currentPath = new URL(getCanonicalUrl(location.pathname)).pathname;
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isConditionsOpen, setIsConditionsOpen] = React.useState(false);
   const [isAboutOpen, setIsAboutOpen] = React.useState(false);
@@ -144,20 +146,20 @@ function Header() {
   const conditionRoutes = conditionGroups.map((group) => group.href);
   const isNavItemActive = (item) => {
     if (item.label === "Home") {
-      return location.pathname === "/" && !location.hash;
+      return currentPath === "/" && !location.hash;
     }
 
     if (item.label === "About Us") {
       return (
-        location.pathname.startsWith("/about") &&
-        location.pathname !== "/about/approach"
+        currentPath.startsWith("/about/doctor/") &&
+        currentPath !== "/about/approach/"
       );
     }
 
     if (item.label === "Conditions") {
       return (
         location.hash === "#conditions" ||
-        conditionRoutes.includes(location.pathname)
+        conditionRoutes.includes(currentPath)
       );
     }
 
@@ -172,17 +174,17 @@ function Header() {
         }
 
         return (
-          pathname === location.pathname &&
+          pathname === currentPath &&
           (!hash || `#${hash}` === location.hash)
         );
       });
     }
 
     if (item.href.startsWith("#")) {
-      return location.pathname === "/" && location.hash === item.href;
+      return currentPath === "/" && location.hash === item.href;
     }
 
-    return location.pathname === item.href;
+    return currentPath === item.href;
   };
 
   const desktopNavClass = (active) =>

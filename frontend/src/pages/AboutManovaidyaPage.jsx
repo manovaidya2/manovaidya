@@ -14,7 +14,7 @@ function AboutManovaidyaPage() {
         title="About Manovaidya | Neuro-Ayurveda Mental Health Clinic"
         description="Discover Manovaidya, a Neuro-Ayurveda mental health clinic in India supporting Autism, ADHD, child development and emotional wellbeing."
         keywords="Manovaidya, About Manovaidya, Neuro-Ayurveda, Mental Health Clinic India, Autism Support India, ADHD Support India, Child Development, Emotional Wellbeing, Brain Gut Mind, Neuro-Ayurveda Development System, Dr. Ankush Garg"
-        path="/about/manovaidya"
+        path="/about/manovaidya/"
         schema={{
           "@context": "https://schema.org",
           "@type": "AboutPage",

@@ -7,13 +7,13 @@ function PrivacyPolicyPage() {
       <Seo
         title="Privacy Policy | Manovaidya"
         description="Read Manovaidya's privacy policy for information about how contact and consultation details are handled."
-        path="/privacy-policy"
+        path="/privacy-policy/"
         keywords="Manovaidya privacy policy, patient privacy, consultation privacy, healthcare privacy India"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           name: "Privacy Policy",
-          url: "https://manovaidya.org/privacy-policy",
+          url: "https://manovaidya.org/privacy-policy/",
         }}
       />
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">

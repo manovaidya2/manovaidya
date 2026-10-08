@@ -30,7 +30,7 @@ import Seo from "../components/Seo";
 const adultAnxietySeoTitle = "Adult Anxiety Treatment in India | Manovaidya";
 const adultAnxietySeoDescription =
   "Looking for Adult Anxiety Support in India? Learn about anxiety symptoms, excessive worry, overthinking, panic episodes and emotional wellbeing through the Neuro-Ayurveda approach at Manovaidya.";
-const adultAnxietySeoPageUrl = "https://manovaidya.org/anxiety-support-india";
+const adultAnxietySeoPageUrl = "https://manovaidya.org/anxiety-support-india/";
 
 const pageLinks = [
   { label: "Introduction", id: "introduction" },
@@ -137,7 +137,7 @@ const articleLinkRules = [
   { label: "Overthinking Treatment", href: "#common-signs-symptoms-of-anxiety", pattern: /Overthinking Treatment/i },
   { label: "Chronic Worry Treatment", href: "#common-signs-symptoms-of-anxiety", pattern: /Chronic Worry Treatment/i },
   { label: "Excessive Worry Treatment", href: "#why-anxiety-develops", pattern: /Excessive Worry Treatment/i },
-  { label: "Stress and Anxiety Treatment", href: "/stress-burnout-support/", pattern: /Stress and Anxiety Treatment/i },
+  { label: "Stress and Anxiety Treatment", href: "/stress-burnout-support-india/", pattern: /Stress and Anxiety Treatment/i },
   { label: "Social Anxiety Treatment", href: "#how-anxiety-can-affect-daily-life", pattern: /Social Anxiety Treatment/i },
   { label: "Anxiety Counselling for Adults", href: "#how-manovaidya-supports-adults", pattern: /Anxiety Counselling for Adults/i },
   { label: "Anxiety Counselling in India", href: "#how-manovaidya-supports-adults", pattern: /Anxiety Counselling in India/i },
@@ -147,14 +147,14 @@ const articleLinkRules = [
   { label: "Emotional Wellbeing Support", href: "#how-adults-can-support-their-emotional-wellbeing", pattern: /Emotional Wellbeing Support/i },
   { label: "Anxiety Recovery Support", href: "#how-adults-can-support-their-emotional-wellbeing", pattern: /Anxiety Recovery Support/i },
   { label: "Neuro-Ayurveda Development System", href: "#neuro-ayurveda-approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Adult Mental Health Support", href: "/adult-mental-health-care/", pattern: /Adult Mental Health Support/i },
+  { label: "Adult Mental Health Support", href: "/adult-mental-health-care-india/", pattern: /Adult Mental Health Support/i },
   { label: "Adult Depression Treatment", href: "/adult-depression-support/", pattern: /Adult Depression Treatment/i },
-  { label: "Stress & Burnout Treatment", href: "/stress-burnout-support/", pattern: /Stress (?:&|and) Burnout Treatment/i },
-  { label: "Sleep & Mood Disorder Support", href: "/sleep-disorders-support/", pattern: /Sleep (?:&|and) Mood Disorder Support/i },
-  { label: "OCD Support", href: "/ocd-support/", pattern: /OCD Support/i },
-  { label: "Bipolar Disorder Support", href: "/bipolar-support/", pattern: /Bipolar Disorder Support/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Stress & Burnout Treatment", href: "/stress-burnout-support-india/", pattern: /Stress (?:&|and) Burnout Treatment/i },
+  { label: "Sleep & Mood Disorder Support", href: "/sleep-disorders-insomnia-support-india/", pattern: /Sleep (?:&|and) Mood Disorder Support/i },
+  { label: "OCD Support", href: "/adult-mental-health-care-india/#adult-mental-health-assessment-process", pattern: /OCD Support/i },
+  { label: "Bipolar Disorder Support", href: "/adult-mental-health-care-india/#adult-mental-health-assessment-process", pattern: /Bipolar Disorder Support/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 
 const getArticleLinkRuleKey = (rule) => `${rule.href}|${rule.pattern.source}`;
@@ -959,7 +959,7 @@ const subheadingLines = new Set([
 const internalLinks = [
   {
     "text": "Explore Adult Mental Health Care.",
-    "href": "/adult-mental-health-care/"
+    "href": "/adult-mental-health-care-india/"
   },
   {
     "text": "Learn about Adult Depression Treatment.",
@@ -967,23 +967,23 @@ const internalLinks = [
   },
   {
     "text": "Explore Stress & Burnout Treatment.",
-    "href": "/stress-burnout-support/"
+    "href": "/stress-burnout-support-india/"
   },
   {
     "text": "Understand Sleep & Mood Disorder Support.",
-    "href": "/sleep-disorders-support/"
+    "href": "/sleep-disorders-insomnia-support-india/"
   },
   {
     "text": "Learn about OCD Support.",
-    "href": "/ocd-support/"
+    "href": "/adult-mental-health-care-india/#adult-mental-health-assessment-process"
   },
   {
     "text": "Explore Bipolar Disorder Support.",
-    "href": "/bipolar-support/"
+    "href": "/adult-mental-health-care-india/#adult-mental-health-assessment-process"
   },
   {
     "text": "Know more about Dr. Ankush Garg.",
-    "href": "/about/doctor"
+    "href": "/about/doctor/"
   }
 ];
 
@@ -1046,10 +1046,10 @@ function RelatedPagesCard() {
       <h2 className="text-[15px] font-black text-[#21142d]">Related Adult Mental Wellness Pages</h2>
       <div className="mt-4 space-y-3">
         <a href="/adult-depression-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><CloudRain className="h-4 w-4 text-[#7835A4]" /> Adult Depression Treatment</a>
-        <a href="/stress-burnout-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><Activity className="h-4 w-4 text-[#7835A4]" /> Stress & Burnout Treatment</a>
-        <a href="/sleep-disorders-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><BedDouble className="h-4 w-4 text-[#7835A4]" /> Sleep Disorders & Insomnia Support</a>
-        <a href="/ocd-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><ShieldCheck className="h-4 w-4 text-[#7835A4]" /> OCD Support</a>
-        <a href="/bipolar-support/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><Sparkles className="h-4 w-4 text-[#7835A4]" /> Bipolar Disorder Support</a>
+        <a href="/stress-burnout-support-india/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><Activity className="h-4 w-4 text-[#7835A4]" /> Stress & Burnout Treatment</a>
+        <a href="/sleep-disorders-insomnia-support-india/" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><BedDouble className="h-4 w-4 text-[#7835A4]" /> Sleep Disorders & Insomnia Support</a>
+        <a href="/adult-mental-health-care-india/#adult-mental-health-assessment-process" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><ShieldCheck className="h-4 w-4 text-[#7835A4]" /> OCD Support</a>
+        <a href="/adult-mental-health-care-india/#adult-mental-health-assessment-process" className="flex items-center gap-2 text-[12px] font-bold text-[#51465a] transition hover:text-[#7835A4]"><Sparkles className="h-4 w-4 text-[#7835A4]" /> Bipolar Disorder Support</a>
       </div>
     </SidebarCard>
   );
@@ -1078,7 +1078,7 @@ function KeyTakeawaysBlock() {
             <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
-          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
         </div>
       </div>
     </section>
@@ -1451,7 +1451,7 @@ function AdultAnxietySupportIndiaPage() {
         title={adultAnxietySeoTitle}
         description={adultAnxietySeoDescription}
         keywords="Adult Anxiety Support, Adult Anxiety Support in India, Anxiety Support India, Anxiety Symptoms, Generalized Anxiety, Overthinking, Panic Episodes, Emotional Wellbeing, Persistent Anxiety, Constant Worry, Physical Symptoms of Anxiety, Anxiety Attack, Anxiety Disorder, Excessive Worry, Restlessness, Sleep Problems Due to Anxiety"
-        path="/anxiety-support-india"
+        path="/anxiety-support-india/"
         schema={medicalWebPageSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1460,7 +1460,7 @@ function AdultAnxietySupportIndiaPage() {
             <div className="relative z-10">
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a><span>&gt;</span>
-                <a href="/adult-mental-wellness" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span>
+                <a href="/adult-mental-wellness/" className="transition hover:text-[#7835A4]">Adult Mental Health Care</a><span>&gt;</span>
                 <span className="text-[#4b345d]">Adult Anxiety Support</span>
               </nav>
               <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">Adult Mental Health Support</p>
@@ -1544,7 +1544,7 @@ function AdultAnxietySupportIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img
                 src={doctorImage}
                 alt="Dr Ankush Garg Manovaidya adult anxiety and mental health clinician"

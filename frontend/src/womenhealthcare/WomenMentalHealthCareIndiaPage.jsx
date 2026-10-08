@@ -159,9 +159,9 @@ const articleLinkRules = [
   { label: "Mind-Body Balance", href: "/women-stress-management-mind-body-balance-india/", pattern: /Mind-Body Balance/i },
   { label: "Women's Mental Health Assessment", href: "#womens-mental-health-assessment-process", pattern: /Women's Mental Health Assessment/i },
   { label: "Women's Mental Health Care", href: "/women-mental-health-care-india/", pattern: /Women's Mental Health Care/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro-Ayurveda Development System/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.\s*Ankush Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro-Ayurveda Development System/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.\s*Ankush Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
 const lineRuleKeys = new Map();
@@ -209,7 +209,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Women Health Care", item: "/women-health-care" },
+    { "@type": "ListItem", position: 2, name: "Women Health Care", item: "/women-health-care/" },
     { "@type": "ListItem", position: 3, name: "Women Mental Health Care", item: "/women-mental-health-care-india/" },
   ],
 };
@@ -458,7 +458,7 @@ function WomenMentalHealthCareIndiaPage() {
         title="Women Mental Health Care in India | Mental Health Assessment & Emotional Wellbeing | Manovaidya"
         description="Looking for Women Mental Health Care in India? Learn about stress, anxiety, depression, hormonal mood changes, pregnancy, postpartum, menopause, self-esteem, relationships and mental health assessments at Manovaidya."
         keywords="Women Mental Health, Women Mental Health Care, Women Mental Health Specialist, Women Mental Health Assessment, Emotional Wellbeing, Mental Wellness, Mental Health Support, Women Counselling, Mental Health Clinic India, Stress and Anxiety, Depression, PMS, PMDD, Pregnancy, Postpartum, Menopause, Self-Esteem, Body Image, Emotional Resilience"
-        path="/women-mental-health-care-india"
+        path="/women-mental-health-care-india/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
@@ -473,7 +473,7 @@ function WomenMentalHealthCareIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/women-health-care" className="transition hover:text-[#7835A4]">Women Health Care</a>
+                <a href="/women-health-care/" className="transition hover:text-[#7835A4]">Women Health Care</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Women Mental Health Care</span>
               </nav>
@@ -542,7 +542,7 @@ function WomenMentalHealthCareIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya women mental health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

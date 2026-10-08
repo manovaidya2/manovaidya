@@ -33,7 +33,7 @@ import Seo from "../components/Seo";
 const examPerformanceSeoTitle = "Exam & Performance Pressure Treatment in India | Manovaidya";
 const examPerformanceSeoDescription =
   "Looking for Exam Stress Treatment in India? Learn about exam anxiety, academic pressure, fear of failure, concentration challenges and family guidance through the Neuro-Ayurveda approach at Manovaidya.";
-const examPerformanceSeoPageUrl = "https://manovaidya.org/exam-performance-pressure";
+const examPerformanceSeoPageUrl = "https://manovaidya.org/exam-performance-pressure/";
 
 const articleRaw = `Key Takeaways
 Understanding Exam & Performance Pressure
@@ -619,9 +619,9 @@ const articleLinkRules = [
   { label: "Test Anxiety", href: "#common-signs", pattern: /Test Anxiety/i },
   { label: "Performance Anxiety", href: "#understanding-exam-pressure", pattern: /Performance Anxiety/i },
   { label: "Student Stress", href: "#why-experience-stress", pattern: /Student Stress/i },
-  { label: "Student Mental Health", href: "/teen-mental-wellness", pattern: /Student Mental Health/i },
-  { label: "Teen Mental Wellness", href: "/teen-mental-wellness", pattern: /Teen Mental Wellness/i },
-  { label: "Teen Mental Health", href: "/teen-mental-wellness", pattern: /Teen Mental Health/i },
+  { label: "Student Mental Health", href: "/teen-mental-wellness/", pattern: /Student Mental Health/i },
+  { label: "Teen Mental Wellness", href: "/teen-mental-wellness/", pattern: /Teen Mental Wellness/i },
+  { label: "Teen Mental Health", href: "/teen-mental-wellness/", pattern: /Teen Mental Health/i },
   { label: "Teen Stress & Anxiety", href: "/teen-stress-anxiety-support/", pattern: /Teen Stress (?:&|and) Anxiety/i },
   { label: "Teen Depression", href: "/teen-depression-support/", pattern: /Teen Depression/i },
   { label: "Confidence", href: "/teen-confidence-emotional-wellbeing/", pattern: /Confidence/i },
@@ -629,13 +629,13 @@ const articleLinkRules = [
   { label: "Parent Guidance", href: "#how-parents-can-support", pattern: /Parent Guidance/i },
   { label: "Family Support", href: "/parent-teen-relationship-support/", pattern: /Family Support/i },
   { label: "Parent-Teen Academic Support", href: "#how-parents-can-support", pattern: /Parent-Teen Academic Support/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { label: "Neuro-Ayurveda", href: "/about/approach", pattern: /Neuro[-\s]Ayurveda/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
-  { label: "Child Development", href: "/child-development-support-india", pattern: /Child Development/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { label: "Neuro-Ayurveda", href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
+  { label: "Child Development", href: "/child-development-support-india/", pattern: /Child Development/i },
   { label: "Autism", href: "/autism-treatment-india/", pattern: /Autism/i },
-  { label: "ADHD", href: "/child-health-care/adhd-child", pattern: /ADHD/i },
+  { label: "ADHD", href: "/child-health-care/adhd-child/", pattern: /ADHD/i },
 ];
 
 const faqs = [
@@ -982,7 +982,7 @@ function KeyTakeawaysBlock() {
             </button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -1138,7 +1138,7 @@ function ArticleVisualBlock({ heading }) {
         <img src={doctorImage} alt="Dr. Ankush Garg" className="h-24 w-24 rounded-full object-cover shadow-sm" />
         <div>
           <p className="text-[13px] font-black text-[#7835A4]">Autism, ADHD, Child Development & Mental Health Specialist in India</p>
-          <a href="/dr-ankush-garg/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
+          <a href="/about/doctor/" className="mt-3 inline-flex items-center gap-1.5 text-[13px] font-black text-[#7835A4] transition hover:text-[#5d268d] hover:underline">
             Know more about Dr. Ankush Garg <ArrowRight className="h-4 w-4" />
           </a>
         </div>
@@ -1241,7 +1241,7 @@ function ExamPerformancePressureIndiaPage() {
   const [activeSection, setActiveSection] = React.useState(pageLinks[0].id);
   const [openFaq, setOpenFaq] = React.useState(0);
   const [showResources, setShowResources] = React.useState(false);
-  const pageUrl = "https://manovaidya.org/exam-performance-pressure";
+  const pageUrl = "https://manovaidya.org/exam-performance-pressure/";
   const pageTitle = "Exam & Performance Pressure Support in India | Manovaidya";
   const encodedPageUrl = encodeURIComponent(pageUrl);
   const encodedPageTitle = encodeURIComponent(pageTitle);
@@ -1316,7 +1316,7 @@ function ExamPerformancePressureIndiaPage() {
         title={examPerformanceSeoTitle}
         description={examPerformanceSeoDescription}
         keywords="Exam Stress Treatment India, Exam Anxiety Support, Performance Pressure in Teens, Academic Stress, Student Stress Relief, Exam Pressure, Neuro-Ayurveda Student Support, Concentration Issues, Dr. Ankush Garg"
-        path="/exam-performance-pressure"
+        path="/exam-performance-pressure/"
         schema={examPerformanceSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -1326,7 +1326,7 @@ function ExamPerformancePressureIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/teen-mental-wellness" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
+                <a href="/teen-mental-wellness/" className="transition hover:text-[#7835A4]">Teen Mental Wellness</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Exam & Performance Pressure Support</span>
               </nav>
@@ -1417,7 +1417,7 @@ function ExamPerformancePressureIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img
                 src={doctorImage}
                 alt="Dr Ankush Garg Manovaidya exam stress academic wellbeing clinician"

@@ -137,9 +137,9 @@ const articleLinkRules = [
   { label: "Gut-Brain Axis", href: "/stress-and-digestive-health/", pattern: /Gut-Brain Axis/i },
   { label: "Mind-Body Health Assessment", href: "#mind-body-health-assessment-process", pattern: /Mind-Body Health Assessment/i },
   { label: "Mind-Body Health Care", href: "/mind-body-health-care-india/", pattern: /Mind-Body Health Care/i },
-  { label: "Neuro-Ayurveda Development System", href: "/about/approach", pattern: /Neuro-Ayurveda Development System/i },
-  { label: "Dr. Ankush Garg", href: "/about/doctor", pattern: /Dr\.\s*Ankush Garg/i },
-  { label: "Manovaidya", href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { label: "Neuro-Ayurveda Development System", href: "/about/approach/", pattern: /Neuro-Ayurveda Development System/i },
+  { label: "Dr. Ankush Garg", href: "/about/doctor/", pattern: /Dr\.\s*Ankush Garg/i },
+  { label: "Manovaidya", href: "/about/manovaidya/", pattern: /Manovaidya/i },
 ];
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
 const lineRuleKeys = new Map();
@@ -187,7 +187,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Mind-Body Wellbeing", item: "/mind-body-wellbeing" },
+    { "@type": "ListItem", position: 2, name: "Mind-Body Wellbeing", item: "/mind-body-wellbeing/" },
     { "@type": "ListItem", position: 3, name: "Mind-Body Health Care", item: "/mind-body-health-care-india/" },
   ],
 };
@@ -463,7 +463,7 @@ function MindBodyHealthCareIndiaPage() {
         title="Mind-Body Health Care in India | Stress, Gut-Brain & Physical Health | Manovaidya"
         description="Looking for Mind-Body Health Care in India? Learn how stress may affect digestion, IBS, acidity, migraine, headaches, thyroid, blood pressure, fatigue and overall wellbeing at Manovaidya."
         keywords="Mind-Body Health, Mind-Body Health Care, Mind-Body Connection, Stress and Physical Health, Gut-Brain Axis, Psychosomatic Health, Mind-Body Wellness, Mind-Body Assessment, Stress and Digestive Health, Stress and IBS, Stress and Acidity, Stress and Migraine, Stress and Headaches, Stress and High Blood Pressure, Stress and Thyroid, Stress and Fatigue, Chronic Stress"
-        path="/mind-body-health-care-india"
+        path="/mind-body-health-care-india/"
         schema={{
           "@context": "https://schema.org",
           "@type": "MedicalWebPage",
@@ -478,7 +478,7 @@ function MindBodyHealthCareIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>&gt;</span>
-                <a href="/mind-body-wellbeing" className="transition hover:text-[#7835A4]">Mind-Body Wellbeing</a>
+                <a href="/mind-body-wellbeing/" className="transition hover:text-[#7835A4]">Mind-Body Wellbeing</a>
                 <span>&gt;</span>
                 <span className="text-[#4b345d]">Mind-Body Health Care</span>
               </nav>
@@ -547,7 +547,7 @@ function MindBodyHealthCareIndiaPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya mind-body health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

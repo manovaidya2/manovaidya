@@ -65,7 +65,7 @@ export const canonicalPaths = [
   "/video-library",
   "/privacy-policy",
   "/contact-us",
-];
+].map((pathname) => pathname === "/" ? "/" : `${pathname.replace(/\/+$/, "")}/`);
 
 export const canonicalPathAliases = {
   "/about": "/about/doctor",
@@ -77,11 +77,25 @@ export const canonicalPathAliases = {
   "/senior-sleep-disorders-support-india": "/sleep-disorders-seniors-support-india/",
   "/teen-emotional-wellbeing-support-india": "/teen-mental-health-care-india",
   "/teen-mental-wellness-india": "/teen-mental-wellness",
+  "/adult-depression-treatment-india": "/adult-depression-support/",
+  "/stress-burnout-support": "/stress-burnout-support-india/",
+  "/sleep-disorders-support": "/sleep-disorders-insomnia-support-india/",
+  "/dr-ankush-garg": "/about/doctor/",
+  "/about/neuro-ayurveda": "/about/approach/",
+  "/sleep-disorders-treatment-india": "/sleep-disorders-insomnia-support-india/",
+  "/stress-management": "/stress-burnout-support-india/",
+  "/stress-anxiety-treatment-india": "/anxiety-support-india/",
+  "/stress-and-burnout": "/stress-burnout-support-india/",
+  "/womens-mental-health-care": "/women-mental-health-care-india/",
+  "/adult-anxiety-support-india": "/anxiety-support-india/",
+  "/adult-depression-support-india": "/adult-depression-support/",
+  "/sleep-disorders-support-india": "/sleep-disorders-insomnia-support-india/",
+  "/women-stress-anxiety-support-india": "/women-stress-management-mind-body-balance-india/",
 };
 
 export const normalizePath = (pathname) => {
   if (!pathname || pathname === "/") return "/";
-  return pathname.replace(/\/+$/, "");
+  return new URL(pathname, SITE_URL).pathname.replace(/\/+$/, "") || "/";
 };
 
 const canonicalUrlsByPath = canonicalPaths.reduce((urls, canonicalPath) => {
@@ -96,5 +110,5 @@ Object.entries(canonicalPathAliases).forEach(([aliasPath, canonicalPath]) => {
 
 export const getCanonicalUrl = (pathname) => {
   const normalizedPath = normalizePath(pathname);
-  return canonicalUrlsByPath[normalizedPath] || `${SITE_URL}${normalizedPath}`;
+  return canonicalUrlsByPath[normalizedPath] || `${SITE_URL}${normalizedPath === "/" ? "/" : `${normalizedPath}/`}`;
 };

@@ -145,7 +145,7 @@ function SuccessStoryReviewsTestimonials() {
         </div>
         <div className="mt-6 text-center">
           <Link
-            to="/success-story-videos"
+            to="/success-story-videos/"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#8B43BA] px-6 text-[14px] font-black text-[#8B43BA] transition hover:bg-[#f7effd]"
           >
             Watch More Stories

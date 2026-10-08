@@ -21,7 +21,7 @@ import RelatedSeniorMindCarePages from "./RelatedSeniorMindCarePages";
 import Seo from "../components/Seo";
 
 const pageTitle = "Sleep Disorders in Seniors Treatment in India";
-const pageUrl = "https://www.manovaidya.com/senior-sleep-disorders-support-india";
+const pageUrl = "https://manovaidya.org/sleep-disorders-seniors-support-india/";
 const seoTitle = "Sleep Disorders Treatment for Seniors in India | Manovaidya";
 const seoPageUrl = "https://manovaidya.org/sleep-disorders-seniors-support-india/";
 
@@ -1059,31 +1059,31 @@ const leadLines = new Set([
 ]);
 
 const articleLinkRules = [
-  { href: "/senior-sleep-disorders-support-india/", pattern: /Sleep Disorders in Seniors/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /Sleep Disorders Treatment/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /Insomnia in Elderly People/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /Senior Sleep Problems/i },
-  { href: "/senior-sleep-disorders-support-india/", pattern: /sleep disorders/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /Sleep Disorders in Seniors/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /Sleep Disorders Treatment/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /Insomnia in Elderly People/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /Senior Sleep Problems/i },
+  { href: "/sleep-disorders-seniors-support-india/", pattern: /sleep disorders/i },
   { href: "#common-sleep-disorders", pattern: /insomnia/i },
   { href: "#common-signs-symptoms", pattern: /daytime fatigue/i },
   { href: "#supporting-healthy-sleep", pattern: /healthy sleep/i },
   { href: "#daily-life-impact", pattern: /memory/i },
   { href: "/dementia-alzheimers-care-support-seniors-india/", pattern: /dementia/i },
-  { href: "/senior-anxiety-support-india/", pattern: /anxiety/i },
+  { href: "/senior-mental-health-care-india/#common-senior-mental-health-concerns", pattern: /anxiety/i },
   { href: "/senior-depression-support-india/", pattern: /depression/i },
-  { href: "/senior-mental-health-care/", pattern: /Senior Mental Health Support/i },
-  { href: "/about/approach", pattern: /Neuro[-\s]Ayurveda Development System/i },
-  { href: "/about/doctor", pattern: /Dr\.?\s+Ankush\s+Garg/i },
-  { href: "/about/manovaidya", pattern: /Manovaidya/i },
+  { href: "/senior-mental-health-care-india/", pattern: /Senior Mental Health Support/i },
+  { href: "/about/approach/", pattern: /Neuro[-\s]Ayurveda Development System/i },
+  { href: "/about/doctor/", pattern: /Dr\.?\s+Ankush\s+Garg/i },
+  { href: "/about/manovaidya/", pattern: /Manovaidya/i },
   { href: "#professional-guidance", pattern: /professional guidance/i },
 ];
 
 const categories = [
-  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care/" },
-  { label: "Sleep Disorders", count: 10, Icon: Brain, href: "/senior-sleep-disorders-support-india/" },
+  { label: "Senior Mental Health", count: 12, Icon: HeartHandshake, href: "/senior-mental-health-care-india/" },
+  { label: "Sleep Disorders", count: 10, Icon: Brain, href: "/sleep-disorders-seniors-support-india/" },
   { label: "Insomnia", count: 8, Icon: ShieldCheck, href: "#common-sleep-disorders" },
   { label: "Healthy Ageing", count: 11, Icon: Sparkles, href: "#supporting-healthy-sleep" },
-  { label: "Caregiver Support", count: 9, Icon: Users, href: "/caregiver-support-india/" },
+  { label: "Caregiver Support", count: 9, Icon: Users, href: "/senior-mental-health-care-india/#how-we-support-older-adults" },
   { label: "Brain Health", count: 13, Icon: Activity, href: "#daily-life-impact" },
 ];
 
@@ -1398,7 +1398,7 @@ function KeyTakeawaysBlock() {
             <input type="email" placeholder="Enter your email" className="h-[52px] w-full rounded-full border-none bg-white px-6 text-[13px] font-semibold text-[#21142d] outline-none placeholder:text-[#7d7085]" />
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
-          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
+          <p className="mt-4 text-[11px] font-semibold text-[#111827]">Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.</p>
         </div>
       </div>
     </section>
@@ -1468,7 +1468,7 @@ function SeniorSleepDisordersSupportPage() {
 
   return (
     <main className="min-h-screen bg-white text-[#1f1726]" style={{ font: '400 1.125rem/1.5 "Martel", serif' }}>
-      <Seo title={seoTitle} description="Looking for Sleep Disorders in Seniors Treatment in India? Learn about insomnia, poor sleep, sleep changes with ageing, brain health, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya." keywords="Sleep Disorders Seniors India, Insomnia in Elderly, Sleep Changes with Age, Senior Sleep Support, Better Sleep, Healthy Ageing, Neuro-Ayurveda Sleep Care, Brain Health, Dr. Ankush Garg" path="/senior-sleep-disorders-support-india" schema={seniorSleepSeoSchema} />
+      <Seo title={seoTitle} description="Looking for Sleep Disorders in Seniors Treatment in India? Learn about insomnia, poor sleep, sleep changes with ageing, brain health, healthy sleep habits and the Neuro-Ayurveda approach at Manovaidya." keywords="Sleep Disorders Seniors India, Insomnia in Elderly, Sleep Changes with Age, Senior Sleep Support, Better Sleep, Healthy Ageing, Neuro-Ayurveda Sleep Care, Brain Health, Dr. Ankush Garg" path="/sleep-disorders-seniors-support-india/" schema={seniorSleepSeoSchema} />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
         <article className="min-w-0">
           <div className="relative overflow-hidden rounded-lg pb-6 pt-2 lg:grid lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_minmax(330px,0.82fr)] lg:items-center lg:gap-8 lg:pb-8 lg:pt-3">
@@ -1476,7 +1476,7 @@ function SeniorSleepDisordersSupportPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#7835A4]">Home</a>
                 <span>/</span>
-                <a href="/senior-mind-memory-care" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
+                <a href="/senior-mind-memory-care/" className="transition hover:text-[#7835A4]">Senior Mental Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Sleep Disorders Treatment</span>
               </nav>
@@ -1530,7 +1530,7 @@ function SeniorSleepDisordersSupportPage() {
 
         <div className="sticky top-24 max-h-[calc(100vh-6rem)] space-y-5 overflow-y-auto pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya senior sleep care clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { readContentSnapshot } from "./seo-content.mjs";
 import {
   SITE_URL,
   canonicalPathAliases,
@@ -46,22 +47,6 @@ const fetchCollection = async (endpoint) => {
   }
 };
 
-const publicTestContentPattern = /(?:\btesting\s+blog\b|\btest\s+blog\b|\bdummy\b|\bdemo\b|lorem\s+ipsum)/i;
-
-const hasPublicTestContent = (blog) =>
-  publicTestContentPattern.test(
-    [
-      blog?.title,
-      blog?.slug,
-      blog?.shortDescription,
-      blog?.metaTitle,
-      blog?.metaDescription,
-      blog?.content,
-    ]
-      .filter(Boolean)
-      .join(" "),
-  );
-
 const readSitemapPaths = async () => {
   try {
     const sitemap = await fs.readFile(sitemapPath, "utf8");
@@ -83,7 +68,7 @@ const getRoutes = async () => {
   const sitemapPaths = await readSitemapPaths();
   sitemapPaths.forEach((routePath) => {
     const normalizedPath = normalizePath(routePath);
-    if (!routes.has(normalizedPath)) routes.set(normalizedPath, `${SITE_URL}${normalizedPath === "/" ? "/" : normalizedPath}`);
+    if (!routes.has(normalizedPath)) routes.set(normalizedPath, getCanonicalUrl(normalizedPath));
   });
 
   return [...routes].sort(([a], [b]) => a.localeCompare(b));
@@ -198,23 +183,29 @@ const getRouteData = (routePath, { blogs, caseStudies, videos, blogsBySlug, case
 };
 
 const main = async () => {
-  const [template, routes, serverEntry, rawBlogs, caseStudies, videos] = await Promise.all([
+  const [template, routes, serverEntry, content, videos] = await Promise.all([
     fs.readFile(mainHtmlPath, "utf8"),
     getRoutes(),
     import(pathToFileURL(path.resolve("dist-ssr/entry-server.js")).href),
-    fetchCollection("/blogs?status=published"),
-    fetchCollection("/case-studies?status=published"),
+    readContentSnapshot(),
     fetchCollection("/videos?status=published"),
   ]);
 
-  const blogs = rawBlogs.filter((blog) => !hasPublicTestContent(blog));
+  const { blogs, caseStudies } = content;
+  const routeMap = new Map(routes);
+  for (const [prefix, items] of [["blog", blogs], ["case-studies", caseStudies]]) {
+    for (const item of items) {
+      const route = normalizePath(`/${prefix}/${item.slug}`);
+      routeMap.set(route, getCanonicalUrl(route));
+    }
+  }
   const blogsBySlug = toSlugMap(blogs);
   const caseStudiesBySlug = toSlugMap(caseStudies);
 
   await Promise.all(
-    routes.map(async ([routePath, canonicalUrl]) => {
+    [...routeMap].map(async ([routePath, canonicalUrl]) => {
       const data = getRouteData(routePath, { blogs, caseStudies, videos, blogsBySlug, caseStudiesBySlug });
-      const { html: appHtml, helmet } = serverEntry.render(routePath, data);
+      const { html: appHtml, helmet } = serverEntry.render(new URL(canonicalUrl).pathname, data);
       const routeHtml = applyPrerender(template, { routePath, canonicalUrl, appHtml, helmet, data });
 
       await Promise.all(
@@ -226,7 +217,7 @@ const main = async () => {
     }),
   );
 
-  console.log(`Prerendered ${routes.length} routes with SEO HTML.`);
+  console.log(`Prerendered ${routeMap.size} routes with SEO HTML.`);
 };
 
 main().catch((error) => {

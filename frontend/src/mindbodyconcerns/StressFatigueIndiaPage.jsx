@@ -312,18 +312,18 @@ const faqs = faqContent
   });
 
 const articleLinkRules = [
-  { pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india" },
-  { pattern: /\bStress & Fatigue\b/i, href: "/stress-and-fatigue" },
-  { pattern: /\bFatigue\b/i, href: "/stress-and-fatigue" },
-  { pattern: /\bMental Fatigue\b/i, href: "/stress-and-fatigue" },
-  { pattern: /\bPhysical Fatigue\b/i, href: "/stress-and-fatigue" },
-  { pattern: /\bsleep\b/i, href: "/sleep-disorders-treatment-india" },
-  { pattern: /\bthyroid\b/i, href: "/stress-and-thyroid" },
-  { pattern: /\banxiety\b/i, href: "/stress-anxiety-treatment-india" },
-  { pattern: /\bdepression\b/i, href: "/adult-depression-treatment-india" },
-  { pattern: /\bburnout\b/i, href: "/stress-and-burnout" },
-  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach" },
-  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor" },
+  { pattern: /\bMind-Body Health\b/i, href: "/mind-body-health-care-india/" },
+  { pattern: /\bStress & Fatigue\b/i, href: "/stress-and-fatigue/" },
+  { pattern: /\bFatigue\b/i, href: "/stress-and-fatigue/" },
+  { pattern: /\bMental Fatigue\b/i, href: "/stress-and-fatigue/" },
+  { pattern: /\bPhysical Fatigue\b/i, href: "/stress-and-fatigue/" },
+  { pattern: /\bsleep\b/i, href: "/sleep-disorders-insomnia-support-india/" },
+  { pattern: /\bthyroid\b/i, href: "/stress-and-thyroid/" },
+  { pattern: /\banxiety\b/i, href: "/anxiety-support-india/" },
+  { pattern: /\bdepression\b/i, href: "/adult-depression-support/" },
+  { pattern: /\bburnout\b/i, href: "/stress-burnout-support-india/" },
+  { pattern: /\bNeuro-Ayurveda Development System\b/i, href: "/about/approach/" },
+  { pattern: /\bDr\. Ankush Garg\b/i, href: "/about/doctor/" },
 ];
 
 const getArticleLinkRuleKey = (rule) => rule.href + "|" + rule.pattern.source;
@@ -545,7 +545,7 @@ function KeyTakeawaysBlock() {
             <button type="button" className="h-[52px] w-full rounded-full bg-[#0b8f98] px-6 text-[13px] font-black uppercase text-white transition hover:bg-[#087982]">Join Now</button>
           </form>
           <p className="mt-4 text-[11px] font-semibold text-[#111827]">
-            Your <a href="/privacy-policy" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
+            Your <a href="/privacy-policy/" className="underline decoration-[#111827] underline-offset-2">privacy</a> is important to us.
           </p>
         </div>
       </div>
@@ -626,7 +626,7 @@ function StressFatigueIndiaPage() {
         title={seoTitle}
         description="Looking for Stress & Fatigue treatment in India? Learn how chronic stress causes physical and mental fatigue, and explore Neuro-Ayurveda for renewed energy."
         keywords="Stress & Fatigue, Chronic Fatigue Treatment India, Stress and Energy Levels, Mental Fatigue, Physical Exhaustion and Stress, Adrenal Fatigue, Emotional Wellbeing, Mind-Body Health, Fatigue Assessment, Neuro-Ayurveda Development System, Low Energy Support"
-        path="/stress-and-fatigue"
+        path="/stress-and-fatigue/"
         schema={stressFatigueSeoSchema}
       />
       <section className="mx-auto grid gap-7 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
@@ -637,7 +637,7 @@ function StressFatigueIndiaPage() {
               <nav className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#7d7085]" aria-label="Article breadcrumb">
                 <a href="/" className="transition hover:text-[#8b43ba]">Home</a>
                 <span>/</span>
-                <a href="/mind-body-health-care-india" className="transition hover:text-[#8b43ba]">Mind-Body Health Care</a>
+                <a href="/mind-body-health-care-india/" className="transition hover:text-[#8b43ba]">Mind-Body Health Care</a>
                 <span>/</span>
                 <span className="text-[#4b345d]">Stress & Fatigue</span>
               </nav>
@@ -739,7 +739,7 @@ function StressFatigueIndiaPage() {
 
         <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto space-y-5 pb-5">
           <SidebarCard className="border-[#d8c6e5] bg-[#fcf9ff]">
-            <a href="/about/doctor" className="flex items-start gap-3">
+            <a href="/about/doctor/" className="flex items-start gap-3">
               <img src={doctorImage} alt="Dr Ankush Garg Manovaidya mind-body health clinician" className="h-12 w-12 shrink-0 rounded-full object-cover" loading="lazy" decoding="async" />
               <div>
                 <p className="text-[13px] font-black leading-5 text-[#21142d]">Authorised & Clinically Reviewed by Dr Ankush Garg</p>

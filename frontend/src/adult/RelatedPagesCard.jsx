@@ -12,43 +12,43 @@ const relatedPages = [
   {
     title: "Adult Anxiety Support",
     description: "Constant worry, overthinking, panic and emotional wellbeing.",
-    href: "/anxiety-support-india",
+    href: "/anxiety-support-india/",
     image: anxietyImage,
   },
   {
     title: "Adult Depression Treatment",
     description: "Low mood, sadness, emotional exhaustion and motivation.",
-    href: "/adult-depression-support",
+    href: "/adult-depression-support/",
     image: depressionImage,
   },
   {
     title: "Stress & Burnout Treatment",
     description: "Mental exhaustion, work pressure and emotional overload.",
-    href: "/stress-burnout-support-india",
+    href: "/stress-burnout-support-india/",
     image: burnoutImage,
   },
   {
     title: "Sleep Disorders & Insomnia Support",
     description: "Insomnia, restless sleep and difficulty sleeping well.",
-    href: "/sleep-disorders-insomnia-support-india",
+    href: "/sleep-disorders-insomnia-support-india/",
     image: sleepImage,
   },
   {
     title: "Self-Esteem & Confidence Support",
     description: "Self-doubt, low self-worth and confidence building.",
-    href: "/low-self-esteem-confidence-support-india",
+    href: "/low-self-esteem-confidence-support-india/",
     image: confidenceImage,
   },
   {
     title: "Relationship Challenges Support",
     description: "Communication, conflicts, breakups and emotional disconnect.",
-    href: "/relationship-challenges-support-india",
+    href: "/relationship-challenges-support-india/",
     image: relationshipImage,
   },
   {
     title: "Addiction & Unhealthy Habits Treatment",
     description: "Substance use, repetitive habits and healthier routines.",
-    href: "/addiction-unhealthy-habits-support-india",
+    href: "/addiction-unhealthy-habits-support-india/",
     image: addictionImage,
   },
 ];
@@ -71,7 +71,7 @@ function RelatedPagesCard() {
         {pages.map(({ title, description, href, image }) => (
           <a
             key={href}
-            href={`${href}/`}
+            href={href}
             className="group grid grid-cols-[58px_minmax(0,1fr)] gap-3 rounded-md border border-[#eadff1] bg-[#fbf9fd] p-2 transition hover:border-[#c5adcf] hover:bg-white"
           >
             <img

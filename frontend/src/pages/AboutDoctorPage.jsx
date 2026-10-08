@@ -12,7 +12,7 @@ function AboutDoctorPage() {
         title="Dr. Ankush Garg | Ayurvedacharya & Founder of Manovaidya"
         description="Dr. Ankush Garg is an Ayurvedacharya, Founder of Manovaidya and developer of the Neuro-Ayurveda Development System, with 7+ years of focused experience."
         keywords="Dr. Ankush Garg, Ankush Garg, Autism Specialist India, ADHD Specialist India, Child Development Specialist, Mental Health Specialist India, Brain Gut Axis Specialist, Neuro Ayurveda, Neuro-Ayurveda Development System, Manovaidya, Autism Treatment India, ADHD Treatment India, Child Behaviour Specialist, Developmental Disorders, Holistic Mental Health, Ayurvedacharya"
-        path="/about/doctor"
+        path="/about/doctor/"
         schema={{
           "@context": "https://schema.org",
           "@type": "ProfilePage",
