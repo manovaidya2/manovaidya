@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation, useParams } from "react-router-dom";
 import AiChatBot from "./components/AiChatBot";
 import Footer from "./components/Footer";
 import FloatingShareBar from "./components/FloatingShareBar";
@@ -70,6 +70,11 @@ import MediaPRPage from "./pages/MediaPRPage";
 import VideoLibraryPage from "./pages/VideoLibraryPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import ContactUsPage from "./pages/ContactUsPage";
+
+function DetailRoute({ Component }) {
+  const { slug } = useParams();
+  return <Component key={slug} />;
+}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -220,9 +225,9 @@ function App({ Router = BrowserRouter, routerProps = {} }) {
           <Route path="/success-story-videos" element={<SuccessStoryVideosPage />} />
           <Route path="/success-story-videos/" element={<SuccessStoryVideosPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
+          <Route path="/case-studies/:slug" element={<DetailRoute Component={CaseStudyDetails} />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogDetails />} />
+          <Route path="/blog/:slug" element={<DetailRoute Component={BlogDetails} />} />
           <Route path="/media-coverage" element={<MediaPRPage />} />
           <Route path="/media-coverage/" element={<MediaPRPage />} />
           <Route path="/video-library" element={<VideoLibraryPage />} />

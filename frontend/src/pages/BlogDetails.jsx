@@ -10,57 +10,15 @@ import Seo from '../components/Seo';
 import { usePrerenderData } from '../prerenderData';
 import { getCanonicalUrl } from '../utils/canonical';
 import { isPublicBlog } from '../utils/publicContent';
-import { normalizeArticleLinks } from '../utils/articleLinks';
+import api, { getAssetUrl } from '../api/axiosInstance';
+import { processBlogContent } from '../utils/blogContent';
+import { getArticleSchema } from '../utils/articleSchema';
 
 // Custom SVG Icons for Socials to avoid lucide-react version issues
 const FacebookIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>;
 const TwitterIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>;
 const LinkedinIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>;
 const MessageCircleIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>;
-import api, { getAssetUrl } from '../api/axiosInstance';
-
-const createHeadingId = (text = '') =>
-  text.replace(/\s+/g, '-').toLowerCase().replace(/[^a-z0-9-]/g, '');
-
-const processBlogContent = (content = '') => {
-  if (!content) return { html: '', toc: [] };
-  content = normalizeArticleLinks(content);
-
-  if (typeof DOMParser !== 'undefined') {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(content, 'text/html');
-
-    const allElements = doc.querySelectorAll('*');
-    allElements.forEach(el => {
-      if (el.style && (el.style.backgroundColor === 'white' || el.style.backgroundColor === '#ffffff' || el.style.backgroundColor === 'rgb(255, 255, 255)' || el.style.backgroundColor)) {
-        el.style.backgroundColor = 'transparent';
-      }
-    });
-
-    const headings = doc.querySelectorAll('h2, h3');
-    const newToc = [];
-
-    headings.forEach((h) => {
-      const id = createHeadingId(h.textContent);
-      h.id = id;
-      newToc.push({ id, text: h.textContent, level: h.tagName.toLowerCase() });
-    });
-
-    return { html: doc.body.innerHTML, toc: newToc };
-  }
-
-  const newToc = [];
-  const html = content.replace(/<h([23])([^>]*)>([\s\S]*?)<\/h\1>/gi, (match, level, attrs, innerHtml) => {
-    const text = innerHtml.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
-    const id = createHeadingId(text);
-    if (!id) return match;
-    newToc.push({ id, text, level: `h${level}` });
-    if (/\sid\s*=/i.test(attrs)) return match;
-    return `<h${level}${attrs} id="${id}">${innerHtml}</h${level}>`;
-  });
-
-  return { html, toc: newToc };
-};
 
 const TableOfContents = ({ toc, activeId }) => {
   if (!toc || toc.length === 0) return null;
@@ -112,82 +70,39 @@ export default function BlogDetails() {
   const contentRef = useRef(null);
 
   useEffect(() => {
+    if (initialBlog) return;
+    let isMounted = true;
+
     const fetchBlog = async () => {
       try {
         const { data } = await api.get(`/blogs/slug/${slug}`);
-        if (data.success) {
+        if (data.success && data.data?.slug === slug && isPublicBlog(data.data) && isMounted) {
           setBlog(data.data);
+          setError(null);
 
-          // Full SEO: Update page title, meta description, keywords, canonical, and OG tags
-          document.title = data.data.metaTitle || data.data.title || 'Blog Details - Manovaidya';
-          
-          const setMetaTag = (name, content, isProperty = false) => {
-            if (!content) return;
-            const attr = isProperty ? 'property' : 'name';
-            let tag = document.querySelector(`meta[${attr}="${name}"]`);
-            if (!tag) {
-              tag = document.createElement('meta');
-              tag.setAttribute(attr, name);
-              document.head.appendChild(tag);
-            }
-            tag.setAttribute("content", content);
-          };
 
-          setMetaTag('description', data.data.metaDescription || data.data.shortDescription);
-          setMetaTag('keywords', data.data.metaKeywords || data.data.focusKeyword);
-          setMetaTag('robots', data.data.robots || 'index,follow');
-          
-          // Open Graph (Social Sharing SEO)
-          setMetaTag('og:title', data.data.ogTitle || data.data.metaTitle || data.data.title, true);
-          setMetaTag('og:description', data.data.ogDescription || data.data.metaDescription || data.data.shortDescription, true);
-          setMetaTag('og:url', getCanonicalUrl(`/blog/${data.data.slug || slug}/`), true);
-          setMetaTag('og:type', 'article', true);
-          const ogImg = data.data.ogImage || data.data.image;
-          if (ogImg) setMetaTag('og:image', getAssetUrl(ogImg), true);
-
-          // Twitter SEO
-          setMetaTag('twitter:card', 'summary_large_image');
-          setMetaTag('twitter:title', data.data.twitterTitle || data.data.ogTitle || data.data.metaTitle || data.data.title);
-          setMetaTag('twitter:description', data.data.twitterDescription || data.data.ogDescription || data.data.metaDescription || data.data.shortDescription);
-          const twImg = data.data.twitterImage || ogImg;
-          if (twImg) setMetaTag('twitter:image', getAssetUrl(twImg));
-
-          // Canonical URL
-          let canonicalLink = document.querySelector('link[rel="canonical"]');
-          if (!canonicalLink) {
-            canonicalLink = document.createElement('link');
-            canonicalLink.rel = "canonical";
-            document.head.appendChild(canonicalLink);
-          }
-          canonicalLink.setAttribute("href", getCanonicalUrl(`/blog/${data.data.slug || slug}/`));
-
-          // Schema Markup (JSON-LD)
-          if (data.data.schemaMarkup) {
-            let script = document.querySelector('script[type="application/ld+json"]');
-            if (!script) {
-              script = document.createElement('script');
-              script.type = "application/ld+json";
-              document.head.appendChild(script);
-            }
-            script.textContent = data.data.schemaMarkup;
-          }
-
-          // Fetch related blogs (mocking by just fetching latest 3 from same category if possible, else just 3 latest)
-          const relatedRes = await api.get(`/blogs?status=published`);
-          if (relatedRes.data.success) {
+          // Fetch related published articles for client-side navigation.
+          const relatedRes = await api.get(`/blogs?status=published`).catch(() => null);
+          if (relatedRes?.data.success && isMounted) {
             setRelatedBlogs(relatedRes.data.data.filter(isPublicBlog).filter(b => b.slug !== slug).slice(0, 3));
           }
-        } else {
+        } else if (isMounted && !initialBlog) {
           setError('Blog not found');
         }
       } catch (err) {
-        setError(err.response?.data?.message || 'Failed to fetch blog details');
+        if (isMounted && !initialBlog) {
+          setError(err.response?.data?.message || 'Failed to fetch blog details');
+        }
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
     fetchBlog();
-  }, [slug]);
+
+    return () => {
+      isMounted = false;
+    };
+  }, [slug, initialBlog]);
 
   // Process HTML for TOC and styling
   const processedContent = useMemo(() => processBlogContent(blog?.content), [blog?.content]);
@@ -241,6 +156,7 @@ export default function BlogDetails() {
   if (error || !blog) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-[#F8FAFC] px-4 text-center">
+        <Seo title="Blog not found | Manovaidya" path={`/blog/${slug}/`} noindex />
         <AlertCircle size={48} className="mb-4 text-red-500" />
         <h2 className="mb-6 text-3xl font-bold text-slate-800">{error || 'Blog not found'}</h2>
         <Link to="/blog/" className="rounded-full bg-teal-700 px-8 py-3 font-semibold text-white transition hover:bg-teal-800 hover:shadow-lg">
@@ -251,16 +167,9 @@ export default function BlogDetails() {
   }
 
   const readTime = Math.ceil((blog.content?.length || 1000) / 1000);
-  const publishDate = new Date(blog.createdAt || blog.date).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' });
+  const publishDate = blog.createdAt || blog.date ? new Date(blog.createdAt || blog.date).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }) : '';
   const tocForRender = toc.length ? toc : processedContent.toc;
-  const schema = (() => {
-    if (!blog.schemaMarkup) return undefined;
-    try {
-      return JSON.parse(blog.schemaMarkup);
-    } catch {
-      return undefined;
-    }
-  })();
+  const schema = getArticleSchema(blog, 'blog', getAssetUrl(blog.image));
 
   const currentUrl = getCanonicalUrl(`/blog/${slug}/`);
   const shareLinks = {
@@ -282,9 +191,10 @@ export default function BlogDetails() {
         description={blog.metaDescription || blog.shortDescription}
         keywords={blog.metaKeywords || blog.focusKeyword}
         path={`/blog/${blog.slug || slug}/`}
-        image={getAssetUrl(blog.ogImage || blog.image)}
+        image={getAssetUrl(blog.image || blog.ogImage)}
         noindex={/\bnoindex\b/i.test(blog.robots || '')}
         schema={schema}
+        type="article"
       />
       {/* Breadcrumb */}
       <div className="border-b border-slate-200 bg-white">

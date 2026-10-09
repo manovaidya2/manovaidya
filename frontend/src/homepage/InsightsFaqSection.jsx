@@ -134,7 +134,7 @@ function InsightsFaqSection() {
           setBlogs(publishedBlogs);
         }
       } catch {
-        if (isMounted) {
+        if (isMounted && !initialBlogs.length) {
           setBlogs([]);
         }
       }
@@ -145,7 +145,7 @@ function InsightsFaqSection() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [initialBlogs.length]);
 
   const articles = useMemo(() => {
     if (!blogs.length) {

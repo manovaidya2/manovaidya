@@ -9,7 +9,7 @@ export const DEFAULT_DESCRIPTION =
   "Manovaidya is a child development and mental wellness clinic in Noida offering structured support for Autism, ADHD, speech delay, anxiety, depression, OCD and related concerns.";
 const DEFAULT_IMAGE = `${SITE_URL}/favicon%20(4).png`;
 
-function Seo({ title, description, path, image, noindex = false, keywords, schema }) {
+function Seo({ title, description, path, image, noindex = false, keywords, schema, type = "website" }) {
   const location = useLocation();
   const resolvedTitle = title || DEFAULT_TITLE;
   const resolvedDescription = description || DEFAULT_DESCRIPTION;
@@ -35,7 +35,7 @@ function Seo({ title, description, path, image, noindex = false, keywords, schem
         {keywords ? <meta name="keywords" content={keywords} /> : null}
         <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content={type} />
         <meta property="og:site_name" content="Manovaidya" />
         <meta property="og:title" content={resolvedTitle} />
         <meta property="og:description" content={resolvedDescription} />

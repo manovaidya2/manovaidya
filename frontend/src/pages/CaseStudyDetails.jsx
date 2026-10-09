@@ -5,8 +5,9 @@ import api, { getAssetUrl } from "../api/axiosInstance";
 import NewsletterSection from "../blog/NewsletterSection";
 import Seo from "../components/Seo";
 import { usePrerenderData } from "../prerenderData";
-import { getCanonicalUrl } from "../utils/canonical";
 import { normalizeArticleLinks } from "../utils/articleLinks";
+import { isPublicCaseStudy } from "../utils/publicContent";
+import { getArticleSchema } from "../utils/articleSchema";
 
 function CaseStudyDetails() {
   const { slug } = useParams();
@@ -17,19 +18,20 @@ function CaseStudyDetails() {
   const [error, setError] = useState("");
 
   useEffect(() => {
+    if (initialStudy) return;
     let isMounted = true;
 
     const fetchCaseStudy = async () => {
       try {
-        setLoading(true);
+        if (!initialStudy) setLoading(true);
         const { data } = await api.get(`/case-studies/slug/${slug}`);
-        if (!data.success) throw new Error(data.message || "Case study not found.");
+        if (!data.success || data.data?.slug !== slug || !isPublicCaseStudy(data.data)) throw new Error("Case study not found.");
         if (isMounted) {
           setStudy(data.data);
           setError("");
         }
       } catch (err) {
-        if (isMounted) setError(err.response?.data?.message || err.message);
+        if (isMounted && !initialStudy) setError(err.response?.data?.message || err.message);
       } finally {
         if (isMounted) setLoading(false);
       }
@@ -39,40 +41,8 @@ function CaseStudyDetails() {
     return () => {
       isMounted = false;
     };
-  }, [slug]);
+  }, [slug, initialStudy]);
 
-  useEffect(() => {
-    if (!study) return;
-    document.title = study.metaTitle || `${study.title} | Case Study | Manovaidya`;
-
-    const setMetaTag = (name, content, isProperty = false) => {
-      if (!content) return;
-      const attr = isProperty ? "property" : "name";
-      let tag = document.querySelector(`meta[${attr}="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute(attr, name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-    };
-
-    setMetaTag("description", study.metaDescription || study.summary);
-    setMetaTag("keywords", study.metaKeywords || study.focusKeyword);
-    setMetaTag("robots", study.robots || "index,follow");
-    setMetaTag("og:title", study.ogTitle || study.metaTitle || study.title, true);
-    setMetaTag("og:description", study.ogDescription || study.metaDescription || study.summary, true);
-    setMetaTag("og:type", "article", true);
-    setMetaTag("twitter:card", "summary_large_image");
-
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = getCanonicalUrl(`/case-studies/${study.slug || slug}/`);
-  }, [study, slug]);
 
   const outcomes = useMemo(
     () => (study?.outcomes || []).map((item) => item.text || item).filter(Boolean),
@@ -90,6 +60,7 @@ function CaseStudyDetails() {
   if (error || !study) {
     return (
       <main className="min-h-[60vh] bg-[#fbfcfa] px-6 py-16 text-center">
+        <Seo title="Case study not found | Manovaidya" path={`/case-studies/${slug}/`} noindex />
         <p className="text-lg font-black text-slate-900">{error || "Case study not found."}</p>
         <Link to="/case-studies/" className="mt-5 inline-flex rounded-md bg-[#8b43ba] px-5 py-3 text-sm font-black text-white">
           Back to Case Studies
@@ -105,8 +76,10 @@ function CaseStudyDetails() {
         description={study.metaDescription || study.summary}
         keywords={study.metaKeywords || study.focusKeyword}
         path={`/case-studies/${study.slug || slug}/`}
-        image={getAssetUrl(study.ogImage || study.image)}
+        image={getAssetUrl(study.image || study.ogImage)}
         noindex={/\bnoindex\b/i.test(study.robots || '')}
+        schema={getArticleSchema(study, 'case-studies', getAssetUrl(study.image))}
+        type="article"
       />
       <section className="px-4 py-8 sm:px-6 lg:px-10 lg:py-12">
         <div className="mx-auto grid max-w-[1280px] gap-8 lg:grid-cols-[minmax(0,1fr)_330px]">
@@ -130,6 +103,12 @@ function CaseStudyDetails() {
               <p className="mt-4 text-base font-semibold leading-8 text-slate-600">{study.summary}</p>
 
               <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold text-slate-600">
+                {study.authorName ? <span>{study.authorName}</span> : null}
+                {study.createdAt && !Number.isNaN(new Date(study.createdAt).getTime()) ? (
+                  <time dateTime={new Date(study.createdAt).toISOString()}>
+                    {new Date(study.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}
+                  </time>
+                ) : null}
                 {study.location ? (
                   <span className="inline-flex items-center gap-2 rounded-lg bg-slate-50 px-3 py-2">
                     <MapPin className="h-4 w-4 text-[#8b43ba]" />

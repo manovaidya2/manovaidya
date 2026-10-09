@@ -1,6 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { pathToFileURL } from "node:url";
+import { pathToFileURL, fileURLToPath } from "node:url";
 import { readContentSnapshot } from "./seo-content.mjs";
 import {
   SITE_URL,
@@ -103,13 +103,12 @@ const extractReactHead = (appHtml, canonicalUrl) => {
   const patterns = [
     /<title[\s\S]*?<\/title>/gi,
     /<meta\s+(?:name|property)=["'](?:description|keywords|robots|twitter:card|twitter:title|twitter:description|twitter:image|og:title|og:description|og:url|og:type|og:site_name|og:image)["'][^>]*\/?>/gi,
-    /<script\s+type=["']application\/ld\+json["'][\s\S]*?<\/script>/gi,
   ];
 
   let html = appHtml;
   patterns.forEach((pattern) => {
     html = html.replace(pattern, (match) => {
-      headTags.push(match);
+      headTags.push(match.replace(/^<(title|meta)\b/i, '<$1 data-prerender-seo="true"'));
       return "";
     });
   });
@@ -135,7 +134,7 @@ const fallbackHead = (routePath, canonicalUrl) => {
   ].join("\n    ");
 };
 
-const applyPrerender = (template, { routePath, canonicalUrl, appHtml, helmet, data }) => {
+export const applyPrerender = (template, { routePath, canonicalUrl, appHtml, helmet, data }) => {
   const extracted = extractReactHead(appHtml, canonicalUrl);
   const helmetHead = [
     helmet?.title?.toString() || "",
@@ -166,16 +165,18 @@ const toSlugMap = (items) =>
     return map;
   }, {});
 
-const getRouteData = (routePath, { blogs, caseStudies, videos, blogsBySlug, caseStudiesBySlug }) => {
+export const getRouteData = (routePath, { blogs, caseStudies, videos, blogsBySlug, caseStudiesBySlug }) => {
   if (routePath === "/") return { blogs: blogs.slice(0, 6) };
   if (routePath === "/blog") return { blogs };
   if (routePath.startsWith("/blog/")) {
     const slug = routePath.split("/").filter(Boolean).at(-1);
+    if (!blogsBySlug[slug]) throw new Error(`Missing published blog record for ${routePath}`);
     return { blogs: blogs.slice(0, 4), blogsBySlug: { [slug]: blogsBySlug[slug] } };
   }
   if (routePath === "/case-studies") return { caseStudies };
   if (routePath.startsWith("/case-studies/")) {
     const slug = routePath.split("/").filter(Boolean).at(-1);
+    if (!caseStudiesBySlug[slug]) throw new Error(`Missing published case-study record for ${routePath}`);
     return { caseStudiesBySlug: { [slug]: caseStudiesBySlug[slug] } };
   }
   if (routePath === "/video-library") return { videos };
@@ -218,9 +219,10 @@ const main = async () => {
   );
 
   console.log(`Prerendered ${routeMap.size} routes with SEO HTML.`);
+  console.log(`Detail HTML: ${blogs.length} blogs, ${caseStudies.length} case studies.`);
 };
 
-main().catch((error) => {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch((error) => {
   console.error(error);
   process.exit(1);
 });

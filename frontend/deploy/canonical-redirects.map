@@ -79,9 +79,6 @@ map $uri $seo_redirect_path {
     /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children/;
     /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children.html /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children/;
     /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children/index.html /blog/does-my-child-have-adhd-early-signs-of-adhd-in-children/;
-    /blog/does-my-child-have-autism-early-signs-of-autism-in-children /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
-    /blog/does-my-child-have-autism-early-signs-of-autism-in-children.html /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
-    /blog/does-my-child-have-autism-early-signs-of-autism-in-children/index.html /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
     /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide/;
     /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide.html /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide/;
     /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide/index.html /blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide/;
@@ -96,9 +93,6 @@ map $uri $seo_redirect_path {
     /case-studies /case-studies/;
     /case-studies.html /case-studies/;
     /case-studies/index.html /case-studies/;
-    /case-studies/test-data-for-csestudies /case-studies/test-data-for-csestudies/;
-    /case-studies/test-data-for-csestudies.html /case-studies/test-data-for-csestudies/;
-    /case-studies/test-data-for-csestudies/index.html /case-studies/test-data-for-csestudies/;
     /child-development-care-india /child-development-care-india/;
     /child-development-care-india.html /child-development-care-india/;
     /child-development-care-india/index.html /child-development-care-india/;
@@ -124,10 +118,6 @@ map $uri $seo_redirect_path {
     /depression-treatment-india.html /adult-depression-support/;
     /depression-treatment-india/ /adult-depression-support/;
     /depression-treatment-india/index.html /adult-depression-support/;
-    /does-my-child-have-autism-early-signs /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
-    /does-my-child-have-autism-early-signs.html /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
-    /does-my-child-have-autism-early-signs/ /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
-    /does-my-child-have-autism-early-signs/index.html /blog/does-my-child-have-autism-early-signs-of-autism-in-children/;
     /dr-ankush-garg /about/doctor/;
     /dr-ankush-garg.html /about/doctor/;
     /dr-ankush-garg/ /about/doctor/;

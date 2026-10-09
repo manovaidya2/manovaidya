@@ -1,0 +1,45 @@
+name: Validate and rebuild SEO pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  push:
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/seo-build.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run test:seo
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run verify:hydration
+      - run: sudo apt-get update && sudo apt-get install -y nginx
+      - run: npm run verify:nginx
+      - uses: actions/upload-artifact@v4
+        with:
+          name: validated-seo-release
+          path: |
+            frontend/dist/
+            frontend/deploy/
+          retention-days: 7

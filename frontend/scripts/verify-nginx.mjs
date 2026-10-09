@@ -19,6 +19,7 @@ const freePort = () => new Promise((resolve, reject) => {
   });
 });
 const ports = [await freePort(), await freePort(), await freePort()];
+const localOrigin = `http://127.0.0.1:${ports[2]}`;
 const sitemap = await fs.readFile("dist/sitemap.xml", "utf8");
 const content = await readContentSnapshot();
 const routes = new Set([
@@ -35,7 +36,8 @@ const site = (await fs.readFile("deploy/manovaidya.nginx.conf", "utf8"))
   .replace(/    listen \[::\]:[^;]+;\n/g, "")
   .replace(/    listen [^;]+;/g, () => `    listen 127.0.0.1:${ports[listenIndex++]};`)
   .replace(/    ssl_certificate(?:_key)? [^;]+;\n/g, "")
-  .replace("/var/www/manovaidya/frontend/dist", nginxPath(path.resolve("dist")));
+  .replace("/var/www/manovaidya/frontend/dist", nginxPath(path.resolve("dist")))
+  .replaceAll('https://manovaidya.org', localOrigin);
 await fs.mkdir(path.join(temp, "logs"));
 await fs.mkdir(path.join(temp, "temp"));
 await fs.writeFile(path.join(temp, "nginx.conf"), `worker_processes 1;\nevents { worker_connections 128; }\nhttp {\n${site}\n}\n`);
@@ -64,7 +66,7 @@ try {
         tested.add(`${port} ${variant}`);
         const expectedStatus = port === ports[2] && variant === canonical ? 200 : 301;
         const location = response.headers.get("location");
-        if (response.status !== expectedStatus || (expectedStatus === 301 && location !== `https://manovaidya.org${canonical}${query}`)) {
+        if (response.status !== expectedStatus || (expectedStatus === 301 && location !== `${localOrigin}${canonical}${query}`)) {
           failures.push(`${port} ${variant}: ${response.status} ${location || ""}`);
         }
       }
@@ -76,13 +78,22 @@ try {
       if (tested.has(`${port} ${from}`)) continue;
       const response = await fetch(`http://127.0.0.1:${port}${from}?utm_source=legacy-check`, { method: "HEAD", redirect: "manual" });
       requests++;
-      if (response.status !== 301 || response.headers.get("location") !== `https://manovaidya.org${to}?utm_source=legacy-check`) failures.push(`Legacy ${from}: incorrect redirect`);
+      if (response.status !== 301 || response.headers.get("location") !== `${localOrigin}${to}?utm_source=legacy-check`) failures.push(`Legacy ${from}: incorrect redirect`);
     }
   }
-  for (const [route, expected] of [["/robots.txt", 200], ["/sitemap.xml", 200], ["/does-not-exist/", 404], ["/assets/missing.js", 404]]) {
+  const asset = (await fs.readdir('dist/assets')).find((file) => file.endsWith('.js'));
+  for (const [route, expected] of [["/robots.txt", 200], ["/sitemap.xml", 200], [`/assets/${asset}`, 200], ["/does-not-exist/", 404], ["/blog/missing-regression-slug/", 404], ["/case-studies/missing-regression-slug/", 404], ["/assets/missing.js", 404]]) {
     const response = await fetch(`http://127.0.0.1:${ports[2]}${route}`, { redirect: "manual" });
     requests++;
     if (response.status !== expected) failures.push(`${route}: expected ${expected}, got ${response.status}`);
+  }
+  const curl = process.platform === 'win32' ? 'curl.exe' : 'curl';
+  for (const route of ['/index.html', '/blog', `/blog/${content.blogs[0].slug}`, '/case-studies', '/dr-ankush-garg']) {
+    const head = spawnSync(curl, ['-sS', '-I', '--max-time', '15', `${localOrigin}${route}`], { encoding: 'utf8', windowsHide: true });
+    const follow = spawnSync(curl, ['-sS', '-I', '-L', '--max-time', '15', '-o', process.platform === 'win32' ? 'NUL' : '/dev/null', '-w', '%{http_code} %{num_redirects} %{url_effective}', `${localOrigin}${route}`], { encoding: 'utf8', windowsHide: true });
+    const expected = `${localOrigin}${route === '/index.html' ? '/' : new URL(getCanonicalUrl(route)).pathname}`;
+    if (head.status !== 0 || !/HTTP\/1\.1 301/.test(head.stdout) || follow.status !== 0 || follow.stdout !== `200 1 ${expected}`) failures.push(`curl ${route}: ${head.stderr} ${follow.stdout} ${follow.stderr}`);
+    console.log(`curl -I / -IL ${route}: ${follow.stdout}`);
   }
 } finally {
   spawnSync(nginx, [...args, "-s", "quit"], { windowsHide: true });

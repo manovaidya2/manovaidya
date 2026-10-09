@@ -45,24 +45,33 @@ function BlogListingSection() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    let isMounted = true;
+
     const fetchBlogs = async () => {
       try {
         const { data } = await api.get('/blogs?status=published');
-        if (data.success) {
+        if (data.success && isMounted) {
           const publicBlogs = Array.isArray(data.data)
             ? data.data.filter(isPublicBlog)
             : [];
           setBlogs(publicBlogs);
           setPopularPosts(publicBlogs.slice(0, 4));
+          setError(null);
         }
       } catch (err) {
-        setError(err.response?.data?.message || err.message);
+        if (isMounted && !initialBlogs.length) {
+          setError(err.response?.data?.message || err.message);
+        }
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
     fetchBlogs();
-  }, []);
+
+    return () => {
+      isMounted = false;
+    };
+  }, [initialBlogs.length]);
 
   return (
     <React.Fragment>

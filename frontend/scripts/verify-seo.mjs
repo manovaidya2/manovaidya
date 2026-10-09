@@ -1,11 +1,16 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { parse, parseFragment } from "parse5";
 import { SITE_URL, canonicalPaths, canonicalPathAliases, getCanonicalUrl } from "../src/utils/canonical.js";
 import { readContentSnapshot, isIndexable, getLegacyAliases } from "./seo-content.mjs";
 
 const failures = [];
 const internalPageLinks = new Set();
 const check = (condition, message) => { if (!condition) failures.push(message); };
+const textOf = (node) => !node ? '' : node.nodeName === '#text' ? node.value : (node.childNodes || []).map(textOf).join(' ');
+const find = (node, predicate) => !node ? undefined : predicate(node) ? node : (node.childNodes || []).map((child) => find(child, predicate)).find(Boolean);
+const attr = (node, name) => node?.attrs?.find((entry) => entry.name === name)?.value;
+const cleanText = (value) => value.replace(/\s+/g, ' ').trim();
 const sitemap = await fs.readFile("dist/sitemap.xml", "utf8");
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => loc);
 check(urls.length > 0, "Sitemap is empty");
@@ -61,6 +66,26 @@ for (const [prefix, items] of [["blog", content.blogs], ["case-studies", content
       const html = await fs.readFile(file, "utf8");
       inspectHtml(html, url, `DYNAMIC ${url}`, indexable);
       check(/<h1\b/i.test(html), `${url}: dynamic page is missing rendered article content`);
+      const document = parse(html);
+      const main = find(document, (node) => node.tagName === 'main');
+      const h1 = find(main, (node) => node.tagName === 'h1');
+      check(cleanText(textOf(h1)) === item.title.trim(), `${url}: H1 belongs to another record`);
+      const title = find(document, (node) => node.tagName === 'title');
+      const expectedTitle = item.metaTitle || (prefix === 'blog' ? item.title : `${item.title} | Case Study | Manovaidya`);
+      check(textOf(title) === expectedTitle, `${url}: wrong title`);
+      const description = find(document, (node) => node.tagName === 'meta' && attr(node, 'name') === 'description');
+      check(attr(description, 'content') === (item.metaDescription || item.shortDescription || item.summary), `${url}: wrong description`);
+      const bodyText = cleanText(textOf(main));
+      const articleText = cleanText(textOf(parseFragment(item.content)));
+      check(articleText.length > 0 && bodyText.includes(articleText), `${url}: real article text is missing or replaced`);
+      if (item.image) check(Boolean(find(main, (node) => node.tagName === 'img' && (attr(node, 'src') || '').endsWith(item.image))), `${url}: featured image missing`);
+      const data = JSON.parse(html.match(/window\.__MANOVAIDYA_PRERENDER_DATA__=([\s\S]*?);<\/script>/)?.[1] || '{}');
+      const record = (prefix === 'blog' ? data.blogsBySlug : data.caseStudiesBySlug)?.[item.slug];
+      check(record?.slug === item.slug && record?.content === item.content, `${url}: hydration data does not match article`);
+      const schemas = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map(([, json]) => JSON.parse(json));
+      check(schemas.length > 0, `${url}: missing structured data`);
+      const articles = schemas.flatMap((schema) => schema['@graph'] || [schema]).filter((node) => [].concat(node['@type'] || []).some((type) => /Article|BlogPosting/.test(type)));
+      check(articles.length > 0 && articles.every((article) => article.url === url && article.mainEntityOfPage?.['@id'] === url), `${url}: structured data has a stale article identity`);
     } catch (error) {
       failures.push(`${url}: missing dynamic page HTML (${error.message})`);
     }

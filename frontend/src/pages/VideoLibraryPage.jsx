@@ -172,7 +172,7 @@ function VideoLibraryPage() {
           setError("");
         }
       } catch (err) {
-        if (isMounted) setError(err.response?.data?.message || err.message);
+        if (isMounted && !initialVideos.length) setError(err.response?.data?.message || err.message);
       } finally {
         if (isMounted) setLoading(false);
       }
@@ -182,7 +182,7 @@ function VideoLibraryPage() {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [initialVideos.length]);
 
   const categories = useMemo(() => {
     const unique = Array.from(new Set(videos.map((video) => video.category).filter(Boolean)));

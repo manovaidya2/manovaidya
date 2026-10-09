@@ -44,6 +44,39 @@ a dedicated page link to an existing assessment/support section instead.
 This repository cannot change production Nginx, Cloudflare, or Search Console
 without access to those services.
 
+## Content changes and rebuilds
+
+`.github/workflows/seo-build.yml` builds and validates a release on frontend pushes,
+manual dispatch, and a 15-minute schedule. Enable Actions on the default branch
+to activate scheduled builds. GitHub may delay scheduled runs; use manual dispatch
+after an urgent create, edit, publish, unpublish, delete, or slug change in the CMS.
+Inspect failed Actions runs and enable failure notifications for the release owner.
+The workflow uploads `validated-seo-release`; it does not deploy automatically.
+An authorized release operator must publish the validated artifact and matching
+redirect map together, reload Nginx after `nginx -t`, and run `verify:seo:live`.
+Replace the entire old dist tree so unpublished/deleted/renamed routes do not remain.
+Keep the previous complete release available for rollback; never copy a partial
+or failed build over the live site. Database updates are not live static HTML until
+this release step completes. No deployment has been performed by this change.
+
+The current backend returns full collections without pagination. The build also
+supports `pagination.totalPages`, `pagination.total`, or `pagination.hasNextPage`
+(and top-level equivalents), requests numbered pages, and fails on duplicate slugs,
+empty intermediate pages, mismatched totals, invalid schemas, or missing content.
+APIs introducing pagination must retain one of these explicit metadata contracts.
+There is no automatic stale blog/case-study snapshot fallback when APIs fail.
+The existing video-library fallback intentionally logs fetch failures and renders
+its empty state; it does not supply blog/case-study detail HTML.
+
+Hydrated detail pages keep their build snapshot until navigation/reload. They do
+not refresh the article from a potentially older API replica. Navigating to another
+slug mounts new detail state; API results must match that slug and publication rules.
+Server and browser use the same parse5 article processing, heading IDs, and UTC dates.
+Run `npm run test:seo`, `npm run build`, `npx playwright install chromium`,
+`npm run verify:hydration`, and `npm run verify:nginx` before approving a release.
+Hydration validation uses three isolated case-study fixtures when fewer than three
+published studies exist; those fixtures are never written to the release dist tree.
+
 To test the redirect rules locally against a real Nginx binary, set `NGINX_BINARY`
 to its executable path (or have `nginx` on PATH), then run `npm run verify:nginx`.
 This starts temporary HTTP listeners on loopback, checks every static route and

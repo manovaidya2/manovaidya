@@ -17,6 +17,8 @@ const app = (
 )
 
 if (rootElement.hasChildNodes()) {
+  // React 19 owns hoisted metadata after hydration; remove the static copies first.
+  document.head.querySelectorAll('[data-prerender-seo]').forEach((tag) => tag.remove())
   hydrateRoot(rootElement, app)
 } else {
   createRoot(rootElement).render(app)
