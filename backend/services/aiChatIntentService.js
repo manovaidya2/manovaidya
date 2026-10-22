@@ -83,6 +83,10 @@ export const resolveIntent = (question, state = {}) => {
     };
   }
 
+  if (/^(can i|could i|how can i|how do i|is it possible|kya main|kaise)\b/.test(value) && /\b(book|booking|consultation|appointment)\b/.test(value)) {
+    return { intent: INTENTS.CONSULTATION_INFORMATION, action: 'NONE' };
+  }
+
   if (/\b(book|booking|schedule)\b.*\b(consultation|appointment|slot)\b|\b(consultation|appointment|slot)\b.*\b(book|booking|chahiye|karni|leni)\b/.test(value)) {
     return { intent: INTENTS.BOOK_CONSULTATION, action: 'BOOK_CONSULTATION' };
   }

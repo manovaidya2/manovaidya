@@ -230,7 +230,7 @@ function Header() {
     const handleBookConsultationClick = (event) => {
       const trigger = event.target.closest("a, button");
 
-      if (!trigger || trigger.closest('[data-consultation-modal="true"]')) {
+      if (!trigger || trigger.closest('[data-consultation-modal="true"], [data-ai-chat="true"]')) {
         return;
       }
 

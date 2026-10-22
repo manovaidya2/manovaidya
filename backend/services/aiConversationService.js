@@ -47,8 +47,8 @@ export const extractLastQuestion = (answer) => {
 export const inferPendingAction = (answer) => {
   const question = extractLastQuestion(answer).toLowerCase();
   if (!question) return PENDING_ACTIONS.NONE;
-  if (/book|consultation|appointment|slot/.test(question)) return PENDING_ACTIONS.BOOK_CONSULTATION;
-  if (/connect|agent|team|human|person|baat/.test(question)) return PENDING_ACTIONS.CONNECT_AGENT;
+  if (/(?:want|like|ready|shall|chah|chahe).{0,35}(?:book|booking|schedule)|(?:book|booking).{0,30}(?:chah|karein|karna)/.test(question)) return PENDING_ACTIONS.BOOK_CONSULTATION;
+  if (/(?:want|like|shall|chah|chahe).{0,35}(?:connect|agent|team)|connect.{0,25}(?:team|agent)/.test(question)) return PENDING_ACTIONS.CONNECT_AGENT;
   return PENDING_ACTIONS.GENERAL_INFORMATION;
 };
 
@@ -56,6 +56,9 @@ export const loadConversation = async (conversationId) => {
   const validId = isValidConversationId(conversationId) ? String(conversationId).toLowerCase() : null;
   if (validId) {
     const existing = await AiChatConversation.findOne({ conversationId: validId });
+    if (existing && existing.expiresAt <= new Date()) {
+      return AiChatConversation.create({ conversationId: createConversationId() });
+    }
     if (existing) return existing;
     return AiChatConversation.create({ conversationId: validId });
   }

@@ -86,6 +86,10 @@ try {
     const response = await fetch(`http://127.0.0.1:${ports[2]}${route}`, { redirect: "manual" });
     requests++;
     if (response.status !== expected) failures.push(`${route}: expected ${expected}, got ${response.status}`);
+    if (expected === 404 && !route.startsWith('/assets/')) {
+      const html = await response.text();
+      if (!html.includes('Page Not Found') || !html.includes('does not exist or has been moved')) failures.push(`${route}: missing custom server-rendered 404 body`);
+    } else await response.body?.cancel();
   }
   const curl = process.platform === 'win32' ? 'curl.exe' : 'curl';
   for (const route of ['/index.html', '/blog', `/blog/${content.blogs[0].slug}`, '/case-studies', '/dr-ankush-garg']) {

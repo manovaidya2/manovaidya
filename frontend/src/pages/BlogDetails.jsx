@@ -13,6 +13,7 @@ import { isPublicBlog } from '../utils/publicContent';
 import api, { getAssetUrl } from '../api/axiosInstance';
 import { processBlogContent } from '../utils/blogContent';
 import { getArticleSchema } from '../utils/articleSchema';
+import NotFoundPage from './NotFoundPage';
 
 // Custom SVG Icons for Socials to avoid lucide-react version issues
 const FacebookIcon = ({ size = 18 }) => <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>;
@@ -63,6 +64,7 @@ export default function BlogDetails() {
   const [relatedBlogs, setRelatedBlogs] = useState(initialRelatedBlogs);
   const [loading, setLoading] = useState(!initialBlog);
   const [error, setError] = useState(null);
+  const [notFound, setNotFound] = useState(prerenderData.httpStatus === 404 && prerenderData.notFoundPath?.replace(/\/+$/, '') === `/blog/${slug}`);
   const [toc, setToc] = useState([]);
   const [activeId, setActiveId] = useState('');
   const [openFaq, setOpenFaq] = useState(0);
@@ -70,7 +72,7 @@ export default function BlogDetails() {
   const contentRef = useRef(null);
 
   useEffect(() => {
-    if (initialBlog) return;
+    if (initialBlog || notFound) return;
     let isMounted = true;
 
     const fetchBlog = async () => {
@@ -87,10 +89,12 @@ export default function BlogDetails() {
             setRelatedBlogs(relatedRes.data.data.filter(isPublicBlog).filter(b => b.slug !== slug).slice(0, 3));
           }
         } else if (isMounted && !initialBlog) {
+          setNotFound(true);
           setError('Blog not found');
         }
       } catch (err) {
         if (isMounted && !initialBlog) {
+          if (err.response?.status === 404) setNotFound(true);
           setError(err.response?.data?.message || 'Failed to fetch blog details');
         }
       } finally {
@@ -102,7 +106,7 @@ export default function BlogDetails() {
     return () => {
       isMounted = false;
     };
-  }, [slug, initialBlog]);
+  }, [slug, initialBlog, notFound]);
 
   // Process HTML for TOC and styling
   const processedContent = useMemo(() => processBlogContent(blog?.content), [blog?.content]);
@@ -141,6 +145,7 @@ export default function BlogDetails() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [toc]);
 
+  if (notFound) return <NotFoundPage />;
   if (loading) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-[#F8FAFC]">

@@ -8,6 +8,7 @@ import { usePrerenderData } from "../prerenderData";
 import { normalizeArticleLinks } from "../utils/articleLinks";
 import { isPublicCaseStudy } from "../utils/publicContent";
 import { getArticleSchema } from "../utils/articleSchema";
+import NotFoundPage from './NotFoundPage';
 
 function CaseStudyDetails() {
   const { slug } = useParams();
@@ -16,21 +17,26 @@ function CaseStudyDetails() {
   const [study, setStudy] = useState(initialStudy);
   const [loading, setLoading] = useState(!initialStudy);
   const [error, setError] = useState("");
+  const [notFound, setNotFound] = useState(prerenderData.httpStatus === 404 && prerenderData.notFoundPath?.replace(/\/+$/, '') === `/case-studies/${slug}`);
 
   useEffect(() => {
-    if (initialStudy) return;
+    if (initialStudy || notFound) return;
     let isMounted = true;
 
     const fetchCaseStudy = async () => {
       try {
         if (!initialStudy) setLoading(true);
         const { data } = await api.get(`/case-studies/slug/${slug}`);
-        if (!data.success || data.data?.slug !== slug || !isPublicCaseStudy(data.data)) throw new Error("Case study not found.");
+        if (!data.success || data.data?.slug !== slug || !isPublicCaseStudy(data.data)) {
+          if (isMounted) setNotFound(true);
+          throw new Error("Case study not found.");
+        }
         if (isMounted) {
           setStudy(data.data);
           setError("");
         }
       } catch (err) {
+        if (isMounted && err.response?.status === 404) setNotFound(true);
         if (isMounted && !initialStudy) setError(err.response?.data?.message || err.message);
       } finally {
         if (isMounted) setLoading(false);
@@ -41,7 +47,7 @@ function CaseStudyDetails() {
     return () => {
       isMounted = false;
     };
-  }, [slug, initialStudy]);
+  }, [slug, initialStudy, notFound]);
 
 
   const outcomes = useMemo(
@@ -53,6 +59,7 @@ function CaseStudyDetails() {
     window.dispatchEvent(new CustomEvent("manovaidya:open-consultation"));
   };
 
+  if (notFound) return <NotFoundPage />;
   if (loading) {
     return <main className="min-h-[60vh] bg-[#fbfcfa] px-6 py-16 text-center font-bold text-slate-500">Loading case study...</main>;
   }

@@ -12,6 +12,9 @@ import caseStudyRoutes from './routes/caseStudyRoutes.js';
 import sitemapRoutes from './routes/sitemapRoutes.js';
 import liveChatRoutes from './routes/liveChatRoutes.js';
 import videoRoutes from './routes/videoRoutes.js';
+import { startKnowledgeSchedule } from './services/aiKnowledgeService.js';
+import { createPageMiddleware } from './middleware/frontendPages.js';
+import { fileURLToPath } from 'node:url';
 
 
 
@@ -37,7 +40,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use("/uploads", express.static("uploads"));
 
 mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log("✅ MongoDB Connected"))
+  .then(() => { console.log("✅ MongoDB Connected"); startKnowledgeSchedule(); })
   .catch(err => console.error("❌ MongoDB Error:", err.message));
 
 //use routes
@@ -63,6 +66,8 @@ app.use('/', sitemapRoutes);
 
 
 app.get("/api/health", (req, res) => res.json({ status: "OK", mongodb: mongoose.connection.readyState === 1 ? "Connected" : "Disconnected" }));
+app.use('/api', (req, res) => res.status(404).json({ success: false, message: 'API endpoint not found.' }));
+app.use(createPageMiddleware({ distDir: process.env.FRONTEND_DIST || fileURLToPath(new URL('../frontend/dist/', import.meta.url)) }));
 
 app.use((err, req, res, next) => {
   console.error("❌ ERROR:", err.message);

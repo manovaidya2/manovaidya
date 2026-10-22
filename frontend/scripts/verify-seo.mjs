@@ -13,6 +13,10 @@ const attr = (node, name) => node?.attrs?.find((entry) => entry.name === name)?.
 const cleanText = (value) => value.replace(/\s+/g, ' ').trim();
 const sitemap = await fs.readFile("dist/sitemap.xml", "utf8");
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => loc);
+const missingHtml = await fs.readFile('dist/404.html', 'utf8');
+check(missingHtml.includes('Page Not Found') && missingHtml.includes('Sorry, the page you are looking for does not exist or has been moved.'), 'Missing server-rendered 404 page');
+check(/<meta\b[^>]*name="robots"[^>]*content="noindex, nofollow"/i.test(missingHtml), '404 page must be noindex');
+check(!urls.some((url) => /\/404(?:\/|\.html)?$/.test(url)), '404 page must not be in the sitemap');
 check(urls.length > 0, "Sitemap is empty");
 check(new Set(urls).size === urls.length, "Sitemap contains duplicate URLs");
 for (const route of canonicalPaths) {

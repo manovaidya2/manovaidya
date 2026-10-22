@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
-import { readContentSnapshot } from "./seo-content.mjs";
+import { readContentSnapshot, getLegacyAliases } from "./seo-content.mjs";
 import {
   SITE_URL,
   canonicalPathAliases,
@@ -32,7 +32,7 @@ const escapeScriptJson = (value) =>
     .replace(/\u2029/g, "\\u2029");
 
 const fetchJson = async (url) => {
-  const response = await fetch(url, { headers: { Accept: "application/json" } });
+  const response = await fetch(url, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout(15000) });
   if (!response.ok) throw new Error(`${url} returned ${response.status}`);
   return response.json();
 };
@@ -221,6 +221,20 @@ const main = async () => {
     }),
   );
 
+  const missing = serverEntry.render('/404/', { httpStatus: 404 });
+  const notFoundHtml = applyPrerender(template, { routePath: '/404/', canonicalUrl: getCanonicalUrl('/404/'), appHtml: missing.html, helmet: missing.helmet, data: missing.data });
+  await fs.writeFile(path.join(distDir, '404.html'), notFoundHtml, 'utf8');
+  const pages = {};
+  for (const [route, canonical] of routeMap) {
+    const target = new URL(canonical).pathname;
+    const base = route === '/' ? '' : route.replace(/\/+$/, '');
+    for (const variant of base ? [base, `${base}/`, `${base}.html`, `${base}/index.html`] : ['/', '/index.html']) pages[variant] = target;
+  }
+  for (const [alias, destination] of getLegacyAliases(content)) {
+    const target = new URL(destination).pathname;
+    for (const variant of [alias, `${alias}/`, `${alias}.html`, `${alias}/index.html`]) pages[variant] = target;
+  }
+  await fs.writeFile(path.join(distDir, 'routes-manifest.json'), JSON.stringify({ pages }), 'utf8');
   console.log(`Prerendered ${routeMap.size} routes with SEO HTML.`);
   console.log(`Detail HTML: ${blogs.length} blogs, ${caseStudies.length} case studies.`);
 };

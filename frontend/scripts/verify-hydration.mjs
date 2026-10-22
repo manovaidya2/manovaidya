@@ -9,6 +9,7 @@ import { readContentSnapshot } from './seo-content.mjs';
 import { getCanonicalUrl } from '../src/utils/canonical.js';
 import { parseFragment } from 'parse5';
 import { processBlogContent } from '../src/utils/blogContent.js';
+import { sendNotFound } from './serve-pages.mjs';
 
 const textOf = (node) => node.nodeName === '#text' ? node.value : (node.childNodes || []).map(textOf).join('');
 const normalizeText = (text) => text.replace(/\s+/g, ' ').trim();
@@ -48,8 +49,7 @@ const server = http.createServer(async (request, response) => {
     response.setHeader('Content-Type', file.endsWith('.js') ? 'application/javascript' : file.endsWith('.css') ? 'text/css' : file.endsWith('.html') ? 'text/html' : file.endsWith('.png') ? 'image/png' : 'application/octet-stream');
     response.end(body);
   } catch {
-    response.writeHead(404, { 'Content-Type': 'text/plain' });
-    response.end('Not found');
+    await sendNotFound(request, response, path.resolve('dist'));
   }
 });
 await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
@@ -117,10 +117,10 @@ try {
     await context.route(`**/api/blogs/slug/${second.slug}`, (route) => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ success: true, data: first }) }));
     await page.locator(`a[href="/blog/${second.slug}/"]`).first().click();
     await page.waitForURL(`**/blog/${second.slug}/`);
-    await page.getByRole('heading', { name: 'Blog not found', exact: true }).waitFor();
-    assert.equal(await page.locator('h1').count(), 0, 'A stale API record must never appear at a different slug');
+    await page.getByRole('heading', { name: second.title, exact: true, level: 1 }).waitFor();
+    assert.equal(await page.locator('h1').count(), 1, 'A stale API record must never appear at a different slug; reload the real published page');
     assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'), getCanonicalUrl(`/blog/${second.slug}/`));
-    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /noindex/);
+    assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /^index/);
     await context.route(`**/api/blogs/slug/${second.slug}`, (route) => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ success: true, data: second }) }));
     await page.goto(`${origin}/blog/${first.slug}/`, { waitUntil: 'domcontentloaded' });
     await page.waitForFunction(() => document.querySelector('link[data-seo-canonical]'));
@@ -131,7 +131,7 @@ try {
     assert.equal(await page.title(), second.metaTitle || second.title);
     for (const prefix of ['blog', 'case-studies']) {
       assert.equal((await page.goto(`${origin}/${prefix}/missing-regression-slug/`, { waitUntil: 'domcontentloaded' })).status(), 404);
-      assert.equal(await page.locator('h1').count(), 0);
+      assert.equal(await page.locator('h1').innerText(), 'Page Not Found');
       checked++;
     }
     assert.deepEqual(errors, [], 'No browser runtime or hydration errors');

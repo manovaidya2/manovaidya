@@ -242,6 +242,12 @@ export const createConversationState = (conversation) => ({
   consultation: clone(conversation.consultation || {})
 });
 
+export const capturePatientDetails = (question, state) => {
+  const next = clone(state);
+  extractPatients(question, next);
+  return next;
+};
+
 export const processConsultationTurn = async ({
   question,
   conversationState,

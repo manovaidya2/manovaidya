@@ -70,6 +70,7 @@ import MediaPRPage from "./pages/MediaPRPage";
 import VideoLibraryPage from "./pages/VideoLibraryPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function DetailRoute({ Component }) {
   const { slug } = useParams();
@@ -236,6 +237,7 @@ function App({ Router = BrowserRouter, routerProps = {} }) {
           <Route path="/privacy-policy/" element={<PrivacyPolicyPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/contact-us/" element={<ContactUsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
         <AiChatBot />

@@ -3,7 +3,8 @@ import { checkConsultationAvailability } from '../services/consultationAvailabil
 import { syncConversationUserDetails } from '../services/aiConversationService.js';
 
 const getErrorStatus = (error) => {
-  if (error.code === 'QUESTION_REQUIRED') return 400;
+  if (['QUESTION_REQUIRED', 'QUESTION_TOO_LONG', 'INVALID_QUESTION', 'INVALID_CONVERSATION'].includes(error.code)) return 400;
+  if (error.code === 'CONVERSATION_BUSY') return 409;
   if (error.code === 'GEMINI_NOT_CONFIGURED') return 503;
   return 500;
 };
@@ -20,7 +21,6 @@ export const askAiChat = async (req, res) => {
     const body = req.body || {};
     const result = await answerWebsiteQuestion({
       question: body.question || body.message || body.prompt || body.text,
-      context: body.context || body.websiteContext || body.content,
       conversationId: body.conversationId
     });
 
@@ -32,11 +32,11 @@ export const askAiChat = async (req, res) => {
     if (error.code === 'QUESTION_REQUIRED') {
       console.warn('AI chat validation:', error.message);
     } else {
-      console.error('AI chat error:', error.message);
+      console.error('AI chat error:', error.code || error.name);
     }
     res.status(getErrorStatus(error)).json({
       success: false,
-      message: error.message,
+      message: getErrorStatus(error) < 500 ? error.message : 'The assistant is temporarily unavailable. Please retry or connect with the team.',
       code: error.code || 'AI_CHAT_ERROR'
     });
   }

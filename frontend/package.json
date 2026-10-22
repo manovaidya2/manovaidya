@@ -11,6 +11,8 @@
     "verify:seo:live": "node scripts/verify-seo.mjs --live",
     "verify:nginx": "node scripts/verify-nginx.mjs",
     "verify:hydration": "node scripts/verify-hydration.mjs",
+    "verify:chatbot": "node scripts/verify-chatbot.mjs",
+    "verify:404": "node scripts/verify-404.mjs",
     "test:seo": "node --test scripts/seo-content.test.mjs",
     "prebuild": "node scripts/generate-sitemap.mjs && node scripts/generate-redirects.mjs",
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/verify-seo.mjs",

@@ -75,6 +75,12 @@ In the active frontend Nginx server block, replace the SPA fallback
 location / {
     try_files $uri $uri/ =404;
 }
+error_page 404 =404 /404.html;
+location = /404.html {
+    internal;
+    add_header X-Robots-Tag "noindex, nofollow" always;
+    try_files /404.html =404;
+}
 ```
 
 Edit the existing `location /` block; do not add a second one. The complete
@@ -94,6 +100,23 @@ curl -I https://manovaidya.org/blog/missing-regression-slug/
 The first must return 200, the second 404. `npm run verify:seo:live` also checks
 missing static pages, blog/case-study slugs, and assets using browser and
 Googlebot user agents.
+
+The build generates `dist/404.html` through the React server renderer, with the
+custom “404 / Page Not Found” body and noindex metadata. `error_page ... =404`
+renders that file internally, preserving the original URL and HTTP status.
+Do not use `return 302 /404` or an error handler that changes the status to 200.
+The 404 page is excluded from the sitemap.
+
+Development (`npm run dev`) renders missing pages through Vite SSR with HTTP 404.
+Preview (`npm run preview`) and the Express backend serve the generated HTML and
+`routes-manifest.json`, returning HTTP 404 for unknown/deleted routes. The backend
+uses `FRONTEND_DIST` if set; otherwise it reads `../frontend/dist` relative to
+`backend/server.js`. The backend includes its own page middleware, shared by
+the frontend development/preview tools. API routes retain their handlers;
+unknown `/api/...` endpoints return JSON with status 404.
+
+Run `npm run verify:404` after the build. It checks SSR output, GET/HEAD status,
+noindex, unchanged missing URLs, desktop/mobile hydration and client navigation.
 
 ## Content changes and rebuilds
 

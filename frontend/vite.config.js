@@ -1,10 +1,15 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { pageStatusPlugin } from './scripts/vite-page-status.mjs'
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    pageStatusPlugin(),
   ],
+  ssr: {
+    noExternal: ['react-router-dom', 'react-router', 'react-helmet-async'],
+  },
   build: {
     rollupOptions: {
       output: {

@@ -6,10 +6,12 @@ import App from './App.jsx'
 import { PrerenderDataProvider, getBrowserPrerenderData } from './prerenderData.jsx'
 
 const rootElement = document.getElementById('root')
+const prerenderData = getBrowserPrerenderData()
+if (prerenderData.httpStatus === 404) prerenderData.notFoundPath = window.location.pathname
 const app = (
   <React.StrictMode>
     <HelmetProvider>
-      <PrerenderDataProvider data={getBrowserPrerenderData()}>
+      <PrerenderDataProvider data={prerenderData}>
         <App />
       </PrerenderDataProvider>
     </HelmetProvider>
