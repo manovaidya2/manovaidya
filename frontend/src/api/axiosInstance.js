@@ -20,6 +20,7 @@ const api = axios.create({
 });
 
 export const getAssetUrl = (path) => {
+  if (path?.startsWith('/assets/cms-') || path?.startsWith('data:')) return path;
   if (!path || /^https?:\/\//i.test(path)) return path;
   const origin = ASSET_ORIGIN.replace(/\/api\/?$/, '');
   return `${origin}${path.startsWith('/') ? path : `/${path}`}`;

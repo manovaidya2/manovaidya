@@ -1,6 +1,9 @@
 # Dynamic SEO and redirect verification
 
-Verified on 2026-10-09. Local changes pass; production still fails. No deployment,
+For the 2026-10-22 payload and indexing audit, see [INDEXING-FIX.md](INDEXING-FIX.md).
+The October 11 observations below are retained as historical context.
+
+Verified again on 2026-10-11. Local changes pass; production still fails. No deployment,
 commit, server configuration change, or Search Console action was performed.
 
 ## Root causes and fixes
@@ -27,7 +30,9 @@ commit, server configuration change, or Search Console action was performed.
   worktree. The existing public-content filter is shared with the listing/build.
 - Production does not match the supplied redirect/404 configuration. The existing
   map and Nginx configuration already implement the desired slash format; actual
-  local Nginx tests prove this, so no blanket rewrite was added.
+  local Nginx tests prove this. The prerender now emits only canonical directory
+  `index.html` files, so replacing the whole old `dist` tree also removes stale
+  duplicate `.html` artifacts from prior releases.
 
 ## Validation
 
@@ -40,7 +45,7 @@ commit, server configuration change, or Search Console action was performed.
 | `npm run verify:hydration` | 22 desktop/mobile route checks passed, plus stale API rejection and successful SPA navigation |
 | `npm run verify:nginx` | 1,201 responses passed using real Nginx 1.28.0 |
 | Local `curl -I` and `curl -IL` | Five representative redirects ended at 200 with exactly one redirect |
-| `npm run verify:seo:live` | Failed: 1,442 responses checked; 1,556 reported issues |
+| `npm run verify:seo:live` | Failed on 2026-10-11: 1,441 responses checked; 1,553 reported issues |
 | Additional live missing-slug HEAD probes | Both incorrectly returned 200 |
 | `git diff --check` | Passed |
 
@@ -116,8 +121,9 @@ current worktree; it does not claim all files were first changed in this request
 The new scheduled/manual GitHub workflow produces a validated release artifact,
 including HTML and the matching redirect map. It must be committed to the default
 branch with Actions enabled before scheduling operates. It does not deploy.
-An authorized operator must publish the complete release, replace obsolete HTML,
-apply the documented Nginx config, check syntax, reload, and rerun live verification.
+An authorized operator must publish the complete release, replace obsolete HTML
+and stale `.html` duplicates, apply the documented Nginx config, check syntax,
+reload, and rerun live verification.
 CMS edits, publication changes, deletion, or slug changes require that release;
 scheduled builds alone do not update the served site. See README.md for the process.
 

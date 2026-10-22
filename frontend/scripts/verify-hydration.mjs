@@ -93,6 +93,15 @@ try {
         if (item.image) {
           await page.waitForFunction((image) => [...document.querySelectorAll('main img')].some((img) => img.src.endsWith(image) && img.complete && img.naturalWidth > 0), item.image);
         }
+        const cmsImages = await page.locator('main img[src^="/assets/cms-"]').evaluateAll((images) => [...new Set(images.map((image) => image.src))]);
+        for (const source of cmsImages) {
+          assert.ok(await page.evaluate((src) => new Promise((resolve) => {
+            const image = new Image();
+            image.onload = () => resolve(image.naturalWidth > 0);
+            image.onerror = () => resolve(false);
+            image.src = src;
+          }), source), `Extracted article image must load: ${source}`);
+        }
         assert.ok(await page.locator('main script[type="application/ld+json"], head script[type="application/ld+json"]').count());
         assert.equal(await page.locator('main').evaluate((main, slug) => window.__MANOVAIDYA_PRERENDER_DATA__[slug.startsWith('blog:') ? 'blogsBySlug' : 'caseStudiesBySlug'][slug.split(':')[1]].content.length > 0, `${prefix === 'blog' ? 'blog' : 'study'}:${item.slug}`), true);
         checked++;

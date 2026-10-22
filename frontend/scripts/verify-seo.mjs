@@ -20,6 +20,7 @@ for (const route of canonicalPaths) {
 }
 
 const inspectHtml = (html, url, label, indexable = true) => {
+  check(Buffer.byteLength(html, 'utf8') < 1_900_000, `${label}: HTML exceeds the safe Googlebot fetch budget`);
   const canonicals = [...html.matchAll(/<link\b[^>]*rel=["']canonical["'][^>]*>/gi)];
   check(canonicals.length === 1, `${label}: expected exactly one canonical`);
   check(canonicals[0]?.[0].includes(`href="${url}"`), `${label}: canonical must be ${url}`);
@@ -101,6 +102,19 @@ for (const route of internalPageLinks) {
   }
 }
 console.log(`Checked ${internalPageLinks.size} internal page destinations for missing HTML.`);
+for (const name of await fs.readdir('dist/assets')) {
+  if (/\.(js|css)$/.test(name)) {
+    const stat = await fs.stat(path.join('dist/assets', name));
+    check(stat.size < 1_900_000, `${name}: script/style exceeds the safe Googlebot fetch budget`);
+  }
+}
+for (const name of content.assetFiles || []) {
+  try {
+    check((await fs.stat(path.join('dist/assets', name))).size > 0, `Empty extracted CMS image: ${name}`);
+  } catch {
+    failures.push(`Missing extracted CMS image: ${name}`);
+  }
+}
 
 if (process.argv.includes("--live")) {
   const report = [];
@@ -109,6 +123,16 @@ if (process.argv.includes("--live")) {
     "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
   ];
   const tasks = [];
+  for (const route of [
+    "/does-not-exist-seo-check/",
+    "/blog/missing-regression-slug/",
+    "/case-studies/missing-regression-slug/",
+    "/assets/missing-seo-check.js",
+  ]) {
+    for (const agent of agents) {
+      tasks.push({ url: `${SITE_URL}${route}`, agent, expectedStatus: 404 });
+    }
+  }
   for (const url of urls) {
     for (const agent of agents) tasks.push({ url, expected: url, agent, canonical: true });
     const pathname = new URL(url).pathname;
@@ -148,7 +172,11 @@ if (process.argv.includes("--live")) {
         const location = response.headers.get("location");
         const result = { url: task.url, status: response.status, location, googlebot: task.agent === agents[1] };
         report.push(result);
-        if (task.canonical) {
+        if (task.expectedStatus === 404) {
+          check(response.status === 404, `${task.url}: missing resource must return 404, got ${response.status}`);
+          check(!location, `${task.url}: missing resource must not redirect to ${location}`);
+          await response.body?.cancel();
+        } else if (task.canonical) {
           check(response.status === 200, `${task.url}: canonical returned ${response.status}`);
           check(!location, `${task.url}: canonical redirects to ${location}`);
           check(!/noindex/i.test(response.headers.get("x-robots-tag") || ""), `${task.url}: X-Robots-Tag blocks indexing`);

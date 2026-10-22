@@ -86,8 +86,7 @@ const pathToOutputFiles = (routePath) => {
 
   if (!segments.length) return [mainHtmlPath];
 
-  const routeBase = path.join(distDir, ...segments);
-  return [`${routeBase}.html`, path.join(routeBase, "index.html")];
+  return [path.join(distDir, ...segments, "index.html")];
 };
 
 const stripDefaultSeo = (html) =>
@@ -193,6 +192,10 @@ const main = async () => {
   ]);
 
   const { blogs, caseStudies } = content;
+  await fs.mkdir(path.join(distDir, "assets"), { recursive: true });
+  for (const name of content.assetFiles || []) {
+    await fs.copyFile(path.resolve(".cache/seo-assets", name), path.join(distDir, "assets", name));
+  }
   const routeMap = new Map(routes);
   for (const [prefix, items] of [["blog", blogs], ["case-studies", caseStudies]]) {
     for (const item of items) {

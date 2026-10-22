@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { extractInlineImages } from "./seo-assets.mjs";
 import { SITE_URL, canonicalPaths, canonicalPathAliases, getCanonicalUrl, normalizePath } from "../src/utils/canonical.js";
 import { isPublicBlog, isPublicCaseStudy } from "../src/utils/publicContent.js";
 export { isPublicBlog, isPublicCaseStudy, isIndexable } from "../src/utils/publicContent.js";
@@ -77,8 +78,10 @@ export const fetchPublishedContent = async () => {
 };
 
 export const saveContentSnapshot = async (content) => {
-  await fs.mkdir(".cache", { recursive: true });
-  await fs.writeFile(contentSnapshotPath, JSON.stringify(content), "utf8");
+  const extracted = extractInlineImages(content);
+  await fs.mkdir(".cache/seo-assets", { recursive: true });
+  await Promise.all([...extracted.assets].map(([name, bytes]) => fs.writeFile(`.cache/seo-assets/${name}`, bytes)));
+  await fs.writeFile(contentSnapshotPath, JSON.stringify({ ...extracted.content, assetFiles: [...extracted.assets.keys()] }), "utf8");
 };
 
 export const readContentSnapshot = async () => JSON.parse(await fs.readFile(contentSnapshotPath, "utf8"));

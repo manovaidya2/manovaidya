@@ -1,11 +1,33 @@
 # Production Redirect Fix
 
+## Indexing payload fix (2026-10-22)
+
+The new build also extracts embedded CMS image data into content-hashed
+`dist/assets/cms-*` files, preserving the exact original image bytes, article text,
+and layout. Deploy these files with the HTML. The content snapshot and hydration
+use the same new image URLs. Do not deploy only the HTML or sitemap.
+
+JavaScript is split into smaller modules. SEO verification now rejects HTML,
+JavaScript, or CSS at 1.9 MB to leave headroom under Googlebot's documented
+2 MB fetch limit. The previous homepage was about 4.22 MB and the largest blog
+about 6.01 MB; the checked build reduces them to 0.76 MB and 0.82 MB.
+
+Production still needs the release and Nginx configuration below. On October 22,
+all 69 sitemap URLs returned 200 for a Googlebot user agent, but seven had HTML
+over the fetch budget. Three nonexistent page URLs incorrectly returned the
+homepage with 200. This was a read-only production audit; no server deployment
+or Search Console submission has been performed.
+
+See [the latest verification report](INDEXING-FIX.md) for evidence and remaining steps.
+
 Every public page uses HTTPS, the non-www host, and a trailing slash. The root is
 `https://manovaidya.org/`. Old aliases, slashless paths, and HTML variants redirect
 directly to the final page. Assets, robots.txt, and sitemap.xml keep their filenames.
 
-1. Run `npm ci` and `npm run build` in `frontend`. Deploy the complete `dist`
-   directory, including each route's `index.html`, and the `deploy` directory.
+1. Run `npm ci` and `npm run build` in `frontend`. Replace the complete old
+   frontend `dist` tree with the new `dist` directory, including each route's
+   `index.html`, and deploy the `deploy` directory. Do not merge-copy over the
+   old tree: stale `.html` files from older releases must be removed.
    Deploy the backend changes as well: its dynamic sitemaps and Search Console
    queries must use the same final URLs as the frontend.
 2. Back up the existing Nginx site config. Merge `manovaidya.nginx.conf` into the
@@ -43,6 +65,35 @@ content stop the build. Equivalent legacy URLs have redirects; concerns without
 a dedicated page link to an existing assessment/support section instead.
 This repository cannot change production Nginx, Cloudflare, or Search Console
 without access to those services.
+
+## Apply the missing-page 404 rule
+
+In the active frontend Nginx server block, replace the SPA fallback
+`try_files $uri $uri/ /index.html;` with:
+
+```nginx
+location / {
+    try_files $uri $uri/ =404;
+}
+```
+
+Edit the existing `location /` block; do not add a second one. The complete
+prerendered `dist` must be deployed first, otherwise valid pages without their
+generated HTML will also return 404. Remove any `error_page 404` rule that falls
+back to the homepage or changes the status to 200. Keep existing API locations.
+Check `sudo nginx -t` before `sudo systemctl reload nginx`, then purge cached
+missing-page responses if a CDN is used.
+
+Verify a real page and a missing page after reload:
+
+```sh
+curl -I https://manovaidya.org/about/approach/
+curl -I https://manovaidya.org/blog/missing-regression-slug/
+```
+
+The first must return 200, the second 404. `npm run verify:seo:live` also checks
+missing static pages, blog/case-study slugs, and assets using browser and
+Googlebot user agents.
 
 ## Content changes and rebuilds
 

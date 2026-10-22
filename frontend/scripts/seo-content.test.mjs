@@ -5,6 +5,21 @@ import { fetchPublishedContent, isIndexable, isPublicCaseStudy, getLegacyAliases
 import { normalizeArticleLinks } from "../src/utils/articleLinks.js";
 import { processBlogContent } from "../src/utils/blogContent.js";
 import { getArticleSchema } from "../src/utils/articleSchema.js";
+import { extractInlineImages } from "./seo-assets.mjs";
+
+test('inline CMS images become deduplicated assets without changing bytes or article text', () => {
+  const bytes = Buffer.from('original image bytes');
+  const image = `data:image/png;base64,${bytes.toString('base64')}`;
+  const original = { blogs: [{ content: `<p>Unchanged text</p><img alt="Care" src="${image}">`, image }], caseStudies: [] };
+  const result = extractInlineImages(original);
+  assert.equal(result.assets.size, 1);
+  const [[name, actual]] = result.assets;
+  assert.deepEqual(actual, bytes);
+  assert.equal(result.content.blogs[0].content, `<p>Unchanged text</p><img alt="Care" src="/assets/${name}">`);
+  assert.equal(result.content.blogs[0].image, `/assets/${name}`);
+  assert.equal(original.blogs[0].image, image);
+  assert.deepEqual(extractInlineImages(result.content).content, result.content);
+});
 
 test("robots exclusions are case insensitive and independent of directive order", () => {
   for (const robots of ["noindex,nofollow", " NOINDEX,follow", "follow, noindex"]) assert.equal(isIndexable({ robots }), false);
