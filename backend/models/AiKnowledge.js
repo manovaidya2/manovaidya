@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const pageSchema = new mongoose.Schema({
-  url: { type: String, required: true, unique: true }, title: String, contentHash: String,
+  url: { type: String, required: true, unique: true }, title: String, contentHash: String, contentType: String,
   active: { type: Boolean, default: true }, status: String, lastError: String,
   lastSeenAt: Date, lastSuccessAt: Date, chunkCount: Number
 }, { timestamps: true });

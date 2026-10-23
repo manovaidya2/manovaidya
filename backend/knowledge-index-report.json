@@ -1,0 +1,752 @@
+{
+  "checkedAt": "2026-10-22T11:25:09.570Z",
+  "lastSync": {
+    "_id": "website",
+    "running": false,
+    "lastError": "",
+    "leaseUntil": "2026-10-22T11:53:36.029Z",
+    "startedAt": "2026-10-22T11:23:12.242Z",
+    "finishedAt": "2026-10-22T11:23:36.374Z",
+    "stats": {
+      "indexedPages": 68,
+      "unchangedPages": 68,
+      "chunks": 2243,
+      "embedded": 105,
+      "embeddingUnavailable": true,
+      "failures": [
+        {
+          "url": "https://manovaidya.org/blog/does-my-child-have-autism-early-signs-of-autism-in-children/",
+          "status": 404,
+          "error": "REMOVED"
+        },
+        {
+          "url": "https://manovaidya.org/case-studies/test-data-for-csestudies/",
+          "status": 404,
+          "error": "REMOVED"
+        }
+      ],
+      "excluded": [
+        {
+          "url": "https://manovaidya.org/success-story-videos/",
+          "reason": "noindex, noncanonical, or missing meaningful main content"
+        }
+      ],
+      "discoveryErrors": [],
+      "visited": 71,
+      "truncated": false
+    }
+  },
+  "activePages": 68,
+  "chunks": 2243,
+  "embedded": 360,
+  "pages": [
+    {
+      "url": "https://manovaidya.org/",
+      "title": "Manovaidya | Child Development & Mental Health Clinic in Noida",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:14.210Z",
+      "lastError": "",
+      "chunkCount": 14
+    },
+    {
+      "url": "https://manovaidya.org/about/approach/",
+      "title": "Our Approach | Personalised Neuro-Ayurveda Care",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:14.259Z",
+      "lastError": "",
+      "chunkCount": 19
+    },
+    {
+      "url": "https://manovaidya.org/about/doctor/",
+      "title": "Dr. Ankush Garg | Ayurvedacharya & Founder of Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:14.419Z",
+      "lastError": "",
+      "chunkCount": 5
+    },
+    {
+      "url": "https://manovaidya.org/about/manovaidya/",
+      "title": "About Manovaidya | Neuro-Ayurveda Mental Health Clinic",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:14.658Z",
+      "lastError": "",
+      "chunkCount": 20
+    },
+    {
+      "url": "https://manovaidya.org/addiction-unhealthy-habits-support-india/",
+      "title": "Addiction & Unhealthy Habits Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:15.082Z",
+      "lastError": "",
+      "chunkCount": 42
+    },
+    {
+      "url": "https://manovaidya.org/adult-depression-support/",
+      "title": "Adult Depression Treatment & Low Mood in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:15.260Z",
+      "lastError": "",
+      "chunkCount": 54
+    },
+    {
+      "url": "https://manovaidya.org/adult-mental-health-care-india/",
+      "title": "Adult Mental Health Care in India | Mental Health Assessment & Emotional Wellbeing | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:16.769Z",
+      "lastError": "",
+      "chunkCount": 51
+    },
+    {
+      "url": "https://manovaidya.org/adult-mental-wellness/",
+      "title": "Adult Mental Wellness | Anxiety, Depression & Stress Support | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:15.588Z",
+      "lastError": "",
+      "chunkCount": 21
+    },
+    {
+      "url": "https://manovaidya.org/anxiety-support-india/",
+      "title": "Adult Anxiety Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:18.595Z",
+      "lastError": "",
+      "chunkCount": 52
+    },
+    {
+      "url": "https://manovaidya.org/autism-treatment-india/",
+      "title": "Autism Treatment in India for Children | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:20.181Z",
+      "lastError": "",
+      "chunkCount": 43
+    },
+    {
+      "url": "https://manovaidya.org/behavioural-concerns-children-india/",
+      "title": "Behavioural Concerns Support for Children in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:20.329Z",
+      "lastError": "",
+      "chunkCount": 38
+    },
+    {
+      "url": "https://manovaidya.org/blog/",
+      "title": "Manovaidya Blog | Child Development & Mental Health Articles",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:18.615Z",
+      "lastError": "",
+      "chunkCount": 7
+    },
+    {
+      "url": "https://manovaidya.org/blog/autism-vs-speech-delay-what-are-the-early-signs-of-autism-in-children/",
+      "title": "Autism or Speech Delay? Early Signs of Autism in Children",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:34.700Z",
+      "lastError": "",
+      "chunkCount": 15
+    },
+    {
+      "url": "https://manovaidya.org/blog/can-a-child-have-autism-and-adhd-together-what-parents-should-know/",
+      "title": "Can a Child Have Autism and ADHD Together? Signs & Symptoms",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:34.837Z",
+      "lastError": "",
+      "chunkCount": 22
+    },
+    {
+      "url": "https://manovaidya.org/blog/does-my-child-have-adhd-early-signs-of-adhd-in-children/",
+      "title": "How to Know If Your Child Has ADHD? Early Signs & Symptoms",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:35.989Z",
+      "lastError": "",
+      "chunkCount": 23
+    },
+    {
+      "url": "https://manovaidya.org/blog/does-my-child-have-autism-early-signs-of-autism-in-children/",
+      "active": false,
+      "status": "failed",
+      "lastError": "REMOVED"
+    },
+    {
+      "url": "https://manovaidya.org/blog/how-to-discipline-a-child-with-autism-a-gentle-parent-guide/",
+      "title": "How to Discipline a Child With Autism | Manovaidya",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:35.945Z",
+      "lastError": "",
+      "chunkCount": 18
+    },
+    {
+      "url": "https://manovaidya.org/blog/why-does-my-child-struggle-to-make-friends-could-it-be-autism/",
+      "title": "Autism Treatment in India: Are Social Difficulties a Sign?",
+      "contentType": "blog",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:35.964Z",
+      "lastError": "",
+      "chunkCount": 20
+    },
+    {
+      "url": "https://manovaidya.org/case-studies/",
+      "title": "Case Studies | Real Care Journeys & Outcomes | Manovaidya",
+      "contentType": "case-study",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:19.450Z",
+      "lastError": "",
+      "chunkCount": 5
+    },
+    {
+      "url": "https://manovaidya.org/case-studies/test-data-for-csestudies/",
+      "active": false,
+      "status": "failed",
+      "lastError": "REMOVED"
+    },
+    {
+      "url": "https://manovaidya.org/child-development-care-india/",
+      "title": "Child Development Care & Developmental Treatment for Children in India | Developmental Assessment & Family Guidance | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:19.908Z",
+      "lastError": "",
+      "chunkCount": 74
+    },
+    {
+      "url": "https://manovaidya.org/child-development-support-india/",
+      "title": "Child Development Assessment & Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:19.965Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/child-health-care/",
+      "title": "Child Health Care in India | Autism, ADHD, Speech & Development Support | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:20.358Z",
+      "lastError": "",
+      "chunkCount": 20
+    },
+    {
+      "url": "https://manovaidya.org/child-health-care/adhd-child/",
+      "title": "ADHD Treatment in India | ADHD Assessment | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:21.570Z",
+      "lastError": "",
+      "chunkCount": 38
+    },
+    {
+      "url": "https://manovaidya.org/confusion-disorientation-support-seniors-india/",
+      "title": "Confusion & Disorientation in Seniors: Causes & Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:21.793Z",
+      "lastError": "",
+      "chunkCount": 33
+    },
+    {
+      "url": "https://manovaidya.org/contact-us/",
+      "title": "Contact Us | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:21.679Z",
+      "lastError": "",
+      "chunkCount": 3
+    },
+    {
+      "url": "https://manovaidya.org/dementia-alzheimers-care-support-seniors-india/",
+      "title": "Dementia & Alzheimer�s in Seniors: Care & Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:21.865Z",
+      "lastError": "",
+      "chunkCount": 40
+    },
+    {
+      "url": "https://manovaidya.org/exam-performance-pressure/",
+      "title": "Exam & Performance Pressure Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:22.101Z",
+      "lastError": "",
+      "chunkCount": 54
+    },
+    {
+      "url": "https://manovaidya.org/learning-attention-difficulties-india/",
+      "title": "Learning Assessment & Child Development Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:22.364Z",
+      "lastError": "",
+      "chunkCount": 88
+    },
+    {
+      "url": "https://manovaidya.org/low-self-esteem-confidence-support-india/",
+      "title": "Low Self-Esteem & Confidence Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:22.507Z",
+      "lastError": "",
+      "chunkCount": 26
+    },
+    {
+      "url": "https://manovaidya.org/media-coverage/",
+      "title": "Manovaidya In The Media | PR & News Coverage | Dr. Ankush Garg",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:23.665Z",
+      "lastError": "",
+      "chunkCount": 6
+    },
+    {
+      "url": "https://manovaidya.org/memory-loss-forgetfulness-support-seniors-india/",
+      "title": "Memory Loss & Forgetfulness Support for Seniors in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:23.763Z",
+      "lastError": "",
+      "chunkCount": 38
+    },
+    {
+      "url": "https://manovaidya.org/mild-cognitive-impairment-mci-support-seniors-india/",
+      "title": "Mild Cognitive Impairment (MCI) in Seniors: Signs & Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:23.801Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/mind-body-health-care-india/",
+      "title": "Mind-Body Health Care in India | Stress, Gut-Brain & Physical Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:23.985Z",
+      "lastError": "",
+      "chunkCount": 43
+    },
+    {
+      "url": "https://manovaidya.org/mind-body-wellbeing/",
+      "title": "Mind-Body Wellbeing | IBS, Migraine & Chronic Stress | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:24.069Z",
+      "lastError": "",
+      "chunkCount": 22
+    },
+    {
+      "url": "https://manovaidya.org/parent-teen-relationship-support/",
+      "title": "Parent-Teen Relationship Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:24.480Z",
+      "lastError": "",
+      "chunkCount": 53
+    },
+    {
+      "url": "https://manovaidya.org/privacy-policy/",
+      "title": "Privacy Policy | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:24.552Z",
+      "lastError": "",
+      "chunkCount": 1
+    },
+    {
+      "url": "https://manovaidya.org/relationship-challenges-support-india/",
+      "title": "Relationship Challenges & Emotional Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:25.657Z",
+      "lastError": "",
+      "chunkCount": 32
+    },
+    {
+      "url": "https://manovaidya.org/senior-depression-support-india/",
+      "title": "Depression Treatment for Seniors in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:25.812Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/senior-mental-health-care-india/",
+      "title": "Senior Mental Health Care in India | Healthy Ageing, Memory & Emotional Wellbeing | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:25.815Z",
+      "lastError": "",
+      "chunkCount": 48
+    },
+    {
+      "url": "https://manovaidya.org/senior-mind-memory-care/",
+      "title": "Senior Mind Care | Dementia, Alzheimer's & Memory Loss Support | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:25.764Z",
+      "lastError": "",
+      "chunkCount": 21
+    },
+    {
+      "url": "https://manovaidya.org/sleep-disorders-insomnia-support-india/",
+      "title": "Sleep Disorders & Insomnia Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:26.060Z",
+      "lastError": "",
+      "chunkCount": 46
+    },
+    {
+      "url": "https://manovaidya.org/sleep-disorders-seniors-support-india/",
+      "title": "Sleep Disorders Treatment for Seniors in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:26.380Z",
+      "lastError": "",
+      "chunkCount": 40
+    },
+    {
+      "url": "https://manovaidya.org/speech-delay-support-india/",
+      "title": "Speech Development Assessment & Communication Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:26.546Z",
+      "lastError": "",
+      "chunkCount": 46
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-acidity/",
+      "title": "Stress & Acidity Treatment in India | Digestive Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:27.844Z",
+      "lastError": "",
+      "chunkCount": 26
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-digestive-health/",
+      "title": "Stress & Digestive Health in India | Gut-Brain Connection | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:27.812Z",
+      "lastError": "",
+      "chunkCount": 26
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-fatigue/",
+      "title": "Stress & Fatigue Treatment in India | Mind-Body Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:27.827Z",
+      "lastError": "",
+      "chunkCount": 29
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-headaches/",
+      "title": "Stress & Headaches Treatment in India | Mind-Body Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:27.998Z",
+      "lastError": "",
+      "chunkCount": 28
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-high-blood-pressure/",
+      "title": "Stress & High Blood Pressure Treatment in India | Mind-Body Health",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:28.282Z",
+      "lastError": "",
+      "chunkCount": 25
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-migraine/",
+      "title": "Stress & Migraine Treatment in India | Mind-Body Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:28.415Z",
+      "lastError": "",
+      "chunkCount": 30
+    },
+    {
+      "url": "https://manovaidya.org/stress-and-thyroid/",
+      "title": "Stress & Thyroid Treatment in India | Mind-Body Health | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:28.712Z",
+      "lastError": "",
+      "chunkCount": 28
+    },
+    {
+      "url": "https://manovaidya.org/stress-burnout-support-india/",
+      "title": "Stress & Burnout Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:28.962Z",
+      "lastError": "",
+      "chunkCount": 62
+    },
+    {
+      "url": "https://manovaidya.org/stress-ibs-support-india/",
+      "title": "Stress & IBS Treatment in India | Gut-Brain Connection | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:29.740Z",
+      "lastError": "",
+      "chunkCount": 26
+    },
+    {
+      "url": "https://manovaidya.org/success-stories/",
+      "title": "Success Stories | Patient & Family Testimonials | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:29.789Z",
+      "lastError": "",
+      "chunkCount": 8
+    },
+    {
+      "url": "https://manovaidya.org/success-story-videos/",
+      "title": "Video Success Stories | Patient Testimonials | Manovaidya",
+      "active": false,
+      "status": "excluded",
+      "lastSuccessAt": "2026-10-22T06:41:04.953Z",
+      "lastError": "noindex, noncanonical, or missing meaningful main content",
+      "chunkCount": 2
+    },
+    {
+      "url": "https://manovaidya.org/teen-confidence-emotional-wellbeing/",
+      "title": "Teen Confidence & Emotional Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:30.043Z",
+      "lastError": "",
+      "chunkCount": 64
+    },
+    {
+      "url": "https://manovaidya.org/teen-depression-support/",
+      "title": "Teen Depression & Low Mood Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:30.220Z",
+      "lastError": "",
+      "chunkCount": 52
+    },
+    {
+      "url": "https://manovaidya.org/teen-mental-health-care-india/",
+      "title": "Teen Mental Health Care in India | Teen Mental Health Assessment & Support | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:30.379Z",
+      "lastError": "",
+      "chunkCount": 42
+    },
+    {
+      "url": "https://manovaidya.org/teen-mental-wellness/",
+      "title": "Teen Mental Wellness | Stress, Anxiety & Academic Pressure | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:30.643Z",
+      "lastError": "",
+      "chunkCount": 21
+    },
+    {
+      "url": "https://manovaidya.org/teen-screen-addiction-support/",
+      "title": "Teen Screen Addiction Treatment in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:31.882Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/teen-stress-anxiety-support/",
+      "title": "Teen Stress & Anxiety Support in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:31.907Z",
+      "lastError": "",
+      "chunkCount": 47
+    },
+    {
+      "url": "https://manovaidya.org/video-library/",
+      "title": "Video Library | Real Care Journeys on Video | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:31.831Z",
+      "lastError": "",
+      "chunkCount": 1
+    },
+    {
+      "url": "https://manovaidya.org/women-depression-low-mood-support-india/",
+      "title": "Depression & Low Mood Treatment for Women in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:32.073Z",
+      "lastError": "",
+      "chunkCount": 38
+    },
+    {
+      "url": "https://manovaidya.org/women-health-care/",
+      "title": "Women's Mental Health Care | Stress, Hormonal & Emotional Wellness | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:32.210Z",
+      "lastError": "",
+      "chunkCount": 21
+    },
+    {
+      "url": "https://manovaidya.org/women-hormonal-pms-pmdd-support-india/",
+      "title": "PMS & PMDD Treatment for Women in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:32.446Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/women-life-transitions-career-pressure-support-india/",
+      "title": "Career Pressure & Life Transitions Support for Women in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:32.706Z",
+      "lastError": "",
+      "chunkCount": 46
+    },
+    {
+      "url": "https://manovaidya.org/women-mental-health-care-india/",
+      "title": "Women Mental Health Care in India | Mental Health Assessment & Emotional Wellbeing | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:34.000Z",
+      "lastError": "",
+      "chunkCount": 48
+    },
+    {
+      "url": "https://manovaidya.org/women-pregnancy-postpartum-motherhood-mental-health-india/",
+      "title": "Pregnancy, Postpartum & Motherhood Mental Health Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:33.946Z",
+      "lastError": "",
+      "chunkCount": 39
+    },
+    {
+      "url": "https://manovaidya.org/women-relationship-emotional-wellbeing-support-india/",
+      "title": "Women’s Relationship & Emotional Wellbeing Support in India",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:33.975Z",
+      "lastError": "",
+      "chunkCount": 39
+    },
+    {
+      "url": "https://manovaidya.org/women-self-esteem-body-image-support-india/",
+      "title": "Self-Esteem & Body Image Support for Women in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:34.199Z",
+      "lastError": "",
+      "chunkCount": 37
+    },
+    {
+      "url": "https://manovaidya.org/women-stress-management-mind-body-balance-india/",
+      "title": "Stress Management Treatment for Women in India | Manovaidya",
+      "contentType": "page",
+      "active": true,
+      "status": "indexed",
+      "lastSuccessAt": "2026-10-22T11:23:34.318Z",
+      "lastError": "",
+      "chunkCount": 34
+    }
+  ],
+  "vectorIndexes": [
+    {
+      "name": "manovaidya_knowledge_vector",
+      "status": "READY",
+      "queryable": true
+    }
+  ]
+}

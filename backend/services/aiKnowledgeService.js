@@ -2,6 +2,20 @@ import { KnowledgePage, KnowledgeChunk, KnowledgeSync } from '../models/AiKnowle
 import { crawlWebsite } from './aiKnowledgeCrawler.js';
 import { chunkPage, hashText, cleanText } from './aiKnowledgeContent.js';
 import { embedTexts, embeddingModel, cosine, EMBEDDING_DIMENSIONS } from './aiEmbeddingService.js';
+import Blog from '../models/Blog.js';
+import CaseStudy from '../models/CaseStudy.js';
+import { isPublicBlog } from '../utils/publicContent.js';
+import { SITE } from './aiKnowledgeContent.js';
+
+export async function publishedKnowledgeUrls() {
+  const [blogs, stories] = await Promise.all([
+    Blog.find({ status: 'published', showOnFrontend: { $ne: false } }).lean().maxTimeMS(5000),
+    CaseStudy.find({ status: 'published' }).select('slug robots').lean().maxTimeMS(5000)
+  ]);
+  return [...blogs.filter(isPublicBlog).map((page) => ({ ...page, prefix: 'blog' })), ...stories.map((page) => ({ ...page, prefix: 'case-studies' }))]
+    .filter((page) => page.slug && !/noindex/i.test(page.robots || ''))
+    .map((page) => `${SITE}/${page.prefix}/${encodeURIComponent(page.slug)}/`);
+}
 
 let cache = null; let cacheTime = 0;
 export const invalidateKnowledgeCache = () => { cache = null; cacheTime = 0; };
@@ -27,7 +41,12 @@ export async function syncWebsiteKnowledge({ noEmbeddings = false, maxPages = 18
   if (!lease) throw Object.assign(new Error('A knowledge sync is already running.'), { code: 'SYNC_RUNNING' });
   const stats = { indexedPages: 0, unchangedPages: 0, chunks: 0, embedded: 0, embeddingUnavailable: false };
   try {
-    const crawl = await crawlWebsite({ fetcher, maxPages, onPage: async (page) => {
+    const [publishedUrls, previousPages] = await Promise.all([
+      publishedKnowledgeUrls(), KnowledgePage.find({ active: true }).select('url').lean().maxTimeMS(5000)
+    ]);
+    // Recheck previously indexed URLs too, including newly restricted or detached pages.
+    const seedUrls = [...publishedUrls, ...previousPages.map((page) => page.url)];
+    const crawl = await crawlWebsite({ fetcher, maxPages, seedUrls, onPage: async (page) => {
       const contentHash = hashText(JSON.stringify([page.title, page.blocks]));
       const previous = await KnowledgePage.findOne({ url: page.url }).lean();
       const chunks = [...new Map(chunkPage(page).map((chunk) => [chunk.contentHash, chunk])).values()];
@@ -46,7 +65,7 @@ export async function syncWebsiteKnowledge({ noEmbeddings = false, maxPages = 18
         update: { $set: { ...chunk, active: true, lastSeenAt: startedAt, ...(vectors.has(chunk.contentHash) ? { embedding: vectors.get(chunk.contentHash), embeddingModel: embeddingModel(), embeddedAt: new Date() } : {}) } }, upsert: true
       } })));
       await KnowledgeChunk.updateMany({ url: page.url, contentHash: { $nin: chunks.map((chunk) => chunk.contentHash) } }, { $set: { active: false } });
-      await KnowledgePage.updateOne({ url: page.url }, { $set: { title: page.title, contentHash, active: true, status: 'indexed', lastError: '', lastSeenAt: startedAt, lastSuccessAt: new Date(), chunkCount: chunks.length } }, { upsert: true });
+      await KnowledgePage.updateOne({ url: page.url }, { $set: { title: page.title, contentType: page.contentType, contentHash, active: true, status: 'indexed', lastError: '', lastSeenAt: startedAt, lastSuccessAt: new Date(), chunkCount: chunks.length } }, { upsert: true });
       stats.chunks += chunks.length; stats.indexedPages++;
       if (previous?.contentHash === contentHash) stats.unchangedPages++;
       console.log('[ai-knowledge] indexed', { url: page.url, chunks: chunks.length, changed: previous?.contentHash !== contentHash });
@@ -60,11 +79,11 @@ export async function syncWebsiteKnowledge({ noEmbeddings = false, maxPages = 18
       await KnowledgePage.updateOne({ url: excluded.url }, { $set: { active: false, status: 'excluded', lastError: excluded.reason, lastSeenAt: startedAt } }, { upsert: true });
       await KnowledgeChunk.updateMany({ url: excluded.url }, { $set: { active: false } });
     }
-    if (!crawl.truncated && !crawl.failures.length) {
+    if (!crawl.truncated && !crawl.failures.length && !crawl.discoveryErrors.length) {
       await KnowledgePage.updateMany({ url: { $nin: crawl.discovered } }, { $set: { active: false, status: 'removed' } });
       await KnowledgeChunk.updateMany({ url: { $nin: crawl.discovered } }, { $set: { active: false } });
     }
-    Object.assign(stats, { failures: crawl.failures, excluded: crawl.excluded.length, visited: crawl.visited, truncated: crawl.truncated });
+    Object.assign(stats, { failures: crawl.failures, excluded: crawl.excluded, discoveryErrors: crawl.discoveryErrors, visited: crawl.visited, truncated: crawl.truncated });
     await KnowledgeSync.updateOne({ _id: 'website' }, { $set: { running: false, finishedAt: new Date(), stats } });
     invalidateKnowledgeCache(); console.log('[ai-knowledge] sync complete', stats); return stats;
   } catch (error) {
@@ -74,19 +93,23 @@ export async function syncWebsiteKnowledge({ noEmbeddings = false, maxPages = 18
 }
 
 const stop = new Set('the a an is are to of in and or for my me i you your what how does do can about please tell more it he she this that hai hain ka ki ke ko me mujhe mera meri kya kaise aur se hain'.split(' '));
-export const tokens = (value) => [...new Set((value.toLowerCase().normalize('NFKC').match(/[\p{L}\p{N}]+/gu) || []).filter((word) => word.length > 1 && !stop.has(word)))];
+export const tokens = (value) => [...new Set((value.toLowerCase().normalize('NFKC').match(/[\p{L}\p{M}\p{N}]+/gu) || []).filter((word) => word.length > 1 && !stop.has(word)))];
 export function rankKnowledge(chunks, query, queryVector) {
   const terms = tokens(query); const total = chunks.length || 1;
   const frequency = new Map(terms.map((term) => [term, chunks.filter((chunk) => `${chunk.title} ${chunk.section} ${chunk.text}`.toLowerCase().includes(term)).length]));
   const scored = chunks.map((chunk) => {
     const body = chunk.text.toLowerCase(); const section = chunk.section.toLowerCase();
     const title = chunk.title.toLowerCase(); const slug = new URL(chunk.url).pathname.toLowerCase();
+    const words = new Set(tokens(`${title} ${section} ${body} ${slug}`));
+    const matches = terms.filter((term) => words.has(term));
     let keyword = terms.reduce((score, term) => {
       const count = body.split(term).length - 1;
       const idf = Math.log(1 + total / (1 + frequency.get(term)));
       return score + idf * (count ? count / (count + 0.5 + body.length / 1800) : 0) + (section.includes(term) ? 3 / Math.sqrt(Math.max(1, section.split(' ').length / 5)) : 0) + (title.includes(term) ? 0.5 : 0) + (slug.includes(term) ? 1.5 : 0);
     }, 0);
-    if (/\bblog|article\b/i.test(query) && chunk.contentType === 'blog' && terms.some((term) => body.includes(term))) keyword += 6;
+    // Substrings such as "hi" in "child" and isolated generic words are not evidence.
+    if (!matches.length || (terms.length >= 3 && matches.length < 2)) keyword = 0;
+    if (keyword > 0 && /\b(blog|article)\b/i.test(query) && chunk.contentType === 'blog') keyword += 6;
     const semantic = queryVector && chunk.embeddingModel === embeddingModel() ? cosine(queryVector, chunk.embedding) : 0;
     return { ...chunk, keyword, semantic, score: 0 };
   });
@@ -99,6 +122,9 @@ export function rankKnowledge(chunks, query, queryVector) {
 
 export function buildRetrievalQuery(question, conversation) {
   // Recent user turns supply pronouns/age/topic without trusting client-sent history.
+  const explicitTopic = /^(what is|what are|who is|define|tell me about|explain)\s+(?!it\b|this\b|that\b)/i.test(question);
+  const contextual = !explicitTopic && (tokens(question).length <= 5 || /\b(it|this|that|he|she|they|next|continue|more|aur|iska|uska)\b/i.test(question));
+  if (!contextual) return cleanText(question).slice(0, 1800);
   const previous = (conversation.messages || []).filter((message) => message.role === 'user').slice(-3).map((message) => message.text.slice(0, 500));
   const reference = tokens(question).length <= 3 ? conversation.lastAssistantQuestion || '' : '';
   return cleanText([question, reference, ...previous.reverse()].join(' ')).slice(0, 1800);
@@ -118,7 +144,7 @@ export async function retrieveKnowledge(query) {
       try {
         const semantic = await KnowledgeChunk.aggregate([
           { $vectorSearch: { index: vectorIndexDefinition().name, path: 'embedding', queryVector, numCandidates: 100, limit: 24, filter: { active: true, embeddingModel: embeddingModel() } } },
-          { $project: { url: 1, title: 1, section: 1, text: 1, contentType: 1, contentHash: 1, embedding: 1, embeddingModel: 1 } }
+          { $project: { url: 1, title: 1, section: 1, text: 1, contentType: 1, contentHash: 1, embedding: 1, embeddingModel: 1, lastSeenAt: 1 } }
         ]).option({ maxTimeMS: 4000 });
         candidates = [...new Map([...semantic, ...cache].map((chunk) => [`${chunk.url}:${chunk.contentHash}`, chunk])).values()]; mode = 'atlas-hybrid';
       } catch { console.warn('[ai-knowledge] Atlas vector index unavailable; using local cosine/hybrid search'); }
@@ -128,7 +154,7 @@ export async function retrieveKnowledge(query) {
       if ((perPage.get(chunk.url) || 0) >= 3 || selected.some((entry) => entry.text === chunk.text)) continue;
       if (length + chunk.text.length > 12000 || selected.length >= 8) break;
       perPage.set(chunk.url, (perPage.get(chunk.url) || 0) + 1); length += chunk.text.length;
-      selected.push({ id: `S${selected.length + 1}`, url: chunk.url, title: chunk.title, section: chunk.section, text: chunk.text, contentType: chunk.contentType });
+      selected.push({ id: `S${selected.length + 1}`, url: chunk.url, title: chunk.title, section: chunk.section, text: chunk.text, contentType: chunk.contentType, lastIndexedAt: chunk.lastSeenAt });
     }
     return { chunks: selected, mode };
   } catch (error) {

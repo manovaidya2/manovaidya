@@ -72,7 +72,7 @@ const agentLeadSteps = [
 const normalizeQuestion = (value) =>
   String(value || "")
     .toLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .replace(/[^\p{L}\p{M}\p{N}]+/gu, " ")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -94,6 +94,10 @@ const isBookingCancelIntent = (value) => {
     "abhi nhi",
     "cancel",
     "stop",
+    "exit",
+    "bye",
+    "goodbye",
+    "close",
     "mat karo",
     "no",
   ];
@@ -308,6 +312,7 @@ function AiChatBot() {
   const [agentMode, setAgentMode] = useState(false);
   const conversationIdRef = useRef(createSecureConversationId());
   const requestEpochRef = useRef(0);
+  const submissionRef = useRef(null);
   const chatScrollRef = useRef(null);
   const chatEndRef = useRef(null);
   const seenLiveMessageIds = useRef(new Set());
@@ -339,6 +344,7 @@ function AiChatBot() {
   };
 
   const resetChat = () => {
+    submissionRef.current = null;
     requestEpochRef.current += 1;
     setMessages([greeting]);
     setQuestion("");
@@ -720,88 +726,106 @@ function AiChatBot() {
 
   const submitQuestion = async (value = question, retryIndex = null) => {
     const trimmedQuestion = value.trim();
-    if (!trimmedQuestion || isLoading) return;
-
-    if (agentMode) {
-      const lower = trimmedQuestion.toLowerCase();
-      if (lower === "exit" || lower === "close") {
-        api.patch(`/live-chat/admin/sessions/${agentSession.sessionKey}/status`, { status: "closed" }).catch(() => {});
-        pushAssistantMessage("Chat session closed.");
-        window.setTimeout(() => {
-          resetChat();
-          setIsOpen(false);
-        }, 1500);
-        return;
-      }
-      await sendAgentMessage(trimmedQuestion);
-      return;
-    }
-
-    if (bookingStep !== null) {
-      await handleBookingResponse(trimmedQuestion);
-      return;
-    }
-
-    if (agentLeadStep !== null) {
-      await handleAgentLeadResponse(trimmedQuestion);
-      return;
-    }
-
-    setQuestion("");
-    setIsOpen(true);
-    setMessages((current) => retryIndex === null ? [...current, { role: "user", text: trimmedQuestion }] : current.filter((_, index) => index !== retryIndex));
-
-    setIsLoading(true);
-    const epoch = requestEpochRef.current;
-    scrollChatToBottom();
-
+    if (!trimmedQuestion || isLoading || submissionRef.current) return;
+    const submission = Symbol('chat-submission');
+    submissionRef.current = submission;
     try {
-      const result = await askWebsiteAi(trimmedQuestion, conversationIdRef.current);
-      if (epoch !== requestEpochRef.current) return;
-      conversationIdRef.current = result.conversationId || conversationIdRef.current;
 
-      if (result.action === "BOOK_CONSULTATION") {
-        startBookingFlow(result.state);
-        return;
-      }
-      if (result.action === "CONNECT_AGENT") {
-        startAgentLeadFlow();
-        return;
-      }
-
-      setMessages((current) => [
-        ...current,
-        { role: "assistant", text: result.answer, sources: result.sources, retryQuestion: result.degraded ? trimmedQuestion : undefined, showCta: Boolean(result.showCta) },
-      ]);
-    } catch (error) {
-      if (epoch !== requestEpochRef.current) return;
-      if (isAgentIntent(trimmedQuestion)) {
-        startAgentLeadFlow();
-        return;
-      }
-      if (isDirectBookingCommand(trimmedQuestion)) {
-        startBookingFlow();
+      if (/^(exit|stop|bye|goodbye|close)[.!\s]*$/i.test(trimmedQuestion) && !agentMode) {
+        setBookingStep(null);
+        setBookingData({});
+        setAgentLeadStep(null);
+        setAgentLeadData({});
+        // Leave existing records intact; a future turn starts with a fresh session.
+        conversationIdRef.current = createSecureConversationId();
+        setQuestion("");
+        setMessages((current) => [...current, { role: "user", text: trimmedQuestion }, { role: "assistant", text: "Thank you for chatting with Manovaidya. You can return anytime." }]);
         return;
       }
 
-      const errorMessage = error.response?.status === 429
-        ? "Please wait a moment before trying again."
-        : "Reply abhi load nahi ho paya. Retry karein ya Connect with Agent se team se baat karein.";
+      if (agentMode) {
+        const lower = trimmedQuestion.toLowerCase();
+        if (lower === "exit" || lower === "close") {
+          api.patch(`/live-chat/admin/sessions/${agentSession.sessionKey}/status`, { status: "closed" }).catch(() => {});
+          pushAssistantMessage("Chat session closed.");
+          window.setTimeout(() => {
+            resetChat();
+            setIsOpen(false);
+          }, 1500);
+          return;
+        }
+        await sendAgentMessage(trimmedQuestion);
+        return;
+      }
 
-      setMessages((current) => [
-        ...current,
-        {
-          role: "assistant",
-          text: errorMessage,
-          retryQuestion: trimmedQuestion,
-          showCta: true,
-        },
-      ]);
+      if (bookingStep !== null) {
+        await handleBookingResponse(trimmedQuestion);
+        return;
+      }
+
+      if (agentLeadStep !== null) {
+        await handleAgentLeadResponse(trimmedQuestion);
+        return;
+      }
+
+      setQuestion("");
+      setIsOpen(true);
+      setMessages((current) => retryIndex === null ? [...current, { role: "user", text: trimmedQuestion }] : current.filter((_, index) => index !== retryIndex));
+
+      setIsLoading(true);
+      const epoch = requestEpochRef.current;
+      scrollChatToBottom();
+
+      try {
+        const result = await askWebsiteAi(trimmedQuestion, conversationIdRef.current);
+        if (epoch !== requestEpochRef.current) return;
+        conversationIdRef.current = result.conversationId || conversationIdRef.current;
+
+        if (result.action === "BOOK_CONSULTATION") {
+          startBookingFlow(result.state);
+          return;
+        }
+        if (result.action === "CONNECT_AGENT") {
+          startAgentLeadFlow();
+          return;
+        }
+
+        setMessages((current) => [
+          ...current,
+          { role: "assistant", text: result.answer, sources: result.sources, retryQuestion: (result.retryable ?? (result.degraded && result.answerType === "unavailable")) ? trimmedQuestion : undefined, showCta: Boolean(result.showCta) },
+        ]);
+      } catch (error) {
+        if (epoch !== requestEpochRef.current) return;
+        if (isAgentIntent(trimmedQuestion)) {
+          startAgentLeadFlow();
+          return;
+        }
+        if (isDirectBookingCommand(trimmedQuestion)) {
+          startBookingFlow();
+          return;
+        }
+
+        const errorMessage = error.response?.status === 429
+          ? "Please wait a moment before trying again."
+          : "Reply abhi load nahi ho paya. Retry karein ya Connect with Agent se team se baat karein.";
+
+        setMessages((current) => [
+          ...current,
+          {
+            role: "assistant",
+            text: errorMessage,
+            retryQuestion: trimmedQuestion,
+            showCta: true,
+          },
+        ]);
+      } finally {
+        if (epoch === requestEpochRef.current) {
+          setIsLoading(false);
+          scrollChatToBottom();
+        }
+      }
     } finally {
-      if (epoch === requestEpochRef.current) {
-        setIsLoading(false);
-        scrollChatToBottom();
-      }
+      if (submissionRef.current === submission) submissionRef.current = null;
     }
   };
 
@@ -842,7 +866,7 @@ function AiChatBot() {
             </div>
           </header>
 
-          <div ref={chatScrollRef} className="flex-1 overflow-y-auto bg-[#fbfaff] px-4 py-4">
+          <div ref={chatScrollRef} role="log" aria-label="Chat messages" aria-live="polite" aria-relevant="additions" className="flex-1 overflow-y-auto bg-[#fbfaff] px-4 py-4">
             <div className="grid gap-3">
               {messages.map((message, index) => (
                 <div
@@ -880,7 +904,7 @@ function AiChatBot() {
                 </div>
               ))}
               {isLoading ? (
-                <div className="mr-auto inline-flex max-w-[88%] items-center gap-1.5 rounded-2xl border border-[#8B43BA]/12 bg-white px-4 py-3.5">
+                <div role="status" aria-label="Searching information and preparing a reply" className="mr-auto inline-flex max-w-[88%] items-center gap-1.5 rounded-2xl border border-[#8B43BA]/12 bg-white px-4 py-3.5">
                   <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70 [animation-delay:-0.3s]" />
                   <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70 [animation-delay:-0.15s]" />
                   <span className="h-2 w-2 animate-bounce rounded-full bg-[#8B43BA]/70" />
@@ -926,6 +950,7 @@ function AiChatBot() {
               {(bookingStep !== null && bookingSteps[bookingStep]?.inputType === "date") ? (
                 <input
                   type="date"
+                  aria-label="Preferred consultation date"
                   value={question}
                   min={new Date().toISOString().split("T")[0]}
                   className="min-h-11 flex-1 rounded-xl border border-[#8B43BA]/18 bg-[#fbfaff] px-3 py-3 text-[14px] font-semibold leading-5 text-[#251553] outline-none transition placeholder:text-slate-400 focus:border-[#8B43BA]"
@@ -933,6 +958,7 @@ function AiChatBot() {
                 />
               ) : bookingStep !== null && bookingSteps[bookingStep]?.inputType === "select" ? (
                 <select
+                  aria-label={bookingSteps[bookingStep]?.prompt}
                   value={question}
                   className="min-h-11 flex-1 rounded-xl border border-[#8B43BA]/18 bg-[#fbfaff] px-3 py-3 text-[14px] font-semibold leading-5 text-[#251553] outline-none transition focus:border-[#8B43BA]"
                   onChange={(event) => setQuestion(event.target.value)}
@@ -946,15 +972,16 @@ function AiChatBot() {
                 </select>
               ) : (
                 <textarea
+                  aria-label={agentMode ? "Message agent" : "Your message"}
                   value={question}
                   rows={1}
                   inputMode={isPhoneStep ? "numeric" : undefined}
-                  maxLength={isPhoneStep ? 10 : undefined}
+                  maxLength={isPhoneStep ? 10 : 2000}
                   className="min-h-11 flex-1 resize-none rounded-xl border border-[#8B43BA]/18 bg-[#fbfaff] px-3 py-3 text-[14px] font-semibold leading-5 text-[#251553] outline-none transition placeholder:text-slate-400 focus:border-[#8B43BA]"
                   placeholder={agentMode ? "Message agent..." : bookingStep !== null ? bookingSteps[bookingStep]?.prompt || "Type your answer..." : "Ask your question..."}
                   onChange={(event) => setQuestion(isPhoneStep ? sanitizeMobileNumber(event.target.value) : event.target.value)}
                   onKeyDown={(event) => {
-                    if (event.key === "Enter" && !event.shiftKey) {
+                    if (event.key === "Enter" && !event.shiftKey && !event.nativeEvent.isComposing) {
                       event.preventDefault();
                       submitQuestion();
                     }

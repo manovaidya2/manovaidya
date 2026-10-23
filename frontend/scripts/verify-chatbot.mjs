@@ -30,6 +30,7 @@ try {
         requests.push(payload); assert.equal(payload.context, undefined, 'Knowledge must be retrieved on the server');
         if (payload.question === 'Wait for the old reply') { pending = () => reply({ answer: 'OLD SESSION REPLY', conversationId: payload.conversationId }); return; }
         if (payload.question === 'Retry this question' && retryCount++ === 0) return reply({}, 503);
+        if (payload.question === 'Show the Neuro-Ayurveda website excerpt') return reply({ answer: 'From Manovaidya’s website:\n\nThe approach considers brain health, digestion and everyday wellbeing.', conversationId: payload.conversationId, degraded: true, retryable: false, answerType: 'website', sources: [{ url: 'https://manovaidya.org/about/approach/', title: 'Our approach' }] });
         const action = payload.question === 'Book consultation' ? 'BOOK_CONSULTATION' : payload.question === 'Connect with agent' ? 'CONNECT_AGENT' : 'NONE';
         return reply({ answer: payload.question === 'What is ADHD?' ? 'ADHD can affect attention and activity regulation.' : payload.question === 'tell me more' ? 'An assessment considers how attention affects daily life.' : 'The retry worked.', conversationId: payload.conversationId, action, state: { patients: [] }, sources: action === 'NONE' ? [{ url: 'https://manovaidya.org/child-health-care/adhd-child/', title: 'ADHD support', section: 'Assessment' }] : [] });
       }
@@ -48,6 +49,11 @@ try {
     assert.equal(await chat.getByRole('link', { name: 'Source: ADHD support' }).count(), 1);
     await send('tell me more'); await chat.getByText('An assessment considers how attention affects daily life.', { exact: true }).waitFor();
     assert.equal(requests[0].conversationId, requests[1].conversationId); checks += 3;
+    await send('Show the Neuro-Ayurveda website excerpt');
+    await chat.getByText('From Manovaidya’s website:', { exact: true }).waitFor();
+    assert.equal(await chat.getByRole('button', { name: 'Retry', exact: true }).count(), 0);
+    assert.equal(await chat.getByRole('link', { name: 'Source: Our approach', exact: true }).count(), 1);
+    assert.equal(await chat.getByText(/The AI response is temporarily unavailable/).count(), 0); checks++;
     await send('Retry this question'); await chat.getByRole('button', { name: 'Retry', exact: true }).click();
     await chat.getByText('The retry worked.', { exact: true }).waitFor();
     assert.equal(await chat.getByText('Retry this question', { exact: true }).count(), 1); checks++;
@@ -58,6 +64,13 @@ try {
     await send('New session'); await chat.getByText('The retry worked.', { exact: true }).waitFor();
     assert.notEqual(requests.at(-1).conversationId, oldId);
     assert.equal(await chat.getByText('OLD SESSION REPLY', { exact: true }).count(), 0); checks++;
+    await chat.getByRole('button', { name: 'Reset AI chat' }).click();
+    await chat.getByRole('button', { name: 'Book consultation', exact: true }).click();
+    await chat.getByText('Please share your full name.', { exact: true }).waitFor();
+    await send('exit');
+    await chat.getByText('Thank you for chatting with Manovaidya. You can return anytime.', { exact: true }).waitFor();
+    assert.equal(await chat.getByRole('textbox', { name: 'Your message' }).getAttribute('maxlength'), '2000');
+    assert.equal(await chat.getByRole('log', { name: 'Chat messages' }).count(), 1); checks++;
     await chat.getByRole('button', { name: 'Reset AI chat' }).click();
     await chat.getByRole('button', { name: 'Book consultation', exact: true }).click();
     await chat.getByText('Please share your full name.', { exact: true }).waitFor();

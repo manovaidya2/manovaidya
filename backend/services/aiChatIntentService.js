@@ -17,6 +17,7 @@ export const INTENTS = Object.freeze({
   REJECTION: 'REJECTION',
   FOLLOW_UP: 'FOLLOW_UP',
   THANKS: 'THANKS',
+  ACKNOWLEDGEMENT: 'ACKNOWLEDGEMENT',
   GOODBYE: 'GOODBYE',
   CLARIFICATION: 'CLARIFICATION',
   UNKNOWN: 'UNKNOWN'
@@ -37,7 +38,7 @@ export const normalizeMessage = (value) => {
   let normalized = String(value || '')
     .toLowerCase()
     .normalize('NFKC')
-    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .replace(/[^\p{L}\p{M}\p{N}]+/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 
@@ -70,6 +71,17 @@ export const resolveIntent = (question, state = {}) => {
   const value = normalizeMessage(question);
   const pendingAction = state.pendingAction || PENDING_ACTIONS.NONE;
   const hasHistory = Boolean(state.lastAssistantQuestion || state.currentTopic || state.lastIntent);
+
+  if (exactMatch(value, ['bye', 'goodbye', 'see you', 'alvida', 'exit', 'stop', 'close', 'i don t need help', 'i do not need help', 'bas', 'band karo'])) {
+    return { intent: INTENTS.GOODBYE, action: 'NONE' };
+  }
+  if (exactMatch(value, ['okay thanks', 'ok thanks', 'thanks a lot', 'thank you very much', 'धन्यवाद', 'शुक्रिया'])) {
+    return { intent: INTENTS.THANKS, action: 'NONE' };
+  }
+  if (exactMatch(value, ['नमस्ते', 'नमस्कार'])) return { intent: INTENTS.GREETING, action: 'NONE' };
+  if (exactMatch(value, ['hmm', 'hm', 'achha', 'acha', 'अच्छा', 'ठीक है']) && !state.lastAssistantQuestion) {
+    return { intent: INTENTS.ACKNOWLEDGEMENT, action: 'NONE' };
+  }
 
   if (exactMatch(value, rejections) || /^(nahi|nhi|no)\b/.test(value)) {
     return { intent: INTENTS.REJECTION, action: 'NONE', isRejection: true };

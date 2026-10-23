@@ -3,9 +3,11 @@ import assert from 'node:assert/strict';
 import { extractPage, chunkPage, publicUrl, parseRobots, SITE } from '../services/aiKnowledgeContent.js';
 import { fetchWebsite, crawlWebsite } from '../services/aiKnowledgeCrawler.js';
 import { rankKnowledge, buildRetrievalQuery } from '../services/aiKnowledgeService.js';
-import { createAnswerService, validateGroundedResponse, generateGeminiAnswer, buildPrompt } from '../services/aiChatService.js';
+import { createAnswerService, validateGroundedResponse, generateGeminiAnswer, buildPrompt, groundedFallback, rewriteRetrievalQuery } from '../services/aiChatService.js';
+import { chatModelConfig, createModelCooldown } from '../services/aiGeminiPolicy.js';
 import { createConversationId, loadConversation } from '../services/aiConversationService.js';
 import AiChatConversation from '../models/AiChatConversation.js';
+import { syncConversationUserDetails } from '../services/aiConversationService.js';
 import { createChatRateLimit, requireKnowledgeAdmin } from '../middleware/aiChatGuards.js';
 
 const url = `${SITE}/speech-delay-support-india/`;
@@ -76,6 +78,7 @@ test('grounded answers require real supporting quotes and reject invented source
   assert.throws(() => validateGroundedResponse(JSON.stringify({ ...raw, citations: [] }), [source]), /UNGROUNDED/);
   assert.throws(() => validateGroundedResponse(JSON.stringify({ ...raw, citations: [{ sourceId: 'S1', quote: 'Guaranteed cure within 30 days' }] }), [source]), /UNSUPPORTED/);
   assert.throws(() => validateGroundedResponse(JSON.stringify({ ...raw, citations: [{ sourceId: 'S99', quote: source.text }] }), [source]), /UNSUPPORTED/);
+  assert.throws(() => validateGroundedResponse(JSON.stringify({ ...raw, answer: 'Book at https://manovaidya.org/invented-booking/' }), [source]), /UNSUPPORTED_LINK/);
 });
 
 function harness() {
@@ -136,9 +139,50 @@ test('missing key/provider failures give an honest extractive fallback with a re
   const fail = createAnswerService({ loadConversation: async () => ({ conversationId: createConversationId(), messages: [], patients: [] }), saveConversationTurn: async () => {}, retrieveKnowledge: async () => ({ chunks: [source], mode: 'keyword' }), generateGeminiAnswer: async () => { throw Object.assign(new Error('quota'), { status: 429 }); } });
   const result = await fail({ question: 'What should I do about speech delay?' });
   assert.equal(result.degraded, true);
+  assert.equal(result.retryable, false);
   assert.equal(result.sources[0].url, url);
   assert.match(result.answer, /Persistent speech concerns/);
   assert.doesNotMatch(result.answer, /services, symptoms, consultation/);
+});
+
+test('source fallback uses short complete quoted sentences without an outage banner or retry loop', () => {
+  const text = 'At Manovaidya, the approach considers brain health and everyday wellbeing. It combines Ayurveda with contemporary health understanding. ' + 'The next passage contains many more details about personalised care. '.repeat(30);
+  const result = groundedFallback('How does Neuro-Ayurveda help?', [{ ...source, text }]);
+  assert.match(result.answer, /^From Manovaidya’s website:/);
+  assert.doesNotMatch(result.answer, /temporarily unavailable|Here is a relevant passage|…/);
+  assert.ok(result.answer.length < 600);
+  assert.ok(text.includes(result.sources[0].quote));
+  assert.match(result.sources[0].quote, /understanding\.$/);
+  assert.equal(result.retryable, false);
+  assert.equal(groundedFallback('Unknown fee?', []).answerType, 'unavailable');
+});
+
+test('daily quota cooldown follows provider retry timing and does not block a healthy fallback model', async () => {
+  let now = 1000; const cooldowns = createModelCooldown({ now: () => now });
+  const { model, fallbackModel } = chatModelConfig(); const calls = [];
+  const error = Object.assign(new Error(JSON.stringify({ error: { details: [{ '@type': 'type.googleapis.com/google.rpc.RetryInfo', retryDelay: '69043s' }] } })), { status: 429 });
+  const client = { models: { generateContent: async ({ model: requested }) => {
+    calls.push(requested);
+    if (requested === model) throw error;
+    return { text: JSON.stringify({ answer: 'Please seek an assessment.', answerType: 'website', citations: [{ sourceId: source.id, quote: source.text }] }) };
+  } } };
+  const input = { question: 'speech?', chunks: [source], conversation: { messages: [] }, conversationState: { patients: [] } };
+  await generateGeminiAnswer(input, { client, cooldowns });
+  await generateGeminiAnswer(input, { client, cooldowns });
+  assert.deepEqual(calls, [model, fallbackModel, fallbackModel]);
+  assert.equal(cooldowns.remaining(model), 69043000);
+  now += 69043001;
+  assert.equal(cooldowns.remaining(model), 0);
+});
+
+test('standalone English questions skip query generation while contextual Hinglish still gets rewritten', async () => {
+  let calls = 0;
+  const client = { models: { generateContent: async () => { calls++; return { text: JSON.stringify({ query: 'speech delay assessment' }) }; } } };
+  const options = { client, cooldowns: createModelCooldown() };
+  assert.equal(await rewriteRetrievalQuery('How does Neuro-Ayurveda help?', { messages: [] }, options), 'How does Neuro-Ayurveda help?');
+  assert.equal(calls, 0);
+  assert.equal(await rewriteRetrievalQuery('mere bachche ko speech delay hai', { messages: [] }, options), 'speech delay assessment');
+  assert.equal(calls, 1);
 });
 
 test('model fallback covers quota, timeouts and empty output without leaking internal prompts', async () => {
@@ -153,9 +197,12 @@ test('model fallback covers quota, timeouts and empty output without leaking int
 
 test('validates hostile inputs before touching storage and prioritises emergency help', async () => {
   const h = harness();
-  for (const input of [{ question: {} }, { question: 'x'.repeat(2001) }, { question: 'Hello', conversationId: '../../other' }]) await assert.rejects(h.answer(input));
+  for (const input of [{ question: {} }, { question: 'x'.repeat(2001) }, { question: 'Hello', conversationId: '../../other' }, { question: 'Hello', conversationId: [createConversationId()] }]) await assert.rejects(h.answer(input), { code: input.question?.length > 2000 ? 'QUESTION_TOO_LONG' : typeof input.question !== 'string' ? 'INVALID_QUESTION' : 'INVALID_CONVERSATION' });
   const result = await h.answer({ question: 'I want to kill myself' });
   assert.match(result.answer, /emergency/); assert.equal(result.model, 'safety'); assert.equal(h.generatedInputs.length, 0);
+  for (const question of ["I can't breathe", 'I want to end my life', 'मुझे आत्महत्या के विचार आ रहे हैं']) {
+    assert.equal((await h.answer({ question })).model, 'safety');
+  }
 });
 
 test('expired sessions do not recover another old conversation while waiting for TTL deletion', async (t) => {
@@ -177,4 +224,66 @@ test('admin endpoint requires a private server token and public chat is rate lim
   limit(req, res, () => next++); limit(req, res, () => next++);
   assert.equal(code, 429); assert.equal(next, 2);
   if (old === undefined) delete process.env.AI_KNOWLEDGE_ADMIN_TOKEN; else process.env.AI_KNOWLEDGE_ADMIN_TOKEN = old;
+});
+
+test('social turns remain available without retrieval or generation and exit ends an active booking', async () => {
+  const h = harness();
+  for (const question of ['Hi', 'Hello', 'Namaste', 'नमस्ते', 'OK', 'Okay thanks', 'Theek hai', 'Achha', 'Hmm', 'Thank you', 'धन्यवाद', 'Bye', 'Exit', 'Stop', "I don't need help"]) {
+    const result = await h.answer({ question });
+    assert.equal(result.model, 'conversation-social', question);
+    assert.equal(result.sources.length, 0);
+    assert.equal(result.degraded, false);
+  }
+  const booking = await h.answer({ question: 'Book consultation' });
+  const goodbye = await h.answer({ question: 'exit', conversationId: booking.conversationId });
+  assert.equal(goodbye.action, 'NONE');
+  assert.equal(goodbye.pendingAction, 'NONE');
+  assert.equal(h.sessions.get(booking.conversationId).conversationStage, 'COMPLETED');
+  assert.equal(h.generatedInputs.length, 0);
+});
+
+test('retrieval outage is contained and an empty rewritten query retries the original question', async () => {
+  const queries = [];
+  const answer = createAnswerService({
+    loadConversation: async () => ({ conversationId: createConversationId(), messages: [], patients: [] }),
+    saveConversationTurn: async () => {},
+    rewriteRetrievalQuery: async () => 'rewritten search',
+    retrieveKnowledge: async (query) => { queries.push(query); if (query === 'rewritten search') return { chunks: [], mode: 'keyword' }; throw new Error('storage unavailable'); },
+    generateGeminiAnswer: async () => { throw new Error('provider unavailable'); }
+  });
+  const result = await answer({ question: 'What is ADHD?' });
+  assert.deepEqual(queries, ['rewritten search', 'What is ADHD?']);
+  assert.equal(result.answerType, 'unavailable');
+  assert.equal(result.degraded, true);
+  assert.deepEqual(result.sources, []);
+});
+
+test('rejects private URL variants and follows robots-declared sitemaps without a working default sitemap', async () => {
+  for (const path of ['/login/', '/patient/records/', '/%61dmin/', '/account/', '/dashboard/']) assert.equal(publicUrl(path), null);
+  assert.equal(parseRobots('User-agent: *\nCrawl-delay: 2\nDisallow: /private/').crawlDelayMs, 2000);
+  const requested = [];
+  const crawl = await crawlWebsite({ minIntervalMs: 0, fetcher: async (target) => {
+    requested.push(target);
+    if (target.endsWith('/robots.txt')) return new Response(`User-agent: *\nDisallow: /private/\nSitemap: ${SITE}/news-sitemap.xml`);
+    if (target.endsWith('/news-sitemap.xml')) return new Response(`<urlset><url><loc>${url}</loc></url></urlset>`);
+    if (target === url) return new Response(html);
+    return new Response('', { status: 404 });
+  } });
+  assert.ok(crawl.pages.some((page) => page.url === url));
+  assert.equal(crawl.discoveryErrors.length, 1);
+  await assert.rejects(fetchWebsite(url, { fetcher: async () => new Response(null, { status: 302, headers: { location: '/login/' } }) }), /UNSAFE_REDIRECT/);
+  let attempts = 0;
+  await assert.rejects(fetchWebsite(url, { fetcher: async () => { attempts++; return new Response(null, { status: 429, headers: { 'retry-after': '120' } }); } }), /RATE_LIMIT_RETRY_LATER/);
+  assert.equal(attempts, 1, 'Do not retry sooner than a long server Retry-After');
+});
+
+test('retrieval avoids substring-only and weak generic matches and respects explicit topic changes', () => {
+  assert.deepEqual(rankKnowledge([source], 'hi'), []);
+  assert.deepEqual(rankKnowledge([{ ...source, text: 'Our clinic provides speech assessment.' }], 'quantum spaceship clinic'), []);
+  assert.equal(buildRetrievalQuery('What is ADHD?', { messages: [{ role: 'user', text: 'Tell me about IBS' }] }), 'What is ADHD?');
+});
+
+test('expired conversation detail updates cannot revive retained health information', async (t) => {
+  t.mock.method(AiChatConversation, 'findOne', async () => ({ expiresAt: new Date(0), save: () => { throw new Error('must not revive'); } }));
+  assert.equal(await syncConversationUserDetails(createConversationId(), { name: 'Visitor' }), null);
 });

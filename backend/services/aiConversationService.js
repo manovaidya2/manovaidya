@@ -18,8 +18,7 @@ const CONVERSATION_ID_PATTERN = /^[a-f0-9]{48}$/;
 export const createConversationId = () => randomBytes(24).toString('hex');
 
 export const isValidConversationId = (value) => {
-  const candidate = String(value || '').trim().toLowerCase();
-  return CONVERSATION_ID_PATTERN.test(candidate);
+  return typeof value === 'string' && CONVERSATION_ID_PATTERN.test(value.toLowerCase());
 };
 
 const compactMessages = (summary, messages) => {
@@ -108,7 +107,7 @@ export const formatRecentConversation = (conversation) => conversation.messages
 export const syncConversationUserDetails = async (conversationId, details = {}) => {
   if (!isValidConversationId(conversationId)) return null;
   const conversation = await AiChatConversation.findOne({ conversationId: String(conversationId).toLowerCase() });
-  if (!conversation) return null;
+  if (!conversation || conversation.expiresAt <= new Date()) return null;
 
   const clean = (value, max) => String(value || '').trim().slice(0, max);
   const name = clean(details.name, 120);

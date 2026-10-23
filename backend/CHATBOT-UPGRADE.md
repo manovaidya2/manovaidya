@@ -1,5 +1,9 @@
 # Chatbot and HTTP 404 implementation report
 
+For the latest implementation changes, actual re-indexing results, provider
+quota limitations and verification, see [CHATBOT-VALIDATION.md](CHATBOT-VALIDATION.md).
+The results below describe the earlier implementation pass.
+
 ## Website-grounded assistant
 
 The browser no longer ships a hand-written knowledge corpus, extracts JSX as

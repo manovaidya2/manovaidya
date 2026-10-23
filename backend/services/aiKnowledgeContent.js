@@ -15,6 +15,9 @@ export function publicUrl(value, base = SITE) {
   try {
     const url = new URL(value, base);
     if (url.origin !== SITE || url.username || url.password) return null;
+    let path;
+    try { path = decodeURIComponent(url.pathname); } catch { return null; }
+    if (/(^|\/)(admin|login|signin|sign-in|logout|account|private|patient|patients|dashboard|wp-admin|wp-login\.php)(\/|$)/i.test(path)) return null;
     if (/\.(?!html?$)[a-z0-9]{1,8}$/i.test(url.pathname) || /^\/(api|admin|uploads|assets)(\/|$)/i.test(url.pathname)) return null;
     url.hash = ''; url.search = '';
     return url.href;
@@ -93,15 +96,23 @@ export function parseRobots(source) {
     if (!match) continue;
     const key = match[1].toLowerCase(); const value = match[2].trim();
     if (key === 'user-agent') {
-      if (!group || group.rules.length) { group = { agents: [], rules: [] }; groups.push(group); }
+      if (!group || group.hasDirectives) { group = { agents: [], rules: [], hasDirectives: false }; groups.push(group); }
       group.agents.push(value.toLowerCase());
-    } else if (group && /^(allow|disallow)$/.test(key) && value) group.rules.push({ allow: key === 'allow', value });
+    } else if (group) {
+      group.hasDirectives = true;
+      if (/^(allow|disallow)$/.test(key) && value) group.rules.push({ allow: key === 'allow', value });
+      if (key === 'crawl-delay' && Number.isFinite(Number(value)) && Number(value) >= 0) group.delay = Number(value);
+    }
   }
   const specific = groups.filter((entry) => entry.agents.some((agent) => agent.includes('manovaidyaknowledge')));
   const rules = (specific.length ? specific : groups.filter((entry) => entry.agents.includes('*'))).flatMap((entry) => entry.rules);
-  return (url) => {
-    const target = new URL(url).pathname;
+  const allowed = (url) => {
+    const parsed = new URL(url);
+    const target = parsed.pathname + parsed.search;
     const matched = rules.filter((rule) => new RegExp('^' + rule.value.split('*').map((part) => part.replace(/[.+?^{}()|[\]\\]/g, '\\$&')).join('.*').replace(/\\\$$/, '$')).test(target)).sort((a, b) => b.value.length - a.value.length || Number(b.allow) - Number(a.allow));
     return matched[0]?.allow ?? true;
   };
+  allowed.crawlDelayMs = Math.max(0, ...(specific.length ? specific : groups.filter((entry) => entry.agents.includes('*'))).map((entry) => (entry.delay || 0) * 1000));
+  allowed.sitemaps = [...source.matchAll(/^\s*sitemap:\s*(\S+)/gim)].map((match) => match[1]);
+  return allowed;
 }

@@ -70,8 +70,9 @@ app.use('/api', (req, res) => res.status(404).json({ success: false, message: 'A
 app.use(createPageMiddleware({ distDir: process.env.FRONTEND_DIST || fileURLToPath(new URL('../frontend/dist/', import.meta.url)) }));
 
 app.use((err, req, res, next) => {
-  console.error("❌ ERROR:", err.message);
-  res.status(500).json({ error: err.message });
+  console.error('[http] request failed', { code: err.code || err.type || err.name });
+  const status = err.type === 'entity.parse.failed' ? 400 : err.type === 'entity.too.large' ? 413 : 500;
+  res.status(status).json({ success: false, message: status === 400 ? 'Invalid JSON request body.' : status === 413 ? 'Request body is too large.' : 'The service is temporarily unavailable. Please retry.' });
 });
 
 const PORT = process.env.PORT || 5012;
