@@ -111,6 +111,12 @@ export const videoStories = [
   { id: 39, title: "Success Story Video 39", type: "Patient Testimonial", location: "India", embedId: "POMTdKZEl_g", isIframe: true, category: "Mental Health" },
   { id: 40, title: "Success Story Video 40", type: "Patient Testimonial", location: "India", embedId: "d01v-mVWrsg", isIframe: true, category: "Mental Health" },
   { id: 41, title: "Success Story Video 41", type: "Patient Testimonial", location: "India", embedId: "nL7jAnJrXH4", isIframe: true, category: "Mental Health" },
+  { id: 42, title: "Success Story Video 42", type: "Patient Testimonial", location: "India", embedId: "iyAmQrTznZA", embedUrl: "https://www.youtube.com/embed/iyAmQrTznZA?si=HLZxxC2uy75Oeowl", isIframe: true, category: "General" },
+  { id: 43, title: "Success Story Video 43", type: "Patient Testimonial", location: "India", embedId: "lEgErNQU0AU", embedUrl: "https://www.youtube.com/embed/lEgErNQU0AU?si=4c25eTOcWMymUtQ3", isIframe: true, category: "General" },
+  { id: 44, title: "Success Story Video 44", type: "Patient Testimonial", location: "India", embedId: "DPbIfDsuRp8", embedUrl: "https://www.youtube.com/embed/DPbIfDsuRp8?si=GO35wu8WTx_9vRnU", isIframe: true, category: "General" },
+  { id: 45, title: "Success Story Video 45", type: "Patient Testimonial", location: "India", embedId: "aMuIXF7Gljc", embedUrl: "https://www.youtube.com/embed/aMuIXF7Gljc?si=co5N8naS0_eFIUbW", isIframe: true, category: "General" },
+  { id: 46, title: "Success Story Video 46", type: "Patient Testimonial", location: "India", embedId: "LvCfhT0k8vI", embedUrl: "https://www.youtube.com/embed/LvCfhT0k8vI?si=_JrpsWsIiuhaCGCV", isIframe: true, category: "General" },
+  { id: 47, title: "Success Story Video 47", type: "Patient Testimonial", location: "India", embedId: "BZcJ26rKKAo", embedUrl: "https://www.youtube.com/embed/BZcJ26rKKAo?si=rbz-HS8lV7Mcxccd", isIframe: true, category: "General" },
 ];
 
 export const categories = [

@@ -58,9 +58,10 @@ function SuccessStoryVideosPage() {
               <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
                 <iframe
                   className="h-full w-full"
-                  src={`https://www.youtube.com/embed/${story.embedId}`}
+                  src={story.embedUrl || `https://www.youtube.com/embed/${story.embedId}`}
                   title={story.title}
                   loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
