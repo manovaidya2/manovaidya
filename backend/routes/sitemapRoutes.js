@@ -2,7 +2,7 @@ import express from 'express';
 import Blog from '../models/Blog.js';
 import CaseStudy from '../models/CaseStudy.js';
 import { getPublicPageUrl } from '../utils/publicPageUrl.js';
-import { isPublicBlog } from '../utils/publicContent.js';
+import { isPublicBlog, isPublicCaseStudy } from '../utils/publicContent.js';
 
 const router = express.Router();
 
@@ -44,7 +44,7 @@ const getPublishedBlogs = () =>
 
 const getPublishedCaseStudies = () =>
   CaseStudy.find({ status: 'published', robots: { $ne: 'noindex,nofollow' } })
-    .select('slug canonicalUrl updatedAt createdAt robots')
+    .select('slug canonicalUrl updatedAt createdAt robots title summary metaTitle metaDescription content showOnFrontend status')
     .sort({ updatedAt: -1 })
     .lean();
 
@@ -60,6 +60,7 @@ const mapBlogUrls = (blogs) =>
 
 const mapCaseStudyUrls = (caseStudies) =>
   caseStudies
+    .filter(isPublicCaseStudy)
     .filter((study) => study.slug && !/\bnoindex\b/i.test(study.robots || ''))
     .map((study) => buildUrl({
       loc: getPublicPageUrl(`/case-studies/${study.slug}`),

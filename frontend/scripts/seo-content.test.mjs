@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
-import { fetchPublishedContent, isIndexable, isPublicCaseStudy, getLegacyAliases } from "./seo-content.mjs";
+import { fetchPublishedContent, isIndexable, isPublicBlog, isPublicCaseStudy, getLegacyAliases } from "./seo-content.mjs";
 import { normalizeArticleLinks } from "../src/utils/articleLinks.js";
 import { processBlogContent } from "../src/utils/blogContent.js";
 import { getArticleSchema } from "../src/utils/articleSchema.js";
@@ -51,6 +51,14 @@ test("case study public filter excludes dummy content using the same production 
   assert.equal(isPublicCaseStudy({ slug: "real-study", title: "Family care journey", status: "published" }), true);
   assert.equal(isPublicCaseStudy({ slug: "test-study", title: "test data for csestudies", status: "published" }), false);
   assert.equal(isPublicCaseStudy({ slug: "hidden-study", showOnFrontend: false, status: "published" }), false);
+});
+
+test("real articles that mention testing in their body or title stay public", () => {
+  assert.equal(isPublicBlog({ slug: "early-signs-of-autism", title: "Early Signs of Autism", status: "published", content: "<p>CDC – Clinical Testing and Diagnosis for Autism</p>" }), true);
+  assert.equal(isPublicBlog({ slug: "adhd-testing-for-children", title: "ADHD Testing for Children", status: "published" }), true);
+  assert.equal(isPublicBlog({ slug: "test-blog", title: "Test blog", status: "published" }), false);
+  assert.equal(isPublicCaseStudy({ slug: "test-data-for-csestudies", title: "Untitled", status: "published" }), false);
+  assert.equal(isPublicBlog({ slug: "placeholder", title: "Article", status: "published", content: "<p>Lorem ipsum dolor</p>" }), false);
 });
 
 test("hydration refresh failures do not replace prerendered route content", async () => {
