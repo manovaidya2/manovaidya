@@ -1495,7 +1495,6 @@ function AutismTreatmentIndiaPage() {
             <span>/</span>
             <span className="text-[#4b345d]">{autismTitle}</span>
           </nav>
-          <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{autismTitle}</p>
           <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
             {autismArticleTitle}
           </h1>
@@ -1503,7 +1502,7 @@ function AutismTreatmentIndiaPage() {
             {autismMetaDescription}
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-6">
             <a
               href="#book-consultation"
               className="inline-flex min-h-11 items-center justify-center rounded-md bg-[#7835A4] px-5 text-[12px] font-black text-white shadow-[0_10px_20px_rgba(120,53,164,0.22)] transition hover:bg-[#5f2785]"
@@ -1547,8 +1546,8 @@ function AutismTreatmentIndiaPage() {
           </div>
             </div>
 
-          <figure className="relative z-10 mx-auto mt-8 w-full max-w-[520px] lg:mt-0 lg:max-w-none">
-            <div className="-translate-y-[50px] overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
+          <figure className="relative z-10 mx-auto mt-5 w-full max-w-[520px] sm:mt-8 lg:mt-0 lg:max-w-none">
+            <div className="overflow-hidden rounded-[48%_52%_46%_54%/58%_42%_58%_42%] border-[6px] border-white bg-[#f3eaf9] shadow-[0_18px_35px_rgba(58,31,90,0.12)] lg:-translate-y-[58px]">
               <img
                 src={childHeroImage}
                 alt="Autism Treatment in India child development assessment and personalized care at Manovaidya"
