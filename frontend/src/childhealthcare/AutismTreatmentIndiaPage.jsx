@@ -28,20 +28,79 @@ import doctorImage from "../images/doctorimg-2.jpeg";
 import RelatedPagesCard from "./RelatedPagesCard";
 import Seo from "../components/Seo";
 
-const rawArticleContent = "Autism Treatment, ADHD, Child Development & Mental Health Clinic in India\n\nWhat is Autism?\n\nAutism Spectrum Disorder (ASD) is a developmental disorder that affects the way a child learns, communicates, relates to others and processes and reacts to what is around them. [1]\n\nEach child with Autism is different.\n\nChildren may experience speech and communication problems, problems with social interaction, attention, behaviour, sensory processing or problems adjusting to changes in routine. Autism can manifest in many different ways and no two children will have the same experience, so it is important that each child's autism journey be understood in their own individual context. [1][3]\n\nThe initial signs that many parents notice are signs of difficulty responding to their name, not looking them in the eye, delays in talking, or repetitive behaviour. Sometimes developmental differences are more apparent when children start interacting with peers or at school. [3][5]\n\nAt Manovaidya we know that it is not just about the symptoms but also knowing what autism is. The development, communication, learning, behaviour, emotional wellbeing, sensory processing and overall growth are all intertwined aspects of a child's development.\n\nThis is because our approach is holistic, understanding the child as a whole, and not just on isolated concerns.\n\nFamilies can become better informed about their child's strengths and developmental difficulties and needs through detailed assessment, developmental understanding and structured guidance. [5][7]\n\nDr. Ankush Garg for Autism, ADHD, Child Development and Mental Health offers families from all over India a compassionate, personalized and structured Neuro-Ayurveda Development System.\n\nDr. Ankush Garg meets with families from all over India, Delhi, Noida, Greater Noida, Ghaziabad and NCR on a regular basis for ADHD, Autism, Child Development and Mental Health support in a structured Neuro-Ayurveda Development System.\n\n\nEarly Signs of Autism\n\nAutism may manifest itself in various ways in each child. Some signs might be obvious in an infant, others more obvious in the toddler stage or early childhood. [1][3]\n\nIf a child is identified early, parents can get the information they need to understand their child's needs and receive appropriate guidance at an opportune time. [5][11]\n\nSigns that may be observed include:\n\nDelayed speech development\nLimited verbal communication\nDifficulty expressing needs and emotions\nRepeating words or phrases frequently\nReduced use of gestures such as pointing or waving\nLimited response during conversations\n\n\nSocial Interaction Challenges\n\n\nLimited eye contact\nReduced response when called by name\nPreference for playing alone\nDifficulty initiating social interactions\nLimited interest in sharing experiences with others\nChallenges understanding social cues\n\nBehavioural Differences\nRepetitive movements or actions\nStrong preference for routines\nDifficulty adapting to changes\nIntense focus on specific interests\nRepetitive play patterns\nEmotional reactions when routines are interrupted\n\nSensory Processing Differences\nSensitivity to sounds, lights or textures\nStrong reactions to certain foods\nAvoidance of specific sensory experiences\nSeeking sensory stimulation repeatedly\nDifficulty tolerating crowded environments\nSensory-related emotional responses\n\nLearning & Development Concerns\nDelays in developmental milestones\nDifficulty following instructions\nChallenges with attention and focus\nDifferences in learning patterns\nDelays in play skills\nDifficulty with age-appropriate social development\n\nPlease keep in mind that by having one or two signs alone does not mean autism. Developmental issues vary from child to child and developmental issues always need to be viewed within the context of the child's developmental and growth history. [5][11]\n\nA thorough evaluation assists in gaining a better understanding of developmental strengths, challenges and needs. [5][7]\n\n\nAutism Treatment in India: Understanding Autism Beyond Symptoms\n\nOne of the most common concerns parents face is focusing only on visible symptoms.\n\n\nParents often ask:\n\nHow can my child speak better?\nWhy does my child avoid eye contact?\nWhy does my child become upset so easily?\nWhy is learning difficult?\n\nThese questions are key, but sometimes the symptoms are not enough to understand a child's developmental needs.\n\nWe, at Manovaidya, would like to emphasize that we encourage families to think beyond the behaviour itself and to consider the developmental context.\n\nCommunication, learning, behaviour, attention, sensory processing, emotional regulation and social interaction are frequently interrelated. [1][9]\n\nFor instance, communication problems can impact the behavior. Social participation can be impacted by sensory sensitivities. Attention challenges may impact learning and skill development. Emotional regulation challenges can impact on everyday life and relationships with others in the family.\n\nThis is a webbed knowledge which is the basis of the Neuro-Ayurveda Development System that is followed at Manovaidya.\n\nThe developmental concerns are not seen as individual concerns but rather an understanding of the factors that may impact overall developmental and wellbeing.\n\nEach child has their own strengths, abilities and potentials. Knowing more about the situation, having a structured plan and personalized assistance can often allow families to chart a course that can move their child forward in a constructive and sustainable way.\n\nThe purpose is not just to address individual symptoms, but to enable effective communication, learning, behaviour, confidence, participation, emotional wellbeing and development in a holistic way throughout the developmental process. [1][9]\n\n\nAutism Assessment at Manovaidya\n\nEach child is special and each child's developmental path is unique.\n\nA big error families often make is comparing their child to another child and/or using only information found online as the basis for understanding autism. These online resources are effective for creating awareness, but cannot substitute for a developmental assessment using a structured format focusing on the child as a person. [5][7]\n\nThe autism assessment at Manovaidya is based on the understanding of the total developmental pattern, not just one symptom.\n\nThe assessment process aims to enable families to have clarity around:\n\n- \tCommunication abilities\n- \tSocial interaction skills\n- \tAttention and focus\n- \tLearning patterns\n- \tBehavioural concerns\n- \tSensory processing\n- \tEmotional regulation\n- \tDaily functioning\n- \tDevelopmental strengths\n- \tAreas requiring support\n\nWe aim not only to recognise the problems but to gain an insight into the child's particular developmental profile and to provide a purposeful trajectory for future development and support\n\n.One of the most crucial initial steps in the family journey towards receiving Autism Treatment in India is the comprehensive Autism Assessment, which helps define developmental needs and future planning for support. [5][7]\n\n\nWhat Does the Assessment Process Include?\n\nDetailed Parent Discussion\n\nParents are the first and ultimate source of information about their child.\n\nThis is why the evaluation process starts with a thorough developmental history, as well as the concerns and day-to-day functioning of the child. [5][11]\n\nWe discuss:\nPregnancy and birth history\nEarly developmental milestones\nSpeech and communication development\nBehavioural observations\nSocial interaction patterns\nLearning abilities\nSensory concerns\nSleep and daily routines\nFood preferences and eating habits\nFamily observations and challenges\nThis information is useful to help outline the child's developmental trajectory.\n\nDevelopmental Understanding\n\nEach child matures at his own rate.\n\nThe assessment process will identify:\nExisting strengths\nCurrent developmental challenges\nAreas requiring additional support\nLearning readiness\nCommunication abilities\nBehavioural patterns\nSensory processing differences\nThis knowledge enables families to get from uncertainty to clarity.\n\n\nIndividualized Guidance\n\nFamilies are provided with developmentally appropriate information about what might come next.\n\nThis may include:\n\nParent guidance\nDevelopmental support planning\nBehaviour guidance strategies\nCommunication support recommendations\nSensory support suggestions\nLifestyle and routine recommendations\nProgress monitoring approaches\n\nThe goal is to offer a straightforward and actionable plan for families.\n\n\n\nThe Neuro-Ayurveda Development System\n\n\nDevelopmental and Behavioural issues are comprehended through the structured Neuro-Ayurveda Development System by Dr. Ankush Garg at Manovaidya.\n\nThis is designed to support families to better understand the interrelated factors that could affect a child's communication, learning, behaviour, attention, sensory processing and development.\n\nThe Neuro-Ayurveda Development System does not aim at just the symptom alone, but rather aims to understand the whole child, five connected together, through their different developmental needs.\n\nPillar 1: Brain Nourishment System:\n\nBrain development impacts learning, attention, memory and communication and social interaction. [1][3]\n\nThe Brain Nourishment System is designed to help nourish the fundamental functions that support healthy cognitive and developmental processes.\n\n\nThe objective of this pillar is to be aware of elements that could have an impact on:\n\n\n- \tAttention\n- \tLearning readiness\n- \tCommunication development\n- \tCognitive functioning\n- \tMemory\n- \tEmotional regulation\n\nThe objective is to build a greater base for development and growth.\n\n\nPillar 2: Gut Response System\n\nDigestion and wellbeing have always been linked in traditional and modern health care. [2][8]\n\nChildren with developmental issues often have:\n\n\n- \tPicky eating\n- \tDigestive discomfort\n- \tFood sensitivities\n- \tIrregular bowel habits\n- \tAppetite concerns\n\nGut Response System is about understanding the possible connection between digestive wellness and function and development. [8][10]\n\n\nPillar 3: Neural Network System\n\nDevelopment takes place through inter-connections in the brain. [1]\n\n\nThe Neural Network System is dedicated to supporting developmental readiness, including an understanding of ways that learning, attention, communication and behaviour may be shaped by underlying developmental pathways.\n\nCommon areas for exploration and play may involve:\n\n\n- \tLearning readiness\n- \tResponse patterns\n- \tCommunication development\n- \tAttention\n- \tSocial engagement\n\n\nPillar 4: Sensory Integration System\n\nMost children with autism have sensory issues. [1][3]\n\nSome children may be overstimulated by sounds, lights, textures or masses of people, and others may be actively searching for sensory stimulation.\n\nThe Sensory Integration System is about how to make sense of:\n\n- \tSensory sensitivities\n- \tSensory preferences\n- \tSensory regulation\n- \tDaily functioning challenges\n- \tEnvironmental influences\n\nWhen families understand the sensory needs, it can provide a better foundation for being able to contribute to their child's comfort and participation. [9]\n\n\nPillar 5: Behaviour Guidance System:\n\nBehaviour can be a way of communicating.\n\nChildren might communicate their needs, frustrations, discomforts or feelings in terms of behaviour.\n\nThe Behaviour Guidance System is based on helping families to understand:\nWhy behaviours occur\nPossible developmental influences\nEnvironmental triggers\nEmotional regulation challenges\nSupportive behaviour guidance approaches\nThe aim is to shift from reactive responses to behaviours to understanding what factors are driving behaviours.\n\nHow We Work at Manovaidya\n\nEach child is different and support starts with a whole child approach and not just a diagnosis.\n\nWe begin with a comprehensive evaluation to gain insights into developmental background, communication skills, behavioural areas, learning needs and attention profile, sensory experiences and family concerns. This knowledge enables families to be guided individually and to be given a developmental plan from the outset. [5][7]\n\nManovaidya takes a holistic understanding of the factors that can affect communication, attention, behaviour, learning, emotional wellbeing and overall development, as opposed to a one-size-fits-all approach, and uses the Neuro-Ayurveda Development System to help families better understand these factors.\n\nSupport includes assessment, parent guidance, developmental planning, tracking progress and long-term family support, helping parents to move forward with more clarity, confidence and direction. [1][9]\n\nEach child is an individual. That's why support at Manovaidya starts with an in-depth assessment and understanding of developmental needs and tailor-made guidance-no one-size-fits-all solutions here!\n\n\nHow We Support Children with Autism\n\nNo two children are alike, which means that at Manovaidya their support is individual.\n\nAll children are different and have different strengths and challenges, interests and developmental needs. [1][3]\nOur approach focuses on:\nUnderstanding the child as an individual\nIdentifying developmental strengths\nRecognizing areas requiring support\nProviding structured parent guidance\nCreating individualized support plans\nMonitoring developmental progress\nSupporting long-term growth and wellbeing\nThe short term is not the only focus, and the structured and family centred approach is used to ensure developmental progress is sustainable. [1][9]\n\nMany families approach Manovaidya while looking for Autism Treatment in India as they are seeking a personalized approach focused on communication, behaviour, learning, sensory integration and overall child development.\n\n\nParent Guidance & Family Support\n\nAutism impacts not just the child.\n\nIt also has an impact on the parents, siblings and family system. [1]\n\nMany parents experience:\nConfusion\nAnxiety\nInformation overload\nDecision fatigue\nFear about the future\nEmotional exhaustion\nParent guidance is seen as an integral part of the developmental journey at Manovaidya.\nFamilies receive support in understanding:\n\nTheir child's strengths\nDevelopmental challenges\nCommunication needs\nBehavioural patterns\nDaily support strategies\nLong-term developmental planning\nIncreased understanding and confidence can lead to more effective support within the family to the child's growth and wellbeing. [1][9]\n\nOur goal is to help families move from uncertainty and overwhelm toward clarity, confidence and meaningful action.\n\n\nWhy Families choose Manovaidya?\n\nSelecting the right help system for an autistic child can be daunting.\n\nSometimes parents are given conflicting advice from various professionals. Others are assigned to concentrate on just speech. The others are encouraged to work on behaviour, sensory integration, special education or routines. As families grow and develop, they often try different strategies and continue to seek more understanding of their child's development over time.\n\nThe objective at Manovaidya is to make families aware of the bigger picture.\n\nWe do not only look at individual symptoms, but we bring together all aspects of communication, learning, behaviour, sensory processing, emotional wellbeing and development of the child through a structured Neuro-Ayurveda Development System.\nFamilies choose Manovaidya because of:\n\nPersonalized Developmental Understanding\n\nAll children are unique. Assessment and guidance are differentiated for each child's strengths, challenges and developmental needs. [1][7]\n\nStructured Neuro-Ayurveda Development System\n\nThe five-pillars framework supports families to gain a better understanding of the contributing factors to development/communication, attention, learning and behaviour.\n\nFamily-Centred Approach\n\nParents are expected to have a guide to help them on the journey. Advice is given to assist families to become clear and confident about supporting their child. [1][9]\n\nLong-Term Development Focus\n\nIt is not just about achieving the immediate symptom management, but also about ensuring ongoing meaningful developmental growth. [1][9]\n\nPersonalized Guidance & Progress Tracking\n\n\nFamilies are given clear recommendations and support which can enable them to check the progress of development in a more systematic way. [5][11]\n\nSupport Across Different Developmental Needs\n\nThe way works with children who have communication, behavioural, learning, attention, sensory issues and social development problems.\n\nThe reason why Indian families choose Manovaidya is because they are seeking structured ADHD Treatment support, personalized guidance and a long-term developmental roadmap for their child.\n\nThe families from India, Delhi, Noida, Greater Noida, Ghaziabad and other parts of the NCR region opt for Manovaidya, because they are in search of a structured ADHD Treatment support, personalized guidance and a long term developmental roadmap for their child.\n\n\nAbout Dr. Ankush Garg\n\nAutism, ADHD, Child Development & Mental Health Specialist in India\n\nDr. Ankush Garg is the Founder of Manovaidya and Creator of the Neuro-Ayurveda Development System, a structured framework developed to support developmental, behavioural and mental wellness concerns through a comprehensive and personalized approach.\n\nHis work focuses on Autism Spectrum Disorder (ASD), ADHD, Child Development, Behavioural Challenges, Speech & Communication Concerns, Teen Mental Health, Adult Mental Health, Women's Emotional Wellbeing, Stress-Related Concerns and Senior Mental Health Support.\n\nThrough Manovaidya, Dr. Ankush Garg combines traditional Ayurvedic understanding with modern insights into brain development, behaviour, emotional wellbeing and cognitive health. His approach emphasizes root-cause understanding, personalized guidance, family-centred support and long-term wellness planning. [2][4]\n\nThrough detailed assessment, individualized recommendations and structured follow-up, he helps children, adults and families better understand their concerns and move forward with greater clarity, confidence and direction.\n\nFamilies from across India connect with Dr. Ankush Garg for Autism, ADHD, Child Development and Mental Health support through a compassionate, personalized and structured Neuro-Ayurveda approach.\n\n\nFrequently Asked Questions About Autism\n\n1. What is Autism Spectrum Disorder (ASD)?\n\nAutism Spectrum Disorder (ASD) is a condition affecting the developmental functioning of the brain that could affect communication, social interaction, behaviour, learning, and sensory processing. Each child with autism is an individual and the developmental needs of children may differ in many ways. Some children may have delays in speaking, or problems with attention/sensory sensitivities or social interaction. Autism is seen at Manovaidya in the context of the whole child; the child's communication, behaviour, learning, emotional development and wellbeing. [1][3]\n\n2. What are the early signs of autism?\n\nEarly indications of autism can include limited eye-to-eye contact, not responding well to being named, delayed speech development, repetitive behaviours, sensory sensitivities and difficulties in social interaction. It is also possible that parents will observe that their child's play skills, communication or emotional reactions have changed. Each child is unique, and having one or two of these signs does not necessarily mean that a child is autistic. A developmental assessment can be structured to help families understand the developmental strengths and challenges, as well as the support needed, of their child. [3][5]\n\n3. At what age can autism signs become noticeable?\n\nAutism symptoms can be seen from infancy and are more noticeable in some children in their toddler years or early childhood. Parents might notice that the child doesn't talk to them, look them in the eye, interact socially with them, play with them or respond to their name. Developmental issues may be more apparent when a child starts interacting with peers or begins a formal learning program. Early identification can assist families in gaining a better understanding of developmental needs, and provide them with guidance and support where and when it is needed. [1][3][11]\n\n4. What are the top 3 signs of autism?\n\nWhile each child with autism is unique, three key areas of difficulty are often seen in communication, social interactions, or repetitive behaviors and limited interests. Parents might see less eye-to-eye, later to speak, or difficulty making eye contact or a desire for repetition. Some children may also be sensitive to sounds, lights or textures. If these signs are noticed early, they will help families to have a clearer picture of their child's developmental needs and support planning. [1][3]\n\n5. What are the 7 signs of autism?\n\nSome signs of autism that are common include less eye contact, a low response to their name and limited interaction with other people, repetitive movements and patterns, sensitivities to the senses and a need for routine. All children will not show all of these signs and some children will show more or less of these signs. Developmental issues must always be interpreted in the context of the child's growth, communication skills and daily functioning. A structured, systematic evaluation may help to give a more complete developmental picture. [3][5]\n\n6. How to spot autism in babies?\n\nEarly signs of autism in infants might include less eye contact, less responsiveness to their names, fewer social smiles, or trouble with communication skills development, and less interest in interactive play. Parents may also observe fewer gestures used for sharing of interest including pointing, waving or reaching out. Each infant has a unique rate of development, meaning that a few delays are not necessarily autism. If developmental issues are persistent over time, however, a developmental assessment that incorporates a structured process can help to offer more clarity about the child's communication, social interaction and developmental needs. [3][5][11]\n\n7. When should parents worry about autism?\n\nParents may want to seek professional advice should they have ongoing concerns relating to communication, social interaction, behaviour, sensory responses or developmental milestones. These may be things such as not making eye contact with others, taking longer to learn to talk, not responding to their name, repeating actions or being awkward when interacting with others. Early developmental differences may not be a sign of autism, however so should not be something that should not be ignored if they persist. A structured assessment can assist families to understand whether observed behaviours are within normal developmental variation or if further support and guidance will be beneficial. [5][7][11]\n\n8. Does every child with autism have speech delay?\n\nNo. Each child with autism is different and not every child suffers from a speech delay. Some children may have a delay in language development, others may acquire speech at an appropriate age but struggle with conversational skills, social communication or social cues. Each person with autism is unique and so are their developmental needs. A structured assessment of a child's communication profile can inform a family of their strengths, challenges and support plan for their child. [1][3]\n\n9. Will my autistic child ever talk?\n\nThere is often a concern by parents that their child will ever learn to speak and communicate. Each child with autism is an individual, and communication improvements are unique and may be quite different. Some children have a clearer onset of speech, while some children might need more assistance and time. Communication can be through verbal exchange, but can also involve gesture, visual communication and social interaction and alternative methods. For the family, early understanding, developmental guidance and consistent support can assist in supporting the development of communication skills according to the child's needs. [1][9]\n\n10. Can an autistic child speak after 5 years?\n\nYes, a child with autism can still make progress in communication and speech thereafter. All children don't develop at the same rate, and progress with communications can be ongoing throughout childhood. Communication skills, readiness for learning, social engagement and individualized support can impact developmental outcomes. Sometimes an understanding of the child's developmental profile as a whole, and their communication needs, is more useful than concentrating on age. A developmental approach can assist families to pinpoint practical strategies to foster communication development and involvement. [1][9]\n\n11. Can autism get better with age?\n\nAll children with autism are on a different journey. Although autism is a lifelong condition that affects the development of the nervous system, many children develop communication, learning, social interaction and daily living skills as they get older. Developmental progress may be influenced by factors such as family support, learning opportunities, communication development and individualized guidance. It is not always best to just look at the label and concentrate on what is wrong with the child, but rather it is better to help the child develop strengths, to be independent and to be able to participate in daily life. Providing families with early understanding and on-going developmental support can help them establish a positive developmental pathway to the future. [1][9]\n\n12. Can an autistic child go to a normal school in India?\n\nIn India many kids with autism go to mainstream schools, some might require inclusive classroom and some might require special educational support and/or individual learning plans. The setting in which the child learns is based on the child's communication skills, learning needs, social development and level of support needed. All children are unique and the school decision is not about the diagnosis alone and should be based on each child's strengths and developmental needs. A developmental assessment can provide a structure that will help parents understand the kind of educational environment which may be best suited to help their child learn and develop. [1][7]\n\n13. How can parents help a child with autism at home?\n\nOne of the most critical roles in the development of a child is played by the parents. Some simple interventions, like keeping routines consistent, encouraging communication, offering opportunities for structured learning, facilitating social interaction, and setting up a quiet environment, can assist children's participation in daily activities. Parents should also concentrate on their child's strengths instead of just challenges. It is often possible to make progress in the long run with small, regular efforts. Parent guidance at Manovaidya is deemed to be very significant in supporting and assisting families to understand and support their child's development. [9]\n\n14. What is the Neuro-Ayurveda Development System?\n\nDr. Ankush Garg has created a structured system called the Neuro-Ayurveda Development System to enable a family to have a better understanding of developmental, behavioural and mental wellness concerns. The system is structured around five systems that are closely linked to each other: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. The framework is not only about the individual symptom, it aims to have a more general grasp of communication, learning, behaviour, attention, sensory processing and general development. This is a structured process that can help families to understand their developmental needs and long-term planning for support.\n\n15. How does Manovaidya assess and support children with autism?\n\nIn the assessment of autism at Manovaidya an emphasis is put on understanding the child as a whole, and not a single symptom alone. This process could involve developmental history, communication, learning, behaviour, sensory processing and parental concerns. From this insight, individual guidance is provided to families and a developmental roadmap is created. Using the Neuro-Ayurveda Development System, Support caters to the needs of families to increase their understanding of communication, behaviour, learning, sensory integration and overall child development. To give clarity, direction and long-term developmental support specific to the needs of the individual child. [5][7]\n\nBook a Consultation\n\nIf you are looking for Autism Treatment in India, Autism Assessment, Child Development Support or guidance regarding communication, behaviour, learning and developmental concerns, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.\n\nThrough a structured assessment and personalized guidance process, families can gain a clearer understanding of their child's developmental needs and explore appropriate next steps for long-term growth, learning and wellbeing. [5][7]\n\nTake the First Step\n\n-  Autism Assessment\n -  Personalized Development Guidance\n -  Parent Support & Family Guidance\n -  Neuro-Ayurveda Development System\n -  Structured Progress Planning\n\nManovaidya Clinic\nNoida, Uttar Pradesh, India";
+const rawFaqLines = `1. What is Autism Spectrum Disorder (ASD)?
+
+Autism Spectrum Disorder (ASD) is a condition affecting the developmental functioning of the brain that could affect communication, social interaction, behaviour, learning, and sensory processing. Each child with autism is an individual and the developmental needs of children may differ in many ways. Some children may have delays in speaking, or problems with attention/sensory sensitivities or social interaction. Autism is seen at Manovaidya in the context of the whole child; the child's communication, behaviour, learning, emotional development and wellbeing. [1][3]
+
+2. What are the early signs of autism?
+
+Early indications of autism can include limited eye-to-eye contact, not responding well to being named, delayed speech development, repetitive behaviours, sensory sensitivities and difficulties in social interaction. It is also possible that parents will observe that their child's play skills, communication or emotional reactions have changed. Each child is unique, and having one or two of these signs does not necessarily mean that a child is autistic. A developmental assessment can be structured to help families understand the developmental strengths and challenges, as well as the support needed, of their child. [3][5]
+
+3. At what age can autism signs become noticeable?
+
+Autism symptoms can be seen from infancy and are more noticeable in some children in their toddler years or early childhood. Parents might notice that the child doesn't talk to them, look them in the eye, interact socially with them, play with them or respond to their name. Developmental issues may be more apparent when a child starts interacting with peers or begins a formal learning program. Early identification can assist families in gaining a better understanding of developmental needs, and provide them with guidance and support where and when it is needed. [1][3][11]
+
+4. What are the top 3 signs of autism?
+
+While each child with autism is unique, three key areas of difficulty are often seen in communication, social interactions, or repetitive behaviors and limited interests. Parents might see less eye-to-eye, later to speak, or difficulty making eye contact or a desire for repetition. Some children may also be sensitive to sounds, lights or textures. If these signs are noticed early, they will help families to have a clearer picture of their child's developmental needs and support planning. [1][3]
+
+5. What are the 7 signs of autism?
+
+Some signs of autism that are common include less eye contact, a low response to their name and limited interaction with other people, repetitive movements and patterns, sensitivities to the senses and a need for routine. All children will not show all of these signs and some children will show more or less of these signs. Developmental issues must always be interpreted in the context of the child's growth, communication skills and daily functioning. A structured, systematic evaluation may help to give a more complete developmental picture. [3][5]
+
+6. How to spot autism in babies?
+
+Early signs of autism in infants might include less eye contact, less responsiveness to their names, fewer social smiles, or trouble with communication skills development, and less interest in interactive play. Parents may also observe fewer gestures used for sharing of interest including pointing, waving or reaching out. Each infant has a unique rate of development, meaning that a few delays are not necessarily autism. If developmental issues are persistent over time, however, a developmental assessment that incorporates a structured process can help to offer more clarity about the child's communication, social interaction and developmental needs. [3][5][11]
+
+7. When should parents worry about autism?
+
+Parents may want to seek professional advice should they have ongoing concerns relating to communication, social interaction, behaviour, sensory responses or developmental milestones. These may be things such as not making eye contact with others, taking longer to learn to talk, not responding to their name, repeating actions or being awkward when interacting with others. Early developmental differences may not be a sign of autism, however so should not be something that should not be ignored if they persist. A structured assessment can assist families to understand whether observed behaviours are within normal developmental variation or if further support and guidance will be beneficial. [5][7][11]
+
+8. Does every child with autism have speech delay?
+
+No. Each child with autism is different and not every child suffers from a speech delay. Some children may have a delay in language development, others may acquire speech at an appropriate age but struggle with conversational skills, social communication or social cues. Each person with autism is unique and so are their developmental needs. A structured assessment of a child's communication profile can inform a family of their strengths, challenges and support plan for their child. [1][3]
+
+9. Will my autistic child ever talk?
+
+There is often a concern by parents that their child will ever learn to speak and communicate. Each child with autism is an individual, and communication improvements are unique and may be quite different. Some children have a clearer onset of speech, while some children might need more assistance and time. Communication can be through verbal exchange, but can also involve gesture, visual communication and social interaction and alternative methods. For the family, early understanding, developmental guidance and consistent support can assist in supporting the development of communication skills according to the child's needs. [1][9]
+
+10. Can an autistic child speak after 5 years?
+
+Yes, a child with autism can still make progress in communication and speech thereafter. All children don't develop at the same rate, and progress with communications can be ongoing throughout childhood. Communication skills, readiness for learning, social engagement and individualized support can impact developmental outcomes. Sometimes an understanding of the child's developmental profile as a whole, and their communication needs, is more useful than concentrating on age. A developmental approach can assist families to pinpoint practical strategies to foster communication development and involvement. [1][9]
+
+11. Can autism get better with age?
+
+All children with autism are on a different journey. Although autism is a lifelong condition that affects the development of the nervous system, many children develop communication, learning, social interaction and daily living skills as they get older. Developmental progress may be influenced by factors such as family support, learning opportunities, communication development and individualized guidance. It is not always best to just look at the label and concentrate on what is wrong with the child, but rather it is better to help the child develop strengths, to be independent and to be able to participate in daily life. Providing families with early understanding and on-going developmental support can help them establish a positive developmental pathway to the future. [1][9]
+
+12. Can an autistic child go to a normal school in India?
+
+In India many kids with autism go to mainstream schools, some might require inclusive classroom and some might require special educational support and/or individual learning plans. The setting in which the child learns is based on the child's communication skills, learning needs, social development and level of support needed. All children are unique and the school decision is not about the diagnosis alone and should be based on each child's strengths and developmental needs. A developmental assessment can provide a structure that will help parents understand the kind of educational environment which may be best suited to help their child learn and develop. [1][7]
+
+13. How can parents help a child with autism at home?
+
+One of the most critical roles in the development of a child is played by the parents. Some simple interventions, like keeping routines consistent, encouraging communication, offering opportunities for structured learning, facilitating social interaction, and setting up a quiet environment, can assist children's participation in daily activities. Parents should also concentrate on their child's strengths instead of just challenges. It is often possible to make progress in the long run with small, regular efforts. Parent guidance at Manovaidya is deemed to be very significant in supporting and assisting families to understand and support their child's development. [9]
+
+14. What is the Neuro-Ayurveda Development System?
+
+Dr. Ankush Garg has created a structured system called the Neuro-Ayurveda Development System to enable a family to have a better understanding of developmental, behavioural and mental wellness concerns. The system is structured around five systems that are closely linked to each other: Brain Nourishment System, Gut Response System, Neural Network System, Sensory Integration System and Behaviour Guidance System. The framework is not only about the individual symptom, it aims to have a more general grasp of communication, learning, behaviour, attention, sensory processing and general development. This is a structured process that can help families to understand their developmental needs and long-term planning for support.
+
+15. How does Manovaidya assess and support children with autism?
+
+In the assessment of autism at Manovaidya an emphasis is put on understanding the child as a whole, and not a single symptom alone. This process could involve developmental history, communication, learning, behaviour, sensory processing and parental concerns. From this insight, individual guidance is provided to families and a developmental roadmap is created. Using the Neuro-Ayurveda Development System, Support caters to the needs of families to increase their understanding of communication, behaviour, learning, sensory integration and overall child development. To give clarity, direction and long-term developmental support specific to the needs of the individual child. [5][7]`.split("\n");
 
 const fullMedicalReferenceContent = "References\n[1] World Health Organization (WHO) - Autism Spectrum Disorder\n https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders\n[2] Ministry of AYUSH - Ayurveda\n https://ayush.gov.in/\n[3] Centers for Disease Control and Prevention (CDC) - About Autism Spectrum Disorder\n https://www.cdc.gov/autism/about/index.html\n[4] Central Council for Research in Ayurvedic Sciences (CCRAS) - Clinical Research\n https://ccras.nic.in/services/clinical-research/\n[5] Centers for Disease Control and Prevention (CDC) - Autism Screening and Diagnosis\n https://www.cdc.gov/autism/diagnosis/index.html\n[6] AYUSH Research Portal - Evidence-Based Research in Ayurveda\n https://ayushportal.nic.in/\n[7] National Institute for Health and Care Excellence (NICE) - Autism Recognition, Referral and Diagnosis in Children and Young People\n https://www.nice.org.uk/guidance/cg128\n[8] Gastrointestinal Symptoms in Autism Spectrum Disorder - Systematic Review\n https://pubmed.ncbi.nlm.nih.gov/35406084/\n[9] National Institute for Health and Care Excellence (NICE) - Autism Support and Management in Children and Young People\n https://www.nice.org.uk/guidance/cg170\n[10] Autism Spectrum Disorder and the Gut Microbiota in Children - Systematic Review\n https://pubmed.ncbi.nlm.nih.gov/31982866/\n[11] Centers for Disease Control and Prevention (CDC) - Developmental Monitoring and Screening\n https://www.cdc.gov/act-early/about/developmental-monitoring-and-screening.html\n[12] Herbal Medicine Treatment for Children with Autism Spectrum Disorder - Systematic Review\n https://pmc.ncbi.nlm.nih.gov/articles/PMC5448044/";
 
 const pageLinks = [
   { label: "What is ASD?", id: "what-is-autism" },
   { label: "Early Signs", id: "early-signs-of-autism" },
-  { label: "Diagnosis & Support", id: "autism-treatment-in-india" },
-  { label: "Autism Assessment", id: "autism-assessment" },
-  { label: "Parent Help", id: "how-we-work" },
+  { label: "When to Seek an Assessment", id: "when-to-consider-assessment" },
+  { label: "Autism Diagnosis", id: "how-we-work" },
+  { label: "Development Beyond Symptoms", id: "autism-treatment-in-india" },
+  { label: "Assessment at Manovaidya", id: "autism-assessment" },
   { label: "Neuro-Ayurveda", id: "neuro-ayurveda-development-system" },
-  { label: "Child Development", id: "how-we-support" },
-  { label: "Family Support", id: "parent-guidance" },
-  { label: "Why Trust Manovaidya", id: "why-families-choose-us" },
+  { label: "Support at Home", id: "how-we-support" },
+  { label: "Parent Guidance", id: "parent-guidance" },
+  { label: "Why Families Consider Manovaidya", id: "why-families-choose-us" },
   { label: "About Dr. Ankush Garg", id: "about-dr-ankush-garg" },
   { label: "FAQs", id: "faqs" },
   { label: "Book Consultation", id: "book-consultation" },
@@ -59,19 +118,19 @@ const categories = [
 
 const keyTakeaways = [
   "Understanding Autism Spectrum Disorder (ASD)",
-  "Early Signs of Autism in Children",
-  "Communication, Social & Behavioural Concerns",
-  "Sensory Processing & Developmental Differences",
-  "Importance of Autism Assessment",
-  "Understanding Autism Beyond Visible Symptoms",
-  "Personalized Autism Support & Guidance",
-  "Five-Pillar Neuro-Ayurveda Development System",
-  "Brain Nourishment & Gut Response Support",
-  "Neural Network & Sensory Integration",
-  "Behaviour Guidance & Parent Support",
-  "Manovaidya Assessment & Development Process",
-  "Why Families Choose Manovaidya",
-  "FAQs About Autism & Child Development",
+  "Early signs of autism in children",
+  "Communication and social differences",
+  "Repetitive behaviors and sensory differences",
+  "When to seek an autism assessment",
+  "How autism is diagnosed in children",
+  "Understanding development beyond autism symptoms",
+  "Assessment and developmental guidance at Manovaidya",
+  "The five-pillar Neuro-Ayurveda Development System",
+  "Practical ways to support an autistic child at home",
+  "The role of parent guidance in autism care",
+  "Questions to ask when choosing a service",
+  "About Dr. Ankush Garg and Manovaidya",
+  "Frequently asked questions about autism",
 ];
 
 const medicalReferences = [
@@ -117,78 +176,20 @@ const medicalReferences = [
   },
 ];
 
-const earlySignGroups = [
-  {
-    title: "Communication & Speech Concerns",
-    items: [
-      "Delayed speech development",
-      "Limited verbal communication",
-      "Difficulty expressing needs and emotions",
-      "Repeating words or phrases frequently",
-      "Reduced use of gestures such as pointing or waving",
-      "Limited response during conversations",
-    ],
-  },
-  {
-    title: "Social Interaction Challenges",
-    items: [
-      "Limited eye contact",
-      "Reduced response when called by name",
-      "Preference for playing alone",
-      "Difficulty initiating social interactions",
-      "Limited interest in sharing experiences with others",
-      "Challenges understanding social cues",
-    ],
-  },
-  {
-    title: "Behavioural Differences",
-    items: [
-      "Repetitive movements or actions",
-      "Strong preference for routines",
-      "Difficulty adapting to changes",
-      "Intense focus on specific interests",
-      "Repetitive play patterns",
-      "Emotional reactions when routines are interrupted",
-    ],
-  },
-  {
-    title: "Sensory Processing Differences",
-    items: [
-      "Sensitivity to sounds, lights or textures",
-      "Strong reactions to certain foods",
-      "Avoidance of specific sensory experiences",
-      "Seeking sensory stimulation repeatedly",
-      "Difficulty tolerating crowded environments",
-      "Sensory-related emotional responses",
-    ],
-  },
-  {
-    title: "Learning & Development Concerns",
-    items: [
-      "Delays in developmental milestones",
-      "Difficulty following instructions",
-      "Challenges with attention and focus",
-      "Differences in learning patterns",
-      "Delays in play skills",
-      "Difficulty with age-appropriate social development",
-    ],
-  },
-];
-
 const autismBeyondHighlights = [
-  { label: "Communication Development", Icon: MessageCircle },
+  { label: "Communication", Icon: MessageCircle },
   { label: "Social Interaction", Icon: Users },
-  { label: "Learning Readiness", Icon: BookOpen },
-  { label: "Sensory Processing", Icon: Waves },
-  { label: "Behaviour & Environment", Icon: Puzzle },
+  { label: "Learning and Attention", Icon: BookOpen },
+  { label: "Sensory Experiences", Icon: Waves },
+  { label: "Daily Independence", Icon: Puzzle },
 ];
 
 const autismAssessmentFlow = [
-  { step: "Step 1", label: "Detailed Parent Discussion", Icon: Users },
-  { step: "Step 2", label: "Developmental Assessment", Icon: BookOpen },
-  { step: "Step 3", label: "Communication & Behaviour Evaluation", Icon: MessageCircle },
-  { step: "Step 4", label: "Report & Insights", Icon: CalendarCheck },
-  { step: "Step 5", label: "Personalised Guidance", Icon: ShieldCheck },
+  { step: "Step 1", label: "Listening to Parents", Icon: Users },
+  { step: "Step 2", label: "Reviewing Developmental Background", Icon: BookOpen },
+  { step: "Step 3", label: "Understanding Communication and Behavior", Icon: MessageCircle },
+  { step: "Step 4", label: "Discussing the Findings", Icon: CalendarCheck },
+  { step: "Step 5", label: "Planning Further Support", Icon: ShieldCheck },
 ];
 
 const autismAssessmentClarityItems = [
@@ -205,63 +206,30 @@ const autismAssessmentClarityItems = [
 ];
 
 const autismHowWeWorkSteps = [
-  { title: "Assessment", desc: "Understand your child in-depth", Icon: Brain },
-  { title: "Understanding", desc: "Identify strengths & challenges", Icon: Search },
-  { title: "Personalised Plan", desc: "Create an individualized development plan", Icon: Activity },
-  { title: "Parent Guidance", desc: "Train & empower parents", Icon: Users },
-  { title: "Progress Tracking", desc: "Monitor, support & make adjustments", Icon: CalendarCheck },
+  { title: "Developmental History", desc: "Review milestones and daily routines", Icon: Brain },
+  { title: "Communication", desc: "Observe spoken and non-spoken communication", Icon: Search },
+  { title: "Social Skills", desc: "Observe how the child interacts and participates", Icon: Activity },
+  { title: "Behavior and Sensory Responses", desc: "Consider responses to routines and surroundings", Icon: Users },
+  { title: "Strengths and Support Needs", desc: "Recognize interests and abilities", Icon: CalendarCheck },
 ];
 
 const autismSupportPointItems = [
-  { label: "Understanding the child as an individual", Icon: Brain },
-  { label: "Identifying developmental strengths", Icon: Sparkles },
-  { label: "Recognizing areas requiring support", Icon: ShieldCheck },
-  { label: "Providing structured parent guidance", Icon: Users },
-  { label: "Creating individualized support plans", Icon: BookOpen },
-  { label: "Monitoring developmental progress", Icon: CalendarCheck },
-  { label: "Supporting long-term growth and wellbeing", Icon: HeartHandshake },
+  { label: "Make daily routines easier to follow", Icon: Brain },
+  { label: "Explain changes ahead of time", Icon: Sparkles },
+  { label: "Pay attention to sensory preferences", Icon: ShieldCheck },
+  { label: "Give your child different ways to communicate", Icon: Users },
+  { label: "Use your child's interests to encourage learning", Icon: BookOpen },
+  { label: "Give your child time to respond", Icon: CalendarCheck },
+  { label: "Stay connected with teachers and professionals", Icon: HeartHandshake },
 ];
 
 const familyConcerns = [
-  "Confusion",
-  "Anxiety",
-  "Information overload",
-  "Decision fatigue",
-  "Fear about the future",
-  "Emotional exhaustion",
-];
-
-const whyChoose = [
-  {
-    title: "Personalized Developmental Understanding",
-    text:
-      "Assessment and guidance are tailored to the child's individual strengths, challenges and developmental needs.",
-  },
-  {
-    title: "Structured Neuro-Ayurveda Development System",
-    text:
-      "The five-pillar framework helps families understand factors that may influence communication, attention, learning and behaviour.",
-  },
-  {
-    title: "Family-Centred Approach",
-    text:
-      "Parents are not expected to navigate the journey alone. Guidance helps families gain clarity and confidence.",
-  },
-  {
-    title: "Long-Term Development Focus",
-    text:
-      "The emphasis is not only on short-term symptom management but also on meaningful developmental growth over time.",
-  },
-  {
-    title: "Personalized Guidance & Progress Tracking",
-    text:
-      "Families receive structured recommendations and support to monitor developmental progress in an organized manner.",
-  },
-  {
-    title: "Support Across Developmental Needs",
-    text:
-      "The approach may support communication, behaviour, learning, attention, sensory processing and social development.",
-  },
+  "Understanding developmental concerns",
+  "Setting practical goals",
+  "Choosing appropriate services",
+  "Supporting communication",
+  "Supporting everyday participation",
+  "Finding support for parents",
 ];
 
 const relatedArticles = [
@@ -345,91 +313,6 @@ const faqs = [
   }
 ];
 
-const nonQuestionHeadings = new Set([
-  "About Dr Ankush Garg",
-  "Child Development and Mental Health Professional Specializing in Autism and ADHD in India",
-  "Commonly Asked Questions Regarding Autism",
-  "Schedule a consultation",
-  "Start the Journey to Better Development",
-  "Manovaidya Clinic",
-  "Autism Treatment, ADHD, Child Development & Mental Health Clinic in India",
-  "Early Signs of Autism",
-  "Social Interaction Challenges",
-  "Behavioural Differences",
-  "Sensory Processing Differences",
-  "Learning & Development Concerns",
-  "Autism Treatment in India: Understanding Autism Beyond Symptoms",
-  "Autism Assessment at Manovaidya",
-  "What Does the Assessment Process Include?",
-  "Detailed Parent Discussion",
-  "Developmental Understanding",
-  "Individualized Guidance",
-  "The Neuro-Ayurveda Development System",
-  "Pillar 1: Brain Nourishment System:",
-  "Pillar 2: Gut Response System",
-  "Pillar 3: Neural Network System",
-  "Pillar 4: Sensory Integration System",
-  "Pillar 5: Behaviour Guidance System:",
-  "How We Work at Manovaidya",
-  "How We Support Children with Autism",
-  "Parent Guidance & Family Support",
-  "Why Families choose Manovaidya?",
-  "Personalized Developmental Understanding",
-  "Structured Neuro-Ayurveda Development System",
-  "Family-Centred Approach",
-  "Long-Term Development Focus",
-  "Personalized Guidance & Progress Tracking",
-  "Support Across Different Developmental Needs",
-  "About Dr. Ankush Garg",
-  "Autism, ADHD, Child Development & Mental Health Specialist in India",
-  "Frequently Asked Questions About Autism",
-  "Book a Consultation",
-  "Take the First Step",
-]);
-
-const headingIds = new Map([
-  ["What are the early signs of Autism Spectrum Disorder?", "early-signs-of-autism"],
-  ["How is autism understood, diagnosed, and supported in India?", "autism-treatment-in-india"],
-  ["Autism Assessment  for child developmental approach at Manovaidya", "autism-assessment"],
-  ["How can parents help their child with autism and manage daily life?", "how-we-work"],
-  ["How does the Integrative Cognitive Development system( Neuro Ayurvedic Development system) help in addressing child development needs?", "neuro-ayurveda-development-system"],
-  ["How Do We Promote the Development of Children with Autism?", "how-we-support"],
-  ["What role does family support play in autism intervention and child development?", "parent-guidance"],
-  ["Why Do Families Trust Manovaidya for Child Development Support?", "why-families-choose-us"],
-  ["About Dr Ankush Garg", "about-dr-ankush-garg"],
-  ["Commonly Asked Questions Regarding Autism", "faqs"],
-  ["Schedule a consultation", "book-consultation-copy"],
-  ["What is Autism?", "what-is-autism"],
-  ["Early Signs of Autism", "early-signs-of-autism"],
-  ["Autism Treatment in India: Understanding Autism Beyond Symptoms", "autism-treatment-in-india"],
-  ["Autism Assessment at Manovaidya", "autism-assessment"],
-  ["What Does the Assessment Process Include?", "how-we-work"],
-  ["The Neuro-Ayurveda Development System", "neuro-ayurveda-development-system"],
-  ["How We Support Children with Autism", "how-we-support"],
-  ["Parent Guidance & Family Support", "parent-guidance"],
-  ["Why Families choose Manovaidya?", "why-families-choose-us"],
-  ["About Dr. Ankush Garg", "about-dr-ankush-garg"],
-  ["Frequently Asked Questions About Autism", "faqs"],
-  ["Book a Consultation", "book-consultation-copy"],
-]);
-
-const rawContentLines = rawArticleContent.replace(/\r\n/g, "\n").split("\n");
-const faqHeadingLabels = new Set(["Commonly Asked Questions Regarding Autism", "Frequently Asked Questions About Autism"]);
-const rawFaqStartIndex = rawContentLines.findIndex((line) => faqHeadingLabels.has(line.trim()));
-const consultationHeadingLabels = new Set(["Schedule a consultation", "Book a Consultation"]);
-const rawConsultationIndex = rawContentLines.findIndex((line) => consultationHeadingLabels.has(line.trim()));
-
-const visibleArticleLines =
-  rawFaqStartIndex >= 0 ? rawContentLines.slice(0, rawFaqStartIndex) : rawContentLines;
-
-const consultationArticleLines =
-  rawConsultationIndex >= 0 ? rawContentLines.slice(rawConsultationIndex) : [];
-
-const rawFaqLines =
-  rawFaqStartIndex >= 0 && rawConsultationIndex > rawFaqStartIndex
-    ? rawContentLines.slice(rawFaqStartIndex + 1, rawConsultationIndex)
-    : [];
-
 function buildRawFaqs(lines) {
   const items = [];
   let current = null;
@@ -465,8 +348,9 @@ const rawFaqs = buildRawFaqs(rawFaqLines);
 const autismPageUrl = "https://manovaidya.org/autism-treatment-india/";
 const autismTitle = "Autism Treatment in India for Children";
 const autismMetaTitle = `${autismTitle} | Manovaidya`;
+const autismArticleTitle = "Autism Treatment in India for Children: Understanding Development and Finding the Right Support";
 const autismMetaDescription =
-  "Looking for Autism Treatment in India? Learn about Autism Assessment, Child Development Support and the Neuro-Ayurveda Development System at Manovaidya with Dr. Ankush Garg.";
+  "Learn about early signs of autism in children, how autism is assessed in India, and ways families can support their child's development and everyday life.";
 const autismMetaKeywords =
   "Autism Treatment in India, Autism Assessment, Autism Spectrum Disorder, Autism Diagnosis, Autism Therapy, Early Signs of Autism, Child Development Support, Sensory Processing Support, Behavioural Support for Autism, Parent Guidance for Autism, Personalized Autism Care, Neuro-Ayurveda Development System, Manovaidya";
 const autismFaqSchema = {
@@ -731,31 +615,8 @@ function getArticleLinkRuleKeysForText(text, linkedRuleKeys) {
   return ruleKeys;
 }
 
-function VisualBlock({ heading }) {
-  if (heading === "What are the early signs of Autism Spectrum Disorder?" || heading === "Early Signs of Autism") {
-    return (
-      <div className="mt-4 grid gap-4 sm:grid-cols-2">
-        {earlySignGroups.map((group) => (
-          <div key={group.title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
-            <h4 className="mb-3 text-[15px] font-black text-[#21142d]">{group.title}</h4>
-            <ul className="space-y-2">
-              {group.items.map((item) => (
-                <li key={item} className="flex gap-2 text-[13px] font-bold leading-5 text-[#5f5367]">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  if (
-    heading === "How is autism understood, diagnosed, and supported in India?" ||
-    heading === "Autism Treatment in India: Understanding Autism Beyond Symptoms"
-  ) {
+function VisualBlock({ sectionId }) {
+  if (sectionId === "autism-treatment-in-india") {
     return (
       <div className="mt-4 rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
@@ -772,11 +633,7 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (
-    heading === "Autism Assessment  for child developmental approach at Manovaidya" ||
-    heading === "Autism Assessment at Manovaidya" ||
-    heading === "What Does the Assessment Process Include?"
-  ) {
+  if (sectionId === "autism-assessment") {
     return (
       <div className="mt-4 space-y-5">
         <div className="rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
@@ -814,10 +671,7 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (
-    heading === "How does the Integrative Cognitive Development system( Neuro Ayurvedic Development system) help in addressing child development needs?" ||
-    heading === "The Neuro-Ayurveda Development System"
-  ) {
+  if (sectionId === "neuro-ayurveda-development-system") {
     return (
       <div className="mt-4">
         <a href="/about/approach/">
@@ -833,10 +687,7 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (
-    heading === "What developmental areas does Manovaidya focus on during autism intervention?" ||
-    heading === "How We Work at Manovaidya"
-  ) {
+  if (sectionId === "how-we-work") {
     return (
       <div className="mt-4 rounded-lg border border-[#eadff1] bg-white px-4 py-4 shadow-[0_10px_28px_rgba(58,31,90,0.06)] sm:px-5">
         <div className="grid gap-3 sm:grid-cols-5 sm:items-start lg:flex lg:items-center lg:justify-between">
@@ -859,7 +710,7 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (heading === "How Do We Promote the Development of Children with Autism?" || heading === "How We Support Children with Autism") {
+  if (sectionId === "how-we-support") {
     return (
       <div className="mt-4 rounded-lg border border-[#eadff1] bg-white p-5">
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -876,29 +727,13 @@ function VisualBlock({ heading }) {
     );
   }
 
-  if (
-    heading === "What role does family support play in autism intervention and child development?" ||
-    heading === "Parent Guidance & Family Support"
-  ) {
+  if (sectionId === "parent-guidance") {
     return (
       <div className="mt-4 flex flex-wrap items-center gap-2 rounded-lg bg-[#f4ecf8] p-5">
         {familyConcerns.map((item) => (
           <span key={item} className="rounded-full bg-white px-3 py-1 text-[12px] font-black text-[#7835A4] ring-1 ring-[#eadff1]">
             {item}
           </span>
-        ))}
-      </div>
-    );
-  }
-
-  if (heading === "Why Do Families Trust Manovaidya for Child Development Support?" || heading === "Why Families choose Manovaidya?") {
-    return (
-      <div className="mt-4 grid gap-4 sm:grid-cols-2">
-        {whyChoose.map((item) => (
-          <div key={item.title} className="rounded-lg border border-[#eadff1] bg-white p-5 shadow-sm">
-            <h4 className="mb-2 text-[14px] font-black text-[#21142d]">{item.title}</h4>
-            <p className="text-[12.5px] font-semibold leading-6 text-[#5f5367]">{item.text}</p>
-          </div>
         ))}
       </div>
     );
@@ -1084,13 +919,9 @@ function ArticleLinkedText({ text, onCitationClick, allowedRuleKeys }) {
     } else {
       linkedRuleKeysInText.add(next.ruleKey);
       parts.push(
-        <a
-          key={`${next.text}-${parts.length}`}
-          href={next.rule.href}
-          className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]"
-        >
+        <ArticleLink key={`${next.text}-${parts.length}`} href={next.rule.href}>
           {next.text}
-        </a>
+        </ArticleLink>
       );
     }
 
@@ -1238,103 +1069,283 @@ function FloatingShareBar() {
   );
 }
 
-function RawArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
-  const usedHeadingIds = new Set();
+function ArticleLink({ href, children }) {
+  return (
+    <a href={href} className="font-black text-[#7835A4] underline decoration-[#7835A4]/35 underline-offset-2 transition hover:bg-[#f4ecf8] hover:text-[#4c1d6b]">
+      {children}
+    </a>
+  );
+}
+
+function ArticleSectionHeading({ id, children }) {
+  return (
+    <>
+      <h2 id={id} className="scroll-mt-28 pt-4 text-[18px] font-black leading-snug text-[#17111f]">
+        {children}
+      </h2>
+      <VisualBlock sectionId={id} />
+    </>
+  );
+}
+
+function ArticleSubheading({ children }) {
+  return <h3 className="pt-4 text-[18px] font-black leading-snug text-[#17111f]">{children}</h3>;
+}
+
+function ArticleList({ children }) {
+  return <ul className="space-y-2">{children}</ul>;
+}
+
+function ArticleListItem({ children }) {
+  return (
+    <li className="flex gap-2 text-[13px] font-bold leading-5 text-[#5f5367]">
+      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#7835A4]" aria-hidden="true" />
+      <span>{children}</span>
+    </li>
+  );
+}
+
+function ArticleCard({ children }) {
+  return (
+    <li className="rounded-lg border border-[#eadff1] bg-white p-5 text-[14px] font-black text-[#21142d] shadow-sm">
+      {children}
+    </li>
+  );
+}
+
+function ArticleContent({ openFaq, setOpenFaq, onCitationClick }) {
   const ruleKeysByLine = new Map();
   const linkedRuleKeys = new Set();
 
-  const collectLine = (line, index, keyPrefix = "line") => {
-    const text = line.trimEnd();
-    const trimmedText = text.trim();
-
-    if (!trimmedText) {
-      return;
-    }
-
-    if (index === 0 && keyPrefix === "line") {
-      return;
-    }
-
-    if (trimmedText.endsWith("?") || nonQuestionHeadings.has(trimmedText)) {
-      return;
-    }
-
-    const ruleKeys = getArticleLinkRuleKeysForText(text, linkedRuleKeys);
-
-    if (ruleKeys.size) {
-      ruleKeysByLine.set(`${keyPrefix}-${index}`, ruleKeys);
-    }
-  };
-
-  visibleArticleLines.forEach((line, index) => collectLine(line, index));
-
-  if (openFaq !== null && rawFaqs[openFaq]) {
-    rawFaqs[openFaq].answer.forEach((answerLine, answerIndex) => {
-      const ruleKeys = getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys);
-
-      if (ruleKeys.size) {
-        ruleKeysByLine.set(`faq-${answerIndex}`, ruleKeys);
-      }
-    });
-  }
-
-  consultationArticleLines.forEach((line, index) => collectLine(line, index, "consultation"));
-
-  const renderLine = (line, index, keyPrefix = "line") => {
-    const text = line.trimEnd();
-    const trimmedText = text.trim();
-    const key = `${keyPrefix}-${index}`;
-
-    if (!trimmedText) {
-      return <div key={key} className="h-2" aria-hidden="true" />;
-    }
-
-    if (index === 0 && keyPrefix === "line") {
-      return (
-        <h2 key={key} className="text-[22px] font-black leading-snug text-[#17111f] sm:text-[26px]" style={{ whiteSpace: "pre-wrap" }}>
-          <ArticleLinkedText text={text} onCitationClick={onCitationClick} />
-        </h2>
-      );
-    }
-
-    if (trimmedText.endsWith("?") || nonQuestionHeadings.has(trimmedText)) {
-      const headingId = headingIds.get(trimmedText);
-      const id = headingId && !usedHeadingIds.has(headingId) ? headingId : undefined;
-      if (id) {
-        usedHeadingIds.add(id);
-      }
-
-      return (
-        <React.Fragment key={key}>
-          <h3 id={id} className="scroll-mt-28 pt-4 text-[18px] font-black leading-snug text-[#17111f]" style={{ whiteSpace: "pre-wrap" }}>
-            <ArticleLinkedText text={text} onCitationClick={onCitationClick} />
-          </h3>
-          <VisualBlock heading={trimmedText} />
-        </React.Fragment>
-      );
-    }
-
-    return (
-      <p key={key} style={{ whiteSpace: "pre-wrap" }}>
-        <ArticleLinkedText
-          text={text}
-          onCitationClick={onCitationClick}
-          allowedRuleKeys={ruleKeysByLine.get(key)}
-        />
-      </p>
-    );
-  };
+  rawFaqs[openFaq]?.answer.forEach((answerLine, answerIndex) => {
+    ruleKeysByLine.set(`faq-${answerIndex}`, getArticleLinkRuleKeysForText(answerLine, linkedRuleKeys));
+  });
 
   return (
-    <section id="what-is-autism" className="mt-8 space-y-3 text-[14px] font-semibold leading-7 text-[#51465a]">
-      {visibleArticleLines.map((line, index) => renderLine(line, index))}
+    <section className="mt-8 space-y-3 text-[14px] font-semibold leading-7 text-[#51465a]">
+      <p>Children do not all grow up in the same way. Some start talking at an early age, while others need more time to find their words. Some enjoy spending time with other children, while others feel happier playing alone or following familiar routines.</p>
+      <p>For parents, noticing these differences can sometimes raise questions. Is my child developing normally? Why does my child respond differently in certain situations? Should I consider speaking with a specialist?</p>
+      <p>These are understandable concerns, and finding clear information is often the first step towards getting the right guidance.</p>
+      <p><ArticleLink href="/autism-treatment-india/">Autism Spectrum Disorder (ASD)</ArticleLink> is a neurodevelopment condition that can influence communication, social interaction, behavior and the way a child experiences everyday surroundings. However, autism is different for every individual. Recognizing this is important when deciding what kind of support may be helpful.</p>
+      <p>At Manovaidya, the focus is on learning about a child's development, listening to parental concerns and helping families understand the options available to them.</p>
+      <p>This guide explains the signs parents may notice, how autism is assessed, what developmental support can involve and how families can make everyday life more comfortable for their children.</p>
+
+      <ArticleSectionHeading id="what-is-autism">What Is Autism Spectrum Disorder?</ArticleSectionHeading>
+      <p>Autism Spectrum Disorder is a condition related to brain development. It can affect how a person communicates, connects with others, processes information and responds to different situations.</p>
+      <p>The word spectrum describes the wide range of ways autism can present.</p>
+      <p>For example, one child might speak clearly but find it difficult to understand certain social situations. Another may communicate through gestures, pictures or alternative communication methods. Some children enjoy predictable routines, while others experience difficulties with particular sounds, textures or environments.</p>
+      <p>There is no single behavior that describes every autistic child.</p>
+      <p>It is also important to understand that autism is not caused by poor parenting or a lack of attention from family members. Parents are not responsible for their child's autism.</p>
+      <p>Rather than judging a child by what they find difficult, it is more helpful to recognise their abilities, interests and areas where additional assistance may be useful.</p>
+
+      <ArticleSectionHeading id="early-signs-of-autism">Early Signs of Autism in Children</ArticleSectionHeading>
+      <p>Parents usually know their children better than anyone else. They are often the first to notice differences in the way a child communicates, plays or responds to people.</p>
+      <p>Some signs may become noticeable during the first few years of life. Others may become easier to recognise when children begin attending school or spending more time in social settings.</p>
+      <p>Here are some developmental differences parents may want to discuss with a professional.</p>
+      <div className="mt-4 grid gap-4 sm:grid-cols-2">
+        <div className="space-y-3 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
+          <h3 className="mb-3 text-[15px] font-black text-[#21142d]">1. Communication and Speech Differences</h3>
+          <p>Communication difficulties do not always mean that a child cannot speak. Some children use spoken language but find conversations or expressing their feelings challenging.</p>
+          <p>Parents may notice:</p>
+          <ArticleList>
+            <ArticleListItem>Taking longer to develop spoken language.</ArticleListItem>
+            <ArticleListItem>Using fewer gestures, such as pointing or waving.</ArticleListItem>
+            <ArticleListItem>Finding it difficult to communicate needs and feelings.</ArticleListItem>
+            <ArticleListItem>Repeating certain words, sounds or phrases.</ArticleListItem>
+            <ArticleListItem>Having difficulty participating in back-and-forth conversations.</ArticleListItem>
+          </ArticleList>
+          <p>Not every autistic child has a speech delay. Some develop spoken language at an expected pace but experience differences in social communication.</p>
+          <p>If your child is having difficulty developing speech or expressing themselves, you can also explore our guide on <ArticleLink href="/speech-delay-support-india/">Speech Delay Treatment and Communication Support</ArticleLink>.</p>
+        </div>
+        <div className="space-y-3 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
+          <h3 className="mb-3 text-[15px] font-black text-[#21142d]">2. Differences in Social Interaction</h3>
+          <p>Children develop social skills in different ways. An autistic child may respond differently when interacting with family members, friends or people outside their familiar surroundings.</p>
+          <p>Some possible signs include:</p>
+          <ArticleList>
+            <ArticleListItem>Not always responding when their name is called.</ArticleListItem>
+            <ArticleListItem>Finding it difficult to start or continue interactions.</ArticleListItem>
+            <ArticleListItem>Showing less interest in certain group activities.</ArticleListItem>
+            <ArticleListItem>Having difficulty understanding facial expressions or social cues.</ArticleListItem>
+            <ArticleListItem>Preferring independent play or familiar activities.</ArticleListItem>
+          </ArticleList>
+          <p>These behaviors should not be viewed separately. A professional needs to consider the child's overall development before drawing any conclusions.</p>
+        </div>
+        <div className="space-y-3 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
+          <h3 className="mb-3 text-[15px] font-black text-[#21142d]">3. Repetitive Behaviors and Strong Preferences</h3>
+          <p>Some autistic children enjoy repeating particular actions or following the same routine every day. These patterns may help them feel comfortable and familiar with their surroundings.</p>
+          <p>For example, parents might notice:</p>
+          <ArticleList>
+            <ArticleListItem>Repeating certain body movements.</ArticleListItem>
+            <ArticleListItem>Playing with toys in a particular way.</ArticleListItem>
+            <ArticleListItem>Developing a strong interest in specific subjects or activities.</ArticleListItem>
+            <ArticleListItem>Repeating words or phrases.</ArticleListItem>
+            <ArticleListItem>Becoming uncomfortable when an expected routine changes.</ArticleListItem>
+          </ArticleList>
+          <p>These behaviors can serve different purposes. Instead of automatically trying to stop them, it is useful to understand what the child may be communicating through them.</p>
+        </div>
+        <div className="space-y-3 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
+          <h3 className="mb-3 text-[15px] font-black text-[#21142d]">4. Sensory Processing Differences</h3>
+          <p>Everyday experiences such as loud music, bright lights, crowded places or certain food textures can feel different for autistic children.</p>
+          <p>For instance, one child may cover their ears when someone uses a loud appliance. Another may dislike particular clothing materials or avoid foods because of their texture.</p>
+          <p>Some children, on the other hand, actively seek movement, touch or other sensory experiences.</p>
+          <p>Such responses can influence everyday activities, including eating, sleeping, playing and attending school.</p>
+        </div>
+        <div className="space-y-3 rounded-lg border border-[#eadff1] bg-white p-5 shadow-[0_8px_22px_rgba(58,31,90,0.04)]">
+          <h3 className="mb-3 text-[15px] font-black text-[#21142d]">5. Learning and Everyday Development</h3>
+          <p>Developmental differences can also become noticeable during activities that involve attention, understanding instructions, playing or completing everyday tasks.</p>
+          <p>A child may need additional time to learn something new or may find certain activities more challenging than others.</p>
+          <p>Parents who have broader concerns about their child's progress can read our guide to <ArticleLink href="/child-development-support-india/">Child Development Support in India</ArticleLink>.</p>
+        </div>
+      </div>
+      <p>Remember: Noticing one or two of these characteristics does not automatically mean that a child has autism. A proper assessment by an appropriately qualified professional is necessary to understand the child's developmental profile.</p>
+
+      <ArticleSectionHeading id="when-to-consider-assessment">When Should Parents Consider an Autism Assessment?</ArticleSectionHeading>
+      <p>Many parents wait for their child to grow older before discussing developmental concerns. However, there is no need to wait until school admission or a particular age to seek professional advice.</p>
+      <p>If you regularly notice differences in your child's speech, communication, social interaction or behaviour, consider discussing them with a qualified healthcare professional.</p>
+      <p>One concern that deserves particular attention is the loss of previously acquired skills. For example, if a child stops using words they previously knew or loses certain social or developmental abilities, seek medical advice promptly.</p>
+      <p>Parents may come across online autism screening tests and developmental checklists. These can offer general information, but they cannot confirm whether a child is autistic.</p>
+      <p>A professional evaluation provides a more complete understanding of the child's development and helps determine whether further assessment is needed.</p>
+
+      <ArticleSectionHeading id="how-we-work">How Is Autism Diagnosed in Children?</ArticleSectionHeading>
+      <p>There is no single blood test or routine medical test that can establish an autism diagnosis.</p>
+      <p>Instead, professionals look at a child's developmental history, communication patterns, social interaction and behavior. They also consider whether certain characteristics have been present during the child's developmental years.</p>
+      <p>Depending on the situation, an evaluation may involve a developmental paediatrician, child psychologist, psychiatrist or other appropriately qualified professionals.</p>
+      <p>The assessment may include the following areas:</p>
+      <ArticleSubheading>Developmental History</ArticleSubheading>
+      <p>Parents may be asked about the child's early milestones, speech development, play habits, daily routines and previous developmental concerns.</p>
+      <p>Information from family members and teachers can also help provide a clearer picture of how the child behaves in different environments.</p>
+      <ArticleSubheading>Communication and Social Skills</ArticleSubheading>
+      <p>The professional may observe how the child expresses needs, responds to others, shares interests and participates in different activities.</p>
+      <p>Both spoken and non-spoken communication are important during this process.</p>
+      <ArticleSubheading>Behavior and Sensory Responses</ArticleSubheading>
+      <p>Repetitive actions, reactions to changes in routine and responses to different sounds, textures or environments may also be considered.</p>
+      <p>Understanding when these behaviors occur can help professionals identify possible areas of difficulty.</p>
+      <ArticleSubheading>Strengths and Areas Requiring Support</ArticleSubheading>
+      <p>An assessment should not focus only on what a child finds difficult.</p>
+      <p>It should also recognize their interests, existing abilities, learning preferences and ways of communicating.</p>
+      <p>This information can help families make more informed decisions about future care and developmental support.</p>
+
+      <ArticleSectionHeading id="autism-treatment-in-india">Understanding a Child's Development Beyond Autism Symptoms</ArticleSectionHeading>
+      <p>A child's daily behavior often provides useful information about what they are experiencing.</p>
+      <p>For example, a child who becomes uncomfortable in a crowded classroom may be reacting to noise or other sensory input. Another child may become frustrated during an activity because they cannot easily communicate what they want.</p>
+      <p>Looking at these situations in context can help parents understand their child's experiences more clearly.</p>
+      <p>Some important areas to consider include:</p>
+      <ArticleList>
+        <ArticleListItem>Communication: How the child expresses thoughts, feelings and everyday needs.</ArticleListItem>
+        <ArticleListItem>Social interaction: How they respond to family members, friends and other people.</ArticleListItem>
+        <ArticleListItem>Learning and attention: How they understand instructions and participate in activities.</ArticleListItem>
+        <ArticleListItem>Sensory experiences: How they respond to sounds, lights, movement and textures.</ArticleListItem>
+        <ArticleListItem>Emotional regulation: How they manage frustration, excitement and changes in their surroundings.</ArticleListItem>
+        <ArticleListItem>Daily independence: How they participate in activities such as eating, dressing and following routines.</ArticleListItem>
+      </ArticleList>
+      <p>Some children may also experience attention difficulties or unusually high activity levels. When these concerns are significant, a separate evaluation may help determine whether conditions such as <ArticleLink href="/child-health-care/adhd-child/">ADHD and Hyperactivity</ArticleLink> are also present.</p>
+      <p>Autism and ADHD are separate neurodevelopment conditions, although a person can have both.</p>
+
+      <ArticleSectionHeading id="autism-assessment">Autism Assessment and Developmental Guidance at Manovaidya</ArticleSectionHeading>
+      <p>For parents, an assessment is not simply about receiving a report. It is also an opportunity to discuss concerns, understand a child's abilities and explore what kind of help may be appropriate.</p>
+      <p>At Manovaidya, the published approach describes a structured process for understanding a child's developmental needs.</p>
+      <ArticleSubheading>1. Listening to Parents</ArticleSubheading>
+      <p>The first step involves discussing what parents have noticed at home, school and during everyday activities.</p>
+      <p>This conversation may cover speech, behavior, learning, sleep, eating habits, social interaction and other concerns.</p>
+      <ArticleSubheading>2. Reviewing Developmental Background</ArticleSubheading>
+      <p>The child's developmental history and everyday experiences are considered to build a broader picture.</p>
+      <p>This helps identify the areas that may need closer attention.</p>
+      <ArticleSubheading>3. Understanding Communication and Behavior</ArticleSubheading>
+      <p>Attention is given to how the child expresses needs, responds to different situations and participates in daily activities.</p>
+      <p>The purpose is to understand the child's experiences rather than judge individual behaviours.</p>
+      <ArticleSubheading>4. Discussing the Findings</ArticleSubheading>
+      <p>The observations and relevant information are discussed with the family.</p>
+      <p>Parents can use this opportunity to ask questions, understand possible concerns and learn about the next steps.</p>
+      <ArticleSubheading>5. Planning Further Support</ArticleSubheading>
+      <p>Any recommendations should reflect the child's actual requirements.</p>
+      <p>Depending on the assessment, families may be guided towards appropriate developmental services, speech and language therapy, occupational therapy or other qualified professionals.</p>
+      <p>It is important to clarify that a developmental review at Manovaidya should not be treated as a substitute for a formal medical autism diagnosis by an appropriately qualified clinician.</p>
+
+      <ArticleSectionHeading id="neuro-ayurveda-development-system">Understanding Manovaidya's Five-Pillar Neuro-Ayurveda Development System</ArticleSectionHeading>
+      <p>Manovaidya describes its developmental approach through a framework called the Neuro-Ayurveda Development System.</p>
+      <p>The framework is organized into five pillars. Each one represents a different area that the organization considers when discussing a child's development and general wellbeing.</p>
+      <p>It is important to understand that this is Manovaidya's own framework. It is not a recognized standalone autism diagnostic test or a scientifically established cure for autism.</p>
+      <ArticleSubheading>1. Cognitive Function System</ArticleSubheading>
+      <p>Cognitive functions are the mental abilities your brain uses to think, learn, understand, remember, make decisions, solve problems, and interact with the world around you.</p>
+      <p>In simple words, cognitive functions are the activities your brain performs to process information and help you understand and respond to situations.</p>
+      <ArticleSubheading>2. Gut Response System</ArticleSubheading>
+      <p>Digestive discomfort can sometimes affect a child's everyday comfort.</p>
+      <p>Issues such as constipation, stomach discomfort or selective eating may need attention from a healthcare professional.</p>
+      <p>This pillar provides a way to discuss digestive health and general wellbeing. However, digestive problems should not be considered a cause of autism, and treating them does not cure autism.</p>
+      <ArticleSubheading>3. Neural Network System</ArticleSubheading>
+      <p>This area focuses on developmental functions such as communication, learning, attention and social engagement.</p>
+      <p>Understanding how a child processes information, follows instructions and participates in activities can help identify areas where additional guidance may be useful.</p>
+      <ArticleSubheading>4. Sensory Integration System</ArticleSubheading>
+      <p>Some children respond differently to everyday sensory experiences.</p>
+      <p>Sounds, lights, textures, movement and crowded environments may influence how comfortable they feel in particular situations.</p>
+      <p>Recognizing these responses can help parents make suitable adjustments and discuss additional support with relevant professionals.</p>
+      <ArticleSubheading>5. Behavior Guidance System</ArticleSubheading>
+      <p>A child's behavior can provide clues about what they may be experiencing.</p>
+      <p>For example, frustration might be linked to difficulty communicating, an unexpected change in routine, tiredness or sensory discomfort.</p>
+      <p>Understanding what happens before a particular behavior can help families respond more constructively.</p>
+      <p>The aim is to recognize the child's needs rather than simply suppress behaviors that seem different.</p>
+
+      <ArticleSectionHeading id="how-we-support">Practical Ways to Support an Autistic Child at Home</ArticleSectionHeading>
+      <p>Parents do not need complicated activities or expensive resources to make everyday life more supportive.</p>
+      <p>Sometimes, small changes in the way families communicate, organize routines and respond to their children can make a meaningful difference.</p>
+      <p>Here are a few approaches parents can consider.</p>
+      <ArticleSubheading>Make Daily Routines Easier to Follow</ArticleSubheading>
+      <p>Some children feel more comfortable when they know what will happen next.</p>
+      <p>A simple daily schedule, pictures or reminders can help them understand activities such as getting ready for school, eating meals or preparing for bedtime.</p>
+      <p>If plans need to change, try explaining the change beforehand whenever possible.</p>
+      <ArticleSubheading>Give Your Child Different Ways to Communicate</ArticleSubheading>
+      <p>Spoken language is not the only way to express a thought or need.</p>
+      <p>Some children communicate through gestures, pictures, communication boards or assistive communication devices.</p>
+      <p>Encourage the communication method that works best for your child rather than focusing only on spoken words.</p>
+      <ArticleSubheading>Pay Attention to Sensory Preferences</ArticleSubheading>
+      <p>Notice how your child responds to different environments.</p>
+      <p>For example, if loud sounds cause discomfort, consider reducing unnecessary noise or providing a quieter space when appropriate.</p>
+      <p>If sensory difficulties regularly interfere with daily activities, discuss them with a relevant professional.</p>
+      <ArticleSubheading>Use Your Child's Interests to Encourage Learning</ArticleSubheading>
+      <p>A child's favorite activities can become useful opportunities for interaction.</p>
+      <p>If your child enjoys drawing, building blocks, music or a particular game, you can use those interests to introduce simple learning activities and shared play.</p>
+      <p>There is no need to force participation. Allowing children to engage at a comfortable pace can make activities more enjoyable.</p>
+      <ArticleSubheading>Give Your Child Time to Respond</ArticleSubheading>
+      <p>Some children need additional time to understand instructions or organise their responses.</p>
+      <p>Instead of repeating questions quickly, pause and give your child enough time to process what you have said.</p>
+      <p>Clear instructions and simple language may also make communication easier.</p>
+      <ArticleSubheading>Stay Connected With Teachers and Professionals</ArticleSubheading>
+      <p>Children may behave differently at home and at school.</p>
+      <p>Sharing observations with teachers and healthcare professionals can help everyone understand what works well and where further assistance may be needed.</p>
+
+      <ArticleSectionHeading id="parent-guidance">Why Parent Guidance Is an Important Part of Autism Care</ArticleSectionHeading>
+      <p>Parents are involved in their child's life every day. They notice small changes, understand familiar routines and often recognize situations that make their child comfortable or upset.</p>
+      <p>However, understanding autism and deciding how to respond to different behaviors can sometimes feel confusing.</p>
+      <p>Professional guidance can help families understand developmental concerns, set practical goals and make informed decisions about available services.</p>
+      <p>Parents also need time and support for themselves. Looking after a child with additional developmental needs can bring emotional and practical challenges. Asking for help is perfectly reasonable.</p>
+      <p>The goal is not to compare one child's progress with another's. What matters is finding approaches that support the child's communication, comfort, learning and participation in everyday life.</p>
+
+      <ArticleSectionHeading id="why-families-choose-us">Why Families Consider Manovaidya for Autism-Related Guidance</ArticleSectionHeading>
+      <p>When parents start looking for autism-related services, they often have several questions. They want to understand their child's development, know what an assessment involves and find out which options may be suitable.</p>
+      <p>Manovaidya presents its approach through a combination of developmental assessment, parent discussions and its five-pillar Neuro-Ayurveda framework.</p>
+      <p>The organization describes the following aspects of its approach:</p>
+      <ul className="mt-4 grid gap-4 sm:grid-cols-2">
+        <ArticleCard>Attention to a child's developmental background and concerns.</ArticleCard>
+        <ArticleCard>Discussions with parents about everyday challenges.</ArticleCard>
+        <ArticleCard>A structured five-pillar developmental framework.</ArticleCard>
+        <ArticleCard>Guidance based on the child's circumstances.</ArticleCard>
+        <ArticleCard>Support in understanding possible next steps.</ArticleCard>
+      </ul>
+      <p>Before choosing any service, families should ask about the qualifications of the professionals involved, the nature of the assessment, available interventions and arrangements for referrals when specialist medical care is required.</p>
+      <p>Autism care should always be guided by appropriate professional assessment and evidence-based interventions.</p>
+
+      <ArticleSectionHeading id="about-dr-ankush-garg">About Dr. Ankush Garg and Manovaidya</ArticleSectionHeading>
+      <p>Dr. Ankush Garg is identified by Manovaidya as the founder of the organisation and the creator of its Neuro-Ayurveda Development System.</p>
+      <p>Manovaidya shares information and guidance relating to autism, ADHD, child development and other mental health concerns.</p>
+      <p>Families interested in an assessment can contact the organisation to learn more about its services, the professionals involved and the consultation process.</p>
+      <p>Understanding what a service offers before beginning is an important part of making an informed decision about a child's care.</p>
+
       <FaqAccordion
         openFaq={openFaq}
         setOpenFaq={setOpenFaq}
         onCitationClick={onCitationClick}
         ruleKeysByLine={ruleKeysByLine}
       />
-      {consultationArticleLines.map((line, index) => renderLine(line, index, "consultation"))}
     </section>
   );
 }
@@ -1486,10 +1497,10 @@ function AutismTreatmentIndiaPage() {
           </nav>
           <p className="text-[13px] font-black uppercase tracking-[0.08em] text-[#7835A4]">{autismTitle}</p>
           <h1 className="mt-2 max-w-[650px] text-[27px] font-black leading-[1.12] text-[#292064] sm:text-[34px] lg:text-[34px]">
-            {autismTitle}
+            {autismArticleTitle}
           </h1>
           <p className="mt-4 max-w-[620px] text-[14px] font-bold leading-7 text-[#51465a] sm:text-[15px]">
-            Autism assessment, child development support and structured Neuro-Ayurveda guidance for families seeking clarity, confidence and a long-term developmental roadmap.
+            {autismMetaDescription}
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -1553,7 +1564,7 @@ function AutismTreatmentIndiaPage() {
 
           <KeyTakeawaysBlock />
 
-          <RawArticleContent openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={handleCitationClick} />
+          <ArticleContent openFaq={openFaq} setOpenFaq={setOpenFaq} onCitationClick={handleCitationClick} />
 
           <div className="mt-8">
             <button
@@ -1577,21 +1588,21 @@ function AutismTreatmentIndiaPage() {
                 <h2 className="text-[26px] sm:text-[32px] font-black leading-tight mb-4">Take the First Step Today</h2>
                 <div className="space-y-4 text-[14px] font-semibold leading-7 text-[#f0e7f6] mb-6">
                   <p>
-                    If you are looking for Autism Treatment in India, Autism Assessment, Child Development Support or guidance regarding communication, behaviour, learning and developmental concerns, you can schedule a consultation with Dr. Ankush Garg and the Manovaidya team.
+                    Contact Manovaidya to learn about its developmental assessment, the professionals involved and how to schedule a consultation.
                   </p>
                   <p>
-                    Through a structured assessment and personalized guidance process, families can gain a clearer understanding of their child's developmental needs and explore appropriate next steps for long-term growth, learning and wellbeing.
+                    You can discuss your child's development, ask how the assessment works and explore possible next steps for support.
                   </p>
                 </div>
                 
                 <div className="mb-8">
                   <ul className="grid sm:grid-cols-2 gap-3">
                     {[
-                      "Autism Assessment",
-                      "Personalized Development Guidance",
-                      "Parent Support & Family Guidance",
+                      "Developmental Assessment",
+                      "Discussion With Parents",
+                      "Communication and Behavior",
                       "Neuro-Ayurveda Development System",
-                      "Structured Progress Planning"
+                      "Guidance on Further Support"
                     ].map((step) => (
                       <li key={step} className="flex gap-2 text-[14px] font-bold text-white">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#d8b4e2]" />
@@ -1725,7 +1736,7 @@ function AutismTreatmentIndiaPage() {
             <CalendarCheck className="h-9 w-9 text-[#7835A4]" />
             <p className="mt-4 text-[17px] font-black text-[#21142d]">Book a Consultation</p>
             <p className="mt-3 text-[12px] font-bold leading-5 text-[#5f5367]">
-              Get a personalized plan for your child from our experts.
+              Ask about developmental assessment and the consultation process.
             </p>
             <a
               href="tel:+917823838638"
