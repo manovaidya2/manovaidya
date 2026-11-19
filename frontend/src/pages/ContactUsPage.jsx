@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-} from "lucide-react";
+import { Send } from "lucide-react";
+import { Link } from "react-router-dom";
 import api from "../api/axiosInstance";
 import Seo from "../components/Seo";
 
@@ -29,53 +25,71 @@ const initialForm = {
   message: "",
 };
 
-const contactCards = [
-  {
-    label: "Call",
-    value: "+91 78238 38638",
-    href: "tel:+917823838638",
-    Icon: Phone,
-  },
-  {
-    label: "Email",
-    value: "manovaidya2@gmail.com",
-    href: "mailto:manovaidya2@gmail.com",
-    Icon: Mail,
-  },
-  {
-    label: "Clinic",
-    value: "Manovaidya Ayurvedic Clinic, VS Plaza, Near Vinayak Hospital, Atta Market, Pocket E, Sector 27, Noida, Uttar Pradesh - 201301",
-    href: "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Ayurvedic%20Clinic%20VS%20Plaza%20Near%20Vinayak%20Hospital%20Atta%20Market%20Pocket%20E%20Sector%2027%20Noida%20Uttar%20Pradesh%20201301",
-    Icon: MapPin,
-  },
-];
+const cardClassName = "min-w-0 rounded-2xl border border-violet-100 bg-white p-5 shadow-[0_18px_42px_rgba(45,27,95,0.08)] sm:p-7";
+const headingClassName = "text-[24px] font-black leading-tight text-[#292064]";
+const subheadingClassName = "text-lg font-black leading-snug text-[#292064]";
+const linkClassName = "font-bold text-[#7835A4] underline underline-offset-2 hover:text-[#5f2785]";
+const clinicMapUrl = "https://www.google.com/maps/search/?api=1&query=Manovaidya%20Ayurvedic%20Clinic%20VS%20Plaza%20Near%20Vinayak%20Hospital%20Atta%20Market%20Pocket%20E%20Sector%2027%20Noida%20Uttar%20Pradesh%20201301";
 
 function ClinicalSupportGuidelines() {
   return (
-    <div className="rounded-2xl border border-violet-100 bg-white p-5 shadow-[0_18px_42px_rgba(45,27,95,0.08)]">
-      <p className="text-[12px] font-black uppercase tracking-[0.12em] text-[#7835A4]">
-        Manovaidya Clinical Support Guidelines
+    <section aria-labelledby="support-heading" className={cardClassName}>
+      <h2 id="support-heading" className={headingClassName}>How Can Manovaidya Help You?</h2>
+      <p className="mt-3">
+        Manovaidya offers consultation and support for different health and developmental concerns. You can contact our team to discuss your requirements and learn more about the services that may be relevant to your situation.
       </p>
-      <h2 className="mt-3 text-[22px] font-black leading-tight text-[#292064]">
-        Clinical Support Guidelines
-      </h2>
-      <p className="mt-4 text-[14px] font-semibold leading-7 text-[#51465a]">
-        आपके treatment plan में personalised diet guidance, tracker system, exercises/therapy guidance, sensory एवं marma-point support, Omkar practices और आवश्यकता के अनुसार doctor follow-up शामिल हो सकते हैं।
-      </p>
-      <p className="mt-5 text-sm font-black text-[#302650]">कृपया ध्यान रखें:</p>
-      <ul className="mt-3 space-y-3 text-[13px] font-semibold leading-6 text-[#51465a]">
-        <li>• Clinic support timing सुबह 11:00 बजे से शाम 6:00 बजे तक, केवल working days में है।</li>
-        <li>• Follow-up calls clinical requirement, scheduled date और doctor availability के अनुसार किए जाते हैं।</li>
-        <li>• OPD, ongoing consultations, weekly off या छुट्टी के कारण call/message का reply तुरंत मिलना संभव नहीं हो सकता।</li>
-        <li>• Call न उठने पर कृपया WhatsApp पर patient name, concern और medicine details लिखकर भेजें। Team working hours में क्रमवार उत्तर देगी।</li>
-        <li>• Treatment support का अर्थ 24x7, instant call-back या emergency helpline service नहीं है।</li>
-        <li>• किसी गंभीर या emergency स्थिति में कृपया तुरंत नजदीकी hospital/emergency service से संपर्क करें।</li>
-      </ul>
-      <p className="mt-5 text-[14px] font-semibold leading-7 text-[#51465a]">
-        हमारा उद्देश्य हर patient को व्यवस्थित, सुरक्षित और clinically appropriate guidance देना है। आपके सहयोग के लिए धन्यवाद।
-      </p>
-      <p className="mt-3 text-sm font-black text-[#8B43BA]">Team Manovaidya</p>
-    </div>
+
+      <div className="mt-6 space-y-6">
+        <div className="space-y-2">
+          <h3 className={subheadingClassName}>Child Development and Behavioural Support</h3>
+          <p>
+            Children develop at different speeds, and parents may sometimes notice changes in their child's communication, behaviour, learning or social interaction. If you have concerns about your child's development, our team can help you understand the available support options.
+          </p>
+          <p>
+            You can also explore our information on <Link to="/behavioural-concerns-children-india/" className={linkClassName}>behavioural concerns in children</Link> to learn more about common behavioural difficulties and the importance of appropriate guidance.
+          </p>
+          <p>
+            Parents concerned about delayed speech or communication difficulties can learn more about <Link to="/speech-delay-support-india/" className={linkClassName}>speech delay support in India</Link>. If your child experiences difficulties with attention, impulsivity or hyperactivity, you can also read about <Link to="/child-health-care/adhd-child/" className={linkClassName}>ADHD in children</Link>.
+          </p>
+          <p>If you are unsure which consultation may be suitable, feel free to contact our team and explain your concerns.</p>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className={subheadingClassName}>Teen Mental Wellness</h3>
+          <p>
+            The teenage years bring changes in emotions, friendships, studies and family relationships. Some teenagers may find it difficult to manage academic pressure, low confidence, mood changes or anxiety.
+          </p>
+          <p>
+            Parents and teenagers can contact Manovaidya to enquire about available mental wellness consultation options and understand where to seek appropriate support.
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className={subheadingClassName}>Adult Mental Health Support</h3>
+          <p>
+            Work responsibilities, family matters and personal challenges can sometimes affect emotional well-being. Stress and anxiety may also interfere with sleep, concentration and everyday activities.
+          </p>
+          <p>
+            If you are looking for guidance regarding anxiety or emotional difficulties, you can explore our <Link to="/anxiety-support-india/" className={linkClassName}>anxiety support in India</Link> page to learn more about the subject and available support.
+          </p>
+          <p>
+            You can also contact our team to enquire about mental health consultations and the next steps for seeking professional guidance.
+          </p>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className={subheadingClassName}>Senior Mind and Memory Care</h3>
+          <p>Changes in memory, confusion, mood or everyday behaviour can sometimes become a concern for older adults and their families.</p>
+          <p>If you have noticed such changes in an elderly family member, you can contact Manovaidya to discuss your concerns and ask about suitable consultation options.</p>
+        </div>
+
+        <div className="space-y-2">
+          <h3 className={subheadingClassName}>Women's Mental Health and Emotional Well-being</h3>
+          <p>Physical and emotional changes at different stages of life can affect a woman's overall well-being. Stress, changes in mood and personal challenges may sometimes require additional attention.</p>
+          <p>Women and their families can contact our team to enquire about relevant consultation services and available guidance.</p>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -147,23 +161,41 @@ function ContactUsPage() {
         }}
       />
 
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-[#fbf4ff] to-[#fff7ed]">
-        <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:py-20">
-          <div className="flex flex-col justify-start">
-            <ClinicalSupportGuidelines />
-          </div>
+      <div className="bg-gradient-to-br from-white via-[#fbf4ff] to-[#fff7ed]">
+        <div className="mx-auto grid max-w-[1280px] items-start gap-6 px-4 py-14 text-[15px] leading-7 text-[#51465a] sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20">
+          <header className="space-y-4 lg:col-span-2">
+            <h1 className="text-[34px] font-black leading-tight text-[#292064] sm:text-[42px]">
+              Manovaidya Clinical Support Guidelines
+            </h1>
+            <p>
+              Finding the right support for your health or your child's development often starts with a conversation. Parents may have questions about their child's speech, behaviour, learning abilities or developmental progress. Adults may be looking for guidance on anxiety, stress, sleep problems or other emotional concerns.
+            </p>
+            <p>
+              At <Link to="/" className={linkClassName}>Manovaidya</Link>, we understand that every person's situation is different. Some families want to learn more about their child's development, while others need information about mental health and well-being. Our team welcomes enquiries from individuals and families who want to understand the consultation options available to them.
+            </p>
+            <p>
+              Whether you are contacting us for the first time or have questions about an existing treatment plan, we are here to guide you through the next steps.
+            </p>
+          </header>
 
-          <div className="rounded-2xl border border-violet-100 bg-white p-5 shadow-[0_18px_42px_rgba(45,27,95,0.12)] sm:p-7">
-            <div className="mb-5 flex items-start justify-between gap-4">
-              <div>
-                <h2 className="text-[24px] font-black text-[#272047]">Send Enquiry</h2>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[#6a5d77]">
-                  Your form details will be saved with consultation requests.
-                </p>
-              </div>
-              <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-[#8B43BA] text-white sm:flex">
-                <Send className="h-5 w-5" />
-              </span>
+          <ClinicalSupportGuidelines />
+
+          <section aria-labelledby="appointment-heading" className={cardClassName}>
+            <div className="mb-6 space-y-3">
+              <h2 id="appointment-heading" className={headingClassName}>Book an Appointment with Manovaidya</h2>
+              <p>
+                If you would like to consult with our team, please fill out the enquiry form available on this page. Sharing a few details about your requirements will help us understand the reason for your visit and guide you accordingly.
+              </p>
+              <p>When submitting your enquiry, you can provide:</p>
+              <ul className="list-disc space-y-1 pl-5">
+                <li>Your full name and contact number.</li>
+                <li>The health or developmental concern you want to discuss.</li>
+                <li>Your preferred consultation mode.</li>
+                <li>Your preferred date and time.</li>
+                <li>Any additional information relevant to your enquiry.</li>
+              </ul>
+              <p>Once we receive your request, our team will review the information and get in touch with you regarding consultation availability.</p>
+              <p>Please remember that submitting an enquiry does not automatically confirm an appointment. Our team will communicate the available options separately.</p>
             </div>
 
             <form className="grid gap-4" onSubmit={handleSubmit}>
@@ -296,46 +328,27 @@ function ContactUsPage() {
                 <Send className="h-4 w-4" />
               </button>
             </form>
-          </div>
+          </section>
 
-          <div className="rounded-2xl border border-violet-100 bg-white p-5 shadow-[0_18px_42px_rgba(45,27,95,0.08)] sm:p-7 lg:col-span-2">
-            <p className="text-[12px] font-black uppercase tracking-[0.12em] text-[#7835A4]">
-              Contact Manovaidya
-            </p>
-            <h1 className="mt-4 max-w-4xl text-[34px] font-black leading-tight text-[#292064] sm:text-[42px]">
-              Speak with our team for consultation support
-            </h1>
-            <p className="mt-5 max-w-5xl text-[16px] font-semibold leading-8 text-[#5d5268]">
-              Share your details and preferred consultation slot. The Manovaidya team will review your request and contact you for the next steps.
-            </p>
+          <section aria-labelledby="clinic-heading" className={cardClassName}>
+            <h2 id="clinic-heading" className={headingClassName}>Visit Manovaidya Ayurvedic Clinic in Noida</h2>
+            <p className="mt-3">If you prefer an in-person consultation, you are welcome to contact our team about visiting the Manovaidya clinic in Noida.</p>
+            <address className="mt-4 space-y-2 not-italic">
+              <p><a href={clinicMapUrl} target="_blank" rel="noreferrer" className={linkClassName}>Manovaidya Ayurvedic Clinic</a></p>
+              <p>VS Plaza, Near Vinayak Hospital, Atta Market, Pocket E, Sector 27, Noida, Uttar Pradesh ? 201301, India.</p>
+              <p><strong>Phone:</strong> <a href="tel:+917823838638" className={linkClassName}>+91 78238 38638</a></p>
+              <p><strong>Email:</strong> <a href="mailto:manovaidya2@gmail.com" className={linkClassName}>manovaidya2@gmail.com</a></p>
+            </address>
+          </section>
 
-            <div className="mt-8 grid gap-3 lg:grid-cols-3">
-              {contactCards.map(({ label, value, href, Icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target={href.startsWith("http") ? "_blank" : undefined}
-                  rel={href.startsWith("http") ? "noreferrer" : undefined}
-                  className="flex min-h-28 items-center gap-4 rounded-lg border border-violet-100 bg-white px-4 py-4 shadow-sm transition hover:border-violet-200 hover:text-[#8B43BA]"
-                >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-violet-50 text-[#8B43BA]">
-                    <Icon className="h-5 w-5" />
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block text-[12px] font-black uppercase tracking-[0.08em] text-[#8B43BA]">
-                      {label}
-                    </span>
-                    <span className="mt-1 block text-sm font-black leading-5 text-[#302650]">
-                      {value}
-                    </span>
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
+          <section aria-labelledby="get-in-touch-heading" className={cardClassName}>
+            <h2 id="get-in-touch-heading" className={headingClassName}>Get in Touch with Manovaidya</h2>
+            <p className="mt-3">
+              You can contact Manovaidya for guidance on child development, behavioural concerns, anxiety or emotional well-being. Call us, email us or submit the enquiry form to learn about consultation options and appointments.
+            </p>
+          </section>
         </div>
-      </section>
-
+      </div>
     </main>
   );
 }
