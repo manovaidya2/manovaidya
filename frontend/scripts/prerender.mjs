@@ -221,6 +221,10 @@ const main = async () => {
     }),
   );
 
+  // Empty client-rendered shell. The backend fills in head tags and page data for
+  // blogs/case studies published after this build (nginx keeps it non-public).
+  await fs.writeFile(path.join(distDir, 'app-shell.html'), stripDefaultSeo(template), 'utf8');
+
   const missing = serverEntry.render('/404/', { httpStatus: 404 });
   const notFoundHtml = applyPrerender(template, { routePath: '/404/', canonicalUrl: getCanonicalUrl('/404/'), appHtml: missing.html, helmet: missing.helmet, data: missing.data });
   await fs.writeFile(path.join(distDir, '404.html'), notFoundHtml, 'utf8');

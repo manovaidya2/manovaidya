@@ -14,7 +14,41 @@ export async function sendNotFound(req, res, distDir) {
   res.end(req.method === 'HEAD' ? undefined : html);
 }
 
-export function createPageMiddleware({ distDir }) {
+const escapeScriptJson = (value) =>
+  JSON.stringify(value)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replaceAll(String.fromCharCode(0x2028), '\\u2028')
+    .replaceAll(String.fromCharCode(0x2029), '\\u2029');
+
+const detailPath = /^\/(blog|case-studies)\/([a-zA-Z0-9][a-zA-Z0-9_-]*)(\/?)$/;
+
+// A detail page published after the last build: serve the app shell (built by
+// scripts/prerender.mjs) with its SEO head and record inlined, so it renders
+// immediately and returns 200. Returns false when there is nothing to serve.
+async function sendFreshDetail(req, res, root, url, match, findDetail) {
+  const [, type, slug, slash] = match;
+  const page = await findDetail(type, slug);
+  if (!page) return false;
+  if (!slash) {
+    res.statusCode = 301; res.setHeader('Location', `${url.pathname}/${url.search}`); res.end();
+    return true;
+  }
+  let shell;
+  try { shell = await fs.readFile(path.join(root, 'app-shell.html'), 'utf8'); } catch { return false; }
+  const html = shell
+    .replace('</head>', () => `    ${page.head}\n  </head>`)
+    .replace('<div id="root"></div>', () => `<div id="root"></div>\n    <script>window.__MANOVAIDYA_PRERENDER_DATA__=${escapeScriptJson(page.data)};</script>`);
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  // The next static release replaces this response with prerendered HTML.
+  res.setHeader('Cache-Control', 'no-cache');
+  res.end(req.method === 'HEAD' ? undefined : html);
+  return true;
+}
+
+export function createPageMiddleware({ distDir, findDetail }) {
   const root = path.resolve(distDir);
   return async (req, res, next) => {
     if (!['GET', 'HEAD'].includes(req.method)) return next();
@@ -42,6 +76,14 @@ export function createPageMiddleware({ distDir }) {
       }
     } catch (error) {
       if (!['ENOENT', 'ENOTDIR'].includes(error.code)) return next(error);
+    }
+    const detail = findDetail && pathname.match(detailPath);
+    if (detail) {
+      try {
+        if (await sendFreshDetail(req, res, root, url, detail, findDetail)) return;
+      } catch (error) {
+        return next(error);
+      }
     }
     return sendNotFound(req, res, root);
   };

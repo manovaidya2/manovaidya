@@ -14,6 +14,7 @@ import liveChatRoutes from './routes/liveChatRoutes.js';
 import videoRoutes from './routes/videoRoutes.js';
 import { startKnowledgeSchedule } from './services/aiKnowledgeService.js';
 import { createPageMiddleware } from './middleware/frontendPages.js';
+import { findFreshDetail } from './services/freshDetailPages.js';
 import { fileURLToPath } from 'node:url';
 
 
@@ -67,7 +68,10 @@ app.use('/', sitemapRoutes);
 
 app.get("/api/health", (req, res) => res.json({ status: "OK", mongodb: mongoose.connection.readyState === 1 ? "Connected" : "Disconnected" }));
 app.use('/api', (req, res) => res.status(404).json({ success: false, message: 'API endpoint not found.' }));
-app.use(createPageMiddleware({ distDir: process.env.FRONTEND_DIST || fileURLToPath(new URL('../frontend/dist/', import.meta.url)) }));
+app.use(createPageMiddleware({
+  distDir: process.env.FRONTEND_DIST || fileURLToPath(new URL('../frontend/dist/', import.meta.url)),
+  findDetail: findFreshDetail,
+}));
 
 app.use((err, req, res, next) => {
   console.error('[http] request failed', { code: err.code || err.type || err.name });

@@ -18,9 +18,11 @@ const app = (
   </React.StrictMode>
 )
 
+// React owns the page metadata once it renders; remove the static copies first
+// (prerendered pages and the backend's fresh-page shell both include them).
+document.head.querySelectorAll('[data-prerender-seo]').forEach((tag) => tag.remove())
+
 if (rootElement.hasChildNodes()) {
-  // React 19 owns hoisted metadata after hydration; remove the static copies first.
-  document.head.querySelectorAll('[data-prerender-seo]').forEach((tag) => tag.remove())
   hydrateRoot(rootElement, app)
 } else {
   createRoot(rootElement).render(app)

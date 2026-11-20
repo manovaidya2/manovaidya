@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import net from "node:net";
+import http from "node:http";
 import { spawn, spawnSync } from "node:child_process";
 import { setTimeout as delay } from "node:timers/promises";
 import { canonicalPaths, canonicalPathAliases, getCanonicalUrl, normalizePath } from "../src/utils/canonical.js";
@@ -20,6 +21,15 @@ const freePort = () => new Promise((resolve, reject) => {
 });
 const ports = [await freePort(), await freePort(), await freePort()];
 const localOrigin = `http://127.0.0.1:${ports[2]}`;
+// Stand-in for the backend's fresh-detail fallback (pages published after the build).
+const freshSlug = "fresh-unbuilt-slug";
+const backendPort = await freePort();
+const backend = http.createServer((request, response) => {
+  const fresh = request.url.startsWith(`/blog/${freshSlug}/`);
+  response.writeHead(fresh ? 200 : 404, { "Content-Type": "text/html" });
+  response.end(fresh ? "<h1>fresh backend page</h1>" : "backend 404");
+});
+await new Promise((resolve) => backend.listen(backendPort, "127.0.0.1", resolve));
 const sitemap = await fs.readFile("dist/sitemap.xml", "utf8");
 const content = await readContentSnapshot();
 const routes = new Set([
@@ -37,6 +47,7 @@ const site = (await fs.readFile("deploy/manovaidya.nginx.conf", "utf8"))
   .replace(/    listen [^;]+;/g, () => `    listen 127.0.0.1:${ports[listenIndex++]};`)
   .replace(/    ssl_certificate(?:_key)? [^;]+;\n/g, "")
   .replace("/var/www/manovaidya/frontend/dist", nginxPath(path.resolve("dist")))
+  .replace("proxy_pass http://127.0.0.1:5012;", `proxy_pass http://127.0.0.1:${backendPort};`)
   .replaceAll('https://manovaidya.org', localOrigin);
 await fs.mkdir(path.join(temp, "logs"));
 await fs.mkdir(path.join(temp, "temp"));
@@ -82,15 +93,22 @@ try {
     }
   }
   const asset = (await fs.readdir('dist/assets')).find((file) => file.endsWith('.js'));
-  for (const [route, expected] of [["/robots.txt", 200], ["/sitemap.xml", 200], [`/assets/${asset}`, 200], ["/does-not-exist/", 404], ["/blog/missing-regression-slug/", 404], ["/case-studies/missing-regression-slug/", 404], ["/assets/missing.js", 404]]) {
+  const statusChecks = [["/robots.txt", 200], ["/sitemap.xml", 200], [`/assets/${asset}`, 200], ["/does-not-exist/", 404], ["/blog/missing-regression-slug/", 404], ["/case-studies/missing-regression-slug/", 404], ["/assets/missing.js", 404], ["/app-shell.html", 404], [`/blog/${freshSlug}/`, 200]];
+  const checkStatus = async (route, expected, label = route) => {
     const response = await fetch(`http://127.0.0.1:${ports[2]}${route}`, { redirect: "manual" });
     requests++;
-    if (response.status !== expected) failures.push(`${route}: expected ${expected}, got ${response.status}`);
+    if (response.status !== expected) failures.push(`${label}: expected ${expected}, got ${response.status}`);
     if (expected === 404 && !route.startsWith('/assets/')) {
       const html = await response.text();
-      if (!html.includes('Page Not Found') || !html.includes('does not exist or has been moved')) failures.push(`${route}: missing custom server-rendered 404 body`);
+      if (!html.includes('Page Not Found') || !html.includes('does not exist or has been moved')) failures.push(`${label}: missing custom server-rendered 404 body`);
+    } else if (route === `/blog/${freshSlug}/`) {
+      if (!(await response.text()).includes('fresh backend page')) failures.push(`${label}: fresh detail was not proxied to the backend`);
     } else await response.body?.cancel();
-  }
+  };
+  for (const [route, expected] of statusChecks) await checkStatus(route, expected);
+  // If the backend is down, an unbuilt page falls back to the static 404 page.
+  await new Promise((resolve) => backend.close(resolve));
+  await checkStatus(`/blog/${freshSlug}/`, 404, "fresh detail with backend down");
   const curl = process.platform === 'win32' ? 'curl.exe' : 'curl';
   for (const route of ['/index.html', '/blog', `/blog/${content.blogs[0].slug}`, '/case-studies', '/dr-ankush-garg']) {
     const head = spawnSync(curl, ['-sS', '-I', '--max-time', '15', `${localOrigin}${route}`], { encoding: 'utf8', windowsHide: true });
@@ -100,6 +118,7 @@ try {
     console.log(`curl -I / -IL ${route}: ${follow.stdout}`);
   }
 } finally {
+  if (backend.listening) backend.close();
   spawnSync(nginx, [...args, "-s", "quit"], { windowsHide: true });
   await new Promise((resolve) => nginxProcess.exitCode !== null ? resolve() : nginxProcess.once("exit", resolve));
 }
