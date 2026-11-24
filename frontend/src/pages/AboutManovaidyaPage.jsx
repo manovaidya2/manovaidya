@@ -4,6 +4,7 @@ import AboutManovaidyaHeroSection from "../aboutmanovaidya/AboutManovaidyaHeroSe
 import AboutManovaidyaMissionVisionSection from "../aboutmanovaidya/AboutManovaidyaMissionVisionSection";
 import AboutManovaidyaFounderSection from "../aboutmanovaidya/AboutManovaidyaFounderSection";
 import AboutManovaidyaWhyChooseSection from "../aboutmanovaidya/AboutManovaidyaWhyChooseSection";
+import AboutManovaidyaCommitmentSection from "../aboutmanovaidya/AboutManovaidyaCommitmentSection";
 import AboutManovaidyaSupportSection from "../aboutmanovaidya/AboutManovaidyaSupportSection";
 import AboutManovaidyaSystemWorkSection from "../aboutmanovaidya/AboutManovaidyaSystemWorkSection";
 
@@ -26,8 +27,9 @@ function AboutManovaidyaPage() {
         }}
       />
       <AboutManovaidyaHeroSection />
-      <AboutManovaidyaFounderSection />
+      {/* <AboutManovaidyaFounderSection /> */}
       <AboutManovaidyaWhyChooseSection />
+      <AboutManovaidyaCommitmentSection />
       <AboutManovaidyaSupportSection />
       <AboutManovaidyaSystemWorkSection />
       <AboutManovaidyaMissionVisionSection />

@@ -43,7 +43,7 @@ function AboutManovaidyaHeroSection() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.96)_52%,rgba(255,255,255,0.78)_72%,rgba(61,27,119,0.12)_100%)] lg:bg-[linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.98)_31%,rgba(255,255,255,0.56)_42%,rgba(255,255,255,0.02)_60%,rgba(61,27,119,0.04)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-[46%] bg-[linear-gradient(0deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.9)_54%,rgba(255,255,255,0)_100%)] lg:h-[34%] lg:bg-[linear-gradient(0deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.82)_43%,rgba(255,255,255,0)_100%)]" />
 
-        <div className="relative z-10 grid items-start gap-6 px-[10px] pb-3 pt-6 sm:pt-8 lg:min-h-[455px] lg:grid-cols-[720px_1fr] lg:px-10 lg:pb-0 lg:pt-8">
+        <div className="relative z-10 grid items-start gap-6 px-[10px] pb-3 pt-6 sm:pt-8 lg:min-h-[455px] lg:grid-cols-[720px_1fr] lg:px-10 lg:pb-6 lg:pt-8">
           <div className="max-w-[620px] lg:max-w-[720px]">
             <p className="text-[14px] font-black uppercase tracking-[0.03em] text-[#5b34bd] sm:text-[15px]">
               About Manovaidya
@@ -62,10 +62,12 @@ function AboutManovaidyaHeroSection() {
             </h1>
 
             <p className="mt-4 max-w-[560px] text-[15px] font-bold leading-[1.58] text-[#251553] sm:text-[17px] lg:mt-5 lg:max-w-[620px] lg:text-[16px]">
-              Manovaidya is a specialized Neuro-Ayurveda and Mental Health
-              Clinic in India dedicated to supporting children, teenagers,
-              adults, women and families facing developmental, behavioural,
-              emotional and cognitive health concerns.
+              Manovaidya is a Neuro-Ayurveda and Mental Wellness Clinic in
+              India that supports children, teenagers, adults and families with
+              developmental, behavioural, emotional and cognitive concerns. Our
+              approach focuses on understanding each individual's needs and
+              providing guidance based on their unique challenges and
+              circumstances.
             </p>
 
             <div className="mt-4 flex max-w-[560px] gap-3 rounded-xl border border-[#8B43BA]/14 bg-white/88 px-3 py-3 shadow-[0_10px_24px_rgba(31,19,56,0.08)] backdrop-blur-sm sm:px-4 lg:max-w-[620px] lg:bg-white/84">
@@ -73,10 +75,11 @@ function AboutManovaidyaHeroSection() {
                 “
               </span>
               <p className="text-[13px] font-black leading-[1.6] text-[#251553] sm:text-[16px] lg:text-[15px] lg:leading-[1.62]">
-                We believe every individual is more than a diagnosis, a
-                symptom or a label. Our mission is to help individuals and
-                families move from confusion to clarity, from uncertainty to
-                understanding, and from symptoms to meaningful progress.
+                We understand that no two individuals have the same journey.
+                That's why we believe in giving every person the attention and
+                understanding they deserve. Our goal is to help individuals and
+                families gain clarity, make informed decisions and take positive
+                steps towards better development and overall wellbeing.
               </p>
             </div>
           </div>
