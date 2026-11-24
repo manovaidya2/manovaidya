@@ -4,6 +4,7 @@ import AboutDoctorSection from "../about/AboutDoctorSection";
 import AboutDoctorBioSection from "../about/AboutDoctorBioSection";
 import AboutDoctorFocusSection from "../about/AboutDoctorFocusSection";
 import NeuroAyurvedaSystemSection from "../about/NeuroAyurvedaSystemSection";
+import AboutDoctorResearchSection from "../about/AboutDoctorResearchSection";
 
 function AboutDoctorPage() {
   return (
@@ -24,9 +25,11 @@ function AboutDoctorPage() {
           }
         }}
       />
-      <AboutDoctorSection />
-      <NeuroAyurvedaSystemSection />
+      {/* <AboutDoctorSection /> */}
       <AboutDoctorBioSection />
+      <NeuroAyurvedaSystemSection />
+      <AboutDoctorResearchSection />
+      
       <AboutDoctorFocusSection />
     </main>
   );
